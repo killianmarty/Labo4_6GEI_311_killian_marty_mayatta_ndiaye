@@ -1,0 +1,87 @@
+\doxysection{flask.\+sessions.\+Null\+Session Class Reference}
+\hypertarget{classflask_1_1sessions_1_1_null_session}{}\label{classflask_1_1sessions_1_1_null_session}\index{flask.sessions.NullSession@{flask.sessions.NullSession}}
+Inheritance diagram for flask.\+sessions.\+Null\+Session\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.689065cm]{classflask_1_1sessions_1_1_null_session}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1sessions_1_1_null_session_a3ee5fddb751f5925fa8b6b1f2f30df24}\label{classflask_1_1sessions_1_1_null_session_a3ee5fddb751f5925fa8b6b1f2f30df24} 
+"{}te.\+No\+Return"{} {\bfseries \+\_\+fail} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session}{flask.\+sessions.\+Secure\+Cookie\+Session}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_acce8971400492743922d22a97ec00b90}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Any initial=None)
+\item 
+t.\+Any {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, str key)
+\item 
+t.\+Any {\bfseries get} (self, str key, t.\+Any default=None)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_a3ebf46e800acde2c84c1b137f94d7780}{setdefault}} (self, str key, t.\+Any default=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_callback_dict}{werkzeug.\+datastructures.\+Callback\+Dict}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_update_dict_mixin}{werkzeug.\+datastructures.\+Update\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries pop} (self, key, default=\+\_\+missing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{flask.\+sessions.\+Session\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin_ab8b1ebb1e1f075c8e4797386ac30f170}{permanent}} (self)
+\item 
+None {\bfseries permanent} (self, bool value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_callback_dict}{werkzeug.\+datastructures.\+Callback\+Dict}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries on\+\_\+update} = on\+\_\+update
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session}{flask.\+sessions.\+Secure\+Cookie\+Session}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries modified} = False
+\item 
+bool {\bfseries accessed} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_update_dict_mixin}{werkzeug.\+datastructures.\+Update\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries on\+\_\+update} = None
+\item 
+{\bfseries clear} = \+\_\+calls\+\_\+update("{}clear"{})
+\item 
+{\bfseries popitem} = \+\_\+calls\+\_\+update("{}popitem"{})
+\item 
+{\bfseries update} = \+\_\+calls\+\_\+update("{}update"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{flask.\+sessions.\+Session\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries new} = False
+\item 
+bool {\bfseries modified} = True
+\item 
+bool {\bfseries accessed} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class used to generate nicer error messages if sessions are not
+available.  Will still allow read-only access to the empty session
+but fail on setting.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/sessions.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\doxysection{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}\index{werkzeug.datastructures.ImmutableDictMixin@{werkzeug.datastructures.ImmutableDictMixin}}
+Inheritance diagram for werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.012048cm]{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_af8e4f79962240e89642efb991ceca4b9}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_af8e4f79962240e89642efb991ceca4b9} 
+{\bfseries fromkeys} (cls, keys, value=None)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a47b0c0a6e89f6a2adc68e3c1e5221f85}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a47b0c0a6e89f6a2adc68e3c1e5221f85} 
+{\bfseries \+\_\+\+\_\+reduce\+\_\+ex\+\_\+\+\_\+} (self, protocol)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a030cc4c9d38c0069a7c8b3601a7aeb2d}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a030cc4c9d38c0069a7c8b3601a7aeb2d} 
+{\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a51bd3299f941678c94c9ea628b79fda6}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a51bd3299f941678c94c9ea628b79fda6} 
+{\bfseries setdefault} (self, key, default=None)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a9c6081cb2434b5ce1959475dcb0d51c7}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a9c6081cb2434b5ce1959475dcb0d51c7} 
+{\bfseries update} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a0312515136e1bcdd96e9fc19a88aed80}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a0312515136e1bcdd96e9fc19a88aed80} 
+{\bfseries pop} (self, key, default=None)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a96635b9b1cd88ee58108823b1fadc2a8}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a96635b9b1cd88ee58108823b1fadc2a8} 
+{\bfseries popitem} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_ab53990ff54c9dc543f8d59d711bd6a53}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_ab53990ff54c9dc543f8d59d711bd6a53} 
+{\bfseries \+\_\+\+\_\+setitem\+\_\+\+\_\+} (self, key, value)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_aff6dd15fb753e7d96846570824bc7bb4}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_aff6dd15fb753e7d96846570824bc7bb4} 
+{\bfseries \+\_\+\+\_\+delitem\+\_\+\+\_\+} (self, key)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_ade71b6a61e6215e38dd1e875d3f603c1}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_ade71b6a61e6215e38dd1e875d3f603c1} 
+{\bfseries clear} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a134a8d2373cb62ec40019f97d39bc149}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a134a8d2373cb62ec40019f97d39bc149} 
+{\bfseries \+\_\+iter\+\_\+hashitems} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a4382d4c700ca3393b0cd981e24d962c8}\label{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin_a4382d4c700ca3393b0cd981e24d962c8} 
+{\bfseries \+\_\+hash\+\_\+cache} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Makes a :class:`dict` immutable.
+
+.. versionadded:: 0.5
+
+:private:
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/datastructures.\+py\end{DoxyCompactItemize}

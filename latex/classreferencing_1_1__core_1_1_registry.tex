@@ -1,0 +1,281 @@
+\doxysection{referencing.\+\_\+core.\+Registry Class Reference}
+\hypertarget{classreferencing_1_1__core_1_1_registry}{}\label{classreferencing_1_1__core_1_1_registry}\index{referencing.\_core.Registry@{referencing.\_core.Registry}}
+Inheritance diagram for referencing.\+\_\+core.\+Registry\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.320442cm]{classreferencing_1_1__core_1_1_registry}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a31c58da6fc1a36969ed0632ddc6bba7f}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, URI uri)
+\item 
+Iterator\mbox{[}URI\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a4b048b40ae9e249b61aa085bc2b668a8}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_ab383722b48ce26aa76f0b5204e646cf3}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a759a65dd78e43a391bc0b6a5ec8faa84}{\+\_\+\+\_\+rmatmul\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\texorpdfstring{$\vert$}{|}Iterable\mbox{[}\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]} new)
+\item 
+\Hypertarget{classreferencing_1_1__core_1_1_registry_abcb793284f82296d11b1af5302c88d39}\label{classreferencing_1_1__core_1_1_registry_abcb793284f82296d11b1af5302c88d39} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_retrieved}{Retrieved}}\mbox{[}D, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a3b355b218c27bbec3a0b0b68760b6335}{get\+\_\+or\+\_\+retrieve}} (self, URI uri)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a98b21539c76d6e500f4eeedfeafe8200}{remove}} (self, URI uri)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a40fefd79164f149ca830737ed84edd82}{anchor}} (self, URI uri, str name)
+\item 
+D \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_ab210406c98c0da33a821784fc718649b}{contents}} (self, URI uri)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_ac48d8d8aec9f1d64d02323b2a9ad15c6}{crawl}} (self)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a8f4b83a2dd92092e14c7a27adf1e6d16}{with\+\_\+resource}} (self, URI uri, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} resource)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_ac9004b40225eb08d68c4307664b06dad}{with\+\_\+resources}} (self, Iterable\mbox{[}tuple\mbox{[}URI, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]}\mbox{]} pairs)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a389c269e349ebd03b23dc0bafb7a4353}{with\+\_\+contents}} (self, Iterable\mbox{[}tuple\mbox{[}URI, D\mbox{]}\mbox{]} pairs, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_ad26766ed374a4808818a9399d22885cc}{combine}} (self, \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} registries)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver}{Resolver}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a0f04e3348929d5684f7adb52b5e9a1a3}{resolver}} (self, URI base\+\_\+uri="{}"{})
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver}{Resolver}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a4398847c4f542865cae67a13f323e01c}{resolver\+\_\+with\+\_\+root}} (self, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} resource)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{referencing.\+\_\+core.\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_a0a64f07f56da88bdcca4af8693085b62}{from\+\_\+contents}} (cls, D contents,(type\mbox{[}\mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}}\mbox{[}D\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}}\mbox{[}D\mbox{]}) default\+\_\+specification=\mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}})
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_add5b5181170fc3b46057eb3e89a13a1e}{opaque}} (cls, D contents)
+\item 
+URI\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_afd7315da333ab26bdd430f0751eadc75}{id}} (self)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_a79088e5e8ed3ffc9b457242bab120a47}{subresources}} (self)
+\item 
+Iterable\mbox{[}Anchor\+Type\mbox{[}D\mbox{]}\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_ab8065acbac4e70df4a3527137a16bb78}{anchors}} (self)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resolved}{Resolved}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_a5601556aae36fb769b2db98d8fc53a3a}{pointer}} (self, str pointer, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver}{Resolver}}\mbox{[}D\mbox{]} resolver)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Hash\+Trie\+Map \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_a3a9ec4636c70bcd26ee4d88d73ac96c2}{\+\_\+resources}}
+\item 
+\Hypertarget{classreferencing_1_1__core_1_1_registry_a44d2d12b0a79c81e1d6228452d4dcb54}\label{classreferencing_1_1__core_1_1_registry_a44d2d12b0a79c81e1d6228452d4dcb54} 
+Hash\+Trie\+Map {\bfseries \+\_\+anchors} = Hash\+Trie\+Map()
+\item 
+\Hypertarget{classreferencing_1_1__core_1_1_registry_a23bf451ab6cd4f1c6d121cd553101183}\label{classreferencing_1_1__core_1_1_registry_a23bf451ab6cd4f1c6d121cd553101183} 
+Hash\+Trie\+Set {\bfseries \+\_\+uncrawled} = EMPTY\+\_\+\+UNCRAWLED
+\item 
+\Hypertarget{classreferencing_1_1__core_1_1_registry_a9186c7517d0cfaa340f1d7ae87b550f9}\label{classreferencing_1_1__core_1_1_registry_a9186c7517d0cfaa340f1d7ae87b550f9} 
+Retrieve {\bfseries \+\_\+retrieve} = field(default=\+\_\+fail\+\_\+to\+\_\+retrieve, alias="{}retrieve"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{referencing.\+\_\+core.\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}} {\bfseries \+\_\+specification} = field(alias="{}specification"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{referencing.\+\_\+core.\+Resource}}}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A registry of `Resource`\ s, each identified by their canonical URIs.
+
+Registries store a collection of in-memory resources, and optionally
+enable additional resources which may be stored elsewhere (e.g. in a
+database, a separate set of files, over the network, etc.).
+
+They also lazily walk their known resources, looking for subresources
+within them. In other words, subresources contained within any added
+resources will be retrievable via their own IDs (though this discovery of
+subresources will be delayed until necessary).
+
+Registries are immutable, and their methods return new instances of the
+registry with the additional resources added to them.
+
+The ``retrieve`` argument can be used to configure retrieval of resources
+dynamically, either over the network, from a database, or the like.
+Pass it a callable which will be called if any URI not present in the
+registry is accessed. It must either return a `Resource` or else raise a
+`NoSuchResource` exception indicating that the resource does not exist
+even according to the retrieval logic.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreferencing_1_1__core_1_1_registry_a31c58da6fc1a36969ed0632ddc6bba7f}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a31c58da6fc1a36969ed0632ddc6bba7f} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Registry.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{URI}]{uri}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the (already crawled) `Resource` identified by the given URI.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_a4b048b40ae9e249b61aa085bc2b668a8}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a4b048b40ae9e249b61aa085bc2b668a8} 
+ Iterator\mbox{[}URI\mbox{]} referencing.\+\_\+core.\+Registry.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate over all crawled URIs in the registry.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_ab383722b48ce26aa76f0b5204e646cf3}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_ab383722b48ce26aa76f0b5204e646cf3} 
+ int referencing.\+\_\+core.\+Registry.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Count the total number of fully crawled resources in this registry.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_a759a65dd78e43a391bc0b6a5ec8faa84}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!\_\_rmatmul\_\_@{\_\_rmatmul\_\_}}
+\index{\_\_rmatmul\_\_@{\_\_rmatmul\_\_}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{\_\_rmatmul\_\_()}{\_\_rmatmul\_\_()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a759a65dd78e43a391bc0b6a5ec8faa84} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Registry.\+\_\+\+\_\+rmatmul\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} \texorpdfstring{$\vert$}{|} Iterable\mbox{[}\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]}}]{new}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new registry with resource(s) added using their internal IDs.
+
+Resources must have a internal IDs (e.g. the :kw:`$id` keyword in
+modern JSON Schema versions), otherwise an error will be raised.
+
+Both a single resource as well as an iterable of resources works, i.e.:
+
+    * ``resource @ registry`` or
+
+    * ``[iterable, of, multiple, resources] @ registry``
+
+which -- again, assuming the resources have internal IDs -- is
+equivalent to calling `Registry.with_resources` as such:
+
+.. code:: python
+
+    registry.with_resources(
+        (resource.id(), resource) for resource in new_resources
+    )
+
+Raises:
+
+    `NoInternalID`
+
+        if the resource(s) in fact do not have IDs\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_a40fefd79164f149ca830737ed84edd82}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!anchor@{anchor}}
+\index{anchor@{anchor}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{anchor()}{anchor()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a40fefd79164f149ca830737ed84edd82} 
+referencing.\+\_\+core.\+Registry.\+anchor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{URI}]{uri}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve a given anchor from a resource which must already be crawled.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_ad26766ed374a4808818a9399d22885cc}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!combine@{combine}}
+\index{combine@{combine}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{combine()}{combine()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_ad26766ed374a4808818a9399d22885cc} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Registry.\+combine (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]}}]{registries}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Combine together one or more other registries, producing a unified one.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_ab210406c98c0da33a821784fc718649b}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!contents@{contents}}
+\index{contents@{contents}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{contents()}{contents()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_ab210406c98c0da33a821784fc718649b} 
+ D referencing.\+\_\+core.\+Registry.\+contents (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{URI}]{uri}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve the (already crawled) contents identified by the given URI.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{referencing.\+\_\+core.\+Resource}}.
+
+\Hypertarget{classreferencing_1_1__core_1_1_registry_ac48d8d8aec9f1d64d02323b2a9ad15c6}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!crawl@{crawl}}
+\index{crawl@{crawl}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{crawl()}{crawl()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_ac48d8d8aec9f1d64d02323b2a9ad15c6} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Registry.\+crawl (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Crawl all added resources, discovering subresources.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_a3b355b218c27bbec3a0b0b68760b6335}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!get\_or\_retrieve@{get\_or\_retrieve}}
+\index{get\_or\_retrieve@{get\_or\_retrieve}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{get\_or\_retrieve()}{get\_or\_retrieve()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a3b355b218c27bbec3a0b0b68760b6335} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_retrieved}{Retrieved}}\mbox{[}D, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]} referencing.\+\_\+core.\+Registry.\+get\+\_\+or\+\_\+retrieve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{URI}]{uri}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a resource from the registry, crawling or retrieving if necessary.
+
+May involve crawling to find the given URI if it is not already known,
+so the returned object is a `Retrieved` object which contains both the
+resource value as well as the registry which ultimately contained it.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_a98b21539c76d6e500f4eeedfeafe8200}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!remove@{remove}}
+\index{remove@{remove}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a98b21539c76d6e500f4eeedfeafe8200} 
+referencing.\+\_\+core.\+Registry.\+remove (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{URI}]{uri}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a registry with the resource identified by a given URI removed.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_a0f04e3348929d5684f7adb52b5e9a1a3}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!resolver@{resolver}}
+\index{resolver@{resolver}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{resolver()}{resolver()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a0f04e3348929d5684f7adb52b5e9a1a3} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver}{Resolver}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Registry.\+resolver (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{URI }]{base\+\_\+uri}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a `Resolver` which resolves references against this registry.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_a4398847c4f542865cae67a13f323e01c}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!resolver\_with\_root@{resolver\_with\_root}}
+\index{resolver\_with\_root@{resolver\_with\_root}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{resolver\_with\_root()}{resolver\_with\_root()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a4398847c4f542865cae67a13f323e01c} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver}{Resolver}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Registry.\+resolver\+\_\+with\+\_\+root (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}}]{resource}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a `Resolver` with a specific root resource.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_a389c269e349ebd03b23dc0bafb7a4353}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!with\_contents@{with\_contents}}
+\index{with\_contents@{with\_contents}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{with\_contents()}{with\_contents()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a389c269e349ebd03b23dc0bafb7a4353} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Registry.\+with\+\_\+contents (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\mbox{[}tuple\mbox{[}URI, D\mbox{]}\mbox{]}}]{pairs}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add the given contents to the registry, autodetecting when necessary.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_a8f4b83a2dd92092e14c7a27adf1e6d16}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!with\_resource@{with\_resource}}
+\index{with\_resource@{with\_resource}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{with\_resource()}{with\_resource()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a8f4b83a2dd92092e14c7a27adf1e6d16} 
+referencing.\+\_\+core.\+Registry.\+with\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{URI}]{uri}{, }\item[{\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}}]{resource}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add the given `Resource` to the registry, without crawling it.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_registry_ac9004b40225eb08d68c4307664b06dad}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!with\_resources@{with\_resources}}
+\index{with\_resources@{with\_resources}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{with\_resources()}{with\_resources()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_ac9004b40225eb08d68c4307664b06dad} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Registry.\+with\+\_\+resources (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\mbox{[}tuple\mbox{[}URI, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]}\mbox{]}}]{pairs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add the given `Resource`\ s to the registry, without crawling them.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreferencing_1_1__core_1_1_registry_a3a9ec4636c70bcd26ee4d88d73ac96c2}\index{referencing.\_core.Registry@{referencing.\_core.Registry}!\_resources@{\_resources}}
+\index{\_resources@{\_resources}!referencing.\_core.Registry@{referencing.\_core.Registry}}
+\doxysubsubsection{\texorpdfstring{\_resources}{\_resources}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_registry_a3a9ec4636c70bcd26ee4d88d73ac96c2} 
+referencing.\+\_\+core.\+Registry.\+\_\+resources\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ field(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ default=HashTrieMap(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ converter=HashTrieMap.convert,\ \ \textcolor{comment}{\#\ type:\ ignore[reportGeneralTypeIssues]}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ alias=\textcolor{stringliteral}{"{}resources"{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/referencing/\+\_\+core.\+py\end{DoxyCompactItemize}

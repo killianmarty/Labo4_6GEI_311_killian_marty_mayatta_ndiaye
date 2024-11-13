@@ -1,0 +1,95 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage click.\+parser}
+\hypertarget{namespaceclick_1_1parser}{}\label{namespaceclick_1_1parser}\index{click.parser@{click.parser}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classclick_1_1parser_1_1_argument}{Argument}}
+\item 
+class \mbox{\hyperlink{classclick_1_1parser_1_1_option}{Option}}
+\item 
+class \mbox{\hyperlink{classclick_1_1parser_1_1_option_parser}{Option\+Parser}}
+\item 
+class \mbox{\hyperlink{classclick_1_1parser_1_1_parsing_state}{Parsing\+State}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Tuple\mbox{[}t.\+Sequence\mbox{[}t.\+Union\mbox{[}str, t.\+Sequence\mbox{[}t.\+Optional\mbox{[}str\mbox{]}\mbox{]}, None\mbox{]}\mbox{]}, t.\+List\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{namespaceclick_1_1parser_a9207f9ea70c17f3cacc1b4ad8a07df6a}{\+\_\+unpack\+\_\+args}} (t.\+Sequence\mbox{[}str\mbox{]} args, t.\+Sequence\mbox{[}int\mbox{]} nargs\+\_\+spec)
+\item 
+\Hypertarget{namespaceclick_1_1parser_a71ad0d9007afe596d80c64aeabc58dcb}\label{namespaceclick_1_1parser_a71ad0d9007afe596d80c64aeabc58dcb} 
+t.\+Tuple\mbox{[}str, str\mbox{]} {\bfseries split\+\_\+opt} (str opt)
+\item 
+\Hypertarget{namespaceclick_1_1parser_a948374a4c60ccb4ea76019e62c45d0e2}\label{namespaceclick_1_1parser_a948374a4c60ccb4ea76019e62c45d0e2} 
+str {\bfseries normalize\+\_\+opt} (str opt, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx)
+\item 
+t.\+List\mbox{[}str\mbox{]} \mbox{\hyperlink{namespaceclick_1_1parser_aada2e94c785ae2efc64575b2b8d8f1fe}{split\+\_\+arg\+\_\+string}} (str string)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceclick_1_1parser_a80fa723c2001788743a52f8c0006f637}\label{namespaceclick_1_1parser_a80fa723c2001788743a52f8c0006f637} 
+{\bfseries V} = t.\+Type\+Var("{}V"{})
+\item 
+\Hypertarget{namespaceclick_1_1parser_a688c42eb2f6e5bf5b7938a6f5cb86bd5}\label{namespaceclick_1_1parser_a688c42eb2f6e5bf5b7938a6f5cb86bd5} 
+{\bfseries \+\_\+flag\+\_\+needs\+\_\+value} = object()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This module started out as largely a copy paste from the stdlib's
+optparse module with the features removed that we do not need from
+optparse because we implement them in Click on a higher level (for
+instance type handling, help formatting and a lot more).
+
+The plan is to remove more and more from here over time.
+
+The reason this is a different module and not optparse from the stdlib
+is that there are differences in 2.x and 3.x about the error messages
+generated and optparse in the stdlib uses gettext for no good reason
+and might cause us issues.
+
+Click uses parts of optparse written by Gregory P. Ward and maintained
+by the Python Software Foundation. This is limited to code in parser.py.
+
+Copyright 2001-2006 Gregory P. Ward. All rights reserved.
+Copyright 2002-2006 Python Software Foundation. All rights reserved.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespaceclick_1_1parser_a9207f9ea70c17f3cacc1b4ad8a07df6a}\index{click.parser@{click.parser}!\_unpack\_args@{\_unpack\_args}}
+\index{\_unpack\_args@{\_unpack\_args}!click.parser@{click.parser}}
+\doxysubsubsection{\texorpdfstring{\_unpack\_args()}{\_unpack\_args()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1parser_a9207f9ea70c17f3cacc1b4ad8a07df6a} 
+ t.\+Tuple\mbox{[}t.\+Sequence\mbox{[}t.\+Union\mbox{[}str, t.\+Sequence\mbox{[}t.\+Optional\mbox{[}str\mbox{]}\mbox{]}, None\mbox{]}\mbox{]}, t.\+List\mbox{[}str\mbox{]}\mbox{]} click.\+parser.\+\_\+unpack\+\_\+args (\begin{DoxyParamCaption}\item[{t.\+Sequence\mbox{[}str\mbox{]}}]{args}{, }\item[{t.\+Sequence\mbox{[}int\mbox{]} }]{nargs\+\_\+spec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Given an iterable of arguments and an iterable of nargs specifications,
+it returns a tuple with all the unpacked arguments at the first index
+and all remaining arguments as the second.
+
+The nargs specification is the number of arguments that should be consumed
+or `-1` to indicate that this position should eat up all the remainders.
+
+Missing items are filled with `None`.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1parser_aada2e94c785ae2efc64575b2b8d8f1fe}\index{click.parser@{click.parser}!split\_arg\_string@{split\_arg\_string}}
+\index{split\_arg\_string@{split\_arg\_string}!click.parser@{click.parser}}
+\doxysubsubsection{\texorpdfstring{split\_arg\_string()}{split\_arg\_string()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1parser_aada2e94c785ae2efc64575b2b8d8f1fe} 
+ t.\+List\mbox{[}str\mbox{]} click.\+parser.\+split\+\_\+arg\+\_\+string (\begin{DoxyParamCaption}\item[{str}]{string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split an argument string as with :func:`shlex.split`, but don't
+fail if the string is incomplete. Ignores a missing closing quote or
+incomplete escape sequence and uses the partial token as-is.
+
+.. code-block:: python
+
+    split_arg_string("example 'my file")
+    ["example", "my file"]
+
+    split_arg_string("example my\\")
+    ["example", "my"]
+
+:param string: String to split.
+\end{DoxyVerb}
+ 

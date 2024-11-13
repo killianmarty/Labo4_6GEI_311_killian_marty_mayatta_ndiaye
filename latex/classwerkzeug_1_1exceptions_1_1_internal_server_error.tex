@@ -1,0 +1,105 @@
+\doxysection{werkzeug.\+exceptions.\+Internal\+Server\+Error Class Reference}
+\hypertarget{classwerkzeug_1_1exceptions_1_1_internal_server_error}{}\label{classwerkzeug_1_1exceptions_1_1_internal_server_error}\index{werkzeug.exceptions.InternalServerError@{werkzeug.exceptions.InternalServerError}}
+Inheritance diagram for werkzeug.\+exceptions.\+Internal\+Server\+Error\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1exceptions_1_1_internal_server_error}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_internal_server_error_a9f258b616caa131132cb16c4114bdf4f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\mbox{[}str\mbox{]} description=None, t.\+Optional\mbox{[}"{}Response"{}\mbox{]} response=None, t.\+Optional\mbox{[}Base\+Exception\mbox{]} original\+\_\+exception=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798}{name}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aaeabc66be206d8416ce68dd45127459e}{get\+\_\+description}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2d4bdf6b9951d455d40c9f55ba28b41f}{get\+\_\+body}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_afbcf1071c68f1c81ba64b4e08b968893}{get\+\_\+headers}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+"{}Response"{} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0552eb47de6a896d4d242893198e23d2}{get\+\_\+response}} (self, t.\+Optional\mbox{[}t.\+Union\mbox{[}"{}WSGIEnvironment"{}, "{}WSGIRequest"{}\mbox{]}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+t.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aebdfbbad37e22021a48f9235e637d4ab}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_internal_server_error_a093b56e94d4effa803bb392857997a66}\label{classwerkzeug_1_1exceptions_1_1_internal_server_error_a093b56e94d4effa803bb392857997a66} 
+{\bfseries original\+\_\+exception} = original\+\_\+exception
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries response} = response
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_internal_server_error_a2be244461b9c70ef06808d79b7c8f98a}\label{classwerkzeug_1_1exceptions_1_1_internal_server_error_a2be244461b9c70ef06808d79b7c8f98a} 
+int {\bfseries code} = 500
+\item 
+tuple \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_internal_server_error_a34ad4b550985b57a6ce1745f2fe5864d}{description}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries code} = None
+\item 
+t {\bfseries description} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}*500* `Internal Server Error`
+
+Raise if an internal server error occurred.  This is a good fallback if an
+unknown error occurred in the dispatcher.
+
+.. versionchanged:: 1.0.0
+    Added the :attr:`original_exception` attribute.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_internal_server_error_a9f258b616caa131132cb16c4114bdf4f}\index{werkzeug.exceptions.InternalServerError@{werkzeug.exceptions.InternalServerError}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.exceptions.InternalServerError@{werkzeug.exceptions.InternalServerError}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_internal_server_error_a9f258b616caa131132cb16c4114bdf4f} 
+ None werkzeug.\+exceptions.\+Internal\+Server\+Error.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{description}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}"{}Response"{}\mbox{]} }]{response}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}Base\+Exception\mbox{]} }]{original\+\_\+exception}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_internal_server_error_a34ad4b550985b57a6ce1745f2fe5864d}\index{werkzeug.exceptions.InternalServerError@{werkzeug.exceptions.InternalServerError}!description@{description}}
+\index{description@{description}!werkzeug.exceptions.InternalServerError@{werkzeug.exceptions.InternalServerError}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_internal_server_error_a34ad4b550985b57a6ce1745f2fe5864d} 
+tuple werkzeug.\+exceptions.\+Internal\+Server\+Error.\+description\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}The\ server\ encountered\ an\ internal\ error\ and\ was\ unable\ to"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ complete\ your\ request.\ Either\ the\ server\ is\ overloaded\ or"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ there\ is\ an\ error\ in\ the\ application."{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/exceptions.\+py\end{DoxyCompactItemize}

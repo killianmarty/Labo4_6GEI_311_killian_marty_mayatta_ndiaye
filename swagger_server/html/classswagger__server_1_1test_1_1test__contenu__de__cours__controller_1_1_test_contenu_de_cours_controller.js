@@ -1,0 +1,9 @@
+var classswagger__server_1_1test_1_1test__contenu__de__cours__controller_1_1_test_contenu_de_cours_controller =
+[
+    [ "test_cours_id_dossier_delete", "classswagger__server_1_1test_1_1test__contenu__de__cours__controller_1_1_test_contenu_de_cours_controller.html#a9d90dbdb40cbeea907e316eb2c1c2466", null ],
+    [ "test_cours_id_dossier_get", "classswagger__server_1_1test_1_1test__contenu__de__cours__controller_1_1_test_contenu_de_cours_controller.html#a1e297b25b3e005a5cbfd96a87a2977d4", null ],
+    [ "test_cours_id_dossier_post", "classswagger__server_1_1test_1_1test__contenu__de__cours__controller_1_1_test_contenu_de_cours_controller.html#af123383d44be0eb017cc43237edf1335", null ],
+    [ "test_cours_id_fichier_delete", "classswagger__server_1_1test_1_1test__contenu__de__cours__controller_1_1_test_contenu_de_cours_controller.html#a21a314e0a3c7d495234c8c62a98765da", null ],
+    [ "test_cours_id_fichier_get", "classswagger__server_1_1test_1_1test__contenu__de__cours__controller_1_1_test_contenu_de_cours_controller.html#af14ff8682bb92f10aa52f77be4c74f41", null ],
+    [ "test_cours_id_fichier_post", "classswagger__server_1_1test_1_1test__contenu__de__cours__controller_1_1_test_contenu_de_cours_controller.html#a7fe989293dbf19b34c1f47154b227287", null ]
+];

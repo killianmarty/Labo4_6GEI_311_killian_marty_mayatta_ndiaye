@@ -1,0 +1,48 @@
+\doxysection{jsonschema.\+benchmarks.\+unused\+\_\+registry Namespace Reference}
+\hypertarget{namespacejsonschema_1_1benchmarks_1_1unused__registry}{}\label{namespacejsonschema_1_1benchmarks_1_1unused__registry}\index{jsonschema.benchmarks.unused\_registry@{jsonschema.benchmarks.unused\_registry}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1benchmarks_1_1unused__registry_aaca6edc0f8169b57daba42a66928c884}{registry}}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1unused__registry_a916d741cae93985a9fff6839b4e7df3d}\label{namespacejsonschema_1_1benchmarks_1_1unused__registry_a916d741cae93985a9fff6839b4e7df3d} 
+dict {\bfseries schema} = \{"{}\$ref"{}\+: "{}https\+://json-\/schema.\+org/draft/2019-\/09/schema"{}\}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1unused__registry_a13282e40c15db497fcbca9f2f708e737}\label{namespacejsonschema_1_1benchmarks_1_1unused__registry_a13282e40c15db497fcbca9f2f708e737} 
+dict {\bfseries instance} = \{"{}max\+Length"{}\+: 4\}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1unused__registry_aa304c89da4ab6fff007a1a7e3c11cb0b}\label{namespacejsonschema_1_1benchmarks_1_1unused__registry_aa304c89da4ab6fff007a1a7e3c11cb0b} 
+{\bfseries no\+\_\+registry} = Draft201909\+Validator(schema)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1unused__registry_aca243727e9ba909d19fc657d840e7dbd}\label{namespacejsonschema_1_1benchmarks_1_1unused__registry_aca243727e9ba909d19fc657d840e7dbd} 
+{\bfseries with\+\_\+useless\+\_\+registry} = Draft201909\+Validator(schema, registry=registry)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1unused__registry_a328c40ec4568d4455a09fd0e929f9aef}\label{namespacejsonschema_1_1benchmarks_1_1unused__registry_a328c40ec4568d4455a09fd0e929f9aef} 
+{\bfseries runner} = Runner()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An unused schema registry should not cause slower validation.
+
+"Unused" here means one where no reference resolution is occurring anyhow.
+
+See https://github.com/python-jsonschema/jsonschema/issues/1088.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1unused__registry_aaca6edc0f8169b57daba42a66928c884}\index{jsonschema.benchmarks.unused\_registry@{jsonschema.benchmarks.unused\_registry}!registry@{registry}}
+\index{registry@{registry}!jsonschema.benchmarks.unused\_registry@{jsonschema.benchmarks.unused\_registry}}
+\doxysubsubsection{\texorpdfstring{registry}{registry}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1benchmarks_1_1unused__registry_aaca6edc0f8169b57daba42a66928c884} 
+jsonschema.\+benchmarks.\+unused\+\_\+registry.\+registry}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ Registry().with\_resource(}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}urn:example:foo"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ DRAFT201909.create\_resource(\{\}),}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}

@@ -1,0 +1,651 @@
+\doxysection{werkzeug.\+sansio.\+request.\+Request Class Reference}
+\hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request}{}\label{classwerkzeug_1_1sansio_1_1request_1_1_request}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_af11f156695e47bcb6695e33488362394}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_af11f156695e47bcb6695e33488362394} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str method, str scheme, t.\+Optional\mbox{[}t.\+Tuple\mbox{[}str, t.\+Optional\mbox{[}int\mbox{]}\mbox{]}\mbox{]} server, str root\+\_\+path, str path, bytes query\+\_\+string, \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_headers}{Headers}} headers, t.\+Optional\mbox{[}str\mbox{]} remote\+\_\+addr)
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ae64cfcee3197332491b95bd69ea44b75}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_ae64cfcee3197332491b95bd69ea44b75} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a6bf905934e7c3cd3306029ac5889e28d}{url\+\_\+charset}} (self)
+\item 
+"{}Multi\+Dict\mbox{[}str, str\mbox{]}"{} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_aa5bae084db19a558a82e51f1986336e1}{args}} (self)
+\item 
+t.\+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a0ac52e0cba49567e99556d3d52bded50}{access\+\_\+route}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_ae70af659123a8ed3579bee72e0c492bb}{full\+\_\+path}} (self)
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a0b0423a9dd965572ff4ee13d6b4660ed}{is\+\_\+secure}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a08c33c96303cc4620a7fbde424653eae}{url}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_ab4ecf1c7814e61ad6218b835cc00fd31}{base\+\_\+url}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_ac885be04fc22dc057d7498b48032cc35}{root\+\_\+url}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_aa60ee96495c1a95235cc41ba55386174}{host\+\_\+url}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a22910f5e01a918f117133a5a374d53c7}{host}} (self)
+\item 
+"{}Immutable\+Multi\+Dict\mbox{[}str, str\mbox{]}"{} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_aa54e2c2fe7292d5b31ffc9e129e0af63}{cookies}} (self)
+\item 
+t.\+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_ad981dda3fe38186d1b120df6f74ccfb5}{content\+\_\+length}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_ad447efab19039eeae2657ea086030ca5}{mimetype}} (self)
+\item 
+t.\+Dict\mbox{[}str, str\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a4637d67d221936b49a8cc24d03402780}{mimetype\+\_\+params}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_header_set}{Header\+Set}} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a16fbc4bbec96dbbab6780b1f6a8e35e4}{pragma}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_m_i_m_e_accept}{MIMEAccept}} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_accc361fe07633c892934fd39eefc4227}{accept\+\_\+mimetypes}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_charset_accept}{Charset\+Accept}} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a31eb204c8b4a5206ab80dbd2527de1ce}{accept\+\_\+charsets}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_accept}{Accept}} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a0f8da1d327430e3ae385010bb2f1dc48}{accept\+\_\+encodings}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_language_accept}{Language\+Accept}} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_abb8278a874978047fd177844895a0a0c}{accept\+\_\+languages}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_request_cache_control}{Request\+Cache\+Control}} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a1d0dca082eb35361f15da685ea9afcd5}{cache\+\_\+control}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_e_tags}{ETags}} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_aa74a4b5446f5f267deda45a1196486e4}{if\+\_\+match}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_e_tags}{ETags}} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a7abbda08657135653cd41cbd56910d48}{if\+\_\+none\+\_\+match}} (self)
+\item 
+t.\+Optional\mbox{[}datetime\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a67b8654c948f67ce318854af7d4a9c4c}{if\+\_\+modified\+\_\+since}} (self)
+\item 
+t.\+Optional\mbox{[}datetime\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_aa507d0cbd416d6ccad66dccf0d545b8e}{if\+\_\+unmodified\+\_\+since}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_if_range}{If\+Range}} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a6b1cdf199b378948e6e75bccc14b58e4}{if\+\_\+range}} (self)
+\item 
+t.\+Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_range}{Range}}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a409edc9965edd118d6d6ce86914473ef}{range}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent}{User\+Agent}} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a133916a3963fb4864004d7cb224ffcad}{user\+\_\+agent}} (self)
+\item 
+t.\+Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization}{Authorization}}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a91813347fb0fa33bef09c1241d96596b}{authorization}} (self)
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a3f345f93a0b364f67280ae74a342fcee}{is\+\_\+json}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_aab5c55105b4f3887f37a0beb8d4fb588}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_aab5c55105b4f3887f37a0beb8d4fb588} 
+{\bfseries method} = method.\+upper()
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a2ae8989ed9e5da7efa6e5475b04f51ac}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a2ae8989ed9e5da7efa6e5475b04f51ac} 
+{\bfseries scheme} = scheme
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a883d3daa7498f0084c41d112c369ba44}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a883d3daa7498f0084c41d112c369ba44} 
+{\bfseries server} = server
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a649e87bbd162ffed4907a0f83e13b63e}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a649e87bbd162ffed4907a0f83e13b63e} 
+{\bfseries root\+\_\+path} = root\+\_\+path.\+rstrip("{}/"{})
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a00890ee3048875036ab34c25015222b7}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a00890ee3048875036ab34c25015222b7} 
+str {\bfseries path} = "{}/"{} + path.\+lstrip("{}/"{})
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a40f3ea8e0bec594020c8818c4823fdb1}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a40f3ea8e0bec594020c8818c4823fdb1} 
+{\bfseries query\+\_\+string} = query\+\_\+string
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a5ec6f0f741b32460f7ebc57e32d5a09e}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a5ec6f0f741b32460f7ebc57e32d5a09e} 
+{\bfseries headers} = headers
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ac6cc40d3e53a5c9578958d6684321791}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_ac6cc40d3e53a5c9578958d6684321791} 
+{\bfseries remote\+\_\+addr} = remote\+\_\+addr
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a92ede55be83df0fd097359d82cd0ee81}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a92ede55be83df0fd097359d82cd0ee81} 
+{\bfseries url\+\_\+charset}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ae5f2560d18c6abee9c5812cf7749c27c}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_ae5f2560d18c6abee9c5812cf7749c27c} 
+{\bfseries host}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a0cca8b72b1d40a41cd19dfcd731405de}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a0cca8b72b1d40a41cd19dfcd731405de} 
+str {\bfseries charset} = "{}utf-\/8"{}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ad7ba3df6e1af971ba3fb61810bea5e5a}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_ad7ba3df6e1af971ba3fb61810bea5e5a} 
+str {\bfseries encoding\+\_\+errors} = "{}replace"{}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a30b99a19c40671a7f88734c52cf0b3c6}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a30b99a19c40671a7f88734c52cf0b3c6} 
+t {\bfseries parameter\+\_\+storage\+\_\+class} = \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict}{Immutable\+Multi\+Dict}}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a3cabf66563b7d22fd9e030376900555d}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a3cabf66563b7d22fd9e030376900555d} 
+t {\bfseries dict\+\_\+storage\+\_\+class} = \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict}{Immutable\+Multi\+Dict}}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a237e27bbecd7a34d520b46a008a851c9}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a237e27bbecd7a34d520b46a008a851c9} 
+t {\bfseries list\+\_\+storage\+\_\+class} = \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_list}{Immutable\+List}}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a7211223b173990c6199fab5d1053f07d}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a7211223b173990c6199fab5d1053f07d} 
+t {\bfseries user\+\_\+agent\+\_\+class} = \mbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent}{User\+Agent}}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ab506ef7741b833e85e1ff2f674fc7cb8}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_ab506ef7741b833e85e1ff2f674fc7cb8} 
+t {\bfseries trusted\+\_\+hosts} = None
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_ae6212ef81d673b3f05061557386e3441}{content\+\_\+type}}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a8f19dd69ad1c473fa1878d1a86be5646}{content\+\_\+encoding}}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a594c76762b23be748f49307d227a65d7}{content\+\_\+md5}}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_ae08522b30e09238c467c963125bc378b}{referrer}}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_adc59d3dc3bc4f72596638ff866901544}{date}}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a34b0eb0c08307b28a5a3073c9ca87d3b}{max\+\_\+forwards}}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a0577573487aee76003c677c513784edf}{origin}}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a1cdb69677ac53a9988b380f950c9c510}{access\+\_\+control\+\_\+request\+\_\+headers}}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a10f98a2a9e99b6e3982c650d696bc6d4}{access\+\_\+control\+\_\+request\+\_\+method}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a35f924da2ae66d793878dc1244cb3936}\label{classwerkzeug_1_1sansio_1_1request_1_1_request_a35f924da2ae66d793878dc1244cb3936} 
+None {\bfseries \+\_\+parse\+\_\+content\+\_\+type} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request_a0134354420724af60d8e7c8dad43e66c}{\+\_\+parsed\+\_\+content\+\_\+type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents the non-IO parts of a HTTP request, including the
+method, URL info, and headers.
+
+This class is not meant for general use. It should only be used when
+implementing WSGI, ASGI, or another HTTP application spec. Werkzeug
+provides a WSGI implementation at :cls:`werkzeug.wrappers.Request`.
+
+:param method: The method the request was made with, such as
+    ``GET``.
+:param scheme: The URL scheme of the protocol the request used, such
+    as ``https`` or ``wss``.
+:param server: The address of the server. ``(host, port)``,
+    ``(path, None)`` for unix sockets, or ``None`` if not known.
+:param root_path: The prefix that the application is mounted under.
+    This is prepended to generated URLs, but is not part of route
+    matching.
+:param path: The path part of the URL after ``root_path``.
+:param query_string: The part of the URL after the "?".
+:param headers: The headers received with the request.
+:param remote_addr: The address of the client sending the request.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a31eb204c8b4a5206ab80dbd2527de1ce}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!accept\_charsets@{accept\_charsets}}
+\index{accept\_charsets@{accept\_charsets}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{accept\_charsets()}{accept\_charsets()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a31eb204c8b4a5206ab80dbd2527de1ce} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_charset_accept}{Charset\+Accept}} werkzeug.\+sansio.\+request.\+Request.\+accept\+\_\+charsets (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List of charsets this client supports as
+:class:`~werkzeug.datastructures.CharsetAccept` object.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a0f8da1d327430e3ae385010bb2f1dc48}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!accept\_encodings@{accept\_encodings}}
+\index{accept\_encodings@{accept\_encodings}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{accept\_encodings()}{accept\_encodings()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a0f8da1d327430e3ae385010bb2f1dc48} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_accept}{Accept}} werkzeug.\+sansio.\+request.\+Request.\+accept\+\_\+encodings (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List of encodings this client accepts.  Encodings in a HTTP term
+are compression encodings such as gzip.  For charsets have a look at
+:attr:`accept_charset`.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_abb8278a874978047fd177844895a0a0c}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!accept\_languages@{accept\_languages}}
+\index{accept\_languages@{accept\_languages}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{accept\_languages()}{accept\_languages()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_abb8278a874978047fd177844895a0a0c} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_language_accept}{Language\+Accept}} werkzeug.\+sansio.\+request.\+Request.\+accept\+\_\+languages (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List of languages this client accepts as
+:class:`~werkzeug.datastructures.LanguageAccept` object.
+
+.. versionchanged 0.5
+   In previous versions this was a regular
+   :class:`~werkzeug.datastructures.Accept` object.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_accc361fe07633c892934fd39eefc4227}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!accept\_mimetypes@{accept\_mimetypes}}
+\index{accept\_mimetypes@{accept\_mimetypes}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{accept\_mimetypes()}{accept\_mimetypes()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_accc361fe07633c892934fd39eefc4227} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_m_i_m_e_accept}{MIMEAccept}} werkzeug.\+sansio.\+request.\+Request.\+accept\+\_\+mimetypes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List of mimetypes this client supports as
+:class:`~werkzeug.datastructures.MIMEAccept` object.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a0ac52e0cba49567e99556d3d52bded50}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!access\_route@{access\_route}}
+\index{access\_route@{access\_route}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{access\_route()}{access\_route()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a0ac52e0cba49567e99556d3d52bded50} 
+ t.\+List\mbox{[}str\mbox{]} werkzeug.\+sansio.\+request.\+Request.\+access\+\_\+route (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If a forwarded header exists this is a list of all ip addresses
+from the client ip to the last proxy server.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_aa5bae084db19a558a82e51f1986336e1}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!args@{args}}
+\index{args@{args}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{args()}{args()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_aa5bae084db19a558a82e51f1986336e1} 
+ "{}Multi\+Dict\mbox{[}str, str\mbox{]}"{} werkzeug.\+sansio.\+request.\+Request.\+args (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The parsed URL parameters (the part in the URL after the question
+mark).
+
+By default an
+:class:`~werkzeug.datastructures.ImmutableMultiDict`
+is returned from this function.  This can be changed by setting
+:attr:`parameter_storage_class` to a different type.  This might
+be necessary if the order of the form data is important.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a91813347fb0fa33bef09c1241d96596b}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!authorization@{authorization}}
+\index{authorization@{authorization}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{authorization()}{authorization()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a91813347fb0fa33bef09c1241d96596b} 
+ t.\+Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization}{Authorization}}\mbox{]} werkzeug.\+sansio.\+request.\+Request.\+authorization (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The `Authorization` object in parsed form.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ab4ecf1c7814e61ad6218b835cc00fd31}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!base\_url@{base\_url}}
+\index{base\_url@{base\_url}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{base\_url()}{base\_url()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_ab4ecf1c7814e61ad6218b835cc00fd31} 
+ str werkzeug.\+sansio.\+request.\+Request.\+base\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :attr:`url` but without the query string.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a1d0dca082eb35361f15da685ea9afcd5}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!cache\_control@{cache\_control}}
+\index{cache\_control@{cache\_control}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{cache\_control()}{cache\_control()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a1d0dca082eb35361f15da685ea9afcd5} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_request_cache_control}{Request\+Cache\+Control}} werkzeug.\+sansio.\+request.\+Request.\+cache\+\_\+control (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A :class:`~werkzeug.datastructures.RequestCacheControl` object
+for the incoming cache control headers.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ad981dda3fe38186d1b120df6f74ccfb5}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!content\_length@{content\_length}}
+\index{content\_length@{content\_length}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{content\_length()}{content\_length()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_ad981dda3fe38186d1b120df6f74ccfb5} 
+ t.\+Optional\mbox{[}int\mbox{]} werkzeug.\+sansio.\+request.\+Request.\+content\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Content-Length entity-header field indicates the size of the
+entity-body in bytes or, in the case of the HEAD method, the size of
+the entity-body that would have been sent had the request been a
+GET.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_aa54e2c2fe7292d5b31ffc9e129e0af63}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!cookies@{cookies}}
+\index{cookies@{cookies}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{cookies()}{cookies()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_aa54e2c2fe7292d5b31ffc9e129e0af63} 
+ "{}Immutable\+Multi\+Dict\mbox{[}str, str\mbox{]}"{} werkzeug.\+sansio.\+request.\+Request.\+cookies (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A :class:`dict` with the contents of all cookies transmitted with
+the request.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ae70af659123a8ed3579bee72e0c492bb}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!full\_path@{full\_path}}
+\index{full\_path@{full\_path}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{full\_path()}{full\_path()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_ae70af659123a8ed3579bee72e0c492bb} 
+ str werkzeug.\+sansio.\+request.\+Request.\+full\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Requested path, including the query string.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a22910f5e01a918f117133a5a374d53c7}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!host@{host}}
+\index{host@{host}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{host()}{host()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a22910f5e01a918f117133a5a374d53c7} 
+ str werkzeug.\+sansio.\+request.\+Request.\+host (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The host name the request was made to, including the port if
+it's non-standard. Validated with :attr:`trusted_hosts`.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_aa60ee96495c1a95235cc41ba55386174}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!host\_url@{host\_url}}
+\index{host\_url@{host\_url}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{host\_url()}{host\_url()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_aa60ee96495c1a95235cc41ba55386174} 
+ str werkzeug.\+sansio.\+request.\+Request.\+host\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The request URL scheme and host only.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_aa74a4b5446f5f267deda45a1196486e4}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!if\_match@{if\_match}}
+\index{if\_match@{if\_match}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{if\_match()}{if\_match()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_aa74a4b5446f5f267deda45a1196486e4} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_e_tags}{ETags}} werkzeug.\+sansio.\+request.\+Request.\+if\+\_\+match (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}An object containing all the etags in the `If-Match` header.
+
+:rtype: :class:`~werkzeug.datastructures.ETags`
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a67b8654c948f67ce318854af7d4a9c4c}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!if\_modified\_since@{if\_modified\_since}}
+\index{if\_modified\_since@{if\_modified\_since}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{if\_modified\_since()}{if\_modified\_since()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a67b8654c948f67ce318854af7d4a9c4c} 
+ t.\+Optional\mbox{[}datetime\mbox{]} werkzeug.\+sansio.\+request.\+Request.\+if\+\_\+modified\+\_\+since (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The parsed `If-Modified-Since` header as a datetime object.
+
+.. versionchanged:: 2.0
+    The datetime object is timezone-aware.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a7abbda08657135653cd41cbd56910d48}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!if\_none\_match@{if\_none\_match}}
+\index{if\_none\_match@{if\_none\_match}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{if\_none\_match()}{if\_none\_match()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a7abbda08657135653cd41cbd56910d48} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_e_tags}{ETags}} werkzeug.\+sansio.\+request.\+Request.\+if\+\_\+none\+\_\+match (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}An object containing all the etags in the `If-None-Match` header.
+
+:rtype: :class:`~werkzeug.datastructures.ETags`
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a6b1cdf199b378948e6e75bccc14b58e4}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!if\_range@{if\_range}}
+\index{if\_range@{if\_range}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{if\_range()}{if\_range()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a6b1cdf199b378948e6e75bccc14b58e4} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_if_range}{If\+Range}} werkzeug.\+sansio.\+request.\+Request.\+if\+\_\+range (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The parsed ``If-Range`` header.
+
+.. versionchanged:: 2.0
+    ``IfRange.date`` is timezone-aware.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_aa507d0cbd416d6ccad66dccf0d545b8e}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!if\_unmodified\_since@{if\_unmodified\_since}}
+\index{if\_unmodified\_since@{if\_unmodified\_since}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{if\_unmodified\_since()}{if\_unmodified\_since()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_aa507d0cbd416d6ccad66dccf0d545b8e} 
+ t.\+Optional\mbox{[}datetime\mbox{]} werkzeug.\+sansio.\+request.\+Request.\+if\+\_\+unmodified\+\_\+since (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The parsed `If-Unmodified-Since` header as a datetime object.
+
+.. versionchanged:: 2.0
+    The datetime object is timezone-aware.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a3f345f93a0b364f67280ae74a342fcee}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!is\_json@{is\_json}}
+\index{is\_json@{is\_json}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{is\_json()}{is\_json()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a3f345f93a0b364f67280ae74a342fcee} 
+ bool werkzeug.\+sansio.\+request.\+Request.\+is\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the mimetype indicates JSON data, either
+:mimetype:`application/json` or :mimetype:`application/*+json`.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a0b0423a9dd965572ff4ee13d6b4660ed}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!is\_secure@{is\_secure}}
+\index{is\_secure@{is\_secure}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{is\_secure()}{is\_secure()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a0b0423a9dd965572ff4ee13d6b4660ed} 
+ bool werkzeug.\+sansio.\+request.\+Request.\+is\+\_\+secure (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}``True`` if the request was made with a secure protocol
+(HTTPS or WSS).
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ad447efab19039eeae2657ea086030ca5}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!mimetype@{mimetype}}
+\index{mimetype@{mimetype}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{mimetype()}{mimetype()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_ad447efab19039eeae2657ea086030ca5} 
+ str werkzeug.\+sansio.\+request.\+Request.\+mimetype (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :attr:`content_type`, but without parameters (eg, without
+charset, type etc.) and always lowercase.  For example if the content
+type is ``text/HTML; charset=utf-8`` the mimetype would be
+``'text/html'``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a4637d67d221936b49a8cc24d03402780}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!mimetype\_params@{mimetype\_params}}
+\index{mimetype\_params@{mimetype\_params}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{mimetype\_params()}{mimetype\_params()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a4637d67d221936b49a8cc24d03402780} 
+ t.\+Dict\mbox{[}str, str\mbox{]} werkzeug.\+sansio.\+request.\+Request.\+mimetype\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The mimetype parameters as dict.  For example if the content
+type is ``text/html; charset=utf-8`` the params would be
+``{'charset': 'utf-8'}``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a16fbc4bbec96dbbab6780b1f6a8e35e4}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!pragma@{pragma}}
+\index{pragma@{pragma}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{pragma()}{pragma()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a16fbc4bbec96dbbab6780b1f6a8e35e4} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_header_set}{Header\+Set}} werkzeug.\+sansio.\+request.\+Request.\+pragma (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Pragma general-header field is used to include
+implementation-specific directives that might apply to any recipient
+along the request/response chain.  All pragma directives specify
+optional behavior from the viewpoint of the protocol; however, some
+systems MAY require that behavior be consistent with the directives.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a409edc9965edd118d6d6ce86914473ef}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!range@{range}}
+\index{range@{range}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a409edc9965edd118d6d6ce86914473ef} 
+ t.\+Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_range}{Range}}\mbox{]} werkzeug.\+sansio.\+request.\+Request.\+range (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The parsed `Range` header.
+
+.. versionadded:: 0.7
+
+:rtype: :class:`~werkzeug.datastructures.Range`
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ac885be04fc22dc057d7498b48032cc35}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!root\_url@{root\_url}}
+\index{root\_url@{root\_url}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{root\_url()}{root\_url()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_ac885be04fc22dc057d7498b48032cc35} 
+ str werkzeug.\+sansio.\+request.\+Request.\+root\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The request URL scheme, host, and root path. This is the root
+that the application is accessed from.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a08c33c96303cc4620a7fbde424653eae}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!url@{url}}
+\index{url@{url}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a08c33c96303cc4620a7fbde424653eae} 
+ str werkzeug.\+sansio.\+request.\+Request.\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The full request URL with the scheme, host, root path, path,
+and query string.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a6bf905934e7c3cd3306029ac5889e28d}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!url\_charset@{url\_charset}}
+\index{url\_charset@{url\_charset}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{url\_charset()}{url\_charset()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a6bf905934e7c3cd3306029ac5889e28d} 
+ str werkzeug.\+sansio.\+request.\+Request.\+url\+\_\+charset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The charset that is assumed for URLs. Defaults to the value
+of :attr:`charset`.
+
+.. versionadded:: 0.6
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a133916a3963fb4864004d7cb224ffcad}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!user\_agent@{user\_agent}}
+\index{user\_agent@{user\_agent}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{user\_agent()}{user\_agent()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a133916a3963fb4864004d7cb224ffcad} 
+ \mbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent}{User\+Agent}} werkzeug.\+sansio.\+request.\+Request.\+user\+\_\+agent (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The user agent. Use ``user_agent.string`` to get the header
+value. Set :attr:`user_agent_class` to a subclass of
+:class:`~werkzeug.user_agent.UserAgent` to provide parsing for
+the other properties or other extended data.
+
+.. versionchanged:: 2.0
+    The built in parser is deprecated and will be removed in
+    Werkzeug 2.1. A ``UserAgent`` subclass must be set to parse
+    data from the string.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a0134354420724af60d8e7c8dad43e66c}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!\_parsed\_content\_type@{\_parsed\_content\_type}}
+\index{\_parsed\_content\_type@{\_parsed\_content\_type}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{\_parsed\_content\_type}{\_parsed\_content\_type}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a0134354420724af60d8e7c8dad43e66c} 
+werkzeug.\+sansio.\+request.\+Request.\+\_\+parsed\+\_\+content\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ parse\_options\_header(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.headers.get(\textcolor{stringliteral}{"{}Content-\/Type"{}},\ \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a1cdb69677ac53a9988b380f950c9c510}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!access\_control\_request\_headers@{access\_control\_request\_headers}}
+\index{access\_control\_request\_headers@{access\_control\_request\_headers}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{access\_control\_request\_headers}{access\_control\_request\_headers}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a1cdb69677ac53a9988b380f950c9c510} 
+werkzeug.\+sansio.\+request.\+Request.\+access\+\_\+control\+\_\+request\+\_\+headers\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Access-\/Control-\/Request-\/Headers"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ load\_func=parse\_set\_header,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Sent\ with\ a\ preflight\ request\ to\ indicate\ which\ headers"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ will\ be\ sent\ with\ the\ cross\ origin\ request.\ Set"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ :attr:`\string~CORSResponseMixin.access\_control\_allow\_headers`"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ on\ the\ response\ to\ indicate\ which\ headers\ are\ allowed."{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ read\_only=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a10f98a2a9e99b6e3982c650d696bc6d4}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!access\_control\_request\_method@{access\_control\_request\_method}}
+\index{access\_control\_request\_method@{access\_control\_request\_method}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{access\_control\_request\_method}{access\_control\_request\_method}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a10f98a2a9e99b6e3982c650d696bc6d4} 
+werkzeug.\+sansio.\+request.\+Request.\+access\+\_\+control\+\_\+request\+\_\+method\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Access-\/Control-\/Request-\/Method"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Sent\ with\ a\ preflight\ request\ to\ indicate\ which\ method"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ will\ be\ used\ for\ the\ cross\ origin\ request.\ Set"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ :attr:`\string~CORSResponseMixin.access\_control\_allow\_methods`"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ on\ the\ response\ to\ indicate\ which\ methods\ are\ allowed."{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ read\_only=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a8f19dd69ad1c473fa1878d1a86be5646}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!content\_encoding@{content\_encoding}}
+\index{content\_encoding@{content\_encoding}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{content\_encoding}{content\_encoding}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a8f19dd69ad1c473fa1878d1a86be5646} 
+werkzeug.\+sansio.\+request.\+Request.\+content\+\_\+encoding\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Content-\/Encoding"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ read\_only=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a594c76762b23be748f49307d227a65d7}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!content\_md5@{content\_md5}}
+\index{content\_md5@{content\_md5}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{content\_md5}{content\_md5}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a594c76762b23be748f49307d227a65d7} 
+werkzeug.\+sansio.\+request.\+Request.\+content\+\_\+md5\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Content-\/MD5"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ read\_only=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ae6212ef81d673b3f05061557386e3441}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!content\_type@{content\_type}}
+\index{content\_type@{content\_type}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{content\_type}{content\_type}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_ae6212ef81d673b3f05061557386e3441} 
+werkzeug.\+sansio.\+request.\+Request.\+content\+\_\+type\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Content-\/Type"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ read\_only=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_adc59d3dc3bc4f72596638ff866901544}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!date@{date}}
+\index{date@{date}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_adc59d3dc3bc4f72596638ff866901544} 
+werkzeug.\+sansio.\+request.\+Request.\+date\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Date"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ parse\_date,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ read\_only=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a34b0eb0c08307b28a5a3073c9ca87d3b}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!max\_forwards@{max\_forwards}}
+\index{max\_forwards@{max\_forwards}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{max\_forwards}{max\_forwards}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a34b0eb0c08307b28a5a3073c9ca87d3b} 
+werkzeug.\+sansio.\+request.\+Request.\+max\+\_\+forwards\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Max-\/Forwards"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ int,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ read\_only=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_a0577573487aee76003c677c513784edf}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!origin@{origin}}
+\index{origin@{origin}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{origin}{origin}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_a0577573487aee76003c677c513784edf} 
+werkzeug.\+sansio.\+request.\+Request.\+origin\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Origin"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}The\ host\ that\ the\ request\ originated\ from.\ Set"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ :attr:`\string~CORSResponseMixin.access\_control\_allow\_origin`\ on"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ the\ response\ to\ indicate\ which\ origins\ are\ allowed."{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ read\_only=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1request_1_1_request_ae08522b30e09238c467c963125bc378b}\index{werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}!referrer@{referrer}}
+\index{referrer@{referrer}!werkzeug.sansio.request.Request@{werkzeug.sansio.request.Request}}
+\doxysubsubsection{\texorpdfstring{referrer}{referrer}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1request_1_1_request_ae08522b30e09238c467c963125bc378b} 
+werkzeug.\+sansio.\+request.\+Request.\+referrer\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Referer"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ read\_only=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/sansio/request.\+py\end{DoxyCompactItemize}

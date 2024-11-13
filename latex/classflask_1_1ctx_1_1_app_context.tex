@@ -1,0 +1,66 @@
+\doxysection{flask.\+ctx.\+App\+Context Class Reference}
+\hypertarget{classflask_1_1ctx_1_1_app_context}{}\label{classflask_1_1ctx_1_1_app_context}\index{flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_app_context_adf602f298b97c4b86c2be11a632a5804}\label{classflask_1_1ctx_1_1_app_context_adf602f298b97c4b86c2be11a632a5804} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, "{}Flask"{} app)
+\item 
+None \mbox{\hyperlink{classflask_1_1ctx_1_1_app_context_a3d9f3a670d23bcf8bfee33a236a1a5de}{push}} (self)
+\item 
+None \mbox{\hyperlink{classflask_1_1ctx_1_1_app_context_af0700caf3957b3d6ea0801c31b3362f0}{pop}} (self, t.\+Optional\mbox{[}Base\+Exception\mbox{]} exc=\+\_\+sentinel)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_app_context_a2b43c10d785a2fcd412fdfb299a7a0fa}\label{classflask_1_1ctx_1_1_app_context_a2b43c10d785a2fcd412fdfb299a7a0fa} 
+"{}App\+Context"{} {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_app_context_aea8fb7df6715d81674517c6506840628}\label{classflask_1_1ctx_1_1_app_context_aea8fb7df6715d81674517c6506840628} 
+None {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}type\mbox{]} exc\+\_\+type, t.\+Optional\mbox{[}Base\+Exception\mbox{]} exc\+\_\+value, t.\+Optional\mbox{[}Traceback\+Type\mbox{]} tb)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_app_context_afedfea382f969e70e105c8467bf4f4fb}\label{classflask_1_1ctx_1_1_app_context_afedfea382f969e70e105c8467bf4f4fb} 
+{\bfseries app} = app
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_app_context_acbd57b3c4dc26ae8c471d67b9c127051}\label{classflask_1_1ctx_1_1_app_context_acbd57b3c4dc26ae8c471d67b9c127051} 
+{\bfseries url\+\_\+adapter} = app.\+create\+\_\+url\+\_\+adapter(None)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_app_context_a707cd1dfc38976e579425a5cf501b00c}\label{classflask_1_1ctx_1_1_app_context_a707cd1dfc38976e579425a5cf501b00c} 
+\mbox{\hyperlink{classflask_1_1ctx_1_1___app_ctx_globals}{\+\_\+\+App\+Ctx\+Globals}} {\bfseries g} = app.\+app\+\_\+ctx\+\_\+globals\+\_\+class()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_app_context_a3d9fd977a913f6e94909e0280240105a}\label{classflask_1_1ctx_1_1_app_context_a3d9fd977a913f6e94909e0280240105a} 
+list {\bfseries \+\_\+cv\+\_\+tokens} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The app context contains application-specific information. An app
+context is created and pushed at the beginning of each request if
+one is not already active. An app context is also pushed when
+running CLI commands.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1ctx_1_1_app_context_af0700caf3957b3d6ea0801c31b3362f0}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!pop@{pop}}
+\index{pop@{pop}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_af0700caf3957b3d6ea0801c31b3362f0} 
+ None flask.\+ctx.\+App\+Context.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}Base\+Exception\mbox{]} }]{exc}{ = {\ttfamily \+\_\+sentinel}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pops the app context.\end{DoxyVerb}
+ \Hypertarget{classflask_1_1ctx_1_1_app_context_a3d9f3a670d23bcf8bfee33a236a1a5de}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!push@{push}}
+\index{push@{push}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_a3d9f3a670d23bcf8bfee33a236a1a5de} 
+ None flask.\+ctx.\+App\+Context.\+push (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Binds the app context to the current context.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/ctx.\+py\end{DoxyCompactItemize}

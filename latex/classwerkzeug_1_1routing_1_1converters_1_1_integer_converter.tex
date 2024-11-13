@@ -1,0 +1,94 @@
+\doxysection{werkzeug.\+routing.\+converters.\+Integer\+Converter Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_integer_converter}{}\label{classwerkzeug_1_1routing_1_1converters_1_1_integer_converter}\index{werkzeug.routing.converters.IntegerConverter@{werkzeug.routing.converters.IntegerConverter}}
+Inheritance diagram for werkzeug.\+routing.\+converters.\+Integer\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1routing_1_1converters_1_1_integer_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_integer_converter_a334f8b83c7942379abab98b59c68ac84}\label{classwerkzeug_1_1routing_1_1converters_1_1_integer_converter_a334f8b83c7942379abab98b59c68ac84} 
+str {\bfseries regex} = r"{}\textbackslash{}d+"{}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_integer_converter_ac3801dfbd9fcb11d5e71a2f8ca68598a}\label{classwerkzeug_1_1routing_1_1converters_1_1_integer_converter_ac3801dfbd9fcb11d5e71a2f8ca68598a} 
+bool {\bfseries part\+\_\+isolating} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter}{werkzeug.\+routing.\+converters.\+Number\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries weight} = 50
+\item 
+t {\bfseries num\+\_\+convert} = int
+\item 
+bool {\bfseries part\+\_\+isolating} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries regex} = "{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}/\mbox{]}+"{}
+\item 
+int {\bfseries weight} = 100
+\item 
+bool {\bfseries part\+\_\+isolating} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter}{werkzeug.\+routing.\+converters.\+Number\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter_a6f3cf808741df68e4b62450cca7072fb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}Map"{} map, int fixed\+\_\+digits=0, t.\+Optional\mbox{[}int\mbox{]} min=None, t.\+Optional\mbox{[}int\mbox{]} max=None, bool signed=False)
+\item 
+t.\+Any \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter_af6ba712c18b9cca9382e69301ffdda1c}{to\+\_\+python}} (self, str value)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter_a3b52ae74cc050d55eed8db418dbff89c}{to\+\_\+url}} (self, t.\+Any value)
+\item 
+str {\bfseries signed\+\_\+regex} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter}{werkzeug.\+routing.\+converters.\+Number\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries regex} = self.\+signed\+\_\+regex
+\item 
+{\bfseries fixed\+\_\+digits} = fixed\+\_\+digits
+\item 
+{\bfseries min} = min
+\item 
+{\bfseries max} = max
+\item 
+{\bfseries signed} = signed
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries map} = map
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This converter only accepts integer values::
+
+    Rule("/page/<int:page>")
+
+By default it only accepts unsigned, positive values. The ``signed``
+parameter will enable signed, negative values. ::
+
+    Rule("/page/<int(signed=True):page>")
+
+:param map: The :class:`Map`.
+:param fixed_digits: The number of fixed digits in the URL. If you
+    set this to ``4`` for example, the rule will only match if the
+    URL looks like ``/0001/``. The default is variable length.
+:param min: The minimal value.
+:param max: The maximal value.
+:param signed: Allow signed (negative) values.
+
+.. versionadded:: 0.15
+    The ``signed`` parameter.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/routing/converters.\+py\end{DoxyCompactItemize}

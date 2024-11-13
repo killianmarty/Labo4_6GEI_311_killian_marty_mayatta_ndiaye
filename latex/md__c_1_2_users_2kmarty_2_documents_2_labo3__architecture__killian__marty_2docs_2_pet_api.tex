@@ -1,0 +1,341 @@
+\chapter{swagger\+\_\+client.\+Pet\+Api}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api}{}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api}\index{swagger\_client.PetApi@{swagger\_client.PetApi}}
+\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md70}%
+\Hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md70}%
+
+
+All URIs are relative to {\itshape \href{https://petstore.swagger.io/v2}{\texttt{ https\+://petstore.\+swagger.\+io/v2}}}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ HTTP request   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ HTTP request   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+\href{PetApi.md\#add_pet}{\texttt{ {\bfseries{add\+\_\+pet}}}}   &{\bfseries{POST}} /pet   &Add a new pet to the store    \\\cline{1-3}
+\href{PetApi.md\#delete_pet}{\texttt{ {\bfseries{delete\+\_\+pet}}}}   &{\bfseries{DELETE}} /pet/\{pet\+Id\}   &Deletes a pet    \\\cline{1-3}
+\href{PetApi.md\#find_pets_by_status}{\texttt{ {\bfseries{find\+\_\+pets\+\_\+by\+\_\+status}}}}   &{\bfseries{GET}} /pet/find\+By\+Status   &Finds Pets by status    \\\cline{1-3}
+\href{PetApi.md\#find_pets_by_tags}{\texttt{ {\bfseries{find\+\_\+pets\+\_\+by\+\_\+tags}}}}   &{\bfseries{GET}} /pet/find\+By\+Tags   &Finds Pets by tags    \\\cline{1-3}
+\href{PetApi.md\#get_pet_by_id}{\texttt{ {\bfseries{get\+\_\+pet\+\_\+by\+\_\+id}}}}   &{\bfseries{GET}} /pet/\{pet\+Id\}   &Find pet by ID    \\\cline{1-3}
+\href{PetApi.md\#update_pet}{\texttt{ {\bfseries{update\+\_\+pet}}}}   &{\bfseries{PUT}} /pet   &Update an existing pet    \\\cline{1-3}
+\href{PetApi.md\#update_pet_with_form}{\texttt{ {\bfseries{update\+\_\+pet\+\_\+with\+\_\+form}}}}   &{\bfseries{POST}} /pet/\{pet\+Id\}   &Updates a pet in the store with form data    \\\cline{1-3}
+\href{PetApi.md\#upload_file}{\texttt{ {\bfseries{upload\+\_\+file}}}}   &{\bfseries{POST}} /pet/\{pet\+Id\}/upload\+Image   &uploads an image   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md71}{}\doxysection{\texorpdfstring{{\bfseries{add\+\_\+pet}}}{{\bfseries{add\+\_\+pet}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md71}
+\begin{quote}
+add\+\_\+pet(body) \end{quote}
+Add a new pet to the store\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md72}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md72}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ Configure\ OAuth2\ access\ token\ for\ authorization:\ petstore\_auth}}
+\DoxyCodeLine{configuration\ =\ \mbox{\hyperlink{classswagger__client_1_1configuration_1_1_configuration}{swagger\_client.Configuration}}()}
+\DoxyCodeLine{configuration.access\_token\ =\ \textcolor{stringliteral}{'YOUR\_ACCESS\_TOKEN'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.PetApi(\mbox{\hyperlink{classswagger__client_1_1api__client_1_1_api_client}{swagger\_client.ApiClient}}(configuration))}
+\DoxyCodeLine{body\ =\ swagger\_client.Pet()\ \textcolor{comment}{\#\ Pet\ |\ Pet\ object\ that\ needs\ to\ be\ added\ to\ the\ store}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Add\ a\ new\ pet\ to\ the\ store}}
+\DoxyCodeLine{\ \ \ \ api\_instance.add\_pet(body)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ PetApi-\/>add\_pet:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md73}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md73}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{body}} \texorpdfstring{$\vert$}{|} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet}{{\bfseries{Pet}}}{0}\texorpdfstring{$\vert$}{|} Pet object that needs to be added to the store \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md74}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md74}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md75}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md75}
+\href{../README.md\#petstore_auth}{\texttt{ petstore\+\_\+auth}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md76}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md76}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: application/json, application/xml
+\item {\bfseries{Accept}}\+: application/json, application/xml
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md77}{}\doxysection{\texorpdfstring{{\bfseries{delete\+\_\+pet}}}{{\bfseries{delete\+\_\+pet}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md77}
+\begin{quote}
+delete\+\_\+pet(pet\+\_\+id, api\+\_\+key=api\+\_\+key) \end{quote}
+Deletes a pet\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md78}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md78}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ Configure\ OAuth2\ access\ token\ for\ authorization:\ petstore\_auth}}
+\DoxyCodeLine{configuration\ =\ \mbox{\hyperlink{classswagger__client_1_1configuration_1_1_configuration}{swagger\_client.Configuration}}()}
+\DoxyCodeLine{configuration.access\_token\ =\ \textcolor{stringliteral}{'YOUR\_ACCESS\_TOKEN'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.PetApi(\mbox{\hyperlink{classswagger__client_1_1api__client_1_1_api_client}{swagger\_client.ApiClient}}(configuration))}
+\DoxyCodeLine{pet\_id\ =\ 789\ \textcolor{comment}{\#\ int\ |\ Pet\ id\ to\ delete}}
+\DoxyCodeLine{api\_key\ =\ \textcolor{stringliteral}{'api\_key\_example'}\ \textcolor{comment}{\#\ str\ |\ \ (optional)}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Deletes\ a\ pet}}
+\DoxyCodeLine{\ \ \ \ api\_instance.delete\_pet(pet\_id,\ api\_key=api\_key)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ PetApi-\/>delete\_pet:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md79}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md79}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{pet\+\_\+id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} Pet id to delete \texorpdfstring{$\vert$}{|} {\bfseries{api\+\_\+key}} \texorpdfstring{$\vert$}{|} {\bfseries{str}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|} \mbox{[}optional\mbox{]}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md80}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md80}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md81}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md81}
+\href{../README.md\#petstore_auth}{\texttt{ petstore\+\_\+auth}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md82}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md82}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: application/json, application/xml
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md83}{}\doxysection{\texorpdfstring{{\bfseries{find\+\_\+pets\+\_\+by\+\_\+status}}}{{\bfseries{find\+\_\+pets\+\_\+by\+\_\+status}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md83}
+\begin{quote}
+list\mbox{[}Pet\mbox{]} find\+\_\+pets\+\_\+by\+\_\+status(status) \end{quote}
+Finds Pets by status
+
+Multiple status values can be provided with comma separated strings\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md84}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md84}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ Configure\ OAuth2\ access\ token\ for\ authorization:\ petstore\_auth}}
+\DoxyCodeLine{configuration\ =\ \mbox{\hyperlink{classswagger__client_1_1configuration_1_1_configuration}{swagger\_client.Configuration}}()}
+\DoxyCodeLine{configuration.access\_token\ =\ \textcolor{stringliteral}{'YOUR\_ACCESS\_TOKEN'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.PetApi(\mbox{\hyperlink{classswagger__client_1_1api__client_1_1_api_client}{swagger\_client.ApiClient}}(configuration))}
+\DoxyCodeLine{status\ =\ [\textcolor{stringliteral}{'status\_example'}]\ \textcolor{comment}{\#\ list[str]\ |\ Status\ values\ that\ need\ to\ be\ considered\ for\ filter}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Finds\ Pets\ by\ status}}
+\DoxyCodeLine{\ \ \ \ api\_response\ =\ api\_instance.find\_pets\_by\_status(status)}
+\DoxyCodeLine{\ \ \ \ pprint(api\_response)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ PetApi-\/>find\_pets\_by\_status:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md85}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md85}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{status}} \texorpdfstring{$\vert$}{|} {\bfseries{list\mbox{[}str\mbox{]}}}\texorpdfstring{$\vert$}{|} Status values that need to be considered for filter \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md86}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md86}
+\doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet}{{\bfseries{list\mbox{[}Pet\mbox{]}}}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md87}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md87}
+\href{../README.md\#petstore_auth}{\texttt{ petstore\+\_\+auth}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md88}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md88}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: application/json, application/xml
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md89}{}\doxysection{\texorpdfstring{{\bfseries{find\+\_\+pets\+\_\+by\+\_\+tags}}}{{\bfseries{find\+\_\+pets\+\_\+by\+\_\+tags}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md89}
+\begin{quote}
+list\mbox{[}Pet\mbox{]} find\+\_\+pets\+\_\+by\+\_\+tags(tags) \end{quote}
+Finds Pets by tags
+
+Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md90}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md90}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ Configure\ OAuth2\ access\ token\ for\ authorization:\ petstore\_auth}}
+\DoxyCodeLine{configuration\ =\ \mbox{\hyperlink{classswagger__client_1_1configuration_1_1_configuration}{swagger\_client.Configuration}}()}
+\DoxyCodeLine{configuration.access\_token\ =\ \textcolor{stringliteral}{'YOUR\_ACCESS\_TOKEN'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.PetApi(\mbox{\hyperlink{classswagger__client_1_1api__client_1_1_api_client}{swagger\_client.ApiClient}}(configuration))}
+\DoxyCodeLine{tags\ =\ [\textcolor{stringliteral}{'tags\_example'}]\ \textcolor{comment}{\#\ list[str]\ |\ Tags\ to\ filter\ by}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Finds\ Pets\ by\ tags}}
+\DoxyCodeLine{\ \ \ \ api\_response\ =\ api\_instance.find\_pets\_by\_tags(tags)}
+\DoxyCodeLine{\ \ \ \ pprint(api\_response)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ PetApi-\/>find\_pets\_by\_tags:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md91}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md91}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{tags}} \texorpdfstring{$\vert$}{|} {\bfseries{list\mbox{[}str\mbox{]}}}\texorpdfstring{$\vert$}{|} Tags to filter by \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md92}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md92}
+\doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet}{{\bfseries{list\mbox{[}Pet\mbox{]}}}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md93}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md93}
+\href{../README.md\#petstore_auth}{\texttt{ petstore\+\_\+auth}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md94}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md94}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: application/json, application/xml
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md95}{}\doxysection{\texorpdfstring{{\bfseries{get\+\_\+pet\+\_\+by\+\_\+id}}}{{\bfseries{get\+\_\+pet\+\_\+by\+\_\+id}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md95}
+\begin{quote}
+Pet get\+\_\+pet\+\_\+by\+\_\+id(pet\+\_\+id) \end{quote}
+Find pet by ID
+
+Returns a single pet\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md96}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md96}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ Configure\ API\ key\ authorization:\ api\_key}}
+\DoxyCodeLine{configuration\ =\ \mbox{\hyperlink{classswagger__client_1_1configuration_1_1_configuration}{swagger\_client.Configuration}}()}
+\DoxyCodeLine{configuration.api\_key[\textcolor{stringliteral}{'api\_key'}]\ =\ \textcolor{stringliteral}{'YOUR\_API\_KEY'}}
+\DoxyCodeLine{\textcolor{comment}{\#\ Uncomment\ below\ to\ setup\ prefix\ (e.g.\ Bearer)\ for\ API\ key,\ if\ needed}}
+\DoxyCodeLine{\textcolor{comment}{\#\ configuration.api\_key\_prefix['api\_key']\ =\ 'Bearer'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.PetApi(\mbox{\hyperlink{classswagger__client_1_1api__client_1_1_api_client}{swagger\_client.ApiClient}}(configuration))}
+\DoxyCodeLine{pet\_id\ =\ 789\ \textcolor{comment}{\#\ int\ |\ ID\ of\ pet\ to\ return}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Find\ pet\ by\ ID}}
+\DoxyCodeLine{\ \ \ \ api\_response\ =\ api\_instance.get\_pet\_by\_id(pet\_id)}
+\DoxyCodeLine{\ \ \ \ pprint(api\_response)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ PetApi-\/>get\_pet\_by\_id:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md97}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md97}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{pet\+\_\+id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} ID of pet to return \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md98}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md98}
+\doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet}{{\bfseries{Pet}}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md99}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md99}
+\href{../README.md\#api_key}{\texttt{ api\+\_\+key}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md100}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md100}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: application/json, application/xml
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md101}{}\doxysection{\texorpdfstring{{\bfseries{update\+\_\+pet}}}{{\bfseries{update\+\_\+pet}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md101}
+\begin{quote}
+update\+\_\+pet(body) \end{quote}
+Update an existing pet\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md102}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md102}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ Configure\ OAuth2\ access\ token\ for\ authorization:\ petstore\_auth}}
+\DoxyCodeLine{configuration\ =\ \mbox{\hyperlink{classswagger__client_1_1configuration_1_1_configuration}{swagger\_client.Configuration}}()}
+\DoxyCodeLine{configuration.access\_token\ =\ \textcolor{stringliteral}{'YOUR\_ACCESS\_TOKEN'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.PetApi(\mbox{\hyperlink{classswagger__client_1_1api__client_1_1_api_client}{swagger\_client.ApiClient}}(configuration))}
+\DoxyCodeLine{body\ =\ swagger\_client.Pet()\ \textcolor{comment}{\#\ Pet\ |\ Pet\ object\ that\ needs\ to\ be\ added\ to\ the\ store}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Update\ an\ existing\ pet}}
+\DoxyCodeLine{\ \ \ \ api\_instance.update\_pet(body)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ PetApi-\/>update\_pet:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md103}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md103}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{body}} \texorpdfstring{$\vert$}{|} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet}{{\bfseries{Pet}}}{0}\texorpdfstring{$\vert$}{|} Pet object that needs to be added to the store \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md104}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md104}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md105}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md105}
+\href{../README.md\#petstore_auth}{\texttt{ petstore\+\_\+auth}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md106}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md106}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: application/json, application/xml
+\item {\bfseries{Accept}}\+: application/json, application/xml
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md107}{}\doxysection{\texorpdfstring{{\bfseries{update\+\_\+pet\+\_\+with\+\_\+form}}}{{\bfseries{update\+\_\+pet\+\_\+with\+\_\+form}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md107}
+\begin{quote}
+update\+\_\+pet\+\_\+with\+\_\+form(pet\+\_\+id, name=name, status=status) \end{quote}
+Updates a pet in the store with form data\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md108}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md108}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ Configure\ OAuth2\ access\ token\ for\ authorization:\ petstore\_auth}}
+\DoxyCodeLine{configuration\ =\ \mbox{\hyperlink{classswagger__client_1_1configuration_1_1_configuration}{swagger\_client.Configuration}}()}
+\DoxyCodeLine{configuration.access\_token\ =\ \textcolor{stringliteral}{'YOUR\_ACCESS\_TOKEN'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.PetApi(\mbox{\hyperlink{classswagger__client_1_1api__client_1_1_api_client}{swagger\_client.ApiClient}}(configuration))}
+\DoxyCodeLine{pet\_id\ =\ 789\ \textcolor{comment}{\#\ int\ |\ ID\ of\ pet\ that\ needs\ to\ be\ updated}}
+\DoxyCodeLine{name\ =\ \textcolor{stringliteral}{'name\_example'}\ \textcolor{comment}{\#\ str\ |\ Updated\ name\ of\ the\ pet\ (optional)}}
+\DoxyCodeLine{status\ =\ \textcolor{stringliteral}{'status\_example'}\ \textcolor{comment}{\#\ str\ |\ Updated\ status\ of\ the\ pet\ (optional)}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Updates\ a\ pet\ in\ the\ store\ with\ form\ data}}
+\DoxyCodeLine{\ \ \ \ api\_instance.update\_pet\_with\_form(pet\_id,\ name=name,\ status=status)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ PetApi-\/>update\_pet\_with\_form:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md109}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md109}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{pet\+\_\+id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} ID of pet that needs to be updated \texorpdfstring{$\vert$}{|} {\bfseries{name}} \texorpdfstring{$\vert$}{|} {\bfseries{str}}\texorpdfstring{$\vert$}{|} Updated name of the pet \texorpdfstring{$\vert$}{|} \mbox{[}optional\mbox{]} {\bfseries{status}} \texorpdfstring{$\vert$}{|} {\bfseries{str}}\texorpdfstring{$\vert$}{|} Updated status of the pet \texorpdfstring{$\vert$}{|} \mbox{[}optional\mbox{]}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md110}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md110}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md111}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md111}
+\href{../README.md\#petstore_auth}{\texttt{ petstore\+\_\+auth}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md112}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md112}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: application/x-\/www-\/form-\/urlencoded
+\item {\bfseries{Accept}}\+: application/json, application/xml
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md113}{}\doxysection{\texorpdfstring{{\bfseries{upload\+\_\+file}}}{{\bfseries{upload\+\_\+file}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md113}
+\begin{quote}
+Api\+Response upload\+\_\+file(pet\+\_\+id, additional\+\_\+metadata=additional\+\_\+metadata, file=file) \end{quote}
+uploads an image\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md114}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md114}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ Configure\ OAuth2\ access\ token\ for\ authorization:\ petstore\_auth}}
+\DoxyCodeLine{configuration\ =\ \mbox{\hyperlink{classswagger__client_1_1configuration_1_1_configuration}{swagger\_client.Configuration}}()}
+\DoxyCodeLine{configuration.access\_token\ =\ \textcolor{stringliteral}{'YOUR\_ACCESS\_TOKEN'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.PetApi(\mbox{\hyperlink{classswagger__client_1_1api__client_1_1_api_client}{swagger\_client.ApiClient}}(configuration))}
+\DoxyCodeLine{pet\_id\ =\ 789\ \textcolor{comment}{\#\ int\ |\ ID\ of\ pet\ to\ update}}
+\DoxyCodeLine{additional\_metadata\ =\ \textcolor{stringliteral}{'additional\_metadata\_example'}\ \textcolor{comment}{\#\ str\ |\ Additional\ data\ to\ pass\ to\ server\ (optional)}}
+\DoxyCodeLine{file\ =\ \textcolor{stringliteral}{'/path/to/file.txt'}\ \textcolor{comment}{\#\ file\ |\ file\ to\ upload\ (optional)}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ uploads\ an\ image}}
+\DoxyCodeLine{\ \ \ \ api\_response\ =\ api\_instance.upload\_file(pet\_id,\ additional\_metadata=additional\_metadata,\ file=file)}
+\DoxyCodeLine{\ \ \ \ pprint(api\_response)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ PetApi-\/>upload\_file:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md115}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md115}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{pet\+\_\+id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} ID of pet to update \texorpdfstring{$\vert$}{|} {\bfseries{additional\+\_\+metadata}} \texorpdfstring{$\vert$}{|} {\bfseries{str}}\texorpdfstring{$\vert$}{|} Additional data to pass to server \texorpdfstring{$\vert$}{|} \mbox{[}optional\mbox{]} {\bfseries{file}} \texorpdfstring{$\vert$}{|} {\bfseries{file}}\texorpdfstring{$\vert$}{|} file to upload \texorpdfstring{$\vert$}{|} \mbox{[}optional\mbox{]}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md116}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md116}
+\doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_api_response}{{\bfseries{Api\+Response}}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md117}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md117}
+\href{../README.md\#petstore_auth}{\texttt{ petstore\+\_\+auth}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md118}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_pet_api_autotoc_md118}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: multipart/form-\/data
+\item {\bfseries{Accept}}\+: application/json
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0} 

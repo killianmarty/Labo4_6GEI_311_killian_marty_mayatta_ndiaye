@@ -1,0 +1,162 @@
+\doxysection{Référence de la classe click.\+formatting.\+Help\+Formatter}
+\hypertarget{classclick_1_1formatting_1_1_help_formatter}{}\label{classclick_1_1formatting_1_1_help_formatter}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1formatting_1_1_help_formatter_a5c2d6f198c704315701dba0ceef36a24}\label{classclick_1_1formatting_1_1_help_formatter_a5c2d6f198c704315701dba0ceef36a24} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, int indent\+\_\+increment=2, t.\+Optional\mbox{[}int\mbox{]} width=None, t.\+Optional\mbox{[}int\mbox{]} max\+\_\+width=None)
+\item 
+None \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_a93e705b9f623336f8c4e5c6907f7ac48}{write}} (self, str string)
+\item 
+None \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_a31f729b88b9ae323335b2d4f670f64aa}{indent}} (self)
+\item 
+None \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_a0370e0aff3ec410ac3ac3a20799688ee}{dedent}} (self)
+\item 
+None \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_aa3552946a914bee7f826c485fd297dce}{write\+\_\+usage}} (self, str prog, str args="{}"{}, t.\+Optional\mbox{[}str\mbox{]} prefix=None)
+\item 
+None \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_a48d97232e18c490da0fe6b7a3396ac7b}{write\+\_\+heading}} (self, str heading)
+\item 
+None \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_ae07a395a1998ca3dc935747b8c01b937}{write\+\_\+paragraph}} (self)
+\item 
+None \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_a122d19e3ad6037d52a37e04c0df1db83}{write\+\_\+text}} (self, str text)
+\item 
+None \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_a1f701047ab3963defc422b6b534e8f04}{write\+\_\+dl}} (self, t.\+Sequence\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} rows, int col\+\_\+max=30, int col\+\_\+spacing=2)
+\item 
+t.\+Iterator\mbox{[}None\mbox{]} \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_ae1ff9737ed91e57712307f037140b916}{section}} (self, str name)
+\item 
+t.\+Iterator\mbox{[}None\mbox{]} \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_abc22786d2f95608fc30d1b1dbd96bbe8}{indentation}} (self)
+\item 
+str \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter_a38f62ebb551a60a8ee559d2ef04032c1}{getvalue}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1formatting_1_1_help_formatter_abc2e8af57c592a4a264b4ae0a36fc5f1}\label{classclick_1_1formatting_1_1_help_formatter_abc2e8af57c592a4a264b4ae0a36fc5f1} 
+{\bfseries indent\+\_\+increment} = indent\+\_\+increment
+\item 
+\Hypertarget{classclick_1_1formatting_1_1_help_formatter_adc956b79340801fe211bdcff45172aae}\label{classclick_1_1formatting_1_1_help_formatter_adc956b79340801fe211bdcff45172aae} 
+{\bfseries width} = width
+\item 
+\Hypertarget{classclick_1_1formatting_1_1_help_formatter_a82c85b9cff406e19e5dcd6de05036273}\label{classclick_1_1formatting_1_1_help_formatter_a82c85b9cff406e19e5dcd6de05036273} 
+int {\bfseries current\+\_\+indent} = 0
+\item 
+\Hypertarget{classclick_1_1formatting_1_1_help_formatter_a7caa530bebb0191df82f185f7b94b690}\label{classclick_1_1formatting_1_1_help_formatter_a7caa530bebb0191df82f185f7b94b690} 
+list {\bfseries buffer} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This class helps with formatting text-based help pages.  It's
+usually just needed for very special internal cases, but it's also
+exposed so that developers can write their own fancy outputs.
+
+At present, it always writes into memory.
+
+:param indent_increment: the additional increment for each level.
+:param width: the width for the text.  This defaults to the terminal
+              width clamped to a maximum of 78.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classclick_1_1formatting_1_1_help_formatter_a0370e0aff3ec410ac3ac3a20799688ee}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!dedent@{dedent}}
+\index{dedent@{dedent}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{dedent()}{dedent()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_a0370e0aff3ec410ac3ac3a20799688ee} 
+ None click.\+formatting.\+Help\+Formatter.\+dedent (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decreases the indentation.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1formatting_1_1_help_formatter_a38f62ebb551a60a8ee559d2ef04032c1}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!getvalue@{getvalue}}
+\index{getvalue@{getvalue}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{getvalue()}{getvalue()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_a38f62ebb551a60a8ee559d2ef04032c1} 
+ str click.\+formatting.\+Help\+Formatter.\+getvalue (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the buffer contents.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1formatting_1_1_help_formatter_a31f729b88b9ae323335b2d4f670f64aa}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!indent@{indent}}
+\index{indent@{indent}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{indent()}{indent()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_a31f729b88b9ae323335b2d4f670f64aa} 
+ None click.\+formatting.\+Help\+Formatter.\+indent (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Increases the indentation.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1formatting_1_1_help_formatter_abc22786d2f95608fc30d1b1dbd96bbe8}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!indentation@{indentation}}
+\index{indentation@{indentation}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{indentation()}{indentation()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_abc22786d2f95608fc30d1b1dbd96bbe8} 
+ t.\+Iterator\mbox{[}None\mbox{]} click.\+formatting.\+Help\+Formatter.\+indentation (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A context manager that increases the indentation.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1formatting_1_1_help_formatter_ae1ff9737ed91e57712307f037140b916}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!section@{section}}
+\index{section@{section}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{section()}{section()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_ae1ff9737ed91e57712307f037140b916} 
+ t.\+Iterator\mbox{[}None\mbox{]} click.\+formatting.\+Help\+Formatter.\+section (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helpful context manager that writes a paragraph, a heading,
+and the indents.
+
+:param name: the section name that is written as heading.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1formatting_1_1_help_formatter_a93e705b9f623336f8c4e5c6907f7ac48}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!write@{write}}
+\index{write@{write}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_a93e705b9f623336f8c4e5c6907f7ac48} 
+ None click.\+formatting.\+Help\+Formatter.\+write (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes a unicode string into the internal buffer.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1formatting_1_1_help_formatter_a1f701047ab3963defc422b6b534e8f04}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!write\_dl@{write\_dl}}
+\index{write\_dl@{write\_dl}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{write\_dl()}{write\_dl()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_a1f701047ab3963defc422b6b534e8f04} 
+ None click.\+formatting.\+Help\+Formatter.\+write\+\_\+dl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Sequence\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}}]{rows}{, }\item[{int }]{col\+\_\+max}{ = {\ttfamily 30}, }\item[{int }]{col\+\_\+spacing}{ = {\ttfamily 2}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes a definition list into the buffer.  This is how options
+and commands are usually formatted.
+
+:param rows: a list of two item tuples for the terms and values.
+:param col_max: the maximum width of the first column.
+:param col_spacing: the number of spaces between the first and
+                    second column.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1formatting_1_1_help_formatter_a48d97232e18c490da0fe6b7a3396ac7b}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!write\_heading@{write\_heading}}
+\index{write\_heading@{write\_heading}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{write\_heading()}{write\_heading()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_a48d97232e18c490da0fe6b7a3396ac7b} 
+ None click.\+formatting.\+Help\+Formatter.\+write\+\_\+heading (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{heading}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes a heading into the buffer.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1formatting_1_1_help_formatter_ae07a395a1998ca3dc935747b8c01b937}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!write\_paragraph@{write\_paragraph}}
+\index{write\_paragraph@{write\_paragraph}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{write\_paragraph()}{write\_paragraph()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_ae07a395a1998ca3dc935747b8c01b937} 
+ None click.\+formatting.\+Help\+Formatter.\+write\+\_\+paragraph (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes a paragraph into the buffer.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1formatting_1_1_help_formatter_a122d19e3ad6037d52a37e04c0df1db83}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!write\_text@{write\_text}}
+\index{write\_text@{write\_text}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{write\_text()}{write\_text()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_a122d19e3ad6037d52a37e04c0df1db83} 
+ None click.\+formatting.\+Help\+Formatter.\+write\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes re-indented text into the buffer.  This rewraps and
+preserves paragraphs.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1formatting_1_1_help_formatter_aa3552946a914bee7f826c485fd297dce}\index{click.formatting.HelpFormatter@{click.formatting.HelpFormatter}!write\_usage@{write\_usage}}
+\index{write\_usage@{write\_usage}!click.formatting.HelpFormatter@{click.formatting.HelpFormatter}}
+\doxysubsubsection{\texorpdfstring{write\_usage()}{write\_usage()}}
+{\footnotesize\ttfamily \label{classclick_1_1formatting_1_1_help_formatter_aa3552946a914bee7f826c485fd297dce} 
+ None click.\+formatting.\+Help\+Formatter.\+write\+\_\+usage (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{prog}{, }\item[{str }]{args}{ = {\ttfamily "{}"{}}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{prefix}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes a usage line into the buffer.
+
+:param prog: the program name.
+:param args: whitespace separated list of arguments.
+:param prefix: The prefix for the first line. Defaults to
+    ``"Usage: "``.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/formatting.\+py\end{DoxyCompactItemize}

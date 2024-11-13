@@ -1,0 +1,98 @@
+\doxysection{werkzeug.\+local.\+Local\+Stack Class Reference}
+\hypertarget{classwerkzeug_1_1local_1_1_local_stack}{}\label{classwerkzeug_1_1local_1_1_local_stack}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+Inheritance diagram for werkzeug.\+local.\+Local\+Stack\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1local_1_1_local_stack}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_a3b47382cc375fa4c18785da2a9779bbf}\label{classwerkzeug_1_1local_1_1_local_stack_a3b47382cc375fa4c18785da2a9779bbf} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}Context\+Var\mbox{[}t.\+List\mbox{[}T\mbox{]}\mbox{]}\mbox{]} context\+\_\+var=None)
+\item 
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_a98a0b4403b710c7bf2037623a6ae1bbe}\label{classwerkzeug_1_1local_1_1_local_stack_a98a0b4403b710c7bf2037623a6ae1bbe} 
+None {\bfseries \+\_\+\+\_\+release\+\_\+local\+\_\+\+\_\+} (self)
+\item 
+t.\+List\mbox{[}T\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_a5fa1887e25e19edd17643275bbca29ab}{push}} (self, T obj)
+\item 
+t.\+Optional\mbox{[}T\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_a6872f8a7ca52b5a2aac628ed69d03fe2}{pop}} (self)
+\item 
+t.\+Optional\mbox{[}T\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_a9bf5ec222dd2054f596566d8d13b4e7e}{top}} (self)
+\item 
+"{}Local\+Proxy"{} \mbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_ae70d76a067d7d00958337a114225e1db}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, t.\+Optional\mbox{[}str\mbox{]} name=None, \texorpdfstring{$\ast$}{*}, t.\+Optional\mbox{[}str\mbox{]} unbound\+\_\+message=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_aa366e40f42219b225c96f7426eecfaa4}\label{classwerkzeug_1_1local_1_1_local_stack_aa366e40f42219b225c96f7426eecfaa4} 
+{\bfseries \+\_\+storage} = context\+\_\+var
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Create a stack of context-local data. This wraps a
+:class:`ContextVar` containing a :class:`list` value.
+
+This may incur a performance penalty compared to using individual
+context vars, as it has to copy data to avoid mutating the list
+between nested contexts.
+
+:param context_var: The :class:`~contextvars.ContextVar` to use as
+    storage for this local. If not given, one will be created.
+    Context vars not created at the global scope may interfere with
+    garbage collection.
+
+.. versionchanged:: 2.0
+    Uses ``ContextVar`` instead of a custom storage implementation.
+
+.. versionadded:: 0.6.1
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_ae70d76a067d7d00958337a114225e1db}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_ae70d76a067d7d00958337a114225e1db} 
+ "{}Local\+Proxy"{} werkzeug.\+local.\+Local\+Stack.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{name}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{unbound\+\_\+message}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a :class:`LocalProxy` that accesses the top of this
+local stack.
+
+:param name: If given, the proxy access this attribute of the
+    top item, rather than the item itself.
+:param unbound_message: The error message that the proxy will
+    show if the stack is empty.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1local_1_1_local_stack_a6872f8a7ca52b5a2aac628ed69d03fe2}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!pop@{pop}}
+\index{pop@{pop}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_a6872f8a7ca52b5a2aac628ed69d03fe2} 
+ t.\+Optional\mbox{[}T\mbox{]} werkzeug.\+local.\+Local\+Stack.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove the top item from the stack and return it. If the
+stack is empty, return ``None``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1local_1_1_local_stack_a5fa1887e25e19edd17643275bbca29ab}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!push@{push}}
+\index{push@{push}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_a5fa1887e25e19edd17643275bbca29ab} 
+ t.\+List\mbox{[}T\mbox{]} werkzeug.\+local.\+Local\+Stack.\+push (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{T}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a new item to the top of the stack.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1local_1_1_local_stack_a9bf5ec222dd2054f596566d8d13b4e7e}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!top@{top}}
+\index{top@{top}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_a9bf5ec222dd2054f596566d8d13b4e7e} 
+ t.\+Optional\mbox{[}T\mbox{]} werkzeug.\+local.\+Local\+Stack.\+top (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The topmost item on the stack.  If the stack is empty,
+`None` is returned.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/local.\+py\end{DoxyCompactItemize}

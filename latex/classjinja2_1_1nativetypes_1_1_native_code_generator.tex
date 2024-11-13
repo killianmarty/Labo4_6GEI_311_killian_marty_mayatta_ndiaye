@@ -1,0 +1,392 @@
+\doxysection{jinja2.\+nativetypes.\+Native\+Code\+Generator Class Reference}
+\hypertarget{classjinja2_1_1nativetypes_1_1_native_code_generator}{}\label{classjinja2_1_1nativetypes_1_1_native_code_generator}\index{jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}}
+Inheritance diagram for jinja2.\+nativetypes.\+Native\+Code\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classjinja2_1_1nativetypes_1_1_native_code_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classjinja2_1_1nativetypes_1_1_native_code_generator_aafc4ac9b6b9a3911e90c6dedb5c0a7a8}{\+\_\+output\+\_\+const\+\_\+repr}} (self, t.\+Iterable\mbox{[}t.\+Any\mbox{]} group)
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1nativetypes_1_1_native_code_generator_aede3aca889040710c23d754eaf660273}{\+\_\+output\+\_\+child\+\_\+to\+\_\+const}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_expr}{nodes.\+Expr}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_1_1___finalize_info}{Code\+Generator.\+\_\+\+Finalize\+Info}} finalize)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1nativetypes_1_1_native_code_generator_a4fef9a3a1dc59743c828ed0b47dba5eb}{\+\_\+output\+\_\+child\+\_\+pre}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_expr}{nodes.\+Expr}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_1_1___finalize_info}{Code\+Generator.\+\_\+\+Finalize\+Info}} finalize)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1nativetypes_1_1_native_code_generator_abd697c49f2e7e314c53dec0bf7b11f3a}{\+\_\+output\+\_\+child\+\_\+post}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_expr}{nodes.\+Expr}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_1_1___finalize_info}{Code\+Generator.\+\_\+\+Finalize\+Info}} finalize)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator}{jinja2.\+compiler.\+Code\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+None {\bfseries \+\_\+import\+\_\+common} (self, t.\+Union\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_import}{nodes.\+Import}}, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_from_import}{nodes.\+From\+Import}}\mbox{]} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+\mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_1_1___finalize_info}{\+\_\+\+Finalize\+Info}} \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_af3b128e797148786398408f663973e05}{\+\_\+make\+\_\+finalize}} (self)
+\item 
+t.\+Iterator\mbox{[}None\mbox{]} {\bfseries \+\_\+filter\+\_\+test\+\_\+common} (self, t.\+Union\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_filter}{nodes.\+Filter}}, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_test}{nodes.\+Test}}\mbox{]} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame, bool is\+\_\+filter)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1nativetypes_1_1_native_code_generator_a2683c7d1bec0321b12411a2539ef8c4a}{\+\_\+default\+\_\+finalize}} (t.\+Any value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator}{jinja2.\+compiler.\+Code\+Generator}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator}{jinja2.\+compiler.\+Code\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, "{}Environment"{} environment, t.\+Optional\mbox{[}str\mbox{]} name, t.\+Optional\mbox{[}str\mbox{]} filename, t.\+Optional\mbox{[}t.\+Text\+IO\mbox{]} stream=None, bool defer\+\_\+init=False, bool optimized=True)
+\item 
+bool {\bfseries optimized} (self)
+\item 
+"{}te.\+No\+Return"{} \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_ada4ef266deda81593debc7dbb764a0e8}{fail}} (self, str msg, int lineno)
+\item 
+str \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a9368b006060b69f8bf76ee749a3cb791}{temporary\+\_\+identifier}} (self)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_ac4dca3e0a12f3825cb887114f4bf0e2e}{buffer}} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a5e4aed8e31b5c5b7ceea6ffe58c21b5c}{return\+\_\+buffer\+\_\+contents}} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame, bool force\+\_\+unescaped=False)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a0b509c2d837ebcce2dbeab60fbc44818}{indent}} (self)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a063ee362e39ca4f38ee22fede26f4a4a}{outdent}} (self, int step=1)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a0f7dc2e15db090b6037d6c01ddabbe39}{start\+\_\+write}} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame, t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}}\mbox{]} node=None)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_abb1bd1a3ea8db7f95f72a2c63e3aa89d}{end\+\_\+write}} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_ac96f8b19e163062a0399bed6095680d6}{simple\+\_\+write}} (self, str s, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame, t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}}\mbox{]} node=None)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_aac8a3eab088ea170380f114235f4e063}{blockvisit}} (self, t.\+Iterable\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}}\mbox{]} nodes, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a5cabefb033cd9cb17a8aeb8a85e397ce}{write}} (self, str x)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_ab7120535d41472742619faf224228b81}{writeline}} (self, str x, t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}}\mbox{]} node=None, int extra=0)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a0c1a13188ead1b0083463cee953eabbb}{newline}} (self, t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}}\mbox{]} node=None, int extra=0)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a5d181201b361587c06c1d67440de92ef}{signature}} (self, t.\+Union\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_call}{nodes.\+Call}}, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_filter}{nodes.\+Filter}}, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_test}{nodes.\+Test}}\mbox{]} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame, t.\+Optional\mbox{[}t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}\mbox{]} extra\+\_\+kwargs=None)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a0fa2b926a52faa72bea45df991cfd589}{pull\+\_\+dependencies}} (self, t.\+Iterable\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}}\mbox{]} nodes)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a9825bf96ff4dfa5a2c88daf0f3ec3d4e}{enter\+\_\+frame}} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries leave\+\_\+frame} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame, bool with\+\_\+python\+\_\+scope=False)
+\item 
+str {\bfseries choose\+\_\+async} (self, str async\+\_\+value="{}async "{}, str sync\+\_\+value="{}"{})
+\item 
+str {\bfseries func} (self, str name)
+\item 
+t.\+Tuple\mbox{[}\mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}}, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_macro_ref}{Macro\+Ref}}\mbox{]} \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_ae14bacfc7b4dd5dbb3d17270028995ae}{macro\+\_\+body}} (self, t.\+Union\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_macro}{nodes.\+Macro}}, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_call_block}{nodes.\+Call\+Block}}\mbox{]} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_ac81fb033e6704c884d6cd2d5626472a5}{macro\+\_\+def}} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_macro_ref}{Macro\+Ref}} macro\+\_\+ref, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+str \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_ab0b0213f913551d2a441314f2bb3e309}{position}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}} node)
+\item 
+str {\bfseries dump\+\_\+local\+\_\+context} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_accf9a2e3dd25d7e44fe0128c54449af6}{write\+\_\+commons}} (self)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_af7b7afd0ba32814ba8cfbb5a9e26b1ce}{push\+\_\+parameter\+\_\+definitions}} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_aee27a4ea910a2d4ea31460f4c2e51e6f}{pop\+\_\+parameter\+\_\+definitions}} (self)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_ac3be8c6517f961d11692d618f8c58326}{mark\+\_\+parameter\+\_\+stored}} (self, str target)
+\item 
+None {\bfseries push\+\_\+context\+\_\+reference} (self, str target)
+\item 
+None {\bfseries pop\+\_\+context\+\_\+reference} (self)
+\item 
+str {\bfseries get\+\_\+context\+\_\+ref} (self)
+\item 
+str {\bfseries get\+\_\+resolve\+\_\+func} (self)
+\item 
+str {\bfseries derive\+\_\+context} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+bool \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a2361d7f71c3784e689aae81eca8cd40b}{parameter\+\_\+is\+\_\+undeclared}} (self, str target)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a11e04bcd60ad3269ac7d5067bccc4144}{push\+\_\+assign\+\_\+tracking}} (self)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_acbcc768abe89f82ec2fac28c53fdd0f3}{pop\+\_\+assign\+\_\+tracking}} (self, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Template} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_template}{nodes.\+Template}} node, t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}}\mbox{]} frame=None)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a864024a55d874d26bf482832f54b620c}{visit\+\_\+\+Block}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_block}{nodes.\+Block}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a3d05e597badc2e0737e587a1b51ba9d2}{visit\+\_\+\+Extends}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_extends}{nodes.\+Extends}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a628571c947869c57bc4c0e21c0abdb33}{visit\+\_\+\+Include}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_include}{nodes.\+Include}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a3f234c1e72ae8b5a208f1c4fd3c3b7f1}{visit\+\_\+\+Import}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_import}{nodes.\+Import}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a89d73a473bc883c75a95c4d0ca16d2b1}{visit\+\_\+\+From\+Import}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_from_import}{nodes.\+From\+Import}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+For} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_for}{nodes.\+For}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+If} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_if}{nodes.\+If}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Macro} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_macro}{nodes.\+Macro}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Call\+Block} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_call_block}{nodes.\+Call\+Block}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Filter\+Block} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_filter_block}{nodes.\+Filter\+Block}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+With} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_with}{nodes.\+With}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Expr\+Stmt} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_expr_stmt}{nodes.\+Expr\+Stmt}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Output} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_output}{nodes.\+Output}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Assign} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_assign}{nodes.\+Assign}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Assign\+Block} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_assign_block}{nodes.\+Assign\+Block}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Name} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_name}{nodes.\+Name}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+NSRef} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_n_s_ref}{nodes.\+NSRef}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Const} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_const}{nodes.\+Const}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Template\+Data} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_template_data}{nodes.\+Template\+Data}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Tuple} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_tuple}{nodes.\+Tuple}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+List} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_list}{nodes.\+List}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Dict} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_dict}{nodes.\+Dict}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Concat} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_concat}{nodes.\+Concat}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Compare} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_compare}{nodes.\+Compare}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Operand} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_operand}{nodes.\+Operand}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Getattr} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_getattr}{nodes.\+Getattr}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Getitem} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_getitem}{nodes.\+Getitem}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Slice} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_slice}{nodes.\+Slice}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Filter} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_filter}{nodes.\+Filter}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Test} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_test}{nodes.\+Test}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Cond\+Expr} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_cond_expr}{nodes.\+Cond\+Expr}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Call} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_call}{nodes.\+Call}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame, bool forward\+\_\+caller=False)
+\item 
+None {\bfseries visit\+\_\+\+Keyword} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_keyword}{nodes.\+Keyword}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Mark\+Safe} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_mark_safe}{nodes.\+Mark\+Safe}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Mark\+Safe\+If\+Autoescape} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_mark_safe_if_autoescape}{nodes.\+Mark\+Safe\+If\+Autoescape}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Environment\+Attribute} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_environment_attribute}{nodes.\+Environment\+Attribute}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Extension\+Attribute} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_extension_attribute}{nodes.\+Extension\+Attribute}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Imported\+Name} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_imported_name}{nodes.\+Imported\+Name}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Internal\+Name} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_internal_name}{nodes.\+Internal\+Name}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Context\+Reference} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_context_reference}{nodes.\+Context\+Reference}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Derived\+Context\+Reference} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_derived_context_reference}{nodes.\+Derived\+Context\+Reference}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Continue} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_continue}{nodes.\+Continue}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Break} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_break}{nodes.\+Break}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Scope} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_scope}{nodes.\+Scope}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Overlay\+Scope} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_overlay_scope}{nodes.\+Overlay\+Scope}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Eval\+Context\+Modifier} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_eval_context_modifier}{nodes.\+Eval\+Context\+Modifier}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\item 
+None {\bfseries visit\+\_\+\+Scoped\+Eval\+Context\+Modifier} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_scoped_eval_context_modifier}{nodes.\+Scoped\+Eval\+Context\+Modifier}} node, \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}} frame)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classjinja2_1_1visitor_1_1_node_visitor}{jinja2.\+visitor.\+Node\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+"{}t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1visitor_1_1_visit_callable}{Visit\+Callable}}\mbox{]}"{} \mbox{\hyperlink{classjinja2_1_1visitor_1_1_node_visitor_a48f14e449d8a76b3abe49109a6a1aef9}{get\+\_\+visitor}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{Node}} node)
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1visitor_1_1_node_visitor_ac46313d5a7f643dd6b516f67e7a0e3cb}{visit}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{Node}} node, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \mbox{\hyperlink{classjinja2_1_1visitor_1_1_node_visitor_a9020040a2124eaa206bd1505642fa9fa}{generic\+\_\+visit}} (self, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{Node}} node, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator}{jinja2.\+compiler.\+Code\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries environment} = environment
+\item 
+{\bfseries name} = name
+\item 
+{\bfseries filename} = filename
+\item 
+{\bfseries stream} = stream
+\item 
+bool {\bfseries created\+\_\+block\+\_\+context} = False
+\item 
+{\bfseries defer\+\_\+init} = defer\+\_\+init
+\item 
+t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1optimizer_1_1_optimizer}{Optimizer}}\mbox{]} {\bfseries optimizer} = None
+\item 
+dict {\bfseries import\+\_\+aliases} = \{\}
+\item 
+dict {\bfseries blocks} = \{\}
+\item 
+int {\bfseries extends\+\_\+so\+\_\+far} = 0
+\item 
+bool {\bfseries has\+\_\+known\+\_\+extends} = False
+\item 
+int {\bfseries code\+\_\+lineno} = 1
+\item 
+dict {\bfseries tests} = \{\}
+\item 
+dict {\bfseries filters} = \{\}
+\item 
+list {\bfseries debug\+\_\+info} = \mbox{[}$\,$\mbox{]}
+\item 
+int {\bfseries has\+\_\+known\+\_\+extends} = 1
+\item 
+\mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_1_1___finalize_info}{\+\_\+\+Finalize\+Info}} {\bfseries has\+\_\+known\+\_\+extends} = self.\+\_\+make\+\_\+finalize()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator}{jinja2.\+compiler.\+Code\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries visit\+\_\+\+Add} = \+\_\+make\+\_\+binop("{}+"{})
+\item 
+{\bfseries visit\+\_\+\+Sub} = \+\_\+make\+\_\+binop("{}-\/"{})
+\item 
+{\bfseries visit\+\_\+\+Mul} = \+\_\+make\+\_\+binop("{}\texorpdfstring{$\ast$}{*}"{})
+\item 
+{\bfseries visit\+\_\+\+Div} = \+\_\+make\+\_\+binop("{}/"{})
+\item 
+{\bfseries visit\+\_\+\+Floor\+Div} = \+\_\+make\+\_\+binop("{}//"{})
+\item 
+{\bfseries visit\+\_\+\+Pow} = \+\_\+make\+\_\+binop("{}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}"{})
+\item 
+{\bfseries visit\+\_\+\+Mod} = \+\_\+make\+\_\+binop("{}\%"{})
+\item 
+{\bfseries visit\+\_\+\+And} = \+\_\+make\+\_\+binop("{}and"{})
+\item 
+{\bfseries visit\+\_\+\+Or} = \+\_\+make\+\_\+binop("{}or"{})
+\item 
+{\bfseries visit\+\_\+\+Pos} = \+\_\+make\+\_\+unop("{}+"{})
+\item 
+{\bfseries visit\+\_\+\+Neg} = \+\_\+make\+\_\+unop("{}-\/"{})
+\item 
+{\bfseries visit\+\_\+\+Not} = \+\_\+make\+\_\+unop("{}not "{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator}{jinja2.\+compiler.\+Code\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Optional\mbox{[}int\mbox{]} {\bfseries \+\_\+write\+\_\+debug\+\_\+info} = None
+\item 
+int {\bfseries \+\_\+new\+\_\+lines} = 0
+\item 
+int {\bfseries \+\_\+last\+\_\+line} = 0
+\item 
+bool {\bfseries \+\_\+first\+\_\+write} = True
+\item 
+int {\bfseries \+\_\+last\+\_\+identifier} = 0
+\item 
+int {\bfseries \+\_\+indentation} = 0
+\item 
+list {\bfseries \+\_\+assign\+\_\+stack} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries \+\_\+param\+\_\+def\+\_\+block} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries \+\_\+context\+\_\+reference\+\_\+stack} = \mbox{[}"{}context"{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator}{jinja2.\+compiler.\+Code\+Generator}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries \+\_\+finalize} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A code generator which renders Python types by not adding
+``str()`` around output nodes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjinja2_1_1nativetypes_1_1_native_code_generator_a2683c7d1bec0321b12411a2539ef8c4a}\index{jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}!\_default\_finalize@{\_default\_finalize}}
+\index{\_default\_finalize@{\_default\_finalize}!jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{\_default\_finalize()}{\_default\_finalize()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1nativetypes_1_1_native_code_generator_a2683c7d1bec0321b12411a2539ef8c4a} 
+ t.\+Any jinja2.\+nativetypes.\+Native\+Code\+Generator.\+\_\+default\+\_\+finalize (\begin{DoxyParamCaption}\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}The default finalize function if the environment isn't
+configured with one. Or, if the environment has one, this is
+called on that function's output for constants.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a995194b49acb6859bbc0a2dad1e2b543}{jinja2.\+compiler.\+Code\+Generator}}.
+
+\Hypertarget{classjinja2_1_1nativetypes_1_1_native_code_generator_abd697c49f2e7e314c53dec0bf7b11f3a}\index{jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}!\_output\_child\_post@{\_output\_child\_post}}
+\index{\_output\_child\_post@{\_output\_child\_post}!jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{\_output\_child\_post()}{\_output\_child\_post()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1nativetypes_1_1_native_code_generator_abd697c49f2e7e314c53dec0bf7b11f3a} 
+ None jinja2.\+nativetypes.\+Native\+Code\+Generator.\+\_\+output\+\_\+child\+\_\+post (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classjinja2_1_1nodes_1_1_expr}{nodes.\+Expr}}}]{node}{, }\item[{\mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}}}]{frame}{, }\item[{\mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_1_1___finalize_info}{Code\+Generator.\+\_\+\+Finalize\+Info}}     }]{finalize}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Output extra source code after visiting a child of an
+``Output`` node.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a4b9b2f82f9b5122518f6d9e02b9222ee}{jinja2.\+compiler.\+Code\+Generator}}.
+
+\Hypertarget{classjinja2_1_1nativetypes_1_1_native_code_generator_a4fef9a3a1dc59743c828ed0b47dba5eb}\index{jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}!\_output\_child\_pre@{\_output\_child\_pre}}
+\index{\_output\_child\_pre@{\_output\_child\_pre}!jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{\_output\_child\_pre()}{\_output\_child\_pre()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1nativetypes_1_1_native_code_generator_a4fef9a3a1dc59743c828ed0b47dba5eb} 
+ None jinja2.\+nativetypes.\+Native\+Code\+Generator.\+\_\+output\+\_\+child\+\_\+pre (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classjinja2_1_1nodes_1_1_expr}{nodes.\+Expr}}}]{node}{, }\item[{\mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}}}]{frame}{, }\item[{\mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_1_1___finalize_info}{Code\+Generator.\+\_\+\+Finalize\+Info}}     }]{finalize}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Output extra source code before visiting a child of an
+``Output`` node.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a8cc085e0b26e5d58de557a2b51a4785e}{jinja2.\+compiler.\+Code\+Generator}}.
+
+\Hypertarget{classjinja2_1_1nativetypes_1_1_native_code_generator_aede3aca889040710c23d754eaf660273}\index{jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}!\_output\_child\_to\_const@{\_output\_child\_to\_const}}
+\index{\_output\_child\_to\_const@{\_output\_child\_to\_const}!jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{\_output\_child\_to\_const()}{\_output\_child\_to\_const()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1nativetypes_1_1_native_code_generator_aede3aca889040710c23d754eaf660273} 
+ t.\+Any jinja2.\+nativetypes.\+Native\+Code\+Generator.\+\_\+output\+\_\+child\+\_\+to\+\_\+const (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classjinja2_1_1nodes_1_1_expr}{nodes.\+Expr}}}]{node}{, }\item[{\mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}}}]{frame}{, }\item[{\mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_1_1___finalize_info}{Code\+Generator.\+\_\+\+Finalize\+Info}}     }]{finalize}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Try to optimize a child of an ``Output`` node by trying to
+convert it to constant, finalized data at compile time.
+
+If :exc:`Impossible` is raised, the node is not constant and
+will be evaluated at runtime. Any other exception will also be
+evaluated at runtime for easier debugging.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_a7713cde8c021ae15814cb6f41b500728}{jinja2.\+compiler.\+Code\+Generator}}.
+
+\Hypertarget{classjinja2_1_1nativetypes_1_1_native_code_generator_aafc4ac9b6b9a3911e90c6dedb5c0a7a8}\index{jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}!\_output\_const\_repr@{\_output\_const\_repr}}
+\index{\_output\_const\_repr@{\_output\_const\_repr}!jinja2.nativetypes.NativeCodeGenerator@{jinja2.nativetypes.NativeCodeGenerator}}
+\doxysubsubsection{\texorpdfstring{\_output\_const\_repr()}{\_output\_const\_repr()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1nativetypes_1_1_native_code_generator_aafc4ac9b6b9a3911e90c6dedb5c0a7a8} 
+ str jinja2.\+nativetypes.\+Native\+Code\+Generator.\+\_\+output\+\_\+const\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Iterable\mbox{[}t.\+Any\mbox{]}}]{group}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Given a group of constant values converted from ``Output``
+child nodes, produce a string to write to the template module
+source.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator_adf19f6905847137ea6df0783c57e6d1c}{jinja2.\+compiler.\+Code\+Generator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/jinja2/nativetypes.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\doxysection{urllib3.\+response.\+Multi\+Decoder Class Reference}
+\hypertarget{classurllib3_1_1response_1_1_multi_decoder}{}\label{classurllib3_1_1response_1_1_multi_decoder}\index{urllib3.response.MultiDecoder@{urllib3.response.MultiDecoder}}
+Inheritance diagram for urllib3.\+response.\+Multi\+Decoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classurllib3_1_1response_1_1_multi_decoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classurllib3_1_1response_1_1_multi_decoder_a27a860ddabe9e45ecc5b254fb08007af}\label{classurllib3_1_1response_1_1_multi_decoder_a27a860ddabe9e45ecc5b254fb08007af} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str modes)
+\item 
+bytes \mbox{\hyperlink{classurllib3_1_1response_1_1_multi_decoder_af5b2a89b6994a9ea51fa23d327b17540}{flush}} (self)
+\item 
+bytes \mbox{\hyperlink{classurllib3_1_1response_1_1_multi_decoder_a134345528448dbb9cb9867cbdd721a67}{decompress}} (self, bytes data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classurllib3_1_1response_1_1_content_decoder}{urllib3.\+response.\+Content\+Decoder}}}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classurllib3_1_1response_1_1_multi_decoder_ad93c1c2d183e91cfbc930e365a2bb384}\label{classurllib3_1_1response_1_1_multi_decoder_ad93c1c2d183e91cfbc930e365a2bb384} 
+list {\bfseries \+\_\+decoders} = \mbox{[}\+\_\+get\+\_\+decoder(m.\+strip()) for m in modes.\+split("{},"{})\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}From RFC7231:
+    If one or more encodings have been applied to a representation, the
+    sender that applied the encodings MUST generate a Content-Encoding
+    header field that lists the content codings in the order in which
+    they were applied.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classurllib3_1_1response_1_1_multi_decoder_a134345528448dbb9cb9867cbdd721a67}\index{urllib3.response.MultiDecoder@{urllib3.response.MultiDecoder}!decompress@{decompress}}
+\index{decompress@{decompress}!urllib3.response.MultiDecoder@{urllib3.response.MultiDecoder}}
+\doxysubsubsection{\texorpdfstring{decompress()}{decompress()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1response_1_1_multi_decoder_a134345528448dbb9cb9867cbdd721a67} 
+ bytes urllib3.\+response.\+Multi\+Decoder.\+decompress (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_content_decoder}{urllib3.\+response.\+Content\+Decoder}}.
+
+\Hypertarget{classurllib3_1_1response_1_1_multi_decoder_af5b2a89b6994a9ea51fa23d327b17540}\index{urllib3.response.MultiDecoder@{urllib3.response.MultiDecoder}!flush@{flush}}
+\index{flush@{flush}!urllib3.response.MultiDecoder@{urllib3.response.MultiDecoder}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1response_1_1_multi_decoder_af5b2a89b6994a9ea51fa23d327b17540} 
+ bytes urllib3.\+response.\+Multi\+Decoder.\+flush (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1response_1_1_content_decoder}{urllib3.\+response.\+Content\+Decoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/urllib3/response.\+py\end{DoxyCompactItemize}

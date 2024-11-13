@@ -1,0 +1,241 @@
+\doxysection{setuptools.\+config.\+Config\+Handler Class Reference}
+\hypertarget{classsetuptools_1_1config_1_1_config_handler}{}\label{classsetuptools_1_1config_1_1_config_handler}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+Inheritance diagram for setuptools.\+config.\+Config\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsetuptools_1_1config_1_1_config_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a811dffacc685fe4cf0e9b499be19611a}\label{classsetuptools_1_1config_1_1_config_handler_a811dffacc685fe4cf0e9b499be19611a} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, target\+\_\+obj, options, ignore\+\_\+option\+\_\+errors=False)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_a6605f2e533d88327efb84160cb63c16a}{parsers}} (self)
+\item 
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_ac999898854250b87e4c8109c82bb9197}\label{classsetuptools_1_1config_1_1_config_handler_ac999898854250b87e4c8109c82bb9197} 
+{\bfseries \+\_\+\+\_\+setitem\+\_\+\+\_\+} (self, option\+\_\+name, value)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_ad30254c27508efd5300438e61ddbf9ad}{parse\+\_\+section}} (self, section\+\_\+options)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_a168be4eaeae26f7c8d3e4cc82fd0549c}{parse}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a5d64dedea13caaf606cde29c6aac8d97}\label{classsetuptools_1_1config_1_1_config_handler_a5d64dedea13caaf606cde29c6aac8d97} 
+{\bfseries ignore\+\_\+option\+\_\+errors} = ignore\+\_\+option\+\_\+errors
+\item 
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_aa932a185c0e0fd1d98ebc8bceb88b153}\label{classsetuptools_1_1config_1_1_config_handler_aa932a185c0e0fd1d98ebc8bceb88b153} 
+{\bfseries target\+\_\+obj} = target\+\_\+obj
+\item 
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a46419994f67045997eeb6dfd75da23d1}\label{classsetuptools_1_1config_1_1_config_handler_a46419994f67045997eeb6dfd75da23d1} 
+{\bfseries sections} = sections
+\item 
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a8227eee956157981dda6039119390161}\label{classsetuptools_1_1config_1_1_config_handler_a8227eee956157981dda6039119390161} 
+list {\bfseries set\+\_\+options} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a4d832c71e7372fa90bc76a5827de5ed2}\label{classsetuptools_1_1config_1_1_config_handler_a4d832c71e7372fa90bc76a5827de5ed2} 
+{\bfseries section\+\_\+prefix} = None
+\item 
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a538877043090e2b583b64aca827c9829}\label{classsetuptools_1_1config_1_1_config_handler_a538877043090e2b583b64aca827c9829} 
+dict {\bfseries aliases} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_aaa3ffc1b1b13660e1d75c303e272dfc1}{\+\_\+parse\+\_\+list}} (cls, value, separator=\textquotesingle{},\textquotesingle{})
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_a5c9d952f017ca7753b6a66167bd1e38e}{\+\_\+parse\+\_\+dict}} (cls, value)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_ad66c32167b4653f438d2c73c7fbd6739}{\+\_\+parse\+\_\+bool}} (cls, value)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_a581e4ceebdf1888b8de239557716ca04}{\+\_\+exclude\+\_\+files\+\_\+parser}} (cls, key)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_a163e437c69126f2812ed276b12944193}{\+\_\+parse\+\_\+file}} (cls, value)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_a4ca6f2221245c698fedf3d1c7b866cab}{\+\_\+parse\+\_\+attr}} (cls, value, package\+\_\+dir=None)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_a07d14f0f79bc35f06c88ef54745a7784}{\+\_\+get\+\_\+parser\+\_\+compound}} (cls, \texorpdfstring{$\ast$}{*}parse\+\_\+methods)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_abd673a6c029258561ec70b2b1435622f}{\+\_\+parse\+\_\+section\+\_\+to\+\_\+dict}} (cls, section\+\_\+options, values\+\_\+parser=None)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1config_1_1_config_handler_a4ec5f5c0ff45673438b5bd73b59a905f}{\+\_\+deprecated\+\_\+config\+\_\+handler}} (self, func, msg, warning\+\_\+class)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a4f32421b6296019f0725596a6869894e}\label{classsetuptools_1_1config_1_1_config_handler_a4f32421b6296019f0725596a6869894e} 
+{\bfseries \+\_\+assert\+\_\+local} (filepath)
+\item 
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a39d97fe0de9f42c7b54f0cec19cb9775}\label{classsetuptools_1_1config_1_1_config_handler_a39d97fe0de9f42c7b54f0cec19cb9775} 
+{\bfseries \+\_\+read\+\_\+file} (filepath)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Handles metadata supplied in configuration files.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsetuptools_1_1config_1_1_config_handler_a4ec5f5c0ff45673438b5bd73b59a905f}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!\_deprecated\_config\_handler@{\_deprecated\_config\_handler}}
+\index{\_deprecated\_config\_handler@{\_deprecated\_config\_handler}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{\_deprecated\_config\_handler()}{\_deprecated\_config\_handler()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_a4ec5f5c0ff45673438b5bd73b59a905f} 
+setuptools.\+config.\+Config\+Handler.\+\_\+deprecated\+\_\+config\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{func}{, }\item[{}]{msg}{, }\item[{}]{warning\+\_\+class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} this function will wrap around parameters that are deprecated
+
+:param msg: deprecation message
+:param warning_class: class of warning exception to be raised
+:param func: function to be wrapped around
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_a581e4ceebdf1888b8de239557716ca04}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!\_exclude\_files\_parser@{\_exclude\_files\_parser}}
+\index{\_exclude\_files\_parser@{\_exclude\_files\_parser}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{\_exclude\_files\_parser()}{\_exclude\_files\_parser()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_a581e4ceebdf1888b8de239557716ca04} 
+setuptools.\+config.\+Config\+Handler.\+\_\+exclude\+\_\+files\+\_\+parser (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns a parser function to make sure field inputs
+are not files.
+
+Parses a value after getting the key so error messages are
+more informative.
+
+:param key:
+:rtype: callable
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_a07d14f0f79bc35f06c88ef54745a7784}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!\_get\_parser\_compound@{\_get\_parser\_compound}}
+\index{\_get\_parser\_compound@{\_get\_parser\_compound}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{\_get\_parser\_compound()}{\_get\_parser\_compound()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_a07d14f0f79bc35f06c88ef54745a7784} 
+setuptools.\+config.\+Config\+Handler.\+\_\+get\+\_\+parser\+\_\+compound (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\texorpdfstring{$\ast$}{*}}]{parse\+\_\+methods}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns parser function to represents value as a list.
+
+Parses a value applying given methods one after another.
+
+:param parse_methods:
+:rtype: callable
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_a4ca6f2221245c698fedf3d1c7b866cab}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!\_parse\_attr@{\_parse\_attr}}
+\index{\_parse\_attr@{\_parse\_attr}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{\_parse\_attr()}{\_parse\_attr()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_a4ca6f2221245c698fedf3d1c7b866cab} 
+setuptools.\+config.\+Config\+Handler.\+\_\+parse\+\_\+attr (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{value}{, }\item[{}]{package\+\_\+dir}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Represents value as a module attribute.
+
+Examples:
+    attr: package.attr
+    attr: package.module.attr
+
+:param str value:
+:rtype: str
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_ad66c32167b4653f438d2c73c7fbd6739}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!\_parse\_bool@{\_parse\_bool}}
+\index{\_parse\_bool@{\_parse\_bool}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{\_parse\_bool()}{\_parse\_bool()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_ad66c32167b4653f438d2c73c7fbd6739} 
+setuptools.\+config.\+Config\+Handler.\+\_\+parse\+\_\+bool (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Represents value as boolean.
+
+:param value:
+:rtype: bool
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_a5c9d952f017ca7753b6a66167bd1e38e}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!\_parse\_dict@{\_parse\_dict}}
+\index{\_parse\_dict@{\_parse\_dict}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{\_parse\_dict()}{\_parse\_dict()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_a5c9d952f017ca7753b6a66167bd1e38e} 
+setuptools.\+config.\+Config\+Handler.\+\_\+parse\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Represents value as a dict.
+
+:param value:
+:rtype: dict
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_a163e437c69126f2812ed276b12944193}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!\_parse\_file@{\_parse\_file}}
+\index{\_parse\_file@{\_parse\_file}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{\_parse\_file()}{\_parse\_file()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_a163e437c69126f2812ed276b12944193} 
+setuptools.\+config.\+Config\+Handler.\+\_\+parse\+\_\+file (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Represents value as a string, allowing including text
+from nearest files using `file:` directive.
+
+Directive is sandboxed and won't reach anything outside
+directory with setup.py.
+
+Examples:
+    file: README.rst, CHANGELOG.md, src/file.txt
+
+:param str value:
+:rtype: str
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_aaa3ffc1b1b13660e1d75c303e272dfc1}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!\_parse\_list@{\_parse\_list}}
+\index{\_parse\_list@{\_parse\_list}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{\_parse\_list()}{\_parse\_list()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_aaa3ffc1b1b13660e1d75c303e272dfc1} 
+setuptools.\+config.\+Config\+Handler.\+\_\+parse\+\_\+list (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{value}{, }\item[{}]{separator}{ = {\ttfamily \textquotesingle{},\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Represents value as a list.
+
+Value is split either by separator (defaults to comma) or by lines.
+
+:param value:
+:param separator: List items separator character.
+:rtype: list
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_abd673a6c029258561ec70b2b1435622f}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!\_parse\_section\_to\_dict@{\_parse\_section\_to\_dict}}
+\index{\_parse\_section\_to\_dict@{\_parse\_section\_to\_dict}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{\_parse\_section\_to\_dict()}{\_parse\_section\_to\_dict()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_abd673a6c029258561ec70b2b1435622f} 
+setuptools.\+config.\+Config\+Handler.\+\_\+parse\+\_\+section\+\_\+to\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{section\+\_\+options}{, }\item[{}]{values\+\_\+parser}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parses section options into a dictionary.
+
+Optionally applies a given parser to values.
+
+:param dict section_options:
+:param callable values_parser:
+:rtype: dict
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_a168be4eaeae26f7c8d3e4cc82fd0549c}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!parse@{parse}}
+\index{parse@{parse}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_a168be4eaeae26f7c8d3e4cc82fd0549c} 
+setuptools.\+config.\+Config\+Handler.\+parse (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses configuration file items from one
+or more related sections.\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_ad30254c27508efd5300438e61ddbf9ad}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!parse\_section@{parse\_section}}
+\index{parse\_section@{parse\_section}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{parse\_section()}{parse\_section()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_ad30254c27508efd5300438e61ddbf9ad} 
+setuptools.\+config.\+Config\+Handler.\+parse\+\_\+section (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{section\+\_\+options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses configuration file section.
+
+:param dict section_options:
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1config_1_1_config_handler_a6605f2e533d88327efb84160cb63c16a}\index{setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}!parsers@{parsers}}
+\index{parsers@{parsers}!setuptools.config.ConfigHandler@{setuptools.config.ConfigHandler}}
+\doxysubsubsection{\texorpdfstring{parsers()}{parsers()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1config_1_1_config_handler_a6605f2e533d88327efb84160cb63c16a} 
+setuptools.\+config.\+Config\+Handler.\+parsers (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Metadata item name to parser function mapping.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsetuptools_1_1config_1_1_config_metadata_handler_af311d3d6dc67656aba929f18f4dd21e7}{setuptools.\+config.\+Config\+Metadata\+Handler}}, and \mbox{\hyperlink{classsetuptools_1_1config_1_1_config_options_handler_a0b0491887ff2eb68789dd7df698fcdb3}{setuptools.\+config.\+Config\+Options\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/setuptools/config.\+py\end{DoxyCompactItemize}

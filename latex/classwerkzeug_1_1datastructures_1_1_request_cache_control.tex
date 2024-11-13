@@ -1,0 +1,136 @@
+\doxysection{werkzeug.\+datastructures.\+Request\+Cache\+Control Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1_request_cache_control}{}\label{classwerkzeug_1_1datastructures_1_1_request_cache_control}\index{werkzeug.datastructures.RequestCacheControl@{werkzeug.datastructures.RequestCacheControl}}
+Inheritance diagram for werkzeug.\+datastructures.\+Request\+Cache\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.629108cm]{classwerkzeug_1_1datastructures_1_1_request_cache_control}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_request_cache_control_aa5eebaac2418de3e6aaaa2fb12c9547f}\label{classwerkzeug_1_1datastructures_1_1_request_cache_control_aa5eebaac2418de3e6aaaa2fb12c9547f} 
+{\bfseries max\+\_\+stale} = cache\+\_\+control\+\_\+property("{}max-\/stale"{}, "{}\texorpdfstring{$\ast$}{*}"{}, int)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_request_cache_control_ad137c3278b8f4ca26b7ad30690b819b6}\label{classwerkzeug_1_1datastructures_1_1_request_cache_control_ad137c3278b8f4ca26b7ad30690b819b6} 
+{\bfseries min\+\_\+fresh} = cache\+\_\+control\+\_\+property("{}min-\/fresh"{}, "{}\texorpdfstring{$\ast$}{*}"{}, int)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_request_cache_control_a1c9c03b9eb133ce26bef8978d3a23912}\label{classwerkzeug_1_1datastructures_1_1_request_cache_control_a1c9c03b9eb133ce26bef8978d3a23912} 
+{\bfseries only\+\_\+if\+\_\+cached} = cache\+\_\+control\+\_\+property("{}only-\/if-\/cached"{}, None, bool)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1___cache_control}{werkzeug.\+datastructures.\+\_\+\+Cache\+Control}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries no\+\_\+cache} = cache\+\_\+control\+\_\+property("{}no-\/cache"{}, "{}\texorpdfstring{$\ast$}{*}"{}, None)
+\item 
+{\bfseries no\+\_\+store} = cache\+\_\+control\+\_\+property("{}no-\/store"{}, None, bool)
+\item 
+{\bfseries max\+\_\+age} = cache\+\_\+control\+\_\+property("{}max-\/age"{}, -\/1, int)
+\item 
+{\bfseries no\+\_\+transform} = cache\+\_\+control\+\_\+property("{}no-\/transform"{}, None, None)
+\item 
+{\bfseries cache\+\_\+property} = staticmethod(cache\+\_\+control\+\_\+property)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_update_dict_mixin}{werkzeug.\+datastructures.\+Update\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries on\+\_\+update} = None
+\item 
+{\bfseries clear} = \+\_\+calls\+\_\+update("{}clear"{})
+\item 
+{\bfseries popitem} = \+\_\+calls\+\_\+update("{}popitem"{})
+\item 
+{\bfseries update} = \+\_\+calls\+\_\+update("{}update"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries fromkeys} (cls, keys, value=None)
+\item 
+{\bfseries \+\_\+\+\_\+reduce\+\_\+ex\+\_\+\+\_\+} (self, protocol)
+\item 
+{\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+{\bfseries setdefault} (self, key, default=None)
+\item 
+{\bfseries update} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+{\bfseries pop} (self, key, default=None)
+\item 
+{\bfseries popitem} (self)
+\item 
+{\bfseries \+\_\+\+\_\+setitem\+\_\+\+\_\+} (self, key, value)
+\item 
+{\bfseries \+\_\+\+\_\+delitem\+\_\+\+\_\+} (self, key)
+\item 
+{\bfseries clear} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1___cache_control}{werkzeug.\+datastructures.\+\_\+\+Cache\+Control}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, values=(), on\+\_\+update=None)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1___cache_control_af40cb1ecb2500cfaa0e54b5edd2095fa}{to\+\_\+header}} (self)
+\item 
+{\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_update_dict_mixin}{werkzeug.\+datastructures.\+Update\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries setdefault} (self, key, default=None)
+\item 
+{\bfseries pop} (self, key, default=\+\_\+missing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1___cache_control}{werkzeug.\+datastructures.\+\_\+\+Cache\+Control}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries on\+\_\+update} = on\+\_\+update
+\item 
+{\bfseries provided} = values is not None
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+iter\+\_\+hashitems} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1___cache_control}{werkzeug.\+datastructures.\+\_\+\+Cache\+Control}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1___cache_control_ad39f9f3b8f4b3b1b006f345579c03fb5}{\+\_\+get\+\_\+cache\+\_\+value}} (self, key, empty, type)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1___cache_control_a8038c3f7ce65665530e6017fdf3a5b4f}{\+\_\+set\+\_\+cache\+\_\+value}} (self, key, value, type)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1___cache_control_a217f662b18c712b6d847ecf560783540}{\+\_\+del\+\_\+cache\+\_\+value}} (self, key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+hash\+\_\+cache} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A cache control for requests.  This is immutable and gives access
+to all the request-relevant cache control headers.
+
+To get a header of the :class:`RequestCacheControl` object again you can
+convert the object into a string or call the :meth:`to_header` method.  If
+you plan to subclass it and add your own items have a look at the sourcecode
+for that class.
+
+.. versionchanged:: 2.1.0
+    Setting int properties such as ``max_age`` will convert the
+    value to an int.
+
+.. versionadded:: 0.5
+   In previous versions a `CacheControl` class existed that was used
+   both for request and response.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/datastructures.\+py\end{DoxyCompactItemize}

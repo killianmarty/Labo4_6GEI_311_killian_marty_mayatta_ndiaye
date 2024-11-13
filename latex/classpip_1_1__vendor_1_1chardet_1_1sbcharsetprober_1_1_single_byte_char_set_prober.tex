@@ -1,0 +1,171 @@
+\doxysection{pip.\+\_\+vendor.\+chardet.\+sbcharsetprober.\+Single\+Byte\+Char\+Set\+Prober Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober}{}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober}\index{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}}
+Inheritance diagram for pip.\+\_\+vendor.\+chardet.\+sbcharsetprober.\+Single\+Byte\+Char\+Set\+Prober\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a2eba275e140b2992b84b96b60936c770}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, model, reversed=False, name\+\_\+prober=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a9b10f025df55f5c3f32220e4c86cb33e}{reset}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a2b6b0cd2961c949468b1519c74971bd6}{charset\+\_\+name}} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_aec046324abee63a68a45c4bb55026a42}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_aec046324abee63a68a45c4bb55026a42} 
+{\bfseries language} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a3f047b6205971c18774251f818854cf3}{feed}} (self, byte\+\_\+str)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a6a34a3b2b833a948a836eb70c689f88b}{get\+\_\+confidence}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober}{pip.\+\_\+vendor.\+chardet.\+charsetprober.\+Char\+Set\+Prober}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries state} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a0999befe8a000036e599585ff25fb473}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a0999befe8a000036e599585ff25fb473} 
+tuple {\bfseries \+\_\+reversed} = (self.\+\_\+last\+\_\+order \texorpdfstring{$\ast$}{*} self.\+SAMPLE\+\_\+\+SIZE) + order
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a40ec78b3ff3fba244f59ccdc64ed7cd2}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a40ec78b3ff3fba244f59ccdc64ed7cd2} 
+{\bfseries state} = Probing\+State.\+DETECTING\+:
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober}{pip.\+\_\+vendor.\+chardet.\+charsetprober.\+Char\+Set\+Prober}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries lang\+\_\+filter} = lang\+\_\+filter
+\item 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a19a3a86c36cd56fba767e159b17c4183}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a19a3a86c36cd56fba767e159b17c4183} 
+int {\bfseries SAMPLE\+\_\+\+SIZE} = 64
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a79b798f4b05234989d98e5d85ed07a7b}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a79b798f4b05234989d98e5d85ed07a7b} 
+int {\bfseries SB\+\_\+\+ENOUGH\+\_\+\+REL\+\_\+\+THRESHOLD} = 1024
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a4ca99b95160c3a39f412cf75e45717ba}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a4ca99b95160c3a39f412cf75e45717ba} 
+float {\bfseries POSITIVE\+\_\+\+SHORTCUT\+\_\+\+THRESHOLD} = 0.\+95
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a0500ac6884cdc00fa87a50bf36a7ef2b}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a0500ac6884cdc00fa87a50bf36a7ef2b} 
+float {\bfseries NEGATIVE\+\_\+\+SHORTCUT\+\_\+\+THRESHOLD} = 0.\+05
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober}{pip.\+\_\+vendor.\+chardet.\+charsetprober.\+Char\+Set\+Prober}}}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries SHORTCUT\+\_\+\+THRESHOLD} = 0.\+95
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_ad5aa9965f5a0748e9ccbf5395ed4e7eb}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_ad5aa9965f5a0748e9ccbf5395ed4e7eb} 
+{\bfseries \+\_\+model} = model
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a67cdc23310adce887519c05dbcfa88e6}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a67cdc23310adce887519c05dbcfa88e6} 
+{\bfseries \+\_\+reversed} = reversed
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_aad7c77f70fd5710183bd7b4aea7e042c}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_aad7c77f70fd5710183bd7b4aea7e042c} 
+{\bfseries \+\_\+name\+\_\+prober} = name\+\_\+prober
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a224646f3d93493ae44a206ffab3ccbfe}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a224646f3d93493ae44a206ffab3ccbfe} 
+int {\bfseries \+\_\+last\+\_\+order} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a718b5840287dfe0e54dfb6bef31b899b}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a718b5840287dfe0e54dfb6bef31b899b} 
+list {\bfseries \+\_\+seq\+\_\+counters} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a8cab44af633c02218b2bb3ebb11348a6}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a8cab44af633c02218b2bb3ebb11348a6} 
+int {\bfseries \+\_\+total\+\_\+seqs} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_aaf0c7d6ff53db68ec80d32fd4e011afa}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_aaf0c7d6ff53db68ec80d32fd4e011afa} 
+int {\bfseries \+\_\+total\+\_\+char} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a15f3e3a016325d23082ec81f945bd935}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a15f3e3a016325d23082ec81f945bd935} 
+int {\bfseries \+\_\+freq\+\_\+char} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a60779d597727b443c7445fa08dd5458c}\label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a60779d597727b443c7445fa08dd5458c} 
+{\bfseries \+\_\+state} = Probing\+State.\+FOUND\+\_\+\+IT
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober}{pip.\+\_\+vendor.\+chardet.\+charsetprober.\+Char\+Set\+Prober}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+state} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober}{pip.\+\_\+vendor.\+chardet.\+charsetprober.\+Char\+Set\+Prober}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries filter\+\_\+high\+\_\+byte\+\_\+only} (buf)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober_a1cde35f3127849ff3e548d20b2f51a27}{filter\+\_\+international\+\_\+words}} (buf)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober_ab0bd4ba6e46e9960de119a8d6f3c1324}{filter\+\_\+with\+\_\+english\+\_\+letters}} (buf)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a2eba275e140b2992b84b96b60936c770}\index{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a2eba275e140b2992b84b96b60936c770} 
+pip.\+\_\+vendor.\+chardet.\+sbcharsetprober.\+Single\+Byte\+Char\+Set\+Prober.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{model}{, }\item[{}]{reversed}{ = {\ttfamily False}, }\item[{}]{name\+\_\+prober}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober}{pip.\+\_\+vendor.\+chardet.\+charsetprober.\+Char\+Set\+Prober}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a2b6b0cd2961c949468b1519c74971bd6}\index{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}!charset\_name@{charset\_name}}
+\index{charset\_name@{charset\_name}!pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}}
+\doxysubsubsection{\texorpdfstring{charset\_name()}{charset\_name()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a2b6b0cd2961c949468b1519c74971bd6} 
+pip.\+\_\+vendor.\+chardet.\+sbcharsetprober.\+Single\+Byte\+Char\+Set\+Prober.\+charset\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober}{pip.\+\_\+vendor.\+chardet.\+charsetprober.\+Char\+Set\+Prober}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a3f047b6205971c18774251f818854cf3}\index{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}!feed@{feed}}
+\index{feed@{feed}!pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a3f047b6205971c18774251f818854cf3} 
+pip.\+\_\+vendor.\+chardet.\+sbcharsetprober.\+Single\+Byte\+Char\+Set\+Prober.\+feed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{byte\+\_\+str}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober}{pip.\+\_\+vendor.\+chardet.\+charsetprober.\+Char\+Set\+Prober}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a6a34a3b2b833a948a836eb70c689f88b}\index{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}!get\_confidence@{get\_confidence}}
+\index{get\_confidence@{get\_confidence}!pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}}
+\doxysubsubsection{\texorpdfstring{get\_confidence()}{get\_confidence()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a6a34a3b2b833a948a836eb70c689f88b} 
+pip.\+\_\+vendor.\+chardet.\+sbcharsetprober.\+Single\+Byte\+Char\+Set\+Prober.\+get\+\_\+confidence (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober}{pip.\+\_\+vendor.\+chardet.\+charsetprober.\+Char\+Set\+Prober}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a9b10f025df55f5c3f32220e4c86cb33e}\index{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}!reset@{reset}}
+\index{reset@{reset}!pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber@{pip.\_vendor.chardet.sbcharsetprober.SingleByteCharSetProber}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1sbcharsetprober_1_1_single_byte_char_set_prober_a9b10f025df55f5c3f32220e4c86cb33e} 
+pip.\+\_\+vendor.\+chardet.\+sbcharsetprober.\+Single\+Byte\+Char\+Set\+Prober.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1charsetprober_1_1_char_set_prober}{pip.\+\_\+vendor.\+chardet.\+charsetprober.\+Char\+Set\+Prober}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/chardet/sbcharsetprober.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+\doxysection{pip.\+\_\+internal.\+utils.\+appdirs Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1utils_1_1appdirs}{}\label{namespacepip_1_1__internal_1_1utils_1_1appdirs}\index{pip.\_internal.utils.appdirs@{pip.\_internal.utils.appdirs}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1appdirs_ad991b91690a8778e8646b4b2bc5fb987}\label{namespacepip_1_1__internal_1_1utils_1_1appdirs_ad991b91690a8778e8646b4b2bc5fb987} 
+{\bfseries user\+\_\+cache\+\_\+dir} (appname)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1appdirs_afa096f3ef691475a1a021756717e8ede}\label{namespacepip_1_1__internal_1_1utils_1_1appdirs_afa096f3ef691475a1a021756717e8ede} 
+{\bfseries user\+\_\+config\+\_\+dir} (appname, roaming=True)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1appdirs_aec6c32b28687ba9ccd944a31642ecd71}\label{namespacepip_1_1__internal_1_1utils_1_1appdirs_aec6c32b28687ba9ccd944a31642ecd71} 
+{\bfseries site\+\_\+config\+\_\+dirs} (appname)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This code wraps the vendored appdirs module to so the return values are
+compatible for the current pip code base.
+
+The intention is to rewrite current usages gradually, keeping the tests pass,
+and eventually drop this after all usages are changed.
+\end{DoxyVerb}
+ 

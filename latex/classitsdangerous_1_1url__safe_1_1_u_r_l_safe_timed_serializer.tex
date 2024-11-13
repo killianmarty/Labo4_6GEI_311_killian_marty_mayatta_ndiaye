@@ -1,0 +1,107 @@
+\doxysection{itsdangerous.\+url\+\_\+safe.\+URLSafe\+Timed\+Serializer Class Reference}
+\hypertarget{classitsdangerous_1_1url__safe_1_1_u_r_l_safe_timed_serializer}{}\label{classitsdangerous_1_1url__safe_1_1_u_r_l_safe_timed_serializer}\index{itsdangerous.url\_safe.URLSafeTimedSerializer@{itsdangerous.url\_safe.URLSafeTimedSerializer}}
+Inheritance diagram for itsdangerous.\+url\+\_\+safe.\+URLSafe\+Timed\+Serializer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.588652cm]{classitsdangerous_1_1url__safe_1_1_u_r_l_safe_timed_serializer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classitsdangerous_1_1url__safe_1_1_u_r_l_safe_serializer_mixin}{itsdangerous.\+url\+\_\+safe.\+URLSafe\+Serializer\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \mbox{\hyperlink{classitsdangerous_1_1url__safe_1_1_u_r_l_safe_serializer_mixin_ab3419a13882d5656bf0542f1adb0adb1}{load\+\_\+payload}} (self, bytes payload, \texorpdfstring{$\ast$}{*}t.\+Any args, t.\+Any\texorpdfstring{$\vert$}{|}None serializer=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+bytes \mbox{\hyperlink{classitsdangerous_1_1url__safe_1_1_u_r_l_safe_serializer_mixin_a870a151f6ca18bcafe88d0ade63e73cc}{dump\+\_\+payload}} (self, t.\+Any obj)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer}{itsdangerous.\+serializer.\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (\mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer}{Serializer}}\mbox{[}str\mbox{]} self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_af10d21b38dacc5763f6f20c0fb896dc4}{secret\+\_\+key}}, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=b"{}itsdangerous"{}, None\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classitsdangerous_1_1serializer_1_1___p_data_serializer}{\+\_\+\+PData\+Serializer}}\mbox{[}str\mbox{]} serializer=None, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None serializer\+\_\+kwargs=None, type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\texorpdfstring{$\vert$}{|}None signer=None, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None signer\+\_\+kwargs=None, list\mbox{[}dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}tuple\mbox{[}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}, dict\mbox{[}str, t.\+Any\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}None fallback\+\_\+signers=None)
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (\mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer}{Serializer}}\mbox{[}bytes\mbox{]} self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_af10d21b38dacc5763f6f20c0fb896dc4}{secret\+\_\+key}}, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt, \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1___p_data_serializer}{\+\_\+\+PData\+Serializer}}\mbox{[}bytes\mbox{]} serializer, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None serializer\+\_\+kwargs=None, type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\texorpdfstring{$\vert$}{|}None signer=None, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None signer\+\_\+kwargs=None, list\mbox{[}dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}tuple\mbox{[}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}, dict\mbox{[}str, t.\+Any\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}None fallback\+\_\+signers=None)
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (\mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer}{Serializer}}\mbox{[}bytes\mbox{]} self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_af10d21b38dacc5763f6f20c0fb896dc4}{secret\+\_\+key}}, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=b"{}itsdangerous"{}, \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1___p_data_serializer}{\+\_\+\+PData\+Serializer}}\mbox{[}bytes\mbox{]} serializer, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None serializer\+\_\+kwargs=None, type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\texorpdfstring{$\vert$}{|}None signer=None, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None signer\+\_\+kwargs=None, list\mbox{[}dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}tuple\mbox{[}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}, dict\mbox{[}str, t.\+Any\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}None fallback\+\_\+signers=None)
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_af10d21b38dacc5763f6f20c0fb896dc4}{secret\+\_\+key}}, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt, t.\+Any serializer, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None serializer\+\_\+kwargs=None, type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\texorpdfstring{$\vert$}{|}None signer=None, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None signer\+\_\+kwargs=None, list\mbox{[}dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}tuple\mbox{[}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}, dict\mbox{[}str, t.\+Any\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}None fallback\+\_\+signers=None)
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_af10d21b38dacc5763f6f20c0fb896dc4}{secret\+\_\+key}}, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=b"{}itsdangerous"{}, \texorpdfstring{$\ast$}{*}, t.\+Any serializer, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None serializer\+\_\+kwargs=None, type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\texorpdfstring{$\vert$}{|}None signer=None, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None signer\+\_\+kwargs=None, list\mbox{[}dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}tuple\mbox{[}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}, dict\mbox{[}str, t.\+Any\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}None fallback\+\_\+signers=None)
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}cabc.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_af10d21b38dacc5763f6f20c0fb896dc4}{secret\+\_\+key}}, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=b"{}itsdangerous"{}, t.\+Any\texorpdfstring{$\vert$}{|}None serializer=None, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None serializer\+\_\+kwargs=None, type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\texorpdfstring{$\vert$}{|}None signer=None, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None signer\+\_\+kwargs=None, list\mbox{[}dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}tuple\mbox{[}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}, dict\mbox{[}str, t.\+Any\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}None fallback\+\_\+signers=None)
+\item 
+bytes \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_af10d21b38dacc5763f6f20c0fb896dc4}{secret\+\_\+key}} (self)
+\item 
+\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}} \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_acc4d236d83d8a65d17dde1420eb6aba1}{make\+\_\+signer}} (self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=None)
+\item 
+\+\_\+\+TSerialized \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_a1ca38fbf8e0a5288da55c686a16d0e44}{dumps}} (self, t.\+Any obj, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=None)
+\item 
+None \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_a5067490164c40060e56f61b316b4647e}{dump}} (self, t.\+Any obj, t.\+IO\mbox{[}t.\+Any\mbox{]} f, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=None)
+\item 
+t.\+Any \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_aacb09ee83f0c5bcb871d0dd3af08228c}{load}} (self, t.\+IO\mbox{[}t.\+Any\mbox{]} f, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=None)
+\item 
+tuple\mbox{[}bool, t.\+Any\mbox{]} \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_a57e556410da5c4f281d166bd9a91c36b}{load\+\_\+unsafe}} (self, t.\+IO\mbox{[}t.\+Any\mbox{]} f, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classitsdangerous_1_1timed_1_1_timed_serializer}{itsdangerous.\+timed.\+Timed\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+cabc.\+Iterator\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1timed_1_1_timestamp_signer}{Timestamp\+Signer}}\mbox{]} \mbox{\hyperlink{classitsdangerous_1_1timed_1_1_timed_serializer_a7632855ea5900b00fae7bed8e4199f0f}{iter\+\_\+unsigners}} (self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=None)
+\item 
+t.\+Any \mbox{\hyperlink{classitsdangerous_1_1timed_1_1_timed_serializer_a5a7a7355881e2e754c438fc94b56258b}{loads}} (self, str\texorpdfstring{$\vert$}{|}bytes s, int\texorpdfstring{$\vert$}{|}None max\+\_\+age=None, bool return\+\_\+timestamp=False, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=None)
+\item 
+tuple\mbox{[}bool, t.\+Any\mbox{]} \mbox{\hyperlink{classitsdangerous_1_1timed_1_1_timed_serializer_a2b77b90eb8ab91fb3d7b77dcf4149f02}{loads\+\_\+unsafe}} (self, str\texorpdfstring{$\vert$}{|}bytes s, int\texorpdfstring{$\vert$}{|}None max\+\_\+age=None, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer}{itsdangerous.\+serializer.\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+list\mbox{[}bytes\mbox{]} {\bfseries secret\+\_\+keys} = \+\_\+make\+\_\+keys\+\_\+list(\mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_af10d21b38dacc5763f6f20c0fb896dc4}{secret\+\_\+key}})
+\item 
+{\bfseries salt} = salt
+\item 
+\mbox{\hyperlink{classitsdangerous_1_1serializer_1_1___p_data_serializer}{\+\_\+\+PData\+Serializer}}\mbox{[}\+\_\+\+TSerialized\mbox{]} {\bfseries serializer} = serializer
+\item 
+bool {\bfseries is\+\_\+text\+\_\+serializer} = is\+\_\+text\+\_\+serializer(serializer)
+\item 
+type\mbox{[}\mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}\mbox{]} {\bfseries signer} = signer
+\item 
+dict\mbox{[}str, t.\+Any\mbox{]} {\bfseries signer\+\_\+kwargs} = signer\+\_\+kwargs or \{\}
+\item 
+list\mbox{[} {\bfseries fallback\+\_\+signers} = fallback
+\item 
+dict\mbox{[}str, t.\+Any\mbox{]} {\bfseries serializer\+\_\+kwargs} = serializer\+\_\+kwargs or \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classitsdangerous_1_1url__safe_1_1_u_r_l_safe_serializer_mixin}{itsdangerous.\+url\+\_\+safe.\+URLSafe\+Serializer\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitsdangerous_1_1serializer_1_1___p_data_serializer}{\+\_\+\+PData\+Serializer}} {\bfseries default\+\_\+serializer} = \mbox{\hyperlink{classitsdangerous_1_1__json_1_1___compact_j_s_o_n}{\+\_\+\+Compact\+JSON}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer}{itsdangerous.\+serializer.\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classitsdangerous_1_1serializer_1_1___p_data_serializer}{\+\_\+\+PData\+Serializer}} {\bfseries default\+\_\+serializer} = json
+\item 
+type {\bfseries default\+\_\+signer} = \mbox{\hyperlink{classitsdangerous_1_1signer_1_1_signer}{Signer}}
+\item 
+list {\bfseries default\+\_\+fallback\+\_\+signers} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classitsdangerous_1_1timed_1_1_timed_serializer}{itsdangerous.\+timed.\+Timed\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+type {\bfseries default\+\_\+signer} = \mbox{\hyperlink{classitsdangerous_1_1timed_1_1_timestamp_signer}{Timestamp\+Signer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer}{itsdangerous.\+serializer.\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+tuple\mbox{[}bool, t.\+Any\mbox{]} \mbox{\hyperlink{classitsdangerous_1_1serializer_1_1_serializer_a882ec8c9feb0fe1b51d6b2d0491802d8}{\+\_\+loads\+\_\+unsafe\+\_\+impl}} (self, str\texorpdfstring{$\vert$}{|}bytes s, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None salt, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None load\+\_\+kwargs=None, dict\mbox{[}str, t.\+Any\mbox{]}\texorpdfstring{$\vert$}{|}None load\+\_\+payload\+\_\+kwargs=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Works like :class:`.TimedSerializer` but dumps and loads into a
+URL safe string consisting of the upper and lowercase character of
+the alphabet as well as ``'_'``, ``'-'`` and ``'.'``.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/itsdangerous/url\+\_\+safe.\+py\end{DoxyCompactItemize}

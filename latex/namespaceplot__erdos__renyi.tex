@@ -1,0 +1,35 @@
+\doxysection{plot\+\_\+erdos\+\_\+renyi Namespace Reference}
+\hypertarget{namespaceplot__erdos__renyi}{}\label{namespaceplot__erdos__renyi}\index{plot\_erdos\_renyi@{plot\_erdos\_renyi}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__erdos__renyi_af458f0ed06a431402b5ebb5db58b3e95}\label{namespaceplot__erdos__renyi_af458f0ed06a431402b5ebb5db58b3e95} 
+int {\bfseries n} = 10
+\item 
+\Hypertarget{namespaceplot__erdos__renyi_a981ad1ca5f3db1e9dba496de60ed2a9d}\label{namespaceplot__erdos__renyi_a981ad1ca5f3db1e9dba496de60ed2a9d} 
+int {\bfseries m} = 20
+\item 
+\Hypertarget{namespaceplot__erdos__renyi_abdf3f998ad4d1ba3235045ff49987787}\label{namespaceplot__erdos__renyi_abdf3f998ad4d1ba3235045ff49987787} 
+int {\bfseries seed} = 20160
+\item 
+\Hypertarget{namespaceplot__erdos__renyi_a22318d1b8348bb5ceee45a6b400d28ea}\label{namespaceplot__erdos__renyi_a22318d1b8348bb5ceee45a6b400d28ea} 
+{\bfseries G} = nx.\+gnm\+\_\+random\+\_\+graph(n, m, seed=seed)
+\item 
+\Hypertarget{namespaceplot__erdos__renyi_ab1513ef0b1a580e884e9c04b2d08e8a8}\label{namespaceplot__erdos__renyi_ab1513ef0b1a580e884e9c04b2d08e8a8} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(G, seed=seed)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}===========
+Erdos Renyi
+===========
+
+Create an G{n,m} random graph with n nodes and m edges
+and report some properties.
+
+This graph is sometimes called the Erdős-Rényi graph
+but is different from G{n,p} or binomial_graph which is also
+sometimes called the Erdős-Rényi graph.
+\end{DoxyVerb}
+ 

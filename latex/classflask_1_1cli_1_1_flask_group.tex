@@ -1,0 +1,332 @@
+\doxysection{flask.\+cli.\+Flask\+Group Class Reference}
+\hypertarget{classflask_1_1cli_1_1_flask_group}{}\label{classflask_1_1cli_1_1_flask_group}\index{flask.cli.FlaskGroup@{flask.cli.FlaskGroup}}
+Inheritance diagram for flask.\+cli.\+Flask\+Group\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.000000cm]{classflask_1_1cli_1_1_flask_group}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classflask_1_1cli_1_1_flask_group_a2ef1563b22a29248235ec397b9dd5887}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, bool add\+\_\+default\+\_\+commands=True, t.\+Callable\mbox{[}..., \mbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}\mbox{]}\texorpdfstring{$\vert$}{|}None create\+\_\+app=None, bool add\+\_\+version\+\_\+option=True, bool load\+\_\+dotenv=True, bool set\+\_\+debug\+\_\+flag=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any extra)
+\item 
+\mbox{\hyperlink{classflask_1_1cli_1_1_flask_group_a83c4b80d5fb5caabf938da8cd345eb78}{get\+\_\+command}} (self, ctx, name)
+\item 
+\mbox{\hyperlink{classflask_1_1cli_1_1_flask_group_adf1173cf5eaefcf7f3aa17721c9e1b29}{list\+\_\+commands}} (self, ctx)
+\item 
+\mbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}} \mbox{\hyperlink{classflask_1_1cli_1_1_flask_group_afa3e3f7c3f96083407652736faabef03}{make\+\_\+context}} (self, str\texorpdfstring{$\vert$}{|}None info\+\_\+name, list\mbox{[}str\mbox{]} args, \mbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}}\texorpdfstring{$\vert$}{|}None parent=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any extra)
+\item 
+list\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1cli_1_1_flask_group_a927e814b024aafffe39ecc2904e40de7}{parse\+\_\+args}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}} ctx, list\mbox{[}str\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classflask_1_1cli_1_1_app_group}{flask.\+cli.\+App\+Group}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classflask_1_1cli_1_1_app_group_a387f2a063f5c74a2b23c5a1efced4b25}{command}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classflask_1_1cli_1_1_app_group_ac6bbe5035a0f3c370d3c5e794ce0df75}{group}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classclick_1_1core_1_1_group}{click.\+core.\+Group}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_group_ac7dda2e68e7c1c5cc50cd22673f36c39}{add\+\_\+command}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_command}{Command}} cmd, t.\+Optional\mbox{[}str\mbox{]} name=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classclick_1_1core_1_1_multi_command}{click.\+core.\+Multi\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Dict\mbox{[}str, t.\+Any\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_multi_command_a2b619a369f75fc7618f16dfe6bf61b28}{to\+\_\+info\+\_\+dict}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+t.\+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_multi_command_a94a4995f17183e06c452d973df298960}{collect\+\_\+usage\+\_\+pieces}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_multi_command_a20d0230f2234f4ab57486999f708d81a}{format\+\_\+options}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\item 
+t.\+Callable\mbox{[}\mbox{[}F\mbox{]}, F\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_multi_command_a14391f9e7966689e0f223d5a99b7b658}{result\+\_\+callback}} (self, bool replace=False)
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_multi_command_adf4344e677a8844b49a9e4af8d15b627}{format\+\_\+commands}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\item 
+t.\+Any \mbox{\hyperlink{classclick_1_1core_1_1_multi_command_a200592624f5887f2ceda548955f35cd0}{invoke}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+t.\+Tuple\mbox{[}t.\+Optional\mbox{[}str\mbox{]}, t.\+Optional\mbox{[}\mbox{\hyperlink{classclick_1_1core_1_1_command}{Command}}\mbox{]}, t.\+List\mbox{[}str\mbox{]}\mbox{]} {\bfseries resolve\+\_\+command} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, t.\+List\mbox{[}str\mbox{]} args)
+\item 
+t.\+List\mbox{[}"{}Completion\+Item"{}\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_multi_command_ad2aaf2d3b2be9a0b94decc050b855dfb}{shell\+\_\+complete}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, str incomplete)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classclick_1_1core_1_1_command}{click.\+core.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classclick_1_1core_1_1_command_a84351e653034a2a8227285600e9ea063}{get\+\_\+usage}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+t.\+List\mbox{[}"{}Parameter"{}\mbox{]} {\bfseries get\+\_\+params} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_command_a3492bb62c59e3371a7db3bc20b1bb21b}{format\+\_\+usage}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\item 
+t.\+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_command_a2241ff83486acaa0ba7be93f61b459b5}{get\+\_\+help\+\_\+option\+\_\+names}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+t.\+Optional\mbox{[}"{}Option"{}\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_command_a85694caee314493d8286bed7a0ce96b3}{get\+\_\+help\+\_\+option}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+\mbox{\hyperlink{classclick_1_1parser_1_1_option_parser}{Option\+Parser}} \mbox{\hyperlink{classclick_1_1core_1_1_command_ac9dfdbd2f6038e2702f32a6f89ebeb23}{make\+\_\+parser}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+str \mbox{\hyperlink{classclick_1_1core_1_1_command_a5378ca64f18f4f8a5a97071ac02b5986}{get\+\_\+help}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+str \mbox{\hyperlink{classclick_1_1core_1_1_command_afb8b3754ad616a17c7daec1681cb3289}{get\+\_\+short\+\_\+help\+\_\+str}} (self, int limit=45)
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_command_a85227a41362345b943694946a0b06e12}{format\+\_\+help}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_command_a1481cc8553728ec2a2dc17cf7a3c1ae4}{format\+\_\+help\+\_\+text}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_command_a87a82c0a2f2427c6e1e5df331e6b8247}{format\+\_\+epilog}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classclick_1_1core_1_1_base_command}{click.\+core.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+"{}te.\+No\+Return"{} {\bfseries main} (self, t.\+Optional\mbox{[}t.\+Sequence\mbox{[}str\mbox{]}\mbox{]} args=None, t.\+Optional\mbox{[}str\mbox{]} prog\+\_\+name=None, t.\+Optional\mbox{[}str\mbox{]} complete\+\_\+var=None, "{}te.\+Literal\mbox{[}True\mbox{]}"{} standalone\+\_\+mode=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any extra)
+\item 
+t.\+Any {\bfseries main} (self, t.\+Optional\mbox{[}t.\+Sequence\mbox{[}str\mbox{]}\mbox{]} args=None, t.\+Optional\mbox{[}str\mbox{]} prog\+\_\+name=None, t.\+Optional\mbox{[}str\mbox{]} complete\+\_\+var=None, bool standalone\+\_\+mode=..., \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any extra)
+\item 
+t.\+Any \mbox{\hyperlink{classclick_1_1core_1_1_base_command_a03de7ab1ffebac416b9fbe8944ff3b81}{main}} (self, t.\+Optional\mbox{[}t.\+Sequence\mbox{[}str\mbox{]}\mbox{]} args=None, t.\+Optional\mbox{[}str\mbox{]} prog\+\_\+name=None, t.\+Optional\mbox{[}str\mbox{]} complete\+\_\+var=None, bool standalone\+\_\+mode=True, bool windows\+\_\+expand\+\_\+args=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any extra)
+\item 
+t.\+Any \mbox{\hyperlink{classclick_1_1core_1_1_base_command_a250490e5a2b7efec4179a87bdf77a5bc}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1cli_1_1_flask_group_a52bf043c2f9e7c5166ce0b8f8db04299}\label{classflask_1_1cli_1_1_flask_group_a52bf043c2f9e7c5166ce0b8f8db04299} 
+{\bfseries create\+\_\+app} = create\+\_\+app
+\item 
+\Hypertarget{classflask_1_1cli_1_1_flask_group_aeb60ffb2519286d578d38fc900fc862f}\label{classflask_1_1cli_1_1_flask_group_aeb60ffb2519286d578d38fc900fc862f} 
+{\bfseries load\+\_\+dotenv} = load\+\_\+dotenv
+\item 
+\Hypertarget{classflask_1_1cli_1_1_flask_group_a26377e35fca1760788abac607156fca3}\label{classflask_1_1cli_1_1_flask_group_a26377e35fca1760788abac607156fca3} 
+{\bfseries set\+\_\+debug\+\_\+flag} = set\+\_\+debug\+\_\+flag
+\item 
+\Hypertarget{classflask_1_1cli_1_1_flask_group_a6335c49bf011cb623bbc4961afa13f97}\label{classflask_1_1cli_1_1_flask_group_a6335c49bf011cb623bbc4961afa13f97} 
+tuple {\bfseries \+\_\+loaded\+\_\+plugin\+\_\+commands} = (3, 10)\+:
+\item 
+\Hypertarget{classflask_1_1cli_1_1_flask_group_af38cc267320c907dd57b26fcab29424b}\label{classflask_1_1cli_1_1_flask_group_af38cc267320c907dd57b26fcab29424b} 
+{\bfseries context\+\_\+settings}
+\item 
+\Hypertarget{classflask_1_1cli_1_1_flask_group_ad7a506f3b72065e88a1f688e2956d8eb}\label{classflask_1_1cli_1_1_flask_group_ad7a506f3b72065e88a1f688e2956d8eb} 
+{\bfseries no\+\_\+args\+\_\+is\+\_\+help}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classclick_1_1core_1_1_group}{click.\+core.\+Group}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Mutable\+Mapping\mbox{[}str, \mbox{\hyperlink{classclick_1_1core_1_1_command}{Command}}\mbox{]} {\bfseries commands} = commands
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classclick_1_1core_1_1_multi_command}{click.\+core.\+Multi\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries no\+\_\+args\+\_\+is\+\_\+help} = no\+\_\+args\+\_\+is\+\_\+help
+\item 
+{\bfseries invoke\+\_\+without\+\_\+command} = invoke\+\_\+without\+\_\+command
+\item 
+{\bfseries subcommand\+\_\+metavar} = subcommand\+\_\+metavar
+\item 
+{\bfseries chain} = chain
+\item 
+{\bfseries params}
+\item 
+t.\+Any {\bfseries invoke\+\_\+without\+\_\+command} = super().\mbox{\hyperlink{classclick_1_1core_1_1_multi_command_a200592624f5887f2ceda548955f35cd0}{invoke}}(ctx)
+\item 
+t.\+Tuple\mbox{[}t.\+Optional\mbox{[}str\mbox{]}, t.\+Optional\mbox{[}\mbox{\hyperlink{classclick_1_1core_1_1_command}{Command}}\mbox{]}, t.\+List\mbox{[}str\mbox{]}\mbox{]} {\bfseries chain} = self.\+resolve\+\_\+command(ctx, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classclick_1_1core_1_1_command}{click.\+core.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries callback} = callback
+\item 
+t.\+List\mbox{[}$\,$\mbox{]} {\bfseries params} = params or \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries help} = help
+\item 
+{\bfseries epilog} = epilog
+\item 
+{\bfseries options\+\_\+metavar} = options\+\_\+metavar
+\item 
+{\bfseries short\+\_\+help} = short\+\_\+help
+\item 
+{\bfseries add\+\_\+help\+\_\+option} = add\+\_\+help\+\_\+option
+\item 
+{\bfseries no\+\_\+args\+\_\+is\+\_\+help} = no\+\_\+args\+\_\+is\+\_\+help
+\item 
+{\bfseries hidden} = hidden
+\item 
+{\bfseries deprecated} = deprecated
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classclick_1_1core_1_1_base_command}{click.\+core.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries name} = name
+\item 
+t.\+Mutable\+Mapping\mbox{[}str, t.\+Any\mbox{]} {\bfseries context\+\_\+settings} = context\+\_\+settings
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1cli_1_1_flask_group_aaf745230c8d8c1b18fba01f8feb09d85}\label{classflask_1_1cli_1_1_flask_group_aaf745230c8d8c1b18fba01f8feb09d85} 
+{\bfseries \+\_\+load\+\_\+plugin\+\_\+commands} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classclick_1_1core_1_1_base_command}{click.\+core.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_base_command_a2c369affd9e6a8399894432a9f347584}{\+\_\+main\+\_\+shell\+\_\+completion}} (self, t.\+Mutable\+Mapping\mbox{[}str, t.\+Any\mbox{]} ctx\+\_\+args, str prog\+\_\+name, t.\+Optional\mbox{[}str\mbox{]} complete\+\_\+var=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1cli_1_1_flask_group_a41bf68b425b9e054109f26b56a990fc6}\label{classflask_1_1cli_1_1_flask_group_a41bf68b425b9e054109f26b56a990fc6} 
+bool {\bfseries \+\_\+loaded\+\_\+plugin\+\_\+commands} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classclick_1_1core_1_1_multi_command}{click.\+core.\+Multi\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Callable\mbox{[}\mbox{[}F\mbox{]}, F\mbox{]} {\bfseries \+\_\+result\+\_\+callback} = \mbox{\hyperlink{classclick_1_1core_1_1_multi_command_a14391f9e7966689e0f223d5a99b7b658}{result\+\_\+callback}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classclick_1_1core_1_1_group}{click.\+core.\+Group}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries command\+\_\+class} = None
+\item 
+t {\bfseries group\+\_\+class} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classclick_1_1core_1_1_multi_command}{click.\+core.\+Multi\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries allow\+\_\+extra\+\_\+args} = True
+\item 
+bool {\bfseries allow\+\_\+interspersed\+\_\+args} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classclick_1_1core_1_1_base_command}{click.\+core.\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries context\+\_\+class} = \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}
+\item 
+bool {\bfseries allow\+\_\+extra\+\_\+args} = False
+\item 
+bool {\bfseries allow\+\_\+interspersed\+\_\+args} = True
+\item 
+bool {\bfseries ignore\+\_\+unknown\+\_\+options} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Special subclass of the :class:`AppGroup` group that supports
+loading more commands from the configured Flask app.  Normally a
+developer does not have to interface with this class but there are
+some very advanced use cases for which it makes sense to create an
+instance of this. see :ref:`custom-scripts`.
+
+:param add_default_commands: if this is True then the default run and
+    shell commands will be added.
+:param add_version_option: adds the ``--version`` option.
+:param create_app: an optional callback that is passed the script info and
+    returns the loaded app.
+:param load_dotenv: Load the nearest :file:`.env` and :file:`.flaskenv`
+    files to set environment variables. Will also change the working
+    directory to the directory containing the first file found.
+:param set_debug_flag: Set the app's debug flag.
+
+.. versionchanged:: 2.2
+    Added the ``-A/--app``, ``--debug/--no-debug``, ``-e/--env-file`` options.
+
+.. versionchanged:: 2.2
+    An app context is pushed when running ``app.cli`` commands, so
+    ``@with_appcontext`` is no longer required for those commands.
+
+.. versionchanged:: 1.0
+    If installed, python-dotenv will be used to load environment variables
+    from :file:`.env` and :file:`.flaskenv` files.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1cli_1_1_flask_group_a2ef1563b22a29248235ec397b9dd5887}\index{flask.cli.FlaskGroup@{flask.cli.FlaskGroup}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.cli.FlaskGroup@{flask.cli.FlaskGroup}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_flask_group_a2ef1563b22a29248235ec397b9dd5887} 
+ None flask.\+cli.\+Flask\+Group.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{add\+\_\+default\+\_\+commands}{ = {\ttfamily True}, }\item[{t.\+Callable\mbox{[}..., \mbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}\mbox{]} \texorpdfstring{$\vert$}{|} None }]{create\+\_\+app}{ = {\ttfamily None}, }\item[{bool }]{add\+\_\+version\+\_\+option}{ = {\ttfamily True}, }\item[{bool }]{load\+\_\+dotenv}{ = {\ttfamily True}, }\item[{bool }]{set\+\_\+debug\+\_\+flag}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{extra}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classclick_1_1core_1_1_group}{click.\+core.\+Group}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1cli_1_1_flask_group_a83c4b80d5fb5caabf938da8cd345eb78}\index{flask.cli.FlaskGroup@{flask.cli.FlaskGroup}!get\_command@{get\_command}}
+\index{get\_command@{get\_command}!flask.cli.FlaskGroup@{flask.cli.FlaskGroup}}
+\doxysubsubsection{\texorpdfstring{get\_command()}{get\_command()}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_flask_group_a83c4b80d5fb5caabf938da8cd345eb78} 
+flask.\+cli.\+Flask\+Group.\+get\+\_\+command (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ctx}{, }\item[{}]{cmd\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a context and a command name, this returns a
+:class:`Command` object if it exists or returns `None`.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classclick_1_1core_1_1_group_a9d50dd36c5e9fc85da2bbc1fd3ec7690}{click.\+core.\+Group}}.
+
+\Hypertarget{classflask_1_1cli_1_1_flask_group_adf1173cf5eaefcf7f3aa17721c9e1b29}\index{flask.cli.FlaskGroup@{flask.cli.FlaskGroup}!list\_commands@{list\_commands}}
+\index{list\_commands@{list\_commands}!flask.cli.FlaskGroup@{flask.cli.FlaskGroup}}
+\doxysubsubsection{\texorpdfstring{list\_commands()}{list\_commands()}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_flask_group_adf1173cf5eaefcf7f3aa17721c9e1b29} 
+flask.\+cli.\+Flask\+Group.\+list\+\_\+commands (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of subcommand names in the order they should
+appear.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classclick_1_1core_1_1_group_af083fb38296d998b42c8371f432723c6}{click.\+core.\+Group}}.
+
+\Hypertarget{classflask_1_1cli_1_1_flask_group_afa3e3f7c3f96083407652736faabef03}\index{flask.cli.FlaskGroup@{flask.cli.FlaskGroup}!make\_context@{make\_context}}
+\index{make\_context@{make\_context}!flask.cli.FlaskGroup@{flask.cli.FlaskGroup}}
+\doxysubsubsection{\texorpdfstring{make\_context()}{make\_context()}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_flask_group_afa3e3f7c3f96083407652736faabef03} 
+ \mbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}} flask.\+cli.\+Flask\+Group.\+make\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{info\+\_\+name}{, }\item[{list\mbox{[}str\mbox{]}}]{args}{, }\item[{\mbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}} \texorpdfstring{$\vert$}{|} None }]{parent}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{extra}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function when given an info name and arguments will kick
+off the parsing and create a new :class:`Context`.  It does not
+invoke the actual command callback though.
+
+To quickly customize the context class used without overriding
+this method, set the :attr:`context_class` attribute.
+
+:param info_name: the info name for this invocation.  Generally this
+                  is the most descriptive name for the script or
+                  command.  For the toplevel script it's usually
+                  the name of the script, for commands below it's
+                  the name of the command.
+:param args: the arguments to parse as list of strings.
+:param parent: the parent context if available.
+:param extra: extra keyword arguments forwarded to the context
+              constructor.
+
+.. versionchanged:: 8.0
+    Added the :attr:`context_class` attribute.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classclick_1_1core_1_1_base_command_adb15e5877ba8ed9d2ec3f954154e7fc3}{click.\+core.\+Base\+Command}}.
+
+\Hypertarget{classflask_1_1cli_1_1_flask_group_a927e814b024aafffe39ecc2904e40de7}\index{flask.cli.FlaskGroup@{flask.cli.FlaskGroup}!parse\_args@{parse\_args}}
+\index{parse\_args@{parse\_args}!flask.cli.FlaskGroup@{flask.cli.FlaskGroup}}
+\doxysubsubsection{\texorpdfstring{parse\_args()}{parse\_args()}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_flask_group_a927e814b024aafffe39ecc2904e40de7} 
+ list\mbox{[}str\mbox{]} flask.\+cli.\+Flask\+Group.\+parse\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}}}]{ctx}{, }\item[{list\mbox{[}str\mbox{]}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a context and a list of arguments this creates the parser
+and parses the arguments, then modifies the context as necessary.
+This is automatically invoked by :meth:`make_context`.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classclick_1_1core_1_1_multi_command_a5299e3e21876cf3ade69c9ae1794fd2b}{click.\+core.\+Multi\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/cli.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\doxysection{pkg\+\_\+resources.\+Version\+Conflict Class Reference}
+\hypertarget{classpkg__resources_1_1_version_conflict}{}\label{classpkg__resources_1_1_version_conflict}\index{pkg\_resources.VersionConflict@{pkg\_resources.VersionConflict}}
+Inheritance diagram for pkg\+\_\+resources.\+Version\+Conflict\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpkg__resources_1_1_version_conflict}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpkg__resources_1_1_version_conflict_adab9bd550162ac64afce604568730ae8}\label{classpkg__resources_1_1_version_conflict_adab9bd550162ac64afce604568730ae8} 
+{\bfseries dist} (self)
+\item 
+\Hypertarget{classpkg__resources_1_1_version_conflict_a95e63f911027a1d40e80c5a307dc62e4}\label{classpkg__resources_1_1_version_conflict_a95e63f911027a1d40e80c5a307dc62e4} 
+{\bfseries req} (self)
+\item 
+\Hypertarget{classpkg__resources_1_1_version_conflict_a1220693fe4a79edd837569fcbe6cefd3}\label{classpkg__resources_1_1_version_conflict_a1220693fe4a79edd837569fcbe6cefd3} 
+{\bfseries report} (self)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_version_conflict_a4ad8a0e1e8d385956a4b0ee730290ba2}{with\+\_\+context}} (self, required\+\_\+by)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpkg__resources_1_1_resolution_error}{pkg\+\_\+resources.\+Resolution\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpkg__resources_1_1_version_conflict_aa011a3d6c095bc35b4c2d8cdafd770e8}\label{classpkg__resources_1_1_version_conflict_aa011a3d6c095bc35b4c2d8cdafd770e8} 
+str {\bfseries \+\_\+template} = "{}\{self.\+dist\} is installed but \{self.\+req\} is required"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpkg__resources_1_1_resolution_error}{pkg\+\_\+resources.\+Resolution\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries args}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An already-installed version conflicts with the requested version.
+
+Should be initialized with the installed Distribution and the requested
+Requirement.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpkg__resources_1_1_version_conflict_a4ad8a0e1e8d385956a4b0ee730290ba2}\index{pkg\_resources.VersionConflict@{pkg\_resources.VersionConflict}!with\_context@{with\_context}}
+\index{with\_context@{with\_context}!pkg\_resources.VersionConflict@{pkg\_resources.VersionConflict}}
+\doxysubsubsection{\texorpdfstring{with\_context()}{with\_context()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_version_conflict_a4ad8a0e1e8d385956a4b0ee730290ba2} 
+pkg\+\_\+resources.\+Version\+Conflict.\+with\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{required\+\_\+by}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If required_by is non-empty, return a version of self that is a
+ContextualVersionConflict.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pkg\+\_\+resources/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

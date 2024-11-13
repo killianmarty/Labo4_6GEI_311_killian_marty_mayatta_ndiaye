@@ -1,0 +1,74 @@
+\doxysection{plot\+\_\+girvan\+\_\+newman Namespace Reference}
+\hypertarget{namespaceplot__girvan__newman}{}\label{namespaceplot__girvan__newman}\index{plot\_girvan\_newman@{plot\_girvan\_newman}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__girvan__newman_ae4b459972c3d1fa76314584c8e4de9ab}\label{namespaceplot__girvan__newman_ae4b459972c3d1fa76314584c8e4de9ab} 
+{\bfseries create\+\_\+community\+\_\+node\+\_\+colors} (graph, communities)
+\item 
+\Hypertarget{namespaceplot__girvan__newman_a04cacd3915032381431c05db5b28d03f}\label{namespaceplot__girvan__newman_a04cacd3915032381431c05db5b28d03f} 
+{\bfseries visualize\+\_\+communities} (graph, communities, i)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__girvan__newman_aeed340690a337b245b98e80da7235c77}\label{namespaceplot__girvan__newman_aeed340690a337b245b98e80da7235c77} 
+{\bfseries G} = nx.\+karate\+\_\+club\+\_\+graph()
+\item 
+\Hypertarget{namespaceplot__girvan__newman_a8ab3a6271b5c32db0739275d347420c0}\label{namespaceplot__girvan__newman_a8ab3a6271b5c32db0739275d347420c0} 
+{\bfseries communities} = list(nx.\+community.\+girvan\+\_\+newman(G))
+\item 
+\mbox{\hyperlink{namespaceplot__girvan__newman_a134d0ffdf84271053120b4d400229109}{modularity\+\_\+df}}
+\item 
+\Hypertarget{namespaceplot__girvan__newman_a99fc5cad006f9a1d849e8bfc05417894}\label{namespaceplot__girvan__newman_a99fc5cad006f9a1d849e8bfc05417894} 
+{\bfseries fig}
+\item 
+\Hypertarget{namespaceplot__girvan__newman_abd9c71f62a63425fc16025b21fe615fd}\label{namespaceplot__girvan__newman_abd9c71f62a63425fc16025b21fe615fd} 
+{\bfseries ax}
+\item 
+\Hypertarget{namespaceplot__girvan__newman_a3bbe3fc7fa7d21af7fc4b6ac874ccd21}\label{namespaceplot__girvan__newman_a3bbe3fc7fa7d21af7fc4b6ac874ccd21} 
+{\bfseries figsize}
+\item 
+\Hypertarget{namespaceplot__girvan__newman_a594bfe07b178415c429fef636ee6c188}\label{namespaceplot__girvan__newman_a594bfe07b178415c429fef636ee6c188} 
+{\bfseries x}
+\item 
+\Hypertarget{namespaceplot__girvan__newman_ab11cf11caab14723dd0bd5be89573af7}\label{namespaceplot__girvan__newman_ab11cf11caab14723dd0bd5be89573af7} 
+{\bfseries color}
+\item 
+\Hypertarget{namespaceplot__girvan__newman_a410cad0b77ded7087a29588e20f73454}\label{namespaceplot__girvan__newman_a410cad0b77ded7087a29588e20f73454} 
+{\bfseries title}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}=======================================
+Community Detection using Girvan-Newman
+=======================================
+
+This example shows the detection of communities in the Zachary Karate
+Club dataset using the Girvan-Newman method.
+
+We plot the change in modularity as important edges are removed. 
+Graph is coloured and plotted based on community detection when number 
+of iterations are 1 and 4 respectively.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__girvan__newman_a134d0ffdf84271053120b4d400229109}\index{plot\_girvan\_newman@{plot\_girvan\_newman}!modularity\_df@{modularity\_df}}
+\index{modularity\_df@{modularity\_df}!plot\_girvan\_newman@{plot\_girvan\_newman}}
+\doxysubsubsection{\texorpdfstring{modularity\_df}{modularity\_df}}
+{\footnotesize\ttfamily \label{namespaceplot__girvan__newman_a134d0ffdf84271053120b4d400229109} 
+plot\+\_\+girvan\+\_\+newman.\+modularity\+\_\+df}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ pd.DataFrame(}
+\DoxyCodeLine{00002\ \ \ \ \ [}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ [k\ +\ 1,\ nx.community.modularity(G,\ communities[k])]}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ k\ \textcolor{keywordflow}{in}\ range(len(communities))}
+\DoxyCodeLine{00005\ \ \ \ \ ],}
+\DoxyCodeLine{00006\ \ \ \ \ columns=[\textcolor{stringliteral}{"{}k"{}},\ \textcolor{stringliteral}{"{}modularity"{}}],}
+\DoxyCodeLine{00007\ )}
+
+\end{DoxyCode}

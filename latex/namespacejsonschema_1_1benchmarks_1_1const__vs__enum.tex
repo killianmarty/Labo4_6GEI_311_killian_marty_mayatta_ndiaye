@@ -1,0 +1,35 @@
+\doxysection{jsonschema.\+benchmarks.\+const\+\_\+vs\+\_\+enum Namespace Reference}
+\hypertarget{namespacejsonschema_1_1benchmarks_1_1const__vs__enum}{}\label{namespacejsonschema_1_1benchmarks_1_1const__vs__enum}\index{jsonschema.benchmarks.const\_vs\_enum@{jsonschema.benchmarks.const\_vs\_enum}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_aed3121f535ce9cff56b44c576e4bd6bf}\label{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_aed3121f535ce9cff56b44c576e4bd6bf} 
+list {\bfseries value} = \mbox{[}37\mbox{]} \texorpdfstring{$\ast$}{*} 100
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_a685e9b561f623820380e03d547fb78e0}\label{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_a685e9b561f623820380e03d547fb78e0} 
+dict {\bfseries const\+\_\+schema} = \{"{}const"{}\+: list(value)\}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_a1afe15a96d1facd30d3cf2aee07d54ff}\label{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_a1afe15a96d1facd30d3cf2aee07d54ff} 
+dict {\bfseries enum\+\_\+schema} = \{"{}enum"{}\+: \mbox{[}list(value)\mbox{]}\}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_a0e9fda36d5e6c93442723b0302fd70e6}\label{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_a0e9fda36d5e6c93442723b0302fd70e6} 
+{\bfseries valid} = list(value)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_a2f440c48aab2494a2885f22111058718}\label{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_a2f440c48aab2494a2885f22111058718} 
+list {\bfseries invalid} = \mbox{[}\texorpdfstring{$\ast$}{*}valid, 73\mbox{]}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_add41402a1e912620842d830f0cc92677}\label{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_add41402a1e912620842d830f0cc92677} 
+{\bfseries const} = Draft202012\+Validator(const\+\_\+schema)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_a099ce64030ed3f80a4cde2caeb34b7c5}\label{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_a099ce64030ed3f80a4cde2caeb34b7c5} 
+{\bfseries enum} = Draft202012\+Validator(enum\+\_\+schema)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_abb7f316e484fd5a98eb2af84d8e3a31f}\label{namespacejsonschema_1_1benchmarks_1_1const__vs__enum_abb7f316e484fd5a98eb2af84d8e3a31f} 
+{\bfseries runner} = Runner()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A benchmark for comparing equivalent validation of `const` and `enum`.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,275 @@
+\doxysection{werkzeug.\+routing.\+map.\+Map Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map}{}\label{classwerkzeug_1_1routing_1_1map_1_1_map}\index{werkzeug.routing.map.Map@{werkzeug.routing.map.Map}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a839bcc051753d9aa7f6bb87c72fec5da}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a839bcc051753d9aa7f6bb87c72fec5da} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}t.\+Iterable\mbox{[}"{}Rule\+Factory"{}\mbox{]}\mbox{]} rules=None, str default\+\_\+subdomain="{}"{}, str charset="{}utf-\/8"{}, bool strict\+\_\+slashes=True, bool merge\+\_\+slashes=True, bool redirect\+\_\+defaults=True, t.\+Optional\mbox{[}t.\+Mapping\mbox{[}str, t.\+Type\mbox{[}"{}Base\+Converter"{}\mbox{]}\mbox{]}\mbox{]} converters=None, bool sort\+\_\+parameters=False, t.\+Optional\mbox{[}t.\+Callable\mbox{[}\mbox{[}t.\+Any\mbox{]}, t.\+Any\mbox{]}\mbox{]} sort\+\_\+key=None, str encoding\+\_\+errors="{}replace"{}, bool host\+\_\+matching=False)
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_a00c8165f0e086483a90bb3fcc7ca2a6a}{is\+\_\+endpoint\+\_\+expecting}} (self, str endpoint, \texorpdfstring{$\ast$}{*}str arguments)
+\item 
+t.\+Iterator\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_a792ee93d9dd79caad8b64471f6bad612}{iter\+\_\+rules}} (self, t.\+Optional\mbox{[}str\mbox{]} endpoint=None)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_a1f343b86294f31e6b274f52c24b9127c}{add}} (self, "{}Rule\+Factory"{} rulefactory)
+\item 
+"{}Map\+Adapter"{} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_a208cf82ff7dd78bb13dc6a9f034b0f93}{bind}} (self, str server\+\_\+name, t.\+Optional\mbox{[}str\mbox{]} script\+\_\+name=None, t.\+Optional\mbox{[}str\mbox{]} subdomain=None, str url\+\_\+scheme="{}http"{}, str default\+\_\+method="{}GET"{}, t.\+Optional\mbox{[}str\mbox{]} path\+\_\+info=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}, str\mbox{]}\mbox{]} query\+\_\+args=None)
+\item 
+"{}Map\+Adapter"{} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_a1d2d35a7c106592bdab1e24b189a31c4}{bind\+\_\+to\+\_\+environ}} (self, t.\+Union\mbox{[}"{}WSGIEnvironment"{}, "{}Request"{}\mbox{]} environ, t.\+Optional\mbox{[}str\mbox{]} server\+\_\+name=None, t.\+Optional\mbox{[}str\mbox{]} subdomain=None)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_af9f67d5da598f49c5a5257c0663a2cc5}{update}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_ad31be2446d57b1b86c39b6a26357d4f6}\label{classwerkzeug_1_1routing_1_1map_1_1_map_ad31be2446d57b1b86c39b6a26357d4f6} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a28fa8e4338da8c3715bb109cf3006f5b}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a28fa8e4338da8c3715bb109cf3006f5b} 
+{\bfseries default\+\_\+subdomain} = default\+\_\+subdomain
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a53f9f4cd98da00bda96b1b5ea1229cfc}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a53f9f4cd98da00bda96b1b5ea1229cfc} 
+{\bfseries charset} = charset
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a7cef3ba7c5b18fbb1b2955108a68162f}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a7cef3ba7c5b18fbb1b2955108a68162f} 
+{\bfseries encoding\+\_\+errors} = encoding\+\_\+errors
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a3e5ac36f853b8b270b49a164a8ec6619}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a3e5ac36f853b8b270b49a164a8ec6619} 
+{\bfseries strict\+\_\+slashes} = strict\+\_\+slashes
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a42e2580494ecdf5784621b051163d231}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a42e2580494ecdf5784621b051163d231} 
+{\bfseries merge\+\_\+slashes} = merge\+\_\+slashes
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_aaaee347097a533cf0d80ba804c0140f3}\label{classwerkzeug_1_1routing_1_1map_1_1_map_aaaee347097a533cf0d80ba804c0140f3} 
+{\bfseries redirect\+\_\+defaults} = redirect\+\_\+defaults
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a06d070e5f6b3a62d98ed86bdf3875b0a}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a06d070e5f6b3a62d98ed86bdf3875b0a} 
+{\bfseries host\+\_\+matching} = host\+\_\+matching
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a694a5ef625aad3c904a29e0d9f92642b}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a694a5ef625aad3c904a29e0d9f92642b} 
+{\bfseries converters} = self.\+default\+\_\+converters.\+copy()
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a690300f33dd068c9692e188e12b99c26}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a690300f33dd068c9692e188e12b99c26} 
+{\bfseries sort\+\_\+parameters} = sort\+\_\+parameters
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_aa6c27c7ffbad87fec21fd8780eb9347c}\label{classwerkzeug_1_1routing_1_1map_1_1_map_aa6c27c7ffbad87fec21fd8780eb9347c} 
+{\bfseries sort\+\_\+key} = sort\+\_\+key
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_aab76522c02b665a5b932f1364b1ef563}\label{classwerkzeug_1_1routing_1_1map_1_1_map_aab76522c02b665a5b932f1364b1ef563} 
+{\bfseries default\+\_\+converters} = \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict}{Immutable\+Dict}}(DEFAULT\+\_\+\+CONVERTERS)
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a53d3b4f035efeffa619e18067cf737ad}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a53d3b4f035efeffa619e18067cf737ad} 
+{\bfseries lock\+\_\+class} = Lock
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a7d312b86f9126e7ce9a11e8ad42971cb}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a7d312b86f9126e7ce9a11e8ad42971cb} 
+t.\+List\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}\mbox{]} {\bfseries \+\_\+rules} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_ac3a1fa1c66f0d7e2dcb4164ecf1276ce}\label{classwerkzeug_1_1routing_1_1map_1_1_map_ac3a1fa1c66f0d7e2dcb4164ecf1276ce} 
+{\bfseries \+\_\+matcher} = \mbox{\hyperlink{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher}{State\+Machine\+Matcher}}(merge\+\_\+slashes)
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adf3170dbbfda0b5fa52de7bb020b8b80}\label{classwerkzeug_1_1routing_1_1map_1_1_map_adf3170dbbfda0b5fa52de7bb020b8b80} 
+dict {\bfseries \+\_\+rules\+\_\+by\+\_\+endpoint} = \{\}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_aaaf25ccd901d80536ad8af095ab02335}\label{classwerkzeug_1_1routing_1_1map_1_1_map_aaaf25ccd901d80536ad8af095ab02335} 
+bool {\bfseries \+\_\+remap} = True
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a28a4295defa4f99e5f2dff6c6ce8a5b1}\label{classwerkzeug_1_1routing_1_1map_1_1_map_a28a4295defa4f99e5f2dff6c6ce8a5b1} 
+{\bfseries \+\_\+remap\+\_\+lock} = self.\+lock\+\_\+class()
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_ac7f9fe1e40b81ac519a7cc4bea43faaf}\label{classwerkzeug_1_1routing_1_1map_1_1_map_ac7f9fe1e40b81ac519a7cc4bea43faaf} 
+{\bfseries \+\_\+rules}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The map class stores all the URL rules and some configuration
+parameters.  Some of the configuration values are only stored on the
+`Map` instance since those affect all rules, others are just defaults
+and can be overridden for each rule.  Note that you have to specify all
+arguments besides the `rules` as keyword arguments!
+
+:param rules: sequence of url rules for this map.
+:param default_subdomain: The default subdomain for rules without a
+                          subdomain defined.
+:param charset: charset of the url. defaults to ``"utf-8"``
+:param strict_slashes: If a rule ends with a slash but the matched
+    URL does not, redirect to the URL with a trailing slash.
+:param merge_slashes: Merge consecutive slashes when matching or
+    building URLs. Matches will redirect to the normalized URL.
+    Slashes in variable parts are not merged.
+:param redirect_defaults: This will redirect to the default rule if it
+                          wasn't visited that way. This helps creating
+                          unique URLs.
+:param converters: A dict of converters that adds additional converters
+                   to the list of converters. If you redefine one
+                   converter this will override the original one.
+:param sort_parameters: If set to `True` the url parameters are sorted.
+                        See `url_encode` for more details.
+:param sort_key: The sort key function for `url_encode`.
+:param encoding_errors: the error method to use for decoding
+:param host_matching: if set to `True` it enables the host matching
+                      feature and disables the subdomain one.  If
+                      enabled the `host` parameter to rules is used
+                      instead of the `subdomain` one.
+
+.. versionchanged:: 1.0
+    If ``url_scheme`` is ``ws`` or ``wss``, only WebSocket rules
+    will match.
+
+.. versionchanged:: 1.0
+    Added ``merge_slashes``.
+
+.. versionchanged:: 0.7
+    Added ``encoding_errors`` and ``host_matching``.
+
+.. versionchanged:: 0.5
+    Added ``sort_parameters`` and ``sort_key``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a1f343b86294f31e6b274f52c24b9127c}\index{werkzeug.routing.map.Map@{werkzeug.routing.map.Map}!add@{add}}
+\index{add@{add}!werkzeug.routing.map.Map@{werkzeug.routing.map.Map}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_a1f343b86294f31e6b274f52c24b9127c} 
+ None werkzeug.\+routing.\+map.\+Map.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Rule\+Factory"{}}]{rulefactory}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a new rule or factory to the map and bind it.  Requires that the
+rule is not bound to another map.
+
+:param rulefactory: a :class:`Rule` or :class:`RuleFactory`
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a208cf82ff7dd78bb13dc6a9f034b0f93}\index{werkzeug.routing.map.Map@{werkzeug.routing.map.Map}!bind@{bind}}
+\index{bind@{bind}!werkzeug.routing.map.Map@{werkzeug.routing.map.Map}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_a208cf82ff7dd78bb13dc6a9f034b0f93} 
+ "{}Map\+Adapter"{} werkzeug.\+routing.\+map.\+Map.\+bind (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{server\+\_\+name}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{script\+\_\+name}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{subdomain}{ = {\ttfamily None}, }\item[{str }]{url\+\_\+scheme}{ = {\ttfamily "{}http"{}}, }\item[{str }]{default\+\_\+method}{ = {\ttfamily "{}GET"{}}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{path\+\_\+info}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}t.\+Union\mbox{[}t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}, str\mbox{]}\mbox{]} }]{query\+\_\+args}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new :class:`MapAdapter` with the details specified to the
+call.  Note that `script_name` will default to ``'/'`` if not further
+specified or `None`.  The `server_name` at least is a requirement
+because the HTTP RFC requires absolute URLs for redirects and so all
+redirect exceptions raised by Werkzeug will contain the full canonical
+URL.
+
+If no path_info is passed to :meth:`match` it will use the default path
+info passed to bind.  While this doesn't really make sense for
+manual bind calls, it's useful if you bind a map to a WSGI
+environment which already contains the path info.
+
+`subdomain` will default to the `default_subdomain` for this map if
+no defined. If there is no `default_subdomain` you cannot use the
+subdomain feature.
+
+.. versionchanged:: 1.0
+    If ``url_scheme`` is ``ws`` or ``wss``, only WebSocket rules
+    will match.
+
+.. versionchanged:: 0.15
+    ``path_info`` defaults to ``'/'`` if ``None``.
+
+.. versionchanged:: 0.8
+    ``query_args`` can be a string.
+
+.. versionchanged:: 0.7
+    Added ``query_args``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a1d2d35a7c106592bdab1e24b189a31c4}\index{werkzeug.routing.map.Map@{werkzeug.routing.map.Map}!bind\_to\_environ@{bind\_to\_environ}}
+\index{bind\_to\_environ@{bind\_to\_environ}!werkzeug.routing.map.Map@{werkzeug.routing.map.Map}}
+\doxysubsubsection{\texorpdfstring{bind\_to\_environ()}{bind\_to\_environ()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_a1d2d35a7c106592bdab1e24b189a31c4} 
+ "{}Map\+Adapter"{} werkzeug.\+routing.\+map.\+Map.\+bind\+\_\+to\+\_\+environ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Union\mbox{[}"{}WSGIEnvironment"{}, "{}Request"{}\mbox{]}}]{environ}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{server\+\_\+name}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{subdomain}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`bind` but you can pass it an WSGI environment and it
+will fetch the information from that dictionary.  Note that because of
+limitations in the protocol there is no way to get the current
+subdomain and real `server_name` from the environment.  If you don't
+provide it, Werkzeug will use `SERVER_NAME` and `SERVER_PORT` (or
+`HTTP_HOST` if provided) as used `server_name` with disabled subdomain
+feature.
+
+If `subdomain` is `None` but an environment and a server name is
+provided it will calculate the current subdomain automatically.
+Example: `server_name` is ``'example.com'`` and the `SERVER_NAME`
+in the wsgi `environ` is ``'staging.dev.example.com'`` the calculated
+subdomain will be ``'staging.dev'``.
+
+If the object passed as environ has an environ attribute, the value of
+this attribute is used instead.  This allows you to pass request
+objects.  Additionally `PATH_INFO` added as a default of the
+:class:`MapAdapter` so that you don't have to pass the path info to
+the match method.
+
+.. versionchanged:: 1.0.0
+    If the passed server name specifies port 443, it will match
+    if the incoming scheme is ``https`` without a port.
+
+.. versionchanged:: 1.0.0
+    A warning is shown when the passed server name does not
+    match the incoming WSGI server name.
+
+.. versionchanged:: 0.8
+   This will no longer raise a ValueError when an unexpected server
+   name was passed.
+
+.. versionchanged:: 0.5
+    previously this method accepted a bogus `calculate_subdomain`
+    parameter that did not have any effect.  It was removed because
+    of that.
+
+:param environ: a WSGI environment.
+:param server_name: an optional server name hint (see above).
+:param subdomain: optionally the current subdomain (see above).
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a00c8165f0e086483a90bb3fcc7ca2a6a}\index{werkzeug.routing.map.Map@{werkzeug.routing.map.Map}!is\_endpoint\_expecting@{is\_endpoint\_expecting}}
+\index{is\_endpoint\_expecting@{is\_endpoint\_expecting}!werkzeug.routing.map.Map@{werkzeug.routing.map.Map}}
+\doxysubsubsection{\texorpdfstring{is\_endpoint\_expecting()}{is\_endpoint\_expecting()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_a00c8165f0e086483a90bb3fcc7ca2a6a} 
+ bool werkzeug.\+routing.\+map.\+Map.\+is\+\_\+endpoint\+\_\+expecting (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{endpoint}{, }\item[{\texorpdfstring{$\ast$}{*}str}]{arguments}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate over all rules and check if the endpoint expects
+the arguments provided.  This is for example useful if you have
+some URLs that expect a language code and others that do not and
+you want to wrap the builder a bit so that the current language
+code is automatically added if not provided but endpoints expect
+it.
+
+:param endpoint: the endpoint to check.
+:param arguments: this function accepts one or more arguments
+                  as positional arguments.  Each one of them is
+                  checked.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_a792ee93d9dd79caad8b64471f6bad612}\index{werkzeug.routing.map.Map@{werkzeug.routing.map.Map}!iter\_rules@{iter\_rules}}
+\index{iter\_rules@{iter\_rules}!werkzeug.routing.map.Map@{werkzeug.routing.map.Map}}
+\doxysubsubsection{\texorpdfstring{iter\_rules()}{iter\_rules()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_a792ee93d9dd79caad8b64471f6bad612} 
+ t.\+Iterator\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}\mbox{]} werkzeug.\+routing.\+map.\+Map.\+iter\+\_\+rules (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{endpoint}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate over all rules or the rules of an endpoint.
+
+:param endpoint: if provided only the rules for that endpoint
+                 are returned.
+:return: an iterator
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_af9f67d5da598f49c5a5257c0663a2cc5}\index{werkzeug.routing.map.Map@{werkzeug.routing.map.Map}!update@{update}}
+\index{update@{update}!werkzeug.routing.map.Map@{werkzeug.routing.map.Map}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_af9f67d5da598f49c5a5257c0663a2cc5} 
+ None werkzeug.\+routing.\+map.\+Map.\+update (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before matching and building to keep the compiled rules
+in the correct order after things changed.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/routing/map.\+py\end{DoxyCompactItemize}

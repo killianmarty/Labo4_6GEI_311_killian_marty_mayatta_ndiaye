@@ -1,0 +1,45 @@
+\doxysection{requests.\+cookies.\+Mock\+Response Class Reference}
+\hypertarget{classrequests_1_1cookies_1_1_mock_response}{}\label{classrequests_1_1cookies_1_1_mock_response}\index{requests.cookies.MockResponse@{requests.cookies.MockResponse}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrequests_1_1cookies_1_1_mock_response_a9ecd85c3f9e531bf9488f3a6bfdc23f6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, headers)
+\item 
+\Hypertarget{classrequests_1_1cookies_1_1_mock_response_a8427bc9368b582fc376173842d681d8e}\label{classrequests_1_1cookies_1_1_mock_response_a8427bc9368b582fc376173842d681d8e} 
+{\bfseries info} (self)
+\item 
+\Hypertarget{classrequests_1_1cookies_1_1_mock_response_a10cef7922f383908d96f83355ac3862b}\label{classrequests_1_1cookies_1_1_mock_response_a10cef7922f383908d96f83355ac3862b} 
+{\bfseries getheaders} (self, name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classrequests_1_1cookies_1_1_mock_response_a2d57bcb0cf5671df8655165a6116a9de}\label{classrequests_1_1cookies_1_1_mock_response_a2d57bcb0cf5671df8655165a6116a9de} 
+{\bfseries \+\_\+headers} = headers
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wraps a `httplib.HTTPMessage` to mimic a `urllib.addinfourl`.
+
+...what? Basically, expose the parsed HTTP headers from the server response
+the way `http.cookiejar` expects to see them.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classrequests_1_1cookies_1_1_mock_response_a9ecd85c3f9e531bf9488f3a6bfdc23f6}\index{requests.cookies.MockResponse@{requests.cookies.MockResponse}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!requests.cookies.MockResponse@{requests.cookies.MockResponse}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classrequests_1_1cookies_1_1_mock_response_a9ecd85c3f9e531bf9488f3a6bfdc23f6} 
+requests.\+cookies.\+Mock\+Response.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{headers}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make a MockResponse for `cookiejar` to read.
+
+:param headers: a httplib.HTTPMessage or analogous carrying the headers
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/requests/cookies.\+py\end{DoxyCompactItemize}

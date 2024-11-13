@@ -1,0 +1,101 @@
+\doxysection{flask.\+templating.\+Dispatching\+Jinja\+Loader Class Reference}
+\hypertarget{classflask_1_1templating_1_1_dispatching_jinja_loader}{}\label{classflask_1_1templating_1_1_dispatching_jinja_loader}\index{flask.templating.DispatchingJinjaLoader@{flask.templating.DispatchingJinjaLoader}}
+Inheritance diagram for flask.\+templating.\+Dispatching\+Jinja\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1templating_1_1_dispatching_jinja_loader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1templating_1_1_dispatching_jinja_loader_a9c000fb85e53496788785c268c65eba6}\label{classflask_1_1templating_1_1_dispatching_jinja_loader_a9c000fb85e53496788785c268c65eba6} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, "{}Flask"{} app)
+\item 
+t.\+Tuple\mbox{[}str, t.\+Optional\mbox{[}str\mbox{]}, t.\+Optional\mbox{[}t.\+Callable\mbox{]}\mbox{]} \mbox{\hyperlink{classflask_1_1templating_1_1_dispatching_jinja_loader_a8e5fc12019bbea0958f0b55bab0dae71}{get\+\_\+source}} (self, \mbox{\hyperlink{classflask_1_1templating_1_1_environment}{Environment}} environment, str template)
+\item 
+t.\+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1templating_1_1_dispatching_jinja_loader_a512b9a0ac26569c8dd9a1ee525a400c1}{list\+\_\+templates}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader}{jinja2.\+loaders.\+Base\+Loader}}}
+\begin{DoxyCompactItemize}
+\item 
+"{}Template"{} \mbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader_aec17b1b1367164ea6cb8c532b8033255}{load}} (self, "{}Environment"{} environment, str name, t.\+Optional\mbox{[}t.\+Mutable\+Mapping\mbox{[}str, t.\+Any\mbox{]}\mbox{]} globals=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1templating_1_1_dispatching_jinja_loader_a895072ad5b74975ffa3f9eb5878e8d43}\label{classflask_1_1templating_1_1_dispatching_jinja_loader_a895072ad5b74975ffa3f9eb5878e8d43} 
+{\bfseries app} = app
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1templating_1_1_dispatching_jinja_loader_a36fafbfd9ec03dcf8fb933aee74fb390}\label{classflask_1_1templating_1_1_dispatching_jinja_loader_a36fafbfd9ec03dcf8fb933aee74fb390} 
+t.\+Tuple\mbox{[}str, t.\+Optional\mbox{[}str\mbox{]}, t.\+Optional\mbox{[}t.\+Callable\mbox{]}\mbox{]} {\bfseries \+\_\+get\+\_\+source\+\_\+explained} (self, \mbox{\hyperlink{classflask_1_1templating_1_1_environment}{Environment}} environment, str template)
+\item 
+\Hypertarget{classflask_1_1templating_1_1_dispatching_jinja_loader_ae97c93d77189b5877916275faebd343e}\label{classflask_1_1templating_1_1_dispatching_jinja_loader_ae97c93d77189b5877916275faebd343e} 
+t.\+Tuple\mbox{[}str, t.\+Optional\mbox{[}str\mbox{]}, t.\+Optional\mbox{[}t.\+Callable\mbox{]}\mbox{]} {\bfseries \+\_\+get\+\_\+source\+\_\+fast} (self, \mbox{\hyperlink{classflask_1_1templating_1_1_environment}{Environment}} environment, str template)
+\item 
+\Hypertarget{classflask_1_1templating_1_1_dispatching_jinja_loader_ae757c1237ad5a447a346237ed48d78a4}\label{classflask_1_1templating_1_1_dispatching_jinja_loader_ae757c1237ad5a447a346237ed48d78a4} 
+t.\+Generator\mbox{[}t.\+Tuple\mbox{[}"{}Scaffold"{}, \mbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader}{Base\+Loader}}\mbox{]}, None, None\mbox{]} {\bfseries \+\_\+iter\+\_\+loaders} (self, str template)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader}{jinja2.\+loaders.\+Base\+Loader}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries has\+\_\+source\+\_\+access} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A loader that looks for templates in the application and all
+the blueprint folders.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1templating_1_1_dispatching_jinja_loader_a8e5fc12019bbea0958f0b55bab0dae71}\index{flask.templating.DispatchingJinjaLoader@{flask.templating.DispatchingJinjaLoader}!get\_source@{get\_source}}
+\index{get\_source@{get\_source}!flask.templating.DispatchingJinjaLoader@{flask.templating.DispatchingJinjaLoader}}
+\doxysubsubsection{\texorpdfstring{get\_source()}{get\_source()}}
+{\footnotesize\ttfamily \label{classflask_1_1templating_1_1_dispatching_jinja_loader_a8e5fc12019bbea0958f0b55bab0dae71} 
+ t.\+Tuple\mbox{[}str, t.\+Optional\mbox{[}str\mbox{]}, t.\+Optional\mbox{[}t.\+Callable\mbox{]}\mbox{]} flask.\+templating.\+Dispatching\+Jinja\+Loader.\+get\+\_\+source (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classflask_1_1templating_1_1_environment}{Environment}}}]{environment}{, }\item[{str     }]{template}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the template source, filename and reload helper for a template.
+It's passed the environment and template name and has to return a
+tuple in the form ``(source, filename, uptodate)`` or raise a
+`TemplateNotFound` error if it can't locate the template.
+
+The source part of the returned tuple must be the source of the
+template as a string. The filename should be the name of the
+file on the filesystem if it was loaded from there, otherwise
+``None``. The filename is used by Python for the tracebacks
+if no loader extension is used.
+
+The last item in the tuple is the `uptodate` function.  If auto
+reloading is enabled it's always called to check if the template
+changed.  No arguments are passed so the function must store the
+old state somewhere (for example in a closure).  If it returns `False`
+the template will be reloaded.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader_a7e222ad2ab60e2cfd58c11822b0c4951}{jinja2.\+loaders.\+Base\+Loader}}.
+
+\Hypertarget{classflask_1_1templating_1_1_dispatching_jinja_loader_a512b9a0ac26569c8dd9a1ee525a400c1}\index{flask.templating.DispatchingJinjaLoader@{flask.templating.DispatchingJinjaLoader}!list\_templates@{list\_templates}}
+\index{list\_templates@{list\_templates}!flask.templating.DispatchingJinjaLoader@{flask.templating.DispatchingJinjaLoader}}
+\doxysubsubsection{\texorpdfstring{list\_templates()}{list\_templates()}}
+{\footnotesize\ttfamily \label{classflask_1_1templating_1_1_dispatching_jinja_loader_a512b9a0ac26569c8dd9a1ee525a400c1} 
+ t.\+List\mbox{[}str\mbox{]} flask.\+templating.\+Dispatching\+Jinja\+Loader.\+list\+\_\+templates (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterates over all templates.  If the loader does not support that
+it should raise a :exc:`TypeError` which is the default behavior.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader_acb576631d9b98370780cf622e2433992}{jinja2.\+loaders.\+Base\+Loader}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/templating.\+py\end{DoxyCompactItemize}

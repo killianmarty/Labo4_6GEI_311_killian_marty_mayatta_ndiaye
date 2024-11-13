@@ -1,0 +1,78 @@
+\doxysection{Référence de la classe connexion.\+apis.\+flask\+\_\+api.\+Internal\+Handlers}
+\hypertarget{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers}{}\label{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers}\index{connexion.apis.flask\_api.InternalHandlers@{connexion.apis.flask\_api.InternalHandlers}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a4825211ba4d4f07204a0a5b698349828}\label{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a4825211ba4d4f07204a0a5b698349828} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, base\+\_\+path, options, specification)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_aa335d56fcff24933d6b8e603f6fac088}{console\+\_\+ui\+\_\+home}} (self)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a2ab7e33a353770735785fb86b155f3d8}{console\+\_\+ui\+\_\+static\+\_\+files}} (self, filename)
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_adfeb97d454ecb6daa87c656c08bcd5a2}\label{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_adfeb97d454ecb6daa87c656c08bcd5a2} 
+{\bfseries get\+\_\+json\+\_\+spec} (self)
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_aec6e6babbfb36b0e2e6fb83073d833e1}\label{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_aec6e6babbfb36b0e2e6fb83073d833e1} 
+{\bfseries get\+\_\+yaml\+\_\+spec} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_ad55ee1b507d4d85e39121f80ffc93ef8}\label{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_ad55ee1b507d4d85e39121f80ffc93ef8} 
+{\bfseries base\+\_\+path} = base\+\_\+path
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a294ad5ab7d206e4edbe6ba5b8e6940e9}\label{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a294ad5ab7d206e4edbe6ba5b8e6940e9} 
+{\bfseries options} = options
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a0fec5e120ceeab21e3aaa7ac50656417}\label{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a0fec5e120ceeab21e3aaa7ac50656417} 
+{\bfseries specification} = specification
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a0749d578c8e088d03ce700b3fe8fdbcd}{\+\_\+spec\+\_\+for\+\_\+prefix}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Flask handlers for internally registered endpoints.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a0749d578c8e088d03ce700b3fe8fdbcd}\index{connexion.apis.flask\_api.InternalHandlers@{connexion.apis.flask\_api.InternalHandlers}!\_spec\_for\_prefix@{\_spec\_for\_prefix}}
+\index{\_spec\_for\_prefix@{\_spec\_for\_prefix}!connexion.apis.flask\_api.InternalHandlers@{connexion.apis.flask\_api.InternalHandlers}}
+\doxysubsubsection{\texorpdfstring{\_spec\_for\_prefix()}{\_spec\_for\_prefix()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a0749d578c8e088d03ce700b3fe8fdbcd} 
+connexion.\+apis.\+flask\+\_\+api.\+Internal\+Handlers.\+\_\+spec\+\_\+for\+\_\+prefix (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Modify base_path in the spec based on incoming url
+This fixes problems with reverse proxies changing the path.
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_aa335d56fcff24933d6b8e603f6fac088}\index{connexion.apis.flask\_api.InternalHandlers@{connexion.apis.flask\_api.InternalHandlers}!console\_ui\_home@{console\_ui\_home}}
+\index{console\_ui\_home@{console\_ui\_home}!connexion.apis.flask\_api.InternalHandlers@{connexion.apis.flask\_api.InternalHandlers}}
+\doxysubsubsection{\texorpdfstring{console\_ui\_home()}{console\_ui\_home()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_aa335d56fcff24933d6b8e603f6fac088} 
+connexion.\+apis.\+flask\+\_\+api.\+Internal\+Handlers.\+console\+\_\+ui\+\_\+home (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Home page of the OpenAPI Console UI.
+
+:return:
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a2ab7e33a353770735785fb86b155f3d8}\index{connexion.apis.flask\_api.InternalHandlers@{connexion.apis.flask\_api.InternalHandlers}!console\_ui\_static\_files@{console\_ui\_static\_files}}
+\index{console\_ui\_static\_files@{console\_ui\_static\_files}!connexion.apis.flask\_api.InternalHandlers@{connexion.apis.flask\_api.InternalHandlers}}
+\doxysubsubsection{\texorpdfstring{console\_ui\_static\_files()}{console\_ui\_static\_files()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1flask__api_1_1_internal_handlers_a2ab7e33a353770735785fb86b155f3d8} 
+connexion.\+apis.\+flask\+\_\+api.\+Internal\+Handlers.\+console\+\_\+ui\+\_\+static\+\_\+files (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Servers the static files for the OpenAPI Console UI.
+
+:param filename: Requested file contents.
+:return:
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/apis/flask\+\_\+api.\+py\end{DoxyCompactItemize}

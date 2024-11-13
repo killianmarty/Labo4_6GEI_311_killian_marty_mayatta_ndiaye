@@ -1,0 +1,132 @@
+\doxysection{werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware Class Reference}
+\hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware}{}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a5a1975aa2c0f387ff8c4c6b65cf304ed}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a5a1975aa2c0f387ff8c4c6b65cf304ed} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, "{}WSGIApplication"{} app, t.\+Union\mbox{[}t.\+Dict\mbox{[}str, t.\+Union\mbox{[}str, t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]}, t.\+Iterable\mbox{[}t.\+Tuple\mbox{[}str, t.\+Union\mbox{[}str, t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]}\mbox{]},\mbox{]} exports, None disallow=None, bool cache=True, int cache\+\_\+timeout=60 \texorpdfstring{$\ast$}{*}60 \texorpdfstring{$\ast$}{*}12, str fallback\+\_\+mimetype="{}application/octet-\/stream"{})
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a85f11017666b7229e028db2a2640a0cc}{is\+\_\+allowed}} (self, str filename)
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ae1680a1599f189a45c25687a7540d29b}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ae1680a1599f189a45c25687a7540d29b} 
+\+\_\+\+TLoader {\bfseries get\+\_\+file\+\_\+loader} (self, str filename)
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a437b8826b1ee49ab497300ed695f2bed}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a437b8826b1ee49ab497300ed695f2bed} 
+\+\_\+\+TLoader {\bfseries get\+\_\+package\+\_\+loader} (self, str package, str package\+\_\+path)
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ab007eb315335cc2ca43d23d496e0b701}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ab007eb315335cc2ca43d23d496e0b701} 
+\+\_\+\+TLoader {\bfseries get\+\_\+directory\+\_\+loader} (self, str directory)
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a68f689261d22e5d361fcdef5ccce024c}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a68f689261d22e5d361fcdef5ccce024c} 
+str {\bfseries generate\+\_\+etag} (self, datetime mtime, int file\+\_\+size, str real\+\_\+filename)
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a452d6891700323125b19e946f3a12a17}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a452d6891700323125b19e946f3a12a17} 
+t.\+Iterable\mbox{[}bytes\mbox{]} {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, "{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a76307359ef68f1c16cf6c36deacb7f9e}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a76307359ef68f1c16cf6c36deacb7f9e} 
+{\bfseries app} = app
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_af1afebb6678b843921078e72a85c6cbb}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_af1afebb6678b843921078e72a85c6cbb} 
+list {\bfseries exports} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ad36264422416820931bb78252451954c}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ad36264422416820931bb78252451954c} 
+{\bfseries cache} = cache
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_af887552107f07092c25964f547bc30f7}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_af887552107f07092c25964f547bc30f7} 
+{\bfseries cache\+\_\+timeout} = cache\+\_\+timeout
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a081b0484ad0ab494d68fae38d577baf7}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a081b0484ad0ab494d68fae38d577baf7} 
+{\bfseries is\+\_\+allowed} = lambda x\+: not fnmatch(x, disallow)
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_aee8fa30c6737c0c629f923733717caf5}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_aee8fa30c6737c0c629f923733717caf5} 
+{\bfseries fallback\+\_\+mimetype} = fallback\+\_\+mimetype
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a6cf97221dcae920fd04346a91f84ed5b}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a6cf97221dcae920fd04346a91f84ed5b} 
+\+\_\+\+TOpener {\bfseries \+\_\+opener} (self, str filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A WSGI middleware which provides static content for development
+environments or simple server setups. Its usage is quite simple::
+
+    import os
+    from werkzeug.middleware.shared_data import SharedDataMiddleware
+
+    app = SharedDataMiddleware(app, {
+        '/shared': os.path.join(os.path.dirname(__file__), 'shared')
+    })
+
+The contents of the folder ``./shared`` will now be available on
+``http://example.com/shared/``.  This is pretty useful during development
+because a standalone media server is not required. Files can also be
+mounted on the root folder and still continue to use the application because
+the shared data middleware forwards all unhandled requests to the
+application, even if the requests are below one of the shared folders.
+
+If `pkg_resources` is available you can also tell the middleware to serve
+files from package data::
+
+    app = SharedDataMiddleware(app, {
+        '/static': ('myapplication', 'static')
+    })
+
+This will then serve the ``static`` folder in the `myapplication`
+Python package.
+
+The optional `disallow` parameter can be a list of :func:`~fnmatch.fnmatch`
+rules for files that are not accessible from the web.  If `cache` is set to
+`False` no caching headers are sent.
+
+Currently the middleware does not support non-ASCII filenames. If the
+encoding on the file system happens to match the encoding of the URI it may
+work but this could also be by accident. We strongly suggest using ASCII
+only file names for static files.
+
+The middleware will guess the mimetype using the Python `mimetype`
+module.  If it's unable to figure out the charset it will fall back
+to `fallback_mimetype`.
+
+:param app: the application to wrap.  If you don't want to wrap an
+            application you can pass it :exc:`NotFound`.
+:param exports: a list or dict of exported files and folders.
+:param disallow: a list of :func:`~fnmatch.fnmatch` rules.
+:param cache: enable or disable caching headers.
+:param cache_timeout: the cache timeout in seconds for the headers.
+:param fallback_mimetype: The fallback mimetype for unknown files.
+
+.. versionchanged:: 1.0
+    The default ``fallback_mimetype`` is
+    ``application/octet-stream``. If a filename looks like a text
+    mimetype, the ``utf-8`` charset is added to it.
+
+.. versionadded:: 0.6
+    Added ``fallback_mimetype``.
+
+.. versionchanged:: 0.5
+    Added ``cache_timeout``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a85f11017666b7229e028db2a2640a0cc}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!is\_allowed@{is\_allowed}}
+\index{is\_allowed@{is\_allowed}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{is\_allowed()}{is\_allowed()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a85f11017666b7229e028db2a2640a0cc} 
+ bool werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+is\+\_\+allowed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subclasses can override this method to disallow the access to
+certain files.  However by providing `disallow` in the constructor
+this method is overwritten.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/middleware/shared\+\_\+data.\+py\end{DoxyCompactItemize}

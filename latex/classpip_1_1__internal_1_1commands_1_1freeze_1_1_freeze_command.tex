@@ -1,0 +1,133 @@
+\doxysection{pip.\+\_\+internal.\+commands.\+freeze.\+Freeze\+Command Class Reference}
+\hypertarget{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command}{}\label{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command}\index{pip.\_internal.commands.freeze.FreezeCommand@{pip.\_internal.commands.freeze.FreezeCommand}}
+Inheritance diagram for pip.\+\_\+internal.\+commands.\+freeze.\+Freeze\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_ae67e23e69d04b0e8378a1bac32f2e4fa}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kw)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_aafd78345ca74fbd0fe46683462ac904c}{run}} (self, options, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a61150bcbabc0e311e66297583c80d7bb}{handle\+\_\+pip\+\_\+version\+\_\+check}} (self, options)
+\item 
+{\bfseries parse\+\_\+args} (self, args)
+\item 
+{\bfseries main} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries main\+\_\+context} (self)
+\item 
+{\bfseries enter\+\_\+context} (self, context\+\_\+provider)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_a7024a7be0ec38b048d4fc7bcf08af376}\label{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_a7024a7be0ec38b048d4fc7bcf08af376} 
+{\bfseries cmd\+\_\+opts}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries name} = name
+\item 
+{\bfseries summary} = summary
+\item 
+{\bfseries parser} = \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser}{Config\+Option\+Parser}}(\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}parser\+\_\+kw)
+\item 
+{\bfseries tempdir\+\_\+registry} = None
+\item 
+{\bfseries cmd\+\_\+opts} = optparse.\+Option\+Group(self.\+parser, optgroup\+\_\+name)
+\item 
+{\bfseries verbosity} = options.\+verbose -\/ options.\+quiet
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_a59cebee9d57c3ad07362a073263fc4f2}{usage}}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_a4f91902f79b76152dad7d4e90b7edb10}\label{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_a4f91902f79b76152dad7d4e90b7edb10} 
+tuple {\bfseries log\+\_\+streams} = ("{}ext\+://sys.\+stderr"{}, "{}ext\+://sys.\+stderr"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries usage} = None
+\item 
+bool {\bfseries ignore\+\_\+require\+\_\+venv} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+main} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries \+\_\+in\+\_\+main\+\_\+context} = False
+\item 
+{\bfseries \+\_\+main\+\_\+context} = \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{Exit\+Stack}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Output installed packages in requirements format.
+
+packages are listed in a case-insensitive sorted order.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_ae67e23e69d04b0e8378a1bac32f2e4fa}\index{pip.\_internal.commands.freeze.FreezeCommand@{pip.\_internal.commands.freeze.FreezeCommand}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.commands.freeze.FreezeCommand@{pip.\_internal.commands.freeze.FreezeCommand}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_ae67e23e69d04b0e8378a1bac32f2e4fa} 
+pip.\+\_\+internal.\+commands.\+freeze.\+Freeze\+Command.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kw}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_aafd78345ca74fbd0fe46683462ac904c}\index{pip.\_internal.commands.freeze.FreezeCommand@{pip.\_internal.commands.freeze.FreezeCommand}!run@{run}}
+\index{run@{run}!pip.\_internal.commands.freeze.FreezeCommand@{pip.\_internal.commands.freeze.FreezeCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_aafd78345ca74fbd0fe46683462ac904c} 
+pip.\+\_\+internal.\+commands.\+freeze.\+Freeze\+Command.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{options}{, }\item[{}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_a59cebee9d57c3ad07362a073263fc4f2}\index{pip.\_internal.commands.freeze.FreezeCommand@{pip.\_internal.commands.freeze.FreezeCommand}!usage@{usage}}
+\index{usage@{usage}!pip.\_internal.commands.freeze.FreezeCommand@{pip.\_internal.commands.freeze.FreezeCommand}}
+\doxysubsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1freeze_1_1_freeze_command_a59cebee9d57c3ad07362a073263fc4f2} 
+str pip.\+\_\+internal.\+commands.\+freeze.\+Freeze\+Command.\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \%prog\ [options]"{}"{}"{}}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/commands/freeze.\+py\end{DoxyCompactItemize}

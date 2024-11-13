@@ -1,0 +1,32 @@
+\doxysection{jsonschema.\+tests.\+test\+\_\+validators.\+Test\+Threading Class Reference}
+\hypertarget{classjsonschema_1_1tests_1_1test__validators_1_1_test_threading}{}\label{classjsonschema_1_1tests_1_1test__validators_1_1_test_threading}\index{jsonschema.tests.test\_validators.TestThreading@{jsonschema.tests.test\_validators.TestThreading}}
+Inheritance diagram for jsonschema.\+tests.\+test\+\_\+validators.\+Test\+Threading\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjsonschema_1_1tests_1_1test__validators_1_1_test_threading}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1tests_1_1test__validators_1_1_test_threading_a2558035445b9285411cdd93428134e35}\label{classjsonschema_1_1tests_1_1test__validators_1_1_test_threading_a2558035445b9285411cdd93428134e35} 
+{\bfseries test\+\_\+validation\+\_\+across\+\_\+a\+\_\+second\+\_\+thread} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Threading-related functionality tests.
+
+jsonschema doesn't promise thread safety, and its validation behavior
+across multiple threads may change at any time, but that means it isn't
+safe to share *validators* across threads, not that anytime one has
+multiple threads that jsonschema won't work (it certainly is intended to).
+
+These tests ensure that this minimal level of functionality continues to
+work.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/jsonschema/tests/test\+\_\+validators.\+py\end{DoxyCompactItemize}

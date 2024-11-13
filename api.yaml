@@ -1,0 +1,309 @@
+swagger: '2.0'
+info:
+  title: API de Cours
+  version: 1.0.0
+paths:
+  /cours:
+      get:
+        tags:
+          - Cours
+        summary: Retourne la liste des cours
+        responses:
+          "200":
+            description: Liste des cours
+  /cours/{id}:
+    get:
+      tags:
+        - Cours
+      summary: Retourne les informations du cours
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+        - in : query
+          name: mode
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Informations du cours
+
+    post:
+      tags:
+        - Cours
+      summary: Crée un nouveau cours
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                titre:
+                  type: string
+                discipline:
+                  type: string
+                tags:
+                  type: array
+                  items:
+                    type: string
+                seances:
+                  type: array
+                  items:
+                    type: integer
+      responses:
+        "201":
+          description: Cours créé
+
+    delete:
+      tags:
+        - Cours
+      summary: Supprime un cours
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+      responses:
+        "204":
+          description: Cours supprimé
+
+  /cours/{id}/fichier/{idFichier}:
+    get:
+      tags:
+        - Contenu de cours
+      summary: Retourne un fichier selon le chemin spécifié
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+        - in: path
+          name: idFichier
+          required: true
+          type: integer
+      responses:
+        "200":
+          description: Fichier retourné
+
+    post:
+      tags:
+        - Contenu de cours
+      summary: Télécharge un fichier pour le cours
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+        - in: path
+          name: idFichier
+          required: true
+          type: integer
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                fichier:
+                  type: string
+                  format: binary
+                chemin:
+                  type: string
+      responses:
+        "201":
+          description: Fichier téléchargé
+
+    delete:
+      tags:
+        - Contenu de cours
+      summary: Supprime un fichier du cours
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+        - in: path
+          name: idFichier
+          required: true
+          type: integer
+      responses:
+        "204":
+          description: Fichier supprimé
+
+  /cours/{id}/dossier/{idDossier}:
+    get:
+      tags:
+        - Contenu de cours
+      summary: Retourne un JSON du contenu du dossier
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+        - in: path
+          name: idDossier
+          required: true
+          type: integer
+      responses:
+        "200":
+          description: Contenu JSON du dossier
+
+    post:
+      tags:
+        - Contenu de cours
+      summary: Crée un nouveau dossier pour le cours
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+        - in: path
+          name: idDossier
+          required: true
+          type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                dossier:
+                  type: string
+      responses:
+        "201":
+          description: Dossier créé
+
+    delete:
+      tags:
+        - Contenu de cours
+      summary: Supprime un dossier du cours
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+        - in: path
+          name: idDossier
+          required: true
+          type: integer
+      responses:
+        "204":
+          description: Dossier supprimé
+
+  /cours/{id}/seances/{idSeance}:
+    get:
+      tags:
+        - seances
+      summary: Retourne les infos sur la séance
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+        - in: path
+          name: idSeance
+          required: true
+          type: integer
+      responses:
+        "200":
+          description: Informations sur la séance
+
+    post:
+      tags:
+        - seances
+      summary: Crée une nouvelle séance
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+        - in: path
+          name: idSeance
+          required: true
+          type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                semaine:
+                  type: integer
+                titre_thema:
+                  type: string
+      responses:
+        "201":
+          description: Séance créée
+
+    delete:
+      tags:
+        - seances
+      summary: Supprime une séance
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+        - in: path
+          name: idSeance
+          required: true
+          type: integer
+      responses:
+        "204":
+          description: Séance supprimée
+
+  /search:
+    get:
+      tags:
+        - Recherche de cours
+      summary: Recherche de cours par tag
+      parameters:
+        - in: query
+          name: tag
+          required: true
+          type: string
+      responses:
+        "200":
+          description: Liste des cours correspondants
+
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+  petstore_auth:
+    type: "oauth2"
+    authorizationUrl: "https://petstore.swagger.io/oauth/authorize"
+    flow: "implicit"
+    scopes:
+      read:pets: "read your pets"
+      write:pets: "modify pets in your account"
+definitions:
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "string"
+      message:
+        type: "string"
+    example:
+      code: 0
+      type: "type"
+      message: "message"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
+

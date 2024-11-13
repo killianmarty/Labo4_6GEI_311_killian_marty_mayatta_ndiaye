@@ -1,0 +1,86 @@
+\doxysection{importlib\+\_\+resources.\+tests.\+test\+\_\+files.\+Open\+Namespace\+Tests Class Reference}
+\hypertarget{classimportlib__resources_1_1tests_1_1test__files_1_1_open_namespace_tests}{}\label{classimportlib__resources_1_1tests_1_1test__files_1_1_open_namespace_tests}\index{importlib\_resources.tests.test\_files.OpenNamespaceTests@{importlib\_resources.tests.test\_files.OpenNamespaceTests}}
+Inheritance diagram for importlib\+\_\+resources.\+tests.\+test\+\_\+files.\+Open\+Namespace\+Tests\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.632653cm]{classimportlib__resources_1_1tests_1_1test__files_1_1_open_namespace_tests}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1tests_1_1test__files_1_1_open_namespace_tests_aed1e1e097612aa96806f7da754e7dc41}{test\+\_\+non\+\_\+paths\+\_\+in\+\_\+dunder\+\_\+path}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1test__files_1_1_files_tests}{importlib\+\_\+resources.\+tests.\+test\+\_\+files.\+Files\+Tests}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries test\+\_\+read\+\_\+bytes} (self)
+\item 
+{\bfseries test\+\_\+read\+\_\+text} (self)
+\item 
+{\bfseries test\+\_\+traversable} (self)
+\item 
+{\bfseries test\+\_\+joinpath\+\_\+with\+\_\+multiple\+\_\+args} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1tests_1_1test__files_1_1_files_tests_a4fe7e0f11acf547947bfd5b7163358d6}{test\+\_\+old\+\_\+parameter}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_disk_setup}{importlib\+\_\+resources.\+tests.\+util.\+Disk\+Setup}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries tree\+\_\+on\+\_\+path} (self, spec)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_module_setup}{importlib\+\_\+resources.\+tests.\+util.\+Module\+Setup}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries set\+Up} (self)
+\item 
+{\bfseries load\+\_\+fixture} (self, module)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1tests_1_1test__files_1_1_open_namespace_tests_ad0b269456ff2721347f3134e7a0cf1bb}\label{classimportlib__resources_1_1tests_1_1test__files_1_1_open_namespace_tests_ad0b269456ff2721347f3134e7a0cf1bb} 
+str {\bfseries MODULE} = \textquotesingle{}namespacedata01\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_disk_setup}{importlib\+\_\+resources.\+tests.\+util.\+Disk\+Setup}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries MODULE} = \textquotesingle{}data01\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1test__files_1_1_files_tests}{importlib\+\_\+resources.\+tests.\+test\+\_\+files.\+Files\+Tests}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries data}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_module_setup}{importlib\+\_\+resources.\+tests.\+util.\+Module\+Setup}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries fixtures} = contextlib.\+Exit\+Stack()
+\item 
+{\bfseries data} = self.\+load\+\_\+fixture(self.\+MODULE)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classimportlib__resources_1_1tests_1_1test__files_1_1_open_namespace_tests_aed1e1e097612aa96806f7da754e7dc41}\index{importlib\_resources.tests.test\_files.OpenNamespaceTests@{importlib\_resources.tests.test\_files.OpenNamespaceTests}!test\_non\_paths\_in\_dunder\_path@{test\_non\_paths\_in\_dunder\_path}}
+\index{test\_non\_paths\_in\_dunder\_path@{test\_non\_paths\_in\_dunder\_path}!importlib\_resources.tests.test\_files.OpenNamespaceTests@{importlib\_resources.tests.test\_files.OpenNamespaceTests}}
+\doxysubsubsection{\texorpdfstring{test\_non\_paths\_in\_dunder\_path()}{test\_non\_paths\_in\_dunder\_path()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1tests_1_1test__files_1_1_open_namespace_tests_aed1e1e097612aa96806f7da754e7dc41} 
+importlib\+\_\+resources.\+tests.\+test\+\_\+files.\+Open\+Namespace\+Tests.\+test\+\_\+non\+\_\+paths\+\_\+in\+\_\+dunder\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Non-path items in a namespace package's ``__path__`` are ignored.
+
+As reported in python/importlib_resources#311, some tools
+like Setuptools, when creating editable packages, will inject
+non-paths into a namespace package's ``__path__``, a
+sentinel like
+``__editable__.sample_namespace-1.0.finder.__path_hook__``
+to cause the ``PathEntryFinder`` to be called when searching
+for packages. In that case, resources should still be loadable.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/importlib\+\_\+resources/tests/test\+\_\+files.\+py\end{DoxyCompactItemize}

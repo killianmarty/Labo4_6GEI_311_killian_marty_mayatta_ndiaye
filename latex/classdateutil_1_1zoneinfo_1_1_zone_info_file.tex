@@ -1,0 +1,64 @@
+\doxysection{dateutil.\+zoneinfo.\+Zone\+Info\+File Class Reference}
+\hypertarget{classdateutil_1_1zoneinfo_1_1_zone_info_file}{}\label{classdateutil_1_1zoneinfo_1_1_zone_info_file}\index{dateutil.zoneinfo.ZoneInfoFile@{dateutil.zoneinfo.ZoneInfoFile}}
+Inheritance diagram for dateutil.\+zoneinfo.\+Zone\+Info\+File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdateutil_1_1zoneinfo_1_1_zone_info_file}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1zoneinfo_1_1_zone_info_file_ad145c876c3332e0b26708f1da8b713a3}\label{classdateutil_1_1zoneinfo_1_1_zone_info_file_ad145c876c3332e0b26708f1da8b713a3} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, zonefile\+\_\+stream=None)
+\item 
+\mbox{\hyperlink{classdateutil_1_1zoneinfo_1_1_zone_info_file_a363bfcfd579d70744f96af5529fe07c2}{get}} (self, name, default=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classdateutil_1_1zoneinfo_1_1_zone_info_file_a8a95a6bd572e9852119b1e36466943e5}{zones}}
+\item 
+\Hypertarget{classdateutil_1_1zoneinfo_1_1_zone_info_file_a31d874eb36efd8f25ff8bb4ce5a9795b}\label{classdateutil_1_1zoneinfo_1_1_zone_info_file_a31d874eb36efd8f25ff8bb4ce5a9795b} 
+{\bfseries metadata} = json.\+loads(metadata\+\_\+str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdateutil_1_1zoneinfo_1_1_zone_info_file_a363bfcfd579d70744f96af5529fe07c2}\index{dateutil.zoneinfo.ZoneInfoFile@{dateutil.zoneinfo.ZoneInfoFile}!get@{get}}
+\index{get@{get}!dateutil.zoneinfo.ZoneInfoFile@{dateutil.zoneinfo.ZoneInfoFile}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classdateutil_1_1zoneinfo_1_1_zone_info_file_a363bfcfd579d70744f96af5529fe07c2} 
+dateutil.\+zoneinfo.\+Zone\+Info\+File.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{default}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wrapper for :func:`ZoneInfoFile.zones.get`. This is a convenience method
+for retrieving zones from the zone dictionary.
+
+:param name:
+    The name of the zone to retrieve. (Generally IANA zone names)
+
+:param default:
+    The value to return in the event of a missing key.
+
+.. versionadded:: 2.6.0\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdateutil_1_1zoneinfo_1_1_zone_info_file_a8a95a6bd572e9852119b1e36466943e5}\index{dateutil.zoneinfo.ZoneInfoFile@{dateutil.zoneinfo.ZoneInfoFile}!zones@{zones}}
+\index{zones@{zones}!dateutil.zoneinfo.ZoneInfoFile@{dateutil.zoneinfo.ZoneInfoFile}}
+\doxysubsubsection{\texorpdfstring{zones}{zones}}
+{\footnotesize\ttfamily \label{classdateutil_1_1zoneinfo_1_1_zone_info_file_a8a95a6bd572e9852119b1e36466943e5} 
+dict dateutil.\+zoneinfo.\+Zone\+Info\+File.\+zones}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{zf.name:\ tzfile(tf.extractfile(zf),\ filename=zf.name)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ zf\ \textcolor{keywordflow}{in}\ tf.getmembers()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ zf.isfile()\ \textcolor{keywordflow}{and}\ zf.name\ !=\ METADATA\_FN\}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/dateutil/zoneinfo/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

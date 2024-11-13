@@ -1,0 +1,44 @@
+\doxysection{pip.\+\_\+vendor.\+requests.\+\_\+internal\+\_\+utils Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1requests_1_1__internal__utils}{}\label{namespacepip_1_1__vendor_1_1requests_1_1__internal__utils}\index{pip.\_vendor.requests.\_internal\_utils@{pip.\_vendor.requests.\_internal\_utils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1requests_1_1__internal__utils_a42c1a119ee23f4e45cd7da59717fe079}{to\+\_\+native\+\_\+string}} (string, encoding=\textquotesingle{}ascii\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1requests_1_1__internal__utils_a0232be310aaeaaf02dff181c6f8328d9}{unicode\+\_\+is\+\_\+ascii}} (u\+\_\+string)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}requests._internal_utils
+~~~~~~~~~~~~~~
+
+Provides utility functions that are consumed internally by Requests
+which depend on extremely few external helpers (such as compat)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1requests_1_1__internal__utils_a42c1a119ee23f4e45cd7da59717fe079}\index{pip.\_vendor.requests.\_internal\_utils@{pip.\_vendor.requests.\_internal\_utils}!to\_native\_string@{to\_native\_string}}
+\index{to\_native\_string@{to\_native\_string}!pip.\_vendor.requests.\_internal\_utils@{pip.\_vendor.requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{to\_native\_string()}{to\_native\_string()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1requests_1_1__internal__utils_a42c1a119ee23f4e45cd7da59717fe079} 
+pip.\+\_\+vendor.\+requests.\+\_\+internal\+\_\+utils.\+to\+\_\+native\+\_\+string (\begin{DoxyParamCaption}\item[{}]{string}{, }\item[{}]{encoding}{ = {\ttfamily \textquotesingle{}ascii\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a string object, regardless of type, returns a representation of
+that string in the native string type, encoding and decoding where
+necessary. This assumes ASCII unless told otherwise.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1requests_1_1__internal__utils_a0232be310aaeaaf02dff181c6f8328d9}\index{pip.\_vendor.requests.\_internal\_utils@{pip.\_vendor.requests.\_internal\_utils}!unicode\_is\_ascii@{unicode\_is\_ascii}}
+\index{unicode\_is\_ascii@{unicode\_is\_ascii}!pip.\_vendor.requests.\_internal\_utils@{pip.\_vendor.requests.\_internal\_utils}}
+\doxysubsubsection{\texorpdfstring{unicode\_is\_ascii()}{unicode\_is\_ascii()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1requests_1_1__internal__utils_a0232be310aaeaaf02dff181c6f8328d9} 
+pip.\+\_\+vendor.\+requests.\+\_\+internal\+\_\+utils.\+unicode\+\_\+is\+\_\+ascii (\begin{DoxyParamCaption}\item[{}]{u\+\_\+string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if unicode string only contains ASCII characters.
+
+:param str u_string: unicode string to check. Must be unicode
+    and not Python 2 `str`.
+:rtype: bool
+\end{DoxyVerb}
+ 

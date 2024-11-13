@@ -1,0 +1,54 @@
+\doxysection{werkzeug.\+wsgi.\+Closing\+Iterator Class Reference}
+\hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator}{}\label{classwerkzeug_1_1wsgi_1_1_closing_iterator}\index{werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_a5ec697bcd6bb8b08fe7f6343700fa69f}\label{classwerkzeug_1_1wsgi_1_1_closing_iterator_a5ec697bcd6bb8b08fe7f6343700fa69f} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Iterable\mbox{[}bytes\mbox{]} iterable, t.\+Optional\mbox{[}t.\+Union\mbox{[}t.\+Callable\mbox{[}\mbox{[}$\,$\mbox{]}, None\mbox{]}, t.\+Iterable\mbox{[}t.\+Callable\mbox{[}\mbox{[}$\,$\mbox{]}, None\mbox{]}\mbox{]}\mbox{]}\mbox{]} callbacks=None)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_a0f807c9c9c12ffaf8de7a7928f1552ee}\label{classwerkzeug_1_1wsgi_1_1_closing_iterator_a0f807c9c9c12ffaf8de7a7928f1552ee} 
+"{}Closing\+Iterator"{} {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_a17665e3fd776c81640ae4021e2d846fe}\label{classwerkzeug_1_1wsgi_1_1_closing_iterator_a17665e3fd776c81640ae4021e2d846fe} 
+bytes {\bfseries \+\_\+\+\_\+next\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_a230d5002471d906ec61b4d8fbfc4bd07}\label{classwerkzeug_1_1wsgi_1_1_closing_iterator_a230d5002471d906ec61b4d8fbfc4bd07} 
+None {\bfseries close} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_a3b6f2f25ba9c627b477d8169f83e291e}\label{classwerkzeug_1_1wsgi_1_1_closing_iterator_a3b6f2f25ba9c627b477d8169f83e291e} 
+{\bfseries \+\_\+next} = t.\+cast(t.\+Callable\mbox{[}\mbox{[}$\,$\mbox{]}, bytes\mbox{]}, partial(next, iterator))
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_ab1c743db600814c6f95cbb5029487254}\label{classwerkzeug_1_1wsgi_1_1_closing_iterator_ab1c743db600814c6f95cbb5029487254} 
+{\bfseries \+\_\+callbacks} = callbacks
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The WSGI specification requires that all middlewares and gateways
+respect the `close` callback of the iterable returned by the application.
+Because it is useful to add another close action to a returned iterable
+and adding a custom iterable is a boring task this class can be used for
+that::
+
+    return ClosingIterator(app(environ, start_response), [cleanup_session,
+                                                          cleanup_locals])
+
+If there is just one close function it can be passed instead of the list.
+
+A closing iterator is not needed if the application uses response objects
+and finishes the processing if the response is started::
+
+    try:
+        return response(environ, start_response)
+    finally:
+        cleanup_session()
+        cleanup_locals()
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/wsgi.\+py\end{DoxyCompactItemize}

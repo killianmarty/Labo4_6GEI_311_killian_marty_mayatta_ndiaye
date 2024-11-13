@@ -1,0 +1,402 @@
+\doxysection{jsonschema.\+validators Namespace Reference}
+\hypertarget{namespacejsonschema_1_1validators}{}\label{namespacejsonschema_1_1validators}\index{jsonschema.validators@{jsonschema.validators}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver}{\+\_\+\+Ref\+Resolver}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_aefe6bfcebe9497ea479d9aa445ad035a}\label{namespacejsonschema_1_1validators_aefe6bfcebe9497ea479d9aa445ad035a} 
+{\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (name)
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1validators_ab897554cc6b3adf6b08201b7741c8dfe}{validates}} (version)
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_ab6fff44e1bc76fe3c8e5c9b1bb062ac3}\label{namespacejsonschema_1_1validators_ab6fff44e1bc76fe3c8e5c9b1bb062ac3} 
+{\bfseries \+\_\+warn\+\_\+for\+\_\+remote\+\_\+retrieve} (str uri)
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1validators_a46e66f40ed067e1e4c125afdcedd5f5c}{create}} (referencing.\+jsonschema.\+Object\+Schema meta\+\_\+schema,(Mapping\mbox{[}str, \mbox{\hyperlink{classjsonschema_1_1__typing_1_1_schema_keyword_validator}{\+\_\+typing.\+Schema\+Keyword\+Validator}}\mbox{]}\texorpdfstring{$\vert$}{|}Iterable\mbox{[}tuple\mbox{[}str, \mbox{\hyperlink{classjsonschema_1_1__typing_1_1_schema_keyword_validator}{\+\_\+typing.\+Schema\+Keyword\+Validator}}\mbox{]}\mbox{]}) validators=(), str\texorpdfstring{$\vert$}{|}None version=None, \mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker}{\+\_\+types.\+Type\+Checker}} type\+\_\+checker=\+\_\+types.\+draft202012\+\_\+type\+\_\+checker, \mbox{\hyperlink{classjsonschema_1_1__format_1_1_format_checker}{\+\_\+format.\+Format\+Checker}} format\+\_\+checker=\+\_\+format.\+draft202012\+\_\+format\+\_\+checker, \+\_\+typing.\+id\+\_\+of id\+\_\+of=referencing.\+jsonschema.\+DRAFT202012.\+id\+\_\+of, \+\_\+typing.\+Applicable\+Validators applicable\+\_\+validators=methodcaller("{}items"{},))
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1validators_af54b370c3f3b32f2c7c7afc0eabbfaaa}{extend}} (validator, validators=(), version=None, type\+\_\+checker=None, format\+\_\+checker=None)
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a5048f1d5c3ee1e502242850d5a5e9126}\label{namespacejsonschema_1_1validators_a5048f1d5c3ee1e502242850d5a5e9126} 
+{\bfseries \+\_\+match\+\_\+keyword} (keyword)
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a362ddddaa8e0cc246e967a1f01a61384}\label{namespacejsonschema_1_1validators_a362ddddaa8e0cc246e967a1f01a61384} 
+{\bfseries \+\_\+match\+\_\+subschema\+\_\+keywords} (value)
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1validators_a7dedc7784cefdc65985cb866b9d69d3f}{\+\_\+search\+\_\+schema}} (schema, matcher)
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1validators_adcd93ca7ab8edf094e5a7cf41b96defc}{validate}} (instance, schema, cls=None, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+type\mbox{[}\mbox{\hyperlink{classjsonschema_1_1protocols_1_1_validator}{Validator}}\mbox{]} \mbox{\hyperlink{namespacejsonschema_1_1validators_a000c08684425c0f880cc315a597f732b}{validator\+\_\+for}} (schema, \mbox{\hyperlink{classjsonschema_1_1protocols_1_1_validator}{Validator}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classjsonschema_1_1__utils_1_1_unset}{\+\_\+utils.\+Unset}} default=\+\_\+\+UNSET)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a0cff580fbe27b0a456a87eb1a16cde45}\label{namespacejsonschema_1_1validators_a0cff580fbe27b0a456a87eb1a16cde45} 
+{\bfseries \+\_\+\+UNSET} = \mbox{\hyperlink{classjsonschema_1_1__utils_1_1_unset}{\+\_\+utils.\+Unset}}()
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_ae2a386cdd616adcbb0d6a28c15aa8615}\label{namespacejsonschema_1_1validators_ae2a386cdd616adcbb0d6a28c15aa8615} 
+dict {\bfseries \+\_\+\+VALIDATORS} = \{\}
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a52c44a3792b832ced978ea7438576d39}\label{namespacejsonschema_1_1validators_a52c44a3792b832ced978ea7438576d39} 
+{\bfseries \+\_\+\+META\+\_\+\+SCHEMAS} = \mbox{\hyperlink{classjsonschema_1_1__utils_1_1_u_r_i_dict}{\+\_\+utils.\+URIDict}}()
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1validators_a921530c27b422d58926f2f440d63b456}{\+\_\+\+REMOTE\+\_\+\+WARNING\+\_\+\+REGISTRY}}
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a74f9d8361b68e6bddcc768465079e123}\label{namespacejsonschema_1_1validators_a74f9d8361b68e6bddcc768465079e123} 
+{\bfseries Draft3\+Validator}
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a4df7e0948801eceb417220a3d58ad3a3}\label{namespacejsonschema_1_1validators_a4df7e0948801eceb417220a3d58ad3a3} 
+{\bfseries Draft4\+Validator}
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a96b3feabad664f6acfc9f0f557df571d}\label{namespacejsonschema_1_1validators_a96b3feabad664f6acfc9f0f557df571d} 
+{\bfseries Draft6\+Validator}
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_ae6a3503ac8f0b9b68abe5f6835ce5cc4}\label{namespacejsonschema_1_1validators_ae6a3503ac8f0b9b68abe5f6835ce5cc4} 
+{\bfseries Draft7\+Validator}
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_ac3c66acc8dbe9da796806a02ab2abe34}\label{namespacejsonschema_1_1validators_ac3c66acc8dbe9da796806a02ab2abe34} 
+{\bfseries Draft201909\+Validator}
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a7711976fcc96bb67c23fa11abadca2e9}\label{namespacejsonschema_1_1validators_a7711976fcc96bb67c23fa11abadca2e9} 
+{\bfseries Draft202012\+Validator}
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a1dea9ace2e06851dbe2662831e46f060}\label{namespacejsonschema_1_1validators_a1dea9ace2e06851dbe2662831e46f060} 
+{\bfseries \+\_\+\+LATEST\+\_\+\+VERSION} = Draft202012\+Validator
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a030e7f479ec04f49cb7b8879e9f77f64}\label{namespacejsonschema_1_1validators_a030e7f479ec04f49cb7b8879e9f77f64} 
+tuple {\bfseries \+\_\+\+SUBSCHEMAS\+\_\+\+KEYWORDS} = ("{}\$id"{}, "{}id"{}, "{}\$anchor"{}, "{}\$dynamic\+Anchor"{})
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a363adbc54d0bba3743cf29ac474ea943}\label{namespacejsonschema_1_1validators_a363adbc54d0bba3743cf29ac474ea943} 
+{\bfseries evolve} = evolve
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a2c11082e8e86a2a9c1fdb16d87e951cb}\label{namespacejsonschema_1_1validators_a2c11082e8e86a2a9c1fdb16d87e951cb} 
+{\bfseries \+\_\+resolver} = registry.\+resolver\+\_\+with\+\_\+root(resource)
+\item 
+\Hypertarget{namespacejsonschema_1_1validators_a2f0077a1e631e79a6f1791463e81762a}\label{namespacejsonschema_1_1validators_a2f0077a1e631e79a6f1791463e81762a} 
+list {\bfseries \+\_\+validators} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1validators_ad95e8203c6db79f6f2d7d53ef7f01483}{\+\_\+ref\+\_\+resolver}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Creation and extension of validators, with implementations for existing drafts.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacejsonschema_1_1validators_a7dedc7784cefdc65985cb866b9d69d3f}\index{jsonschema.validators@{jsonschema.validators}!\_search\_schema@{\_search\_schema}}
+\index{\_search\_schema@{\_search\_schema}!jsonschema.validators@{jsonschema.validators}}
+\doxysubsubsection{\texorpdfstring{\_search\_schema()}{\_search\_schema()}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1validators_a7dedc7784cefdc65985cb866b9d69d3f} 
+jsonschema.\+validators.\+\_\+search\+\_\+schema (\begin{DoxyParamCaption}\item[{}]{schema}{, }\item[{}]{matcher}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Breadth-first search routine.\end{DoxyVerb}
+ \Hypertarget{namespacejsonschema_1_1validators_a46e66f40ed067e1e4c125afdcedd5f5c}\index{jsonschema.validators@{jsonschema.validators}!create@{create}}
+\index{create@{create}!jsonschema.validators@{jsonschema.validators}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1validators_a46e66f40ed067e1e4c125afdcedd5f5c} 
+jsonschema.\+validators.\+create (\begin{DoxyParamCaption}\item[{referencing.\+jsonschema.\+Object\+Schema}]{meta\+\_\+schema}{, }\item[{(         Mapping\mbox{[}str, \mbox{\hyperlink{classjsonschema_1_1__typing_1_1_schema_keyword_validator}{\+\_\+typing.\+Schema\+Keyword\+Validator}}\mbox{]}         \texorpdfstring{$\vert$}{|} Iterable\mbox{[}tuple\mbox{[}str, \mbox{\hyperlink{classjsonschema_1_1__typing_1_1_schema_keyword_validator}{\+\_\+typing.\+Schema\+Keyword\+Validator}}\mbox{]}\mbox{]}     ) }]{validators}{ = {\ttfamily ()}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{version}{ = {\ttfamily None}, }\item[{\mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker}{\+\_\+types.\+Type\+Checker}} }]{type\+\_\+checker}{ = {\ttfamily \+\_\+types.draft202012\+\_\+type\+\_\+checker}, }\item[{\mbox{\hyperlink{classjsonschema_1_1__format_1_1_format_checker}{\+\_\+format.\+Format\+Checker}} }]{format\+\_\+checker}{ = {\ttfamily \+\_\+format.draft202012\+\_\+format\+\_\+checker}, }\item[{\+\_\+typing.\+id\+\_\+of }]{id\+\_\+of}{ = {\ttfamily referencing.jsonschema.DRAFT202012.id\+\_\+of}, }\item[{\+\_\+typing.\+Applicable\+Validators }]{applicable\+\_\+validators}{ = {\ttfamily methodcaller( ~~~~~~~~"{}items"{}, ~~~~)}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new validator class.
+
+Arguments:
+
+    meta_schema:
+
+        the meta schema for the new validator class
+
+    validators:
+
+        a mapping from names to callables, where each callable will
+        validate the schema property with the given name.
+
+        Each callable should take 4 arguments:
+
+            1. a validator instance,
+            2. the value of the property being validated within the
+               instance
+            3. the instance
+            4. the schema
+
+    version:
+
+        an identifier for the version that this validator class will
+        validate. If provided, the returned validator class will
+        have its ``__name__`` set to include the version, and also
+        will have `jsonschema.validators.validates` automatically
+        called for the given version.
+
+    type_checker:
+
+        a type checker, used when applying the :kw:`type` keyword.
+
+        If unprovided, a `jsonschema.TypeChecker` will be created
+        with a set of default types typical of JSON Schema drafts.
+
+    format_checker:
+
+        a format checker, used when applying the :kw:`format` keyword.
+
+        If unprovided, a `jsonschema.FormatChecker` will be created
+        with a set of default formats typical of JSON Schema drafts.
+
+    id_of:
+
+        A function that given a schema, returns its ID.
+
+    applicable_validators:
+
+        A function that, given a schema, returns the list of
+        applicable schema keywords and associated values
+        which will be used to validate the instance.
+        This is mostly used to support pre-draft 7 versions of JSON Schema
+        which specified behavior around ignoring keywords if they were
+        siblings of a ``$ref`` keyword. If you're not attempting to
+        implement similar behavior, you can typically ignore this argument
+        and leave it at its default.
+
+Returns:
+
+    a new `jsonschema.protocols.Validator` class\end{DoxyVerb}
+ \Hypertarget{namespacejsonschema_1_1validators_af54b370c3f3b32f2c7c7afc0eabbfaaa}\index{jsonschema.validators@{jsonschema.validators}!extend@{extend}}
+\index{extend@{extend}!jsonschema.validators@{jsonschema.validators}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1validators_af54b370c3f3b32f2c7c7afc0eabbfaaa} 
+jsonschema.\+validators.\+extend (\begin{DoxyParamCaption}\item[{}]{validator}{, }\item[{}]{validators}{ = {\ttfamily ()}, }\item[{}]{version}{ = {\ttfamily None}, }\item[{}]{type\+\_\+checker}{ = {\ttfamily None}, }\item[{}]{format\+\_\+checker}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new validator class by extending an existing one.
+
+Arguments:
+
+    validator (jsonschema.protocols.Validator):
+
+        an existing validator class
+
+    validators (collections.abc.Mapping):
+
+        a mapping of new validator callables to extend with, whose
+        structure is as in `create`.
+
+        .. note::
+
+            Any validator callables with the same name as an
+            existing one will (silently) replace the old validator
+            callable entirely, effectively overriding any validation
+            done in the "parent" validator class.
+
+            If you wish to instead extend the behavior of a parent's
+            validator callable, delegate and call it directly in
+            the new validator function by retrieving it using
+            ``OldValidator.VALIDATORS["validation_keyword_name"]``.
+
+    version (str):
+
+        a version for the new validator class
+
+    type_checker (jsonschema.TypeChecker):
+
+        a type checker, used when applying the :kw:`type` keyword.
+
+        If unprovided, the type checker of the extended
+        `jsonschema.protocols.Validator` will be carried along.
+
+    format_checker (jsonschema.FormatChecker):
+
+        a format checker, used when applying the :kw:`format` keyword.
+
+        If unprovided, the format checker of the extended
+        `jsonschema.protocols.Validator` will be carried along.
+
+Returns:
+
+    a new `jsonschema.protocols.Validator` class extending the one
+    provided
+
+.. note:: Meta Schemas
+
+    The new validator class will have its parent's meta schema.
+
+    If you wish to change or extend the meta schema in the new
+    validator class, modify ``META_SCHEMA`` directly on the returned
+    class. Note that no implicit copying is done, so a copy should
+    likely be made before modifying it, in order to not affect the
+    old validator.\end{DoxyVerb}
+ \Hypertarget{namespacejsonschema_1_1validators_adcd93ca7ab8edf094e5a7cf41b96defc}\index{jsonschema.validators@{jsonschema.validators}!validate@{validate}}
+\index{validate@{validate}!jsonschema.validators@{jsonschema.validators}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1validators_adcd93ca7ab8edf094e5a7cf41b96defc} 
+jsonschema.\+validators.\+validate (\begin{DoxyParamCaption}\item[{}]{instance}{, }\item[{}]{schema}{, }\item[{}]{cls}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Validate an instance under the given schema.
+
+    >>> validate([2, 3, 4], {"maxItems": 2})
+    Traceback (most recent call last):
+        ...
+    ValidationError: [2, 3, 4] is too long
+
+:func:`~jsonschema.validators.validate` will first verify that the
+provided schema is itself valid, since not doing so can lead to less
+obvious error messages and fail in less obvious or consistent ways.
+
+If you know you have a valid schema already, especially
+if you intend to validate multiple instances with
+the same schema, you likely would prefer using the
+`jsonschema.protocols.Validator.validate` method directly on a
+specific validator (e.g. ``Draft202012Validator.validate``).
+
+
+Arguments:
+
+    instance:
+
+        The instance to validate
+
+    schema:
+
+        The schema to validate with
+
+    cls (jsonschema.protocols.Validator):
+
+        The class that will be used to validate the instance.
+
+If the ``cls`` argument is not provided, two things will happen
+in accordance with the specification. First, if the schema has a
+:kw:`$schema` keyword containing a known meta-schema [#]_ then the
+proper validator will be used. The specification recommends that
+all schemas contain :kw:`$schema` properties for this reason. If no
+:kw:`$schema` property is found, the default validator class is the
+latest released draft.
+
+Any other provided positional and keyword arguments will be passed
+on when instantiating the ``cls``.
+
+Raises:
+
+    `jsonschema.exceptions.ValidationError`:
+
+        if the instance is invalid
+
+    `jsonschema.exceptions.SchemaError`:
+
+        if the schema itself is invalid
+
+.. rubric:: Footnotes
+.. [#] known by a validator registered with
+    `jsonschema.validators.validates`\end{DoxyVerb}
+ \Hypertarget{namespacejsonschema_1_1validators_ab897554cc6b3adf6b08201b7741c8dfe}\index{jsonschema.validators@{jsonschema.validators}!validates@{validates}}
+\index{validates@{validates}!jsonschema.validators@{jsonschema.validators}}
+\doxysubsubsection{\texorpdfstring{validates()}{validates()}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1validators_ab897554cc6b3adf6b08201b7741c8dfe} 
+jsonschema.\+validators.\+validates (\begin{DoxyParamCaption}\item[{}]{version}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register the decorated validator for a ``version`` of the specification.
+
+Registered validators and their meta schemas will be considered when
+parsing :kw:`$schema` keywords' URIs.
+
+Arguments:
+
+    version (str):
+
+        An identifier to use as the version's name
+
+Returns:
+
+    collections.abc.Callable:
+
+        a class decorator to decorate the validator with the version\end{DoxyVerb}
+ \Hypertarget{namespacejsonschema_1_1validators_a000c08684425c0f880cc315a597f732b}\index{jsonschema.validators@{jsonschema.validators}!validator\_for@{validator\_for}}
+\index{validator\_for@{validator\_for}!jsonschema.validators@{jsonschema.validators}}
+\doxysubsubsection{\texorpdfstring{validator\_for()}{validator\_for()}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1validators_a000c08684425c0f880cc315a597f732b} 
+ type\mbox{[}\mbox{\hyperlink{classjsonschema_1_1protocols_1_1_validator}{Validator}}\mbox{]} jsonschema.\+validators.\+validator\+\_\+for (\begin{DoxyParamCaption}\item[{}]{schema}{, }\item[{\mbox{\hyperlink{classjsonschema_1_1protocols_1_1_validator}{Validator}} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classjsonschema_1_1__utils_1_1_unset}{\+\_\+utils.\+Unset}} }]{default}{ = {\ttfamily \+\_\+UNSET}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve the validator class appropriate for validating the given schema.
+
+Uses the :kw:`$schema` keyword that should be present in the given
+schema to look up the appropriate validator class.
+
+Arguments:
+
+    schema (collections.abc.Mapping or bool):
+
+        the schema to look at
+
+    default:
+
+        the default to return if the appropriate validator class
+        cannot be determined.
+
+        If unprovided, the default is to return the latest supported
+        draft.
+
+Examples:
+
+    The :kw:`$schema` JSON Schema keyword will control which validator
+    class is returned:
+
+    >>> schema = {
+    ...     "$schema": "https://json-schema.org/draft/2020-12/schema",
+    ...     "type": "integer",
+    ... }
+    >>> jsonschema.validators.validator_for(schema)
+    <class 'jsonschema.validators.Draft202012Validator'>
+
+
+    Here, a draft 7 schema instead will return the draft 7 validator:
+
+    >>> schema = {
+    ...     "$schema": "http://json-schema.org/draft-07/schema#",
+    ...     "type": "integer",
+    ... }
+    >>> jsonschema.validators.validator_for(schema)
+    <class 'jsonschema.validators.Draft7Validator'>
+
+
+    Schemas with no ``$schema`` keyword will fallback to the default
+    argument:
+
+    >>> schema = {"type": "integer"}
+    >>> jsonschema.validators.validator_for(
+    ...     schema, default=Draft7Validator,
+    ... )
+    <class 'jsonschema.validators.Draft7Validator'>
+
+    or if none is provided, to the latest version supported.
+    Always including the keyword when authoring schemas is highly
+    recommended.\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacejsonschema_1_1validators_ad95e8203c6db79f6f2d7d53ef7f01483}\index{jsonschema.validators@{jsonschema.validators}!\_ref\_resolver@{\_ref\_resolver}}
+\index{\_ref\_resolver@{\_ref\_resolver}!jsonschema.validators@{jsonschema.validators}}
+\doxysubsubsection{\texorpdfstring{\_ref\_resolver}{\_ref\_resolver}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1validators_ad95e8203c6db79f6f2d7d53ef7f01483} 
+jsonschema.\+validators.\+\_\+ref\+\_\+resolver\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \_RefResolver.from\_schema(}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.schema,}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ id\_of=id\_of,}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacejsonschema_1_1validators_a921530c27b422d58926f2f440d63b456}\index{jsonschema.validators@{jsonschema.validators}!\_REMOTE\_WARNING\_REGISTRY@{\_REMOTE\_WARNING\_REGISTRY}}
+\index{\_REMOTE\_WARNING\_REGISTRY@{\_REMOTE\_WARNING\_REGISTRY}!jsonschema.validators@{jsonschema.validators}}
+\doxysubsubsection{\texorpdfstring{\_REMOTE\_WARNING\_REGISTRY}{\_REMOTE\_WARNING\_REGISTRY}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1validators_a921530c27b422d58926f2f440d63b456} 
+jsonschema.\+validators.\+\_\+\+REMOTE\+\_\+\+WARNING\+\_\+\+REGISTRY\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ SPECIFICATIONS.combine(}
+\DoxyCodeLine{00002\ \ \ \ \ \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{referencing.Registry}}(retrieve=\_warn\_for\_remote\_retrieve),\ \ \textcolor{comment}{\#\ type:\ ignore[call-\/arg]}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}

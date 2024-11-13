@@ -1,0 +1,170 @@
+\chapter{swagger\+\_\+client.\+Store\+Api}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api}{}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api}\index{swagger\_client.StoreApi@{swagger\_client.StoreApi}}
+\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md164}%
+\Hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md164}%
+
+
+All URIs are relative to {\itshape \href{https://petstore.swagger.io/v2}{\texttt{ https\+://petstore.\+swagger.\+io/v2}}}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ HTTP request   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ HTTP request   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+\href{StoreApi.md\#delete_order}{\texttt{ {\bfseries{delete\+\_\+order}}}}   &{\bfseries{DELETE}} /store/order/\{order\+Id\}   &Delete purchase order by ID    \\\cline{1-3}
+\href{StoreApi.md\#get_inventory}{\texttt{ {\bfseries{get\+\_\+inventory}}}}   &{\bfseries{GET}} /store/inventory   &Returns pet inventories by status    \\\cline{1-3}
+\href{StoreApi.md\#get_order_by_id}{\texttt{ {\bfseries{get\+\_\+order\+\_\+by\+\_\+id}}}}   &{\bfseries{GET}} /store/order/\{order\+Id\}   &Find purchase order by ID    \\\cline{1-3}
+\href{StoreApi.md\#place_order}{\texttt{ {\bfseries{place\+\_\+order}}}}   &{\bfseries{POST}} /store/order   &Place an order for a pet   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md165}{}\doxysection{\texorpdfstring{{\bfseries{delete\+\_\+order}}}{{\bfseries{delete\+\_\+order}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md165}
+\begin{quote}
+delete\+\_\+order(order\+\_\+id) \end{quote}
+Delete purchase order by ID
+
+For valid response try integer IDs with positive integer value. Negative or non-\/integer values will generate API errors\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md166}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md166}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.StoreApi()}
+\DoxyCodeLine{order\_id\ =\ 789\ \textcolor{comment}{\#\ int\ |\ ID\ of\ the\ order\ that\ needs\ to\ be\ deleted}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Delete\ purchase\ order\ by\ ID}}
+\DoxyCodeLine{\ \ \ \ api\_instance.delete\_order(order\_id)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ StoreApi-\/>delete\_order:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md167}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md167}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{order\+\_\+id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} ID of the order that needs to be deleted \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md168}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md168}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md169}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md169}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md170}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md170}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: application/json, application/xml
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md171}{}\doxysection{\texorpdfstring{{\bfseries{get\+\_\+inventory}}}{{\bfseries{get\+\_\+inventory}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md171}
+\begin{quote}
+dict(str, int) get\+\_\+inventory() \end{quote}
+Returns pet inventories by status
+
+Returns a map of status codes to quantities\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md172}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md172}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ Configure\ API\ key\ authorization:\ api\_key}}
+\DoxyCodeLine{configuration\ =\ \mbox{\hyperlink{classswagger__client_1_1configuration_1_1_configuration}{swagger\_client.Configuration}}()}
+\DoxyCodeLine{configuration.api\_key[\textcolor{stringliteral}{'api\_key'}]\ =\ \textcolor{stringliteral}{'YOUR\_API\_KEY'}}
+\DoxyCodeLine{\textcolor{comment}{\#\ Uncomment\ below\ to\ setup\ prefix\ (e.g.\ Bearer)\ for\ API\ key,\ if\ needed}}
+\DoxyCodeLine{\textcolor{comment}{\#\ configuration.api\_key\_prefix['api\_key']\ =\ 'Bearer'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.StoreApi(\mbox{\hyperlink{classswagger__client_1_1api__client_1_1_api_client}{swagger\_client.ApiClient}}(configuration))}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Returns\ pet\ inventories\ by\ status}}
+\DoxyCodeLine{\ \ \ \ api\_response\ =\ api\_instance.get\_inventory()}
+\DoxyCodeLine{\ \ \ \ pprint(api\_response)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ StoreApi-\/>get\_inventory:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md173}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md173}
+This endpoint does not need any parameter.\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md174}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md174}
+{\bfseries{dict(str, int)}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md175}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md175}
+\href{../README.md\#api_key}{\texttt{ api\+\_\+key}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md176}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md176}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: application/json
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md177}{}\doxysection{\texorpdfstring{{\bfseries{get\+\_\+order\+\_\+by\+\_\+id}}}{{\bfseries{get\+\_\+order\+\_\+by\+\_\+id}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md177}
+\begin{quote}
+Order get\+\_\+order\+\_\+by\+\_\+id(order\+\_\+id) \end{quote}
+Find purchase order by ID
+
+For valid response try integer IDs with value \texorpdfstring{$>$}{>}= 1 and \texorpdfstring{$<$}{<}= 10. Other values will generated exceptions\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md178}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md178}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.StoreApi()}
+\DoxyCodeLine{order\_id\ =\ 789\ \textcolor{comment}{\#\ int\ |\ ID\ of\ pet\ that\ needs\ to\ be\ fetched}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Find\ purchase\ order\ by\ ID}}
+\DoxyCodeLine{\ \ \ \ api\_response\ =\ api\_instance.get\_order\_by\_id(order\_id)}
+\DoxyCodeLine{\ \ \ \ pprint(api\_response)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ StoreApi-\/>get\_order\_by\_id:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md179}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md179}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{order\+\_\+id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} ID of pet that needs to be fetched \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md180}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md180}
+\doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_order}{{\bfseries{Order}}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md181}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md181}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md182}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md182}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: application/json, application/xml
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md183}{}\doxysection{\texorpdfstring{{\bfseries{place\+\_\+order}}}{{\bfseries{place\+\_\+order}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md183}
+\begin{quote}
+Order place\+\_\+order(body) \end{quote}
+Place an order for a pet\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md184}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md184}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.StoreApi()}
+\DoxyCodeLine{body\ =\ swagger\_client.Order()\ \textcolor{comment}{\#\ Order\ |\ order\ placed\ for\ purchasing\ the\ pet}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Place\ an\ order\ for\ a\ pet}}
+\DoxyCodeLine{\ \ \ \ api\_response\ =\ api\_instance.place\_order(body)}
+\DoxyCodeLine{\ \ \ \ pprint(api\_response)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ StoreApi-\/>place\_order:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md185}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md185}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{body}} \texorpdfstring{$\vert$}{|} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_order}{{\bfseries{Order}}}{0}\texorpdfstring{$\vert$}{|} order placed for purchasing the pet \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md186}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md186}
+\doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_order}{{\bfseries{Order}}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md187}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md187}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md188}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_store_api_autotoc_md188}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: application/json
+\item {\bfseries{Accept}}\+: application/json, application/xml
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0} 

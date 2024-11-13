@@ -1,0 +1,75 @@
+\doxysection{referencing.\+retrieval Namespace Reference}
+\hypertarget{namespacereferencing_1_1retrieval}{}\label{namespacereferencing_1_1retrieval}\index{referencing.retrieval@{referencing.retrieval}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Callable\mbox{[}\mbox{[}Callable\mbox{[}\mbox{[}URI\mbox{]}, \+\_\+T\mbox{]}\mbox{]}, \mbox{\hyperlink{classreferencing_1_1typing_1_1_retrieve}{Retrieve}}\mbox{[}D\mbox{]}\mbox{]} \mbox{\hyperlink{namespacereferencing_1_1retrieval_a11e5433bb449eb880456790df3ca1db2}{to\+\_\+cached\+\_\+resource}} (Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classreferencing_1_1typing_1_1_retrieve}{Retrieve}}\mbox{[}D\mbox{]}\mbox{]}, \mbox{\hyperlink{classreferencing_1_1typing_1_1_retrieve}{Retrieve}}\mbox{[}D\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}None cache=None, Callable\mbox{[}\mbox{[}\+\_\+T\mbox{]}, D\mbox{]} loads=json.\+loads, Callable\mbox{[}\mbox{[}D\mbox{]}, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]} from\+\_\+contents=\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_a0a64f07f56da88bdcca4af8693085b62}{Resource.\+from\+\_\+contents}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacereferencing_1_1retrieval_aede45ae0f1ac81d7d0212ea542335e68}\label{namespacereferencing_1_1retrieval_aede45ae0f1ac81d7d0212ea542335e68} 
+{\bfseries \+\_\+T} = Type\+Var("{}\+\_\+\+T"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Helpers related to (dynamic) resource retrieval.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereferencing_1_1retrieval_a11e5433bb449eb880456790df3ca1db2}\index{referencing.retrieval@{referencing.retrieval}!to\_cached\_resource@{to\_cached\_resource}}
+\index{to\_cached\_resource@{to\_cached\_resource}!referencing.retrieval@{referencing.retrieval}}
+\doxysubsubsection{\texorpdfstring{to\_cached\_resource()}{to\_cached\_resource()}}
+{\footnotesize\ttfamily \label{namespacereferencing_1_1retrieval_a11e5433bb449eb880456790df3ca1db2} 
+ Callable\mbox{[}\mbox{[}Callable\mbox{[}\mbox{[}URI\mbox{]}, \+\_\+T\mbox{]}\mbox{]}, \mbox{\hyperlink{classreferencing_1_1typing_1_1_retrieve}{Retrieve}}\mbox{[}D\mbox{]}\mbox{]} referencing.\+retrieval.\+to\+\_\+cached\+\_\+resource (\begin{DoxyParamCaption}\item[{Callable\mbox{[}\mbox{[}\mbox{\hyperlink{classreferencing_1_1typing_1_1_retrieve}{Retrieve}}\mbox{[}D\mbox{]}\mbox{]}, \mbox{\hyperlink{classreferencing_1_1typing_1_1_retrieve}{Retrieve}}\mbox{[}D\mbox{]}\mbox{]} \texorpdfstring{$\vert$}{|} None }]{cache}{ = {\ttfamily None}, }\item[{Callable\mbox{[}\mbox{[}\+\_\+T\mbox{]}, D\mbox{]} }]{loads}{ = {\ttfamily json.loads}, }\item[{Callable\mbox{[}\mbox{[}D\mbox{]}, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]} }]{from\+\_\+contents}{ = {\ttfamily \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_a0a64f07f56da88bdcca4af8693085b62}{Resource.\+from\+\_\+contents}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a retriever which caches its return values from a simpler callable.
+
+Takes a function which returns things like serialized JSON (strings) and
+returns something suitable for passing to `Registry` as a retrieve
+function.
+
+This decorator both reduces a small bit of boilerplate for a common case
+(deserializing JSON from strings and creating `Resource` objects from the
+result) as well as makes the probable need for caching a bit easier.
+Retrievers which otherwise do expensive operations (like hitting the
+network) might otherwise be called repeatedly.
+
+Examples
+--------
+
+.. testcode::
+
+    from referencing import Registry
+    from referencing.typing import URI
+    import referencing.retrieval
+
+
+    @referencing.retrieval.to_cached_resource()
+    def retrieve(uri: URI):
+        print(f"Retrieved {uri}")
+
+        # Normally, go get some expensive JSON from the network, a file ...
+        return '''
+            {
+                "$schema": "https://json-schema.org/draft/2020-12/schema",
+                "foo": "bar"
+            }
+        '''
+
+    one = Registry(retrieve=retrieve).get_or_retrieve("urn:example:foo")
+    print(one.value.contents["foo"])
+
+    # Retrieving the same URI again reuses the same value (and thus doesn't
+    # print another retrieval message here)
+    two = Registry(retrieve=retrieve).get_or_retrieve("urn:example:foo")
+    print(two.value.contents["foo"])
+
+.. testoutput::
+
+    Retrieved urn:example:foo
+    bar
+    bar\end{DoxyVerb}
+ 

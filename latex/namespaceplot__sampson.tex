@@ -1,0 +1,54 @@
+\doxysection{plot\+\_\+sampson Namespace Reference}
+\hypertarget{namespaceplot__sampson}{}\label{namespaceplot__sampson}\index{plot\_sampson@{plot\_sampson}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__sampson_a6c0a77a845b6f6e735ca73c06313eacd}\label{namespaceplot__sampson_a6c0a77a845b6f6e735ca73c06313eacd} 
+{\bfseries e1} = String\+IO(zf.\+read("{}samplike1.\+txt"{}))
+\item 
+\Hypertarget{namespaceplot__sampson_a6ca55375494df6d783414e5449f11afa}\label{namespaceplot__sampson_a6ca55375494df6d783414e5449f11afa} 
+{\bfseries e2} = String\+IO(zf.\+read("{}samplike2.\+txt"{}))
+\item 
+\Hypertarget{namespaceplot__sampson_a82a23e900bfb87fafbff47b947b5630e}\label{namespaceplot__sampson_a82a23e900bfb87fafbff47b947b5630e} 
+{\bfseries e3} = String\+IO(zf.\+read("{}samplike3.\+txt"{}))
+\item 
+\Hypertarget{namespaceplot__sampson_ab3d4a4a12b76f7105d7840ea61309878}\label{namespaceplot__sampson_ab3d4a4a12b76f7105d7840ea61309878} 
+{\bfseries G1} = nx.\+read\+\_\+edgelist(e1, delimiter="{}\textbackslash{}t"{})
+\item 
+\Hypertarget{namespaceplot__sampson_af5ce601148eb803b077ef1d4a67618ca}\label{namespaceplot__sampson_af5ce601148eb803b077ef1d4a67618ca} 
+{\bfseries G2} = nx.\+read\+\_\+edgelist(e2, delimiter="{}\textbackslash{}t"{})
+\item 
+\Hypertarget{namespaceplot__sampson_a111c151f295c3e4f4a8346da794cac5a}\label{namespaceplot__sampson_a111c151f295c3e4f4a8346da794cac5a} 
+{\bfseries G3} = nx.\+read\+\_\+edgelist(e3, delimiter="{}\textbackslash{}t"{})
+\item 
+\Hypertarget{namespaceplot__sampson_a0a4cc4eff262f8834b17ea6af2ec70a6}\label{namespaceplot__sampson_a0a4cc4eff262f8834b17ea6af2ec70a6} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(G3, iterations=100, seed=173)
+\item 
+\Hypertarget{namespaceplot__sampson_a9ed09ba8e76d9c07917f25bd9e324888}\label{namespaceplot__sampson_a9ed09ba8e76d9c07917f25bd9e324888} 
+{\bfseries node\+\_\+size}
+\item 
+\Hypertarget{namespaceplot__sampson_ab8b779271ccf71bddd479c220f56d8b3}\label{namespaceplot__sampson_ab8b779271ccf71bddd479c220f56d8b3} 
+{\bfseries with\+\_\+labels}
+\item 
+\Hypertarget{namespaceplot__sampson_a762d027ffda48b8384fcdf5b295ec6c8}\label{namespaceplot__sampson_a762d027ffda48b8384fcdf5b295ec6c8} 
+{\bfseries edgelist}
+\item 
+\Hypertarget{namespaceplot__sampson_a9d18114c17769cc0533aff77aa6b3cbc}\label{namespaceplot__sampson_a9d18114c17769cc0533aff77aa6b3cbc} 
+{\bfseries alpha}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}=======
+Sampson
+=======
+
+Sampson's monastery data.
+
+Shows how to read data from a zip file and plot multiple frames.
+
+The data file can be found at:
+
+- https://github.com/networkx/networkx/blob/main/examples/drawing/sampson_data.zip
+\end{DoxyVerb}
+ 

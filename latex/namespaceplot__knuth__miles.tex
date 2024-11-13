@@ -1,0 +1,112 @@
+\doxysection{plot\+\_\+knuth\+\_\+miles Namespace Reference}
+\hypertarget{namespaceplot__knuth__miles}{}\label{namespaceplot__knuth__miles}\index{plot\_knuth\_miles@{plot\_knuth\_miles}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplot__knuth__miles_ab830ea35a3c986ac7b50940ae29a8cd0}{miles\+\_\+graph}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_a26debfde127106147546afa8182a4194}\label{namespaceplot__knuth__miles_a26debfde127106147546afa8182a4194} 
+{\bfseries G} = \mbox{\hyperlink{namespaceplot__knuth__miles_ab830ea35a3c986ac7b50940ae29a8cd0}{miles\+\_\+graph}}()
+\item 
+\Hypertarget{namespaceplot__knuth__miles_ab959119cb3f3a222c5e65d6515eec0f0}\label{namespaceplot__knuth__miles_ab959119cb3f3a222c5e65d6515eec0f0} 
+{\bfseries H} = nx.\+Graph()
+\item 
+\Hypertarget{namespaceplot__knuth__miles_a8a2d4187a12c16eafa9a879c12d29311}\label{namespaceplot__knuth__miles_a8a2d4187a12c16eafa9a879c12d29311} 
+{\bfseries data}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_afe2d8e1f9959dcaddaeead2b6b2e0d92}\label{namespaceplot__knuth__miles_afe2d8e1f9959dcaddaeead2b6b2e0d92} 
+{\bfseries fig} = plt.\+figure(figsize=(8, 6))
+\item 
+\Hypertarget{namespaceplot__knuth__miles_a74b017e788cb0213f88242b8b3893a5b}\label{namespaceplot__knuth__miles_a74b017e788cb0213f88242b8b3893a5b} 
+list {\bfseries node\+\_\+color} = \mbox{[}float(H.\+degree(v)) for v in H\mbox{]}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_aa86306e45ed386df81d325d6186e7e0f}\label{namespaceplot__knuth__miles_aa86306e45ed386df81d325d6186e7e0f} 
+{\bfseries ax} = fig.\+add\+\_\+axes(\mbox{[}0, 0, 1, 1\mbox{]}, projection=ccrs.\+Lambert\+Conformal(), frameon=False)
+\item 
+\mbox{\hyperlink{namespaceplot__knuth__miles_a2ab67cead034bf83666db093efda8c6a}{shp}}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_a4bd79b6e7ac3531fddba99c32fafc7c3}\label{namespaceplot__knuth__miles_a4bd79b6e7ac3531fddba99c32fafc7c3} 
+{\bfseries facecolor}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_a67646ec5e3a2d05bd2438f3d6aec61ef}\label{namespaceplot__knuth__miles_a67646ec5e3a2d05bd2438f3d6aec61ef} 
+{\bfseries edgecolor}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_a1b600b4eaa934cdcaff47353d0f5ac67}\label{namespaceplot__knuth__miles_a1b600b4eaa934cdcaff47353d0f5ac67} 
+{\bfseries s}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_ae67858e0606399cb1ea1678e534e9d21}\label{namespaceplot__knuth__miles_ae67858e0606399cb1ea1678e534e9d21} 
+{\bfseries c}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_ab454daf1c74ec5e4906a84e32286c65b}\label{namespaceplot__knuth__miles_ab454daf1c74ec5e4906a84e32286c65b} 
+{\bfseries transform}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_aba74bd7e4449e998ed7984c32b5b656c}\label{namespaceplot__knuth__miles_aba74bd7e4449e998ed7984c32b5b656c} 
+{\bfseries zorder}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_ab662333fe522aac4d831a75215d85ee7}\label{namespaceplot__knuth__miles_ab662333fe522aac4d831a75215d85ee7} 
+{\bfseries edge\+\_\+coords} = np.\+array(\mbox{[}G.\+position\mbox{[}v\mbox{]} for v in edge\mbox{]})
+\item 
+\Hypertarget{namespaceplot__knuth__miles_a8e8fe72259bc42d30caa6710a4109ec9}\label{namespaceplot__knuth__miles_a8e8fe72259bc42d30caa6710a4109ec9} 
+{\bfseries linewidth}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_ad20e9c206feec12d0ca2bb6d6e0bc923}\label{namespaceplot__knuth__miles_ad20e9c206feec12d0ca2bb6d6e0bc923} 
+{\bfseries color}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_a3d5dbea6ea59563b0fab1bbded4a393e}\label{namespaceplot__knuth__miles_a3d5dbea6ea59563b0fab1bbded4a393e} 
+{\bfseries node\+\_\+size}
+\item 
+\Hypertarget{namespaceplot__knuth__miles_ac02097b8bdfe2c14a7c7f49df1091455}\label{namespaceplot__knuth__miles_ac02097b8bdfe2c14a7c7f49df1091455} 
+{\bfseries with\+\_\+labels}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}===========
+Knuth Miles
+===========
+
+`miles_graph()` returns an undirected graph over 128 US cities. The
+cities each have location and population data.  The edges are labeled with the
+distance between the two cities.
+
+This example is described in Section 1.1 of
+
+    Donald E. Knuth, "The Stanford GraphBase: A Platform for Combinatorial
+    Computing", ACM Press, New York, 1993.
+    http://www-cs-faculty.stanford.edu/~knuth/sgb.html
+
+The data file can be found at:
+
+- https://github.com/networkx/networkx/blob/main/examples/drawing/knuth_miles.txt.gz
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceplot__knuth__miles_ab830ea35a3c986ac7b50940ae29a8cd0}\index{plot\_knuth\_miles@{plot\_knuth\_miles}!miles\_graph@{miles\_graph}}
+\index{miles\_graph@{miles\_graph}!plot\_knuth\_miles@{plot\_knuth\_miles}}
+\doxysubsubsection{\texorpdfstring{miles\_graph()}{miles\_graph()}}
+{\footnotesize\ttfamily \label{namespaceplot__knuth__miles_ab830ea35a3c986ac7b50940ae29a8cd0} 
+plot\+\_\+knuth\+\_\+miles.\+miles\+\_\+graph (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the cites example graph in miles_dat.txt
+from the Stanford GraphBase.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__knuth__miles_a2ab67cead034bf83666db093efda8c6a}\index{plot\_knuth\_miles@{plot\_knuth\_miles}!shp@{shp}}
+\index{shp@{shp}!plot\_knuth\_miles@{plot\_knuth\_miles}}
+\doxysubsubsection{\texorpdfstring{shp}{shp}}
+{\footnotesize\ttfamily \label{namespaceplot__knuth__miles_a2ab67cead034bf83666db093efda8c6a} 
+plot\+\_\+knuth\+\_\+miles.\+shp}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ shpreader.natural\_earth(}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ resolution=\textcolor{stringliteral}{"{}110m"{}},\ category=\textcolor{stringliteral}{"{}cultural"{}},\ name=shapename}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}

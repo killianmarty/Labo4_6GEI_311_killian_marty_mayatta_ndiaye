@@ -1,0 +1,129 @@
+\doxysection{setuptools.\+command.\+bdist\+\_\+egg Namespace Reference}
+\hypertarget{namespacesetuptools_1_1command_1_1bdist__egg}{}\label{namespacesetuptools_1_1command_1_1bdist__egg}\index{setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsetuptools_1_1command_1_1bdist__egg_1_1bdist__egg}{bdist\+\_\+egg}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_a14dff08247b0b895492d808cd2abeb63}\label{namespacesetuptools_1_1command_1_1bdist__egg_a14dff08247b0b895492d808cd2abeb63} 
+{\bfseries \+\_\+get\+\_\+purelib} ()
+\item 
+\Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_a6f46a734b9accefbb0c535c33192c2bd}\label{namespacesetuptools_1_1command_1_1bdist__egg_a6f46a734b9accefbb0c535c33192c2bd} 
+{\bfseries strip\+\_\+module} (filename)
+\item 
+\mbox{\hyperlink{namespacesetuptools_1_1command_1_1bdist__egg_ab01faf69d550a8d0f8a3333063ac1e59}{sorted\+\_\+walk}} (dir)
+\item 
+\Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_adbb041aaa953768c0df85af01a8bb2d9}\label{namespacesetuptools_1_1command_1_1bdist__egg_adbb041aaa953768c0df85af01a8bb2d9} 
+{\bfseries write\+\_\+stub} (resource, pyfile)
+\item 
+\mbox{\hyperlink{namespacesetuptools_1_1command_1_1bdist__egg_aea6b6d8b3825bc3ef327e94e03989019}{walk\+\_\+egg}} (egg\+\_\+dir)
+\item 
+\Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_abb93aa6725dcd2c6cc1f8a1e826510a1}\label{namespacesetuptools_1_1command_1_1bdist__egg_abb93aa6725dcd2c6cc1f8a1e826510a1} 
+{\bfseries analyze\+\_\+egg} (egg\+\_\+dir, stubs)
+\item 
+\Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_a005d20b7ce571b6499d7ac2b0af76188}\label{namespacesetuptools_1_1command_1_1bdist__egg_a005d20b7ce571b6499d7ac2b0af76188} 
+{\bfseries write\+\_\+safety\+\_\+flag} (egg\+\_\+dir, safe)
+\item 
+\mbox{\hyperlink{namespacesetuptools_1_1command_1_1bdist__egg_ac41042502bdb987beb58c82e08f8d036}{scan\+\_\+module}} (egg\+\_\+dir, base, name, stubs)
+\item 
+\mbox{\hyperlink{namespacesetuptools_1_1command_1_1bdist__egg_af750e7218e24c1762d958ccb683d7dc8}{iter\+\_\+symbols}} (code)
+\item 
+\Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_af401a64c94a883afab1fab217f5801fe}\label{namespacesetuptools_1_1command_1_1bdist__egg_af401a64c94a883afab1fab217f5801fe} 
+{\bfseries can\+\_\+scan} ()
+\item 
+\mbox{\hyperlink{namespacesetuptools_1_1command_1_1bdist__egg_a17aef531f564d95c3e6e5d2266f784f2}{make\+\_\+zipfile}} (zip\+\_\+filename, base\+\_\+dir, verbose=0, dry\+\_\+run=0, compress=True, mode=\textquotesingle{}w\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_a0cf06b567bd34638c4533f36c5c90c25}\label{namespacesetuptools_1_1command_1_1bdist__egg_a0cf06b567bd34638c4533f36c5c90c25} 
+{\bfseries NATIVE\+\_\+\+EXTENSIONS} = dict.\+fromkeys(\textquotesingle{}.dll .so .dylib .pyd\textquotesingle{}.split())
+\item 
+dict \mbox{\hyperlink{namespacesetuptools_1_1command_1_1bdist__egg_a07d27a9d1cd1e82f5429cbd81ae9b450}{safety\+\_\+flags}}
+\item 
+list \mbox{\hyperlink{namespacesetuptools_1_1command_1_1bdist__egg_a20c5dfc3311167c3ebba47edba85ba83}{INSTALL\+\_\+\+DIRECTORY\+\_\+\+ATTRS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}setuptools.command.bdist_egg
+
+Build .egg distributions\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_af750e7218e24c1762d958ccb683d7dc8}\index{setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}!iter\_symbols@{iter\_symbols}}
+\index{iter\_symbols@{iter\_symbols}!setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}}
+\doxysubsubsection{\texorpdfstring{iter\_symbols()}{iter\_symbols()}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1command_1_1bdist__egg_af750e7218e24c1762d958ccb683d7dc8} 
+setuptools.\+command.\+bdist\+\_\+egg.\+iter\+\_\+symbols (\begin{DoxyParamCaption}\item[{}]{code}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield names and strings used by `code` and its nested code objects\end{DoxyVerb}
+ \Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_a17aef531f564d95c3e6e5d2266f784f2}\index{setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}!make\_zipfile@{make\_zipfile}}
+\index{make\_zipfile@{make\_zipfile}!setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}}
+\doxysubsubsection{\texorpdfstring{make\_zipfile()}{make\_zipfile()}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1command_1_1bdist__egg_a17aef531f564d95c3e6e5d2266f784f2} 
+setuptools.\+command.\+bdist\+\_\+egg.\+make\+\_\+zipfile (\begin{DoxyParamCaption}\item[{}]{zip\+\_\+filename}{, }\item[{}]{base\+\_\+dir}{, }\item[{}]{verbose}{ = {\ttfamily 0}, }\item[{}]{dry\+\_\+run}{ = {\ttfamily 0}, }\item[{}]{compress}{ = {\ttfamily True}, }\item[{}]{mode}{ = {\ttfamily \textquotesingle{}w\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a zip file from all the files under 'base_dir'.  The output
+zip file will be named 'base_dir' + ".zip".  Uses either the "zipfile"
+Python module (if available) or the InfoZIP "zip" utility (if installed
+and found on the default search path).  If neither tool is available,
+raises DistutilsExecError.  Returns the name of the output zip file.
+\end{DoxyVerb}
+ \Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_ac41042502bdb987beb58c82e08f8d036}\index{setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}!scan\_module@{scan\_module}}
+\index{scan\_module@{scan\_module}!setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}}
+\doxysubsubsection{\texorpdfstring{scan\_module()}{scan\_module()}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1command_1_1bdist__egg_ac41042502bdb987beb58c82e08f8d036} 
+setuptools.\+command.\+bdist\+\_\+egg.\+scan\+\_\+module (\begin{DoxyParamCaption}\item[{}]{egg\+\_\+dir}{, }\item[{}]{base}{, }\item[{}]{name}{, }\item[{}]{stubs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether module possibly uses unsafe-for-zipfile stuff\end{DoxyVerb}
+ \Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_ab01faf69d550a8d0f8a3333063ac1e59}\index{setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}!sorted\_walk@{sorted\_walk}}
+\index{sorted\_walk@{sorted\_walk}!setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}}
+\doxysubsubsection{\texorpdfstring{sorted\_walk()}{sorted\_walk()}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1command_1_1bdist__egg_ab01faf69d550a8d0f8a3333063ac1e59} 
+setuptools.\+command.\+bdist\+\_\+egg.\+sorted\+\_\+walk (\begin{DoxyParamCaption}\item[{}]{dir}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do os.walk in a reproducible way,
+independent of indeterministic filesystem readdir order
+\end{DoxyVerb}
+ \Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_aea6b6d8b3825bc3ef327e94e03989019}\index{setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}!walk\_egg@{walk\_egg}}
+\index{walk\_egg@{walk\_egg}!setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}}
+\doxysubsubsection{\texorpdfstring{walk\_egg()}{walk\_egg()}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1command_1_1bdist__egg_aea6b6d8b3825bc3ef327e94e03989019} 
+setuptools.\+command.\+bdist\+\_\+egg.\+walk\+\_\+egg (\begin{DoxyParamCaption}\item[{}]{egg\+\_\+dir}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Walk an unpacked egg's contents, skipping the metadata directory\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_a20c5dfc3311167c3ebba47edba85ba83}\index{setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}!INSTALL\_DIRECTORY\_ATTRS@{INSTALL\_DIRECTORY\_ATTRS}}
+\index{INSTALL\_DIRECTORY\_ATTRS@{INSTALL\_DIRECTORY\_ATTRS}!setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}}
+\doxysubsubsection{\texorpdfstring{INSTALL\_DIRECTORY\_ATTRS}{INSTALL\_DIRECTORY\_ATTRS}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1command_1_1bdist__egg_a20c5dfc3311167c3ebba47edba85ba83} 
+list setuptools.\+command.\+bdist\+\_\+egg.\+INSTALL\+\_\+\+DIRECTORY\+\_\+\+ATTRS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'install\_lib'},\ \textcolor{stringliteral}{'install\_dir'},\ \textcolor{stringliteral}{'install\_data'},\ \textcolor{stringliteral}{'install\_base'}}
+\DoxyCodeLine{00003\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacesetuptools_1_1command_1_1bdist__egg_a07d27a9d1cd1e82f5429cbd81ae9b450}\index{setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}!safety\_flags@{safety\_flags}}
+\index{safety\_flags@{safety\_flags}!setuptools.command.bdist\_egg@{setuptools.command.bdist\_egg}}
+\doxysubsubsection{\texorpdfstring{safety\_flags}{safety\_flags}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1command_1_1bdist__egg_a07d27a9d1cd1e82f5429cbd81ae9b450} 
+dict setuptools.\+command.\+bdist\+\_\+egg.\+safety\+\_\+flags}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{keyword}{True}:\ \textcolor{stringliteral}{'zip-\/safe'},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{keyword}{False}:\ \textcolor{stringliteral}{'not-\/zip-\/safe'},}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}

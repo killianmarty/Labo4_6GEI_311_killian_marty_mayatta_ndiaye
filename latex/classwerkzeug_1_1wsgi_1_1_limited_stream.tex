@@ -1,0 +1,212 @@
+\doxysection{werkzeug.\+wsgi.\+Limited\+Stream Class Reference}
+\hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream}{}\label{classwerkzeug_1_1wsgi_1_1_limited_stream}\index{werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}}
+Inheritance diagram for werkzeug.\+wsgi.\+Limited\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1wsgi_1_1_limited_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a940e294bb3cb7accc5ac1f1d77e0f0e4}\label{classwerkzeug_1_1wsgi_1_1_limited_stream_a940e294bb3cb7accc5ac1f1d77e0f0e4} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+IO\mbox{[}bytes\mbox{]} stream, int limit)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a0dfbd8472236d167736f8c716689854b}\label{classwerkzeug_1_1wsgi_1_1_limited_stream_a0dfbd8472236d167736f8c716689854b} 
+"{}Limited\+Stream"{} {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_limited_stream_a7c9ad5b136d7ab960797430586d1722e}{is\+\_\+exhausted}} (self)
+\item 
+bytes \mbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_limited_stream_a43cc3650727c0a916b5589065f6c96e8}{on\+\_\+exhausted}} (self)
+\item 
+bytes \mbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_limited_stream_ac8671374d60c2cf2f19e0124e9c4c15a}{on\+\_\+disconnect}} (self)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_limited_stream_a8282183c05851f7fd2319db78d165f41}{exhaust}} (self, int chunk\+\_\+size=1024 \texorpdfstring{$\ast$}{*}64)
+\item 
+bytes \mbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_limited_stream_a8314c82d24a6325593563738bea1678a}{read}} (self, t.\+Optional\mbox{[}int\mbox{]} size=None)
+\item 
+bytes \mbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_limited_stream_a6828a7f1ee5a821a0da3e62bc58c270a}{readline}} (self, t.\+Optional\mbox{[}int\mbox{]} size=None)
+\item 
+t.\+List\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_limited_stream_a5bee38b88e964ae653c8d0ded7dfdf1e}{readlines}} (self, t.\+Optional\mbox{[}int\mbox{]} size=None)
+\item 
+int \mbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_limited_stream_a1fb19939ed02c59cefa197a705cd651d}{tell}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_aeec6f915ae882fc3b4128f69efc01f73}\label{classwerkzeug_1_1wsgi_1_1_limited_stream_aeec6f915ae882fc3b4128f69efc01f73} 
+bytes {\bfseries \+\_\+\+\_\+next\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a52966cdabc373763780fbb050cee1369}\label{classwerkzeug_1_1wsgi_1_1_limited_stream_a52966cdabc373763780fbb050cee1369} 
+bool {\bfseries readable} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_ac981be50cde9f74470d9e29b5ec20001}\label{classwerkzeug_1_1wsgi_1_1_limited_stream_ac981be50cde9f74470d9e29b5ec20001} 
+{\bfseries limit} = limit
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Iterator\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_limited_stream_a18b0f041ef4db423e8e02507719e9a88}{\+\_\+exhaust\+\_\+chunks}} (self, int chunk\+\_\+size=1024 \texorpdfstring{$\ast$}{*}64)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_aca2f8bc70310cf7d26ee8d51981d701f}\label{classwerkzeug_1_1wsgi_1_1_limited_stream_aca2f8bc70310cf7d26ee8d51981d701f} 
+bytes {\bfseries \+\_\+read} = stream.\+read
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_ad9cafcfd4fe9e46404a911dee9cedf0f}\label{classwerkzeug_1_1wsgi_1_1_limited_stream_ad9cafcfd4fe9e46404a911dee9cedf0f} 
+bytes {\bfseries \+\_\+readline} = stream.\+readline
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_ac6f91efc02d4bdac705660a0f1d583e7}\label{classwerkzeug_1_1wsgi_1_1_limited_stream_ac6f91efc02d4bdac705660a0f1d583e7} 
+int {\bfseries \+\_\+pos} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wraps a stream so that it doesn't read more than n bytes.  If the
+stream is exhausted and the caller tries to get more bytes from it
+:func:`on_exhausted` is called which by default returns an empty
+string.  The return value of that function is forwarded
+to the reader function.  So if it returns an empty string
+:meth:`read` will return an empty string as well.
+
+The limit however must never be higher than what the stream can
+output.  Otherwise :meth:`readlines` will try to read past the
+limit.
+
+.. admonition:: Note on WSGI compliance
+
+   calls to :meth:`readline` and :meth:`readlines` are not
+   WSGI compliant because it passes a size argument to the
+   readline methods.  Unfortunately the WSGI PEP is not safely
+   implementable without a size argument to :meth:`readline`
+   because there is no EOF marker in the stream.  As a result
+   of that the use of :meth:`readline` is discouraged.
+
+   For the same reason iterating over the :class:`LimitedStream`
+   is not portable.  It internally calls :meth:`readline`.
+
+   We strongly suggest using :meth:`read` only or using the
+   :func:`make_line_iter` which safely iterates line-based
+   over a WSGI input stream.
+
+:param stream: the stream to wrap.
+:param limit: the limit for the stream, must not be longer than
+              what the string can provide if the stream does not
+              end with `EOF` (like `wsgi.input`)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a18b0f041ef4db423e8e02507719e9a88}\index{werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}!\_exhaust\_chunks@{\_exhaust\_chunks}}
+\index{\_exhaust\_chunks@{\_exhaust\_chunks}!werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{\_exhaust\_chunks()}{\_exhaust\_chunks()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_limited_stream_a18b0f041ef4db423e8e02507719e9a88} 
+ t.\+Iterator\mbox{[}bytes\mbox{]} werkzeug.\+wsgi.\+Limited\+Stream.\+\_\+exhaust\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{chunk\+\_\+size}{ = {\ttfamily 1024~\texorpdfstring{$\ast$}{*}~64}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Exhaust the stream by reading until the limit is reached or the client
+disconnects, yielding each chunk.
+
+:param chunk_size: How many bytes to read at a time.
+
+:meta private:
+
+.. versionadded:: 2.2.3
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a8282183c05851f7fd2319db78d165f41}\index{werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}!exhaust@{exhaust}}
+\index{exhaust@{exhaust}!werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{exhaust()}{exhaust()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_limited_stream_a8282183c05851f7fd2319db78d165f41} 
+ None werkzeug.\+wsgi.\+Limited\+Stream.\+exhaust (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{chunk\+\_\+size}{ = {\ttfamily 1024~\texorpdfstring{$\ast$}{*}~64}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Exhaust the stream by reading until the limit is reached or the client
+disconnects, discarding the data.
+
+:param chunk_size: How many bytes to read at a time.
+
+.. versionchanged:: 2.2.3
+    Handle case where wrapped stream returns fewer bytes than requested.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a7c9ad5b136d7ab960797430586d1722e}\index{werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}!is\_exhausted@{is\_exhausted}}
+\index{is\_exhausted@{is\_exhausted}!werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{is\_exhausted()}{is\_exhausted()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_limited_stream_a7c9ad5b136d7ab960797430586d1722e} 
+ bool werkzeug.\+wsgi.\+Limited\+Stream.\+is\+\_\+exhausted (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If the stream is exhausted this attribute is `True`.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_ac8671374d60c2cf2f19e0124e9c4c15a}\index{werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}!on\_disconnect@{on\_disconnect}}
+\index{on\_disconnect@{on\_disconnect}!werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{on\_disconnect()}{on\_disconnect()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_limited_stream_ac8671374d60c2cf2f19e0124e9c4c15a} 
+ bytes werkzeug.\+wsgi.\+Limited\+Stream.\+on\+\_\+disconnect (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}What should happen if a disconnect is detected?  The return
+value of this function is returned from read functions in case
+the client went away.  By default a
+:exc:`~werkzeug.exceptions.ClientDisconnected` exception is raised.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a43cc3650727c0a916b5589065f6c96e8}\index{werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}!on\_exhausted@{on\_exhausted}}
+\index{on\_exhausted@{on\_exhausted}!werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{on\_exhausted()}{on\_exhausted()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_limited_stream_a43cc3650727c0a916b5589065f6c96e8} 
+ bytes werkzeug.\+wsgi.\+Limited\+Stream.\+on\+\_\+exhausted (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is called when the stream tries to read past the limit.
+The return value of this function is returned from the reading
+function.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a8314c82d24a6325593563738bea1678a}\index{werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}!read@{read}}
+\index{read@{read}!werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_limited_stream_a8314c82d24a6325593563738bea1678a} 
+ bytes werkzeug.\+wsgi.\+Limited\+Stream.\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}int\mbox{]} }]{size}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read up to ``size`` bytes from the underlying stream. If size is not
+provided, read until the limit.
+
+If the limit is reached, :meth:`on_exhausted` is called, which returns empty
+bytes.
+
+If no bytes are read and the limit is not reached, or if an error occurs during
+the read, :meth:`on_disconnect` is called, which raises
+:exc:`.ClientDisconnected`.
+
+:param size: The number of bytes to read. ``None``, default, reads until the
+    limit is reached.
+
+.. versionchanged:: 2.2.3
+    Handle case where wrapped stream returns fewer bytes than requested.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a6828a7f1ee5a821a0da3e62bc58c270a}\index{werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}!readline@{readline}}
+\index{readline@{readline}!werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{readline()}{readline()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_limited_stream_a6828a7f1ee5a821a0da3e62bc58c270a} 
+ bytes werkzeug.\+wsgi.\+Limited\+Stream.\+readline (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}int\mbox{]} }]{size}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads one line from the stream.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a5bee38b88e964ae653c8d0ded7dfdf1e}\index{werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}!readlines@{readlines}}
+\index{readlines@{readlines}!werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{readlines()}{readlines()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_limited_stream_a5bee38b88e964ae653c8d0ded7dfdf1e} 
+ t.\+List\mbox{[}bytes\mbox{]} werkzeug.\+wsgi.\+Limited\+Stream.\+readlines (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}int\mbox{]} }]{size}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads a file into a list of strings.  It calls :meth:`readline`
+until the file is read to the end.  It does support the optional
+`size` argument if the underlying stream supports it for
+`readline`.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wsgi_1_1_limited_stream_a1fb19939ed02c59cefa197a705cd651d}\index{werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}!tell@{tell}}
+\index{tell@{tell}!werkzeug.wsgi.LimitedStream@{werkzeug.wsgi.LimitedStream}}
+\doxysubsubsection{\texorpdfstring{tell()}{tell()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_limited_stream_a1fb19939ed02c59cefa197a705cd651d} 
+ int werkzeug.\+wsgi.\+Limited\+Stream.\+tell (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the position of the stream.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/wsgi.\+py\end{DoxyCompactItemize}

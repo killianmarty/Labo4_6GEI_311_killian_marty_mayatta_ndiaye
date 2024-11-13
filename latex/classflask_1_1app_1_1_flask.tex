@@ -1,0 +1,1965 @@
+\doxysection{flask.\+app.\+Flask Class Reference}
+\hypertarget{classflask_1_1app_1_1_flask}{}\label{classflask_1_1app_1_1_flask}\index{flask.app.Flask@{flask.app.Flask}}
+Inheritance diagram for flask.\+app.\+Flask\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1app_1_1_flask}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classflask_1_1app_1_1_flask_af7bf4f344012b39e3eeda233406a5f01}{session\+\_\+cookie\+\_\+name}} (self)
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a54a6c5ef1a034606564f9d08cb195890}\label{classflask_1_1app_1_1_flask_a54a6c5ef1a034606564f9d08cb195890} 
+None {\bfseries session\+\_\+cookie\+\_\+name} (self, str value)
+\item 
+t.\+Optional\mbox{[}timedelta\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a7ef17228bdf1452d3ef5c33057056075}{send\+\_\+file\+\_\+max\+\_\+age\+\_\+default}} (self)
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a9821b59d05f1eb6c217d358d0171576f}\label{classflask_1_1app_1_1_flask_a9821b59d05f1eb6c217d358d0171576f} 
+None {\bfseries send\+\_\+file\+\_\+max\+\_\+age\+\_\+default} (self, t.\+Union\mbox{[}int, timedelta, None\mbox{]} value)
+\item 
+bool \mbox{\hyperlink{classflask_1_1app_1_1_flask_aedecb0b9befbfcec169bed3ba75adc98}{use\+\_\+x\+\_\+sendfile}} (self)
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a5919a5c5e82d5b1b4aa46ee51c5ad4e0}\label{classflask_1_1app_1_1_flask_a5919a5c5e82d5b1b4aa46ee51c5ad4e0} 
+None {\bfseries use\+\_\+x\+\_\+sendfile} (self, bool value)
+\item 
+t.\+Type\mbox{[}\mbox{\hyperlink{classflask_1_1json_1_1_j_s_o_n_encoder}{json.\+JSONEncoder}}\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_ab4a6464b500819c9c3605417080384df}{json\+\_\+encoder}} (self)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_abda2b2f9fa731fc52a06ec880e7b27e6}{json\+\_\+encoder}} (self, t.\+Type\mbox{[}\mbox{\hyperlink{classflask_1_1json_1_1_j_s_o_n_encoder}{json.\+JSONEncoder}}\mbox{]} value)
+\item 
+t.\+Type\mbox{[}\mbox{\hyperlink{classflask_1_1json_1_1_j_s_o_n_decoder}{json.\+JSONDecoder}}\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_af402ebf99b6af81ade2bdb766e85de8e}{json\+\_\+decoder}} (self)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a643af0eba64d96b1de031aaeb1abae15}{json\+\_\+decoder}} (self, t.\+Type\mbox{[}\mbox{\hyperlink{classflask_1_1json_1_1_j_s_o_n_decoder}{json.\+JSONDecoder}}\mbox{]} value)
+\item 
+\mbox{\hyperlink{classflask_1_1app_1_1_flask_a907ff94159b3411c59f976618bad706c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str import\+\_\+name, t.\+Optional\mbox{[}str\mbox{]} static\+\_\+url\+\_\+path=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}str, os.\+Path\+Like\mbox{]}\mbox{]} static\+\_\+folder="{}static"{}, t.\+Optional\mbox{[}str\mbox{]} static\+\_\+host=None, bool host\+\_\+matching=False, bool subdomain\+\_\+matching=False, t.\+Optional\mbox{[}t.\+Union\mbox{[}str, os.\+Path\+Like\mbox{]}\mbox{]} template\+\_\+folder="{}templates"{}, t.\+Optional\mbox{[}str\mbox{]} instance\+\_\+path=None, bool instance\+\_\+relative\+\_\+config=False, t.\+Optional\mbox{[}str\mbox{]} root\+\_\+path=None)
+\item 
+str \mbox{\hyperlink{classflask_1_1app_1_1_flask_ab211f17642aa5f4109e4e77e4253414d}{name}} (self)
+\item 
+bool \mbox{\hyperlink{classflask_1_1app_1_1_flask_a756e106c166f36e16e29c431a691338f}{propagate\+\_\+exceptions}} (self)
+\item 
+logging.\+Logger \mbox{\hyperlink{classflask_1_1app_1_1_flask_a6c7957bc281cfa582bf4034a7ee56680}{logger}} (self)
+\item 
+\mbox{\hyperlink{classflask_1_1templating_1_1_environment}{Environment}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a1236ec7ed5061c15c174125573497cc7}{jinja\+\_\+env}} (self)
+\item 
+bool \mbox{\hyperlink{classflask_1_1app_1_1_flask_a7fb7ae9c7ccc9953fe6a630c2507b1a8}{got\+\_\+first\+\_\+request}} (self)
+\item 
+\mbox{\hyperlink{classflask_1_1config_1_1_config}{Config}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a78155478fcbfe8d22740b49a8a6059a3}{make\+\_\+config}} (self, bool instance\+\_\+relative=False)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter}{Aborter}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a9c5ea904454c2197a461005fbf22e40e}{make\+\_\+aborter}} (self)
+\item 
+str \mbox{\hyperlink{classflask_1_1app_1_1_flask_a6230d6f2a2e50eef58717c12f3e46807}{auto\+\_\+find\+\_\+instance\+\_\+path}} (self)
+\item 
+t.\+IO\mbox{[}t.\+Any\+Str\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_aeb84afb90a58284ff99c3802d80de05f}{open\+\_\+instance\+\_\+resource}} (self, str resource, str mode="{}rb"{})
+\item 
+bool \mbox{\hyperlink{classflask_1_1app_1_1_flask_acfad1e71fa77ae6247064c07e011a038}{templates\+\_\+auto\+\_\+reload}} (self)
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_aae738bf4ca458dd34d52be0ebc9f4622}\label{classflask_1_1app_1_1_flask_aae738bf4ca458dd34d52be0ebc9f4622} 
+None {\bfseries templates\+\_\+auto\+\_\+reload} (self, bool value)
+\item 
+\mbox{\hyperlink{classflask_1_1templating_1_1_environment}{Environment}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_ad6a9f21fff225bf43fb096b90f9887e3}{create\+\_\+jinja\+\_\+environment}} (self)
+\item 
+\mbox{\hyperlink{classflask_1_1templating_1_1_dispatching_jinja_loader}{Dispatching\+Jinja\+Loader}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a5277d11523c83fd60653033f8831c956}{create\+\_\+global\+\_\+jinja\+\_\+loader}} (self)
+\item 
+bool \mbox{\hyperlink{classflask_1_1app_1_1_flask_a9fdf58c1cab117030431936c2ef2119e}{select\+\_\+jinja\+\_\+autoescape}} (self, str filename)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a50df5ab46d2602c1dc5e849b49dbf1f8}{update\+\_\+template\+\_\+context}} (self, dict context)
+\item 
+dict \mbox{\hyperlink{classflask_1_1app_1_1_flask_abf2d2bdfde37b2b98bb474f018000a00}{make\+\_\+shell\+\_\+context}} (self)
+\item 
+str \mbox{\hyperlink{classflask_1_1app_1_1_flask_a9e00a7ff863e2ac64fe97747ba5c5b6f}{env}} (self)
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ab3020aa7524bd5e8be5f3dd80536a380}\label{classflask_1_1app_1_1_flask_ab3020aa7524bd5e8be5f3dd80536a380} 
+None {\bfseries env} (self, str value)
+\item 
+bool \mbox{\hyperlink{classflask_1_1app_1_1_flask_a31e60945545ce28f90e28c41ec62a9cc}{debug}} (self)
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_aa45f6bc2a2520376a19b75a9d748a9c4}\label{classflask_1_1app_1_1_flask_aa45f6bc2a2520376a19b75a9d748a9c4} 
+None {\bfseries debug} (self, bool value)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a8721fc6306638b07b5145beed80ee7e9}{run}} (self, t.\+Optional\mbox{[}str\mbox{]} host=None, t.\+Optional\mbox{[}int\mbox{]} port=None, t.\+Optional\mbox{[}bool\mbox{]} debug=None, bool load\+\_\+dotenv=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+"{}Flask\+Client"{} \mbox{\hyperlink{classflask_1_1app_1_1_flask_af19f8a6653f1af8d14408788bef92715}{test\+\_\+client}} (self, bool use\+\_\+cookies=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+"{}Flask\+Cli\+Runner"{} \mbox{\hyperlink{classflask_1_1app_1_1_flask_ab710f0c85bd74e7ace426af2e8d97067}{test\+\_\+cli\+\_\+runner}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_ad436d7542375235ccb4e473c998d7e86}{register\+\_\+blueprint}} (self, "{}Blueprint"{} blueprint, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Values\+View\mbox{[}"{}Blueprint"{}\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a08f2db089c62c0e51ce5cb1076bee429}{iter\+\_\+blueprints}} (self)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a344aec8d650a4eeb0452c6cf007aad53}{add\+\_\+url\+\_\+rule}} (self, str rule, t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a30387c9d4f0786e4c6316bd3ffdc619e}{endpoint}}=None, t.\+Optional\mbox{[}ft.\+Route\+Callable\mbox{]} view\+\_\+func=None, t.\+Optional\mbox{[}bool\mbox{]} provide\+\_\+automatic\+\_\+options=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+template\+\_\+filter\mbox{]}, T\+\_\+template\+\_\+filter\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a0837bd7e2409a2abe9af9bd84b838501}{template\+\_\+filter}} (self, t.\+Optional\mbox{[}str\mbox{]} name=None)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a35a3329e35b4f720a8dd1d27cf5033b1}{add\+\_\+template\+\_\+filter}} (self, ft.\+Template\+Filter\+Callable f, t.\+Optional\mbox{[}str\mbox{]} name=None)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+template\+\_\+test\mbox{]}, T\+\_\+template\+\_\+test\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a6173940338dd40978ba89c79293c2cb0}{template\+\_\+test}} (self, t.\+Optional\mbox{[}str\mbox{]} name=None)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a6987963fb7e66f4401c5a5dbdd0b4040}{add\+\_\+template\+\_\+test}} (self, ft.\+Template\+Test\+Callable f, t.\+Optional\mbox{[}str\mbox{]} name=None)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+template\+\_\+global\mbox{]}, T\+\_\+template\+\_\+global\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a32bce6b60b203d1b9a09bdbeae2972b8}{template\+\_\+global}} (self, t.\+Optional\mbox{[}str\mbox{]} name=None)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_aedbe413479a11d0f4ffc2f486ba4358b}{add\+\_\+template\+\_\+global}} (self, ft.\+Template\+Global\+Callable f, t.\+Optional\mbox{[}str\mbox{]} name=None)
+\item 
+T\+\_\+before\+\_\+first\+\_\+request \mbox{\hyperlink{classflask_1_1app_1_1_flask_a9d11cb510a75b057e46e9ed3edfa65dd}{before\+\_\+first\+\_\+request}} (self, T\+\_\+before\+\_\+first\+\_\+request f)
+\item 
+T\+\_\+teardown \mbox{\hyperlink{classflask_1_1app_1_1_flask_a16dc89c36b290a6ff009d56f7c811d2e}{teardown\+\_\+appcontext}} (self, T\+\_\+teardown f)
+\item 
+T\+\_\+shell\+\_\+context\+\_\+processor \mbox{\hyperlink{classflask_1_1app_1_1_flask_ae5054d34ca6333428d76159ed02175cf}{shell\+\_\+context\+\_\+processor}} (self, T\+\_\+shell\+\_\+context\+\_\+processor f)
+\item 
+t.\+Union\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}, ft.\+Response\+Return\+Value\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a70c01146678df63b622f4fe7325c0442}{handle\+\_\+http\+\_\+exception}} (self, \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}} e)
+\item 
+bool \mbox{\hyperlink{classflask_1_1app_1_1_flask_a7369ee02d20327a53e770374a61554c6}{trap\+\_\+http\+\_\+exception}} (self, Exception e)
+\item 
+t.\+Union\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}, ft.\+Response\+Return\+Value\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a98b3e8e220b6bf3494bd993d290d2998}{handle\+\_\+user\+\_\+exception}} (self, Exception e)
+\item 
+\mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_af8aa6c8dbce0ab06f067dd2930659d89}{handle\+\_\+exception}} (self, Exception e)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a1bc0b5ae164a3f686a197e1d97d4d4bd}{log\+\_\+exception}} (self, t.\+Union\mbox{[}t.\+Tuple\mbox{[}type, Base\+Exception, Traceback\+Type\mbox{]}, t.\+Tuple\mbox{[}None, None, None\mbox{]}\mbox{]} exc\+\_\+info)
+\item 
+"{}te.\+No\+Return"{} \mbox{\hyperlink{classflask_1_1app_1_1_flask_ad35d386fde929ac7d4df2ab2d4254ca5}{raise\+\_\+routing\+\_\+exception}} (self, \mbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}} request)
+\item 
+ft.\+Response\+Return\+Value \mbox{\hyperlink{classflask_1_1app_1_1_flask_a606fad32794a3c296702179138c83a6d}{dispatch\+\_\+request}} (self)
+\item 
+\mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a8ade9842ef7d81c7949881292549f6ce}{full\+\_\+dispatch\+\_\+request}} (self)
+\item 
+\mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a33ec433025d74d1039353d06967a29e6}{finalize\+\_\+request}} (self, t.\+Union\mbox{[}ft.\+Response\+Return\+Value, \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}\mbox{]} rv, bool from\+\_\+error\+\_\+handler=False)
+\item 
+\mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_af8096fb01410066ca3bb1ef771fa3996}{make\+\_\+default\+\_\+options\+\_\+response}} (self)
+\item 
+bool \mbox{\hyperlink{classflask_1_1app_1_1_flask_a731e297f6e6623f4717233310d557c5b}{should\+\_\+ignore\+\_\+error}} (self, t.\+Optional\mbox{[}Base\+Exception\mbox{]} error)
+\item 
+t.\+Callable \mbox{\hyperlink{classflask_1_1app_1_1_flask_a2496b328363b76586a31a4ead571c281}{ensure\+\_\+sync}} (self, t.\+Callable func)
+\item 
+t.\+Callable\mbox{[}..., t.\+Any\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_aa11f6f70786fb49abe33c99f6291f882}{async\+\_\+to\+\_\+sync}} (self, t.\+Callable\mbox{[}..., t.\+Coroutine\mbox{]} func)
+\item 
+str \mbox{\hyperlink{classflask_1_1app_1_1_flask_ab3874c15e757e97255139a9c4bc62a82}{url\+\_\+for}} (self, str \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a30387c9d4f0786e4c6316bd3ffdc619e}{endpoint}}, \texorpdfstring{$\ast$}{*}, t.\+Optional\mbox{[}str\mbox{]} \+\_\+anchor=None, t.\+Optional\mbox{[}str\mbox{]} \+\_\+method=None, t.\+Optional\mbox{[}str\mbox{]} \+\_\+scheme=None, t.\+Optional\mbox{[}bool\mbox{]} \+\_\+external=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any values)
+\item 
+Base\+Response \mbox{\hyperlink{classflask_1_1app_1_1_flask_a4af467b9c6f13cb8528f2360bea92668}{redirect}} (self, str location, int code=302)
+\item 
+\mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_aa19d7392303f9f33db462667a7358579}{make\+\_\+response}} (self, ft.\+Response\+Return\+Value rv)
+\item 
+t.\+Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter}{Map\+Adapter}}\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_af9c1f1cf7113d796c053f8e176c50efd}{create\+\_\+url\+\_\+adapter}} (self, t.\+Optional\mbox{[}\mbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}}\mbox{]} request)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a4cb41b5754b7b6a5f9755f3a219d3c36}{inject\+\_\+url\+\_\+defaults}} (self, str \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a30387c9d4f0786e4c6316bd3ffdc619e}{endpoint}}, dict values)
+\item 
+str \mbox{\hyperlink{classflask_1_1app_1_1_flask_ae9f151889af739bf15e66610625712d8}{handle\+\_\+url\+\_\+build\+\_\+error}} (self, \mbox{\hyperlink{classwerkzeug_1_1routing_1_1exceptions_1_1_build_error}{Build\+Error}} error, str \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a30387c9d4f0786e4c6316bd3ffdc619e}{endpoint}}, t.\+Dict\mbox{[}str, t.\+Any\mbox{]} values)
+\item 
+t.\+Optional\mbox{[}ft.\+Response\+Return\+Value\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a535333696795d59ccf61b183507124d8}{preprocess\+\_\+request}} (self)
+\item 
+\mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a0f5cd723e9bcf365bac7d95209f47746}{process\+\_\+response}} (self, \mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} response)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a9a19c1226ae3d28317de35ec7816bc6b}{do\+\_\+teardown\+\_\+request}} (self, t.\+Optional\mbox{[}Base\+Exception\mbox{]} exc=\+\_\+sentinel \# type\+:ignore)
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a1f43a0f208f9f7451892a0ce0e4ce94a}{do\+\_\+teardown\+\_\+appcontext}} (self, t.\+Optional\mbox{[}Base\+Exception\mbox{]} exc=\+\_\+sentinel \# type\+:ignore)
+\item 
+\mbox{\hyperlink{classflask_1_1ctx_1_1_app_context}{App\+Context}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a99e7930ccc2e4ab2881c3bb298e6e472}{app\+\_\+context}} (self)
+\item 
+\mbox{\hyperlink{classflask_1_1ctx_1_1_request_context}{Request\+Context}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_a299d1b9b97095914cadad87083d48d1c}{request\+\_\+context}} (self, dict environ)
+\item 
+\mbox{\hyperlink{classflask_1_1ctx_1_1_request_context}{Request\+Context}} \mbox{\hyperlink{classflask_1_1app_1_1_flask_adeea51822f2aa564cb027b99cadfcb12}{test\+\_\+request\+\_\+context}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1app_1_1_flask_a10bfae357313cdad8e36147d0df48884}{wsgi\+\_\+app}} (self, dict environ, t.\+Callable start\+\_\+response)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1app_1_1_flask_a1e8f95d79af66cd90657d16c36d883a0}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, dict environ, t.\+Callable start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a79873609b1be287661951bc9c262d436}{static\+\_\+folder}} (self)
+\item 
+None {\bfseries static\+\_\+folder} (self, t.\+Optional\mbox{[}t.\+Union\mbox{[}str, os.\+Path\+Like\mbox{]}\mbox{]} value)
+\item 
+bool \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_aa7e2489f0912522c3fa65d976262ae35}{has\+\_\+static\+\_\+folder}} (self)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_af751e9b26d64b985441180e17ca624d8}{static\+\_\+url\+\_\+path}} (self)
+\item 
+None {\bfseries static\+\_\+url\+\_\+path} (self, t.\+Optional\mbox{[}str\mbox{]} value)
+\item 
+t.\+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a352dfa37c45dfdc77ca0ddea73d6010a}{get\+\_\+send\+\_\+file\+\_\+max\+\_\+age}} (self, t.\+Optional\mbox{[}str\mbox{]} filename)
+\item 
+"{}Response"{} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a368e7e9e6d1e1ab70f979d69c24dfb92}{send\+\_\+static\+\_\+file}} (self, str filename)
+\item 
+t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1loaders_1_1_file_system_loader}{File\+System\+Loader}}\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_ad0e05bc4fc21d0f68daff072d41f1a16}{jinja\+\_\+loader}} (self)
+\item 
+t.\+IO\mbox{[}t.\+Any\+Str\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a6ebbe9991d57c0752cf6c2137aa0db71}{open\+\_\+resource}} (self, str resource, str mode="{}rb"{})
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_afd3e079b0ef1ebce155d8d38072002d7}{get}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a14f80c21143d414c5fd30d0e5d18a899}{post}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a312117262a4bf15e0eb63714937b7414}{put}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a3756ea5a9f39a5c0d787b0d46b4eec5c}{delete}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a1ef3c7a0ec0e014861dd94cb2e0e873c}{patch}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_ad6415b60d8ad443d7c6e9aafff002567}{route}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}F\mbox{]}, F\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a30387c9d4f0786e4c6316bd3ffdc619e}{endpoint}} (self, str endpoint)
+\item 
+T\+\_\+before\+\_\+request \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_adb501752405a30a6c16baa132699f729}{before\+\_\+request}} (self, T\+\_\+before\+\_\+request f)
+\item 
+T\+\_\+after\+\_\+request \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a0a7ed4ae1b5894d3ea5f35e7ddf6f4ae}{after\+\_\+request}} (self, T\+\_\+after\+\_\+request f)
+\item 
+T\+\_\+teardown \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_ad7f1392a1f8f117de2248e5370e741a2}{teardown\+\_\+request}} (self, T\+\_\+teardown f)
+\item 
+T\+\_\+template\+\_\+context\+\_\+processor \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a932ad7d2ab5d382061485e02126c64b1}{context\+\_\+processor}} (self, T\+\_\+template\+\_\+context\+\_\+processor f)
+\item 
+T\+\_\+url\+\_\+value\+\_\+preprocessor \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_aa8df17c765d1198b7fc02d84219ea0fd}{url\+\_\+value\+\_\+preprocessor}} (self, T\+\_\+url\+\_\+value\+\_\+preprocessor f)
+\item 
+T\+\_\+url\+\_\+defaults \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a63ec817e43cfe55da82de7c0f96c09a9}{url\+\_\+defaults}} (self, T\+\_\+url\+\_\+defaults f)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+error\+\_\+handler\mbox{]}, T\+\_\+error\+\_\+handler\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a3b55883f39aa0684b6e1b4fca68c305b}{errorhandler}} (self, t.\+Union\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, int\mbox{]} code\+\_\+or\+\_\+exception)
+\item 
+None \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_ae966e5ca44c47ea45c1ee4fd3dd98ee6}{register\+\_\+error\+\_\+handler}} (self, t.\+Union\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, int\mbox{]} code\+\_\+or\+\_\+exception, ft.\+Error\+Handler\+Callable f)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_affa55aa12a2ded2967522d2251b1feb7}\label{classflask_1_1app_1_1_flask_affa55aa12a2ded2967522d2251b1feb7} 
+{\bfseries instance\+\_\+path} = instance\+\_\+path
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_af714405b78a6cf0cbc2ac9dc7d44fdf7}\label{classflask_1_1app_1_1_flask_af714405b78a6cf0cbc2ac9dc7d44fdf7} 
+\mbox{\hyperlink{classflask_1_1config_1_1_config}{Config}} {\bfseries config} = self.\+make\+\_\+config(instance\+\_\+relative\+\_\+config)
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a429b4b3949fba32b485c830a560fc35e}\label{classflask_1_1app_1_1_flask_a429b4b3949fba32b485c830a560fc35e} 
+\mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter}{Aborter}} {\bfseries aborter} = self.\+make\+\_\+aborter()
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ae31a7bb4ca8e6292dd7216c557dd3aea}\label{classflask_1_1app_1_1_flask_ae31a7bb4ca8e6292dd7216c557dd3aea} 
+\mbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider}{JSONProvider}} {\bfseries json} = self.\+json\+\_\+provider\+\_\+class(self)
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ae26e44c3a19aa443b9f8c5121ff48ff2}\label{classflask_1_1app_1_1_flask_ae26e44c3a19aa443b9f8c5121ff48ff2} 
+t.\+List\mbox{[} {\bfseries url\+\_\+build\+\_\+error\+\_\+handlers} = handler(error, \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a30387c9d4f0786e4c6316bd3ffdc619e}{endpoint}}, values)
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ad5a53296f6a8b3f78b55e6a1f9b7abe7}\label{classflask_1_1app_1_1_flask_ad5a53296f6a8b3f78b55e6a1f9b7abe7} 
+list {\bfseries before\+\_\+first\+\_\+request\+\_\+funcs} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a8e013cdfc46a161aefc280ad3f678178}\label{classflask_1_1app_1_1_flask_a8e013cdfc46a161aefc280ad3f678178} 
+list {\bfseries teardown\+\_\+appcontext\+\_\+funcs} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_af8e4b1cd21f70d8aa938e4ff2f897b9c}\label{classflask_1_1app_1_1_flask_af8e4b1cd21f70d8aa938e4ff2f897b9c} 
+list {\bfseries shell\+\_\+context\+\_\+processors} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ab213ad612333163eec571b6210711ebd}\label{classflask_1_1app_1_1_flask_ab213ad612333163eec571b6210711ebd} 
+dict {\bfseries blueprints} = \{\}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ab4e43afd4d4eb9d6ee2a114b90ca15ef}\label{classflask_1_1app_1_1_flask_ab4e43afd4d4eb9d6ee2a114b90ca15ef} 
+dict {\bfseries extensions} = \{\}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a332c5dce24e47519cf04682c58972a3f}\label{classflask_1_1app_1_1_flask_a332c5dce24e47519cf04682c58972a3f} 
+{\bfseries url\+\_\+map} = self.\+url\+\_\+map\+\_\+class()
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ab801a6291d1f629dc7d5a3c6e7046998}\label{classflask_1_1app_1_1_flask_ab801a6291d1f629dc7d5a3c6e7046998} 
+{\bfseries subdomain\+\_\+matching} = subdomain\+\_\+matching
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a591f98a0d2838c80d8f5d90f00775038}\label{classflask_1_1app_1_1_flask_a591f98a0d2838c80d8f5d90f00775038} 
+{\bfseries has\+\_\+static\+\_\+folder}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_aedc40ed5ed1137c1311431a3a9cb233e}\label{classflask_1_1app_1_1_flask_aedc40ed5ed1137c1311431a3a9cb233e} 
+str {\bfseries import\+\_\+name} = "{}\+\_\+\+\_\+main\+\_\+\+\_\+"{}\+:
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ac6d3694deb26427bf4623981411c7a30}\label{classflask_1_1app_1_1_flask_ac6d3694deb26427bf4623981411c7a30} 
+{\bfseries template\+\_\+context\+\_\+processors}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a7585575b331584e13544023b0df0801d}\label{classflask_1_1app_1_1_flask_a7585575b331584e13544023b0df0801d} 
+{\bfseries debug} = get\+\_\+debug\+\_\+flag()
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a346084b4cb8e2fb6d1113de926cfe2ae}\label{classflask_1_1app_1_1_flask_a346084b4cb8e2fb6d1113de926cfe2ae} 
+\mbox{\hyperlink{classflask_1_1config_1_1_config}{Config}} {\bfseries debug} = self.\+config.\+get("{}SERVER\+\_\+\+NAME"{})
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_afe632f637541e2aed66789a93fefa83e}\label{classflask_1_1app_1_1_flask_afe632f637541e2aed66789a93fefa83e} 
+{\bfseries name}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a3fc6ca7569be7dded86512e79c539e85}\label{classflask_1_1app_1_1_flask_a3fc6ca7569be7dded86512e79c539e85} 
+{\bfseries url\+\_\+default\+\_\+functions}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ab8ea2a1ad3f395e4eabc50c65a331214}\label{classflask_1_1app_1_1_flask_ab8ea2a1ad3f395e4eabc50c65a331214} 
+{\bfseries url\+\_\+value\+\_\+preprocessors}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ac114572f6e96c709acea19e8bf5f3cb4}\label{classflask_1_1app_1_1_flask_ac114572f6e96c709acea19e8bf5f3cb4} 
+{\bfseries before\+\_\+request\+\_\+funcs}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a720f3e47d10b47fb992612bbb79e6868}\label{classflask_1_1app_1_1_flask_a720f3e47d10b47fb992612bbb79e6868} 
+{\bfseries after\+\_\+request\+\_\+funcs}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a6b3f2f02d12b035a38b827528b0f6123}\label{classflask_1_1app_1_1_flask_a6b3f2f02d12b035a38b827528b0f6123} 
+{\bfseries teardown\+\_\+request\+\_\+funcs}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries import\+\_\+name} = import\+\_\+name
+\item 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries static\+\_\+folder} = static\+\_\+folder
+\item 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries static\+\_\+url\+\_\+path} = static\+\_\+url\+\_\+path
+\item 
+{\bfseries template\+\_\+folder} = template\+\_\+folder
+\item 
+{\bfseries root\+\_\+path} = root\+\_\+path
+\item 
+{\bfseries cli} = \mbox{\hyperlink{classflask_1_1cli_1_1_app_group}{App\+Group}}()
+\item 
+dict {\bfseries view\+\_\+functions} = \{\}
+\item 
+t.\+Dict\mbox{[} {\bfseries error\+\_\+handler\+\_\+spec}
+\item 
+t.\+Dict\mbox{[} {\bfseries before\+\_\+request\+\_\+funcs}
+\item 
+t.\+Dict\mbox{[} {\bfseries after\+\_\+request\+\_\+funcs}
+\item 
+t.\+Dict\mbox{[} {\bfseries teardown\+\_\+request\+\_\+funcs}
+\item 
+t.\+Dict\mbox{[} {\bfseries template\+\_\+context\+\_\+processors}
+\item 
+t.\+Dict\mbox{[} {\bfseries url\+\_\+value\+\_\+preprocessors}
+\item 
+t.\+Dict\mbox{[} {\bfseries url\+\_\+default\+\_\+functions}
+\item 
+{\bfseries has\+\_\+static\+\_\+folder}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a818f7d1767e8eb2d229ca10b3b8bee86}\label{classflask_1_1app_1_1_flask_a818f7d1767e8eb2d229ca10b3b8bee86} 
+{\bfseries request\+\_\+class} = \mbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a1d61bd26388ad4ec0017583667f5d0c6}\label{classflask_1_1app_1_1_flask_a1d61bd26388ad4ec0017583667f5d0c6} 
+{\bfseries response\+\_\+class} = \mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a990809076fc532ae6818bf7ea66aac32}\label{classflask_1_1app_1_1_flask_a990809076fc532ae6818bf7ea66aac32} 
+{\bfseries aborter\+\_\+class} = \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter}{Aborter}}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a5a597e5a7a49be53156634078d24a920}\label{classflask_1_1app_1_1_flask_a5a597e5a7a49be53156634078d24a920} 
+{\bfseries jinja\+\_\+environment} = \mbox{\hyperlink{classflask_1_1templating_1_1_environment}{Environment}}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a3986606366e514b62a370395cd4373be}\label{classflask_1_1app_1_1_flask_a3986606366e514b62a370395cd4373be} 
+{\bfseries app\+\_\+ctx\+\_\+globals\+\_\+class} = \mbox{\hyperlink{classflask_1_1ctx_1_1___app_ctx_globals}{\+\_\+\+App\+Ctx\+Globals}}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a8112fc8b1da55783d3d0c96bfac08f24}\label{classflask_1_1app_1_1_flask_a8112fc8b1da55783d3d0c96bfac08f24} 
+{\bfseries config\+\_\+class} = \mbox{\hyperlink{classflask_1_1config_1_1_config}{Config}}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ac36592e1bdb5aef0f305d906258f1fad}\label{classflask_1_1app_1_1_flask_ac36592e1bdb5aef0f305d906258f1fad} 
+{\bfseries testing} = \mbox{\hyperlink{classflask_1_1config_1_1_config_attribute}{Config\+Attribute}}("{}TESTING"{})
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a7476d7dbfccba0cf312a8c5c6cadc317}\label{classflask_1_1app_1_1_flask_a7476d7dbfccba0cf312a8c5c6cadc317} 
+{\bfseries secret\+\_\+key} = \mbox{\hyperlink{classflask_1_1config_1_1_config_attribute}{Config\+Attribute}}("{}SECRET\+\_\+\+KEY"{})
+\item 
+\mbox{\hyperlink{classflask_1_1app_1_1_flask_aa7dc0f714d6e610df314ca45f165dda4}{permanent\+\_\+session\+\_\+lifetime}}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ad6c2c511fda310b864770ef4658e42f7}\label{classflask_1_1app_1_1_flask_ad6c2c511fda310b864770ef4658e42f7} 
+t {\bfseries json\+\_\+provider\+\_\+class} = \mbox{\hyperlink{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider}{Default\+JSONProvider}}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_afbb08be0b6cef7bdf4479e38d8e20468}\label{classflask_1_1app_1_1_flask_afbb08be0b6cef7bdf4479e38d8e20468} 
+dict {\bfseries jinja\+\_\+options} = \{\}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_ae08373be9aa189be3dc656f314873f37}\label{classflask_1_1app_1_1_flask_ae08373be9aa189be3dc656f314873f37} 
+{\bfseries default\+\_\+config}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a5701597537a46c16b74d9f7316c647e4}\label{classflask_1_1app_1_1_flask_a5701597537a46c16b74d9f7316c647e4} 
+{\bfseries url\+\_\+rule\+\_\+class} = \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a361d86d5b7a68b6f199735297ea70db5}\label{classflask_1_1app_1_1_flask_a361d86d5b7a68b6f199735297ea70db5} 
+{\bfseries url\+\_\+map\+\_\+class} = \mbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a7273b10e9ee1fb98d135db067c6d127d}\label{classflask_1_1app_1_1_flask_a7273b10e9ee1fb98d135db067c6d127d} 
+t {\bfseries test\+\_\+client\+\_\+class} = None
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a80bacdd91ead66b3d7fd761023dae62b}\label{classflask_1_1app_1_1_flask_a80bacdd91ead66b3d7fd761023dae62b} 
+t {\bfseries test\+\_\+cli\+\_\+runner\+\_\+class} = None
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a748f8eeafe3d3232d93041f3403c6637}\label{classflask_1_1app_1_1_flask_a748f8eeafe3d3232d93041f3403c6637} 
+\mbox{\hyperlink{classflask_1_1sessions_1_1_session_interface}{Session\+Interface}} {\bfseries session\+\_\+interface} = \mbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_interface}{Secure\+Cookie\+Session\+Interface}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classflask_1_1app_1_1_flask_a9182f146f95cfb44c208a34701cdce1c}{\+\_\+check\+\_\+setup\+\_\+finished}} (self, str f\+\_\+name)
+\item 
+t.\+Optional\mbox{[}ft.\+Error\+Handler\+Callable\mbox{]} \mbox{\hyperlink{classflask_1_1app_1_1_flask_acb89c8f316d3974662a18a009c88ea1f}{\+\_\+find\+\_\+error\+\_\+handler}} (self, Exception e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} {\bfseries \+\_\+method\+\_\+route} (self, str method, str rule, dict options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a9055a134726db27037aa8ae4f9eadf43}\label{classflask_1_1app_1_1_flask_a9055a134726db27037aa8ae4f9eadf43} 
+bool {\bfseries \+\_\+got\+\_\+first\+\_\+request} = False
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a64d2f4f40eca53c6b3d93a3daa8f1035}\label{classflask_1_1app_1_1_flask_a64d2f4f40eca53c6b3d93a3daa8f1035} 
+{\bfseries \+\_\+before\+\_\+request\+\_\+lock} = Lock()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_af9a320ab51e9434c2e1465fa7b997265}\label{classflask_1_1app_1_1_flask_af9a320ab51e9434c2e1465fa7b997265} 
+t {\bfseries \+\_\+json\+\_\+encoder} = None
+\item 
+\Hypertarget{classflask_1_1app_1_1_flask_a5cf1a1631e16e3f9d3964f850fa6cd42}\label{classflask_1_1app_1_1_flask_a5cf1a1631e16e3f9d3964f850fa6cd42} 
+t {\bfseries \+\_\+json\+\_\+decoder} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries \+\_\+static\+\_\+folder} = None
+\item 
+t {\bfseries \+\_\+static\+\_\+url\+\_\+path} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Tuple\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, t.\+Optional\mbox{[}int\mbox{]}\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_af41014b18529e4f60c36e0eb7a9d9862}{\+\_\+get\+\_\+exc\+\_\+class\+\_\+and\+\_\+code}} (t.\+Union\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, int\mbox{]} exc\+\_\+class\+\_\+or\+\_\+code)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The flask object implements a WSGI application and acts as the central
+object.  It is passed the name of the module or package of the
+application.  Once it is created it will act as a central registry for
+the view functions, the URL rules, template configuration and much more.
+
+The name of the package is used to resolve resources from inside the
+package or the folder the module is contained in depending on if the
+package parameter resolves to an actual python package (a folder with
+an :file:`__init__.py` file inside) or a standard module (just a ``.py`` file).
+
+For more information about resource loading, see :func:`open_resource`.
+
+Usually you create a :class:`Flask` instance in your main module or
+in the :file:`__init__.py` file of your package like this::
+
+    from flask import Flask
+    app = Flask(__name__)
+
+.. admonition:: About the First Parameter
+
+    The idea of the first parameter is to give Flask an idea of what
+    belongs to your application.  This name is used to find resources
+    on the filesystem, can be used by extensions to improve debugging
+    information and a lot more.
+
+    So it's important what you provide there.  If you are using a single
+    module, `__name__` is always the correct value.  If you however are
+    using a package, it's usually recommended to hardcode the name of
+    your package there.
+
+    For example if your application is defined in :file:`yourapplication/app.py`
+    you should create it with one of the two versions below::
+
+        app = Flask('yourapplication')
+        app = Flask(__name__.split('.')[0])
+
+    Why is that?  The application will work even with `__name__`, thanks
+    to how resources are looked up.  However it will make debugging more
+    painful.  Certain extensions can make assumptions based on the
+    import name of your application.  For example the Flask-SQLAlchemy
+    extension will look for the code in your application that triggered
+    an SQL query in debug mode.  If the import name is not properly set
+    up, that debugging information is lost.  (For example it would only
+    pick up SQL queries in `yourapplication.app` and not
+    `yourapplication.views.frontend`)
+
+.. versionadded:: 0.7
+   The `static_url_path`, `static_folder`, and `template_folder`
+   parameters were added.
+
+.. versionadded:: 0.8
+   The `instance_path` and `instance_relative_config` parameters were
+   added.
+
+.. versionadded:: 0.11
+   The `root_path` parameter was added.
+
+.. versionadded:: 1.0
+   The ``host_matching`` and ``static_host`` parameters were added.
+
+.. versionadded:: 1.0
+   The ``subdomain_matching`` parameter was added. Subdomain
+   matching needs to be enabled manually now. Setting
+   :data:`SERVER_NAME` does not implicitly enable it.
+
+:param import_name: the name of the application package
+:param static_url_path: can be used to specify a different path for the
+                        static files on the web.  Defaults to the name
+                        of the `static_folder` folder.
+:param static_folder: The folder with static files that is served at
+    ``static_url_path``. Relative to the application ``root_path``
+    or an absolute path. Defaults to ``'static'``.
+:param static_host: the host to use when adding the static route.
+    Defaults to None. Required when using ``host_matching=True``
+    with a ``static_folder`` configured.
+:param host_matching: set ``url_map.host_matching`` attribute.
+    Defaults to False.
+:param subdomain_matching: consider the subdomain relative to
+    :data:`SERVER_NAME` when matching routes. Defaults to False.
+:param template_folder: the folder that contains the templates that should
+                        be used by the application.  Defaults to
+                        ``'templates'`` folder in the root path of the
+                        application.
+:param instance_path: An alternative instance path for the application.
+                      By default the folder ``'instance'`` next to the
+                      package or module is assumed to be the instance
+                      path.
+:param instance_relative_config: if set to ``True`` relative filenames
+                                 for loading the config are assumed to
+                                 be relative to the instance path instead
+                                 of the application root.
+:param root_path: The path to the root of the application files.
+    This should only be set manually when it can't be detected
+    automatically, such as for namespace packages.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1app_1_1_flask_a907ff94159b3411c59f976618bad706c}\index{flask.app.Flask@{flask.app.Flask}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a907ff94159b3411c59f976618bad706c} 
+flask.\+app.\+Flask.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{import\+\_\+name}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{static\+\_\+url\+\_\+path}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}t.\+Union\mbox{[}str, os.\+Path\+Like\mbox{]}\mbox{]} }]{static\+\_\+folder}{ = {\ttfamily "{}static"{}}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{static\+\_\+host}{ = {\ttfamily None}, }\item[{bool }]{host\+\_\+matching}{ = {\ttfamily False}, }\item[{bool }]{subdomain\+\_\+matching}{ = {\ttfamily False}, }\item[{t.\+Optional\mbox{[}t.\+Union\mbox{[}str, os.\+Path\+Like\mbox{]}\mbox{]} }]{template\+\_\+folder}{ = {\ttfamily "{}templates"{}}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{instance\+\_\+path}{ = {\ttfamily None}, }\item[{bool }]{instance\+\_\+relative\+\_\+config}{ = {\ttfamily False}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{root\+\_\+path}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1app_1_1_flask_a1e8f95d79af66cd90657d16c36d883a0}\index{flask.app.Flask@{flask.app.Flask}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a1e8f95d79af66cd90657d16c36d883a0} 
+ t.\+Any flask.\+app.\+Flask.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict}]{environ}{, }\item[{t.\+Callable}]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The WSGI server calls the Flask application object as the
+WSGI application. This calls :meth:`wsgi_app`, which can be
+wrapped to apply middleware.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a9182f146f95cfb44c208a34701cdce1c}\index{flask.app.Flask@{flask.app.Flask}!\_check\_setup\_finished@{\_check\_setup\_finished}}
+\index{\_check\_setup\_finished@{\_check\_setup\_finished}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{\_check\_setup\_finished()}{\_check\_setup\_finished()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a9182f146f95cfb44c208a34701cdce1c} 
+ None flask.\+app.\+Flask.\+\_\+check\+\_\+setup\+\_\+finished (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{f\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}.
+
+\Hypertarget{classflask_1_1app_1_1_flask_acb89c8f316d3974662a18a009c88ea1f}\index{flask.app.Flask@{flask.app.Flask}!\_find\_error\_handler@{\_find\_error\_handler}}
+\index{\_find\_error\_handler@{\_find\_error\_handler}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{\_find\_error\_handler()}{\_find\_error\_handler()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_acb89c8f316d3974662a18a009c88ea1f} 
+ t.\+Optional\mbox{[}ft.\+Error\+Handler\+Callable\mbox{]} flask.\+app.\+Flask.\+\_\+find\+\_\+error\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Exception}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a registered error handler for an exception in this order:
+blueprint handler for a specific code, app handler for a specific code,
+blueprint handler for an exception class, app handler for an exception
+class, or ``None`` if a suitable handler is not found.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a35a3329e35b4f720a8dd1d27cf5033b1}\index{flask.app.Flask@{flask.app.Flask}!add\_template\_filter@{add\_template\_filter}}
+\index{add\_template\_filter@{add\_template\_filter}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{add\_template\_filter()}{add\_template\_filter()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a35a3329e35b4f720a8dd1d27cf5033b1} 
+ None flask.\+app.\+Flask.\+add\+\_\+template\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ft.\+Template\+Filter\+Callable}]{f}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a custom template filter.  Works exactly like the
+:meth:`template_filter` decorator.
+
+:param name: the optional name of the filter, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_aedbe413479a11d0f4ffc2f486ba4358b}\index{flask.app.Flask@{flask.app.Flask}!add\_template\_global@{add\_template\_global}}
+\index{add\_template\_global@{add\_template\_global}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{add\_template\_global()}{add\_template\_global()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_aedbe413479a11d0f4ffc2f486ba4358b} 
+ None flask.\+app.\+Flask.\+add\+\_\+template\+\_\+global (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ft.\+Template\+Global\+Callable}]{f}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a custom template global function. Works exactly like the
+:meth:`template_global` decorator.
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the global function, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a6987963fb7e66f4401c5a5dbdd0b4040}\index{flask.app.Flask@{flask.app.Flask}!add\_template\_test@{add\_template\_test}}
+\index{add\_template\_test@{add\_template\_test}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{add\_template\_test()}{add\_template\_test()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a6987963fb7e66f4401c5a5dbdd0b4040} 
+ None flask.\+app.\+Flask.\+add\+\_\+template\+\_\+test (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ft.\+Template\+Test\+Callable}]{f}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a custom template test.  Works exactly like the
+:meth:`template_test` decorator.
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the test, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a344aec8d650a4eeb0452c6cf007aad53}\index{flask.app.Flask@{flask.app.Flask}!add\_url\_rule@{add\_url\_rule}}
+\index{add\_url\_rule@{add\_url\_rule}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{add\_url\_rule()}{add\_url\_rule()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a344aec8d650a4eeb0452c6cf007aad53} 
+ None flask.\+app.\+Flask.\+add\+\_\+url\+\_\+rule (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{endpoint}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}ft.\+Route\+Callable\mbox{]} }]{view\+\_\+func}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}bool\mbox{]} }]{provide\+\_\+automatic\+\_\+options}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a rule for routing incoming requests and building
+URLs. The :meth:`route` decorator is a shortcut to call this
+with the ``view_func`` argument. These are equivalent:
+
+.. code-block:: python
+
+    @app.route("/")
+    def index():
+        ...
+
+.. code-block:: python
+
+    def index():
+        ...
+
+    app.add_url_rule("/", view_func=index)
+
+See :ref:`url-route-registrations`.
+
+The endpoint name for the route defaults to the name of the view
+function if the ``endpoint`` parameter isn't passed. An error
+will be raised if a function has already been registered for the
+endpoint.
+
+The ``methods`` parameter defaults to ``["GET"]``. ``HEAD`` is
+always added automatically, and ``OPTIONS`` is added
+automatically by default.
+
+``view_func`` does not necessarily need to be passed, but if the
+rule should participate in routing an endpoint name must be
+associated with a view function at some point with the
+:meth:`endpoint` decorator.
+
+.. code-block:: python
+
+    app.add_url_rule("/", endpoint="index")
+
+    @app.endpoint("index")
+    def index():
+        ...
+
+If ``view_func`` has a ``required_methods`` attribute, those
+methods are added to the passed and automatic methods. If it
+has a ``provide_automatic_methods`` attribute, it is used as the
+default if the parameter is not passed.
+
+:param rule: The URL rule string.
+:param endpoint: The endpoint name to associate with the rule
+    and view function. Used when routing and building URLs.
+    Defaults to ``view_func.__name__``.
+:param view_func: The view function to associate with the
+    endpoint name.
+:param provide_automatic_options: Add the ``OPTIONS`` method and
+    respond to ``OPTIONS`` requests automatically.
+:param options: Extra options passed to the
+    :class:`~werkzeug.routing.Rule` object.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a7172518b453c5e4579ebcc68105f07f7}{flask.\+scaffold.\+Scaffold}}.
+
+\Hypertarget{classflask_1_1app_1_1_flask_a99e7930ccc2e4ab2881c3bb298e6e472}\index{flask.app.Flask@{flask.app.Flask}!app\_context@{app\_context}}
+\index{app\_context@{app\_context}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{app\_context()}{app\_context()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a99e7930ccc2e4ab2881c3bb298e6e472} 
+ \mbox{\hyperlink{classflask_1_1ctx_1_1_app_context}{App\+Context}} flask.\+app.\+Flask.\+app\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an :class:`~flask.ctx.AppContext`. Use as a ``with``
+block to push the context, which will make :data:`current_app`
+point at this application.
+
+An application context is automatically pushed by
+:meth:`RequestContext.push() <flask.ctx.RequestContext.push>`
+when handling a request, and when running a CLI command. Use
+this to manually create a context outside of these situations.
+
+::
+
+    with app.app_context():
+        init_db()
+
+See :doc:`/appcontext`.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_aa11f6f70786fb49abe33c99f6291f882}\index{flask.app.Flask@{flask.app.Flask}!async\_to\_sync@{async\_to\_sync}}
+\index{async\_to\_sync@{async\_to\_sync}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{async\_to\_sync()}{async\_to\_sync()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_aa11f6f70786fb49abe33c99f6291f882} 
+ t.\+Callable\mbox{[}..., t.\+Any\mbox{]} flask.\+app.\+Flask.\+async\+\_\+to\+\_\+sync (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Callable\mbox{[}..., t.\+Coroutine\mbox{]}     }]{func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a sync function that will run the coroutine function.
+
+.. code-block:: python
+
+    result = app.async_to_sync(func)(*args, **kwargs)
+
+Override this method to change how the app converts async code
+to be synchronously callable.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a6230d6f2a2e50eef58717c12f3e46807}\index{flask.app.Flask@{flask.app.Flask}!auto\_find\_instance\_path@{auto\_find\_instance\_path}}
+\index{auto\_find\_instance\_path@{auto\_find\_instance\_path}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{auto\_find\_instance\_path()}{auto\_find\_instance\_path()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a6230d6f2a2e50eef58717c12f3e46807} 
+ str flask.\+app.\+Flask.\+auto\+\_\+find\+\_\+instance\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tries to locate the instance path if it was not provided to the
+constructor of the application class.  It will basically calculate
+the path to a folder named ``instance`` next to your main file or
+the package.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a9d11cb510a75b057e46e9ed3edfa65dd}\index{flask.app.Flask@{flask.app.Flask}!before\_first\_request@{before\_first\_request}}
+\index{before\_first\_request@{before\_first\_request}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{before\_first\_request()}{before\_first\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a9d11cb510a75b057e46e9ed3edfa65dd} 
+ T\+\_\+before\+\_\+first\+\_\+request flask.\+app.\+Flask.\+before\+\_\+first\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{T\+\_\+before\+\_\+first\+\_\+request}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Registers a function to be run before the first request to this
+instance of the application.
+
+The function will be called without any arguments and its return
+value is ignored.
+
+.. deprecated:: 2.2
+    Will be removed in Flask 2.3. Run setup code when creating
+    the application instead.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a5277d11523c83fd60653033f8831c956}\index{flask.app.Flask@{flask.app.Flask}!create\_global\_jinja\_loader@{create\_global\_jinja\_loader}}
+\index{create\_global\_jinja\_loader@{create\_global\_jinja\_loader}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{create\_global\_jinja\_loader()}{create\_global\_jinja\_loader()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a5277d11523c83fd60653033f8831c956} 
+ \mbox{\hyperlink{classflask_1_1templating_1_1_dispatching_jinja_loader}{Dispatching\+Jinja\+Loader}} flask.\+app.\+Flask.\+create\+\_\+global\+\_\+jinja\+\_\+loader (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates the loader for the Jinja2 environment.  Can be used to
+override just the loader and keeping the rest unchanged.  It's
+discouraged to override this function.  Instead one should override
+the :meth:`jinja_loader` function instead.
+
+The global loader dispatches between the loaders of the application
+and the individual blueprints.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_ad6a9f21fff225bf43fb096b90f9887e3}\index{flask.app.Flask@{flask.app.Flask}!create\_jinja\_environment@{create\_jinja\_environment}}
+\index{create\_jinja\_environment@{create\_jinja\_environment}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{create\_jinja\_environment()}{create\_jinja\_environment()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_ad6a9f21fff225bf43fb096b90f9887e3} 
+ \mbox{\hyperlink{classflask_1_1templating_1_1_environment}{Environment}} flask.\+app.\+Flask.\+create\+\_\+jinja\+\_\+environment (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create the Jinja environment based on :attr:`jinja_options`
+and the various Jinja-related methods of the app. Changing
+:attr:`jinja_options` after this will have no effect. Also adds
+Flask-related globals and filters to the environment.
+
+.. versionchanged:: 0.11
+   ``Environment.auto_reload`` set in accordance with
+   ``TEMPLATES_AUTO_RELOAD`` configuration option.
+
+.. versionadded:: 0.5
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_af9c1f1cf7113d796c053f8e176c50efd}\index{flask.app.Flask@{flask.app.Flask}!create\_url\_adapter@{create\_url\_adapter}}
+\index{create\_url\_adapter@{create\_url\_adapter}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{create\_url\_adapter()}{create\_url\_adapter()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_af9c1f1cf7113d796c053f8e176c50efd} 
+ t.\+Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter}{Map\+Adapter}}\mbox{]} flask.\+app.\+Flask.\+create\+\_\+url\+\_\+adapter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}\mbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}}\mbox{]}     }]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a URL adapter for the given request. The URL adapter
+is created at a point where the request context is not yet set
+up so the request is passed explicitly.
+
+.. versionadded:: 0.6
+
+.. versionchanged:: 0.9
+   This can now also be called without a request object when the
+   URL adapter is created for the application context.
+
+.. versionchanged:: 1.0
+    :data:`SERVER_NAME` no longer implicitly enables subdomain
+    matching. Use :attr:`subdomain_matching` instead.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a31e60945545ce28f90e28c41ec62a9cc}\index{flask.app.Flask@{flask.app.Flask}!debug@{debug}}
+\index{debug@{debug}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a31e60945545ce28f90e28c41ec62a9cc} 
+ bool flask.\+app.\+Flask.\+debug (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether debug mode is enabled. When using ``flask run`` to start the
+development server, an interactive debugger will be shown for unhandled
+exceptions, and the server will be reloaded when code changes. This maps to the
+:data:`DEBUG` config key. It may not behave as expected if set late.
+
+**Do not enable debug mode when deploying in production.**
+
+Default: ``False``
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a606fad32794a3c296702179138c83a6d}\index{flask.app.Flask@{flask.app.Flask}!dispatch\_request@{dispatch\_request}}
+\index{dispatch\_request@{dispatch\_request}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{dispatch\_request()}{dispatch\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a606fad32794a3c296702179138c83a6d} 
+ ft.\+Response\+Return\+Value flask.\+app.\+Flask.\+dispatch\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Does the request dispatching.  Matches the URL and returns the
+return value of the view or error handler.  This does not have to
+be a response object.  In order to convert the return value to a
+proper response object, call :func:`make_response`.
+
+.. versionchanged:: 0.7
+   This no longer does the exception handling, this code was
+   moved to the new :meth:`full_dispatch_request`.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a1f43a0f208f9f7451892a0ce0e4ce94a}\index{flask.app.Flask@{flask.app.Flask}!do\_teardown\_appcontext@{do\_teardown\_appcontext}}
+\index{do\_teardown\_appcontext@{do\_teardown\_appcontext}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{do\_teardown\_appcontext()}{do\_teardown\_appcontext()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a1f43a0f208f9f7451892a0ce0e4ce94a} 
+ None flask.\+app.\+Flask.\+do\+\_\+teardown\+\_\+appcontext (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}Base\+Exception\mbox{]} }]{exc}{ = {\ttfamily \+\_\+sentinel~~\#~type\+:~ignore}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called right before the application context is popped.
+
+When handling a request, the application context is popped
+after the request context. See :meth:`do_teardown_request`.
+
+This calls all functions decorated with
+:meth:`teardown_appcontext`. Then the
+:data:`appcontext_tearing_down` signal is sent.
+
+This is called by
+:meth:`AppContext.pop() <flask.ctx.AppContext.pop>`.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a9a19c1226ae3d28317de35ec7816bc6b}\index{flask.app.Flask@{flask.app.Flask}!do\_teardown\_request@{do\_teardown\_request}}
+\index{do\_teardown\_request@{do\_teardown\_request}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{do\_teardown\_request()}{do\_teardown\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a9a19c1226ae3d28317de35ec7816bc6b} 
+ None flask.\+app.\+Flask.\+do\+\_\+teardown\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}Base\+Exception\mbox{]} }]{exc}{ = {\ttfamily \+\_\+sentinel~~\#~type\+:~ignore}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called after the request is dispatched and the response is
+returned, right before the request context is popped.
+
+This calls all functions decorated with
+:meth:`teardown_request`, and :meth:`Blueprint.teardown_request`
+if a blueprint handled the request. Finally, the
+:data:`request_tearing_down` signal is sent.
+
+This is called by
+:meth:`RequestContext.pop() <flask.ctx.RequestContext.pop>`,
+which may be delayed during testing to maintain access to
+resources.
+
+:param exc: An unhandled exception raised while dispatching the
+    request. Detected from the current exception information if
+    not passed. Passed to each teardown function.
+
+.. versionchanged:: 0.9
+    Added the ``exc`` argument.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a2496b328363b76586a31a4ead571c281}\index{flask.app.Flask@{flask.app.Flask}!ensure\_sync@{ensure\_sync}}
+\index{ensure\_sync@{ensure\_sync}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{ensure\_sync()}{ensure\_sync()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a2496b328363b76586a31a4ead571c281} 
+ t.\+Callable flask.\+app.\+Flask.\+ensure\+\_\+sync (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Callable}]{func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure that the function is synchronous for WSGI workers.
+Plain ``def`` functions are returned as-is. ``async def``
+functions are wrapped to run and wait for the response.
+
+Override this method to change how the app runs async views.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a9e00a7ff863e2ac64fe97747ba5c5b6f}\index{flask.app.Flask@{flask.app.Flask}!env@{env}}
+\index{env@{env}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{env()}{env()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a9e00a7ff863e2ac64fe97747ba5c5b6f} 
+ str flask.\+app.\+Flask.\+env (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}What environment the app is running in. This maps to the :data:`ENV` config
+key.
+
+**Do not enable development when deploying in production.**
+
+Default: ``'production'``
+
+.. deprecated:: 2.2
+    Will be removed in Flask 2.3.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a33ec433025d74d1039353d06967a29e6}\index{flask.app.Flask@{flask.app.Flask}!finalize\_request@{finalize\_request}}
+\index{finalize\_request@{finalize\_request}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{finalize\_request()}{finalize\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a33ec433025d74d1039353d06967a29e6} 
+ \mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} flask.\+app.\+Flask.\+finalize\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Union\mbox{[}ft.\+Response\+Return\+Value, \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}\mbox{]}}]{rv}{, }\item[{bool }]{from\+\_\+error\+\_\+handler}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given the return value from a view function this finalizes
+the request by converting it into a response and invoking the
+postprocessing functions.  This is invoked for both normal
+request dispatching as well as error handlers.
+
+Because this means that it might be called as a result of a
+failure a special safe mode is available which can be enabled
+with the `from_error_handler` flag.  If enabled, failures in
+response processing will be logged and otherwise ignored.
+
+:internal:
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a8ade9842ef7d81c7949881292549f6ce}\index{flask.app.Flask@{flask.app.Flask}!full\_dispatch\_request@{full\_dispatch\_request}}
+\index{full\_dispatch\_request@{full\_dispatch\_request}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{full\_dispatch\_request()}{full\_dispatch\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a8ade9842ef7d81c7949881292549f6ce} 
+ \mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} flask.\+app.\+Flask.\+full\+\_\+dispatch\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dispatches the request and on top of that performs request
+pre and postprocessing as well as HTTP exception catching and
+error handling.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a7fb7ae9c7ccc9953fe6a630c2507b1a8}\index{flask.app.Flask@{flask.app.Flask}!got\_first\_request@{got\_first\_request}}
+\index{got\_first\_request@{got\_first\_request}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{got\_first\_request()}{got\_first\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a7fb7ae9c7ccc9953fe6a630c2507b1a8} 
+ bool flask.\+app.\+Flask.\+got\+\_\+first\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This attribute is set to ``True`` if the application started
+handling the first request.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_af8aa6c8dbce0ab06f067dd2930659d89}\index{flask.app.Flask@{flask.app.Flask}!handle\_exception@{handle\_exception}}
+\index{handle\_exception@{handle\_exception}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{handle\_exception()}{handle\_exception()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_af8aa6c8dbce0ab06f067dd2930659d89} 
+ \mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} flask.\+app.\+Flask.\+handle\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Exception}]{e}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle an exception that did not have an error handler
+associated with it, or that was raised from an error handler.
+This always causes a 500 ``InternalServerError``.
+
+Always sends the :data:`got_request_exception` signal.
+
+If :attr:`propagate_exceptions` is ``True``, such as in debug
+mode, the error will be re-raised so that the debugger can
+display it. Otherwise, the original exception is logged, and
+an :exc:`~werkzeug.exceptions.InternalServerError` is returned.
+
+If an error handler is registered for ``InternalServerError`` or
+``500``, it will be used. For consistency, the handler will
+always receive the ``InternalServerError``. The original
+unhandled exception is available as ``e.original_exception``.
+
+.. versionchanged:: 1.1.0
+    Always passes the ``InternalServerError`` instance to the
+    handler, setting ``original_exception`` to the unhandled
+    error.
+
+.. versionchanged:: 1.1.0
+    ``after_request`` functions and other finalization is done
+    even for the default 500 response when there is no handler.
+
+.. versionadded:: 0.3
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a70c01146678df63b622f4fe7325c0442}\index{flask.app.Flask@{flask.app.Flask}!handle\_http\_exception@{handle\_http\_exception}}
+\index{handle\_http\_exception@{handle\_http\_exception}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{handle\_http\_exception()}{handle\_http\_exception()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a70c01146678df63b622f4fe7325c0442} 
+ t.\+Union\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}, ft.\+Response\+Return\+Value\mbox{]} flask.\+app.\+Flask.\+handle\+\_\+http\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}     }]{e}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles an HTTP exception.  By default this will invoke the
+registered error handlers and fall back to returning the
+exception as response.
+
+.. versionchanged:: 1.0.3
+    ``RoutingException``, used internally for actions such as
+     slash redirects during routing, is not passed to error
+     handlers.
+
+.. versionchanged:: 1.0
+    Exceptions are looked up by code *and* by MRO, so
+    ``HTTPException`` subclasses can be handled with a catch-all
+    handler for the base ``HTTPException``.
+
+.. versionadded:: 0.3
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_ae9f151889af739bf15e66610625712d8}\index{flask.app.Flask@{flask.app.Flask}!handle\_url\_build\_error@{handle\_url\_build\_error}}
+\index{handle\_url\_build\_error@{handle\_url\_build\_error}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{handle\_url\_build\_error()}{handle\_url\_build\_error()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_ae9f151889af739bf15e66610625712d8} 
+ str flask.\+app.\+Flask.\+handle\+\_\+url\+\_\+build\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classwerkzeug_1_1routing_1_1exceptions_1_1_build_error}{Build\+Error}}}]{error}{, }\item[{str}]{endpoint}{, }\item[{t.\+Dict\mbox{[}str, t.\+Any\mbox{]}     }]{values}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called by :meth:`.url_for` if a
+:exc:`~werkzeug.routing.BuildError` was raised. If this returns
+a value, it will be returned by ``url_for``, otherwise the error
+will be re-raised.
+
+Each function in :attr:`url_build_error_handlers` is called with
+``error``, ``endpoint`` and ``values``. If a function returns
+``None`` or raises a ``BuildError``, it is skipped. Otherwise,
+its return value is returned by ``url_for``.
+
+:param error: The active ``BuildError`` being handled.
+:param endpoint: The endpoint being built.
+:param values: The keyword arguments passed to ``url_for``.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a98b3e8e220b6bf3494bd993d290d2998}\index{flask.app.Flask@{flask.app.Flask}!handle\_user\_exception@{handle\_user\_exception}}
+\index{handle\_user\_exception@{handle\_user\_exception}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{handle\_user\_exception()}{handle\_user\_exception()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a98b3e8e220b6bf3494bd993d290d2998} 
+ t.\+Union\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}, ft.\+Response\+Return\+Value\mbox{]} flask.\+app.\+Flask.\+handle\+\_\+user\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Exception     }]{e}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method is called whenever an exception occurs that
+should be handled. A special case is :class:`~werkzeug
+.exceptions.HTTPException` which is forwarded to the
+:meth:`handle_http_exception` method. This function will either
+return a response value or reraise the exception with the same
+traceback.
+
+.. versionchanged:: 1.0
+    Key errors raised from request data like ``form`` show the
+    bad key in debug mode rather than a generic bad request
+    message.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a4cb41b5754b7b6a5f9755f3a219d3c36}\index{flask.app.Flask@{flask.app.Flask}!inject\_url\_defaults@{inject\_url\_defaults}}
+\index{inject\_url\_defaults@{inject\_url\_defaults}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{inject\_url\_defaults()}{inject\_url\_defaults()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a4cb41b5754b7b6a5f9755f3a219d3c36} 
+ None flask.\+app.\+Flask.\+inject\+\_\+url\+\_\+defaults (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{endpoint}{, }\item[{dict}]{values}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Injects the URL defaults for the given endpoint directly into
+the values dictionary passed.  This is used internally and
+automatically called on URL building.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a08f2db089c62c0e51ce5cb1076bee429}\index{flask.app.Flask@{flask.app.Flask}!iter\_blueprints@{iter\_blueprints}}
+\index{iter\_blueprints@{iter\_blueprints}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{iter\_blueprints()}{iter\_blueprints()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a08f2db089c62c0e51ce5cb1076bee429} 
+ t.\+Values\+View\mbox{[}"{}Blueprint"{}\mbox{]} flask.\+app.\+Flask.\+iter\+\_\+blueprints (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterates over all blueprints by the order they were registered.
+
+.. versionadded:: 0.11
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a1236ec7ed5061c15c174125573497cc7}\index{flask.app.Flask@{flask.app.Flask}!jinja\_env@{jinja\_env}}
+\index{jinja\_env@{jinja\_env}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{jinja\_env()}{jinja\_env()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a1236ec7ed5061c15c174125573497cc7} 
+ \mbox{\hyperlink{classflask_1_1templating_1_1_environment}{Environment}} flask.\+app.\+Flask.\+jinja\+\_\+env (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Jinja environment used to load templates.
+
+The environment is created the first time this property is
+accessed. Changing :attr:`jinja_options` after that will have no
+effect.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_af402ebf99b6af81ade2bdb766e85de8e}\index{flask.app.Flask@{flask.app.Flask}!json\_decoder@{json\_decoder}}
+\index{json\_decoder@{json\_decoder}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{json\_decoder()}{json\_decoder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_af402ebf99b6af81ade2bdb766e85de8e} 
+ t.\+Type\mbox{[}\mbox{\hyperlink{classflask_1_1json_1_1_j_s_o_n_decoder}{json.\+JSONDecoder}}\mbox{]} flask.\+app.\+Flask.\+json\+\_\+decoder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The JSON decoder class to use. Defaults to
+:class:`~flask.json.JSONDecoder`.
+
+.. deprecated:: 2.2
+     Will be removed in Flask 2.3. Customize
+     :attr:`json_provider_class` instead.
+
+.. versionadded:: 0.10
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}.
+
+\Hypertarget{classflask_1_1app_1_1_flask_a643af0eba64d96b1de031aaeb1abae15}\index{flask.app.Flask@{flask.app.Flask}!json\_decoder@{json\_decoder}}
+\index{json\_decoder@{json\_decoder}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{json\_decoder()}{json\_decoder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a643af0eba64d96b1de031aaeb1abae15} 
+ None flask.\+app.\+Flask.\+json\+\_\+decoder (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Type\mbox{[}\mbox{\hyperlink{classflask_1_1json_1_1_j_s_o_n_decoder}{json.\+JSONDecoder}}\mbox{]}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}.
+
+\Hypertarget{classflask_1_1app_1_1_flask_ab4a6464b500819c9c3605417080384df}\index{flask.app.Flask@{flask.app.Flask}!json\_encoder@{json\_encoder}}
+\index{json\_encoder@{json\_encoder}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{json\_encoder()}{json\_encoder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_ab4a6464b500819c9c3605417080384df} 
+ t.\+Type\mbox{[}\mbox{\hyperlink{classflask_1_1json_1_1_j_s_o_n_encoder}{json.\+JSONEncoder}}\mbox{]} flask.\+app.\+Flask.\+json\+\_\+encoder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The JSON encoder class to use. Defaults to
+:class:`~flask.json.JSONEncoder`.
+
+.. deprecated:: 2.2
+     Will be removed in Flask 2.3. Customize
+     :attr:`json_provider_class` instead.
+
+.. versionadded:: 0.10
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}.
+
+\Hypertarget{classflask_1_1app_1_1_flask_abda2b2f9fa731fc52a06ec880e7b27e6}\index{flask.app.Flask@{flask.app.Flask}!json\_encoder@{json\_encoder}}
+\index{json\_encoder@{json\_encoder}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{json\_encoder()}{json\_encoder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_abda2b2f9fa731fc52a06ec880e7b27e6} 
+ None flask.\+app.\+Flask.\+json\+\_\+encoder (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Type\mbox{[}\mbox{\hyperlink{classflask_1_1json_1_1_j_s_o_n_encoder}{json.\+JSONEncoder}}\mbox{]}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold}{flask.\+scaffold.\+Scaffold}}.
+
+\Hypertarget{classflask_1_1app_1_1_flask_a1bc0b5ae164a3f686a197e1d97d4d4bd}\index{flask.app.Flask@{flask.app.Flask}!log\_exception@{log\_exception}}
+\index{log\_exception@{log\_exception}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{log\_exception()}{log\_exception()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a1bc0b5ae164a3f686a197e1d97d4d4bd} 
+ None flask.\+app.\+Flask.\+log\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Union\mbox{[}             t.\+Tuple\mbox{[}type, Base\+Exception, Traceback\+Type\mbox{]}, t.\+Tuple\mbox{[}None, None, None\mbox{]}         \mbox{]}}]{exc\+\_\+info}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Logs an exception.  This is called by :meth:`handle_exception`
+if debugging is disabled and right before the handler is called.
+The default implementation logs the exception as error on the
+:attr:`logger`.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a6c7957bc281cfa582bf4034a7ee56680}\index{flask.app.Flask@{flask.app.Flask}!logger@{logger}}
+\index{logger@{logger}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{logger()}{logger()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a6c7957bc281cfa582bf4034a7ee56680} 
+ logging.\+Logger flask.\+app.\+Flask.\+logger (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A standard Python :class:`~logging.Logger` for the app, with
+the same name as :attr:`name`.
+
+In debug mode, the logger's :attr:`~logging.Logger.level` will
+be set to :data:`~logging.DEBUG`.
+
+If there are no handlers configured, a default handler will be
+added. See :doc:`/logging` for more information.
+
+.. versionchanged:: 1.1.0
+    The logger takes the same name as :attr:`name` rather than
+    hard-coding ``"flask.app"``.
+
+.. versionchanged:: 1.0.0
+    Behavior was simplified. The logger is always named
+    ``"flask.app"``. The level is only set during configuration,
+    it doesn't check ``app.debug`` each time. Only one format is
+    used, not different ones depending on ``app.debug``. No
+    handlers are removed, and a handler is only added if no
+    handlers are already configured.
+
+.. versionadded:: 0.3
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a9c5ea904454c2197a461005fbf22e40e}\index{flask.app.Flask@{flask.app.Flask}!make\_aborter@{make\_aborter}}
+\index{make\_aborter@{make\_aborter}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{make\_aborter()}{make\_aborter()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a9c5ea904454c2197a461005fbf22e40e} 
+ \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter}{Aborter}} flask.\+app.\+Flask.\+make\+\_\+aborter (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create the object to assign to :attr:`aborter`. That object
+is called by :func:`flask.abort` to raise HTTP errors, and can
+be called directly as well.
+
+By default, this creates an instance of :attr:`aborter_class`,
+which defaults to :class:`werkzeug.exceptions.Aborter`.
+
+.. versionadded:: 2.2
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a78155478fcbfe8d22740b49a8a6059a3}\index{flask.app.Flask@{flask.app.Flask}!make\_config@{make\_config}}
+\index{make\_config@{make\_config}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{make\_config()}{make\_config()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a78155478fcbfe8d22740b49a8a6059a3} 
+ \mbox{\hyperlink{classflask_1_1config_1_1_config}{Config}} flask.\+app.\+Flask.\+make\+\_\+config (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{instance\+\_\+relative}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used to create the config attribute by the Flask constructor.
+The `instance_relative` parameter is passed in from the constructor
+of Flask (there named `instance_relative_config`) and indicates if
+the config should be relative to the instance path or the root path
+of the application.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_af8096fb01410066ca3bb1ef771fa3996}\index{flask.app.Flask@{flask.app.Flask}!make\_default\_options\_response@{make\_default\_options\_response}}
+\index{make\_default\_options\_response@{make\_default\_options\_response}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{make\_default\_options\_response()}{make\_default\_options\_response()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_af8096fb01410066ca3bb1ef771fa3996} 
+ \mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} flask.\+app.\+Flask.\+make\+\_\+default\+\_\+options\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method is called to create the default ``OPTIONS`` response.
+This can be changed through subclassing to change the default
+behavior of ``OPTIONS`` responses.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_aa19d7392303f9f33db462667a7358579}\index{flask.app.Flask@{flask.app.Flask}!make\_response@{make\_response}}
+\index{make\_response@{make\_response}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{make\_response()}{make\_response()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_aa19d7392303f9f33db462667a7358579} 
+ \mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} flask.\+app.\+Flask.\+make\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ft.\+Response\+Return\+Value}]{rv}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the return value from a view function to an instance of
+:attr:`response_class`.
+
+:param rv: the return value from the view function. The view function
+    must return a response. Returning ``None``, or the view ending
+    without returning, is not allowed. The following types are allowed
+    for ``view_rv``:
+
+    ``str``
+        A response object is created with the string encoded to UTF-8
+        as the body.
+
+    ``bytes``
+        A response object is created with the bytes as the body.
+
+    ``dict``
+        A dictionary that will be jsonify'd before being returned.
+
+    ``list``
+        A list that will be jsonify'd before being returned.
+
+    ``generator`` or ``iterator``
+        A generator that returns ``str`` or ``bytes`` to be
+        streamed as the response.
+
+    ``tuple``
+        Either ``(body, status, headers)``, ``(body, status)``, or
+        ``(body, headers)``, where ``body`` is any of the other types
+        allowed here, ``status`` is a string or an integer, and
+        ``headers`` is a dictionary or a list of ``(key, value)``
+        tuples. If ``body`` is a :attr:`response_class` instance,
+        ``status`` overwrites the exiting value and ``headers`` are
+        extended.
+
+    :attr:`response_class`
+        The object is returned unchanged.
+
+    other :class:`~werkzeug.wrappers.Response` class
+        The object is coerced to :attr:`response_class`.
+
+    :func:`callable`
+        The function is called as a WSGI application. The result is
+        used to create a response object.
+
+.. versionchanged:: 2.2
+    A generator will be converted to a streaming response.
+    A list will be converted to a JSON response.
+
+.. versionchanged:: 1.1
+    A dict will be converted to a JSON response.
+
+.. versionchanged:: 0.9
+   Previously a tuple was interpreted as the arguments for the
+   response object.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_abf2d2bdfde37b2b98bb474f018000a00}\index{flask.app.Flask@{flask.app.Flask}!make\_shell\_context@{make\_shell\_context}}
+\index{make\_shell\_context@{make\_shell\_context}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{make\_shell\_context()}{make\_shell\_context()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_abf2d2bdfde37b2b98bb474f018000a00} 
+ dict flask.\+app.\+Flask.\+make\+\_\+shell\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the shell context for an interactive shell for this
+application.  This runs all the registered shell context
+processors.
+
+.. versionadded:: 0.11
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_ab211f17642aa5f4109e4e77e4253414d}\index{flask.app.Flask@{flask.app.Flask}!name@{name}}
+\index{name@{name}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_ab211f17642aa5f4109e4e77e4253414d} 
+ str flask.\+app.\+Flask.\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The name of the application.  This is usually the import name
+with the difference that it's guessed from the run file if the
+import name is main.  This name is used as a display name when
+Flask needs the name of the application.  It can be set and overridden
+to change the value.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_aeb84afb90a58284ff99c3802d80de05f}\index{flask.app.Flask@{flask.app.Flask}!open\_instance\_resource@{open\_instance\_resource}}
+\index{open\_instance\_resource@{open\_instance\_resource}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{open\_instance\_resource()}{open\_instance\_resource()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_aeb84afb90a58284ff99c3802d80de05f} 
+ t.\+IO\mbox{[}t.\+Any\+Str\mbox{]} flask.\+app.\+Flask.\+open\+\_\+instance\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{resource}{, }\item[{str }]{mode}{ = {\ttfamily "{}rb"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Opens a resource from the application's instance folder
+(:attr:`instance_path`).  Otherwise works like
+:meth:`open_resource`.  Instance resources can also be opened for
+writing.
+
+:param resource: the name of the resource.  To access resources within
+                 subfolders use forward slashes as separator.
+:param mode: resource file opening mode, default is 'rb'.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a535333696795d59ccf61b183507124d8}\index{flask.app.Flask@{flask.app.Flask}!preprocess\_request@{preprocess\_request}}
+\index{preprocess\_request@{preprocess\_request}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{preprocess\_request()}{preprocess\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a535333696795d59ccf61b183507124d8} 
+ t.\+Optional\mbox{[}ft.\+Response\+Return\+Value\mbox{]} flask.\+app.\+Flask.\+preprocess\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called before the request is dispatched. Calls
+:attr:`url_value_preprocessors` registered with the app and the
+current blueprint (if any). Then calls :attr:`before_request_funcs`
+registered with the app and the blueprint.
+
+If any :meth:`before_request` handler returns a non-None value, the
+value is handled as if it was the return value from the view, and
+further request handling is stopped.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a0f5cd723e9bcf365bac7d95209f47746}\index{flask.app.Flask@{flask.app.Flask}!process\_response@{process\_response}}
+\index{process\_response@{process\_response}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{process\_response()}{process\_response()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a0f5cd723e9bcf365bac7d95209f47746} 
+ \mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} flask.\+app.\+Flask.\+process\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}}}]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Can be overridden in order to modify the response object
+before it's sent to the WSGI server.  By default this will
+call all the :meth:`after_request` decorated functions.
+
+.. versionchanged:: 0.5
+   As of Flask 0.5 the functions registered for after request
+   execution are called in reverse order of registration.
+
+:param response: a :attr:`response_class` object.
+:return: a new response object or the same, has to be an
+         instance of :attr:`response_class`.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a756e106c166f36e16e29c431a691338f}\index{flask.app.Flask@{flask.app.Flask}!propagate\_exceptions@{propagate\_exceptions}}
+\index{propagate\_exceptions@{propagate\_exceptions}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{propagate\_exceptions()}{propagate\_exceptions()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a756e106c166f36e16e29c431a691338f} 
+ bool flask.\+app.\+Flask.\+propagate\+\_\+exceptions (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the value of the ``PROPAGATE_EXCEPTIONS`` configuration
+value in case it's set, otherwise a sensible default is returned.
+
+.. deprecated:: 2.2
+    Will be removed in Flask 2.3.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_ad35d386fde929ac7d4df2ab2d4254ca5}\index{flask.app.Flask@{flask.app.Flask}!raise\_routing\_exception@{raise\_routing\_exception}}
+\index{raise\_routing\_exception@{raise\_routing\_exception}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{raise\_routing\_exception()}{raise\_routing\_exception()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_ad35d386fde929ac7d4df2ab2d4254ca5} 
+ "{}te.\+No\+Return"{} flask.\+app.\+Flask.\+raise\+\_\+routing\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Intercept routing exceptions and possibly do something else.
+
+In debug mode, intercept a routing redirect and replace it with
+an error if the body will be discarded.
+
+With modern Werkzeug this shouldn't occur, since it now uses a
+308 status which tells the browser to resend the method and
+body.
+
+.. versionchanged:: 2.1
+    Don't intercept 307 and 308 redirects.
+
+:meta private:
+:internal:
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a4af467b9c6f13cb8528f2360bea92668}\index{flask.app.Flask@{flask.app.Flask}!redirect@{redirect}}
+\index{redirect@{redirect}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a4af467b9c6f13cb8528f2360bea92668} 
+ Base\+Response flask.\+app.\+Flask.\+redirect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{location}{, }\item[{int }]{code}{ = {\ttfamily 302}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a redirect response object.
+
+This is called by :func:`flask.redirect`, and can be called
+directly as well.
+
+:param location: The URL to redirect to.
+:param code: The status code for the redirect.
+
+.. versionadded:: 2.2
+    Moved from ``flask.redirect``, which calls this method.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_ad436d7542375235ccb4e473c998d7e86}\index{flask.app.Flask@{flask.app.Flask}!register\_blueprint@{register\_blueprint}}
+\index{register\_blueprint@{register\_blueprint}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{register\_blueprint()}{register\_blueprint()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_ad436d7542375235ccb4e473c998d7e86} 
+ None flask.\+app.\+Flask.\+register\+\_\+blueprint (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Blueprint"{}}]{blueprint}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a :class:`~flask.Blueprint` on the application. Keyword
+arguments passed to this method will override the defaults set on the
+blueprint.
+
+Calls the blueprint's :meth:`~flask.Blueprint.register` method after
+recording the blueprint in the application's :attr:`blueprints`.
+
+:param blueprint: The blueprint to register.
+:param url_prefix: Blueprint routes will be prefixed with this.
+:param subdomain: Blueprint routes will match on this subdomain.
+:param url_defaults: Blueprint routes will use these default values for
+    view arguments.
+:param options: Additional keyword arguments are passed to
+    :class:`~flask.blueprints.BlueprintSetupState`. They can be
+    accessed in :meth:`~flask.Blueprint.record` callbacks.
+
+.. versionchanged:: 2.0.1
+    The ``name`` option can be used to change the (pre-dotted)
+    name the blueprint is registered with. This allows the same
+    blueprint to be registered multiple times with unique names
+    for ``url_for``.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a299d1b9b97095914cadad87083d48d1c}\index{flask.app.Flask@{flask.app.Flask}!request\_context@{request\_context}}
+\index{request\_context@{request\_context}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{request\_context()}{request\_context()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a299d1b9b97095914cadad87083d48d1c} 
+ \mbox{\hyperlink{classflask_1_1ctx_1_1_request_context}{Request\+Context}} flask.\+app.\+Flask.\+request\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict}]{environ}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a :class:`~flask.ctx.RequestContext` representing a
+WSGI environment. Use a ``with`` block to push the context,
+which will make :data:`request` point at this request.
+
+See :doc:`/reqcontext`.
+
+Typically you should not call this from your own code. A request
+context is automatically pushed by the :meth:`wsgi_app` when
+handling a request. Use :meth:`test_request_context` to create
+an environment and context instead of this method.
+
+:param environ: a WSGI environment
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a8721fc6306638b07b5145beed80ee7e9}\index{flask.app.Flask@{flask.app.Flask}!run@{run}}
+\index{run@{run}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a8721fc6306638b07b5145beed80ee7e9} 
+ None flask.\+app.\+Flask.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{host}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}int\mbox{]} }]{port}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}bool\mbox{]} }]{debug}{ = {\ttfamily None}, }\item[{bool }]{load\+\_\+dotenv}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs the application on a local development server.
+
+Do not use ``run()`` in a production setting. It is not intended to
+meet security and performance requirements for a production server.
+Instead, see :doc:`/deploying/index` for WSGI server recommendations.
+
+If the :attr:`debug` flag is set the server will automatically reload
+for code changes and show a debugger in case an exception happened.
+
+If you want to run the application in debug mode, but disable the
+code execution on the interactive debugger, you can pass
+``use_evalex=False`` as parameter.  This will keep the debugger's
+traceback screen active, but disable code execution.
+
+It is not recommended to use this function for development with
+automatic reloading as this is badly supported.  Instead you should
+be using the :command:`flask` command line script's ``run`` support.
+
+.. admonition:: Keep in Mind
+
+   Flask will suppress any server error with a generic error page
+   unless it is in debug mode.  As such to enable just the
+   interactive debugger without the code reloading, you have to
+   invoke :meth:`run` with ``debug=True`` and ``use_reloader=False``.
+   Setting ``use_debugger`` to ``True`` without being in debug mode
+   won't catch any exceptions because there won't be any to
+   catch.
+
+:param host: the hostname to listen on. Set this to ``'0.0.0.0'`` to
+    have the server available externally as well. Defaults to
+    ``'127.0.0.1'`` or the host in the ``SERVER_NAME`` config variable
+    if present.
+:param port: the port of the webserver. Defaults to ``5000`` or the
+    port defined in the ``SERVER_NAME`` config variable if present.
+:param debug: if given, enable or disable debug mode. See
+    :attr:`debug`.
+:param load_dotenv: Load the nearest :file:`.env` and :file:`.flaskenv`
+    files to set environment variables. Will also change the working
+    directory to the directory containing the first file found.
+:param options: the options to be forwarded to the underlying Werkzeug
+    server. See :func:`werkzeug.serving.run_simple` for more
+    information.
+
+.. versionchanged:: 1.0
+    If installed, python-dotenv will be used to load environment
+    variables from :file:`.env` and :file:`.flaskenv` files.
+
+    The :envvar:`FLASK_DEBUG` environment variable will override :attr:`debug`.
+
+    Threaded mode is enabled by default.
+
+.. versionchanged:: 0.10
+    The default port is now picked from the ``SERVER_NAME``
+    variable.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a9fdf58c1cab117030431936c2ef2119e}\index{flask.app.Flask@{flask.app.Flask}!select\_jinja\_autoescape@{select\_jinja\_autoescape}}
+\index{select\_jinja\_autoescape@{select\_jinja\_autoescape}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{select\_jinja\_autoescape()}{select\_jinja\_autoescape()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a9fdf58c1cab117030431936c2ef2119e} 
+ bool flask.\+app.\+Flask.\+select\+\_\+jinja\+\_\+autoescape (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns ``True`` if autoescaping should be active for the given
+template name. If no template name is given, returns `True`.
+
+.. versionchanged:: 2.2
+    Autoescaping is now enabled by default for ``.svg`` files.
+
+.. versionadded:: 0.5
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a7ef17228bdf1452d3ef5c33057056075}\index{flask.app.Flask@{flask.app.Flask}!send\_file\_max\_age\_default@{send\_file\_max\_age\_default}}
+\index{send\_file\_max\_age\_default@{send\_file\_max\_age\_default}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{send\_file\_max\_age\_default()}{send\_file\_max\_age\_default()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a7ef17228bdf1452d3ef5c33057056075} 
+ t.\+Optional\mbox{[}timedelta\mbox{]} flask.\+app.\+Flask.\+send\+\_\+file\+\_\+max\+\_\+age\+\_\+default (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The default value for ``max_age`` for :func:`~flask.send_file`. The default
+is ``None``, which tells the browser to use conditional requests instead of a
+timed cache.
+
+.. deprecated:: 2.2
+    Will be removed in Flask 2.3. Use
+    ``app.config["SEND_FILE_MAX_AGE_DEFAULT"]`` instead.
+
+.. versionchanged:: 2.0
+    Defaults to ``None`` instead of 12 hours.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_af7bf4f344012b39e3eeda233406a5f01}\index{flask.app.Flask@{flask.app.Flask}!session\_cookie\_name@{session\_cookie\_name}}
+\index{session\_cookie\_name@{session\_cookie\_name}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{session\_cookie\_name()}{session\_cookie\_name()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_af7bf4f344012b39e3eeda233406a5f01} 
+ str flask.\+app.\+Flask.\+session\+\_\+cookie\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The name of the cookie set by the session interface.
+
+.. deprecated:: 2.2
+    Will be removed in Flask 2.3. Use ``app.config["SESSION_COOKIE_NAME"]``
+    instead.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_ae5054d34ca6333428d76159ed02175cf}\index{flask.app.Flask@{flask.app.Flask}!shell\_context\_processor@{shell\_context\_processor}}
+\index{shell\_context\_processor@{shell\_context\_processor}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{shell\_context\_processor()}{shell\_context\_processor()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_ae5054d34ca6333428d76159ed02175cf} 
+ T\+\_\+shell\+\_\+context\+\_\+processor flask.\+app.\+Flask.\+shell\+\_\+context\+\_\+processor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{T\+\_\+shell\+\_\+context\+\_\+processor     }]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Registers a shell context processor function.
+
+.. versionadded:: 0.11
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a731e297f6e6623f4717233310d557c5b}\index{flask.app.Flask@{flask.app.Flask}!should\_ignore\_error@{should\_ignore\_error}}
+\index{should\_ignore\_error@{should\_ignore\_error}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{should\_ignore\_error()}{should\_ignore\_error()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a731e297f6e6623f4717233310d557c5b} 
+ bool flask.\+app.\+Flask.\+should\+\_\+ignore\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}Base\+Exception\mbox{]}}]{error}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is called to figure out if an error should be ignored
+or not as far as the teardown system is concerned.  If this
+function returns ``True`` then the teardown handlers will not be
+passed the error.
+
+.. versionadded:: 0.10
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a16dc89c36b290a6ff009d56f7c811d2e}\index{flask.app.Flask@{flask.app.Flask}!teardown\_appcontext@{teardown\_appcontext}}
+\index{teardown\_appcontext@{teardown\_appcontext}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{teardown\_appcontext()}{teardown\_appcontext()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a16dc89c36b290a6ff009d56f7c811d2e} 
+ T\+\_\+teardown flask.\+app.\+Flask.\+teardown\+\_\+appcontext (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{T\+\_\+teardown}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Registers a function to be called when the application
+context is popped. The application context is typically popped
+after the request context for each request, at the end of CLI
+commands, or after a manually pushed context ends.
+
+.. code-block:: python
+
+    with app.app_context():
+        ...
+
+When the ``with`` block exits (or ``ctx.pop()`` is called), the
+teardown functions are called just before the app context is
+made inactive. Since a request context typically also manages an
+application context it would also be called when you pop a
+request context.
+
+When a teardown function was called because of an unhandled
+exception it will be passed an error object. If an
+:meth:`errorhandler` is registered, it will handle the exception
+and the teardown will not receive it.
+
+Teardown functions must avoid raising exceptions. If they
+execute code that might fail they must surround that code with a
+``try``/``except`` block and log any errors.
+
+The return values of teardown functions are ignored.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a0837bd7e2409a2abe9af9bd84b838501}\index{flask.app.Flask@{flask.app.Flask}!template\_filter@{template\_filter}}
+\index{template\_filter@{template\_filter}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{template\_filter()}{template\_filter()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a0837bd7e2409a2abe9af9bd84b838501} 
+ t.\+Callable\mbox{[}\mbox{[}T\+\_\+template\+\_\+filter\mbox{]}, T\+\_\+template\+\_\+filter\mbox{]} flask.\+app.\+Flask.\+template\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A decorator that is used to register custom template filter.
+You can specify a name for the filter, otherwise the function
+name will be used. Example::
+
+  @app.template_filter()
+  def reverse(s):
+      return s[::-1]
+
+:param name: the optional name of the filter, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a32bce6b60b203d1b9a09bdbeae2972b8}\index{flask.app.Flask@{flask.app.Flask}!template\_global@{template\_global}}
+\index{template\_global@{template\_global}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{template\_global()}{template\_global()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a32bce6b60b203d1b9a09bdbeae2972b8} 
+ t.\+Callable\mbox{[}\mbox{[}T\+\_\+template\+\_\+global\mbox{]}, T\+\_\+template\+\_\+global\mbox{]} flask.\+app.\+Flask.\+template\+\_\+global (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A decorator that is used to register a custom template global function.
+You can specify a name for the global function, otherwise the function
+name will be used. Example::
+
+    @app.template_global()
+    def double(n):
+        return 2 * n
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the global function, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a6173940338dd40978ba89c79293c2cb0}\index{flask.app.Flask@{flask.app.Flask}!template\_test@{template\_test}}
+\index{template\_test@{template\_test}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{template\_test()}{template\_test()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a6173940338dd40978ba89c79293c2cb0} 
+ t.\+Callable\mbox{[}\mbox{[}T\+\_\+template\+\_\+test\mbox{]}, T\+\_\+template\+\_\+test\mbox{]} flask.\+app.\+Flask.\+template\+\_\+test (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A decorator that is used to register custom template test.
+You can specify a name for the test, otherwise the function
+name will be used. Example::
+
+  @app.template_test()
+  def is_prime(n):
+      if n == 2:
+          return True
+      for i in range(2, int(math.ceil(math.sqrt(n))) + 1):
+          if n % i == 0:
+              return False
+      return True
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the test, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_acfad1e71fa77ae6247064c07e011a038}\index{flask.app.Flask@{flask.app.Flask}!templates\_auto\_reload@{templates\_auto\_reload}}
+\index{templates\_auto\_reload@{templates\_auto\_reload}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{templates\_auto\_reload()}{templates\_auto\_reload()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_acfad1e71fa77ae6247064c07e011a038} 
+ bool flask.\+app.\+Flask.\+templates\+\_\+auto\+\_\+reload (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reload templates when they are changed. Used by
+:meth:`create_jinja_environment`. It is enabled by default in debug mode.
+
+.. deprecated:: 2.2
+    Will be removed in Flask 2.3. Use ``app.config["TEMPLATES_AUTO_RELOAD"]``
+    instead.
+
+.. versionadded:: 1.0
+    This property was added but the underlying config and behavior
+    already existed.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_ab710f0c85bd74e7ace426af2e8d97067}\index{flask.app.Flask@{flask.app.Flask}!test\_cli\_runner@{test\_cli\_runner}}
+\index{test\_cli\_runner@{test\_cli\_runner}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{test\_cli\_runner()}{test\_cli\_runner()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_ab710f0c85bd74e7ace426af2e8d97067} 
+ "{}Flask\+Cli\+Runner"{} flask.\+app.\+Flask.\+test\+\_\+cli\+\_\+runner (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a CLI runner for testing CLI commands.
+See :ref:`testing-cli`.
+
+Returns an instance of :attr:`test_cli_runner_class`, by default
+:class:`~flask.testing.FlaskCliRunner`. The Flask app object is
+passed as the first argument.
+
+.. versionadded:: 1.0
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_af19f8a6653f1af8d14408788bef92715}\index{flask.app.Flask@{flask.app.Flask}!test\_client@{test\_client}}
+\index{test\_client@{test\_client}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{test\_client()}{test\_client()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_af19f8a6653f1af8d14408788bef92715} 
+ "{}Flask\+Client"{} flask.\+app.\+Flask.\+test\+\_\+client (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{use\+\_\+cookies}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a test client for this application.  For information
+about unit testing head over to :doc:`/testing`.
+
+Note that if you are testing for assertions or exceptions in your
+application code, you must set ``app.testing = True`` in order for the
+exceptions to propagate to the test client.  Otherwise, the exception
+will be handled by the application (not visible to the test client) and
+the only indication of an AssertionError or other exception will be a
+500 status code response to the test client.  See the :attr:`testing`
+attribute.  For example::
+
+    app.testing = True
+    client = app.test_client()
+
+The test client can be used in a ``with`` block to defer the closing down
+of the context until the end of the ``with`` block.  This is useful if
+you want to access the context locals for testing::
+
+    with app.test_client() as c:
+        rv = c.get('/?vodka=42')
+        assert request.args['vodka'] == '42'
+
+Additionally, you may pass optional keyword arguments that will then
+be passed to the application's :attr:`test_client_class` constructor.
+For example::
+
+    from flask.testing import FlaskClient
+
+    class CustomClient(FlaskClient):
+        def __init__(self, *args, **kwargs):
+            self._authentication = kwargs.pop("authentication")
+            super(CustomClient,self).__init__( *args, **kwargs)
+
+    app.test_client_class = CustomClient
+    client = app.test_client(authentication='Basic ....')
+
+See :class:`~flask.testing.FlaskClient` for more information.
+
+.. versionchanged:: 0.4
+   added support for ``with`` block usage for the client.
+
+.. versionadded:: 0.7
+   The `use_cookies` parameter was added as well as the ability
+   to override the client to be used by setting the
+   :attr:`test_client_class` attribute.
+
+.. versionchanged:: 0.11
+   Added `**kwargs` to support passing additional keyword arguments to
+   the constructor of :attr:`test_client_class`.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_adeea51822f2aa564cb027b99cadfcb12}\index{flask.app.Flask@{flask.app.Flask}!test\_request\_context@{test\_request\_context}}
+\index{test\_request\_context@{test\_request\_context}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{test\_request\_context()}{test\_request\_context()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_adeea51822f2aa564cb027b99cadfcb12} 
+ \mbox{\hyperlink{classflask_1_1ctx_1_1_request_context}{Request\+Context}} flask.\+app.\+Flask.\+test\+\_\+request\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a :class:`~flask.ctx.RequestContext` for a WSGI
+environment created from the given values. This is mostly useful
+during testing, where you may want to run a function that uses
+request data without dispatching a full request.
+
+See :doc:`/reqcontext`.
+
+Use a ``with`` block to push the context, which will make
+:data:`request` point at the request for the created
+environment. ::
+
+    with test_request_context(...):
+        generate_report()
+
+When using the shell, it may be easier to push and pop the
+context manually to avoid indentation. ::
+
+    ctx = app.test_request_context(...)
+    ctx.push()
+    ...
+    ctx.pop()
+
+Takes the same arguments as Werkzeug's
+:class:`~werkzeug.test.EnvironBuilder`, with some defaults from
+the application. See the linked Werkzeug docs for most of the
+available arguments. Flask-specific behavior is listed here.
+
+:param path: URL path being requested.
+:param base_url: Base URL where the app is being served, which
+    ``path`` is relative to. If not given, built from
+    :data:`PREFERRED_URL_SCHEME`, ``subdomain``,
+    :data:`SERVER_NAME`, and :data:`APPLICATION_ROOT`.
+:param subdomain: Subdomain name to append to
+    :data:`SERVER_NAME`.
+:param url_scheme: Scheme to use instead of
+    :data:`PREFERRED_URL_SCHEME`.
+:param data: The request body, either as a string or a dict of
+    form keys and values.
+:param json: If given, this is serialized as JSON and passed as
+    ``data``. Also defaults ``content_type`` to
+    ``application/json``.
+:param args: other positional arguments passed to
+    :class:`~werkzeug.test.EnvironBuilder`.
+:param kwargs: other keyword arguments passed to
+    :class:`~werkzeug.test.EnvironBuilder`.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a7369ee02d20327a53e770374a61554c6}\index{flask.app.Flask@{flask.app.Flask}!trap\_http\_exception@{trap\_http\_exception}}
+\index{trap\_http\_exception@{trap\_http\_exception}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{trap\_http\_exception()}{trap\_http\_exception()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a7369ee02d20327a53e770374a61554c6} 
+ bool flask.\+app.\+Flask.\+trap\+\_\+http\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Exception}]{e}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if an HTTP exception should be trapped or not.  By default
+this will return ``False`` for all exceptions except for a bad request
+key error if ``TRAP_BAD_REQUEST_ERRORS`` is set to ``True``.  It
+also returns ``True`` if ``TRAP_HTTP_EXCEPTIONS`` is set to ``True``.
+
+This is called for all HTTP exceptions raised by a view function.
+If it returns ``True`` for any exception the error handler for this
+exception is not called and it shows up as regular exception in the
+traceback.  This is helpful for debugging implicitly raised HTTP
+exceptions.
+
+.. versionchanged:: 1.0
+    Bad request errors are not trapped by default in debug mode.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a50df5ab46d2602c1dc5e849b49dbf1f8}\index{flask.app.Flask@{flask.app.Flask}!update\_template\_context@{update\_template\_context}}
+\index{update\_template\_context@{update\_template\_context}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{update\_template\_context()}{update\_template\_context()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a50df5ab46d2602c1dc5e849b49dbf1f8} 
+ None flask.\+app.\+Flask.\+update\+\_\+template\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the template context with some commonly used variables.
+This injects request, session, config and g into the template
+context as well as everything template context processors want
+to inject.  Note that the as of Flask 0.6, the original values
+in the context will not be overridden if a context processor
+decides to return a value with the same key.
+
+:param context: the context as a dictionary that is updated in place
+                to add extra variables.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_ab3874c15e757e97255139a9c4bc62a82}\index{flask.app.Flask@{flask.app.Flask}!url\_for@{url\_for}}
+\index{url\_for@{url\_for}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{url\_for()}{url\_for()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_ab3874c15e757e97255139a9c4bc62a82} 
+ str flask.\+app.\+Flask.\+url\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{endpoint}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{\+\_\+anchor}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{\+\_\+method}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{\+\_\+scheme}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}bool\mbox{]} }]{\+\_\+external}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{values}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate a URL to the given endpoint with the given values.
+
+This is called by :func:`flask.url_for`, and can be called
+directly as well.
+
+An *endpoint* is the name of a URL rule, usually added with
+:meth:`@app.route() <route>`, and usually the same name as the
+view function. A route defined in a :class:`~flask.Blueprint`
+will prepend the blueprint's name separated by a ``.`` to the
+endpoint.
+
+In some cases, such as email messages, you want URLs to include
+the scheme and domain, like ``https://example.com/hello``. When
+not in an active request, URLs will be external by default, but
+this requires setting :data:`SERVER_NAME` so Flask knows what
+domain to use. :data:`APPLICATION_ROOT` and
+:data:`PREFERRED_URL_SCHEME` should also be configured as
+needed. This config is only used when not in an active request.
+
+Functions can be decorated with :meth:`url_defaults` to modify
+keyword arguments before the URL is built.
+
+If building fails for some reason, such as an unknown endpoint
+or incorrect values, the app's :meth:`handle_url_build_error`
+method is called. If that returns a string, that is returned,
+otherwise a :exc:`~werkzeug.routing.BuildError` is raised.
+
+:param endpoint: The endpoint name associated with the URL to
+    generate. If this starts with a ``.``, the current blueprint
+    name (if any) will be used.
+:param _anchor: If given, append this as ``#anchor`` to the URL.
+:param _method: If given, generate the URL associated with this
+    method for the endpoint.
+:param _scheme: If given, the URL will have this scheme if it
+    is external.
+:param _external: If given, prefer the URL to be internal
+    (False) or require it to be external (True). External URLs
+    include the scheme and domain. When not in an active
+    request, URLs are external by default.
+:param values: Values to use for the variable parts of the URL
+    rule. Unknown keys are appended as query string arguments,
+    like ``?a=b&c=d``.
+
+.. versionadded:: 2.2
+    Moved from ``flask.url_for``, which calls this method.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_aedecb0b9befbfcec169bed3ba75adc98}\index{flask.app.Flask@{flask.app.Flask}!use\_x\_sendfile@{use\_x\_sendfile}}
+\index{use\_x\_sendfile@{use\_x\_sendfile}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{use\_x\_sendfile()}{use\_x\_sendfile()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_aedecb0b9befbfcec169bed3ba75adc98} 
+ bool flask.\+app.\+Flask.\+use\+\_\+x\+\_\+sendfile (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enable this to use the ``X-Sendfile`` feature, assuming the server supports
+it, from :func:`~flask.send_file`.
+
+.. deprecated:: 2.2
+    Will be removed in Flask 2.3. Use ``app.config["USE_X_SENDFILE"]`` instead.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1app_1_1_flask_a10bfae357313cdad8e36147d0df48884}\index{flask.app.Flask@{flask.app.Flask}!wsgi\_app@{wsgi\_app}}
+\index{wsgi\_app@{wsgi\_app}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{wsgi\_app()}{wsgi\_app()}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_a10bfae357313cdad8e36147d0df48884} 
+ t.\+Any flask.\+app.\+Flask.\+wsgi\+\_\+app (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict}]{environ}{, }\item[{t.\+Callable}]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The actual WSGI application. This is not implemented in
+:meth:`__call__` so that middlewares can be applied without
+losing a reference to the app object. Instead of doing this::
+
+    app = MyMiddleware(app)
+
+It's a better idea to do this instead::
+
+    app.wsgi_app = MyMiddleware(app.wsgi_app)
+
+Then you still have the original application object around and
+can continue to call methods on it.
+
+.. versionchanged:: 0.7
+    Teardown events for the request and app contexts are called
+    even if an unhandled error occurs. Other events may not be
+    called depending on when an error occurs during dispatch.
+    See :ref:`callbacks-and-errors`.
+
+:param environ: A WSGI environment.
+:param start_response: A callable accepting a status code,
+    a list of headers, and an optional exception context to
+    start the response.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1app_1_1_flask_aa7dc0f714d6e610df314ca45f165dda4}\index{flask.app.Flask@{flask.app.Flask}!permanent\_session\_lifetime@{permanent\_session\_lifetime}}
+\index{permanent\_session\_lifetime@{permanent\_session\_lifetime}!flask.app.Flask@{flask.app.Flask}}
+\doxysubsubsection{\texorpdfstring{permanent\_session\_lifetime}{permanent\_session\_lifetime}}
+{\footnotesize\ttfamily \label{classflask_1_1app_1_1_flask_aa7dc0f714d6e610df314ca45f165dda4} 
+flask.\+app.\+Flask.\+permanent\+\_\+session\+\_\+lifetime\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConfigAttribute(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}PERMANENT\_SESSION\_LIFETIME"{}},\ get\_converter=\_make\_timedelta}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/app.\+py\end{DoxyCompactItemize}

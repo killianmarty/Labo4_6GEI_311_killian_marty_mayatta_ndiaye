@@ -1,0 +1,127 @@
+\doxysection{referencing.\+\_\+core.\+Resource Class Reference}
+\hypertarget{classreferencing_1_1__core_1_1_resource}{}\label{classreferencing_1_1__core_1_1_resource}\index{referencing.\_core.Resource@{referencing.\_core.Resource}}
+Inheritance diagram for referencing.\+\_\+core.\+Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classreferencing_1_1__core_1_1_resource}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_a0a64f07f56da88bdcca4af8693085b62}{from\+\_\+contents}} (cls, D contents,(type\mbox{[}\mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}}\mbox{[}D\mbox{]}\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}}\mbox{[}D\mbox{]}) default\+\_\+specification=\mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}})
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_add5b5181170fc3b46057eb3e89a13a1e}{opaque}} (cls, D contents)
+\item 
+URI\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_afd7315da333ab26bdd430f0751eadc75}{id}} (self)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_a79088e5e8ed3ffc9b457242bab120a47}{subresources}} (self)
+\item 
+Iterable\mbox{[}Anchor\+Type\mbox{[}D\mbox{]}\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_ab8065acbac4e70df4a3527137a16bb78}{anchors}} (self)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resolved}{Resolved}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_a5601556aae36fb769b2db98d8fc53a3a}{pointer}} (self, str pointer, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver}{Resolver}}\mbox{[}D\mbox{]} resolver)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource_a258a11e353d8851cd3af73ce8082df72}{contents}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classreferencing_1_1__core_1_1_resource_aec168cffc56bb26d124a789b415d8b44}\label{classreferencing_1_1__core_1_1_resource_aec168cffc56bb26d124a789b415d8b44} 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}} {\bfseries \+\_\+specification} = field(alias="{}specification"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A document (deserialized JSON) with a concrete interpretation under a spec.
+
+In other words, a Python object, along with an instance of `Specification`
+which describes how the document interacts with referencing -- both
+internally (how it refers to other `Resource`\ s) and externally (how it
+should be identified such that it is referenceable by other documents).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreferencing_1_1__core_1_1_resource_ab8065acbac4e70df4a3527137a16bb78}\index{referencing.\_core.Resource@{referencing.\_core.Resource}!anchors@{anchors}}
+\index{anchors@{anchors}!referencing.\_core.Resource@{referencing.\_core.Resource}}
+\doxysubsubsection{\texorpdfstring{anchors()}{anchors()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resource_ab8065acbac4e70df4a3527137a16bb78} 
+ Iterable\mbox{[}Anchor\+Type\mbox{[}D\mbox{]}\mbox{]} referencing.\+\_\+core.\+Resource.\+anchors (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve this resource's (specification-specific) identifier.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_resource_a0a64f07f56da88bdcca4af8693085b62}\index{referencing.\_core.Resource@{referencing.\_core.Resource}!from\_contents@{from\_contents}}
+\index{from\_contents@{from\_contents}!referencing.\_core.Resource@{referencing.\_core.Resource}}
+\doxysubsubsection{\texorpdfstring{from\_contents()}{from\_contents()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resource_a0a64f07f56da88bdcca4af8693085b62} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Resource.\+from\+\_\+contents (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{D}]{contents}{, }\item[{(             type\mbox{[}\mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}}\mbox{[}D\mbox{]}\mbox{]} \texorpdfstring{$\vert$}{|} \mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}}\mbox{[}D\mbox{]}         ) }]{default\+\_\+specification}{ = {\ttfamily \mbox{\hyperlink{classreferencing_1_1__core_1_1_specification}{Specification}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a resource guessing which specification applies to the contents.
+
+Raises:
+
+    `CannotDetermineSpecification`
+
+        if the given contents don't have any discernible
+        information which could be used to guess which
+        specification they identify as\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_resource_afd7315da333ab26bdd430f0751eadc75}\index{referencing.\_core.Resource@{referencing.\_core.Resource}!id@{id}}
+\index{id@{id}!referencing.\_core.Resource@{referencing.\_core.Resource}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resource_afd7315da333ab26bdd430f0751eadc75} 
+ URI \texorpdfstring{$\vert$}{|} None referencing.\+\_\+core.\+Resource.\+id (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve this resource's (specification-specific) identifier.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_resource_add5b5181170fc3b46057eb3e89a13a1e}\index{referencing.\_core.Resource@{referencing.\_core.Resource}!opaque@{opaque}}
+\index{opaque@{opaque}!referencing.\_core.Resource@{referencing.\_core.Resource}}
+\doxysubsubsection{\texorpdfstring{opaque()}{opaque()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resource_add5b5181170fc3b46057eb3e89a13a1e} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Resource.\+opaque (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{D}]{contents}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an opaque `Resource` -- i.e. one with opaque specification.
+
+See `Specification.OPAQUE` for details.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_resource_a5601556aae36fb769b2db98d8fc53a3a}\index{referencing.\_core.Resource@{referencing.\_core.Resource}!pointer@{pointer}}
+\index{pointer@{pointer}!referencing.\_core.Resource@{referencing.\_core.Resource}}
+\doxysubsubsection{\texorpdfstring{pointer()}{pointer()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resource_a5601556aae36fb769b2db98d8fc53a3a} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_resolved}{Resolved}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Resource.\+pointer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{pointer}{, }\item[{\mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver}{Resolver}}\mbox{[}D\mbox{]}}]{resolver}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve the given JSON pointer.
+
+Raises:
+
+    `exceptions.PointerToNowhere`
+
+        if the pointer points to a location not present in the document\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_resource_a79088e5e8ed3ffc9b457242bab120a47}\index{referencing.\_core.Resource@{referencing.\_core.Resource}!subresources@{subresources}}
+\index{subresources@{subresources}!referencing.\_core.Resource@{referencing.\_core.Resource}}
+\doxysubsubsection{\texorpdfstring{subresources()}{subresources()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resource_a79088e5e8ed3ffc9b457242bab120a47} 
+ Iterable\mbox{[}\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}\mbox{]} referencing.\+\_\+core.\+Resource.\+subresources (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve this resource's subresources.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreferencing_1_1__core_1_1_resource_a258a11e353d8851cd3af73ce8082df72}\index{referencing.\_core.Resource@{referencing.\_core.Resource}!contents@{contents}}
+\index{contents@{contents}!referencing.\_core.Resource@{referencing.\_core.Resource}}
+\doxysubsubsection{\texorpdfstring{contents}{contents}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resource_a258a11e353d8851cd3af73ce8082df72} 
+referencing.\+\_\+core.\+Resource.\+contents}
+
+
+
+Reimplemented in \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry_ab210406c98c0da33a821784fc718649b}{referencing.\+\_\+core.\+Registry}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/referencing/\+\_\+core.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\doxysection{jsonschema.\+cli Namespace Reference}
+\hypertarget{namespacejsonschema_1_1cli}{}\label{namespacejsonschema_1_1cli}\index{jsonschema.cli@{jsonschema.cli}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1cli_1_1___cannot_load_file}{\+\_\+\+Cannot\+Load\+File}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1cli_1_1___outputter}{\+\_\+\+Outputter}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1cli_1_1___plain_formatter}{\+\_\+\+Plain\+Formatter}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1cli_1_1___pretty_formatter}{\+\_\+\+Pretty\+Formatter}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_aa0dd4429fab76402874a81c02aaa9ce4}\label{namespacejsonschema_1_1cli_aa0dd4429fab76402874a81c02aaa9ce4} 
+{\bfseries \+\_\+resolve\+\_\+name\+\_\+with\+\_\+default} (name)
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_a7de512dbb07f9a678ba920ea2ff180d4}\label{namespacejsonschema_1_1cli_a7de512dbb07f9a678ba920ea2ff180d4} 
+{\bfseries parse\+\_\+args} (args)
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_a5afe773f69d1f36b945586bedb6dd1d9}\label{namespacejsonschema_1_1cli_a5afe773f69d1f36b945586bedb6dd1d9} 
+{\bfseries \+\_\+validate\+\_\+instance} (instance\+\_\+path, instance, validator, outputter)
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_aa8a44669b2013b54d214f02ed5c901c7}\label{namespacejsonschema_1_1cli_aa8a44669b2013b54d214f02ed5c901c7} 
+{\bfseries main} (args=sys.\+argv\mbox{[}1\+:\mbox{]})
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_a3b417085877d3b5322a12112eb5f662c}\label{namespacejsonschema_1_1cli_a3b417085877d3b5322a12112eb5f662c} 
+{\bfseries run} (arguments, stdout=sys.\+stdout, stderr=sys.\+stderr, stdin=sys.\+stdin)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_aae183688b61bad74f7f19052ebbab040}\label{namespacejsonschema_1_1cli_aae183688b61bad74f7f19052ebbab040} 
+{\bfseries stacklevel}
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1cli_ab9975e84aa1323a1a7fd3c88fbb9e439}{parser}}
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_a3793ae04c8a8f7b0c1dd2b647890ea8f}\label{namespacejsonschema_1_1cli_a3793ae04c8a8f7b0c1dd2b647890ea8f} 
+{\bfseries action}
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_a1257432c8e1e5690b55d74cd26a62a60}\label{namespacejsonschema_1_1cli_a1257432c8e1e5690b55d74cd26a62a60} 
+{\bfseries dest}
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_a62005f0ed7fe36302c217df9e255ccdf}\label{namespacejsonschema_1_1cli_a62005f0ed7fe36302c217df9e255ccdf} 
+{\bfseries help}
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_a15a59cba5d6d737a24108b69aea07a33}\label{namespacejsonschema_1_1cli_a15a59cba5d6d737a24108b69aea07a33} 
+{\bfseries choices}
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_a1f27b828098ccb112a001e98eb16562e}\label{namespacejsonschema_1_1cli_a1f27b828098ccb112a001e98eb16562e} 
+{\bfseries default}
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_a5118df4b8bdc298c11b011cab03198b3}\label{namespacejsonschema_1_1cli_a5118df4b8bdc298c11b011cab03198b3} 
+{\bfseries type}
+\item 
+\Hypertarget{namespacejsonschema_1_1cli_addd5c397f3d1013869b95affb69bfa42}\label{namespacejsonschema_1_1cli_addd5c397f3d1013869b95affb69bfa42} 
+{\bfseries version}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The ``jsonschema`` command line.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacejsonschema_1_1cli_ab9975e84aa1323a1a7fd3c88fbb9e439}\index{jsonschema.cli@{jsonschema.cli}!parser@{parser}}
+\index{parser@{parser}!jsonschema.cli@{jsonschema.cli}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1cli_ab9975e84aa1323a1a7fd3c88fbb9e439} 
+jsonschema.\+cli.\+parser}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ argparse.ArgumentParser(}
+\DoxyCodeLine{00002\ \ \ \ \ description=\textcolor{stringliteral}{"{}JSON\ Schema\ Validation\ CLI"{}},}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}

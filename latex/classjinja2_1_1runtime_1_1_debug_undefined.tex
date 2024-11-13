@@ -1,0 +1,96 @@
+\doxysection{jinja2.\+runtime.\+Debug\+Undefined Class Reference}
+\hypertarget{classjinja2_1_1runtime_1_1_debug_undefined}{}\label{classjinja2_1_1runtime_1_1_debug_undefined}\index{jinja2.runtime.DebugUndefined@{jinja2.runtime.DebugUndefined}}
+Inheritance diagram for jinja2.\+runtime.\+Debug\+Undefined\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjinja2_1_1runtime_1_1_debug_undefined}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classjinja2_1_1runtime_1_1_debug_undefined_a74029eed532813c4ddfbd7fbf28c053b}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classjinja2_1_1runtime_1_1_undefined}{jinja2.\+runtime.\+Undefined}}}
+\begin{DoxyCompactItemize}
+\item 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}str\mbox{]} hint=None, t.\+Any obj=missing, t.\+Optional\mbox{[}str\mbox{]} name=None, t.\+Type\mbox{[}\mbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_runtime_error}{Template\+Runtime\+Error}}\mbox{]} exc=\mbox{\hyperlink{classjinja2_1_1exceptions_1_1_undefined_error}{Undefined\+Error}})
+\item 
+t.\+Any {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, str name)
+\item 
+bool {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, t.\+Any other)
+\item 
+bool {\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, t.\+Any other)
+\item 
+int {\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+int {\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+t.\+Iterator\mbox{[}t.\+Any\mbox{]} {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+t.\+Async\+Iterator\mbox{[}t.\+Any\mbox{]} {\bfseries \+\_\+\+\_\+aiter\+\_\+\+\_\+} (self)
+\item 
+bool {\bfseries \+\_\+\+\_\+bool\+\_\+\+\_\+} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjinja2_1_1runtime_1_1_debug_undefined_af35e32d476fe3b6d581d111f31f5bbcc}\label{classjinja2_1_1runtime_1_1_debug_undefined_af35e32d476fe3b6d581d111f31f5bbcc} 
+{\bfseries \+\_\+undefined\+\_\+hint}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classjinja2_1_1runtime_1_1_undefined}{jinja2.\+runtime.\+Undefined}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+undefined\+\_\+hint} = hint
+\item 
+{\bfseries \+\_\+undefined\+\_\+obj} = obj
+\item 
+{\bfseries \+\_\+undefined\+\_\+name} = name
+\item 
+{\bfseries \+\_\+undefined\+\_\+exception} = exc
+\item 
+{\bfseries \+\_\+undefined\+\_\+message}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classjinja2_1_1runtime_1_1_undefined}{jinja2.\+runtime.\+Undefined}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classjinja2_1_1runtime_1_1_undefined_aabb255113b922b275cd184482bdd7629}{\+\_\+undefined\+\_\+message}} (self)
+\item 
+"{}te.\+No\+Return"{} \mbox{\hyperlink{classjinja2_1_1runtime_1_1_undefined_a016a637ab04793a6dcc75979af5a3ea6}{\+\_\+fail\+\_\+with\+\_\+undefined\+\_\+error}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An undefined that returns the debug info when printed.
+
+>>> foo = DebugUndefined(name='foo')
+>>> str(foo)
+'{{ foo }}'
+>>> not foo
+True
+>>> foo + 42
+Traceback (most recent call last):
+  ...
+jinja2.exceptions.UndefinedError: 'foo' is undefined
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjinja2_1_1runtime_1_1_debug_undefined_a74029eed532813c4ddfbd7fbf28c053b}\index{jinja2.runtime.DebugUndefined@{jinja2.runtime.DebugUndefined}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!jinja2.runtime.DebugUndefined@{jinja2.runtime.DebugUndefined}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_debug_undefined_a74029eed532813c4ddfbd7fbf28c053b} 
+ str jinja2.\+runtime.\+Debug\+Undefined.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classjinja2_1_1runtime_1_1_undefined}{jinja2.\+runtime.\+Undefined}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/jinja2/runtime.\+py\end{DoxyCompactItemize}

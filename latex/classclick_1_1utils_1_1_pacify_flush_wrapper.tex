@@ -1,0 +1,35 @@
+\doxysection{Référence de la classe click.\+utils.\+Pacify\+Flush\+Wrapper}
+\hypertarget{classclick_1_1utils_1_1_pacify_flush_wrapper}{}\label{classclick_1_1utils_1_1_pacify_flush_wrapper}\index{click.utils.PacifyFlushWrapper@{click.utils.PacifyFlushWrapper}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1utils_1_1_pacify_flush_wrapper_a4f17b37a849716439be316342dc52e52}\label{classclick_1_1utils_1_1_pacify_flush_wrapper_a4f17b37a849716439be316342dc52e52} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+IO\mbox{[}t.\+Any\mbox{]} wrapped)
+\item 
+\Hypertarget{classclick_1_1utils_1_1_pacify_flush_wrapper_ac0c71b52fd0106f2818ea468f1a98244}\label{classclick_1_1utils_1_1_pacify_flush_wrapper_ac0c71b52fd0106f2818ea468f1a98244} 
+None {\bfseries flush} (self)
+\item 
+\Hypertarget{classclick_1_1utils_1_1_pacify_flush_wrapper_ad935c79955b8d4c8d5942b05cc2d8600}\label{classclick_1_1utils_1_1_pacify_flush_wrapper_ad935c79955b8d4c8d5942b05cc2d8600} 
+t.\+Any {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, str attr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1utils_1_1_pacify_flush_wrapper_ac1d5e2abb66704b2e9a74e11b0050a7b}\label{classclick_1_1utils_1_1_pacify_flush_wrapper_ac1d5e2abb66704b2e9a74e11b0050a7b} 
+{\bfseries wrapped} = wrapped
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This wrapper is used to catch and suppress BrokenPipeErrors resulting
+from ``.flush()`` being called on broken pipe during the shutdown/final-GC
+of the Python interpreter. Notably ``.flush()`` is always called on
+``sys.stdout`` and ``sys.stderr``. So as to have minimal impact on any
+other cleanup code, and the case where the underlying file is not a broken
+pipe, all calls and attributes are proxied.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/utils.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\doxysection{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Default\+Download\+Progress\+Bar Class Reference}
+\hypertarget{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_default_download_progress_bar}{}\label{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_default_download_progress_bar}\index{pip.\_internal.cli.progress\_bars.DefaultDownloadProgressBar@{pip.\_internal.cli.progress\_bars.DefaultDownloadProgressBar}}
+Inheritance diagram for pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Default\+Download\+Progress\+Bar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.051282cm]{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_default_download_progress_bar}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_windows_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Windows\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_interruptible_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Interruptible\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_interruptible_mixin_a564a4da8a2f5d5c9f473c90ddabe89a0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_interruptible_mixin_a11208002ef982ee72aa80f0d5dd216db}{finish}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_interruptible_mixin_ad282135a0353dba28dba9c7ff6621875}{handle\+\_\+sigint}} (self, signum, frame)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Download\+Progress\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+{\bfseries downloaded} (self)
+\item 
+{\bfseries download\+\_\+speed} (self)
+\item 
+{\bfseries pretty\+\_\+eta} (self)
+\item 
+{\bfseries iter} (self, it)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_windows_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Windows\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\# type ignore {\bfseries hide\+\_\+cursor}
+\item 
+{\bfseries file} = \mbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_ansi_to_win32}{colorama.\+Ansi\+To\+Win32}}(self.\+file)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_interruptible_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Interruptible\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries original\+\_\+handler} = signal(SIGINT, self.\+handle\+\_\+sigint)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Download\+Progress\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_mixin_a8e7450e12acacbd086a71a774ce2fdbe}{message}}
+\item 
+{\bfseries index}
+\item 
+float {\bfseries avg} = 0.\+0\+:
+\item 
+\# type ignore {\bfseries eta}
+\item 
+{\bfseries eta\+\_\+td}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_base_download_progress_bar}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Base\+Download\+Progress\+Bar}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries file} = sys.\+stdout
+\item 
+str {\bfseries message} = "{}\%(percent)d\%\%"{}
+\item 
+str {\bfseries suffix} = "{}\%(downloaded)s \%(download\+\_\+speed)s \%(pretty\+\_\+eta)s"{}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/cli/progress\+\_\+bars.\+py\end{DoxyCompactItemize}

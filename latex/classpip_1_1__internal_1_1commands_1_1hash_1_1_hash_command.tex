@@ -1,0 +1,120 @@
+\doxysection{pip.\+\_\+internal.\+commands.\+hash.\+Hash\+Command Class Reference}
+\hypertarget{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command}{}\label{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command}\index{pip.\_internal.commands.hash.HashCommand@{pip.\_internal.commands.hash.HashCommand}}
+Inheritance diagram for pip.\+\_\+internal.\+commands.\+hash.\+Hash\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_a26021bf805c339db187020c42e954f63}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kw)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_abf1fb0cbaa9582a72963362481c169b4}{run}} (self, options, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a61150bcbabc0e311e66297583c80d7bb}{handle\+\_\+pip\+\_\+version\+\_\+check}} (self, options)
+\item 
+{\bfseries parse\+\_\+args} (self, args)
+\item 
+{\bfseries main} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries main\+\_\+context} (self)
+\item 
+{\bfseries enter\+\_\+context} (self, context\+\_\+provider)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_a6915d222da8f56a465680a80a8f3be72}\label{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_a6915d222da8f56a465680a80a8f3be72} 
+{\bfseries cmd\+\_\+opts}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries name} = name
+\item 
+{\bfseries summary} = summary
+\item 
+{\bfseries parser} = \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser}{Config\+Option\+Parser}}(\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}parser\+\_\+kw)
+\item 
+{\bfseries tempdir\+\_\+registry} = None
+\item 
+{\bfseries cmd\+\_\+opts} = optparse.\+Option\+Group(self.\+parser, optgroup\+\_\+name)
+\item 
+{\bfseries verbosity} = options.\+verbose -\/ options.\+quiet
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_a2bac2a7c91274345ec778f5736e92250}\label{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_a2bac2a7c91274345ec778f5736e92250} 
+str {\bfseries usage} = \textquotesingle{}\%prog \mbox{[}options\mbox{]} $<$file$>$ ...\textquotesingle{}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_a5552a64ccbb82d2f6cb25af2c8effdb9}\label{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_a5552a64ccbb82d2f6cb25af2c8effdb9} 
+bool {\bfseries ignore\+\_\+require\+\_\+venv} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries usage} = None
+\item 
+bool {\bfseries ignore\+\_\+require\+\_\+venv} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+main} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries \+\_\+in\+\_\+main\+\_\+context} = False
+\item 
+{\bfseries \+\_\+main\+\_\+context} = \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{Exit\+Stack}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Compute a hash of a local package archive.
+
+These can be used with --hash in a requirements file to do repeatable
+installs.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_a26021bf805c339db187020c42e954f63}\index{pip.\_internal.commands.hash.HashCommand@{pip.\_internal.commands.hash.HashCommand}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.commands.hash.HashCommand@{pip.\_internal.commands.hash.HashCommand}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_a26021bf805c339db187020c42e954f63} 
+pip.\+\_\+internal.\+commands.\+hash.\+Hash\+Command.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kw}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_abf1fb0cbaa9582a72963362481c169b4}\index{pip.\_internal.commands.hash.HashCommand@{pip.\_internal.commands.hash.HashCommand}!run@{run}}
+\index{run@{run}!pip.\_internal.commands.hash.HashCommand@{pip.\_internal.commands.hash.HashCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1hash_1_1_hash_command_abf1fb0cbaa9582a72963362481c169b4} 
+pip.\+\_\+internal.\+commands.\+hash.\+Hash\+Command.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{options}{, }\item[{}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/commands/hash.\+py\end{DoxyCompactItemize}

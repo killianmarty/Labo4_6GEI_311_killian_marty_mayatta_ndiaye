@@ -1,0 +1,168 @@
+\doxysection{pkg\+\_\+resources.\+Default\+Provider Class Reference}
+\hypertarget{classpkg__resources_1_1_default_provider}{}\label{classpkg__resources_1_1_default_provider}\index{pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}}
+Inheritance diagram for pkg\+\_\+resources.\+Default\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpkg__resources_1_1_default_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_default_provider_a4c9855e147587806357d2de4b81096dd}{get\+\_\+resource\+\_\+stream}} (self, manager, resource\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpkg__resources_1_1_egg_provider}{pkg\+\_\+resources.\+Egg\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_egg_provider_a6958ca93b1b4086b9604c4ef36b8404f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, module)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries get\+\_\+resource\+\_\+filename} (self, manager, resource\+\_\+name)
+\item 
+{\bfseries get\+\_\+resource\+\_\+string} (self, manager, resource\+\_\+name)
+\item 
+{\bfseries has\+\_\+resource} (self, resource\+\_\+name)
+\item 
+{\bfseries has\+\_\+metadata} (self, name)
+\item 
+{\bfseries get\+\_\+metadata} (self, name)
+\item 
+{\bfseries get\+\_\+metadata\+\_\+lines} (self, name)
+\item 
+{\bfseries resource\+\_\+isdir} (self, resource\+\_\+name)
+\item 
+{\bfseries metadata\+\_\+isdir} (self, name)
+\item 
+{\bfseries resource\+\_\+listdir} (self, resource\+\_\+name)
+\item 
+{\bfseries metadata\+\_\+listdir} (self, name)
+\item 
+{\bfseries run\+\_\+script} (self, script\+\_\+name, namespace)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpkg__resources_1_1_default_provider_a097b39f89a64883eaa35a1aaf3266060}\label{classpkg__resources_1_1_default_provider_a097b39f89a64883eaa35a1aaf3266060} 
+{\bfseries module\+\_\+path}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpkg__resources_1_1_egg_provider}{pkg\+\_\+resources.\+Egg\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries egg\+\_\+name} = os.\+path.\+basename(path)
+\item 
+{\bfseries egg\+\_\+info} = os.\+path.\+join(path, \textquotesingle{}EGG-\/INFO\textquotesingle{})
+\item 
+{\bfseries egg\+\_\+root} = path
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries module\+\_\+path} = os.\+path.\+dirname(getattr(module, \textquotesingle{}\+\_\+\+\_\+file\+\_\+\+\_\+\textquotesingle{}, \textquotesingle{}\textquotesingle{}))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_default_provider_a12a7198dba453ff92fdc34e33527339a}{\+\_\+has}} (self, path)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_default_provider_af639ca622e9c93996347991280cbf089}{\+\_\+isdir}} (self, path)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_default_provider_acb32740c095d0ddc59c36cfcb036be26}{\+\_\+listdir}} (self, path)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_default_provider_ac2bf2a90dd08fdeab50a2401566375cc}{\+\_\+get}} (self, path)
+\item 
+\Hypertarget{classpkg__resources_1_1_default_provider_affe4d0878edc31a6e8c2981cfb8216e0}\label{classpkg__resources_1_1_default_provider_affe4d0878edc31a6e8c2981cfb8216e0} 
+{\bfseries \+\_\+register} (cls)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpkg__resources_1_1_egg_provider}{pkg\+\_\+resources.\+Egg\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+setup\+\_\+prefix} (self)
+\item 
+{\bfseries \+\_\+set\+\_\+egg} (self, path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+get\+\_\+metadata\+\_\+path} (self, name)
+\item 
+{\bfseries \+\_\+fn} (self, base, resource\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries egg\+\_\+name} = None
+\item 
+{\bfseries egg\+\_\+info} = None
+\item 
+{\bfseries loader} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_null_provider_a86693448151eee8506b4554c0e31c02f}{\+\_\+validate\+\_\+resource\+\_\+path}} (path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provides access to package resources in the filesystem\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpkg__resources_1_1_default_provider_ac2bf2a90dd08fdeab50a2401566375cc}\index{pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}!\_get@{\_get}}
+\index{\_get@{\_get}!pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}}
+\doxysubsubsection{\texorpdfstring{\_get()}{\_get()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_default_provider_ac2bf2a90dd08fdeab50a2401566375cc} 
+pkg\+\_\+resources.\+Default\+Provider.\+\_\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}.
+
+\Hypertarget{classpkg__resources_1_1_default_provider_a12a7198dba453ff92fdc34e33527339a}\index{pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}!\_has@{\_has}}
+\index{\_has@{\_has}!pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}}
+\doxysubsubsection{\texorpdfstring{\_has()}{\_has()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_default_provider_a12a7198dba453ff92fdc34e33527339a} 
+pkg\+\_\+resources.\+Default\+Provider.\+\_\+has (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}.
+
+\Hypertarget{classpkg__resources_1_1_default_provider_af639ca622e9c93996347991280cbf089}\index{pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}!\_isdir@{\_isdir}}
+\index{\_isdir@{\_isdir}!pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}}
+\doxysubsubsection{\texorpdfstring{\_isdir()}{\_isdir()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_default_provider_af639ca622e9c93996347991280cbf089} 
+pkg\+\_\+resources.\+Default\+Provider.\+\_\+isdir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}.
+
+\Hypertarget{classpkg__resources_1_1_default_provider_acb32740c095d0ddc59c36cfcb036be26}\index{pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}!\_listdir@{\_listdir}}
+\index{\_listdir@{\_listdir}!pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}}
+\doxysubsubsection{\texorpdfstring{\_listdir()}{\_listdir()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_default_provider_acb32740c095d0ddc59c36cfcb036be26} 
+pkg\+\_\+resources.\+Default\+Provider.\+\_\+listdir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}.
+
+\Hypertarget{classpkg__resources_1_1_default_provider_a4c9855e147587806357d2de4b81096dd}\index{pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}!get\_resource\_stream@{get\_resource\_stream}}
+\index{get\_resource\_stream@{get\_resource\_stream}!pkg\_resources.DefaultProvider@{pkg\_resources.DefaultProvider}}
+\doxysubsubsection{\texorpdfstring{get\_resource\_stream()}{get\_resource\_stream()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_default_provider_a4c9855e147587806357d2de4b81096dd} 
+pkg\+\_\+resources.\+Default\+Provider.\+get\+\_\+resource\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{manager}{, }\item[{}]{resource\+\_\+name}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pkg\+\_\+resources/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

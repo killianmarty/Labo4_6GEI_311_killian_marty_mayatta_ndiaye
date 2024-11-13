@@ -1,0 +1,68 @@
+\doxysection{plot\+\_\+parallel\+\_\+betweenness Namespace Reference}
+\hypertarget{namespaceplot__parallel__betweenness}{}\label{namespaceplot__parallel__betweenness}\index{plot\_parallel\_betweenness@{plot\_parallel\_betweenness}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplot__parallel__betweenness_a4b6ee9d5daa734d0812a0d97e7188c56}{chunks}} (l, n)
+\item 
+\mbox{\hyperlink{namespaceplot__parallel__betweenness_ab2a1e6a005c630e6fb0cc28b8e31edc7}{betweenness\+\_\+centrality\+\_\+parallel}} (G, processes=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__parallel__betweenness_ae72acd07b6fdbd677b133ab23c70a221}\label{namespaceplot__parallel__betweenness_ae72acd07b6fdbd677b133ab23c70a221} 
+{\bfseries G\+\_\+ba} = nx.\+barabasi\+\_\+albert\+\_\+graph(1000, 3)
+\item 
+\Hypertarget{namespaceplot__parallel__betweenness_a9731ff361a8c9ed5b91730c092e39cff}\label{namespaceplot__parallel__betweenness_a9731ff361a8c9ed5b91730c092e39cff} 
+{\bfseries G\+\_\+er} = nx.\+gnp\+\_\+random\+\_\+graph(1000, 0.\+01)
+\item 
+\Hypertarget{namespaceplot__parallel__betweenness_a482003f6c1ab419fa7e1a012131a109f}\label{namespaceplot__parallel__betweenness_a482003f6c1ab419fa7e1a012131a109f} 
+{\bfseries G\+\_\+ws} = nx.\+connected\+\_\+watts\+\_\+strogatz\+\_\+graph(1000, 4, 0.\+1)
+\item 
+\Hypertarget{namespaceplot__parallel__betweenness_a2ad5c57ac685472a48912b89fc7fc0f0}\label{namespaceplot__parallel__betweenness_a2ad5c57ac685472a48912b89fc7fc0f0} 
+{\bfseries start} = time.\+time()
+\item 
+\Hypertarget{namespaceplot__parallel__betweenness_ab0de598d353ebbcd7b37f9d63d9e5e1b}\label{namespaceplot__parallel__betweenness_ab0de598d353ebbcd7b37f9d63d9e5e1b} 
+{\bfseries bt} = \mbox{\hyperlink{namespaceplot__parallel__betweenness_ab2a1e6a005c630e6fb0cc28b8e31edc7}{betweenness\+\_\+centrality\+\_\+parallel}}(G)
+\item 
+\Hypertarget{namespaceplot__parallel__betweenness_ad6bb279dc486a0dc35e22633e9f4353d}\label{namespaceplot__parallel__betweenness_ad6bb279dc486a0dc35e22633e9f4353d} 
+{\bfseries node\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}====================
+Parallel Betweenness
+====================
+
+Example of parallel implementation of betweenness centrality using the
+multiprocessing module from Python Standard Library.
+
+The function betweenness centrality accepts a bunch of nodes and computes
+the contribution of those nodes to the betweenness centrality of the whole
+network. Here we divide the network in chunks of nodes and we compute their
+contribution to the betweenness centrality of the whole network.
+
+Note: The example output below shows that the non-parallel implementation is
+faster. This is a limitation of our CI/CD pipeline running on a single core.
+
+Depending on your setup, you will likely observe a speedup.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceplot__parallel__betweenness_ab2a1e6a005c630e6fb0cc28b8e31edc7}\index{plot\_parallel\_betweenness@{plot\_parallel\_betweenness}!betweenness\_centrality\_parallel@{betweenness\_centrality\_parallel}}
+\index{betweenness\_centrality\_parallel@{betweenness\_centrality\_parallel}!plot\_parallel\_betweenness@{plot\_parallel\_betweenness}}
+\doxysubsubsection{\texorpdfstring{betweenness\_centrality\_parallel()}{betweenness\_centrality\_parallel()}}
+{\footnotesize\ttfamily \label{namespaceplot__parallel__betweenness_ab2a1e6a005c630e6fb0cc28b8e31edc7} 
+plot\+\_\+parallel\+\_\+betweenness.\+betweenness\+\_\+centrality\+\_\+parallel (\begin{DoxyParamCaption}\item[{}]{G}{, }\item[{}]{processes}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parallel betweenness centrality  function\end{DoxyVerb}
+ \Hypertarget{namespaceplot__parallel__betweenness_a4b6ee9d5daa734d0812a0d97e7188c56}\index{plot\_parallel\_betweenness@{plot\_parallel\_betweenness}!chunks@{chunks}}
+\index{chunks@{chunks}!plot\_parallel\_betweenness@{plot\_parallel\_betweenness}}
+\doxysubsubsection{\texorpdfstring{chunks()}{chunks()}}
+{\footnotesize\ttfamily \label{namespaceplot__parallel__betweenness_a4b6ee9d5daa734d0812a0d97e7188c56} 
+plot\+\_\+parallel\+\_\+betweenness.\+chunks (\begin{DoxyParamCaption}\item[{}]{l}{, }\item[{}]{n}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Divide a list of nodes `l` in `n` chunks\end{DoxyVerb}
+ 

@@ -1,0 +1,182 @@
+\doxysection{pip.\+\_\+internal.\+commands.\+install.\+Install\+Command Class Reference}
+\hypertarget{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command}{}\label{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command}\index{pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}}
+Inheritance diagram for pip.\+\_\+internal.\+commands.\+install.\+Install\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.912281cm]{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_ad8961e69168bd3e46485ad3260f6b2cb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kw)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_a6ec27c61522a3f8dba27da5ba9bd267a}{run}} (self, options, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_requirement_command}{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Requirement\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_requirement_command_ad00d4b1b32e2a1fb26c969b6d105631f}{get\+\_\+requirements}} (self, args, options, finder, session, check\+\_\+supported\+\_\+wheels=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_index_group_command}{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Index\+Group\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_index_group_command_acadb8dd5eb94efc64340fdd87bdd093a}{handle\+\_\+pip\+\_\+version\+\_\+check}} (self, options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries parse\+\_\+args} (self, args)
+\item 
+{\bfseries main} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries main\+\_\+context} (self)
+\item 
+{\bfseries enter\+\_\+context} (self, context\+\_\+provider)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin}{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Session\+Command\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_a23e0b3740205e2232ec84007089482d0}{get\+\_\+default\+\_\+session}} (self, options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_af05b7f840ee83e69164efd264c1ffbf0}{usage}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries usage} = None
+\item 
+bool {\bfseries ignore\+\_\+require\+\_\+venv} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_a626998bd41b7e74da33f06f56de37c45}\label{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_a626998bd41b7e74da33f06f56de37c45} 
+{\bfseries \+\_\+handle\+\_\+target\+\_\+dir} (self, target\+\_\+dir, target\+\_\+temp\+\_\+dir, upgrade)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_af6844861c96080fbd76bf80822646d9d}\label{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_af6844861c96080fbd76bf80822646d9d} 
+{\bfseries \+\_\+warn\+\_\+about\+\_\+conflicts} (self, to\+\_\+install)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_requirement_command}{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Requirement\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_requirement_command_a5c149b686c94e880624bc8527c32085e}{\+\_\+build\+\_\+package\+\_\+finder}} (self, options, session, target\+\_\+python=None, ignore\+\_\+requires\+\_\+python=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+main} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin}{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Session\+Command\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_ad5bef4a1c8f8eeb06a45741a0098f981}{\+\_\+get\+\_\+index\+\_\+urls}} (cls, options)
+\item 
+{\bfseries \+\_\+build\+\_\+session} (self, options, retries=None, timeout=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_requirement_command}{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Requirement\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_requirement_command_a7ec98ae51dbc33e2fd6652ed4195213b}{make\+\_\+requirement\+\_\+preparer}} (temp\+\_\+build\+\_\+dir, options, req\+\_\+tracker, session, finder, use\+\_\+user\+\_\+site, download\+\_\+dir=None, wheel\+\_\+download\+\_\+dir=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_requirement_command_a49cbe321371636ea1c0d5bc1ec7de1ff}{make\+\_\+resolver}} (preparer, finder, options, wheel\+\_\+cache=None, use\+\_\+user\+\_\+site=False, ignore\+\_\+installed=True, ignore\+\_\+requires\+\_\+python=False, force\+\_\+reinstall=False, upgrade\+\_\+strategy="{}to-\/satisfy-\/only"{}, use\+\_\+pep517=None, py\+\_\+version\+\_\+info=None \# type\+:\+Optional\mbox{[}Tuple\mbox{[}int,...\mbox{]}\mbox{]})
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_requirement_command_a91bb8a88f434d1be62ba1da132bf685d}{trace\+\_\+basic\+\_\+info}} (finder)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries name} = name
+\item 
+{\bfseries summary} = summary
+\item 
+{\bfseries parser} = \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser}{Config\+Option\+Parser}}(\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}parser\+\_\+kw)
+\item 
+{\bfseries tempdir\+\_\+registry} = None
+\item 
+{\bfseries cmd\+\_\+opts} = optparse.\+Option\+Group(self.\+parser, optgroup\+\_\+name)
+\item 
+{\bfseries verbosity} = options.\+verbose -\/ options.\+quiet
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries \+\_\+in\+\_\+main\+\_\+context} = False
+\item 
+{\bfseries \+\_\+main\+\_\+context} = \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{Exit\+Stack}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin}{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Session\+Command\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+session} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Install packages from:
+
+- PyPI (and other indexes) using requirement specifiers.
+- VCS project urls.
+- Local project directories.
+- Local or remote source archives.
+
+pip also supports installing from "requirements files", which provide
+an easy way to specify a whole environment to be installed.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_ad8961e69168bd3e46485ad3260f6b2cb}\index{pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_ad8961e69168bd3e46485ad3260f6b2cb} 
+pip.\+\_\+internal.\+commands.\+install.\+Install\+Command.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kw}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_requirement_command}{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Requirement\+Command}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_a6ec27c61522a3f8dba27da5ba9bd267a}\index{pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}!run@{run}}
+\index{run@{run}!pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_a6ec27c61522a3f8dba27da5ba9bd267a} 
+pip.\+\_\+internal.\+commands.\+install.\+Install\+Command.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{options}{, }\item[{}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_af05b7f840ee83e69164efd264c1ffbf0}\index{pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}!usage@{usage}}
+\index{usage@{usage}!pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}}
+\doxysubsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_af05b7f840ee83e69164efd264c1ffbf0} 
+str pip.\+\_\+internal.\+commands.\+install.\+Install\+Command.\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \%prog\ [options]\ <requirement\ specifier>\ [package-\/index-\/options]\ ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \%prog\ [options]\ -\/r\ <requirements\ file>\ [package-\/index-\/options]\ ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \%prog\ [options]\ [-\/e]\ <vcs\ project\ url>\ ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \%prog\ [options]\ [-\/e]\ <local\ project\ path>\ ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \%prog\ [options]\ <archive\ url/path>\ ..."{}"{}"{}}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/commands/install.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\doxysection{pip.\+\_\+internal.\+req.\+req\+\_\+tracker.\+Requirement\+Tracker Class Reference}
+\hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker}{}\label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker}\index{pip.\_internal.req.req\_tracker.RequirementTracker@{pip.\_internal.req.req\_tracker.RequirementTracker}}
+Inheritance diagram for pip.\+\_\+internal.\+req.\+req\+\_\+tracker.\+Requirement\+Tracker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_ae62222fcb7098b2e9453da33de837a10}\label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_ae62222fcb7098b2e9453da33de837a10} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, root)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a0f594632e500ab55c5f964025710c39a}\label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a0f594632e500ab55c5f964025710c39a} 
+{\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a5ea44154607028729a76b31b91b23953}\label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a5ea44154607028729a76b31b91b23953} 
+{\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exc\+\_\+type, exc\+\_\+val, exc\+\_\+tb)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_ab1dc7b23348bb27324ddfcfffd08751c}{add}} (self, req)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a58758b347f4872e84b58cdfb18c60ee3}{remove}} (self, req)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a4ff4edb9c287ca789818fbcad202b802}\label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a4ff4edb9c287ca789818fbcad202b802} 
+{\bfseries cleanup} (self)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_ac30e12a6c547006d0835888504106ba7}\label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_ac30e12a6c547006d0835888504106ba7} 
+{\bfseries track} (self, req)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a77bf76036d088c909c7a6e679cee34b5}\label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a77bf76036d088c909c7a6e679cee34b5} 
+{\bfseries \+\_\+entry\+\_\+path} (self, link)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a0eca45a921fcc8d0a36b6dc41c43106f}\label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a0eca45a921fcc8d0a36b6dc41c43106f} 
+{\bfseries \+\_\+root} = root
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_af61be050dc93d61fff42280a7f7e6f5c}\label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_af61be050dc93d61fff42280a7f7e6f5c} 
+{\bfseries \+\_\+entries} = set()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_ab1dc7b23348bb27324ddfcfffd08751c}\index{pip.\_internal.req.req\_tracker.RequirementTracker@{pip.\_internal.req.req\_tracker.RequirementTracker}!add@{add}}
+\index{add@{add}!pip.\_internal.req.req\_tracker.RequirementTracker@{pip.\_internal.req.req\_tracker.RequirementTracker}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_ab1dc7b23348bb27324ddfcfffd08751c} 
+pip.\+\_\+internal.\+req.\+req\+\_\+tracker.\+Requirement\+Tracker.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{req}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add an InstallRequirement to build tracking.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a58758b347f4872e84b58cdfb18c60ee3}\index{pip.\_internal.req.req\_tracker.RequirementTracker@{pip.\_internal.req.req\_tracker.RequirementTracker}!remove@{remove}}
+\index{remove@{remove}!pip.\_internal.req.req\_tracker.RequirementTracker@{pip.\_internal.req.req\_tracker.RequirementTracker}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__tracker_1_1_requirement_tracker_a58758b347f4872e84b58cdfb18c60ee3} 
+pip.\+\_\+internal.\+req.\+req\+\_\+tracker.\+Requirement\+Tracker.\+remove (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{req}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove an InstallRequirement from build tracking.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/req/req\+\_\+tracker.\+py\end{DoxyCompactItemize}

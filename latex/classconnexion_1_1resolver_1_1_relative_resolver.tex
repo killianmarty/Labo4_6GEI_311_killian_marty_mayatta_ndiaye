@@ -1,0 +1,83 @@
+\doxysection{connexion.\+resolver.\+Relative\+Resolver Class Reference}
+\hypertarget{classconnexion_1_1resolver_1_1_relative_resolver}{}\label{classconnexion_1_1resolver_1_1_relative_resolver}\index{connexion.resolver.RelativeResolver@{connexion.resolver.RelativeResolver}}
+Inheritance diagram for connexion.\+resolver.\+Relative\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconnexion_1_1resolver_1_1_relative_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_relative_resolver_a0f1d8af145cd7369f1dd10474f8e34eb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, root\+\_\+path, function\+\_\+resolver=\mbox{\hyperlink{namespaceconnexion_1_1utils_a2a138d2c37f5555557648df253df0df7}{utils.\+get\+\_\+function\+\_\+from\+\_\+name}})
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_relative_resolver_af97f4e91dc8425ee42590f0531fc5651}{resolve\+\_\+operation\+\_\+id}} (self, operation)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver}{connexion.\+resolver.\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a052aec285258ea1337ae7537a7a44b8e}{resolve}} (self, operation)
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a6a4a064312a7a9f7fa554358f01b3105}{resolve\+\_\+function\+\_\+from\+\_\+operation\+\_\+id}} (self, operation\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1resolver_1_1_relative_resolver_ac9290fc52e92a687be4502fe42cb6923}\label{classconnexion_1_1resolver_1_1_relative_resolver_ac9290fc52e92a687be4502fe42cb6923} 
+{\bfseries root\+\_\+path} = root\+\_\+path.\+\_\+\+\_\+name\+\_\+\+\_\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver}{connexion.\+resolver.\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries function\+\_\+resolver} = function\+\_\+resolver
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Resolves endpoint functions relative to a given root path or module.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classconnexion_1_1resolver_1_1_relative_resolver_a0f1d8af145cd7369f1dd10474f8e34eb}\index{connexion.resolver.RelativeResolver@{connexion.resolver.RelativeResolver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.resolver.RelativeResolver@{connexion.resolver.RelativeResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_relative_resolver_a0f1d8af145cd7369f1dd10474f8e34eb} 
+connexion.\+resolver.\+Relative\+Resolver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{root\+\_\+path}{, }\item[{}]{function\+\_\+resolver}{ = {\ttfamily \mbox{\hyperlink{namespaceconnexion_1_1utils_a2a138d2c37f5555557648df253df0df7}{utils.\+get\+\_\+function\+\_\+from\+\_\+name}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param root_path: The root path relative to which an operationId is resolved.
+    Can also be a module. Has the same effect as setting
+    `x-swagger-router-controller` or `x-openapi-router-controller` equal to
+    `root_path` for every operation individually.
+:type root_path: typing.Union[str, types.ModuleType]
+:param function_resolver: Function that resolves functions using an operationId
+:type function_resolver: types.FunctionType
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_aea92122a59acf895ed303178a45ebe56}{connexion.\+resolver.\+Resolver}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classconnexion_1_1resolver_1_1_relative_resolver_af97f4e91dc8425ee42590f0531fc5651}\index{connexion.resolver.RelativeResolver@{connexion.resolver.RelativeResolver}!resolve\_operation\_id@{resolve\_operation\_id}}
+\index{resolve\_operation\_id@{resolve\_operation\_id}!connexion.resolver.RelativeResolver@{connexion.resolver.RelativeResolver}}
+\doxysubsubsection{\texorpdfstring{resolve\_operation\_id()}{resolve\_operation\_id()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_relative_resolver_af97f4e91dc8425ee42590f0531fc5651} 
+connexion.\+resolver.\+Relative\+Resolver.\+resolve\+\_\+operation\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolves the operationId relative to the root path, unless
+x-swagger-router-controller or x-openapi-router-controller is specified.
+
+:param operation: The operation to resolve
+:type operation: connexion.operations.AbstractOperation
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a5779c9da3f7d238c207053ce208fb813}{connexion.\+resolver.\+Resolver}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/resolver.\+py\end{DoxyCompactItemize}

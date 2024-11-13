@@ -1,0 +1,88 @@
+\doxysection{setuptools.\+Package\+Finder Class Reference}
+\hypertarget{classsetuptools_1_1_package_finder}{}\label{classsetuptools_1_1_package_finder}\index{setuptools.PackageFinder@{setuptools.PackageFinder}}
+Inheritance diagram for setuptools.\+Package\+Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsetuptools_1_1_package_finder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsetuptools_1_1_package_finder_a7e1d75b9c8410995a9326e29a55b85ec}{find}} (cls, where=\textquotesingle{}.\textquotesingle{}, exclude=(), include=(\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{},))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsetuptools_1_1_package_finder_af44460664244996a560ef68ee3f48307}{\+\_\+find\+\_\+packages\+\_\+iter}} (cls, where, exclude, include)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsetuptools_1_1_package_finder_a047fb01449abde82485d9bac4338be54}{\+\_\+looks\+\_\+like\+\_\+package}} (path)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1_package_finder_acb8f6aca58eb035d6783ab0dccac51b8}{\+\_\+build\+\_\+filter}} (\texorpdfstring{$\ast$}{*}patterns)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Generate a list of all Python packages found within a directory
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsetuptools_1_1_package_finder_acb8f6aca58eb035d6783ab0dccac51b8}\index{setuptools.PackageFinder@{setuptools.PackageFinder}!\_build\_filter@{\_build\_filter}}
+\index{\_build\_filter@{\_build\_filter}!setuptools.PackageFinder@{setuptools.PackageFinder}}
+\doxysubsubsection{\texorpdfstring{\_build\_filter()}{\_build\_filter()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1_package_finder_acb8f6aca58eb035d6783ab0dccac51b8} 
+setuptools.\+Package\+Finder.\+\_\+build\+\_\+filter (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{patterns}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Given a list of patterns, return a callable that will be true only if
+the input matches at least one of the patterns.
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1_package_finder_af44460664244996a560ef68ee3f48307}\index{setuptools.PackageFinder@{setuptools.PackageFinder}!\_find\_packages\_iter@{\_find\_packages\_iter}}
+\index{\_find\_packages\_iter@{\_find\_packages\_iter}!setuptools.PackageFinder@{setuptools.PackageFinder}}
+\doxysubsubsection{\texorpdfstring{\_find\_packages\_iter()}{\_find\_packages\_iter()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1_package_finder_af44460664244996a560ef68ee3f48307} 
+setuptools.\+Package\+Finder.\+\_\+find\+\_\+packages\+\_\+iter (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{where}{, }\item[{}]{exclude}{, }\item[{}]{include}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}All the packages found in 'where' that pass the 'include' filter, but
+not the 'exclude' filter.
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1_package_finder_a047fb01449abde82485d9bac4338be54}\index{setuptools.PackageFinder@{setuptools.PackageFinder}!\_looks\_like\_package@{\_looks\_like\_package}}
+\index{\_looks\_like\_package@{\_looks\_like\_package}!setuptools.PackageFinder@{setuptools.PackageFinder}}
+\doxysubsubsection{\texorpdfstring{\_looks\_like\_package()}{\_looks\_like\_package()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1_package_finder_a047fb01449abde82485d9bac4338be54} 
+setuptools.\+Package\+Finder.\+\_\+looks\+\_\+like\+\_\+package (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Does a directory look like a package?\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsetuptools_1_1_p_e_p420_package_finder_a2544065d6bcf1fc5253869f66a65ef4e}{setuptools.\+PEP420\+Package\+Finder}}.
+
+\Hypertarget{classsetuptools_1_1_package_finder_a7e1d75b9c8410995a9326e29a55b85ec}\index{setuptools.PackageFinder@{setuptools.PackageFinder}!find@{find}}
+\index{find@{find}!setuptools.PackageFinder@{setuptools.PackageFinder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1_package_finder_a7e1d75b9c8410995a9326e29a55b85ec} 
+setuptools.\+Package\+Finder.\+find (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{where}{ = {\ttfamily \textquotesingle{}.\textquotesingle{}}, }\item[{}]{exclude}{ = {\ttfamily ()}, }\item[{}]{include}{ = {\ttfamily (\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{},)}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list all Python packages found within directory 'where'
+
+'where' is the root directory which will be searched for packages.  It
+should be supplied as a "cross-platform" (i.e. URL-style) path; it will
+be converted to the appropriate local path syntax.
+
+'exclude' is a sequence of package names to exclude; '*' can be used
+as a wildcard in the names, such that 'foo.*' will exclude all
+subpackages of 'foo' (but not 'foo' itself).
+
+'include' is a sequence of package names to include.  If it's
+specified, only the named packages will be included.  If it's not
+specified, all found packages will be included.  'include' can contain
+shell style wildcard patterns just like 'exclude'.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/setuptools/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

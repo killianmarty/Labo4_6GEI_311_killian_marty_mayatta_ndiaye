@@ -1,0 +1,120 @@
+\doxysection{werkzeug.\+routing.\+converters.\+UUIDConverter Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter}{}\label{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter}\index{werkzeug.routing.converters.UUIDConverter@{werkzeug.routing.converters.UUIDConverter}}
+Inheritance diagram for werkzeug.\+routing.\+converters.\+UUIDConverter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uuid.\+UUID \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a0b8eaeedc4383dbe683440dc15dfc615}{to\+\_\+python}} (self, str value)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a659b5a147adab1940688afff42b520e2}{to\+\_\+url}} (self, uuid.\+UUID value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, "{}Map"{} map, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_af6f33715bb5c3f86aaf00c17cd91a750}{regex}}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a45a93f5fb781a9504bbe4675fc9417c7}\label{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a45a93f5fb781a9504bbe4675fc9417c7} 
+bool {\bfseries part\+\_\+isolating} = True
+\item 
+dict \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a788299e33fc40ef715a158ff6548d521}{DEFAULT\+\_\+\+CONVERTERS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries regex} = "{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}/\mbox{]}+"{}
+\item 
+int {\bfseries weight} = 100
+\item 
+bool {\bfseries part\+\_\+isolating} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries map} = map
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This converter only accepts UUID strings::
+
+    Rule('/object/<uuid:identifier>')
+
+.. versionadded:: 0.10
+
+:param map: the :class:`Map`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a0b8eaeedc4383dbe683440dc15dfc615}\index{werkzeug.routing.converters.UUIDConverter@{werkzeug.routing.converters.UUIDConverter}!to\_python@{to\_python}}
+\index{to\_python@{to\_python}!werkzeug.routing.converters.UUIDConverter@{werkzeug.routing.converters.UUIDConverter}}
+\doxysubsubsection{\texorpdfstring{to\_python()}{to\_python()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a0b8eaeedc4383dbe683440dc15dfc615} 
+ uuid.\+UUID werkzeug.\+routing.\+converters.\+UUIDConverter.\+to\+\_\+python (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}.
+
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a659b5a147adab1940688afff42b520e2}\index{werkzeug.routing.converters.UUIDConverter@{werkzeug.routing.converters.UUIDConverter}!to\_url@{to\_url}}
+\index{to\_url@{to\_url}!werkzeug.routing.converters.UUIDConverter@{werkzeug.routing.converters.UUIDConverter}}
+\doxysubsubsection{\texorpdfstring{to\_url()}{to\_url()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a659b5a147adab1940688afff42b520e2} 
+ str werkzeug.\+routing.\+converters.\+UUIDConverter.\+to\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{uuid.\+UUID}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a788299e33fc40ef715a158ff6548d521}\index{werkzeug.routing.converters.UUIDConverter@{werkzeug.routing.converters.UUIDConverter}!DEFAULT\_CONVERTERS@{DEFAULT\_CONVERTERS}}
+\index{DEFAULT\_CONVERTERS@{DEFAULT\_CONVERTERS}!werkzeug.routing.converters.UUIDConverter@{werkzeug.routing.converters.UUIDConverter}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_CONVERTERS}{DEFAULT\_CONVERTERS}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_a788299e33fc40ef715a158ff6548d521} 
+dict werkzeug.\+routing.\+converters.\+UUIDConverter.\+DEFAULT\+\_\+\+CONVERTERS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}default"{}}:\ UnicodeConverter,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}string"{}}:\ UnicodeConverter,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}any"{}}:\ AnyConverter,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}path"{}}:\ PathConverter,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}int"{}}:\ IntegerConverter,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}float"{}}:\ FloatConverter,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}uuid"{}}:\ UUIDConverter,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_af6f33715bb5c3f86aaf00c17cd91a750}\index{werkzeug.routing.converters.UUIDConverter@{werkzeug.routing.converters.UUIDConverter}!regex@{regex}}
+\index{regex@{regex}!werkzeug.routing.converters.UUIDConverter@{werkzeug.routing.converters.UUIDConverter}}
+\doxysubsubsection{\texorpdfstring{regex}{regex}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1converters_1_1_u_u_i_d_converter_af6f33715bb5c3f86aaf00c17cd91a750} 
+tuple werkzeug.\+routing.\+converters.\+UUIDConverter.\+regex\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}[A-\/Fa-\/f0-\/9]\{8\}-\/[A-\/Fa-\/f0-\/9]\{4\}-\/"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{r"{}[A-\/Fa-\/f0-\/9]\{4\}-\/[A-\/Fa-\/f0-\/9]\{4\}-\/[A-\/Fa-\/f0-\/9]\{12\}"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/routing/converters.\+py\end{DoxyCompactItemize}

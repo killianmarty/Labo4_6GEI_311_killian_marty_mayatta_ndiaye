@@ -1,0 +1,60 @@
+\doxysection{mayavi2\+\_\+spring Namespace Reference}
+\hypertarget{namespacemayavi2__spring}{}\label{namespacemayavi2__spring}\index{mayavi2\_spring@{mayavi2\_spring}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacemayavi2__spring_a23628222b0429f28a4fdfd72b3ae0f08}\label{namespacemayavi2__spring_a23628222b0429f28a4fdfd72b3ae0f08} 
+{\bfseries H} = nx.\+cycle\+\_\+graph(20)
+\item 
+\Hypertarget{namespacemayavi2__spring_a51de1d6d50b2c4d0794a75ce4fafe4b0}\label{namespacemayavi2__spring_a51de1d6d50b2c4d0794a75ce4fafe4b0} 
+{\bfseries G} = nx.\+convert\+\_\+node\+\_\+labels\+\_\+to\+\_\+integers(H)
+\item 
+\Hypertarget{namespacemayavi2__spring_abfecd113e6fa47bb672220ea4100c638}\label{namespacemayavi2__spring_abfecd113e6fa47bb672220ea4100c638} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(G, dim=3, seed=1001)
+\item 
+\Hypertarget{namespacemayavi2__spring_aaa5995b60850089c604f4fd05ac955a8}\label{namespacemayavi2__spring_aaa5995b60850089c604f4fd05ac955a8} 
+{\bfseries xyz} = np.\+array(\mbox{[}pos\mbox{[}v\mbox{]} for v in sorted(G)\mbox{]})
+\item 
+\Hypertarget{namespacemayavi2__spring_ae0fafc068a23efae101b6159184a10e3}\label{namespacemayavi2__spring_ae0fafc068a23efae101b6159184a10e3} 
+int {\bfseries scalars} = np.\+array(list(G.\+nodes())) + 5
+\item 
+\mbox{\hyperlink{namespacemayavi2__spring_ad5b9833f9ff3430e8fb0185ebc70679d}{pts}}
+\item 
+\Hypertarget{namespacemayavi2__spring_a5d1e216a9057cf9d9a7b5adb424648b2}\label{namespacemayavi2__spring_a5d1e216a9057cf9d9a7b5adb424648b2} 
+{\bfseries lines}
+\item 
+\Hypertarget{namespacemayavi2__spring_a6a4604672520c1d5e00890800958ae6e}\label{namespacemayavi2__spring_a6a4604672520c1d5e00890800958ae6e} 
+{\bfseries tube} = mlab.\+pipeline.\+tube(pts, tube\+\_\+radius=0.\+01)
+\item 
+\Hypertarget{namespacemayavi2__spring_a2bf55eb929f57ad25dbc7219d959f6db}\label{namespacemayavi2__spring_a2bf55eb929f57ad25dbc7219d959f6db} 
+{\bfseries color}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}=======
+Mayavi2
+=======\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacemayavi2__spring_ad5b9833f9ff3430e8fb0185ebc70679d}\index{mayavi2\_spring@{mayavi2\_spring}!pts@{pts}}
+\index{pts@{pts}!mayavi2\_spring@{mayavi2\_spring}}
+\doxysubsubsection{\texorpdfstring{pts}{pts}}
+{\footnotesize\ttfamily \label{namespacemayavi2__spring_ad5b9833f9ff3430e8fb0185ebc70679d} 
+mayavi2\+\_\+spring.\+pts}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ mlab.points3d(}
+\DoxyCodeLine{00002\ \ \ \ \ xyz[:,\ 0],}
+\DoxyCodeLine{00003\ \ \ \ \ xyz[:,\ 1],}
+\DoxyCodeLine{00004\ \ \ \ \ xyz[:,\ 2],}
+\DoxyCodeLine{00005\ \ \ \ \ scalars,}
+\DoxyCodeLine{00006\ \ \ \ \ scale\_factor=0.1,}
+\DoxyCodeLine{00007\ \ \ \ \ scale\_mode=\textcolor{stringliteral}{"{}none"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ colormap=\textcolor{stringliteral}{"{}Blues"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ resolution=20,}
+\DoxyCodeLine{00010\ )}
+
+\end{DoxyCode}

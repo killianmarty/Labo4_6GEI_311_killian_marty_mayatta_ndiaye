@@ -1,0 +1,112 @@
+\doxysection{yaml.\+cyaml.\+CBase\+Dumper Class Reference}
+\hypertarget{classyaml_1_1cyaml_1_1_c_base_dumper}{}\label{classyaml_1_1cyaml_1_1_c_base_dumper}\index{yaml.cyaml.CBaseDumper@{yaml.cyaml.CBaseDumper}}
+Inheritance diagram for yaml.\+cyaml.\+CBase\+Dumper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.720430cm]{classyaml_1_1cyaml_1_1_c_base_dumper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyaml_1_1cyaml_1_1_c_base_dumper_aebd382112959948abbc0fa3b66ed083a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, stream, default\+\_\+style=None, default\+\_\+flow\+\_\+style=False, canonical=None, indent=None, width=None, allow\+\_\+unicode=None, line\+\_\+break=None, encoding=None, explicit\+\_\+start=None, explicit\+\_\+end=None, version=None, tags=None, sort\+\_\+keys=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_base_representer}{yaml.\+representer.\+Base\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries represent} (self, data)
+\item 
+{\bfseries represent\+\_\+data} (self, data)
+\item 
+{\bfseries add\+\_\+representer} (cls, data\+\_\+type, representer)
+\item 
+{\bfseries add\+\_\+multi\+\_\+representer} (cls, data\+\_\+type, representer)
+\item 
+{\bfseries represent\+\_\+scalar} (self, tag, value, style=None)
+\item 
+{\bfseries represent\+\_\+sequence} (self, tag, sequence, flow\+\_\+style=None)
+\item 
+{\bfseries represent\+\_\+mapping} (self, tag, mapping, flow\+\_\+style=None)
+\item 
+{\bfseries ignore\+\_\+aliases} (self, data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1resolver_1_1_base_resolver}{yaml.\+resolver.\+Base\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries add\+\_\+implicit\+\_\+resolver} (cls, tag, regexp, first)
+\item 
+{\bfseries add\+\_\+path\+\_\+resolver} (cls, tag, path, kind=None)
+\item 
+{\bfseries descend\+\_\+resolver} (self, current\+\_\+node, current\+\_\+index)
+\item 
+{\bfseries ascend\+\_\+resolver} (self)
+\item 
+{\bfseries check\+\_\+resolver\+\_\+prefix} (self, depth, path, kind, current\+\_\+node, current\+\_\+index)
+\item 
+{\bfseries resolve} (self, kind, value, implicit)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_base_representer}{yaml.\+representer.\+Base\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries default\+\_\+style} = default\+\_\+style
+\item 
+{\bfseries sort\+\_\+keys} = sort\+\_\+keys
+\item 
+{\bfseries default\+\_\+flow\+\_\+style} = default\+\_\+flow\+\_\+style
+\item 
+dict {\bfseries represented\+\_\+objects} = \{\}
+\item 
+list {\bfseries object\+\_\+keeper} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries alias\+\_\+key} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1resolver_1_1_base_resolver}{yaml.\+resolver.\+Base\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries resolver\+\_\+exact\+\_\+paths} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries resolver\+\_\+prefix\+\_\+paths} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries yaml\+\_\+implicit\+\_\+resolvers} = \mbox{[}None\mbox{]}
+\item 
+list {\bfseries yaml\+\_\+path\+\_\+resolvers} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_base_representer}{yaml.\+representer.\+Base\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+dict {\bfseries yaml\+\_\+representers} = \{\}
+\item 
+dict {\bfseries yaml\+\_\+multi\+\_\+representers} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1resolver_1_1_base_resolver}{yaml.\+resolver.\+Base\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries DEFAULT\+\_\+\+SCALAR\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:str\textquotesingle{}
+\item 
+str {\bfseries DEFAULT\+\_\+\+SEQUENCE\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:seq\textquotesingle{}
+\item 
+str {\bfseries DEFAULT\+\_\+\+MAPPING\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:map\textquotesingle{}
+\item 
+dict {\bfseries yaml\+\_\+implicit\+\_\+resolvers} = \{\}
+\item 
+dict {\bfseries yaml\+\_\+path\+\_\+resolvers} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classyaml_1_1cyaml_1_1_c_base_dumper_aebd382112959948abbc0fa3b66ed083a}\index{yaml.cyaml.CBaseDumper@{yaml.cyaml.CBaseDumper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!yaml.cyaml.CBaseDumper@{yaml.cyaml.CBaseDumper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classyaml_1_1cyaml_1_1_c_base_dumper_aebd382112959948abbc0fa3b66ed083a} 
+yaml.\+cyaml.\+CBase\+Dumper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{stream}{, }\item[{}]{default\+\_\+style}{ = {\ttfamily None}, }\item[{}]{default\+\_\+flow\+\_\+style}{ = {\ttfamily False}, }\item[{}]{canonical}{ = {\ttfamily None}, }\item[{}]{indent}{ = {\ttfamily None}, }\item[{}]{width}{ = {\ttfamily None}, }\item[{}]{allow\+\_\+unicode}{ = {\ttfamily None}, }\item[{}]{line\+\_\+break}{ = {\ttfamily None}, }\item[{}]{encoding}{ = {\ttfamily None}, }\item[{}]{explicit\+\_\+start}{ = {\ttfamily None}, }\item[{}]{explicit\+\_\+end}{ = {\ttfamily None}, }\item[{}]{version}{ = {\ttfamily None}, }\item[{}]{tags}{ = {\ttfamily None}, }\item[{}]{sort\+\_\+keys}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classyaml_1_1representer_1_1_base_representer}{yaml.\+representer.\+Base\+Representer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/yaml/cyaml.\+py\end{DoxyCompactItemize}

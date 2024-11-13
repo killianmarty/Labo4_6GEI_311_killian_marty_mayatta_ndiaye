@@ -1,0 +1,47 @@
+\doxysection{werkzeug.\+test.\+\_\+\+Test\+Cookie\+Jar Class Reference}
+\hypertarget{classwerkzeug_1_1test_1_1___test_cookie_jar}{}\label{classwerkzeug_1_1test_1_1___test_cookie_jar}\index{werkzeug.test.\_TestCookieJar@{werkzeug.test.\_TestCookieJar}}
+Inheritance diagram for werkzeug.\+test.\+\_\+\+Test\+Cookie\+Jar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1test_1_1___test_cookie_jar}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1___test_cookie_jar_a4b7fb8e0d1bb90194f159d836e4d4850}{inject\+\_\+wsgi}} (self, "{}WSGIEnvironment"{} environ)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1___test_cookie_jar_afe55f561d65e94490efa0b78ee968f65}{extract\+\_\+wsgi}} (self, "{}WSGIEnvironment"{} environ, t.\+Union\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_headers}{Headers}}, t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} headers)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A cookielib.CookieJar modified to inject and read cookie headers from
+and to wsgi environments, and wsgi application responses.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1test_1_1___test_cookie_jar_afe55f561d65e94490efa0b78ee968f65}\index{werkzeug.test.\_TestCookieJar@{werkzeug.test.\_TestCookieJar}!extract\_wsgi@{extract\_wsgi}}
+\index{extract\_wsgi@{extract\_wsgi}!werkzeug.test.\_TestCookieJar@{werkzeug.test.\_TestCookieJar}}
+\doxysubsubsection{\texorpdfstring{extract\_wsgi()}{extract\_wsgi()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1___test_cookie_jar_afe55f561d65e94490efa0b78ee968f65} 
+ None werkzeug.\+test.\+\_\+\+Test\+Cookie\+Jar.\+extract\+\_\+wsgi (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}WSGIEnvironment"{}}]{environ}{, }\item[{t.\+Union\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_headers}{Headers}}, t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]}}]{headers}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract the server's set-cookie headers as cookies into the
+cookie jar.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1___test_cookie_jar_a4b7fb8e0d1bb90194f159d836e4d4850}\index{werkzeug.test.\_TestCookieJar@{werkzeug.test.\_TestCookieJar}!inject\_wsgi@{inject\_wsgi}}
+\index{inject\_wsgi@{inject\_wsgi}!werkzeug.test.\_TestCookieJar@{werkzeug.test.\_TestCookieJar}}
+\doxysubsubsection{\texorpdfstring{inject\_wsgi()}{inject\_wsgi()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1___test_cookie_jar_a4b7fb8e0d1bb90194f159d836e4d4850} 
+ None werkzeug.\+test.\+\_\+\+Test\+Cookie\+Jar.\+inject\+\_\+wsgi (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}WSGIEnvironment"{}}]{environ}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Inject the cookies as client headers into the server's wsgi
+environment.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/test.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,184 @@
+\doxysection{dateutil.\+tz.\+tz.\+tzstr Class Reference}
+\hypertarget{classdateutil_1_1tz_1_1tz_1_1tzstr}{}\label{classdateutil_1_1tz_1_1tz_1_1tzstr}\index{dateutil.tz.tz.tzstr@{dateutil.tz.tz.tzstr}}
+Inheritance diagram for dateutil.\+tz.\+tz.\+tzstr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classdateutil_1_1tz_1_1tz_1_1tzstr}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzstr_a6b07a36dd066805430d4ced43dc9cd64}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, s, posix\+\_\+offset=False)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzstr_a5140d94762752a5c8d4ed363f13ec1bb}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzrange}{dateutil.\+tz.\+tz.\+tzrange}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzrange_aab9ff368fe74ea61de59826a786aca33}{transitions}} (self, year)
+\item 
+{\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries utcoffset} (self, dt)
+\item 
+{\bfseries dst} (self, dt)
+\item 
+{\bfseries tzname} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase_ab32e816012c6cb57313b01683e937bb4}{fromutc}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a55fcaef75d41636cf8bf51d61602ae1b}{is\+\_\+ambiguous}} (self, dt)
+\item 
+{\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzstr_aad9666c7b79662b78a1fc66a8ce0f215}\label{classdateutil_1_1tz_1_1tz_1_1tzstr_aad9666c7b79662b78a1fc66a8ce0f215} 
+{\bfseries hasdst} = bool(self.\+\_\+start\+\_\+delta)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzrange}{dateutil.\+tz.\+tz.\+tzrange}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries hasdst} = bool(self.\+\_\+start\+\_\+delta)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries hasdst} = self.\+transitions(dt.\+year)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzstr_a890872993b80fd3ab7c0b87152ae8b9c}\label{classdateutil_1_1tz_1_1tz_1_1tzstr_a890872993b80fd3ab7c0b87152ae8b9c} 
+{\bfseries \+\_\+delta} (self, x, isend=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzrange}{dateutil.\+tz.\+tz.\+tzrange}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzrange_a7a62d8b25920e798a42a8090f73dd279}{\+\_\+dst\+\_\+base\+\_\+offset}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+isdst} (self, dt)
+\item 
+{\bfseries \+\_\+naive\+\_\+isdst} (self, dt, transitions)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_ae7e407e0576eae35c159484562f1b188}{\+\_\+fold\+\_\+status}} (self, dt\+\_\+utc, dt\+\_\+wall)
+\item 
+{\bfseries \+\_\+fold} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_aab9e45aceaf243524a55eafd2cb81bb8}{\+\_\+fromutc}} (self, dt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzstr_a038e249b7587c4a3598a705e0b87ec2c}\label{classdateutil_1_1tz_1_1tz_1_1tzstr_a038e249b7587c4a3598a705e0b87ec2c} 
+{\bfseries \+\_\+s} = s
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzstr_a76b5b106179593e06580a39e625afbc3}\label{classdateutil_1_1tz_1_1tz_1_1tzstr_a76b5b106179593e06580a39e625afbc3} 
+{\bfseries \+\_\+start\+\_\+delta} = None
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzstr_a97b93c1a2563afdc661d8f8c810c4375}\label{classdateutil_1_1tz_1_1tz_1_1tzstr_a97b93c1a2563afdc661d8f8c810c4375} 
+{\bfseries \+\_\+end\+\_\+delta} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzrange}{dateutil.\+tz.\+tz.\+tzrange}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+std\+\_\+abbr} = stdabbr
+\item 
+{\bfseries \+\_\+dst\+\_\+abbr} = dstabbr
+\item 
+{\bfseries \+\_\+std\+\_\+offset} = datetime.\+timedelta(seconds=stdoffset)
+\item 
+{\bfseries \+\_\+dst\+\_\+offset} = datetime.\+timedelta(seconds=dstoffset)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzrange_a7be2a806c4103f36e3c033a430e91d2d}{\+\_\+start\+\_\+delta}}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzrange_a5231016bd8e970f208e444d3dcc34eba}{\+\_\+end\+\_\+delta}}
+\item 
+{\bfseries \+\_\+dst\+\_\+base\+\_\+offset\+\_\+} = self.\+\_\+dst\+\_\+offset -\/ self.\+\_\+std\+\_\+offset
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}``tzstr`` objects are time zone objects specified by a time-zone string as
+it would be passed to a ``TZ`` variable on POSIX-style systems (see
+the `GNU C Library: TZ Variable`_ for more details).
+
+There is one notable exception, which is that POSIX-style time zones use an
+inverted offset format, so normally ``GMT+3`` would be parsed as an offset
+3 hours *behind* GMT. The ``tzstr`` time zone object will parse this as an
+offset 3 hours *ahead* of GMT. If you would like to maintain the POSIX
+behavior, pass a ``True`` value to ``posix_offset``.
+
+The :class:`tzrange` object provides the same functionality, but is
+specified using :class:`relativedelta.relativedelta` objects. rather than
+strings.
+
+:param s:
+    A time zone string in ``TZ`` variable format. This can be a
+    :class:`bytes` (2.x: :class:`str`), :class:`str` (2.x:
+    :class:`unicode`) or a stream emitting unicode characters
+    (e.g. :class:`StringIO`).
+
+:param posix_offset:
+    Optional. If set to ``True``, interpret strings such as ``GMT+3`` or
+    ``UTC+3`` as being 3 hours *behind* UTC rather than ahead, per the
+    POSIX standard.
+
+.. caution::
+
+    Prior to version 2.7.0, this function also supported time zones
+    in the format:
+
+        * ``EST5EDT,4,0,6,7200,10,0,26,7200,3600``
+        * ``EST5EDT,4,1,0,7200,10,-1,0,7200,3600``
+
+    This format is non-standard and has been deprecated; this function
+    will raise a :class:`DeprecatedTZFormatWarning` until
+    support is removed in a future version.
+
+.. _`GNU C Library: TZ Variable`:
+    https://www.gnu.org/software/libc/manual/html_node/TZ-Variable.html
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzstr_a6b07a36dd066805430d4ced43dc9cd64}\index{dateutil.tz.tz.tzstr@{dateutil.tz.tz.tzstr}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!dateutil.tz.tz.tzstr@{dateutil.tz.tz.tzstr}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdateutil_1_1tz_1_1tz_1_1tzstr_a6b07a36dd066805430d4ced43dc9cd64} 
+dateutil.\+tz.\+tz.\+tzstr.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{s}{, }\item[{}]{posix\+\_\+offset}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdateutil_1_1tz_1_1tz_1_1tzrange}{dateutil.\+tz.\+tz.\+tzrange}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdateutil_1_1tz_1_1tz_1_1tzstr_a5140d94762752a5c8d4ed363f13ec1bb}\index{dateutil.tz.tz.tzstr@{dateutil.tz.tz.tzstr}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!dateutil.tz.tz.tzstr@{dateutil.tz.tz.tzstr}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classdateutil_1_1tz_1_1tz_1_1tzstr_a5140d94762752a5c8d4ed363f13ec1bb} 
+dateutil.\+tz.\+tz.\+tzstr.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/dateutil/tz/tz.\+py\end{DoxyCompactItemize}

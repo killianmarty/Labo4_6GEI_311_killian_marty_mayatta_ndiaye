@@ -1,0 +1,37 @@
+\doxysection{jsonschema.\+benchmarks.\+useless\+\_\+applicator\+\_\+schemas Namespace Reference}
+\hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas}{}\label{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas}\index{jsonschema.benchmarks.useless\_applicator\_schemas@{jsonschema.benchmarks.useless\_applicator\_schemas}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_afb9e0d63fe32a83c3e1b525954713048}\label{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_afb9e0d63fe32a83c3e1b525954713048} 
+int {\bfseries NUM\+\_\+\+USELESS} = 100000
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_a107f6bc3b992bc747e927eecf0d286a8}\label{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_a107f6bc3b992bc747e927eecf0d286a8} 
+dict {\bfseries subschema} = \{"{}const"{}\+: 37\}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_ab1fb2bf1aa6aeff61aba15289c912291}\label{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_ab1fb2bf1aa6aeff61aba15289c912291} 
+int {\bfseries valid} = 37
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_a6610cb33daad0d895377173953dbb96c}\label{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_a6610cb33daad0d895377173953dbb96c} 
+int {\bfseries invalid} = 12
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_a891c850774324d13983489af9942a13b}\label{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_a891c850774324d13983489af9942a13b} 
+{\bfseries baseline} = Validator(subschema)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_a577b23b043e2a183c376d19f51478a1c}\label{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_a577b23b043e2a183c376d19f51478a1c} 
+dict {\bfseries by\+\_\+name}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_acf37620e92c7fffb4cecc59a1f548a8e}\label{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_acf37620e92c7fffb4cecc59a1f548a8e} 
+{\bfseries runner} = Runner()
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_a56b714d33a8f9f1ebeb1bc5870041e3e}\label{namespacejsonschema_1_1benchmarks_1_1useless__applicator__schemas_a56b714d33a8f9f1ebeb1bc5870041e3e} 
+{\bfseries validator}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A benchmark for validation of applicators containing lots of useless schemas.
+
+Signals a small possible optimization to remove all such schemas ahead of time.
+\end{DoxyVerb}
+ 

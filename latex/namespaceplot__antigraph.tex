@@ -1,0 +1,64 @@
+\doxysection{plot\+\_\+antigraph Namespace Reference}
+\hypertarget{namespaceplot__antigraph}{}\label{namespaceplot__antigraph}\index{plot\_antigraph@{plot\_antigraph}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classplot__antigraph_1_1_anti_graph}{Anti\+Graph}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__antigraph_a094f665839482bfeb9eaf2b16b3a62f5}\label{namespaceplot__antigraph_a094f665839482bfeb9eaf2b16b3a62f5} 
+{\bfseries Gnp} = nx.\+gnp\+\_\+random\+\_\+graph(20, 0.\+8, seed=42)
+\item 
+\Hypertarget{namespaceplot__antigraph_abf8d7b826ce58936bd2fdf0dcf5ce3c9}\label{namespaceplot__antigraph_abf8d7b826ce58936bd2fdf0dcf5ce3c9} 
+{\bfseries Anp} = \mbox{\hyperlink{classplot__antigraph_1_1_anti_graph}{Anti\+Graph}}(nx.\+complement(Gnp))
+\item 
+\Hypertarget{namespaceplot__antigraph_a9eecd18a383be59a472393dd15b80398}\label{namespaceplot__antigraph_a9eecd18a383be59a472393dd15b80398} 
+{\bfseries Gd} = nx.\+davis\+\_\+southern\+\_\+women\+\_\+graph()
+\item 
+\Hypertarget{namespaceplot__antigraph_a3fae53e8a70927189f658f99012c93c5}\label{namespaceplot__antigraph_a3fae53e8a70927189f658f99012c93c5} 
+{\bfseries Ad} = \mbox{\hyperlink{classplot__antigraph_1_1_anti_graph}{Anti\+Graph}}(nx.\+complement(Gd))
+\item 
+\Hypertarget{namespaceplot__antigraph_ac9ed6da0bca909de00b886b62ab97535}\label{namespaceplot__antigraph_ac9ed6da0bca909de00b886b62ab97535} 
+{\bfseries Gk} = nx.\+karate\+\_\+club\+\_\+graph()
+\item 
+\Hypertarget{namespaceplot__antigraph_a22f627b032b618bd3a5fab0e42c0fa5b}\label{namespaceplot__antigraph_a22f627b032b618bd3a5fab0e42c0fa5b} 
+{\bfseries Ak} = \mbox{\hyperlink{classplot__antigraph_1_1_anti_graph}{Anti\+Graph}}(nx.\+complement(Gk))
+\item 
+\Hypertarget{namespaceplot__antigraph_ac3d4da4068c206a44e39847eac60b0d7}\label{namespaceplot__antigraph_ac3d4da4068c206a44e39847eac60b0d7} 
+list {\bfseries pairs} = \mbox{[}(Gnp, Anp), (Gd, Ad), (Gk, Ak)\mbox{]}
+\item 
+\Hypertarget{namespaceplot__antigraph_a036935bf50edf99e1c0c20a7ca9b83f8}\label{namespaceplot__antigraph_a036935bf50edf99e1c0c20a7ca9b83f8} 
+list {\bfseries gc} = \mbox{[}set(c) for c in nx.\+connected\+\_\+components(G)\mbox{]}
+\item 
+\Hypertarget{namespaceplot__antigraph_ada73e119281dbdaaccd718320f13f81d}\label{namespaceplot__antigraph_ada73e119281dbdaaccd718320f13f81d} 
+list {\bfseries ac} = \mbox{[}set(c) for c in nx.\+connected\+\_\+components(A)\mbox{]}
+\item 
+\Hypertarget{namespaceplot__antigraph_a4f34aafafba7ed56a30859da54870be3}\label{namespaceplot__antigraph_a4f34aafafba7ed56a30859da54870be3} 
+{\bfseries node} = list(G.\+nodes())\mbox{[}0\mbox{]}
+\item 
+\Hypertarget{namespaceplot__antigraph_ae6209c117761fa34b013ff84d9d657e9}\label{namespaceplot__antigraph_ae6209c117761fa34b013ff84d9d657e9} 
+{\bfseries nodes} = list(G.\+nodes())\mbox{[}1\+:4\mbox{]}
+\item 
+\Hypertarget{namespaceplot__antigraph_a46baa092ad766b818facc5c077509eb7}\label{namespaceplot__antigraph_a46baa092ad766b818facc5c077509eb7} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(G, seed=268)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}=========
+Antigraph
+=========
+
+Complement graph class for small footprint when working on dense graphs.
+
+This class allows you to add the edges that *do not exist* in the dense
+graph. However, when applying algorithms to this complement graph data
+structure, it behaves as if it were the dense version. So it can be used
+directly in several NetworkX algorithms.
+
+This subclass has only been tested for k-core, connected_components,
+and biconnected_components algorithms but might also work for other
+algorithms.\end{DoxyVerb}
+ 

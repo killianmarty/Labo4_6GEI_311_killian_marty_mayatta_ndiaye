@@ -1,0 +1,86 @@
+\doxysection{flask.\+views.\+Method\+View Class Reference}
+\hypertarget{classflask_1_1views_1_1_method_view}{}\label{classflask_1_1views_1_1_method_view}\index{flask.views.MethodView@{flask.views.MethodView}}
+Inheritance diagram for flask.\+views.\+Method\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1views_1_1_method_view}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1views_1_1_method_view_adb5fdee17385231f27ccb152ae9adc11}\label{classflask_1_1views_1_1_method_view_adb5fdee17385231f27ccb152ae9adc11} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+} (cls, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+ft.\+Response\+Return\+Value \mbox{\hyperlink{classflask_1_1views_1_1_method_view_aa532d2ee47791b6e5ebc7bfeba139842}{dispatch\+\_\+request}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classflask_1_1views_1_1_view}{flask.\+views.\+View}}}
+\begin{DoxyCompactItemize}
+\item 
+ft.\+Route\+Callable \mbox{\hyperlink{classflask_1_1views_1_1_view_a9d6a012b3994be83e019711e2ef0d3ca}{as\+\_\+view}} (cls, str name, \texorpdfstring{$\ast$}{*}t.\+Any class\+\_\+args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any class\+\_\+kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1views_1_1_method_view_a33988d1f23aa194e07089da5f9f4107e}\label{classflask_1_1views_1_1_method_view_a33988d1f23aa194e07089da5f9f4107e} 
+{\bfseries methods} = methods
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classflask_1_1views_1_1_view}{flask.\+views.\+View}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classflask_1_1views_1_1_view}{flask.\+views.\+View}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries methods} = None
+\item 
+t {\bfseries provide\+\_\+automatic\+\_\+options} = None
+\item 
+list {\bfseries decorators} = \mbox{[}$\,$\mbox{]}
+\item 
+t {\bfseries init\+\_\+every\+\_\+request} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Dispatches request methods to the corresponding instance methods.
+For example, if you implement a ``get`` method, it will be used to
+handle ``GET`` requests.
+
+This can be useful for defining a REST API.
+
+:attr:`methods` is automatically set based on the methods defined on
+the class.
+
+See :doc:`views` for a detailed guide.
+
+.. code-block:: python
+
+    class CounterAPI(MethodView):
+        def get(self):
+            return str(session.get("counter", 0))
+
+        def post(self):
+            session["counter"] = session.get("counter", 0) + 1
+            return redirect(url_for("counter"))
+
+    app.add_url_rule(
+        "/counter", view_func=CounterAPI.as_view("counter")
+    )
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1views_1_1_method_view_aa532d2ee47791b6e5ebc7bfeba139842}\index{flask.views.MethodView@{flask.views.MethodView}!dispatch\_request@{dispatch\_request}}
+\index{dispatch\_request@{dispatch\_request}!flask.views.MethodView@{flask.views.MethodView}}
+\doxysubsubsection{\texorpdfstring{dispatch\_request()}{dispatch\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1views_1_1_method_view_aa532d2ee47791b6e5ebc7bfeba139842} 
+ ft.\+Response\+Return\+Value flask.\+views.\+Method\+View.\+dispatch\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classflask_1_1views_1_1_view}{flask.\+views.\+View}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/views.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,74 @@
+\doxysection{werkzeug.\+testapp Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1testapp}{}\label{namespacewerkzeug_1_1testapp}\index{werkzeug.testapp@{werkzeug.testapp}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacewerkzeug_1_1testapp_ab331daf3b8a8d00e86fbeb6f10cb772d}\label{namespacewerkzeug_1_1testapp_ab331daf3b8a8d00e86fbeb6f10cb772d} 
+t.\+Iterator\mbox{[}t.\+Tuple\mbox{[}str, bool, bool\mbox{]}\mbox{]} {\bfseries iter\+\_\+sys\+\_\+path} ()
+\item 
+\Hypertarget{namespacewerkzeug_1_1testapp_af5ac934dcdab2af2197651c744457bf7}\label{namespacewerkzeug_1_1testapp_af5ac934dcdab2af2197651c744457bf7} 
+bytes {\bfseries render\+\_\+testapp} (\mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}} req)
+\item 
+t.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{namespacewerkzeug_1_1testapp_a74d09d7aa71c204642be4961cd4c4cab}{test\+\_\+app}} ("{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacewerkzeug_1_1testapp_ad0f2c85d10196c081882dd0cf043c0cb}{logo}}
+\item 
+\Hypertarget{namespacewerkzeug_1_1testapp_a23bbde0a83f575c0a1a47df6ed6341fc}\label{namespacewerkzeug_1_1testapp_a23bbde0a83f575c0a1a47df6ed6341fc} 
+str {\bfseries TEMPLATE}
+\item 
+\Hypertarget{namespacewerkzeug_1_1testapp_a119b4ec287c1c9d978df1f291a9cf483}\label{namespacewerkzeug_1_1testapp_a119b4ec287c1c9d978df1f291a9cf483} 
+{\bfseries test\+\_\+app}
+\item 
+\Hypertarget{namespacewerkzeug_1_1testapp_a8c16a91c985857deac59a91fc9009f5d}\label{namespacewerkzeug_1_1testapp_a8c16a91c985857deac59a91fc9009f5d} 
+{\bfseries use\+\_\+reloader}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A small application that can be used to test a WSGI server and check
+it for WSGI compliance.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1testapp_a74d09d7aa71c204642be4961cd4c4cab}\index{werkzeug.testapp@{werkzeug.testapp}!test\_app@{test\_app}}
+\index{test\_app@{test\_app}!werkzeug.testapp@{werkzeug.testapp}}
+\doxysubsubsection{\texorpdfstring{test\_app()}{test\_app()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1testapp_a74d09d7aa71c204642be4961cd4c4cab} 
+ t.\+Iterable\mbox{[}bytes\mbox{]} werkzeug.\+testapp.\+test\+\_\+app (\begin{DoxyParamCaption}\item[{"{}WSGIEnvironment"{}}]{environ}{, }\item[{"{}Start\+Response"{} }]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Simple test application that dumps the environment.  You can use
+it to check if Werkzeug is working properly:
+
+.. sourcecode:: pycon
+
+    >>> from werkzeug.serving import run_simple
+    >>> from werkzeug.testapp import test_app
+    >>> run_simple('localhost', 3000, test_app)
+     * Running on http://localhost:3000/
+
+The application displays important information from the WSGI environment,
+the Python interpreter and the installed libraries.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1testapp_ad0f2c85d10196c081882dd0cf043c0cb}\index{werkzeug.testapp@{werkzeug.testapp}!logo@{logo}}
+\index{logo@{logo}!werkzeug.testapp@{werkzeug.testapp}}
+\doxysubsubsection{\texorpdfstring{logo}{logo}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1testapp_ad0f2c85d10196c081882dd0cf043c0cb} 
+werkzeug.\+testapp.\+logo}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ Response(}
+\DoxyCodeLine{00002\ \ \ \ \ base64.b64decode(}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00004\ \ \ \ \ ),}
+\DoxyCodeLine{00005\ \ \ \ \ mimetype=\textcolor{stringliteral}{"{}image/png"{}},}
+\DoxyCodeLine{00006\ )}
+
+\end{DoxyCode}

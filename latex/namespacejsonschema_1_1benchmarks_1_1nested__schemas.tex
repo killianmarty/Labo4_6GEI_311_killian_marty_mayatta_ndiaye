@@ -1,0 +1,73 @@
+\doxysection{jsonschema.\+benchmarks.\+nested\+\_\+schemas Namespace Reference}
+\hypertarget{namespacejsonschema_1_1benchmarks_1_1nested__schemas}{}\label{namespacejsonschema_1_1benchmarks_1_1nested__schemas}\index{jsonschema.benchmarks.nested\_schemas@{jsonschema.benchmarks.nested\_schemas}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a0344e302613211231db1bf9fb502bcf8}{nested\+\_\+schema}} (levels)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a7b0050269932b4b30bf1ab79cadb63c0}{metaschemaish}}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a01ea80db82f8960a4d9d0f8803488e24}\label{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a01ea80db82f8960a4d9d0f8803488e24} 
+{\bfseries validator} = validator\+\_\+for(metaschemaish)(metaschemaish)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a14e3a91bca378affb31f027b0340a565}\label{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a14e3a91bca378affb31f027b0340a565} 
+{\bfseries runner} = Runner()
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a91154698771f1fdfcd991b7f350d9068}\label{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a91154698771f1fdfcd991b7f350d9068} 
+{\bfseries not\+\_\+nested} = \mbox{\hyperlink{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a0344e302613211231db1bf9fb502bcf8}{nested\+\_\+schema}}(levels=1)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a18487efafbc4020d52db6c3abc26a122}\label{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a18487efafbc4020d52db6c3abc26a122} 
+{\bfseries schema} = \mbox{\hyperlink{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a0344e302613211231db1bf9fb502bcf8}{nested\+\_\+schema}}(levels=levels)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Validating highly nested schemas shouldn't cause exponential time blowups.
+
+See https://github.com/python-jsonschema/jsonschema/issues/1097.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a0344e302613211231db1bf9fb502bcf8}\index{jsonschema.benchmarks.nested\_schemas@{jsonschema.benchmarks.nested\_schemas}!nested\_schema@{nested\_schema}}
+\index{nested\_schema@{nested\_schema}!jsonschema.benchmarks.nested\_schemas@{jsonschema.benchmarks.nested\_schemas}}
+\doxysubsubsection{\texorpdfstring{nested\_schema()}{nested\_schema()}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a0344e302613211231db1bf9fb502bcf8} 
+jsonschema.\+benchmarks.\+nested\+\_\+schemas.\+nested\+\_\+schema (\begin{DoxyParamCaption}\item[{}]{levels}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Produce a schema which validates deeply nested objects and arrays.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a7b0050269932b4b30bf1ab79cadb63c0}\index{jsonschema.benchmarks.nested\_schemas@{jsonschema.benchmarks.nested\_schemas}!metaschemaish@{metaschemaish}}
+\index{metaschemaish@{metaschemaish}!jsonschema.benchmarks.nested\_schemas@{jsonschema.benchmarks.nested\_schemas}}
+\doxysubsubsection{\texorpdfstring{metaschemaish}{metaschemaish}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1benchmarks_1_1nested__schemas_a7b0050269932b4b30bf1ab79cadb63c0} 
+dict jsonschema.\+benchmarks.\+nested\+\_\+schemas.\+metaschemaish}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}\$id"{}}:\ \textcolor{stringliteral}{"{}https://example.com/draft/2020-\/12/schema/strict"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}\$schema"{}}:\ \textcolor{stringliteral}{"{}https://json-\/schema.org/draft/2020-\/12/schema"{}},}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}\$vocabulary"{}}:\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}https://json-\/schema.org/draft/2020-\/12/vocab/core"{}}:\ \textcolor{keyword}{True},}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}https://json-\/schema.org/draft/2020-\/12/vocab/applicator"{}}:\ \textcolor{keyword}{True},}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}https://json-\/schema.org/draft/2020-\/12/vocab/unevaluated"{}}:\ \textcolor{keyword}{True},}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}https://json-\/schema.org/draft/2020-\/12/vocab/validation"{}}:\ \textcolor{keyword}{True},}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}https://json-\/schema.org/draft/2020-\/12/vocab/meta-\/data"{}}:\ \textcolor{keyword}{True},}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}https://json-\/schema.org/draft/2020-\/12/vocab/format-\/annotation"{}}:\ \textcolor{keyword}{True},}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}https://json-\/schema.org/draft/2020-\/12/vocab/content"{}}:\ \textcolor{keyword}{True},}
+\DoxyCodeLine{00013\ \ \ \ \ \},}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{"{}\$dynamicAnchor"{}}:\ \textcolor{stringliteral}{"{}meta"{}},}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{"{}\$ref"{}}:\ \textcolor{stringliteral}{"{}https://json-\/schema.org/draft/2020-\/12/schema"{}},}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{stringliteral}{"{}unevaluatedProperties"{}}:\ \textcolor{keyword}{False},}
+\DoxyCodeLine{00018\ \}}
+
+\end{DoxyCode}

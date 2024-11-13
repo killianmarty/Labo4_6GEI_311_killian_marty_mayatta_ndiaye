@@ -1,0 +1,96 @@
+\doxysection{importlib\+\_\+resources.\+readers.\+Namespace\+Reader Class Reference}
+\hypertarget{classimportlib__resources_1_1readers_1_1_namespace_reader}{}\label{classimportlib__resources_1_1readers_1_1_namespace_reader}\index{importlib\_resources.readers.NamespaceReader@{importlib\_resources.readers.NamespaceReader}}
+Inheritance diagram for importlib\+\_\+resources.\+readers.\+Namespace\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.862069cm]{classimportlib__resources_1_1readers_1_1_namespace_reader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1readers_1_1_namespace_reader_a3d43a2b8ea07fe6a00fe4b84d5f83522}\label{classimportlib__resources_1_1readers_1_1_namespace_reader_a3d43a2b8ea07fe6a00fe4b84d5f83522} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, namespace\+\_\+path)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1readers_1_1_namespace_reader_ad161d447761017cad996e0bd1233f0f1}{resource\+\_\+path}} (self, resource)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1readers_1_1_namespace_reader_acf661e3e263e22865d7402880c0050e3}{files}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_resources}{importlib\+\_\+resources.\+abc.\+Traversable\+Resources}}}
+\begin{DoxyCompactItemize}
+\item 
+io.\+Buffered\+Reader \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_resources_a958ded87d786c69c75263b3fec0de254}{open\+\_\+resource}} (self, Str\+Path resource)
+\item 
+bool \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_resources_a8d4a23d1414384f83c67502cbdeb41d4}{is\+\_\+resource}} (self, Str\+Path path)
+\item 
+Iterator\mbox{[}str\mbox{]} \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_resources_ae0e0828f8a6b300cab152916ab6f24e9}{contents}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_resource_reader}{importlib\+\_\+resources.\+abc.\+Resource\+Reader}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1readers_1_1_namespace_reader_ac2cedb1ff49553184b7aac4566aeb9b0}\label{classimportlib__resources_1_1readers_1_1_namespace_reader_ac2cedb1ff49553184b7aac4566aeb9b0} 
+{\bfseries path} = \mbox{\hyperlink{classimportlib__resources_1_1readers_1_1_multiplexed_path}{Multiplexed\+Path}}(\texorpdfstring{$\ast$}{*}filter(bool, map(self.\+\_\+resolve, namespace\+\_\+path)))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable}{abc.\+Traversable}}\texorpdfstring{$\vert$}{|}None \mbox{\hyperlink{classimportlib__resources_1_1readers_1_1_namespace_reader_accabf0793ae761abe20ad0bba3785bb3}{\+\_\+resolve}} (cls, path\+\_\+str)
+\item 
+\Hypertarget{classimportlib__resources_1_1readers_1_1_namespace_reader_a649276246a476453917c72ca3a9b754c}\label{classimportlib__resources_1_1readers_1_1_namespace_reader_a649276246a476453917c72ca3a9b754c} 
+Iterator\mbox{[}\mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable}{abc.\+Traversable}}\mbox{]} {\bfseries \+\_\+candidate\+\_\+paths} (cls, str path\+\_\+str)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1readers_1_1_namespace_reader_ad6886ad846ac82e6153ab8e8b51079f6}\label{classimportlib__resources_1_1readers_1_1_namespace_reader_ad6886ad846ac82e6153ab8e8b51079f6} 
+{\bfseries \+\_\+resolve\+\_\+zip\+\_\+path} (str path\+\_\+str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classimportlib__resources_1_1readers_1_1_namespace_reader_accabf0793ae761abe20ad0bba3785bb3}\index{importlib\_resources.readers.NamespaceReader@{importlib\_resources.readers.NamespaceReader}!\_resolve@{\_resolve}}
+\index{\_resolve@{\_resolve}!importlib\_resources.readers.NamespaceReader@{importlib\_resources.readers.NamespaceReader}}
+\doxysubsubsection{\texorpdfstring{\_resolve()}{\_resolve()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1readers_1_1_namespace_reader_accabf0793ae761abe20ad0bba3785bb3} 
+ \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable}{abc.\+Traversable}} \texorpdfstring{$\vert$}{|} None importlib\+\_\+resources.\+readers.\+Namespace\+Reader.\+\_\+resolve (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{path\+\_\+str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}    Given an item from a namespace path, resolve it to a Traversable.
+
+    path_str might be a directory on the filesystem or a path to a
+    zipfile plus the path within the zipfile, e.g. ``/foo/bar`` or
+    ``/foo/baz.zip/inner_dir`` or ``foo\baz.zip\inner_dir\sub``.
+
+    path_str might also be a sentinel used by editable packages to
+    trigger other behaviors (see python/importlib_resources#311).
+    In that case, return None.\end{DoxyVerb}
+ \Hypertarget{classimportlib__resources_1_1readers_1_1_namespace_reader_acf661e3e263e22865d7402880c0050e3}\index{importlib\_resources.readers.NamespaceReader@{importlib\_resources.readers.NamespaceReader}!files@{files}}
+\index{files@{files}!importlib\_resources.readers.NamespaceReader@{importlib\_resources.readers.NamespaceReader}}
+\doxysubsubsection{\texorpdfstring{files()}{files()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1readers_1_1_namespace_reader_acf661e3e263e22865d7402880c0050e3} 
+importlib\+\_\+resources.\+readers.\+Namespace\+Reader.\+files (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a Traversable object for the loaded package.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_resources_a40f2c88fef30eb0d3487aef63bd3c56e}{importlib\+\_\+resources.\+abc.\+Traversable\+Resources}}.
+
+\Hypertarget{classimportlib__resources_1_1readers_1_1_namespace_reader_ad161d447761017cad996e0bd1233f0f1}\index{importlib\_resources.readers.NamespaceReader@{importlib\_resources.readers.NamespaceReader}!resource\_path@{resource\_path}}
+\index{resource\_path@{resource\_path}!importlib\_resources.readers.NamespaceReader@{importlib\_resources.readers.NamespaceReader}}
+\doxysubsubsection{\texorpdfstring{resource\_path()}{resource\_path()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1readers_1_1_namespace_reader_ad161d447761017cad996e0bd1233f0f1} 
+importlib\+\_\+resources.\+readers.\+Namespace\+Reader.\+resource\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{resource}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the file system path to prevent
+`resources.path()` from creating a temporary
+copy.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_resources_a568d2268cacaf922825e35a24b4027dd}{importlib\+\_\+resources.\+abc.\+Traversable\+Resources}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/importlib\+\_\+resources/readers.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+\doxysection{jsonschema.\+benchmarks.\+useless\+\_\+keywords Namespace Reference}
+\hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__keywords}{}\label{namespacejsonschema_1_1benchmarks_1_1useless__keywords}\index{jsonschema.benchmarks.useless\_keywords@{jsonschema.benchmarks.useless\_keywords}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__keywords_a211004df8ea0ff8436b064cb28b5576f}\label{namespacejsonschema_1_1benchmarks_1_1useless__keywords_a211004df8ea0ff8436b064cb28b5576f} 
+int {\bfseries NUM\+\_\+\+USELESS} = 100000
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1benchmarks_1_1useless__keywords_a5f7a45888461d5a39a37e12fbff878aa}{schema}}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__keywords_affc2bc2e08b6eb008e2e02f735ca7bcb}\label{namespacejsonschema_1_1benchmarks_1_1useless__keywords_affc2bc2e08b6eb008e2e02f735ca7bcb} 
+{\bfseries validator} = Draft202012\+Validator(schema)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__keywords_a9c09e950e92d0042e34ae8f228ea3d46}\label{namespacejsonschema_1_1benchmarks_1_1useless__keywords_a9c09e950e92d0042e34ae8f228ea3d46} 
+int {\bfseries valid} = 3737
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__keywords_ac6944ece38eb50de57966c50386aa685}\label{namespacejsonschema_1_1benchmarks_1_1useless__keywords_ac6944ece38eb50de57966c50386aa685} 
+int {\bfseries invalid} = 12
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__keywords_a1d9d508d06e5f62372a2d57ffc094f37}\label{namespacejsonschema_1_1benchmarks_1_1useless__keywords_a1d9d508d06e5f62372a2d57ffc094f37} 
+{\bfseries runner} = Runner()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A benchmark for validation of schemas containing lots of useless keywords.
+
+Checks we filter them out once, ahead of time.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1useless__keywords_a5f7a45888461d5a39a37e12fbff878aa}\index{jsonschema.benchmarks.useless\_keywords@{jsonschema.benchmarks.useless\_keywords}!schema@{schema}}
+\index{schema@{schema}!jsonschema.benchmarks.useless\_keywords@{jsonschema.benchmarks.useless\_keywords}}
+\doxysubsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1benchmarks_1_1useless__keywords_a5f7a45888461d5a39a37e12fbff878aa} 
+jsonschema.\+benchmarks.\+useless\+\_\+keywords.\+schema}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ dict(}
+\DoxyCodeLine{00002\ \ \ \ \ [}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}not"{}},\ \{\textcolor{stringliteral}{"{}const"{}}:\ 42\}),}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ *((str(i),\ i)\ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ range(NUM\_USELESS)),}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}type"{}},\ \textcolor{stringliteral}{"{}integer"{}}),}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ *((str(i),\ i)\ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ range(NUM\_USELESS,\ NUM\_USELESS)),}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}minimum"{}},\ 37),}
+\DoxyCodeLine{00008\ \ \ \ \ ],}
+\DoxyCodeLine{00009\ )}
+
+\end{DoxyCode}

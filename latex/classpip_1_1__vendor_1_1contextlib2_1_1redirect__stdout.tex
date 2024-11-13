@@ -1,0 +1,55 @@
+\doxysection{pip.\+\_\+vendor.\+contextlib2.\+redirect\+\_\+stdout Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1redirect__stdout}{}\label{classpip_1_1__vendor_1_1contextlib2_1_1redirect__stdout}\index{pip.\_vendor.contextlib2.redirect\_stdout@{pip.\_vendor.contextlib2.redirect\_stdout}}
+Inheritance diagram for pip.\+\_\+vendor.\+contextlib2.\+redirect\+\_\+stdout\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1contextlib2_1_1redirect__stdout}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1redirect__stdout_acea8c8c8d4d3f7f019aa25fe35122f4e}\label{classpip_1_1__vendor_1_1contextlib2_1_1redirect__stdout_acea8c8c8d4d3f7f019aa25fe35122f4e} 
+str {\bfseries \+\_\+stream} = "{}stdout"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1___redirect_stream}{pip.\+\_\+vendor.\+contextlib2.\+\_\+\+Redirect\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+stream} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1___redirect_stream}{pip.\+\_\+vendor.\+contextlib2.\+\_\+\+Redirect\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, new\+\_\+target)
+\item 
+{\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+{\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exctype, excinst, exctb)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1___redirect_stream}{pip.\+\_\+vendor.\+contextlib2.\+\_\+\+Redirect\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+new\+\_\+target} = new\+\_\+target
+\item 
+list {\bfseries \+\_\+old\+\_\+targets} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Context manager for temporarily redirecting stdout to another file.
+
+    # How to send help() to stderr
+    with redirect_stdout(sys.stderr):
+        help(dir)
+
+    # How to write help() to a file
+    with open('help.txt', 'w') as f:
+        with redirect_stdout(f):
+            help(pow)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/contextlib2.\+py\end{DoxyCompactItemize}

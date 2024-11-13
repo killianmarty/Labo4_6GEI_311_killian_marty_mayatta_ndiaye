@@ -1,0 +1,110 @@
+\doxysection{dateutil.\+rrule Namespace Reference}
+\hypertarget{namespacedateutil_1_1rrule}{}\label{namespacedateutil_1_1rrule}\index{dateutil.rrule@{dateutil.rrule}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdateutil_1_1rrule_1_1__iterinfo}{\+\_\+iterinfo}}
+\item 
+class \mbox{\hyperlink{classdateutil_1_1rrule_1_1__rrulestr}{\+\_\+rrulestr}}
+\item 
+class \mbox{\hyperlink{classdateutil_1_1rrule_1_1rrule}{rrule}}
+\item 
+class \mbox{\hyperlink{classdateutil_1_1rrule_1_1rrulebase}{rrulebase}}
+\item 
+class \mbox{\hyperlink{classdateutil_1_1rrule_1_1rruleset}{rruleset}}
+\item 
+class \mbox{\hyperlink{classdateutil_1_1rrule_1_1weekday}{weekday}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedateutil_1_1rrule_aff2a61272faa606f5acdcf061c6ffc28}{\+\_\+invalidates\+\_\+cache}} (f)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedateutil_1_1rrule_a8f1ab25274ea15275eb3a1bf6cf36e9e}{M366\+MASK}}
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_a80c91562f965077df5fd9f133aa706c2}\label{namespacedateutil_1_1rrule_a80c91562f965077df5fd9f133aa706c2} 
+{\bfseries M365\+MASK} = list(M366\+MASK)
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_aa48d0a3018e00f60591bac3321202fc6}\label{namespacedateutil_1_1rrule_aa48d0a3018e00f60591bac3321202fc6} 
+{\bfseries M29}
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_a21e1626326f7f257e5d2e4a7195af9ba}\label{namespacedateutil_1_1rrule_a21e1626326f7f257e5d2e4a7195af9ba} 
+{\bfseries M30}
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_aff88a8ca05b8ccefded35b249ead0c6e}\label{namespacedateutil_1_1rrule_aff88a8ca05b8ccefded35b249ead0c6e} 
+{\bfseries M31}
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_adb3218fdcf9f08cba0a9945d7dc030ce}\label{namespacedateutil_1_1rrule_adb3218fdcf9f08cba0a9945d7dc030ce} 
+{\bfseries MDAY366\+MASK} = tuple(M31+M29+M31+M30+M31+M30+M31+M31+M30+M31+M30+M31+M31\mbox{[}\+:7\mbox{]})
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_a07ab818db8e925a8e4be70ed387bbded}\label{namespacedateutil_1_1rrule_a07ab818db8e925a8e4be70ed387bbded} 
+{\bfseries MDAY365\+MASK} = list(MDAY366\+MASK)
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_a4cc810f7b1aaecbbe9d7dc27778d7d65}\label{namespacedateutil_1_1rrule_a4cc810f7b1aaecbbe9d7dc27778d7d65} 
+{\bfseries NMDAY366\+MASK} = tuple(M31+M29+M31+M30+M31+M30+M31+M31+M30+M31+M30+M31+M31\mbox{[}\+:7\mbox{]})
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_ae6ac84468532b70d2311c2f3001379e9}\label{namespacedateutil_1_1rrule_ae6ac84468532b70d2311c2f3001379e9} 
+{\bfseries NMDAY365\+MASK} = list(NMDAY366\+MASK)
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_aa10ab73118e4d70a9b52f98057a0a024}\label{namespacedateutil_1_1rrule_aa10ab73118e4d70a9b52f98057a0a024} 
+tuple {\bfseries M366\+RANGE} = (0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335, 366)
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_ad179a90af3cd58f9abb866b0c7fc5225}\label{namespacedateutil_1_1rrule_ad179a90af3cd58f9abb866b0c7fc5225} 
+tuple {\bfseries M365\+RANGE} = (0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334, 365)
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_a5a16576aa125d6c19008f83b9ad1c701}\label{namespacedateutil_1_1rrule_a5a16576aa125d6c19008f83b9ad1c701} 
+list {\bfseries WDAYMASK} = \mbox{[}0, 1, 2, 3, 4, 5, 6\mbox{]}\texorpdfstring{$\ast$}{*}55
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_a71d4c542c4e5d7c5efe5c45ddfa5a46a}\label{namespacedateutil_1_1rrule_a71d4c542c4e5d7c5efe5c45ddfa5a46a} 
+list {\bfseries FREQNAMES} = \mbox{[}\textquotesingle{}YEARLY\textquotesingle{}, \textquotesingle{}MONTHLY\textquotesingle{}, \textquotesingle{}WEEKLY\textquotesingle{}, \textquotesingle{}DAILY\textquotesingle{}, \textquotesingle{}HOURLY\textquotesingle{}, \textquotesingle{}MINUTELY\textquotesingle{}, \textquotesingle{}SECONDLY\textquotesingle{}\mbox{]}
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_a7073585389eeb2a8f6b0775ec3a69795}\label{namespacedateutil_1_1rrule_a7073585389eeb2a8f6b0775ec3a69795} 
+{\bfseries SECONDLY}
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_aec564bea5167dcc2ef0b0cf7555e0469}\label{namespacedateutil_1_1rrule_aec564bea5167dcc2ef0b0cf7555e0469} 
+{\bfseries easter} = None
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_a6fad102cafe956f4cf9b3e17c0ff78bb}\label{namespacedateutil_1_1rrule_a6fad102cafe956f4cf9b3e17c0ff78bb} 
+{\bfseries parser} = None
+\item 
+\Hypertarget{namespacedateutil_1_1rrule_a833e9e6e7b3e4c65b3e740eef460d9f5}\label{namespacedateutil_1_1rrule_a833e9e6e7b3e4c65b3e740eef460d9f5} 
+{\bfseries rrulestr} = \mbox{\hyperlink{classdateutil_1_1rrule_1_1__rrulestr}{\+\_\+rrulestr}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The rrule module offers a small, complete, and very fast, implementation of
+the recurrence rules documented in the
+`iCalendar RFC <https://tools.ietf.org/html/rfc5545>`_,
+including support for caching of results.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedateutil_1_1rrule_aff2a61272faa606f5acdcf061c6ffc28}\index{dateutil.rrule@{dateutil.rrule}!\_invalidates\_cache@{\_invalidates\_cache}}
+\index{\_invalidates\_cache@{\_invalidates\_cache}!dateutil.rrule@{dateutil.rrule}}
+\doxysubsubsection{\texorpdfstring{\_invalidates\_cache()}{\_invalidates\_cache()}}
+{\footnotesize\ttfamily \label{namespacedateutil_1_1rrule_aff2a61272faa606f5acdcf061c6ffc28} 
+dateutil.\+rrule.\+\_\+invalidates\+\_\+cache (\begin{DoxyParamCaption}\item[{}]{f}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Decorator for rruleset methods which may invalidate the
+cached length.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedateutil_1_1rrule_a8f1ab25274ea15275eb3a1bf6cf36e9e}\index{dateutil.rrule@{dateutil.rrule}!M366MASK@{M366MASK}}
+\index{M366MASK@{M366MASK}!dateutil.rrule@{dateutil.rrule}}
+\doxysubsubsection{\texorpdfstring{M366MASK}{M366MASK}}
+{\footnotesize\ttfamily \label{namespacedateutil_1_1rrule_a8f1ab25274ea15275eb3a1bf6cf36e9e} 
+dateutil.\+rrule.\+M366\+MASK}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ tuple([1]*31+[2]*29+[3]*31+[4]*30+[5]*31+[6]*30\ +}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [7]*31+[8]*31+[9]*30+[10]*31+[11]*30+[12]*31+[1]*7)}
+
+\end{DoxyCode}

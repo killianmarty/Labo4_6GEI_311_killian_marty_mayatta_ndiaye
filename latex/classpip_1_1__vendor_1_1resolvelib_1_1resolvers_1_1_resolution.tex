@@ -1,0 +1,82 @@
+\doxysection{pip.\+\_\+vendor.\+resolvelib.\+resolvers.\+Resolution Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution}{}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution}\index{pip.\_vendor.resolvelib.resolvers.Resolution@{pip.\_vendor.resolvelib.resolvers.Resolution}}
+Inheritance diagram for pip.\+\_\+vendor.\+resolvelib.\+resolvers.\+Resolution\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a7f6008915afb474f8c49990d0e4134f4}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a7f6008915afb474f8c49990d0e4134f4} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, provider, reporter)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a4c81a8a0653665d057aef893fd8065b0}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a4c81a8a0653665d057aef893fd8065b0} 
+{\bfseries state} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_abf24a4f0e5020afae4ac2ee6d280807a}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_abf24a4f0e5020afae4ac2ee6d280807a} 
+{\bfseries resolve} (self, requirements, max\+\_\+rounds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_ae31da4ff909bbb5b54321ac20dc122ec}{\+\_\+push\+\_\+new\+\_\+state}} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a5bd7e10fd7de87900a2d0895fb9465f2}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a5bd7e10fd7de87900a2d0895fb9465f2} 
+{\bfseries \+\_\+merge\+\_\+into\+\_\+criterion} (self, requirement, parent)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a4c87bc07299c448ba224a86171276e4e}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a4c87bc07299c448ba224a86171276e4e} 
+{\bfseries \+\_\+get\+\_\+criterion\+\_\+item\+\_\+preference} (self, item)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_abc71e9edd52232d2f55e4b2b2f134618}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_abc71e9edd52232d2f55e4b2b2f134618} 
+{\bfseries \+\_\+is\+\_\+current\+\_\+pin\+\_\+satisfying} (self, name, criterion)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a3149b2756c55d4be16e02545c0396f23}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a3149b2756c55d4be16e02545c0396f23} 
+{\bfseries \+\_\+get\+\_\+criteria\+\_\+to\+\_\+update} (self, candidate)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_af61b9b54b9ef694a397ee88103d13201}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_af61b9b54b9ef694a397ee88103d13201} 
+{\bfseries \+\_\+attempt\+\_\+to\+\_\+pin\+\_\+criterion} (self, name, criterion)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a25f1a053a4965dd981196cc4c066f19c}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a25f1a053a4965dd981196cc4c066f19c} 
+{\bfseries \+\_\+backtrack} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a1905e700582eccc8e7464241a1df4751}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a1905e700582eccc8e7464241a1df4751} 
+{\bfseries \+\_\+p} = provider
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a4dad84f1484fa63697c624c3f76d5f05}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_a4dad84f1484fa63697c624c3f76d5f05} 
+{\bfseries \+\_\+r} = reporter
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_aa84e4556213b062f83618ff3069b5354}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_aa84e4556213b062f83618ff3069b5354} 
+list {\bfseries \+\_\+states} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Stateful resolution object.
+
+This is designed as a one-off object that holds information to kick start
+the resolution process, and holds the results afterwards.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_ae31da4ff909bbb5b54321ac20dc122ec}\index{pip.\_vendor.resolvelib.resolvers.Resolution@{pip.\_vendor.resolvelib.resolvers.Resolution}!\_push\_new\_state@{\_push\_new\_state}}
+\index{\_push\_new\_state@{\_push\_new\_state}!pip.\_vendor.resolvelib.resolvers.Resolution@{pip.\_vendor.resolvelib.resolvers.Resolution}}
+\doxysubsubsection{\texorpdfstring{\_push\_new\_state()}{\_push\_new\_state()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolution_ae31da4ff909bbb5b54321ac20dc122ec} 
+pip.\+\_\+vendor.\+resolvelib.\+resolvers.\+Resolution.\+\_\+push\+\_\+new\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Push a new state into history.
+
+This new state will be used to hold resolution results of the next
+coming round.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/resolvelib/resolvers.\+py\end{DoxyCompactItemize}

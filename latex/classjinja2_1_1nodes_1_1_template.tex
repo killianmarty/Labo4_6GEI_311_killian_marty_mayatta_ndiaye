@@ -1,0 +1,70 @@
+\doxysection{jinja2.\+nodes.\+Template Class Reference}
+\hypertarget{classjinja2_1_1nodes_1_1_template}{}\label{classjinja2_1_1nodes_1_1_template}\index{jinja2.nodes.Template@{jinja2.nodes.Template}}
+Inheritance diagram for jinja2.\+nodes.\+Template\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classjinja2_1_1nodes_1_1_template}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjinja2_1_1nodes_1_1_template_a06f04c7e28636cb98bec6fa106352e82}\label{classjinja2_1_1nodes_1_1_template_a06f04c7e28636cb98bec6fa106352e82} 
+tuple {\bfseries fields} = ("{}body"{},)
+\item 
+\Hypertarget{classjinja2_1_1nodes_1_1_template_a08c5c1b99687405a9cd78bc1a3aa0db9}\label{classjinja2_1_1nodes_1_1_template_a08c5c1b99687405a9cd78bc1a3aa0db9} 
+t {\bfseries body} .\mbox{\hyperlink{classjinja2_1_1nodes_1_1_list}{List}}\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{Node}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{jinja2.\+nodes.\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+tuple {\bfseries fields} = ()
+\item 
+tuple {\bfseries attributes} = ("{}lineno"{}, "{}environment"{})
+\item 
+bool {\bfseries abstract} = True
+\item 
+t {\bfseries environment} .Optional\mbox{[}"{}Environment"{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{jinja2.\+nodes.\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}t.\+Any fields, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any attributes)
+\item 
+t.\+Iterator\mbox{[}t.\+Tuple\mbox{[}str, t.\+Any\mbox{]}\mbox{]} \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node_a6b24daf58f09e9df4fc24092c4ac873e}{iter\+\_\+fields}} (self, t.\+Optional\mbox{[}t.\+Container\mbox{[}str\mbox{]}\mbox{]} exclude=None, t.\+Optional\mbox{[}t.\+Container\mbox{[}str\mbox{]}\mbox{]} only=None)
+\item 
+t.\+Iterator\mbox{[}"{}Node"{}\mbox{]} \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node_aa81ac19a94849d8a56718763c775c86d}{iter\+\_\+child\+\_\+nodes}} (self, t.\+Optional\mbox{[}t.\+Container\mbox{[}str\mbox{]}\mbox{]} exclude=None, t.\+Optional\mbox{[}t.\+Container\mbox{[}str\mbox{]}\mbox{]} only=None)
+\item 
+t.\+Optional\mbox{[}\+\_\+\+Node\+Bound\mbox{]} \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node_ae60af82d0a5291018756ea4f756433ba}{find}} (self, t.\+Type\mbox{[}\+\_\+\+Node\+Bound\mbox{]} node\+\_\+type)
+\item 
+t.\+Iterator\mbox{[}\+\_\+\+Node\+Bound\mbox{]} \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node_a333c0fe3d4f0dd75e97ee4ed411ea0a0}{find\+\_\+all}} (self, t.\+Union\mbox{[}t.\+Type\mbox{[}\+\_\+\+Node\+Bound\mbox{]}, t.\+Tuple\mbox{[}t.\+Type\mbox{[}\+\_\+\+Node\+Bound\mbox{]},...\mbox{]}\mbox{]} node\+\_\+type)
+\item 
+"{}Node"{} \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node_a0f5f063c50c12e7fbaabc3b12cc8f46a}{set\+\_\+ctx}} (self, str ctx)
+\item 
+"{}Node"{} \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node_abede1ed14e5a50a071ff56262ba1ce9b}{set\+\_\+lineno}} (self, int lineno, bool override=False)
+\item 
+"{}Node"{} \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node_ade9f4277271759e15de5555e936727e0}{set\+\_\+environment}} (self, "{}Environment"{} environment)
+\item 
+bool {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, t.\+Any other)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+str {\bfseries dump} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classjinja2_1_1nodes_1_1_node_type}{jinja2.\+nodes.\+Node\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+new\+\_\+\+\_\+} (mcs, name, bases, d)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Node that represents a template.  This must be the outermost node that
+is passed to the compiler.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/jinja2/nodes.\+py\end{DoxyCompactItemize}

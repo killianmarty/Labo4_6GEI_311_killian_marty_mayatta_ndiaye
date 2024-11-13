@@ -1,0 +1,122 @@
+\doxysection{Référence de la classe click.\+shell\+\_\+completion.\+Bash\+Complete}
+\hypertarget{classclick_1_1shell__completion_1_1_bash_complete}{}\label{classclick_1_1shell__completion_1_1_bash_complete}\index{click.shell\_completion.BashComplete@{click.shell\_completion.BashComplete}}
+Graphe d\textquotesingle{}héritage de click.\+shell\+\_\+completion.\+Bash\+Complete\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclick_1_1shell__completion_1_1_bash_complete}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classclick_1_1shell__completion_1_1_bash_complete_a6762a39d0cef6de7b850b8cb2e62714e}{source}} (self)
+\item 
+t.\+Tuple\mbox{[}t.\+List\mbox{[}str\mbox{]}, str\mbox{]} \mbox{\hyperlink{classclick_1_1shell__completion_1_1_bash_complete_a28f67b60beedf9ecced8823a901c26a7}{get\+\_\+completion\+\_\+args}} (self)
+\item 
+str \mbox{\hyperlink{classclick_1_1shell__completion_1_1_bash_complete_a7fff35a47443d8889637ccf817297a8e}{format\+\_\+completion}} (self, \mbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}} item)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete}{click.\+shell\+\_\+completion.\+Shell\+Complete}}}
+\begin{DoxyCompactItemize}
+\item 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \mbox{\hyperlink{classclick_1_1core_1_1_base_command}{Base\+Command}} cli, t.\+Mutable\+Mapping\mbox{[}str, t.\+Any\mbox{]} ctx\+\_\+args, str prog\+\_\+name, str complete\+\_\+var)
+\item 
+str \mbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete_af64d3df787e08d73784849d0456491a1}{func\+\_\+name}} (self)
+\item 
+t.\+Dict\mbox{[}str, t.\+Any\mbox{]} \mbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete_a0f11483d3be31c24de6f5db784aacff2}{source\+\_\+vars}} (self)
+\item 
+t.\+List\mbox{[}\mbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}}\mbox{]} \mbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete_a7e8835ba0c3cda9605faf658363a8f53}{get\+\_\+completions}} (self, t.\+List\mbox{[}str\mbox{]} args, str incomplete)
+\item 
+str \mbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete_a75790a0b18f795b1880c101dc2fb4c71}{complete}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1shell__completion_1_1_bash_complete_a611325a31fd1c189fe73927519020504}\label{classclick_1_1shell__completion_1_1_bash_complete_a611325a31fd1c189fe73927519020504} 
+str {\bfseries name} = "{}bash"{}
+\item 
+\Hypertarget{classclick_1_1shell__completion_1_1_bash_complete_a2d31423d09729f52573012ed4895c96e}\label{classclick_1_1shell__completion_1_1_bash_complete_a2d31423d09729f52573012ed4895c96e} 
+{\bfseries source\+\_\+template} = \+\_\+\+SOURCE\+\_\+\+BASH
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete}{click.\+shell\+\_\+completion.\+Shell\+Complete}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries name} .Class\+Var\mbox{[}str\mbox{]}
+\item 
+t {\bfseries source\+\_\+template} .Class\+Var\mbox{[}str\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1shell__completion_1_1_bash_complete_aa38fa235d9e2a49d61c79aaad9536968}\label{classclick_1_1shell__completion_1_1_bash_complete_aa38fa235d9e2a49d61c79aaad9536968} 
+None {\bfseries \+\_\+check\+\_\+version} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete}{click.\+shell\+\_\+completion.\+Shell\+Complete}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries cli} = cli
+\item 
+{\bfseries ctx\+\_\+args} = ctx\+\_\+args
+\item 
+{\bfseries prog\+\_\+name} = prog\+\_\+name
+\item 
+{\bfseries complete\+\_\+var} = complete\+\_\+var
+\item 
+{\bfseries func\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Shell completion for Bash.\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classclick_1_1shell__completion_1_1_bash_complete_a7fff35a47443d8889637ccf817297a8e}\index{click.shell\_completion.BashComplete@{click.shell\_completion.BashComplete}!format\_completion@{format\_completion}}
+\index{format\_completion@{format\_completion}!click.shell\_completion.BashComplete@{click.shell\_completion.BashComplete}}
+\doxysubsubsection{\texorpdfstring{format\_completion()}{format\_completion()}}
+{\footnotesize\ttfamily \label{classclick_1_1shell__completion_1_1_bash_complete_a7fff35a47443d8889637ccf817297a8e} 
+ str click.\+shell\+\_\+completion.\+Bash\+Complete.\+format\+\_\+completion (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}}}]{item}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format a completion item into the form recognized by the
+shell script. This must be implemented by subclasses.
+
+:param item: Completion item to format.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete_a9857ad8ced50533d4b0dc3702d52e6a0}{click.\+shell\+\_\+completion.\+Shell\+Complete}}.
+
+\Hypertarget{classclick_1_1shell__completion_1_1_bash_complete_a28f67b60beedf9ecced8823a901c26a7}\index{click.shell\_completion.BashComplete@{click.shell\_completion.BashComplete}!get\_completion\_args@{get\_completion\_args}}
+\index{get\_completion\_args@{get\_completion\_args}!click.shell\_completion.BashComplete@{click.shell\_completion.BashComplete}}
+\doxysubsubsection{\texorpdfstring{get\_completion\_args()}{get\_completion\_args()}}
+{\footnotesize\ttfamily \label{classclick_1_1shell__completion_1_1_bash_complete_a28f67b60beedf9ecced8823a901c26a7} 
+ t.\+Tuple\mbox{[}t.\+List\mbox{[}str\mbox{]}, str\mbox{]} click.\+shell\+\_\+completion.\+Bash\+Complete.\+get\+\_\+completion\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Use the env vars defined by the shell script to return a
+tuple of ``args, incomplete``. This must be implemented by
+subclasses.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete_a7c8a465aad4dcf889e30392bded6397d}{click.\+shell\+\_\+completion.\+Shell\+Complete}}.
+
+\Hypertarget{classclick_1_1shell__completion_1_1_bash_complete_a6762a39d0cef6de7b850b8cb2e62714e}\index{click.shell\_completion.BashComplete@{click.shell\_completion.BashComplete}!source@{source}}
+\index{source@{source}!click.shell\_completion.BashComplete@{click.shell\_completion.BashComplete}}
+\doxysubsubsection{\texorpdfstring{source()}{source()}}
+{\footnotesize\ttfamily \label{classclick_1_1shell__completion_1_1_bash_complete_a6762a39d0cef6de7b850b8cb2e62714e} 
+ str click.\+shell\+\_\+completion.\+Bash\+Complete.\+source (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Produce the shell script that defines the completion
+function. By default this ``%``-style formats
+:attr:`source_template` with the dict returned by
+:meth:`source_vars`.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete_adf427270f9b647367f2c699e0ed907dd}{click.\+shell\+\_\+completion.\+Shell\+Complete}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/shell\+\_\+completion.\+py\end{DoxyCompactItemize}

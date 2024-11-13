@@ -1,0 +1,56 @@
+\doxysection{werkzeug.\+wrappers.\+response.\+Response\+Stream Class Reference}
+\hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream}{}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a83a16f3d6ba0a086e326d3f5fba07afb}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a83a16f3d6ba0a086e326d3f5fba07afb} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \mbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} response)
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a576d08bcf984dea5b71259bfefb89963}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a576d08bcf984dea5b71259bfefb89963} 
+int {\bfseries write} (self, bytes value)
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a2dd897db1556cc795f3906363ace294b}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a2dd897db1556cc795f3906363ace294b} 
+None {\bfseries writelines} (self, t.\+Iterable\mbox{[}bytes\mbox{]} seq)
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_af95dea3bf29ce6482316d95a0820909b}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_af95dea3bf29ce6482316d95a0820909b} 
+None {\bfseries close} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a50a5af3d9432ce052e94c1ca84c09dcb}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a50a5af3d9432ce052e94c1ca84c09dcb} 
+None {\bfseries flush} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a3df202959d951cb74600622af47a3e65}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a3df202959d951cb74600622af47a3e65} 
+bool {\bfseries isatty} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_afe3359c12b3ba435d9205212f418ea9e}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_afe3359c12b3ba435d9205212f418ea9e} 
+int {\bfseries tell} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a5ee458a14f9c5e7856002b18692439cd}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a5ee458a14f9c5e7856002b18692439cd} 
+str {\bfseries encoding} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_ad21979d62f0ca1ea452a355ed60a0132}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_ad21979d62f0ca1ea452a355ed60a0132} 
+{\bfseries response} = response
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a8bd943e136d27701198514707314afd2}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a8bd943e136d27701198514707314afd2} 
+bool {\bfseries closed} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a6098ca43c4f2e5172362210c4aace501}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a6098ca43c4f2e5172362210c4aace501} 
+str {\bfseries mode} = "{}wb+"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A file descriptor like object used by :meth:`Response.stream` to
+represent the body of the stream. It directly pushes into the
+response iterable of the response object.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/wrappers/response.\+py\end{DoxyCompactItemize}

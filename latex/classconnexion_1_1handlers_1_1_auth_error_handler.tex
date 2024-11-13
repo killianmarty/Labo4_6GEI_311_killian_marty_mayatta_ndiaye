@@ -1,0 +1,115 @@
+\doxysection{Référence de la classe connexion.\+handlers.\+Auth\+Error\+Handler}
+\hypertarget{classconnexion_1_1handlers_1_1_auth_error_handler}{}\label{classconnexion_1_1handlers_1_1_auth_error_handler}\index{connexion.handlers.AuthErrorHandler@{connexion.handlers.AuthErrorHandler}}
+Graphe d\textquotesingle{}héritage de connexion.\+handlers.\+Auth\+Error\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconnexion_1_1handlers_1_1_auth_error_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1handlers_1_1_auth_error_handler_a3093657f7f56a8ef0f79852fcd381c36}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, api, exception, security, security\+\_\+definitions)
+\item 
+\mbox{\hyperlink{classconnexion_1_1handlers_1_1_auth_error_handler_a9aa1bd4f4c05f94b01eb65ebdca5b191}{function}} (self)
+\item 
+\mbox{\hyperlink{classconnexion_1_1handlers_1_1_auth_error_handler_a9061a721aa7068c0f8e736824b2cecee}{handle}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classconnexion_1_1operations_1_1secure_1_1_secure_operation}{connexion.\+operations.\+secure.\+Secure\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries api} (self)
+\item 
+{\bfseries security} (self)
+\item 
+{\bfseries security\+\_\+schemes} (self)
+\item 
+\mbox{\hyperlink{classconnexion_1_1operations_1_1secure_1_1_secure_operation_a6dd0f833c3d70a27ca94ef7af95fdb9f}{security\+\_\+decorator}} (self)
+\item 
+\mbox{\hyperlink{classconnexion_1_1operations_1_1secure_1_1_secure_operation_a7cdbca449026c6070d515ef8144b2b0f}{get\+\_\+mimetype}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1handlers_1_1_auth_error_handler_afcce59ed305a99d7b3e4854f9d29152e}\label{classconnexion_1_1handlers_1_1_auth_error_handler_afcce59ed305a99d7b3e4854f9d29152e} 
+{\bfseries exception} = exception
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classconnexion_1_1operations_1_1secure_1_1_secure_operation}{connexion.\+operations.\+secure.\+Secure\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries security}
+\item 
+list {\bfseries security} = \mbox{[}$\,$\mbox{]}
+\item 
+dict {\bfseries security} = \{\}
+\item 
+{\bfseries api}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classconnexion_1_1operations_1_1secure_1_1_secure_operation}{connexion.\+operations.\+secure.\+Secure\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1operations_1_1secure_1_1_secure_operation_a588bfe7d516cebc20a44ca14be5171a1}{\+\_\+request\+\_\+response\+\_\+decorator}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classconnexion_1_1operations_1_1secure_1_1_secure_operation}{connexion.\+operations.\+secure.\+Secure\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+api} = api
+\item 
+{\bfseries \+\_\+security} = security
+\item 
+{\bfseries \+\_\+security\+\_\+schemes} = security\+\_\+schemes
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Wraps an error with authentication.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classconnexion_1_1handlers_1_1_auth_error_handler_a3093657f7f56a8ef0f79852fcd381c36}\index{connexion.handlers.AuthErrorHandler@{connexion.handlers.AuthErrorHandler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.handlers.AuthErrorHandler@{connexion.handlers.AuthErrorHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1handlers_1_1_auth_error_handler_a3093657f7f56a8ef0f79852fcd381c36} 
+connexion.\+handlers.\+Auth\+Error\+Handler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{api}{, }\item[{}]{exception}{, }\item[{}]{security}{, }\item[{}]{security\+\_\+definitions}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This class uses the exception instance to produce the proper response problem in case the
+request is authenticated.
+
+:param exception: the exception to be wrapped with authentication
+:type exception: werkzeug.exceptions.HTTPException
+:param security: list of security rules the application uses by default
+:type security: list
+:param security_definitions: `Security Definitions Object
+    <https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md#security-definitions-object>`_
+:type security_definitions: dict
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1operations_1_1secure_1_1_secure_operation_a22ff4931a088c29334653168bc2f48f4}{connexion.\+operations.\+secure.\+Secure\+Operation}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classconnexion_1_1handlers_1_1_auth_error_handler_a9aa1bd4f4c05f94b01eb65ebdca5b191}\index{connexion.handlers.AuthErrorHandler@{connexion.handlers.AuthErrorHandler}!function@{function}}
+\index{function@{function}!connexion.handlers.AuthErrorHandler@{connexion.handlers.AuthErrorHandler}}
+\doxysubsubsection{\texorpdfstring{function()}{function()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1handlers_1_1_auth_error_handler_a9aa1bd4f4c05f94b01eb65ebdca5b191} 
+connexion.\+handlers.\+Auth\+Error\+Handler.\+function (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configured error auth handler.
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1handlers_1_1_auth_error_handler_a9061a721aa7068c0f8e736824b2cecee}\index{connexion.handlers.AuthErrorHandler@{connexion.handlers.AuthErrorHandler}!handle@{handle}}
+\index{handle@{handle}!connexion.handlers.AuthErrorHandler@{connexion.handlers.AuthErrorHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1handlers_1_1_auth_error_handler_a9061a721aa7068c0f8e736824b2cecee} 
+connexion.\+handlers.\+Auth\+Error\+Handler.\+handle (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Actual handler for the execution after authentication.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/handlers.\+py\end{DoxyCompactItemize}

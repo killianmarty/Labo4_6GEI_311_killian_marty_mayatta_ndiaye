@@ -1,0 +1,219 @@
+\doxysection{importlib\+\_\+metadata Namespace Reference}
+\hypertarget{namespaceimportlib__metadata}{}\label{namespaceimportlib__metadata}\index{importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_distribution}{Distribution}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_distribution_finder}{Distribution\+Finder}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_entry_point}{Entry\+Point}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_entry_points}{Entry\+Points}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_fast_path}{Fast\+Path}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_file_hash}{File\+Hash}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_lookup}{Lookup}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_metadata_path_finder}{Metadata\+Path\+Finder}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_package_not_found_error}{Package\+Not\+Found\+Error}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_package_path}{Package\+Path}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_path_distribution}{Path\+Distribution}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_prepared}{Prepared}}
+\item 
+class \mbox{\hyperlink{classimportlib__metadata_1_1_sectioned}{Sectioned}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classimportlib__metadata_1_1_distribution}{Distribution}} \mbox{\hyperlink{namespaceimportlib__metadata_a523a7b8ba1b5767a81728cc9364e2404}{distribution}} (str distribution\+\_\+name)
+\item 
+Iterable\mbox{[}\mbox{\hyperlink{classimportlib__metadata_1_1_distribution}{Distribution}}\mbox{]} \mbox{\hyperlink{namespaceimportlib__metadata_a3545e012982b1f9f79fffd0c9ea48013}{distributions}} (\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classimportlib__metadata_1_1__meta_1_1_package_metadata}{\+\_\+meta.\+Package\+Metadata}} \mbox{\hyperlink{namespaceimportlib__metadata_aa8fc30cd05796ad07de169e4c46c4588}{metadata}} (str distribution\+\_\+name)
+\item 
+str \mbox{\hyperlink{namespaceimportlib__metadata_a2b9370ae81c47fe46f4e28c6627b7806}{version}} (str distribution\+\_\+name)
+\item 
+\mbox{\hyperlink{classimportlib__metadata_1_1_entry_points}{Entry\+Points}} \mbox{\hyperlink{namespaceimportlib__metadata_a7e4002da82237510111e089a77eef3cd}{entry\+\_\+points}} (\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}params)
+\item 
+Optional\mbox{[}List\mbox{[}\mbox{\hyperlink{classimportlib__metadata_1_1_package_path}{Package\+Path}}\mbox{]}\mbox{]} \mbox{\hyperlink{namespaceimportlib__metadata_a63f1bb734257c9d64a1d09d037bb264a}{files}} (str distribution\+\_\+name)
+\item 
+Optional\mbox{[}List\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{namespaceimportlib__metadata_a0975f9bb37e30b886ac2ca19a1331ca6}{requires}} (str distribution\+\_\+name)
+\item 
+Mapping\mbox{[}str, List\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{namespaceimportlib__metadata_a26cc4e1c568c89a5bdcfacb5c754a9b5}{packages\+\_\+distributions}} ()
+\item 
+\Hypertarget{namespaceimportlib__metadata_aa84ae8827b8e70ab24ffcbec1adaae2d}\label{namespaceimportlib__metadata_aa84ae8827b8e70ab24ffcbec1adaae2d} 
+{\bfseries \+\_\+top\+\_\+level\+\_\+declared} (dist)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{namespaceimportlib__metadata_ae2d8eec65910e2d304f33b74f46a7719}{\+\_\+topmost}} (\mbox{\hyperlink{classimportlib__metadata_1_1_package_path}{Package\+Path}} name)
+\item 
+str \mbox{\hyperlink{namespaceimportlib__metadata_a3259bb341cae90f3aa7c04968c0c9814}{\+\_\+get\+\_\+toplevel\+\_\+name}} (\mbox{\hyperlink{classimportlib__metadata_1_1_package_path}{Package\+Path}} name)
+\item 
+\Hypertarget{namespaceimportlib__metadata_af1d2a2dcf03ce6f520c3dc56a33c7313}\label{namespaceimportlib__metadata_af1d2a2dcf03ce6f520c3dc56a33c7313} 
+{\bfseries \+\_\+top\+\_\+level\+\_\+inferred} (dist)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceimportlib__metadata_a6bf75618c585c47fec03ade93b24c26c}{\+\_\+unique}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}APIs exposing metadata from third-party Python packages.
+
+This codebase is shared between importlib.metadata in the stdlib
+and importlib_metadata in PyPI. See
+https://github.com/python/importlib_metadata/wiki/Development-Methodology
+for more detail.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceimportlib__metadata_a3259bb341cae90f3aa7c04968c0c9814}\index{importlib\_metadata@{importlib\_metadata}!\_get\_toplevel\_name@{\_get\_toplevel\_name}}
+\index{\_get\_toplevel\_name@{\_get\_toplevel\_name}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{\_get\_toplevel\_name()}{\_get\_toplevel\_name()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_a3259bb341cae90f3aa7c04968c0c9814} 
+ str importlib\+\_\+metadata.\+\_\+get\+\_\+toplevel\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classimportlib__metadata_1_1_package_path}{Package\+Path}}}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Infer a possibly importable module name from a name presumed on
+sys.path.
+
+>>> _get_toplevel_name(PackagePath('foo.py'))
+'foo'
+>>> _get_toplevel_name(PackagePath('foo'))
+'foo'
+>>> _get_toplevel_name(PackagePath('foo.pyc'))
+'foo'
+>>> _get_toplevel_name(PackagePath('foo/__init__.py'))
+'foo'
+>>> _get_toplevel_name(PackagePath('foo.pth'))
+'foo.pth'
+>>> _get_toplevel_name(PackagePath('foo.dist-info'))
+'foo.dist-info'
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__metadata_ae2d8eec65910e2d304f33b74f46a7719}\index{importlib\_metadata@{importlib\_metadata}!\_topmost@{\_topmost}}
+\index{\_topmost@{\_topmost}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{\_topmost()}{\_topmost()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_ae2d8eec65910e2d304f33b74f46a7719} 
+ Optional\mbox{[}str\mbox{]} importlib\+\_\+metadata.\+\_\+topmost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classimportlib__metadata_1_1_package_path}{Package\+Path}}}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the top-most parent as long as there is a parent.
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__metadata_a523a7b8ba1b5767a81728cc9364e2404}\index{importlib\_metadata@{importlib\_metadata}!distribution@{distribution}}
+\index{distribution@{distribution}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{distribution()}{distribution()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_a523a7b8ba1b5767a81728cc9364e2404} 
+ \mbox{\hyperlink{classimportlib__metadata_1_1_distribution}{Distribution}} importlib\+\_\+metadata.\+distribution (\begin{DoxyParamCaption}\item[{str}]{distribution\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the ``Distribution`` instance for the named package.
+
+:param distribution_name: The name of the distribution package as a string.
+:return: A ``Distribution`` instance (or subclass thereof).
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__metadata_a3545e012982b1f9f79fffd0c9ea48013}\index{importlib\_metadata@{importlib\_metadata}!distributions@{distributions}}
+\index{distributions@{distributions}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{distributions()}{distributions()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_a3545e012982b1f9f79fffd0c9ea48013} 
+ Iterable\mbox{[}\mbox{\hyperlink{classimportlib__metadata_1_1_distribution}{Distribution}}\mbox{]} importlib\+\_\+metadata.\+distributions (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get all ``Distribution`` instances in the current environment.
+
+:return: An iterable of ``Distribution`` instances.
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__metadata_a7e4002da82237510111e089a77eef3cd}\index{importlib\_metadata@{importlib\_metadata}!entry\_points@{entry\_points}}
+\index{entry\_points@{entry\_points}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{entry\_points()}{entry\_points()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_a7e4002da82237510111e089a77eef3cd} 
+ \mbox{\hyperlink{classimportlib__metadata_1_1_entry_points}{Entry\+Points}} importlib\+\_\+metadata.\+entry\+\_\+points (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{params}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return EntryPoint objects for all installed packages.
+
+Pass selection parameters (group or name) to filter the
+result to entry points matching those properties (see
+EntryPoints.select()).
+
+:return: EntryPoints for all installed packages.
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__metadata_a63f1bb734257c9d64a1d09d037bb264a}\index{importlib\_metadata@{importlib\_metadata}!files@{files}}
+\index{files@{files}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{files()}{files()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_a63f1bb734257c9d64a1d09d037bb264a} 
+ Optional\mbox{[}List\mbox{[}\mbox{\hyperlink{classimportlib__metadata_1_1_package_path}{Package\+Path}}\mbox{]}\mbox{]} importlib\+\_\+metadata.\+files (\begin{DoxyParamCaption}\item[{str}]{distribution\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of files for the named package.
+
+:param distribution_name: The name of the distribution package to query.
+:return: List of files composing the distribution.
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__metadata_aa8fc30cd05796ad07de169e4c46c4588}\index{importlib\_metadata@{importlib\_metadata}!metadata@{metadata}}
+\index{metadata@{metadata}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{metadata()}{metadata()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_aa8fc30cd05796ad07de169e4c46c4588} 
+ \mbox{\hyperlink{classimportlib__metadata_1_1__meta_1_1_package_metadata}{\+\_\+meta.\+Package\+Metadata}} importlib\+\_\+metadata.\+metadata (\begin{DoxyParamCaption}\item[{str}]{distribution\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the metadata for the named package.
+
+:param distribution_name: The name of the distribution package to query.
+:return: A PackageMetadata containing the parsed metadata.
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__metadata_a26cc4e1c568c89a5bdcfacb5c754a9b5}\index{importlib\_metadata@{importlib\_metadata}!packages\_distributions@{packages\_distributions}}
+\index{packages\_distributions@{packages\_distributions}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{packages\_distributions()}{packages\_distributions()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_a26cc4e1c568c89a5bdcfacb5c754a9b5} 
+ Mapping\mbox{[}str, List\mbox{[}str\mbox{]}\mbox{]} importlib\+\_\+metadata.\+packages\+\_\+distributions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a mapping of top-level packages to their
+distributions.
+
+>>> import collections.abc
+>>> pkgs = packages_distributions()
+>>> all(isinstance(dist, collections.abc.Sequence) for dist in pkgs.values())
+True
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__metadata_a0975f9bb37e30b886ac2ca19a1331ca6}\index{importlib\_metadata@{importlib\_metadata}!requires@{requires}}
+\index{requires@{requires}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{requires()}{requires()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_a0975f9bb37e30b886ac2ca19a1331ca6} 
+ Optional\mbox{[}List\mbox{[}str\mbox{]}\mbox{]} importlib\+\_\+metadata.\+requires (\begin{DoxyParamCaption}\item[{str}]{distribution\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of requirements for the named package.
+
+:return: An iterable of requirements, suitable for
+    packaging.requirement.Requirement.
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__metadata_a2b9370ae81c47fe46f4e28c6627b7806}\index{importlib\_metadata@{importlib\_metadata}!version@{version}}
+\index{version@{version}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_a2b9370ae81c47fe46f4e28c6627b7806} 
+ str importlib\+\_\+metadata.\+version (\begin{DoxyParamCaption}\item[{str}]{distribution\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the version string for the named package.
+
+:param distribution_name: The name of the distribution package to query.
+:return: The version string for the package as defined in the package's
+    "Version" metadata key.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceimportlib__metadata_a6bf75618c585c47fec03ade93b24c26c}\index{importlib\_metadata@{importlib\_metadata}!\_unique@{\_unique}}
+\index{\_unique@{\_unique}!importlib\_metadata@{importlib\_metadata}}
+\doxysubsubsection{\texorpdfstring{\_unique}{\_unique}}
+{\footnotesize\ttfamily \label{namespaceimportlib__metadata_a6bf75618c585c47fec03ade93b24c26c} 
+importlib\+\_\+metadata.\+\_\+unique\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ functools.partial(}
+\DoxyCodeLine{00002\ \ \ \ \ unique\_everseen,}
+\DoxyCodeLine{00003\ \ \ \ \ key=py39.normalized\_name,}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}

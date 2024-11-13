@@ -1,0 +1,96 @@
+\doxysection{Référence de la classe connexion.\+exceptions.\+Extra\+Parameter\+Problem}
+\hypertarget{classconnexion_1_1exceptions_1_1_extra_parameter_problem}{}\label{classconnexion_1_1exceptions_1_1_extra_parameter_problem}\index{connexion.exceptions.ExtraParameterProblem@{connexion.exceptions.ExtraParameterProblem}}
+Graphe d\textquotesingle{}héritage de connexion.\+exceptions.\+Extra\+Parameter\+Problem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classconnexion_1_1exceptions_1_1_extra_parameter_problem}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1exceptions_1_1_extra_parameter_problem_a92c98fd8c2c3c840d84b9981857b5cd3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, formdata\+\_\+parameters, query\+\_\+parameters, title=None, detail=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classconnexion_1_1exceptions_1_1_problem_exception}{connexion.\+exceptions.\+Problem\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries to\+\_\+problem} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1exceptions_1_1_extra_parameter_problem_a19f50cfe2c99f20f7eb5fbb7e15342f9}\label{classconnexion_1_1exceptions_1_1_extra_parameter_problem_a19f50cfe2c99f20f7eb5fbb7e15342f9} 
+{\bfseries extra\+\_\+formdata} = formdata\+\_\+parameters
+\item 
+\Hypertarget{classconnexion_1_1exceptions_1_1_extra_parameter_problem_aa7307f3eb6240bb0e1c75fc397eb024a}\label{classconnexion_1_1exceptions_1_1_extra_parameter_problem_aa7307f3eb6240bb0e1c75fc397eb024a} 
+{\bfseries extra\+\_\+query} = query\+\_\+parameters
+\item 
+str \mbox{\hyperlink{classconnexion_1_1exceptions_1_1_extra_parameter_problem_a03d9ce3e2dcb9bd27153ffe169f4f896}{extra\+\_\+query}}
+\item 
+str \mbox{\hyperlink{classconnexion_1_1exceptions_1_1_extra_parameter_problem_adc6bc3aad3f03605451e38bf3cb9f6cc}{extra\+\_\+formdata}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classconnexion_1_1exceptions_1_1_problem_exception}{connexion.\+exceptions.\+Problem\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries status} = status
+\item 
+{\bfseries title} = title
+\item 
+{\bfseries detail} = detail
+\item 
+{\bfseries type} = type
+\item 
+{\bfseries instance} = instance
+\item 
+{\bfseries headers} = headers
+\item 
+{\bfseries ext} = ext
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classconnexion_1_1exceptions_1_1_extra_parameter_problem_a92c98fd8c2c3c840d84b9981857b5cd3}\index{connexion.exceptions.ExtraParameterProblem@{connexion.exceptions.ExtraParameterProblem}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.exceptions.ExtraParameterProblem@{connexion.exceptions.ExtraParameterProblem}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1exceptions_1_1_extra_parameter_problem_a92c98fd8c2c3c840d84b9981857b5cd3} 
+connexion.\+exceptions.\+Extra\+Parameter\+Problem.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{status}{, }\item[{}]{title}{, }\item[{}]{detail}{ = {\ttfamily None}, }\item[{}]{type}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{instance}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This exception holds arguments that are going to be passed to the
+`connexion.problem` function to generate a proper response.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1exceptions_1_1_problem_exception_a54f845d1b25b446b7c0382654efdf312}{connexion.\+exceptions.\+Problem\+Exception}}.
+
+
+
+\doxysubsection{Documentation des données membres}
+\Hypertarget{classconnexion_1_1exceptions_1_1_extra_parameter_problem_adc6bc3aad3f03605451e38bf3cb9f6cc}\index{connexion.exceptions.ExtraParameterProblem@{connexion.exceptions.ExtraParameterProblem}!extra\_formdata@{extra\_formdata}}
+\index{extra\_formdata@{extra\_formdata}!connexion.exceptions.ExtraParameterProblem@{connexion.exceptions.ExtraParameterProblem}}
+\doxysubsubsection{\texorpdfstring{extra\_formdata}{extra\_formdata}}
+{\footnotesize\ttfamily \label{classconnexion_1_1exceptions_1_1_extra_parameter_problem_adc6bc3aad3f03605451e38bf3cb9f6cc} 
+str connexion.\+exceptions.\+Extra\+Parameter\+Problem.\+extra\+\_\+formdata}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{"{}Extra\ \{parameter\_type\}\ parameter(s)\ \{extra\_params\}\ not\ in\ spec"{}}\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .format(parameter\_type=\textcolor{stringliteral}{'formData'},\ extra\_params=\textcolor{stringliteral}{',\ '}.join(self.extra\_formdata))}
+
+\end{DoxyCode}
+\Hypertarget{classconnexion_1_1exceptions_1_1_extra_parameter_problem_a03d9ce3e2dcb9bd27153ffe169f4f896}\index{connexion.exceptions.ExtraParameterProblem@{connexion.exceptions.ExtraParameterProblem}!extra\_query@{extra\_query}}
+\index{extra\_query@{extra\_query}!connexion.exceptions.ExtraParameterProblem@{connexion.exceptions.ExtraParameterProblem}}
+\doxysubsubsection{\texorpdfstring{extra\_query}{extra\_query}}
+{\footnotesize\ttfamily \label{classconnexion_1_1exceptions_1_1_extra_parameter_problem_a03d9ce3e2dcb9bd27153ffe169f4f896} 
+str connexion.\+exceptions.\+Extra\+Parameter\+Problem.\+extra\+\_\+query}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{"{}Extra\ \{parameter\_type\}\ parameter(s)\ \{extra\_params\}\ not\ in\ spec"{}}\(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .format(parameter\_type=\textcolor{stringliteral}{'query'},\ extra\_params=\textcolor{stringliteral}{',\ '}.join(self.extra\_query))}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/exceptions.\+py\end{DoxyCompactItemize}

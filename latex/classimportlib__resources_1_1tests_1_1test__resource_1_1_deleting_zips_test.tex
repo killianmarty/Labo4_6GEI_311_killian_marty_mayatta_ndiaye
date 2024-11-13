@@ -1,0 +1,79 @@
+\doxysection{importlib\+\_\+resources.\+tests.\+test\+\_\+resource.\+Deleting\+Zips\+Test Class Reference}
+\hypertarget{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test}{}\label{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test}\index{importlib\_resources.tests.test\_resource.DeletingZipsTest@{importlib\_resources.tests.test\_resource.DeletingZipsTest}}
+Inheritance diagram for importlib\+\_\+resources.\+tests.\+test\+\_\+resource.\+Deleting\+Zips\+Test\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.477876cm]{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_aefba5dd7662100f81a31e5ee2dcd74d2}\label{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_aefba5dd7662100f81a31e5ee2dcd74d2} 
+{\bfseries test\+\_\+iterdir\+\_\+does\+\_\+not\+\_\+keep\+\_\+open} (self)
+\item 
+\Hypertarget{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a39b8c0de3f3f42e3e0cd031870c36964}\label{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a39b8c0de3f3f42e3e0cd031870c36964} 
+{\bfseries test\+\_\+is\+\_\+file\+\_\+does\+\_\+not\+\_\+keep\+\_\+open} (self)
+\item 
+\Hypertarget{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a7fb2d0042d8a376c776f7fc7bd504450}\label{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a7fb2d0042d8a376c776f7fc7bd504450} 
+{\bfseries test\+\_\+is\+\_\+file\+\_\+failure\+\_\+does\+\_\+not\+\_\+keep\+\_\+open} (self)
+\item 
+\Hypertarget{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a59750539c9f043a4beb697ad79e7f91b}\label{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a59750539c9f043a4beb697ad79e7f91b} 
+{\bfseries test\+\_\+as\+\_\+file\+\_\+does\+\_\+not\+\_\+keep\+\_\+open} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a94d1556e1c7b840a02ef1fd4806fc59a}{test\+\_\+entered\+\_\+path\+\_\+does\+\_\+not\+\_\+keep\+\_\+open}} (self)
+\item 
+\Hypertarget{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a1b44ddd8fc1b6285baecd951845d962a}\label{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a1b44ddd8fc1b6285baecd951845d962a} 
+{\bfseries test\+\_\+read\+\_\+binary\+\_\+does\+\_\+not\+\_\+keep\+\_\+open} (self)
+\item 
+\Hypertarget{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_ab5a100771ab9f8204acc8f6239aed109}\label{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_ab5a100771ab9f8204acc8f6239aed109} 
+{\bfseries test\+\_\+read\+\_\+text\+\_\+does\+\_\+not\+\_\+keep\+\_\+open} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_zip_setup}{importlib\+\_\+resources.\+tests.\+util.\+Zip\+Setup}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries tree\+\_\+on\+\_\+path} (self, spec)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_module_setup}{importlib\+\_\+resources.\+tests.\+util.\+Module\+Setup}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries set\+Up} (self)
+\item 
+{\bfseries load\+\_\+fixture} (self, module)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_module_setup}{importlib\+\_\+resources.\+tests.\+util.\+Module\+Setup}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries fixtures} = contextlib.\+Exit\+Stack()
+\item 
+{\bfseries data} = self.\+load\+\_\+fixture(self.\+MODULE)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_zip_setup}{importlib\+\_\+resources.\+tests.\+util.\+Zip\+Setup}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries MODULE} = \textquotesingle{}data01\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Having accessed resources in a zip file should not keep an open
+reference to the zip.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a94d1556e1c7b840a02ef1fd4806fc59a}\index{importlib\_resources.tests.test\_resource.DeletingZipsTest@{importlib\_resources.tests.test\_resource.DeletingZipsTest}!test\_entered\_path\_does\_not\_keep\_open@{test\_entered\_path\_does\_not\_keep\_open}}
+\index{test\_entered\_path\_does\_not\_keep\_open@{test\_entered\_path\_does\_not\_keep\_open}!importlib\_resources.tests.test\_resource.DeletingZipsTest@{importlib\_resources.tests.test\_resource.DeletingZipsTest}}
+\doxysubsubsection{\texorpdfstring{test\_entered\_path\_does\_not\_keep\_open()}{test\_entered\_path\_does\_not\_keep\_open()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1tests_1_1test__resource_1_1_deleting_zips_test_a94d1556e1c7b840a02ef1fd4806fc59a} 
+importlib\+\_\+resources.\+tests.\+test\+\_\+resource.\+Deleting\+Zips\+Test.\+test\+\_\+entered\+\_\+path\+\_\+does\+\_\+not\+\_\+keep\+\_\+open (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Mimic what certifi does on import to make its bundle
+available for the process duration.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/importlib\+\_\+resources/tests/test\+\_\+resource.\+py\end{DoxyCompactItemize}

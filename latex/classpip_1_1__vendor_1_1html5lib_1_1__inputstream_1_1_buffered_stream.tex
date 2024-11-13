@@ -1,0 +1,60 @@
+\doxysection{pip.\+\_\+vendor.\+html5lib.\+\_\+inputstream.\+Buffered\+Stream Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream}{}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream}\index{pip.\_vendor.html5lib.\_inputstream.BufferedStream@{pip.\_vendor.html5lib.\_inputstream.BufferedStream}}
+Inheritance diagram for pip.\+\_\+vendor.\+html5lib.\+\_\+inputstream.\+Buffered\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a2af84db80d0b540cf5831fa390ae9965}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a2af84db80d0b540cf5831fa390ae9965} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, stream)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a6931af297b966492e7297c8e3f567aa3}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a6931af297b966492e7297c8e3f567aa3} 
+{\bfseries tell} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_ab98f6e72212deeb8e6384f507b1a66ef}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_ab98f6e72212deeb8e6384f507b1a66ef} 
+{\bfseries seek} (self, pos)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_ad4e900fdeaefc7c7cc813a8123081460}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_ad4e900fdeaefc7c7cc813a8123081460} 
+{\bfseries read} (self, bytes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a8d9043490b8c7beb5ca1c5de691c8477}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a8d9043490b8c7beb5ca1c5de691c8477} 
+{\bfseries stream} = stream
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a78ca46d1c976f5437481ca495a964b95}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a78ca46d1c976f5437481ca495a964b95} 
+list {\bfseries buffer} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a28a08f4ceedfd4c771dae1c06cc372c7}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a28a08f4ceedfd4c771dae1c06cc372c7} 
+list {\bfseries position} = \mbox{[}-\/1, 0\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a66fe3cad4708325058f4cc180724ec94}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a66fe3cad4708325058f4cc180724ec94} 
+{\bfseries \+\_\+buffered\+Bytes} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a18fb93e10e675ee5e7fb38b434cb7594}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a18fb93e10e675ee5e7fb38b434cb7594} 
+{\bfseries \+\_\+read\+Stream} (self, bytes)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a3426f9ee91cf0f815d27ebbb252b8a0f}\label{classpip_1_1__vendor_1_1html5lib_1_1__inputstream_1_1_buffered_stream_a3426f9ee91cf0f815d27ebbb252b8a0f} 
+{\bfseries \+\_\+read\+From\+Buffer} (self, bytes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Buffering for streams that do not have buffering of their own
+
+The buffer is implemented as a list of chunks on the assumption that
+joining many strings will be slow since it is O(n**2)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/html5lib/\+\_\+inputstream.\+py\end{DoxyCompactItemize}

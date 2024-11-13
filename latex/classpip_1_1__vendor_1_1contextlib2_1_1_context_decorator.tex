@@ -1,0 +1,70 @@
+\doxysection{pip.\+\_\+vendor.\+contextlib2.\+Context\+Decorator Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator}{}\label{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator}\index{pip.\_vendor.contextlib2.ContextDecorator@{pip.\_vendor.contextlib2.ContextDecorator}}
+Inheritance diagram for pip.\+\_\+vendor.\+contextlib2.\+Context\+Decorator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator_a4f5086921bd109bc93e0ce7a6a62cdb0}{refresh\+\_\+cm}} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator_ae3bb999b06b1d2c42c8c5f75cd321ef2}\label{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator_ae3bb999b06b1d2c42c8c5f75cd321ef2} 
+{\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, func)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator_a820b2bdd2a4419683e5e324699699840}{\+\_\+recreate\+\_\+cm}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A base class or mixin that enables context managers to work as decorators.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator_a820b2bdd2a4419683e5e324699699840}\index{pip.\_vendor.contextlib2.ContextDecorator@{pip.\_vendor.contextlib2.ContextDecorator}!\_recreate\_cm@{\_recreate\_cm}}
+\index{\_recreate\_cm@{\_recreate\_cm}!pip.\_vendor.contextlib2.ContextDecorator@{pip.\_vendor.contextlib2.ContextDecorator}}
+\doxysubsubsection{\texorpdfstring{\_recreate\_cm()}{\_recreate\_cm()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator_a820b2bdd2a4419683e5e324699699840} 
+pip.\+\_\+vendor.\+contextlib2.\+Context\+Decorator.\+\_\+recreate\+\_\+cm (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a recreated instance of self.
+
+Allows an otherwise one-shot context manager like
+_GeneratorContextManager to support use as
+a decorator via implicit recreation.
+
+This is a private interface just for _GeneratorContextManager.
+See issue #11647 for details.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1___generator_context_manager_af6af50012e4f9d0eaf3a64566928a75e}{pip.\+\_\+vendor.\+contextlib2.\+\_\+\+Generator\+Context\+Manager}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator_a4f5086921bd109bc93e0ce7a6a62cdb0}\index{pip.\_vendor.contextlib2.ContextDecorator@{pip.\_vendor.contextlib2.ContextDecorator}!refresh\_cm@{refresh\_cm}}
+\index{refresh\_cm@{refresh\_cm}!pip.\_vendor.contextlib2.ContextDecorator@{pip.\_vendor.contextlib2.ContextDecorator}}
+\doxysubsubsection{\texorpdfstring{refresh\_cm()}{refresh\_cm()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1_context_decorator_a4f5086921bd109bc93e0ce7a6a62cdb0} 
+pip.\+\_\+vendor.\+contextlib2.\+Context\+Decorator.\+refresh\+\_\+cm (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the context manager used to actually wrap the call to the
+decorated function.
+
+The default implementation just returns *self*.
+
+Overriding this method allows otherwise one-shot context managers
+like _GeneratorContextManager to support use as decorators via
+implicit recreation.
+
+DEPRECATED: refresh_cm was never added to the standard library's
+            ContextDecorator API
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/contextlib2.\+py\end{DoxyCompactItemize}

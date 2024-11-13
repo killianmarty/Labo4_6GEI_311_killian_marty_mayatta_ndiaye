@@ -1,0 +1,108 @@
+\doxysection{pip.\+\_\+internal.\+commands.\+check.\+Check\+Command Class Reference}
+\hypertarget{classpip_1_1__internal_1_1commands_1_1check_1_1_check_command}{}\label{classpip_1_1__internal_1_1commands_1_1check_1_1_check_command}\index{pip.\_internal.commands.check.CheckCommand@{pip.\_internal.commands.check.CheckCommand}}
+Inheritance diagram for pip.\+\_\+internal.\+commands.\+check.\+Check\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpip_1_1__internal_1_1commands_1_1check_1_1_check_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1check_1_1_check_command_ac48c4ec6ccba42326ce901eadc059aa0}{run}} (self, options, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_aeb6231fcfb1a3c39e6948c0e47631525}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, summary, isolated=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a61150bcbabc0e311e66297583c80d7bb}{handle\+\_\+pip\+\_\+version\+\_\+check}} (self, options)
+\item 
+{\bfseries parse\+\_\+args} (self, args)
+\item 
+{\bfseries main} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries main\+\_\+context} (self)
+\item 
+{\bfseries enter\+\_\+context} (self, context\+\_\+provider)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1check_1_1_check_command_a1133ada8efef102e350ee4e82301711f}{usage}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries usage} = None
+\item 
+bool {\bfseries ignore\+\_\+require\+\_\+venv} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries name} = name
+\item 
+{\bfseries summary} = summary
+\item 
+{\bfseries parser} = \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser}{Config\+Option\+Parser}}(\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}parser\+\_\+kw)
+\item 
+{\bfseries tempdir\+\_\+registry} = None
+\item 
+{\bfseries cmd\+\_\+opts} = optparse.\+Option\+Group(self.\+parser, optgroup\+\_\+name)
+\item 
+{\bfseries verbosity} = options.\+verbose -\/ options.\+quiet
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+main} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries \+\_\+in\+\_\+main\+\_\+context} = False
+\item 
+{\bfseries \+\_\+main\+\_\+context} = \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{Exit\+Stack}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Verify installed packages have compatible dependencies.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1check_1_1_check_command_ac48c4ec6ccba42326ce901eadc059aa0}\index{pip.\_internal.commands.check.CheckCommand@{pip.\_internal.commands.check.CheckCommand}!run@{run}}
+\index{run@{run}!pip.\_internal.commands.check.CheckCommand@{pip.\_internal.commands.check.CheckCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1check_1_1_check_command_ac48c4ec6ccba42326ce901eadc059aa0} 
+pip.\+\_\+internal.\+commands.\+check.\+Check\+Command.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{options}{, }\item[{}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1commands_1_1check_1_1_check_command_a1133ada8efef102e350ee4e82301711f}\index{pip.\_internal.commands.check.CheckCommand@{pip.\_internal.commands.check.CheckCommand}!usage@{usage}}
+\index{usage@{usage}!pip.\_internal.commands.check.CheckCommand@{pip.\_internal.commands.check.CheckCommand}}
+\doxysubsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1commands_1_1check_1_1_check_command_a1133ada8efef102e350ee4e82301711f} 
+str pip.\+\_\+internal.\+commands.\+check.\+Check\+Command.\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \%prog\ [options]"{}"{}"{}}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/commands/check.\+py\end{DoxyCompactItemize}

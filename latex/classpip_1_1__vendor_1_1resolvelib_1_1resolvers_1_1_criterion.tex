@@ -1,0 +1,96 @@
+\doxysection{pip.\+\_\+vendor.\+resolvelib.\+resolvers.\+Criterion Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion}{}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion}\index{pip.\_vendor.resolvelib.resolvers.Criterion@{pip.\_vendor.resolvelib.resolvers.Criterion}}
+Inheritance diagram for pip.\+\_\+vendor.\+resolvelib.\+resolvers.\+Criterion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a7aea95f47ef46f26fd529481f06ede74}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a7aea95f47ef46f26fd529481f06ede74} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, candidates, information, incompatibilities)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_acdc988c74b435b87079838c36bc98ef3}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_acdc988c74b435b87079838c36bc98ef3} 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a78999bc8cada88c1f3d29a6fe1cdd203}{from\+\_\+requirement}} (cls, provider, requirement, parent)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a1f4939b7018fa399f2f60743e330d438}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a1f4939b7018fa399f2f60743e330d438} 
+{\bfseries iter\+\_\+requirement} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_ab7bec19acffa14a564d95557f5638003}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_ab7bec19acffa14a564d95557f5638003} 
+{\bfseries iter\+\_\+parent} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_adaf06b57cf9b1d0204d4b068122eedd8}{merged\+\_\+with}} (self, provider, requirement, parent)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a4248c313e90b6d2c08be687c9c917181}{excluded\+\_\+of}} (self, candidate)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a2f33a3e74b7dca5f161000ba52d3e59f}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a2f33a3e74b7dca5f161000ba52d3e59f} 
+{\bfseries candidates} = candidates
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a91c2ba5379d097de54c71ad0791f48cb}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a91c2ba5379d097de54c71ad0791f48cb} 
+{\bfseries information} = information
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_aca2865ea5b7ae29e0259f8bb02b6604e}\label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_aca2865ea5b7ae29e0259f8bb02b6604e} 
+{\bfseries incompatibilities} = incompatibilities
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Representation of possible resolution results of a package.
+
+This holds three attributes:
+
+* `information` is a collection of `RequirementInformation` pairs.
+  Each pair is a requirement contributing to this criterion, and the
+  candidate that provides the requirement.
+* `incompatibilities` is a collection of all known not-to-work candidates
+  to exclude from consideration.
+* `candidates` is a collection containing all possible candidates deducted
+  from the union of contributing requirements and known incompatibilities.
+  It should never be empty, except when the criterion is an attribute of a
+  raised `RequirementsConflicted` (in which case it is always empty).
+
+.. note::
+    This class is intended to be externally immutable. **Do not** mutate
+    any of its attribute containers.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a4248c313e90b6d2c08be687c9c917181}\index{pip.\_vendor.resolvelib.resolvers.Criterion@{pip.\_vendor.resolvelib.resolvers.Criterion}!excluded\_of@{excluded\_of}}
+\index{excluded\_of@{excluded\_of}!pip.\_vendor.resolvelib.resolvers.Criterion@{pip.\_vendor.resolvelib.resolvers.Criterion}}
+\doxysubsubsection{\texorpdfstring{excluded\_of()}{excluded\_of()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a4248c313e90b6d2c08be687c9c917181} 
+pip.\+\_\+vendor.\+resolvelib.\+resolvers.\+Criterion.\+excluded\+\_\+of (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{candidate}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build a new instance from this, but excluding specified candidate.
+
+Returns the new instance, or None if we still have no valid candidates.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a78999bc8cada88c1f3d29a6fe1cdd203}\index{pip.\_vendor.resolvelib.resolvers.Criterion@{pip.\_vendor.resolvelib.resolvers.Criterion}!from\_requirement@{from\_requirement}}
+\index{from\_requirement@{from\_requirement}!pip.\_vendor.resolvelib.resolvers.Criterion@{pip.\_vendor.resolvelib.resolvers.Criterion}}
+\doxysubsubsection{\texorpdfstring{from\_requirement()}{from\_requirement()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_a78999bc8cada88c1f3d29a6fe1cdd203} 
+pip.\+\_\+vendor.\+resolvelib.\+resolvers.\+Criterion.\+from\+\_\+requirement (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{provider}{, }\item[{}]{requirement}{, }\item[{}]{parent}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build an instance from a requirement.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_adaf06b57cf9b1d0204d4b068122eedd8}\index{pip.\_vendor.resolvelib.resolvers.Criterion@{pip.\_vendor.resolvelib.resolvers.Criterion}!merged\_with@{merged\_with}}
+\index{merged\_with@{merged\_with}!pip.\_vendor.resolvelib.resolvers.Criterion@{pip.\_vendor.resolvelib.resolvers.Criterion}}
+\doxysubsubsection{\texorpdfstring{merged\_with()}{merged\_with()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_criterion_adaf06b57cf9b1d0204d4b068122eedd8} 
+pip.\+\_\+vendor.\+resolvelib.\+resolvers.\+Criterion.\+merged\+\_\+with (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{provider}{, }\item[{}]{requirement}{, }\item[{}]{parent}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build a new instance from this and a new requirement.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/resolvelib/resolvers.\+py\end{DoxyCompactItemize}

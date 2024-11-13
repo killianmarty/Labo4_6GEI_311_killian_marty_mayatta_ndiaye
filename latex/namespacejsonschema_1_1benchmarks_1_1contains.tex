@@ -1,0 +1,50 @@
+\doxysection{jsonschema.\+benchmarks.\+contains Namespace Reference}
+\hypertarget{namespacejsonschema_1_1benchmarks_1_1contains}{}\label{namespacejsonschema_1_1benchmarks_1_1contains}\index{jsonschema.benchmarks.contains@{jsonschema.benchmarks.contains}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacejsonschema_1_1benchmarks_1_1contains_a69ce2a5b52292626a702a10be645486b}{schema}}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1contains_aa921f00daa58f823564e608d2f900f89}\label{namespacejsonschema_1_1benchmarks_1_1contains_aa921f00daa58f823564e608d2f900f89} 
+{\bfseries validator} = Draft202012\+Validator(schema)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1contains_ae189642c49888d472f03ad05c789de3c}\label{namespacejsonschema_1_1benchmarks_1_1contains_ae189642c49888d472f03ad05c789de3c} 
+int {\bfseries size} = 1000
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1contains_aa04cdafaa3d377896f1769342d7a206f}\label{namespacejsonschema_1_1benchmarks_1_1contains_aa04cdafaa3d377896f1769342d7a206f} 
+list {\bfseries beginning} = \mbox{[}37\mbox{]} + \mbox{[}0\mbox{]} \texorpdfstring{$\ast$}{*} (size -\/ 1)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1contains_a2f4833a6f9bcf3ddebc4998cde95c6a6}\label{namespacejsonschema_1_1benchmarks_1_1contains_a2f4833a6f9bcf3ddebc4998cde95c6a6} 
+list {\bfseries middle} = \mbox{[}0\mbox{]} \texorpdfstring{$\ast$}{*} (size // 2) + \mbox{[}37\mbox{]} + \mbox{[}0\mbox{]} \texorpdfstring{$\ast$}{*} (size // 2)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1contains_a204d4848ab5ef8ff3b48dda3483ece71}\label{namespacejsonschema_1_1benchmarks_1_1contains_a204d4848ab5ef8ff3b48dda3483ece71} 
+list {\bfseries end} = \mbox{[}0\mbox{]} \texorpdfstring{$\ast$}{*} (size -\/ 1) + \mbox{[}37\mbox{]}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1contains_a3bb8904ee7912b226f26637cb229d755}\label{namespacejsonschema_1_1benchmarks_1_1contains_a3bb8904ee7912b226f26637cb229d755} 
+list {\bfseries invalid} = \mbox{[}0\mbox{]} \texorpdfstring{$\ast$}{*} size
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1contains_a090d27b6d2b86449a7aebb2ada69db0c}\label{namespacejsonschema_1_1benchmarks_1_1contains_a090d27b6d2b86449a7aebb2ada69db0c} 
+{\bfseries runner} = Runner()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A benchmark for validation of the `contains` keyword.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1contains_a69ce2a5b52292626a702a10be645486b}\index{jsonschema.benchmarks.contains@{jsonschema.benchmarks.contains}!schema@{schema}}
+\index{schema@{schema}!jsonschema.benchmarks.contains@{jsonschema.benchmarks.contains}}
+\doxysubsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1benchmarks_1_1contains_a69ce2a5b52292626a702a10be645486b} 
+dict jsonschema.\+benchmarks.\+contains.\+schema}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}type"{}}:\ \textcolor{stringliteral}{"{}array"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}contains"{}}:\ \{\textcolor{stringliteral}{"{}const"{}}:\ 37\},}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}

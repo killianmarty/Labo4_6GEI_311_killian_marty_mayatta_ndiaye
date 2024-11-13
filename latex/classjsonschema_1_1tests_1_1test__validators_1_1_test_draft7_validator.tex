@@ -1,0 +1,87 @@
+\doxysection{jsonschema.\+tests.\+test\+\_\+validators.\+Test\+Draft7\+Validator Class Reference}
+\hypertarget{classjsonschema_1_1tests_1_1test__validators_1_1_test_draft7_validator}{}\label{classjsonschema_1_1tests_1_1test__validators_1_1_test_draft7_validator}\index{jsonschema.tests.test\_validators.TestDraft7Validator@{jsonschema.tests.test\_validators.TestDraft7Validator}}
+Inheritance diagram for jsonschema.\+tests.\+test\+\_\+validators.\+Test\+Draft7\+Validator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.500000cm]{classjsonschema_1_1tests_1_1test__validators_1_1_test_draft7_validator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1tests_1_1test__validators_1_1_test_draft7_validator_a3c26f3ab77a284b5f82cd976ced9de20}\label{classjsonschema_1_1tests_1_1test__validators_1_1_test_draft7_validator_a3c26f3ab77a284b5f82cd976ced9de20} 
+{\bfseries Validator} = validators.\+Draft7\+Validator
+\item 
+\Hypertarget{classjsonschema_1_1tests_1_1test__validators_1_1_test_draft7_validator_a0cfe4fb87f2cc4bcaaa8d3dd11408fef}\label{classjsonschema_1_1tests_1_1test__validators_1_1_test_draft7_validator_a0cfe4fb87f2cc4bcaaa8d3dd11408fef} 
+tuple {\bfseries valid} = (\{\}, \{\})
+\item 
+\Hypertarget{classjsonschema_1_1tests_1_1test__validators_1_1_test_draft7_validator_ad70c35da3c6569f4da90046773a05c2d}\label{classjsonschema_1_1tests_1_1test__validators_1_1_test_draft7_validator_ad70c35da3c6569f4da90046773a05c2d} 
+dict {\bfseries invalid} = \{"{}type"{}\+: "{}integer"{}\}, "{}foo"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classjsonschema_1_1tests_1_1test__validators_1_1_validator_test_mixin}{jsonschema.\+tests.\+test\+\_\+validators.\+Validator\+Test\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries test\+\_\+it\+\_\+implements\+\_\+the\+\_\+validator\+\_\+protocol} (self)
+\item 
+{\bfseries test\+\_\+valid\+\_\+instances\+\_\+are\+\_\+valid} (self)
+\item 
+{\bfseries test\+\_\+invalid\+\_\+instances\+\_\+are\+\_\+not\+\_\+valid} (self)
+\item 
+{\bfseries test\+\_\+non\+\_\+existent\+\_\+properties\+\_\+are\+\_\+ignored} (self)
+\item 
+{\bfseries test\+\_\+evolve} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1tests_1_1test__validators_1_1_validator_test_mixin_a5dccf0844d4f7bc14da3e6251b69fa15}{test\+\_\+evolve\+\_\+with\+\_\+subclass}} (self)
+\item 
+{\bfseries test\+\_\+is\+\_\+type\+\_\+is\+\_\+true\+\_\+for\+\_\+valid\+\_\+type} (self)
+\item 
+{\bfseries test\+\_\+is\+\_\+type\+\_\+is\+\_\+false\+\_\+for\+\_\+invalid\+\_\+type} (self)
+\item 
+{\bfseries test\+\_\+is\+\_\+type\+\_\+evades\+\_\+bool\+\_\+inheriting\+\_\+from\+\_\+int} (self)
+\item 
+{\bfseries test\+\_\+it\+\_\+can\+\_\+validate\+\_\+with\+\_\+decimals} (self)
+\item 
+{\bfseries test\+\_\+it\+\_\+returns\+\_\+true\+\_\+for\+\_\+formats\+\_\+it\+\_\+does\+\_\+not\+\_\+know\+\_\+about} (self)
+\item 
+{\bfseries test\+\_\+it\+\_\+does\+\_\+not\+\_\+validate\+\_\+formats\+\_\+by\+\_\+default} (self)
+\item 
+{\bfseries test\+\_\+it\+\_\+validates\+\_\+formats\+\_\+if\+\_\+a\+\_\+checker\+\_\+is\+\_\+provided} (self)
+\item 
+{\bfseries test\+\_\+non\+\_\+string\+\_\+custom\+\_\+type} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1tests_1_1test__validators_1_1_validator_test_mixin_a166efb4c677370fbc950fcf59e5e5736}{test\+\_\+it\+\_\+properly\+\_\+formats\+\_\+tuples\+\_\+in\+\_\+errors}} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1tests_1_1test__validators_1_1_validator_test_mixin_aca5ba4192ed2fa1d08cf7f0dac581c3b}{test\+\_\+check\+\_\+redefined\+\_\+sequence}} (self)
+\item 
+{\bfseries test\+\_\+it\+\_\+creates\+\_\+a\+\_\+ref\+\_\+resolver\+\_\+if\+\_\+not\+\_\+provided} (self)
+\item 
+{\bfseries test\+\_\+it\+\_\+upconverts\+\_\+from\+\_\+deprecated\+\_\+\+Ref\+Resolvers} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1tests_1_1test__validators_1_1_validator_test_mixin_ae0b57ca872289e29a1494da140db8cb1}{test\+\_\+it\+\_\+upconverts\+\_\+from\+\_\+yet\+\_\+older\+\_\+deprecated\+\_\+legacy\+\_\+\+Ref\+Resolvers}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classjsonschema_1_1tests_1_1test__validators_1_1_meta_schema_tests_mixin}{jsonschema.\+tests.\+test\+\_\+validators.\+Meta\+Schema\+Tests\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries test\+\_\+invalid\+\_\+properties} (self)
+\item 
+{\bfseries test\+\_\+min\+Items\+\_\+invalid\+\_\+string} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1tests_1_1test__validators_1_1_meta_schema_tests_mixin_a2d16d3d0a63263933bfa0fb37a0a146c}{test\+\_\+enum\+\_\+allows\+\_\+empty\+\_\+arrays}} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1tests_1_1test__validators_1_1_meta_schema_tests_mixin_aa3d1015bb6a96f29882a0f4ea6b9a8ca}{test\+\_\+enum\+\_\+allows\+\_\+non\+\_\+unique\+\_\+items}} (self)
+\item 
+{\bfseries test\+\_\+schema\+\_\+with\+\_\+invalid\+\_\+regex} (self)
+\item 
+{\bfseries test\+\_\+schema\+\_\+with\+\_\+invalid\+\_\+regex\+\_\+with\+\_\+disabled\+\_\+format\+\_\+validation} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classjsonschema_1_1tests_1_1test__validators_1_1_validator_test_mixin}{jsonschema.\+tests.\+test\+\_\+validators.\+Validator\+Test\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Validator}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/jsonschema/tests/test\+\_\+validators.\+py\end{DoxyCompactItemize}

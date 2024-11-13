@@ -1,0 +1,212 @@
+\doxysection{Référence de la classe click.\+core.\+Argument}
+\hypertarget{classclick_1_1core_1_1_argument}{}\label{classclick_1_1core_1_1_argument}\index{click.core.Argument@{click.core.Argument}}
+Graphe d\textquotesingle{}héritage de click.\+core.\+Argument\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclick_1_1core_1_1_argument}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_argument_a2ee0af1a599b2cac2149089d1feaa991}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Sequence\mbox{[}str\mbox{]} param\+\_\+decls, t.\+Optional\mbox{[}bool\mbox{]} required=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any attrs)
+\item 
+str \mbox{\hyperlink{classclick_1_1core_1_1_argument_aa172cf56bc35282626ca175817a54f3d}{human\+\_\+readable\+\_\+name}} (self)
+\item 
+str \mbox{\hyperlink{classclick_1_1core_1_1_argument_a02b3e7bd74a1e73914f285b8dcc0ffbd}{make\+\_\+metavar}} (self)
+\item 
+t.\+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_argument_a0817baa1cf20b23bf3da777cc507ac02}{get\+\_\+usage\+\_\+pieces}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+str \mbox{\hyperlink{classclick_1_1core_1_1_argument_aae15e646169da5cefb2d7eaef0db3343}{get\+\_\+error\+\_\+hint}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_argument_a70288ef4af33cf3dfad1d6849005d82c}{add\+\_\+to\+\_\+parser}} (self, \mbox{\hyperlink{classclick_1_1parser_1_1_option_parser}{Option\+Parser}} parser, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Dict\mbox{[}str, t.\+Any\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_parameter_ad24aaf9c0d164e1dffb7afda64c80caa}{to\+\_\+info\+\_\+dict}} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+t.\+Optional\mbox{[}t.\+Any\mbox{]} {\bfseries get\+\_\+default} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, "{}te.\+Literal\mbox{[}True\mbox{]}"{} call=True)
+\item 
+t.\+Optional\mbox{[}t.\+Union\mbox{[}t.\+Any, t.\+Callable\mbox{[}\mbox{[}$\,$\mbox{]}, t.\+Any\mbox{]}\mbox{]}\mbox{]} {\bfseries get\+\_\+default} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, bool call=...)
+\item 
+t.\+Optional\mbox{[}t.\+Union\mbox{[}t.\+Any, t.\+Callable\mbox{[}\mbox{[}$\,$\mbox{]}, t.\+Any\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_parameter_abf7d6fa1c6dea28cae1fd3e25bebfec7}{get\+\_\+default}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, bool call=True)
+\item 
+t.\+Tuple\mbox{[}t.\+Any, \mbox{\hyperlink{classclick_1_1core_1_1_parameter_source}{Parameter\+Source}}\mbox{]} {\bfseries consume\+\_\+value} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, t.\+Mapping\mbox{[}str, t.\+Any\mbox{]} opts)
+\item 
+t.\+Any \mbox{\hyperlink{classclick_1_1core_1_1_parameter_a9dde660da8df05a08e76b6e70b86c7de}{type\+\_\+cast\+\_\+value}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, t.\+Any value)
+\item 
+bool {\bfseries value\+\_\+is\+\_\+missing} (self, t.\+Any value)
+\item 
+t.\+Any {\bfseries process\+\_\+value} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, t.\+Any value)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries resolve\+\_\+envvar\+\_\+value} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+t.\+Optional\mbox{[}t.\+Any\mbox{]} {\bfseries value\+\_\+from\+\_\+envvar} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+t.\+Tuple\mbox{[}t.\+Any, t.\+List\mbox{[}str\mbox{]}\mbox{]} {\bfseries handle\+\_\+parse\+\_\+result} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, t.\+Mapping\mbox{[}str, t.\+Any\mbox{]} opts, t.\+List\mbox{[}str\mbox{]} args)
+\item 
+t.\+Optional\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} {\bfseries get\+\_\+help\+\_\+record} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+t.\+List\mbox{[}"{}Completion\+Item"{}\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_parameter_a507a2ccfb774783ae8f76b6228514e1b}{shell\+\_\+complete}} (self, \mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, str incomplete)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1core_1_1_argument_aa86399b677892d217299c4aa56f900ce}\label{classclick_1_1core_1_1_argument_aa86399b677892d217299c4aa56f900ce} 
+int {\bfseries nargs} = -\/1\+:
+\item 
+\Hypertarget{classclick_1_1core_1_1_argument_a3b3264975d165a8bf39e902e17ea7555}\label{classclick_1_1core_1_1_argument_a3b3264975d165a8bf39e902e17ea7555} 
+{\bfseries required}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries name}
+\item 
+t.\+List\mbox{[}str\mbox{]} {\bfseries opts}
+\item 
+t.\+List\mbox{[}str\mbox{]} {\bfseries secondary\+\_\+opts}
+\item 
+\mbox{\hyperlink{classclick_1_1types_1_1_param_type}{types.\+Param\+Type}} {\bfseries type} = types.\+convert\+\_\+type(type, default)
+\item 
+{\bfseries required} = required
+\item 
+{\bfseries callback} = callback
+\item 
+int {\bfseries nargs} = nargs
+\item 
+{\bfseries multiple} = multiple
+\item 
+{\bfseries expose\+\_\+value} = expose\+\_\+value
+\item 
+{\bfseries default} = default
+\item 
+{\bfseries is\+\_\+eager} = is\+\_\+eager
+\item 
+{\bfseries metavar} = metavar
+\item 
+{\bfseries envvar} = envvar
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1core_1_1_argument_aa088395b4960f2c8a239c1501bb27164}\label{classclick_1_1core_1_1_argument_aa088395b4960f2c8a239c1501bb27164} 
+str {\bfseries param\+\_\+type\+\_\+name} = "{}argument"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries param\+\_\+type\+\_\+name} = "{}parameter"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Tuple\mbox{[}t.\+Optional\mbox{[}str\mbox{]}, t.\+List\mbox{[}str\mbox{]}, t.\+List\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_argument_a9a3c9d6edfa96888ab672a7354e4b95a}{\+\_\+parse\+\_\+decls}} (self, t.\+Sequence\mbox{[}str\mbox{]} decls, bool expose\+\_\+value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs protégés hérités de \mbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+List\mbox{[}"{}Completion\+Item"{}\mbox{]} {\bfseries \+\_\+custom\+\_\+shell\+\_\+complete} = \mbox{\hyperlink{classclick_1_1core_1_1_parameter_a507a2ccfb774783ae8f76b6228514e1b}{shell\+\_\+complete}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Arguments are positional parameters to a command.  They generally
+provide fewer features than options but can have infinite ``nargs``
+and are required by default.
+
+All parameters are passed onwards to the constructor of :class:`Parameter`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classclick_1_1core_1_1_argument_a2ee0af1a599b2cac2149089d1feaa991}\index{click.core.Argument@{click.core.Argument}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.core.Argument@{click.core.Argument}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_argument_a2ee0af1a599b2cac2149089d1feaa991} 
+ None click.\+core.\+Argument.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Sequence\mbox{[}str\mbox{]}}]{param\+\_\+decls}{, }\item[{t.\+Optional\mbox{[}bool\mbox{]} }]{required}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{attrs}{}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classclick_1_1core_1_1_argument_a9a3c9d6edfa96888ab672a7354e4b95a}\index{click.core.Argument@{click.core.Argument}!\_parse\_decls@{\_parse\_decls}}
+\index{\_parse\_decls@{\_parse\_decls}!click.core.Argument@{click.core.Argument}}
+\doxysubsubsection{\texorpdfstring{\_parse\_decls()}{\_parse\_decls()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_argument_a9a3c9d6edfa96888ab672a7354e4b95a} 
+ t.\+Tuple\mbox{[}t.\+Optional\mbox{[}str\mbox{]}, t.\+List\mbox{[}str\mbox{]}, t.\+List\mbox{[}str\mbox{]}\mbox{]} click.\+core.\+Argument.\+\_\+parse\+\_\+decls (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Sequence\mbox{[}str\mbox{]}}]{decls}{, }\item[{bool     }]{expose\+\_\+value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_argument_a70288ef4af33cf3dfad1d6849005d82c}\index{click.core.Argument@{click.core.Argument}!add\_to\_parser@{add\_to\_parser}}
+\index{add\_to\_parser@{add\_to\_parser}!click.core.Argument@{click.core.Argument}}
+\doxysubsubsection{\texorpdfstring{add\_to\_parser()}{add\_to\_parser()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_argument_a70288ef4af33cf3dfad1d6849005d82c} 
+ None click.\+core.\+Argument.\+add\+\_\+to\+\_\+parser (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classclick_1_1parser_1_1_option_parser}{Option\+Parser}}}]{parser}{, }\item[{\mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_argument_aae15e646169da5cefb2d7eaef0db3343}\index{click.core.Argument@{click.core.Argument}!get\_error\_hint@{get\_error\_hint}}
+\index{get\_error\_hint@{get\_error\_hint}!click.core.Argument@{click.core.Argument}}
+\doxysubsubsection{\texorpdfstring{get\_error\_hint()}{get\_error\_hint()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_argument_aae15e646169da5cefb2d7eaef0db3343} 
+ str click.\+core.\+Argument.\+get\+\_\+error\+\_\+hint (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a stringified version of the param for use in error messages to
+indicate which param caused the error.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1core_1_1_parameter_a823527cdc95d2ece4da480eaa2d1546f}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_argument_a0817baa1cf20b23bf3da777cc507ac02}\index{click.core.Argument@{click.core.Argument}!get\_usage\_pieces@{get\_usage\_pieces}}
+\index{get\_usage\_pieces@{get\_usage\_pieces}!click.core.Argument@{click.core.Argument}}
+\doxysubsubsection{\texorpdfstring{get\_usage\_pieces()}{get\_usage\_pieces()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_argument_a0817baa1cf20b23bf3da777cc507ac02} 
+ t.\+List\mbox{[}str\mbox{]} click.\+core.\+Argument.\+get\+\_\+usage\+\_\+pieces (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_argument_aa172cf56bc35282626ca175817a54f3d}\index{click.core.Argument@{click.core.Argument}!human\_readable\_name@{human\_readable\_name}}
+\index{human\_readable\_name@{human\_readable\_name}!click.core.Argument@{click.core.Argument}}
+\doxysubsubsection{\texorpdfstring{human\_readable\_name()}{human\_readable\_name()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_argument_aa172cf56bc35282626ca175817a54f3d} 
+ str click.\+core.\+Argument.\+human\+\_\+readable\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the human readable name of this parameter.  This is the
+same as the name for options, but the metavar for arguments.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1core_1_1_parameter_a5a3b4b8916064b1b6b83dc6a5cabf04c}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_argument_a02b3e7bd74a1e73914f285b8dcc0ffbd}\index{click.core.Argument@{click.core.Argument}!make\_metavar@{make\_metavar}}
+\index{make\_metavar@{make\_metavar}!click.core.Argument@{click.core.Argument}}
+\doxysubsubsection{\texorpdfstring{make\_metavar()}{make\_metavar()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_argument_a02b3e7bd74a1e73914f285b8dcc0ffbd} 
+ str click.\+core.\+Argument.\+make\+\_\+metavar (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}.
+
+
+
+La documentation de cette classe a été générée à partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/core.\+py\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/parser.\+py\end{DoxyCompactItemize}

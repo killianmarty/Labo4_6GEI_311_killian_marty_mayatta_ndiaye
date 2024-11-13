@@ -1,0 +1,97 @@
+\doxysection{pip.\+\_\+internal.\+build\+\_\+env.\+No\+Op\+Build\+Environment Class Reference}
+\hypertarget{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment}{}\label{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment}\index{pip.\_internal.build\_env.NoOpBuildEnvironment@{pip.\_internal.build\_env.NoOpBuildEnvironment}}
+Inheritance diagram for pip.\+\_\+internal.\+build\+\_\+env.\+No\+Op\+Build\+Environment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a1d9e8d86dd258bf15625f82f6d3220ad}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_ada3e180fdb6d22a5e768a5ae4dd94e1d}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a29268d749aba1bdeaa5e4c7ed142f135}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+val, exc\+\_\+tb)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a33953efca2dfeccd2cc381ec98b32c4e}\label{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a33953efca2dfeccd2cc381ec98b32c4e} 
+{\bfseries cleanup} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a0ca574a0313c4ff554416259b40ec1e7}{install\+\_\+requirements}} (self, finder, requirements, prefix, message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_build_environment}{pip.\+\_\+internal.\+build\+\_\+env.\+Build\+Environment}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_build_environment_a202072ef170b194f2b05f76d63adf3f7}{check\+\_\+requirements}} (self, reqs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_build_environment}{pip.\+\_\+internal.\+build\+\_\+env.\+Build\+Environment}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_build_environment_aabd5950c2588d13b3f6a9822ece92782}{\+\_\+prefixes}}
+\item 
+list {\bfseries \+\_\+bin\+\_\+dirs} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries \+\_\+lib\+\_\+dirs} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \+\_\+site\+\_\+dir} = os.\+path.\+join(temp\+\_\+dir.\+path, \textquotesingle{}site\textquotesingle{})
+\item 
+dict \mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_build_environment_a180b2770ad7cfeda85f53289ce2ba8e1}{\+\_\+save\+\_\+env}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A no-op drop-in replacement for BuildEnvironment
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a1d9e8d86dd258bf15625f82f6d3220ad}\index{pip.\_internal.build\_env.NoOpBuildEnvironment@{pip.\_internal.build\_env.NoOpBuildEnvironment}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.build\_env.NoOpBuildEnvironment@{pip.\_internal.build\_env.NoOpBuildEnvironment}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a1d9e8d86dd258bf15625f82f6d3220ad} 
+pip.\+\_\+internal.\+build\+\_\+env.\+No\+Op\+Build\+Environment.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_build_environment}{pip.\+\_\+internal.\+build\+\_\+env.\+Build\+Environment}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_ada3e180fdb6d22a5e768a5ae4dd94e1d}\index{pip.\_internal.build\_env.NoOpBuildEnvironment@{pip.\_internal.build\_env.NoOpBuildEnvironment}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!pip.\_internal.build\_env.NoOpBuildEnvironment@{pip.\_internal.build\_env.NoOpBuildEnvironment}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_ada3e180fdb6d22a5e768a5ae4dd94e1d} 
+pip.\+\_\+internal.\+build\+\_\+env.\+No\+Op\+Build\+Environment.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_build_environment}{pip.\+\_\+internal.\+build\+\_\+env.\+Build\+Environment}}.
+
+\Hypertarget{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a29268d749aba1bdeaa5e4c7ed142f135}\index{pip.\_internal.build\_env.NoOpBuildEnvironment@{pip.\_internal.build\_env.NoOpBuildEnvironment}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!pip.\_internal.build\_env.NoOpBuildEnvironment@{pip.\_internal.build\_env.NoOpBuildEnvironment}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a29268d749aba1bdeaa5e4c7ed142f135} 
+pip.\+\_\+internal.\+build\+\_\+env.\+No\+Op\+Build\+Environment.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exc\+\_\+type}{, }\item[{}]{exc\+\_\+val}{, }\item[{}]{exc\+\_\+tb}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_build_environment}{pip.\+\_\+internal.\+build\+\_\+env.\+Build\+Environment}}.
+
+\Hypertarget{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a0ca574a0313c4ff554416259b40ec1e7}\index{pip.\_internal.build\_env.NoOpBuildEnvironment@{pip.\_internal.build\_env.NoOpBuildEnvironment}!install\_requirements@{install\_requirements}}
+\index{install\_requirements@{install\_requirements}!pip.\_internal.build\_env.NoOpBuildEnvironment@{pip.\_internal.build\_env.NoOpBuildEnvironment}}
+\doxysubsubsection{\texorpdfstring{install\_requirements()}{install\_requirements()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1build__env_1_1_no_op_build_environment_a0ca574a0313c4ff554416259b40ec1e7} 
+pip.\+\_\+internal.\+build\+\_\+env.\+No\+Op\+Build\+Environment.\+install\+\_\+requirements (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{finder}{, }\item[{}]{requirements}{, }\item[{}]{prefix}{, }\item[{}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1build__env_1_1_build_environment}{pip.\+\_\+internal.\+build\+\_\+env.\+Build\+Environment}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/build\+\_\+env.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,66 @@
+\doxysection{flask.\+blueprints.\+Blueprint\+Setup\+State Class Reference}
+\hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state}{}\label{classflask_1_1blueprints_1_1_blueprint_setup_state}\index{flask.blueprints.BlueprintSetupState@{flask.blueprints.BlueprintSetupState}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_a34ae50dabbf376f7ec24e20c9ce84a4e}\label{classflask_1_1blueprints_1_1_blueprint_setup_state_a34ae50dabbf376f7ec24e20c9ce84a4e} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, "{}Blueprint"{} blueprint, "{}Flask"{} app, t.\+Any options, bool first\+\_\+registration)
+\item 
+None \mbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_setup_state_abe077c90537163e54f77c508ecb51de2}{add\+\_\+url\+\_\+rule}} (self, str rule, t.\+Optional\mbox{[}str\mbox{]} endpoint=None, t.\+Optional\mbox{[}t.\+Callable\mbox{]} view\+\_\+func=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_a64074992f597608302dbc41ea0603c86}\label{classflask_1_1blueprints_1_1_blueprint_setup_state_a64074992f597608302dbc41ea0603c86} 
+{\bfseries app} = app
+\item 
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_a1468badc6e3f9fe2bfdb8a8a36378c86}\label{classflask_1_1blueprints_1_1_blueprint_setup_state_a1468badc6e3f9fe2bfdb8a8a36378c86} 
+{\bfseries blueprint} = blueprint
+\item 
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_a3bd000c029ee5e3e947675171356a6f6}\label{classflask_1_1blueprints_1_1_blueprint_setup_state_a3bd000c029ee5e3e947675171356a6f6} 
+{\bfseries options} = options
+\item 
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_a7e74fa1fda8c665e13dad8579605c18c}\label{classflask_1_1blueprints_1_1_blueprint_setup_state_a7e74fa1fda8c665e13dad8579605c18c} 
+{\bfseries first\+\_\+registration} = first\+\_\+registration
+\item 
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_ab4bb66d28dc4e6ad53a589e05e2294b0}\label{classflask_1_1blueprints_1_1_blueprint_setup_state_ab4bb66d28dc4e6ad53a589e05e2294b0} 
+{\bfseries subdomain} = subdomain
+\item 
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_a21c92378715b87f2ce140e810a91c9c1}\label{classflask_1_1blueprints_1_1_blueprint_setup_state_a21c92378715b87f2ce140e810a91c9c1} 
+{\bfseries url\+\_\+prefix} = url\+\_\+prefix
+\item 
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_ac3d53f538a3c6d3f8b935fe52fad1ad6}\label{classflask_1_1blueprints_1_1_blueprint_setup_state_ac3d53f538a3c6d3f8b935fe52fad1ad6} 
+{\bfseries name} = self.\+options.\+get("{}name"{}, blueprint.\+name)
+\item 
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_a6d59491f8469798884524f0502fcca15}\label{classflask_1_1blueprints_1_1_blueprint_setup_state_a6d59491f8469798884524f0502fcca15} 
+{\bfseries name\+\_\+prefix} = self.\+options.\+get("{}name\+\_\+prefix"{}, "{}"{})
+\item 
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_a1d66d4771e69596c7aee267deb8cf65b}\label{classflask_1_1blueprints_1_1_blueprint_setup_state_a1d66d4771e69596c7aee267deb8cf65b} 
+{\bfseries url\+\_\+defaults} = dict(self.\+blueprint.\+url\+\_\+values\+\_\+defaults)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Temporary holder object for registering a blueprint with the
+application.  An instance of this class is created by the
+:meth:`~flask.Blueprint.make_setup_state` method and later passed
+to all register callback functions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_setup_state_abe077c90537163e54f77c508ecb51de2}\index{flask.blueprints.BlueprintSetupState@{flask.blueprints.BlueprintSetupState}!add\_url\_rule@{add\_url\_rule}}
+\index{add\_url\_rule@{add\_url\_rule}!flask.blueprints.BlueprintSetupState@{flask.blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{add\_url\_rule()}{add\_url\_rule()}}
+{\footnotesize\ttfamily \label{classflask_1_1blueprints_1_1_blueprint_setup_state_abe077c90537163e54f77c508ecb51de2} 
+ None flask.\+blueprints.\+Blueprint\+Setup\+State.\+add\+\_\+url\+\_\+rule (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{endpoint}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}t.\+Callable\mbox{]} }]{view\+\_\+func}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A helper method to register a rule (and optionally a view function)
+to the application.  The endpoint is automatically prefixed with the
+blueprint's name.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/blueprints.\+py\end{DoxyCompactItemize}

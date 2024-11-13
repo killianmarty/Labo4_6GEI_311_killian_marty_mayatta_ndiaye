@@ -1,0 +1,31 @@
+\doxysection{Référence de la classe attr.\+\_\+make.\+\_\+\+Cache\+Hash\+Wrapper}
+\hypertarget{classattr_1_1__make_1_1___cache_hash_wrapper}{}\label{classattr_1_1__make_1_1___cache_hash_wrapper}\index{attr.\_make.\_CacheHashWrapper@{attr.\_make.\_CacheHashWrapper}}
+Graphe d\textquotesingle{}héritage de attr.\+\_\+make.\+\_\+\+Cache\+Hash\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classattr_1_1__make_1_1___cache_hash_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classattr_1_1__make_1_1___cache_hash_wrapper_a8bf594b6f168e2bd0dccb02332e5b485}\label{classattr_1_1__make_1_1___cache_hash_wrapper_a8bf594b6f168e2bd0dccb02332e5b485} 
+{\bfseries \+\_\+\+\_\+reduce\+\_\+\+\_\+} (self, \+\_\+none\+\_\+constructor=type(None), \+\_\+args=())
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An integer subclass that pickles / copies as None
+
+This is used for non-slots classes with ``cache_hash=True``, to avoid
+serializing a potentially (even likely) invalid hash value. Since `None`
+is the default value for uncalculated hashes, whenever this is copied,
+the copy's value for the hash should automatically reset.
+
+See GH #613 for more details.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/attr/\+\_\+make.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,29 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage connexion.\+apis}
+\hypertarget{namespaceconnexion_1_1apis}{}\label{namespaceconnexion_1_1apis}\index{connexion.apis@{connexion.apis}}
+\doxysubsubsection*{Espaces de nommage}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceconnexion_1_1apis_1_1abstract}{abstract}}
+\item 
+namespace \mbox{\hyperlink{namespaceconnexion_1_1apis_1_1aiohttp__api}{aiohttp\+\_\+api}}
+\item 
+namespace \mbox{\hyperlink{namespaceconnexion_1_1apis_1_1flask__api}{flask\+\_\+api}}
+\item 
+namespace \mbox{\hyperlink{namespaceconnexion_1_1apis_1_1flask__utils}{flask\+\_\+utils}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This module defines Connexion APIs. A connexion API takes in an OpenAPI specification and
+translates the operations defined in it to a set of Connexion Operations. This set of operations
+is implemented as a framework blueprint (A Flask blueprint or framework-specific equivalent),
+which can be registered on the framework application.
+
+For each operation, the API resolves the user view function to link to the operation, wraps it
+with a Connexion Operation which it configures based on the OpenAPI spec, and finally adds it as
+a route on the framework blueprint.
+
+When the API is registered on the Connexion APP, the underlying framework blueprint is registered
+on the framework app.
+\end{DoxyVerb}
+ 

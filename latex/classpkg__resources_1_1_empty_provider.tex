@@ -1,0 +1,135 @@
+\doxysection{pkg\+\_\+resources.\+Empty\+Provider Class Reference}
+\hypertarget{classpkg__resources_1_1_empty_provider}{}\label{classpkg__resources_1_1_empty_provider}\index{pkg\_resources.EmptyProvider@{pkg\_resources.EmptyProvider}}
+Inheritance diagram for pkg\+\_\+resources.\+Empty\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpkg__resources_1_1_empty_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_empty_provider_ab0f8d77dec47f453b8f55175786e148e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries get\+\_\+resource\+\_\+filename} (self, manager, resource\+\_\+name)
+\item 
+{\bfseries get\+\_\+resource\+\_\+stream} (self, manager, resource\+\_\+name)
+\item 
+{\bfseries get\+\_\+resource\+\_\+string} (self, manager, resource\+\_\+name)
+\item 
+{\bfseries has\+\_\+resource} (self, resource\+\_\+name)
+\item 
+{\bfseries has\+\_\+metadata} (self, name)
+\item 
+{\bfseries get\+\_\+metadata} (self, name)
+\item 
+{\bfseries get\+\_\+metadata\+\_\+lines} (self, name)
+\item 
+{\bfseries resource\+\_\+isdir} (self, resource\+\_\+name)
+\item 
+{\bfseries metadata\+\_\+isdir} (self, name)
+\item 
+{\bfseries resource\+\_\+listdir} (self, resource\+\_\+name)
+\item 
+{\bfseries metadata\+\_\+listdir} (self, name)
+\item 
+{\bfseries run\+\_\+script} (self, script\+\_\+name, namespace)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpkg__resources_1_1_empty_provider_ab8ccb1251fac53b8648ceb34c8449d67}\label{classpkg__resources_1_1_empty_provider_ab8ccb1251fac53b8648ceb34c8449d67} 
+{\bfseries module\+\_\+path} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries egg\+\_\+name} = None
+\item 
+{\bfseries egg\+\_\+info} = None
+\item 
+{\bfseries loader} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_empty_provider_a3e97cd87853d655c8e99803b2f86df7b}{\+\_\+get}} (self, path)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_empty_provider_a308d420fd1d2a291633dde47e3c7a462}{\+\_\+listdir}} (self, path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+get\+\_\+metadata\+\_\+path} (self, name)
+\item 
+{\bfseries \+\_\+has} (self, path)
+\item 
+{\bfseries \+\_\+isdir} (self, path)
+\item 
+{\bfseries \+\_\+fn} (self, base, resource\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpkg__resources_1_1_empty_provider_a4a492e69c6a8b7237b33e279027eeb75}\label{classpkg__resources_1_1_empty_provider_a4a492e69c6a8b7237b33e279027eeb75} 
+False {\bfseries \+\_\+isdir} = lambda self, path
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries module\+\_\+path} = os.\+path.\+dirname(getattr(module, \textquotesingle{}\+\_\+\+\_\+file\+\_\+\+\_\+\textquotesingle{}, \textquotesingle{}\textquotesingle{}))
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_null_provider_a86693448151eee8506b4554c0e31c02f}{\+\_\+validate\+\_\+resource\+\_\+path}} (path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provider that returns nothing for all requests\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpkg__resources_1_1_empty_provider_ab0f8d77dec47f453b8f55175786e148e}\index{pkg\_resources.EmptyProvider@{pkg\_resources.EmptyProvider}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pkg\_resources.EmptyProvider@{pkg\_resources.EmptyProvider}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_empty_provider_ab0f8d77dec47f453b8f55175786e148e} 
+pkg\+\_\+resources.\+Empty\+Provider.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpkg__resources_1_1_empty_provider_a3e97cd87853d655c8e99803b2f86df7b}\index{pkg\_resources.EmptyProvider@{pkg\_resources.EmptyProvider}!\_get@{\_get}}
+\index{\_get@{\_get}!pkg\_resources.EmptyProvider@{pkg\_resources.EmptyProvider}}
+\doxysubsubsection{\texorpdfstring{\_get()}{\_get()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_empty_provider_a3e97cd87853d655c8e99803b2f86df7b} 
+pkg\+\_\+resources.\+Empty\+Provider.\+\_\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}.
+
+\Hypertarget{classpkg__resources_1_1_empty_provider_a308d420fd1d2a291633dde47e3c7a462}\index{pkg\_resources.EmptyProvider@{pkg\_resources.EmptyProvider}!\_listdir@{\_listdir}}
+\index{\_listdir@{\_listdir}!pkg\_resources.EmptyProvider@{pkg\_resources.EmptyProvider}}
+\doxysubsubsection{\texorpdfstring{\_listdir()}{\_listdir()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_empty_provider_a308d420fd1d2a291633dde47e3c7a462} 
+pkg\+\_\+resources.\+Empty\+Provider.\+\_\+listdir (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpkg__resources_1_1_null_provider}{pkg\+\_\+resources.\+Null\+Provider}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pkg\+\_\+resources/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

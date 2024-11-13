@@ -1,0 +1,64 @@
+\doxysection{Référence de la classe attr.\+\_\+make.\+Factory}
+\hypertarget{classattr_1_1__make_1_1_factory}{}\label{classattr_1_1__make_1_1_factory}\index{attr.\_make.Factory@{attr.\_make.Factory}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classattr_1_1__make_1_1_factory_a7aa729f3c6d539189c2dbd98b883da8a}\label{classattr_1_1__make_1_1_factory_a7aa729f3c6d539189c2dbd98b883da8a} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, factory, takes\+\_\+self=False)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_factory_a7c1d165185c6dc628f1316cae6710691}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_factory_a4edf08c9f97d5b594120e18e34552e71}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, state)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classattr_1_1__make_1_1_factory_a73c7c99477a3359f80c366335fded33e}\label{classattr_1_1__make_1_1_factory_a73c7c99477a3359f80c366335fded33e} 
+{\bfseries factory} = factory
+\item 
+\Hypertarget{classattr_1_1__make_1_1_factory_a9b55379dafa58be014f690608a114251}\label{classattr_1_1__make_1_1_factory_a9b55379dafa58be014f690608a114251} 
+{\bfseries takes\+\_\+self} = takes\+\_\+self
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Stores a factory callable.
+
+If passed as the default value to `attrs.field`, the factory is used to
+generate a new value.
+
+Args:
+    factory (typing.Callable):
+        A callable that takes either none or exactly one mandatory
+        positional argument depending on *takes_self*.
+
+    takes_self (bool):
+        Pass the partially initialized instance that is being initialized
+        as a positional argument.
+
+.. versionadded:: 17.1.0  *takes_self*
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classattr_1_1__make_1_1_factory_a7c1d165185c6dc628f1316cae6710691}\index{attr.\_make.Factory@{attr.\_make.Factory}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!attr.\_make.Factory@{attr.\_make.Factory}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_factory_a7c1d165185c6dc628f1316cae6710691} 
+attr.\+\_\+make.\+Factory.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Play nice with pickle.
+\end{DoxyVerb}
+ \Hypertarget{classattr_1_1__make_1_1_factory_a4edf08c9f97d5b594120e18e34552e71}\index{attr.\_make.Factory@{attr.\_make.Factory}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!attr.\_make.Factory@{attr.\_make.Factory}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_factory_a4edf08c9f97d5b594120e18e34552e71} 
+attr.\+\_\+make.\+Factory.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Play nice with pickle.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/attr/\+\_\+make.\+py\end{DoxyCompactItemize}

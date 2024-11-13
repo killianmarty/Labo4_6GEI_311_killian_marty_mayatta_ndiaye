@@ -1,0 +1,330 @@
+\doxysection{connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory Class Reference}
+\hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory}{}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+Inheritance diagram for connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.085661cm]{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a2a820db590d434b5d6450cbc6ce3adae}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a2a820db590d434b5d6450cbc6ce3adae} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, pass\+\_\+context\+\_\+arg\+\_\+name)
+\item 
+t.\+Optional\mbox{[}t.\+Callable\mbox{]} \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aeaa0ba55713bc3dbcd0fb94c084c3de7}{get\+\_\+tokeninfo\+\_\+func}} (self, dict security\+\_\+definition)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a6dad3dd29f62e51de37b63cd0b962b56}{get\+\_\+scope\+\_\+validate\+\_\+func}} (cls, security\+\_\+definition)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9379a810b3b7bef166db6e54b150e970}{get\+\_\+basicinfo\+\_\+func}} (cls, security\+\_\+definition)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9b6fbd0e95d52bf564645ff8aae6e095}{get\+\_\+apikeyinfo\+\_\+func}} (cls, security\+\_\+definition)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a36099f9a4844fb56cc3d490e566fca22}{get\+\_\+bearerinfo\+\_\+func}} (cls, security\+\_\+definition)
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ada9d39443e011d4c0448f1a1858ec1f6}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ada9d39443e011d4c0448f1a1858ec1f6} 
+{\bfseries verify\+\_\+oauth} (self, token\+\_\+info\+\_\+func, scope\+\_\+validate\+\_\+func, required\+\_\+scopes)
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aee68b32e9701d663e65f3a9354f40ced}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aee68b32e9701d663e65f3a9354f40ced} 
+{\bfseries verify\+\_\+basic} (self, basic\+\_\+info\+\_\+func)
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ac08fa45afd41eb496bec27b593b8e175}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ac08fa45afd41eb496bec27b593b8e175} 
+{\bfseries verify\+\_\+api\+\_\+key} (self, api\+\_\+key\+\_\+info\+\_\+func, loc, name)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ac44ae35c47c1c710ab929fb0e740ba30}{verify\+\_\+bearer}} (self, token\+\_\+info\+\_\+func)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aab9bd57430a8f73fd837b0c67cdcbcbc}{verify\+\_\+multiple\+\_\+schemes}} (self, schemes)
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a1306bf796ca3d94375c6581179fa8739}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a1306bf796ca3d94375c6581179fa8739} 
+{\bfseries check\+\_\+bearer\+\_\+token} (self, token\+\_\+info\+\_\+func)
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a42b24534afa178cbc4034f9b930c22b1}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a42b24534afa178cbc4034f9b930c22b1} 
+{\bfseries check\+\_\+basic\+\_\+auth} (self, basic\+\_\+info\+\_\+func)
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a310495d246227c9371cf63ecf194bb0a}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a310495d246227c9371cf63ecf194bb0a} 
+{\bfseries check\+\_\+api\+\_\+key} (self, api\+\_\+key\+\_\+info\+\_\+func)
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a13d222d2a4b10b8759eeff41b1059ad0}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a13d222d2a4b10b8759eeff41b1059ad0} 
+{\bfseries check\+\_\+oauth\+\_\+func} (self, token\+\_\+info\+\_\+func, scope\+\_\+validate\+\_\+func)
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a574798fbab32fd3d6532fd2cd47c9a4b}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a574798fbab32fd3d6532fd2cd47c9a4b} 
+{\bfseries verify\+\_\+security} (cls, auth\+\_\+funcs, function)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a2a267551cc172f2d3f1872146dec39cd}{get\+\_\+token\+\_\+info\+\_\+remote}} (self, token\+\_\+info\+\_\+url)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7031a2d2089118e268a36a5475043028}{security\+\_\+passthrough}} (function)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ae36af50587b4035332e82ae4f24dd3c5}{security\+\_\+deny}} (function)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aa0322f80efb01c6479d24239a9badd86}{validate\+\_\+scope}} (required\+\_\+scopes, token\+\_\+scopes)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7a327351d44c5cef2d6495692bff0681}{get\+\_\+auth\+\_\+header\+\_\+value}} (request)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a88ee76056a79b1f41e71bd1b935f69ef}{get\+\_\+cookie\+\_\+value}} (cookies, name)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a4bdf7d1444f70a0934044109e76494ef}{verify\+\_\+none}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_af5a4e6010891585f109718c83e233b20}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_af5a4e6010891585f109718c83e233b20} 
+{\bfseries pass\+\_\+context\+\_\+arg\+\_\+name} = pass\+\_\+context\+\_\+arg\+\_\+name
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9172a39e65b671f46db5b83c78d66cf3}{validate\+\_\+scope}}
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a2b8f4e10f3c367f6c7d4bd15089b003e}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a2b8f4e10f3c367f6c7d4bd15089b003e} 
+list {\bfseries no\+\_\+value} = \mbox{[}$\,$\mbox{]}\+:
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aa1d67593bdd932dcdbd73e7bc805f897}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aa1d67593bdd932dcdbd73e7bc805f897} 
+{\bfseries no\+\_\+value} = object()
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9f8a71e07c2046bdd4de40b0217135e2}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9f8a71e07c2046bdd4de40b0217135e2} 
+str {\bfseries required\+\_\+scopes\+\_\+kw} = \textquotesingle{}required\+\_\+scopes\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_acbe62f247e4d78268de0c3cf27323c4b}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_acbe62f247e4d78268de0c3cf27323c4b} 
+{\bfseries \+\_\+need\+\_\+to\+\_\+add\+\_\+context\+\_\+or\+\_\+scopes} (self, func)
+\item 
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aa875e0134bf809caca4326b01d7d803a}\label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aa875e0134bf809caca4326b01d7d803a} 
+{\bfseries \+\_\+generic\+\_\+check} (self, func, exception\+\_\+msg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7ac63a08d4baf90ee1b3aff4085d2cd4}{\+\_\+get\+\_\+function}} (security\+\_\+definition, security\+\_\+definition\+\_\+key, environ\+\_\+key, default=None)
+\item 
+None \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a684db2e6da0d0e4d8a0735094eef7a1e}{\+\_\+raise\+\_\+most\+\_\+specific}} (t.\+List\mbox{[}Exception\mbox{]} exceptions)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}get_*_func -> _get_function -> get_function_from_name (name=security function defined in spec)
+    (if url defined instead of a function -> get_token_info_remote)
+
+std security functions: security_{passthrough,deny}
+
+verify_* -> returns a security wrapper around the security function
+    check_* -> returns a function tasked with doing auth for use inside the verify wrapper
+        check helpers (used outside wrappers): _need_to_add_context_or_scopes
+        the security function
+
+    verify helpers (used inside wrappers): get_auth_header_value, get_cookie_value
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7ac63a08d4baf90ee1b3aff4085d2cd4}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!\_get\_function@{\_get\_function}}
+\index{\_get\_function@{\_get\_function}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{\_get\_function()}{\_get\_function()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7ac63a08d4baf90ee1b3aff4085d2cd4} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+\_\+get\+\_\+function (\begin{DoxyParamCaption}\item[{}]{security\+\_\+definition}{, }\item[{}]{security\+\_\+definition\+\_\+key}{, }\item[{}]{environ\+\_\+key}{, }\item[{}]{default}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return function by getting its name from security_definition or environment variable
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a684db2e6da0d0e4d8a0735094eef7a1e}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!\_raise\_most\_specific@{\_raise\_most\_specific}}
+\index{\_raise\_most\_specific@{\_raise\_most\_specific}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{\_raise\_most\_specific()}{\_raise\_most\_specific()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a684db2e6da0d0e4d8a0735094eef7a1e} 
+ None connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+\_\+raise\+\_\+most\+\_\+specific (\begin{DoxyParamCaption}\item[{t.\+List\mbox{[}Exception\mbox{]}}]{exceptions}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Raises the most specific error from a list of exceptions by status code.
+
+The status codes are expected to be either in the `code`
+or in the `status` attribute of the exceptions.
+
+The order is as follows:
+    - 403: valid credentials but not enough privileges
+    - 401: no or invalid credentials
+    - for other status codes, the smallest one is selected
+
+:param errors: List of exceptions.
+:type errors: t.List[Exception]
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9b6fbd0e95d52bf564645ff8aae6e095}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!get\_apikeyinfo\_func@{get\_apikeyinfo\_func}}
+\index{get\_apikeyinfo\_func@{get\_apikeyinfo\_func}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{get\_apikeyinfo\_func()}{get\_apikeyinfo\_func()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9b6fbd0e95d52bf564645ff8aae6e095} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+get\+\_\+apikeyinfo\+\_\+func (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{security\+\_\+definition}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type security_definition: dict
+:rtype: function
+
+>>> get_apikeyinfo_func({'x-apikeyInfoFunc': 'foo.bar'})
+'<function foo.bar>'
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7a327351d44c5cef2d6495692bff0681}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!get\_auth\_header\_value@{get\_auth\_header\_value}}
+\index{get\_auth\_header\_value@{get\_auth\_header\_value}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{get\_auth\_header\_value()}{get\_auth\_header\_value()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7a327351d44c5cef2d6495692bff0681} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+get\+\_\+auth\+\_\+header\+\_\+value (\begin{DoxyParamCaption}\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Called inside security wrapper functions
+
+Return Authorization type and value if any.
+If not Authorization, return (None, None)
+Raise OAuthProblem for invalid Authorization header
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9379a810b3b7bef166db6e54b150e970}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!get\_basicinfo\_func@{get\_basicinfo\_func}}
+\index{get\_basicinfo\_func@{get\_basicinfo\_func}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{get\_basicinfo\_func()}{get\_basicinfo\_func()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9379a810b3b7bef166db6e54b150e970} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+get\+\_\+basicinfo\+\_\+func (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{security\+\_\+definition}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type security_definition: dict
+:rtype: function
+
+>>> get_basicinfo_func({'x-basicInfoFunc': 'foo.bar'})
+'<function foo.bar>'
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a36099f9a4844fb56cc3d490e566fca22}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!get\_bearerinfo\_func@{get\_bearerinfo\_func}}
+\index{get\_bearerinfo\_func@{get\_bearerinfo\_func}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{get\_bearerinfo\_func()}{get\_bearerinfo\_func()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a36099f9a4844fb56cc3d490e566fca22} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+get\+\_\+bearerinfo\+\_\+func (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{security\+\_\+definition}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type security_definition: dict
+:rtype: function
+
+>>> get_bearerinfo_func({'x-bearerInfoFunc': 'foo.bar'})
+'<function foo.bar>'
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a88ee76056a79b1f41e71bd1b935f69ef}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!get\_cookie\_value@{get\_cookie\_value}}
+\index{get\_cookie\_value@{get\_cookie\_value}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{get\_cookie\_value()}{get\_cookie\_value()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a88ee76056a79b1f41e71bd1b935f69ef} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+get\+\_\+cookie\+\_\+value (\begin{DoxyParamCaption}\item[{}]{cookies}{, }\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Called inside security wrapper functions
+
+Returns cookie value by its name. None if no such value.
+:param cookies: str: cookies raw data
+:param name: str: cookies key
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a6dad3dd29f62e51de37b63cd0b962b56}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!get\_scope\_validate\_func@{get\_scope\_validate\_func}}
+\index{get\_scope\_validate\_func@{get\_scope\_validate\_func}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{get\_scope\_validate\_func()}{get\_scope\_validate\_func()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a6dad3dd29f62e51de37b63cd0b962b56} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+get\+\_\+scope\+\_\+validate\+\_\+func (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{security\+\_\+definition}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type security_definition: dict
+:rtype: function
+
+>>> get_scope_validate_func({'x-scopeValidateFunc': 'foo.bar'})
+'<function foo.bar>'
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a2a267551cc172f2d3f1872146dec39cd}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!get\_token\_info\_remote@{get\_token\_info\_remote}}
+\index{get\_token\_info\_remote@{get\_token\_info\_remote}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{get\_token\_info\_remote()}{get\_token\_info\_remote()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a2a267551cc172f2d3f1872146dec39cd} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+get\+\_\+token\+\_\+info\+\_\+remote (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{token\+\_\+info\+\_\+url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a function which will call `token_info_url` to retrieve token info.
+
+Returned function must accept oauth token in parameter.
+It must return a token_info dict in case of success, None otherwise.
+
+:param token_info_url: Url to get information about the token
+:type token_info_url: str
+:rtype: types.FunctionType
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconnexion_1_1security_1_1aiohttp__security__handler__factory_1_1_aio_http_security_handler_factory_afe7112877bd7745527949f171ed23b1f}{connexion.\+security.\+aiohttp\+\_\+security\+\_\+handler\+\_\+factory.\+Aio\+Http\+Security\+Handler\+Factory}}, \mbox{\hyperlink{classconnexion_1_1security_1_1async__security__handler__factory_1_1_abstract_async_security_handler_factory_ac6f44d622dbe8065a8ae69e4f2835a98}{connexion.\+security.\+async\+\_\+security\+\_\+handler\+\_\+factory.\+Abstract\+Async\+Security\+Handler\+Factory}}, and \mbox{\hyperlink{classconnexion_1_1security_1_1flask__security__handler__factory_1_1_flask_security_handler_factory_a7eb4ea0e009fb70aabd972ce997f7834}{connexion.\+security.\+flask\+\_\+security\+\_\+handler\+\_\+factory.\+Flask\+Security\+Handler\+Factory}}.
+
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aeaa0ba55713bc3dbcd0fb94c084c3de7}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!get\_tokeninfo\_func@{get\_tokeninfo\_func}}
+\index{get\_tokeninfo\_func@{get\_tokeninfo\_func}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{get\_tokeninfo\_func()}{get\_tokeninfo\_func()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aeaa0ba55713bc3dbcd0fb94c084c3de7} 
+ t.\+Optional\mbox{[}t.\+Callable\mbox{]} connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+get\+\_\+tokeninfo\+\_\+func (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict}]{security\+\_\+definition}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type security_definition: dict
+
+>>> get_tokeninfo_url({'x-tokenInfoFunc': 'foo.bar'})
+'<function foo.bar>'
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ae36af50587b4035332e82ae4f24dd3c5}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!security\_deny@{security\_deny}}
+\index{security\_deny@{security\_deny}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{security\_deny()}{security\_deny()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ae36af50587b4035332e82ae4f24dd3c5} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+security\+\_\+deny (\begin{DoxyParamCaption}\item[{}]{function}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}:type function: types.FunctionType
+:rtype: types.FunctionType
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7031a2d2089118e268a36a5475043028}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!security\_passthrough@{security\_passthrough}}
+\index{security\_passthrough@{security\_passthrough}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{security\_passthrough()}{security\_passthrough()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7031a2d2089118e268a36a5475043028} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+security\+\_\+passthrough (\begin{DoxyParamCaption}\item[{}]{function}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}:type function: types.FunctionType
+:rtype: types.FunctionType
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aa0322f80efb01c6479d24239a9badd86}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!validate\_scope@{validate\_scope}}
+\index{validate\_scope@{validate\_scope}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{validate\_scope()}{validate\_scope()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aa0322f80efb01c6479d24239a9badd86} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+validate\+\_\+scope (\begin{DoxyParamCaption}\item[{}]{required\+\_\+scopes}{, }\item[{}]{token\+\_\+scopes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}:param required_scopes: Scopes required to access operation
+:param token_scopes: Scopes granted by authorization server
+:rtype: bool
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ac44ae35c47c1c710ab929fb0e740ba30}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!verify\_bearer@{verify\_bearer}}
+\index{verify\_bearer@{verify\_bearer}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{verify\_bearer()}{verify\_bearer()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ac44ae35c47c1c710ab929fb0e740ba30} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+verify\+\_\+bearer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{token\+\_\+info\+\_\+func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param token_info_func: types.FunctionType
+:rtype: types.FunctionType
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aab9bd57430a8f73fd837b0c67cdcbcbc}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!verify\_multiple\_schemes@{verify\_multiple\_schemes}}
+\index{verify\_multiple\_schemes@{verify\_multiple\_schemes}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{verify\_multiple\_schemes()}{verify\_multiple\_schemes()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aab9bd57430a8f73fd837b0c67cdcbcbc} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+verify\+\_\+multiple\+\_\+schemes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{schemes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verifies multiple authentication schemes in AND fashion.
+If any scheme fails, the entire authentication fails.
+
+:param schemes: mapping scheme_name to auth function
+:type schemes: dict
+:rtype: types.FunctionType
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a4bdf7d1444f70a0934044109e76494ef}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!verify\_none@{verify\_none}}
+\index{verify\_none@{verify\_none}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{verify\_none()}{verify\_none()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a4bdf7d1444f70a0934044109e76494ef} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+verify\+\_\+none (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}:rtype: types.FunctionType
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9172a39e65b671f46db5b83c78d66cf3}\index{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}!validate\_scope@{validate\_scope}}
+\index{validate\_scope@{validate\_scope}!connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory@{connexion.security.security\_handler\_factory.AbstractSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{validate\_scope}{validate\_scope}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9172a39e65b671f46db5b83c78d66cf3} 
+connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory.\+validate\+\_\+scope}
+
+\begin{DoxyVerb}:type security_definition: dict
+:rtype: function
+
+>>> get_scope_validate_func({'x-scopeValidateFunc': 'foo.bar'})
+'<function foo.bar>'
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/security/security\+\_\+handler\+\_\+factory.\+py\end{DoxyCompactItemize}

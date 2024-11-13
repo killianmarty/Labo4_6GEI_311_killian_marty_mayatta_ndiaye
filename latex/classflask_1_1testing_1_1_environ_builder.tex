@@ -1,0 +1,227 @@
+\doxysection{flask.\+testing.\+Environ\+Builder Class Reference}
+\hypertarget{classflask_1_1testing_1_1_environ_builder}{}\label{classflask_1_1testing_1_1_environ_builder}\index{flask.testing.EnvironBuilder@{flask.testing.EnvironBuilder}}
+Inheritance diagram for flask.\+testing.\+Environ\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1testing_1_1_environ_builder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classflask_1_1testing_1_1_environ_builder_ae9e9020061c9cb1bc16e23bebf56104c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}Flask"{} app, str path="{}/"{}, t.\+Optional\mbox{[}str\mbox{]} base\+\_\+url=None, t.\+Optional\mbox{[}str\mbox{]} subdomain=None, t.\+Optional\mbox{[}str\mbox{]} url\+\_\+scheme=None, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+str \mbox{\hyperlink{classflask_1_1testing_1_1_environ_builder_a13fc088dec79fbaeec24b9332e8c30de}{json\+\_\+dumps}} (self, t.\+Any obj, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder}{werkzeug.\+test.\+Environ\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+"{}Environ\+Builder"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a2c0fe641ebd531ae43e44162c399ccb2}{from\+\_\+environ}} (cls, "{}WSGIEnvironment"{} environ, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a639761854389f1a30d3e1227284b32fd}{base\+\_\+url}} (self)
+\item 
+None {\bfseries base\+\_\+url} (self, t.\+Optional\mbox{[}str\mbox{]} value)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_ae8f6872525c6d189af927ca08a75bba4}{content\+\_\+type}} (self)
+\item 
+None {\bfseries content\+\_\+type} (self, t.\+Optional\mbox{[}str\mbox{]} value)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a8cf320ad289804785b90bee432a7b348}{mimetype}} (self)
+\item 
+None {\bfseries mimetype} (self, str value)
+\item 
+t.\+Mapping\mbox{[}str, str\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a170e4d689d88843b6872790cb25930c0}{mimetype\+\_\+params}} (self)
+\item 
+t.\+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_acea0f4c8625836e392e9e6fbc5c9f049}{content\+\_\+length}} (self)
+\item 
+None {\bfseries content\+\_\+length} (self, t.\+Optional\mbox{[}int\mbox{]} value)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_aa2a204e6e45924262f045110adc89527}{form}} (self)
+\item 
+None {\bfseries form} (self, \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}} value)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_file_multi_dict}{File\+Multi\+Dict}} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_acd55ff1babb4695112894f18876ac057}{files}} (self)
+\item 
+None {\bfseries files} (self, \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_file_multi_dict}{File\+Multi\+Dict}} value)
+\item 
+t.\+Optional\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_ac50ddc4268688cd43e18cdd6732c66e1}{input\+\_\+stream}} (self)
+\item 
+None {\bfseries input\+\_\+stream} (self, t.\+Optional\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}\mbox{]} value)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_aba928b02da41c275b5e061b7b4c4ab42}{query\+\_\+string}} (self)
+\item 
+None {\bfseries query\+\_\+string} (self, t.\+Optional\mbox{[}str\mbox{]} value)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a53d01b04600bef3d143d00cbdffb4a88}{args}} (self)
+\item 
+None {\bfseries args} (self, t.\+Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}}\mbox{]} value)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a635a2f34db063cda352749a0433ca634}{server\+\_\+name}} (self)
+\item 
+int \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a703043a48a7d35c7ba56e822f1d8e528}{server\+\_\+port}} (self)
+\item 
+None {\bfseries \+\_\+\+\_\+del\+\_\+\+\_\+} (self)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a051b516d74a5ddf3b13bfeee991cf58d}{close}} (self)
+\item 
+"{}WSGIEnvironment"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_aa6ea13c1de03f4478d2b52891f0e946c}{get\+\_\+environ}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a986fb799e016893becd8ce9b9dc6635f}{get\+\_\+request}} (self, t.\+Optional\mbox{[}t.\+Type\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}\mbox{]}\mbox{]} cls=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1testing_1_1_environ_builder_a8718b780e4217fdb6afaec429d4e1e4a}\label{classflask_1_1testing_1_1_environ_builder_a8718b780e4217fdb6afaec429d4e1e4a} 
+{\bfseries app} = app
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder}{werkzeug.\+test.\+Environ\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries charset} = charset
+\item 
+{\bfseries path} = iri\+\_\+to\+\_\+uri(request\+\_\+uri.\+path)
+\item 
+{\bfseries request\+\_\+uri} = path
+\item 
+str {\bfseries base\+\_\+url} = base\+\_\+url
+\item 
+str {\bfseries query\+\_\+string} = query\+\_\+string
+\item 
+str {\bfseries args} = query\+\_\+string
+\item 
+{\bfseries method} = method
+\item 
+{\bfseries headers} = headers
+\item 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries content\+\_\+type} = content\+\_\+type
+\item 
+{\bfseries errors\+\_\+stream} = errors\+\_\+stream
+\item 
+{\bfseries multithread} = multithread
+\item 
+{\bfseries multiprocess} = multiprocess
+\item 
+{\bfseries run\+\_\+once} = run\+\_\+once
+\item 
+{\bfseries environ\+\_\+base} = environ\+\_\+base
+\item 
+{\bfseries environ\+\_\+overrides} = environ\+\_\+overrides
+\item 
+t.\+Optional\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}\mbox{]} {\bfseries input\+\_\+stream} = input\+\_\+stream
+\item 
+t.\+Optional\mbox{[}int\mbox{]} {\bfseries content\+\_\+length} = content\+\_\+length
+\item 
+bool {\bfseries closed} = False
+\item 
+str {\bfseries content\+\_\+type} = data.\+read()
+\item 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries mimetype} = mimetype
+\item 
+str {\bfseries url\+\_\+scheme}
+\item 
+{\bfseries host}
+\item 
+{\bfseries script\+\_\+root}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_file_multi_dict}{File\+Multi\+Dict}} {\bfseries closed} = self.\+files.\+values()
+\item 
+{\bfseries server\+\_\+name}
+\item 
+{\bfseries server\+\_\+port}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder}{werkzeug.\+test.\+Environ\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries server\+\_\+protocol} = "{}HTTP/1.\+1"{}
+\item 
+tuple {\bfseries wsgi\+\_\+version} = (1, 0)
+\item 
+{\bfseries request\+\_\+class} = \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder}{werkzeug.\+test.\+Environ\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a735418bec43090c967e47c8ea8151156}{\+\_\+add\+\_\+file\+\_\+from\+\_\+data}} (self, str key, t.\+Union\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}, t.\+Tuple\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}, str\mbox{]}, t.\+Tuple\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}, str, str\mbox{]}\mbox{]} value)
+\item 
+\+\_\+\+TAny\+Multi\+Dict \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_ac8d6f16d67309718ec03ca626c0e1c56}{\+\_\+get\+\_\+form}} (self, str name, t.\+Type\mbox{[}\+\_\+\+TAny\+Multi\+Dict\mbox{]} storage)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_aebdb078147bb88d2d9a0d144dc5ee518}{\+\_\+set\+\_\+form}} (self, str name, \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}} value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder}{werkzeug.\+test.\+Environ\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries \+\_\+make\+\_\+base\+\_\+url} (str scheme, str host, str script\+\_\+root)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder}{werkzeug.\+test.\+Environ\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries \+\_\+args} .Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}}\mbox{]}
+\item 
+t {\bfseries \+\_\+query\+\_\+string} .Optional\mbox{[}str\mbox{]}
+\item 
+t {\bfseries \+\_\+input\+\_\+stream} .Optional\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}\mbox{]}
+\item 
+t {\bfseries \+\_\+form} .Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}}\mbox{]}
+\item 
+t {\bfseries \+\_\+files} .Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_file_multi_dict}{File\+Multi\+Dict}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An :class:`~werkzeug.test.EnvironBuilder`, that takes defaults from the
+application.
+
+:param app: The Flask application to configure the environment from.
+:param path: URL path being requested.
+:param base_url: Base URL where the app is being served, which
+    ``path`` is relative to. If not given, built from
+    :data:`PREFERRED_URL_SCHEME`, ``subdomain``,
+    :data:`SERVER_NAME`, and :data:`APPLICATION_ROOT`.
+:param subdomain: Subdomain name to append to :data:`SERVER_NAME`.
+:param url_scheme: Scheme to use instead of
+    :data:`PREFERRED_URL_SCHEME`.
+:param json: If given, this is serialized as JSON and passed as
+    ``data``. Also defaults ``content_type`` to
+    ``application/json``.
+:param args: other positional arguments passed to
+    :class:`~werkzeug.test.EnvironBuilder`.
+:param kwargs: other keyword arguments passed to
+    :class:`~werkzeug.test.EnvironBuilder`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1testing_1_1_environ_builder_ae9e9020061c9cb1bc16e23bebf56104c}\index{flask.testing.EnvironBuilder@{flask.testing.EnvironBuilder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.testing.EnvironBuilder@{flask.testing.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_environ_builder_ae9e9020061c9cb1bc16e23bebf56104c} 
+ None flask.\+testing.\+Environ\+Builder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Flask"{}}]{app}{, }\item[{str }]{path}{ = {\ttfamily "{}/"{}}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{base\+\_\+url}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{subdomain}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{url\+\_\+scheme}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder}{werkzeug.\+test.\+Environ\+Builder}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1testing_1_1_environ_builder_a13fc088dec79fbaeec24b9332e8c30de}\index{flask.testing.EnvironBuilder@{flask.testing.EnvironBuilder}!json\_dumps@{json\_dumps}}
+\index{json\_dumps@{json\_dumps}!flask.testing.EnvironBuilder@{flask.testing.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{json\_dumps()}{json\_dumps()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_environ_builder_a13fc088dec79fbaeec24b9332e8c30de} 
+ str flask.\+testing.\+Environ\+Builder.\+json\+\_\+dumps (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{obj}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Serialize ``obj`` to a JSON-formatted string.
+
+The serialization will be configured according to the config associated
+with this EnvironBuilder's ``app``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder}{werkzeug.\+test.\+Environ\+Builder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/testing.\+py\end{DoxyCompactItemize}

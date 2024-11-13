@@ -1,0 +1,105 @@
+\doxysection{werkzeug.\+exceptions.\+Method\+Not\+Allowed Class Reference}
+\hypertarget{classwerkzeug_1_1exceptions_1_1_method_not_allowed}{}\label{classwerkzeug_1_1exceptions_1_1_method_not_allowed}\index{werkzeug.exceptions.MethodNotAllowed@{werkzeug.exceptions.MethodNotAllowed}}
+Inheritance diagram for werkzeug.\+exceptions.\+Method\+Not\+Allowed\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1exceptions_1_1_method_not_allowed}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a2a63db2d2ce175118880a10e7ae86df9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\mbox{[}t.\+Iterable\mbox{[}str\mbox{]}\mbox{]} valid\+\_\+methods=None, t.\+Optional\mbox{[}str\mbox{]} description=None, t.\+Optional\mbox{[}"{}Response"{}\mbox{]} response=None)
+\item 
+t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a55f4db73e55bb90949e237c09d3218c8}{get\+\_\+headers}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798}{name}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aaeabc66be206d8416ce68dd45127459e}{get\+\_\+description}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2d4bdf6b9951d455d40c9f55ba28b41f}{get\+\_\+body}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+"{}Response"{} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0552eb47de6a896d4d242893198e23d2}{get\+\_\+response}} (self, t.\+Optional\mbox{[}t.\+Union\mbox{[}"{}WSGIEnvironment"{}, "{}WSGIRequest"{}\mbox{]}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+t.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aebdfbbad37e22021a48f9235e637d4ab}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a2afae56b026fc79f1288f7ea256bad2e}\label{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a2afae56b026fc79f1288f7ea256bad2e} 
+{\bfseries valid\+\_\+methods} = valid\+\_\+methods
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries response} = response
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a8295bec8329127b68c1409f4707e134e}\label{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a8295bec8329127b68c1409f4707e134e} 
+int {\bfseries code} = 405
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_method_not_allowed_af60c9c0ee6d036003edf144c92306464}\label{classwerkzeug_1_1exceptions_1_1_method_not_allowed_af60c9c0ee6d036003edf144c92306464} 
+str {\bfseries description} = "{}The method is not allowed for the requested URL."{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries code} = None
+\item 
+t {\bfseries description} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}*405* `Method Not Allowed`
+
+Raise if the server used a method the resource does not handle.  For
+example `POST` if the resource is view only.  Especially useful for REST.
+
+The first argument for this exception should be a list of allowed methods.
+Strictly speaking the response would be invalid if you don't provide valid
+methods in the header which you can do with that list.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a2a63db2d2ce175118880a10e7ae86df9}\index{werkzeug.exceptions.MethodNotAllowed@{werkzeug.exceptions.MethodNotAllowed}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.exceptions.MethodNotAllowed@{werkzeug.exceptions.MethodNotAllowed}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a2a63db2d2ce175118880a10e7ae86df9} 
+ None werkzeug.\+exceptions.\+Method\+Not\+Allowed.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}t.\+Iterable\mbox{[}str\mbox{]}\mbox{]} }]{valid\+\_\+methods}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{description}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}"{}Response"{}\mbox{]} }]{response}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes an optional list of valid http methods
+starting with werkzeug 0.3 the list will be mandatory.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a55f4db73e55bb90949e237c09d3218c8}\index{werkzeug.exceptions.MethodNotAllowed@{werkzeug.exceptions.MethodNotAllowed}!get\_headers@{get\_headers}}
+\index{get\_headers@{get\_headers}!werkzeug.exceptions.MethodNotAllowed@{werkzeug.exceptions.MethodNotAllowed}}
+\doxysubsubsection{\texorpdfstring{get\_headers()}{get\_headers()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a55f4db73e55bb90949e237c09d3218c8} 
+ t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} werkzeug.\+exceptions.\+Method\+Not\+Allowed.\+get\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} }]{environ}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}dict\mbox{]} }]{scope}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a list of headers.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_afbcf1071c68f1c81ba64b4e08b968893}{werkzeug.\+exceptions.\+HTTPException}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/exceptions.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,32 @@
+\doxysection{plot\+\_\+center\+\_\+node Namespace Reference}
+\hypertarget{namespaceplot__center__node}{}\label{namespaceplot__center__node}\index{plot\_center\_node@{plot\_center\_node}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__center__node_acbaa581fbe616d97e53f3660112bd091}\label{namespaceplot__center__node_acbaa581fbe616d97e53f3660112bd091} 
+{\bfseries G} = nx.\+path\+\_\+graph(20)
+\item 
+\Hypertarget{namespaceplot__center__node_af188cf68c4de38ee2374d33ea289c7d2}\label{namespaceplot__center__node_af188cf68c4de38ee2374d33ea289c7d2} 
+int {\bfseries center\+\_\+node} = 5
+\item 
+\Hypertarget{namespaceplot__center__node_ad1d36ffcff4ab1e9bdc150402264f52a}\label{namespaceplot__center__node_ad1d36ffcff4ab1e9bdc150402264f52a} 
+{\bfseries edge\+\_\+nodes} = set(G) -\/ \{center\+\_\+node\}
+\item 
+\Hypertarget{namespaceplot__center__node_abc8b962d3b13029e2801d2a8bc59c1f4}\label{namespaceplot__center__node_abc8b962d3b13029e2801d2a8bc59c1f4} 
+{\bfseries pos} = nx.\+circular\+\_\+layout(G.\+subgraph(edge\+\_\+nodes))
+\item 
+\Hypertarget{namespaceplot__center__node_a9a5ef2c7a34faa442aeccdff13edc025}\label{namespaceplot__center__node_a9a5ef2c7a34faa442aeccdff13edc025} 
+{\bfseries with\+\_\+labels}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}====================
+Custom Node Position
+====================
+
+Draw a graph with node(s) located at user-defined positions.
+
+When a position is set by the user, the other nodes can still be neatly organised in a layout.
+\end{DoxyVerb}
+ 

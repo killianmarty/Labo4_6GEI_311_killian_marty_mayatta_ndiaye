@@ -1,0 +1,59 @@
+\doxysection{plot\+\_\+basic Namespace Reference}
+\hypertarget{namespaceplot__basic}{}\label{namespaceplot__basic}\index{plot\_basic@{plot\_basic}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplot__basic_af1cf880fedd3943a38bcc2cb1c0e98ee}{\+\_\+format\+\_\+axes}} (ax)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__basic_a475ee21ced11091a036fb46210ccf220}\label{namespaceplot__basic_a475ee21ced11091a036fb46210ccf220} 
+{\bfseries G} = nx.\+cycle\+\_\+graph(20)
+\item 
+\Hypertarget{namespaceplot__basic_a5a5fb434017be2c52593c4badc450797}\label{namespaceplot__basic_a5a5fb434017be2c52593c4badc450797} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(G, dim=3, seed=779)
+\item 
+\Hypertarget{namespaceplot__basic_af4940b7ed2f79c2337e6663fe4d88639}\label{namespaceplot__basic_af4940b7ed2f79c2337e6663fe4d88639} 
+{\bfseries node\+\_\+xyz} = np.\+array(\mbox{[}pos\mbox{[}v\mbox{]} for v in sorted(G)\mbox{]})
+\item 
+\Hypertarget{namespaceplot__basic_a3f13254cce3b146f5baaffac52a0cb8b}\label{namespaceplot__basic_a3f13254cce3b146f5baaffac52a0cb8b} 
+{\bfseries edge\+\_\+xyz} = np.\+array(\mbox{[}(pos\mbox{[}u\mbox{]}, pos\mbox{[}v\mbox{]}) for u, v in G.\+edges()\mbox{]})
+\item 
+\Hypertarget{namespaceplot__basic_a3848b9989a72da3ed59d2fbeefc04d87}\label{namespaceplot__basic_a3848b9989a72da3ed59d2fbeefc04d87} 
+{\bfseries fig} = plt.\+figure()
+\item 
+\Hypertarget{namespaceplot__basic_a706d074e2d69d44ba7f33e8932d965de}\label{namespaceplot__basic_a706d074e2d69d44ba7f33e8932d965de} 
+{\bfseries ax} = fig.\+add\+\_\+subplot(111, projection="{}3d"{})
+\item 
+\Hypertarget{namespaceplot__basic_a0d74ec78dd4f6f70727fd332a5194f08}\label{namespaceplot__basic_a0d74ec78dd4f6f70727fd332a5194f08} 
+{\bfseries T}
+\item 
+\Hypertarget{namespaceplot__basic_a94812b39568f30eab2d24455b47673de}\label{namespaceplot__basic_a94812b39568f30eab2d24455b47673de} 
+{\bfseries s}
+\item 
+\Hypertarget{namespaceplot__basic_a54156ed83ce1782cec3b0f9dd44e33c7}\label{namespaceplot__basic_a54156ed83ce1782cec3b0f9dd44e33c7} 
+{\bfseries ec}
+\item 
+\Hypertarget{namespaceplot__basic_a937ba261483def3b80e295632c94e915}\label{namespaceplot__basic_a937ba261483def3b80e295632c94e915} 
+{\bfseries color}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}================
+Basic matplotlib
+================
+
+A basic example of 3D Graph visualization using `mpl_toolkits.mplot_3d`.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceplot__basic_af1cf880fedd3943a38bcc2cb1c0e98ee}\index{plot\_basic@{plot\_basic}!\_format\_axes@{\_format\_axes}}
+\index{\_format\_axes@{\_format\_axes}!plot\_basic@{plot\_basic}}
+\doxysubsubsection{\texorpdfstring{\_format\_axes()}{\_format\_axes()}}
+{\footnotesize\ttfamily \label{namespaceplot__basic_af1cf880fedd3943a38bcc2cb1c0e98ee} 
+plot\+\_\+basic.\+\_\+format\+\_\+axes (\begin{DoxyParamCaption}\item[{}]{ax}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Visualization options for the 3D axes.\end{DoxyVerb}
+ 

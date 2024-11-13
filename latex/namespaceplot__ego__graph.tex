@@ -1,0 +1,61 @@
+\doxysection{plot\+\_\+ego\+\_\+graph Namespace Reference}
+\hypertarget{namespaceplot__ego__graph}{}\label{namespaceplot__ego__graph}\index{plot\_ego\_graph@{plot\_ego\_graph}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__ego__graph_a541e70c7a70527b1c6eee32f6bae87b9}\label{namespaceplot__ego__graph_a541e70c7a70527b1c6eee32f6bae87b9} 
+int {\bfseries n} = 1000
+\item 
+\Hypertarget{namespaceplot__ego__graph_a159c3cdec288a60e9594e2d3005d9659}\label{namespaceplot__ego__graph_a159c3cdec288a60e9594e2d3005d9659} 
+int {\bfseries m} = 2
+\item 
+\Hypertarget{namespaceplot__ego__graph_a6be6266682dab0afd880ed23f0bf4f78}\label{namespaceplot__ego__graph_a6be6266682dab0afd880ed23f0bf4f78} 
+int {\bfseries seed} = 20532
+\item 
+\Hypertarget{namespaceplot__ego__graph_affaf121f892e4190aef8936b2f35cadc}\label{namespaceplot__ego__graph_affaf121f892e4190aef8936b2f35cadc} 
+{\bfseries G} = nx.\+barabasi\+\_\+albert\+\_\+graph(n, m, seed=seed)
+\item 
+\Hypertarget{namespaceplot__ego__graph_a40bef56e4b67c00bf246a036ad76c09b}\label{namespaceplot__ego__graph_a40bef56e4b67c00bf246a036ad76c09b} 
+{\bfseries node\+\_\+and\+\_\+degree} = G.\+degree()
+\item 
+\Hypertarget{namespaceplot__ego__graph_a3a51f1890e95fdd8c298a4eec454a121}\label{namespaceplot__ego__graph_a3a51f1890e95fdd8c298a4eec454a121} 
+{\bfseries largest\+\_\+hub}
+\item 
+\Hypertarget{namespaceplot__ego__graph_ae5a2fd3dfa90d6d65586b3e49f76e5ec}\label{namespaceplot__ego__graph_ae5a2fd3dfa90d6d65586b3e49f76e5ec} 
+{\bfseries degree}
+\item 
+\Hypertarget{namespaceplot__ego__graph_a5630de12afcd27adfd4fead939e02ec1}\label{namespaceplot__ego__graph_a5630de12afcd27adfd4fead939e02ec1} 
+{\bfseries key}
+\item 
+\Hypertarget{namespaceplot__ego__graph_ad818ca41d3408c5c653eb30871d72dc3}\label{namespaceplot__ego__graph_ad818ca41d3408c5c653eb30871d72dc3} 
+{\bfseries hub\+\_\+ego} = nx.\+ego\+\_\+graph(G, largest\+\_\+hub)
+\item 
+\Hypertarget{namespaceplot__ego__graph_ae0e39e5ffd4a297388c6b50154591da9}\label{namespaceplot__ego__graph_ae0e39e5ffd4a297388c6b50154591da9} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(hub\+\_\+ego, seed=seed)
+\item 
+\Hypertarget{namespaceplot__ego__graph_a8d6f84eb24bd440a97e3b52b5afe806d}\label{namespaceplot__ego__graph_a8d6f84eb24bd440a97e3b52b5afe806d} 
+{\bfseries node\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__ego__graph_a4dde10f56e3fdd212f46c078ffef1e33}\label{namespaceplot__ego__graph_a4dde10f56e3fdd212f46c078ffef1e33} 
+{\bfseries node\+\_\+size}
+\item 
+\Hypertarget{namespaceplot__ego__graph_a4be6e308992404a7bc1aec078419da65}\label{namespaceplot__ego__graph_a4be6e308992404a7bc1aec078419da65} 
+{\bfseries with\+\_\+labels}
+\item 
+\Hypertarget{namespaceplot__ego__graph_a91ff6610a765bb6518fba4c062a2aa79}\label{namespaceplot__ego__graph_a91ff6610a765bb6518fba4c062a2aa79} 
+dict {\bfseries options} = \{"{}node\+\_\+size"{}\+: 300, "{}node\+\_\+color"{}\+: "{}r"{}\}
+\item 
+\Hypertarget{namespaceplot__ego__graph_a1db3f7baeb9acff8cc325409ac4c63d2}\label{namespaceplot__ego__graph_a1db3f7baeb9acff8cc325409ac4c63d2} 
+{\bfseries nodelist}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}=========
+Ego Graph
+=========
+
+Example using the NetworkX ego_graph() function to return the main egonet of
+the largest hub in a Barabási-Albert network.
+\end{DoxyVerb}
+ 

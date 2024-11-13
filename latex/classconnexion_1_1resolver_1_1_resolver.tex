@@ -1,0 +1,93 @@
+\doxysection{connexion.\+resolver.\+Resolver Class Reference}
+\hypertarget{classconnexion_1_1resolver_1_1_resolver}{}\label{classconnexion_1_1resolver_1_1_resolver}\index{connexion.resolver.Resolver@{connexion.resolver.Resolver}}
+Inheritance diagram for connexion.\+resolver.\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.213439cm]{classconnexion_1_1resolver_1_1_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_aea92122a59acf895ed303178a45ebe56}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, function\+\_\+resolver=\mbox{\hyperlink{namespaceconnexion_1_1utils_a2a138d2c37f5555557648df253df0df7}{utils.\+get\+\_\+function\+\_\+from\+\_\+name}})
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a052aec285258ea1337ae7537a7a44b8e}{resolve}} (self, operation)
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a5779c9da3f7d238c207053ce208fb813}{resolve\+\_\+operation\+\_\+id}} (self, operation)
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a6a4a064312a7a9f7fa554358f01b3105}{resolve\+\_\+function\+\_\+from\+\_\+operation\+\_\+id}} (self, operation\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1resolver_1_1_resolver_a93cc2335844eb759d0ce35a10d06f657}\label{classconnexion_1_1resolver_1_1_resolver_a93cc2335844eb759d0ce35a10d06f657} 
+{\bfseries function\+\_\+resolver} = function\+\_\+resolver
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classconnexion_1_1resolver_1_1_resolver_aea92122a59acf895ed303178a45ebe56}\index{connexion.resolver.Resolver@{connexion.resolver.Resolver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.resolver.Resolver@{connexion.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_resolver_aea92122a59acf895ed303178a45ebe56} 
+connexion.\+resolver.\+Resolver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{function\+\_\+resolver}{ = {\ttfamily \mbox{\hyperlink{namespaceconnexion_1_1utils_a2a138d2c37f5555557648df253df0df7}{utils.\+get\+\_\+function\+\_\+from\+\_\+name}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Standard resolver
+
+:param function_resolver: Function that resolves functions using an operationId
+:type function_resolver: types.FunctionType
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconnexion_1_1mock_1_1_mock_resolver_a5fa3b0dc238010ed97efa2daa6a28822}{connexion.\+mock.\+Mock\+Resolver}}, \mbox{\hyperlink{classconnexion_1_1resolver_1_1_method_view_resolver_a7c4636b859a53b4f148067f7911e81c4}{connexion.\+resolver.\+Method\+View\+Resolver}}, \mbox{\hyperlink{classconnexion_1_1resolver_1_1_relative_resolver_a0f1d8af145cd7369f1dd10474f8e34eb}{connexion.\+resolver.\+Relative\+Resolver}}, and \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resty_resolver_ae1b414754877d96c6921cd2b1b9b6ffb}{connexion.\+resolver.\+Resty\+Resolver}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classconnexion_1_1resolver_1_1_resolver_a052aec285258ea1337ae7537a7a44b8e}\index{connexion.resolver.Resolver@{connexion.resolver.Resolver}!resolve@{resolve}}
+\index{resolve@{resolve}!connexion.resolver.Resolver@{connexion.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_resolver_a052aec285258ea1337ae7537a7a44b8e} 
+connexion.\+resolver.\+Resolver.\+resolve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Default operation resolver
+
+:type operation: connexion.operations.AbstractOperation
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconnexion_1_1mock_1_1_mock_resolver_a9e5a00fb3d9e6a970f5595861469bd98}{connexion.\+mock.\+Mock\+Resolver}}.
+
+\Hypertarget{classconnexion_1_1resolver_1_1_resolver_a6a4a064312a7a9f7fa554358f01b3105}\index{connexion.resolver.Resolver@{connexion.resolver.Resolver}!resolve\_function\_from\_operation\_id@{resolve\_function\_from\_operation\_id}}
+\index{resolve\_function\_from\_operation\_id@{resolve\_function\_from\_operation\_id}!connexion.resolver.Resolver@{connexion.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{resolve\_function\_from\_operation\_id()}{resolve\_function\_from\_operation\_id()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_resolver_a6a4a064312a7a9f7fa554358f01b3105} 
+connexion.\+resolver.\+Resolver.\+resolve\+\_\+function\+\_\+from\+\_\+operation\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Invokes the function_resolver
+
+:type operation_id: str
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconnexion_1_1resolver_1_1_method_view_resolver_af247562dcd295d88a13079436b12535c}{connexion.\+resolver.\+Method\+View\+Resolver}}.
+
+\Hypertarget{classconnexion_1_1resolver_1_1_resolver_a5779c9da3f7d238c207053ce208fb813}\index{connexion.resolver.Resolver@{connexion.resolver.Resolver}!resolve\_operation\_id@{resolve\_operation\_id}}
+\index{resolve\_operation\_id@{resolve\_operation\_id}!connexion.resolver.Resolver@{connexion.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{resolve\_operation\_id()}{resolve\_operation\_id()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_resolver_a5779c9da3f7d238c207053ce208fb813} 
+connexion.\+resolver.\+Resolver.\+resolve\+\_\+operation\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Default operationId resolver
+
+:type operation: connexion.operations.AbstractOperation
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconnexion_1_1resolver_1_1_method_view_resolver_a4fb2c053a3ac6fdad850604e72035368}{connexion.\+resolver.\+Method\+View\+Resolver}}, \mbox{\hyperlink{classconnexion_1_1resolver_1_1_relative_resolver_af97f4e91dc8425ee42590f0531fc5651}{connexion.\+resolver.\+Relative\+Resolver}}, and \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resty_resolver_a2cf13df80e0c729da771a2280697f357}{connexion.\+resolver.\+Resty\+Resolver}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/resolver.\+py\end{DoxyCompactItemize}

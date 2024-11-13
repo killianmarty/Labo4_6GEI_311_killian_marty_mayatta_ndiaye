@@ -1,0 +1,50 @@
+\doxysection{pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+One\+Day\+Cache Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_one_day_cache}{}\label{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_one_day_cache}\index{pip.\_vendor.cachecontrol.heuristics.OneDayCache@{pip.\_vendor.cachecontrol.heuristics.OneDayCache}}
+Inheritance diagram for pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+One\+Day\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_one_day_cache}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_one_day_cache_a6214c26cf8b79abc1c48b5beb6fea1c8}{update\+\_\+headers}} (self, response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic}{pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+Base\+Heuristic}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic_a3d0add548780e9be58013ed9b6ab2d5f}{warning}} (self, response)
+\item 
+{\bfseries apply} (self, response)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Cache the response by providing an expires 1 day in the
+future.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_one_day_cache_a6214c26cf8b79abc1c48b5beb6fea1c8}\index{pip.\_vendor.cachecontrol.heuristics.OneDayCache@{pip.\_vendor.cachecontrol.heuristics.OneDayCache}!update\_headers@{update\_headers}}
+\index{update\_headers@{update\_headers}!pip.\_vendor.cachecontrol.heuristics.OneDayCache@{pip.\_vendor.cachecontrol.heuristics.OneDayCache}}
+\doxysubsubsection{\texorpdfstring{update\_headers()}{update\_headers()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_one_day_cache_a6214c26cf8b79abc1c48b5beb6fea1c8} 
+pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+One\+Day\+Cache.\+update\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the response headers with any new headers.
+
+NOTE: This SHOULD always include some Warning header to
+      signify that the response was cached by the client, not
+      by way of the provided headers.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic_a422f3966d5fdba08040f13bc270d0989}{pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+Base\+Heuristic}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/cachecontrol/heuristics.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage connexion.\+apis.\+flask\+\_\+utils}
+\hypertarget{namespaceconnexion_1_1apis_1_1flask__utils}{}\label{namespaceconnexion_1_1apis_1_1flask__utils}\index{connexion.apis.flask\_utils@{connexion.apis.flask\_utils}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1apis_1_1flask__utils_acee641577bbd8c641f11b5c9311c4f2e}{flaskify\+\_\+endpoint}} (identifier, randomize=None)
+\item 
+\Hypertarget{namespaceconnexion_1_1apis_1_1flask__utils_a9fc696eb5a6fc66c9da38dae3dfdedbd}\label{namespaceconnexion_1_1apis_1_1flask__utils_a9fc696eb5a6fc66c9da38dae3dfdedbd} 
+{\bfseries convert\+\_\+path\+\_\+parameter} (match, types)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1apis_1_1flask__utils_ad2fbad7b2d7f16ad3f5188d12f23c6a3}{flaskify\+\_\+path}} (swagger\+\_\+path, types=None)
+\item 
+bool \mbox{\hyperlink{namespaceconnexion_1_1apis_1_1flask__utils_ab4d7cf2f39879658dfad021f5e0975a8}{is\+\_\+flask\+\_\+response}} (object obj)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceconnexion_1_1apis_1_1flask__utils_a172c678818d9442bf14a0559dc15bd3e}\label{namespaceconnexion_1_1apis_1_1flask__utils_a172c678818d9442bf14a0559dc15bd3e} 
+{\bfseries PATH\+\_\+\+PARAMETER} = re.\+compile(r\textquotesingle{}\textbackslash{}\{(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\}\mbox{]}\texorpdfstring{$\ast$}{*})\textbackslash{}\}\textquotesingle{})
+\item 
+dict \mbox{\hyperlink{namespaceconnexion_1_1apis_1_1flask__utils_ae1eef56cb8aeacc5fa04e4b54ccf882f}{PATH\+\_\+\+PARAMETER\+\_\+\+CONVERTERS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This module defines utility functions related to the Flask framework.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespaceconnexion_1_1apis_1_1flask__utils_acee641577bbd8c641f11b5c9311c4f2e}\index{connexion.apis.flask\_utils@{connexion.apis.flask\_utils}!flaskify\_endpoint@{flaskify\_endpoint}}
+\index{flaskify\_endpoint@{flaskify\_endpoint}!connexion.apis.flask\_utils@{connexion.apis.flask\_utils}}
+\doxysubsubsection{\texorpdfstring{flaskify\_endpoint()}{flaskify\_endpoint()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1apis_1_1flask__utils_acee641577bbd8c641f11b5c9311c4f2e} 
+connexion.\+apis.\+flask\+\_\+utils.\+flaskify\+\_\+endpoint (\begin{DoxyParamCaption}\item[{}]{identifier}{, }\item[{}]{randomize}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts the provided identifier in a valid flask endpoint name
+
+:type identifier: str
+:param randomize: If specified, add this many random characters (upper case
+    and digits) to the endpoint name, separated by a pipe character.
+:type randomize: int | None
+:rtype: str\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1apis_1_1flask__utils_ad2fbad7b2d7f16ad3f5188d12f23c6a3}\index{connexion.apis.flask\_utils@{connexion.apis.flask\_utils}!flaskify\_path@{flaskify\_path}}
+\index{flaskify\_path@{flaskify\_path}!connexion.apis.flask\_utils@{connexion.apis.flask\_utils}}
+\doxysubsubsection{\texorpdfstring{flaskify\_path()}{flaskify\_path()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1apis_1_1flask__utils_ad2fbad7b2d7f16ad3f5188d12f23c6a3} 
+connexion.\+apis.\+flask\+\_\+utils.\+flaskify\+\_\+path (\begin{DoxyParamCaption}\item[{}]{swagger\+\_\+path}{, }\item[{}]{types}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert swagger path templates to flask path templates
+
+:type swagger_path: str
+:type types: dict
+:rtype: str
+
+>>> flaskify_path('/foo-bar/{my-param}')
+'/foo-bar/<my_param>'
+
+>>> flaskify_path('/foo/{someint}', {'someint': 'int'})
+'/foo/<int:someint>'
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1apis_1_1flask__utils_ab4d7cf2f39879658dfad021f5e0975a8}\index{connexion.apis.flask\_utils@{connexion.apis.flask\_utils}!is\_flask\_response@{is\_flask\_response}}
+\index{is\_flask\_response@{is\_flask\_response}!connexion.apis.flask\_utils@{connexion.apis.flask\_utils}}
+\doxysubsubsection{\texorpdfstring{is\_flask\_response()}{is\_flask\_response()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1apis_1_1flask__utils_ab4d7cf2f39879658dfad021f5e0975a8} 
+ bool connexion.\+apis.\+flask\+\_\+utils.\+is\+\_\+flask\+\_\+response (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verifies if obj is a default Flask response instance.
+
+>>> is_flask_response(redirect('http://example.com/'))
+True
+>>> is_flask_response(flask.Response())
+True
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespaceconnexion_1_1apis_1_1flask__utils_ae1eef56cb8aeacc5fa04e4b54ccf882f}\index{connexion.apis.flask\_utils@{connexion.apis.flask\_utils}!PATH\_PARAMETER\_CONVERTERS@{PATH\_PARAMETER\_CONVERTERS}}
+\index{PATH\_PARAMETER\_CONVERTERS@{PATH\_PARAMETER\_CONVERTERS}!connexion.apis.flask\_utils@{connexion.apis.flask\_utils}}
+\doxysubsubsection{\texorpdfstring{PATH\_PARAMETER\_CONVERTERS}{PATH\_PARAMETER\_CONVERTERS}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1apis_1_1flask__utils_ae1eef56cb8aeacc5fa04e4b54ccf882f} 
+dict connexion.\+apis.\+flask\+\_\+utils.\+PATH\+\_\+\+PARAMETER\+\_\+\+CONVERTERS}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'integer'}:\ \textcolor{stringliteral}{'int'},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'number'}:\ \textcolor{stringliteral}{'float'},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'path'}:\ \textcolor{stringliteral}{'path'}}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}

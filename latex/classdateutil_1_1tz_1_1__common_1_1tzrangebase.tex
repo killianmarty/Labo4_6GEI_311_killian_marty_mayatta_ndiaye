@@ -1,0 +1,125 @@
+\doxysection{dateutil.\+tz.\+\_\+common.\+tzrangebase Class Reference}
+\hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase}{}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase}\index{dateutil.tz.\_common.tzrangebase@{dateutil.tz.\_common.tzrangebase}}
+Inheritance diagram for dateutil.\+tz.\+\_\+common.\+tzrangebase\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.597701cm]{classdateutil_1_1tz_1_1__common_1_1tzrangebase}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a71f4b9bb6620e3dc0d50cd66f9a61914}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a71f4b9bb6620e3dc0d50cd66f9a61914} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_ac462fb0c92a3638ade7f1951e4d57795}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_ac462fb0c92a3638ade7f1951e4d57795} 
+{\bfseries utcoffset} (self, dt)
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_aa084239772b12fa06728044a8ac28c14}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_aa084239772b12fa06728044a8ac28c14} 
+{\bfseries dst} (self, dt)
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a0570d7a474381a6f6a58b579f57cfa0b}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a0570d7a474381a6f6a58b579f57cfa0b} 
+{\bfseries tzname} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase_ab32e816012c6cb57313b01683e937bb4}{fromutc}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a55fcaef75d41636cf8bf51d61602ae1b}{is\+\_\+ambiguous}} (self, dt)
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a54d353581386b39c7a98183d023c9c77}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a54d353581386b39c7a98183d023c9c77} 
+{\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, other)
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_adde08a75e3a8fab21d8a8f342ca3ed77}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_adde08a75e3a8fab21d8a8f342ca3ed77} 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a0c456890f553c95e355d14816d624648}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a0c456890f553c95e355d14816d624648} 
+{\bfseries hasdst} = self.\+transitions(dt.\+year)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a69867381c9d1696ec00f974a19e8dc5a}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a69867381c9d1696ec00f974a19e8dc5a} 
+{\bfseries \+\_\+isdst} (self, dt)
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a93d9db282adfae3269590465e5849ec5}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a93d9db282adfae3269590465e5849ec5} 
+{\bfseries \+\_\+naive\+\_\+isdst} (self, dt, transitions)
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_aba3334a41ababcf12150acf8a3a94a96}\label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_aba3334a41ababcf12150acf8a3a94a96} 
+{\bfseries \+\_\+dst\+\_\+base\+\_\+offset} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_ae7e407e0576eae35c159484562f1b188}{\+\_\+fold\+\_\+status}} (self, dt\+\_\+utc, dt\+\_\+wall)
+\item 
+{\bfseries \+\_\+fold} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_aab9e45aceaf243524a55eafd2cb81bb8}{\+\_\+fromutc}} (self, dt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This is an abstract base class for time zones represented by an annual
+transition into and out of DST. Child classes should implement the following
+methods:
+
+    * ``__init__(self, *args, **kwargs)``
+    * ``transitions(self, year)`` - this is expected to return a tuple of
+      datetimes representing the DST on and off transitions in standard
+      time.
+
+A fully initialized ``tzrangebase`` subclass should also provide the
+following attributes:
+    * ``hasdst``: Boolean whether or not the zone uses DST.
+    * ``_dst_offset`` / ``_std_offset``: :class:`datetime.timedelta` objects
+      representing the respective UTC offsets.
+    * ``_dst_abbr`` / ``_std_abbr``: Strings representing the timezone short
+      abbreviations in DST and STD, respectively.
+    * ``_hasdst``: Whether or not the zone has DST.
+
+.. versionadded:: 2.6.0
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_ab32e816012c6cb57313b01683e937bb4}\index{dateutil.tz.\_common.tzrangebase@{dateutil.tz.\_common.tzrangebase}!fromutc@{fromutc}}
+\index{fromutc@{fromutc}!dateutil.tz.\_common.tzrangebase@{dateutil.tz.\_common.tzrangebase}}
+\doxysubsubsection{\texorpdfstring{fromutc()}{fromutc()}}
+{\footnotesize\ttfamily \label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_ab32e816012c6cb57313b01683e937bb4} 
+dateutil.\+tz.\+\_\+common.\+tzrangebase.\+fromutc (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dt}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Given a datetime in UTC, return local time \end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_a7b5b6da0e26f32649d199f23e4ce293c}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}.
+
+\Hypertarget{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a55fcaef75d41636cf8bf51d61602ae1b}\index{dateutil.tz.\_common.tzrangebase@{dateutil.tz.\_common.tzrangebase}!is\_ambiguous@{is\_ambiguous}}
+\index{is\_ambiguous@{is\_ambiguous}!dateutil.tz.\_common.tzrangebase@{dateutil.tz.\_common.tzrangebase}}
+\doxysubsubsection{\texorpdfstring{is\_ambiguous()}{is\_ambiguous()}}
+{\footnotesize\ttfamily \label{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a55fcaef75d41636cf8bf51d61602ae1b} 
+dateutil.\+tz.\+\_\+common.\+tzrangebase.\+is\+\_\+ambiguous (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dt}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether or not the "wall time" of a given datetime is ambiguous in this
+zone.
+
+:param dt:
+    A :py:class:`datetime.datetime`, naive or time zone aware.
+
+
+:return:
+    Returns ``True`` if ambiguous, ``False`` otherwise.
+
+.. versionadded:: 2.6.0
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_acf05ceef19d7f4a48bf8fa814ef7ca74}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/dateutil/tz/\+\_\+common.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\doxysection{werkzeug.\+debug.\+repr Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1debug_1_1repr}{}\label{namespacewerkzeug_1_1debug_1_1repr}\index{werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1___helper}{\+\_\+\+Helper}}
+\item 
+class \mbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator}{Debug\+Repr\+Generator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_ac1b8f94ab25d76b5125df76428990564}{debug\+\_\+repr}} (object obj)
+\item 
+None \mbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_aedf6f9520ef05e98d8756d7e32fdb88e}{dump}} (object obj=missing)
+\item 
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_ab8ef0653b1a78189248ce8f6dd6aad35}\label{namespacewerkzeug_1_1debug_1_1repr_ab8ef0653b1a78189248ce8f6dd6aad35} 
+str {\bfseries \+\_\+add\+\_\+subclass\+\_\+info} (str inner, object obj, t.\+Union\mbox{[}t.\+Type, t.\+Tuple\mbox{[}t.\+Type,...\mbox{]}\mbox{]} base)
+\item 
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a4b7da817b0e26c990eae02e01fb1bba5}\label{namespacewerkzeug_1_1debug_1_1repr_a4b7da817b0e26c990eae02e01fb1bba5} 
+t.\+Callable\mbox{[}\mbox{[}"{}Debug\+Repr\+Generator"{}, t.\+Iterable, bool\mbox{]}, str\mbox{]} {\bfseries \+\_\+sequence\+\_\+repr\+\_\+maker} (str left, str right, t.\+Type base, int limit=8)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a57b6e8c03ef6cd25cd9eb6d08f0db531}\label{namespacewerkzeug_1_1debug_1_1repr_a57b6e8c03ef6cd25cd9eb6d08f0db531} 
+{\bfseries missing} = object()
+\item 
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a1306c32d3433f897a8551eaed5c89b9f}\label{namespacewerkzeug_1_1debug_1_1repr_a1306c32d3433f897a8551eaed5c89b9f} 
+{\bfseries \+\_\+paragraph\+\_\+re} = re.\+compile(r"{}(?\+:\textbackslash{}r\textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}r\texorpdfstring{$\vert$}{|}\textbackslash{}n)\{2,\}"{})
+\item 
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a88b8e551d4b7441c36c8fa4a8488860d}\label{namespacewerkzeug_1_1debug_1_1repr_a88b8e551d4b7441c36c8fa4a8488860d} 
+{\bfseries Regex\+Type} = type(\+\_\+paragraph\+\_\+re)
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_ae211fab23ce1e8ce2b35c3effc675d13}{HELP\+\_\+\+HTML}}
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a5576d7746af35aaeeb573cc6b88b3a32}{OBJECT\+\_\+\+DUMP\+\_\+\+HTML}}
+\item 
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_aac25d68fdb2a2f91409b44172d51e34f}\label{namespacewerkzeug_1_1debug_1_1repr_aac25d68fdb2a2f91409b44172d51e34f} 
+{\bfseries helper} = \mbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1___helper}{\+\_\+\+Helper}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Object representations for debugging purposes. Unlike the default
+repr, these expose more information and produce HTML instead of ASCII.
+
+Together with the CSS and JavaScript of the debugger this gives a
+colorful and more compact output.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_ac1b8f94ab25d76b5125df76428990564}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!debug\_repr@{debug\_repr}}
+\index{debug\_repr@{debug\_repr}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{debug\_repr()}{debug\_repr()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_ac1b8f94ab25d76b5125df76428990564} 
+ str werkzeug.\+debug.\+repr.\+debug\+\_\+repr (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a debug repr of an object as HTML string.\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1debug_1_1repr_aedf6f9520ef05e98d8756d7e32fdb88e}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!dump@{dump}}
+\index{dump@{dump}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_aedf6f9520ef05e98d8756d7e32fdb88e} 
+ None werkzeug.\+debug.\+repr.\+dump (\begin{DoxyParamCaption}\item[{object }]{obj}{ = {\ttfamily missing}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Print the object details to stdout._write (for the interactive
+console of the web debugger.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_ae211fab23ce1e8ce2b35c3effc675d13}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!HELP\_HTML@{HELP\_HTML}}
+\index{HELP\_HTML@{HELP\_HTML}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{HELP\_HTML}{HELP\_HTML}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_ae211fab23ce1e8ce2b35c3effc675d13} 
+str werkzeug.\+debug.\+repr.\+HELP\+\_\+\+HTML}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \textcolor{stringliteral}{"{}"{}"{}\(\backslash\)}}
+\DoxyCodeLine{00002\ \textcolor{stringliteral}{<div\ class=box>}}
+\DoxyCodeLine{00003\ \textcolor{stringliteral}{\ \ <h3>\%(title)s</h3>}}
+\DoxyCodeLine{00004\ \textcolor{stringliteral}{\ \ <pre\ class=help>\%(text)s</pre>}}
+\DoxyCodeLine{00005\ \textcolor{stringliteral}{</div>\(\backslash\)}}
+\DoxyCodeLine{00006\ \textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a5576d7746af35aaeeb573cc6b88b3a32}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!OBJECT\_DUMP\_HTML@{OBJECT\_DUMP\_HTML}}
+\index{OBJECT\_DUMP\_HTML@{OBJECT\_DUMP\_HTML}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{OBJECT\_DUMP\_HTML}{OBJECT\_DUMP\_HTML}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_a5576d7746af35aaeeb573cc6b88b3a32} 
+str werkzeug.\+debug.\+repr.\+OBJECT\+\_\+\+DUMP\+\_\+\+HTML}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \textcolor{stringliteral}{"{}"{}"{}\(\backslash\)}}
+\DoxyCodeLine{00002\ \textcolor{stringliteral}{<div\ class=box>}}
+\DoxyCodeLine{00003\ \textcolor{stringliteral}{\ \ <h3>\%(title)s</h3>}}
+\DoxyCodeLine{00004\ \textcolor{stringliteral}{\ \ \%(repr)s}}
+\DoxyCodeLine{00005\ \textcolor{stringliteral}{\ \ <table>\%(items)s</table>}}
+\DoxyCodeLine{00006\ \textcolor{stringliteral}{</div>\(\backslash\)}}
+\DoxyCodeLine{00007\ \textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}

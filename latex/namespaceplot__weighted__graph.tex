@@ -1,0 +1,60 @@
+\doxysection{plot\+\_\+weighted\+\_\+graph Namespace Reference}
+\hypertarget{namespaceplot__weighted__graph}{}\label{namespaceplot__weighted__graph}\index{plot\_weighted\_graph@{plot\_weighted\_graph}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_a6c3c132fae5c2bb49c18de5f474a5aaf}\label{namespaceplot__weighted__graph_a6c3c132fae5c2bb49c18de5f474a5aaf} 
+{\bfseries G} = nx.\+Graph()
+\item 
+\Hypertarget{namespaceplot__weighted__graph_a11e694ac04d63a9b049a4991fdab2b08}\label{namespaceplot__weighted__graph_a11e694ac04d63a9b049a4991fdab2b08} 
+{\bfseries weight}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_ad4998884d88a24994520946299697869}\label{namespaceplot__weighted__graph_ad4998884d88a24994520946299697869} 
+list {\bfseries elarge} = \mbox{[}(u, v) for (u, v, d) in G.\+edges(data=True) if d\mbox{[}"{}weight"{}\mbox{]} $>$ 0.\+5\mbox{]}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_aea42402e6fb3a9338be8b01fb95f0e09}\label{namespaceplot__weighted__graph_aea42402e6fb3a9338be8b01fb95f0e09} 
+list {\bfseries esmall} = \mbox{[}(u, v) for (u, v, d) in G.\+edges(data=True) if d\mbox{[}"{}weight"{}\mbox{]} $<$= 0.\+5\mbox{]}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_a048d95be222fe0467f8022d2f5f177e4}\label{namespaceplot__weighted__graph_a048d95be222fe0467f8022d2f5f177e4} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(G, seed=7)
+\item 
+\Hypertarget{namespaceplot__weighted__graph_a4c1e247e921c8121b44e527b2d825fbf}\label{namespaceplot__weighted__graph_a4c1e247e921c8121b44e527b2d825fbf} 
+{\bfseries node\+\_\+size}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_ac3328c2ac420fd00bbd6b70aa359f3a4}\label{namespaceplot__weighted__graph_ac3328c2ac420fd00bbd6b70aa359f3a4} 
+{\bfseries edgelist}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_a0bcc9adaafb4d28fcb41cfa40ed1c1de}\label{namespaceplot__weighted__graph_a0bcc9adaafb4d28fcb41cfa40ed1c1de} 
+{\bfseries width}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_a949f0d1fcb1bf1e272157ae0681cfa4e}\label{namespaceplot__weighted__graph_a949f0d1fcb1bf1e272157ae0681cfa4e} 
+{\bfseries alpha}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_a7b502c2ad29af2e97ba6a2c884b4f562}\label{namespaceplot__weighted__graph_a7b502c2ad29af2e97ba6a2c884b4f562} 
+{\bfseries edge\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_aa77f85b55e45f6c10accd7df07a55d4f}\label{namespaceplot__weighted__graph_aa77f85b55e45f6c10accd7df07a55d4f} 
+{\bfseries style}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_abd36aa8f5e4f8464ace8f20cdca973f7}\label{namespaceplot__weighted__graph_abd36aa8f5e4f8464ace8f20cdca973f7} 
+{\bfseries font\+\_\+size}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_a0148c9be8062c72c43a90fdad4065621}\label{namespaceplot__weighted__graph_a0148c9be8062c72c43a90fdad4065621} 
+{\bfseries font\+\_\+family}
+\item 
+\Hypertarget{namespaceplot__weighted__graph_a96a641934e7eaa678b6326480a9cc78b}\label{namespaceplot__weighted__graph_a96a641934e7eaa678b6326480a9cc78b} 
+{\bfseries edge\+\_\+labels} = nx.\+get\+\_\+edge\+\_\+attributes(G, "{}weight"{})
+\item 
+\Hypertarget{namespaceplot__weighted__graph_a1f6b54265bddcb3250f5e476b853ab59}\label{namespaceplot__weighted__graph_a1f6b54265bddcb3250f5e476b853ab59} 
+{\bfseries ax} = plt.\+gca()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}==============
+Weighted Graph
+==============
+
+An example using Graph as a weighted network.
+\end{DoxyVerb}
+ 

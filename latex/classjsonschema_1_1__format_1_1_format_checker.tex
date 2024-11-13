@@ -1,0 +1,127 @@
+\doxysection{jsonschema.\+\_\+format.\+Format\+Checker Class Reference}
+\hypertarget{classjsonschema_1_1__format_1_1_format_checker}{}\label{classjsonschema_1_1__format_1_1_format_checker}\index{jsonschema.\_format.FormatChecker@{jsonschema.\_format.FormatChecker}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1__format_1_1_format_checker_a27909407a3267949f44d17a379fedfbb}\label{classjsonschema_1_1__format_1_1_format_checker_a27909407a3267949f44d17a379fedfbb} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, typing.\+Iterable\mbox{[}str\mbox{]}\texorpdfstring{$\vert$}{|}None formats=None)
+\item 
+\Hypertarget{classjsonschema_1_1__format_1_1_format_checker_a8054fd94e412e49377251bdadc18dd8d}\label{classjsonschema_1_1__format_1_1_format_checker_a8054fd94e412e49377251bdadc18dd8d} 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+typing.\+Callable\mbox{[}\mbox{[}\+\_\+F\mbox{]}, \+\_\+F\mbox{]} \mbox{\hyperlink{classjsonschema_1_1__format_1_1_format_checker_aa75e6afb56653a667515e72ccb2a8225}{checks}} (self, str format, \+\_\+\+Raises\+Type raises=())
+\item 
+\Hypertarget{classjsonschema_1_1__format_1_1_format_checker_a62c4247424d4be6e17c076866dfb1e97}\label{classjsonschema_1_1__format_1_1_format_checker_a62c4247424d4be6e17c076866dfb1e97} 
+typing.\+Callable\mbox{[}\mbox{[}\+\_\+F\mbox{]}, \+\_\+F\mbox{]} {\bfseries cls\+\_\+checks} (cls, str format, \+\_\+\+Raises\+Type raises=())
+\item 
+None \mbox{\hyperlink{classjsonschema_1_1__format_1_1_format_checker_a8aa0f638e84bcaf6bfdd8b3f7caa4620}{check}} (self, object instance, str format)
+\item 
+bool \mbox{\hyperlink{classjsonschema_1_1__format_1_1_format_checker_a30b41324f9f651981203da3955b88a6e}{conforms}} (self, object instance, str format)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1__format_1_1_format_checker_ad1a737221cfabbd75914451383e46c74}\label{classjsonschema_1_1__format_1_1_format_checker_ad1a737221cfabbd75914451383e46c74} 
+dict {\bfseries checkers} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1__format_1_1_format_checker_a7dace05444c7dfae528cc31b39bea1f8}\label{classjsonschema_1_1__format_1_1_format_checker_a7dace05444c7dfae528cc31b39bea1f8} 
+typing.\+Callable\mbox{[}\mbox{[}\+\_\+F\mbox{]}, \+\_\+F\mbox{]} {\bfseries \+\_\+cls\+\_\+checks} (cls, str format, \+\_\+\+Raises\+Type raises=())
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A ``format`` property checker.
+
+JSON Schema does not mandate that the ``format`` property actually do any
+validation. If validation is desired however, instances of this class can
+be hooked into validators to enable format validation.
+
+`FormatChecker` objects always return ``True`` when asked about
+formats that they do not know how to validate.
+
+To add a check for a custom format use the `FormatChecker.checks`
+decorator.
+
+Arguments:
+
+    formats:
+
+        The known formats to validate. This argument can be used to
+        limit which formats will be used during validation.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjsonschema_1_1__format_1_1_format_checker_a8aa0f638e84bcaf6bfdd8b3f7caa4620}\index{jsonschema.\_format.FormatChecker@{jsonschema.\_format.FormatChecker}!check@{check}}
+\index{check@{check}!jsonschema.\_format.FormatChecker@{jsonschema.\_format.FormatChecker}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1__format_1_1_format_checker_a8aa0f638e84bcaf6bfdd8b3f7caa4620} 
+ None jsonschema.\+\_\+format.\+Format\+Checker.\+check (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{instance}{, }\item[{str}]{format}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether the instance conforms to the given format.
+
+Arguments:
+
+    instance (*any primitive type*, i.e. str, number, bool):
+
+        The instance to check
+
+    format:
+
+        The format that instance should conform to
+
+Raises:
+
+    FormatError:
+
+        if the instance does not conform to ``format``\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1__format_1_1_format_checker_aa75e6afb56653a667515e72ccb2a8225}\index{jsonschema.\_format.FormatChecker@{jsonschema.\_format.FormatChecker}!checks@{checks}}
+\index{checks@{checks}!jsonschema.\_format.FormatChecker@{jsonschema.\_format.FormatChecker}}
+\doxysubsubsection{\texorpdfstring{checks()}{checks()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1__format_1_1_format_checker_aa75e6afb56653a667515e72ccb2a8225} 
+ typing.\+Callable\mbox{[}\mbox{[}\+\_\+F\mbox{]}, \+\_\+F\mbox{]} jsonschema.\+\_\+format.\+Format\+Checker.\+checks (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{format}{, }\item[{\+\_\+\+Raises\+Type }]{raises}{ = {\ttfamily ()}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a decorated function as validating a new format.
+
+Arguments:
+
+    format:
+
+        The format that the decorated function will check.
+
+    raises:
+
+        The exception(s) raised by the decorated function when an
+        invalid instance is found.
+
+        The exception object will be accessible as the
+        `jsonschema.exceptions.ValidationError.cause` attribute of the
+        resulting validation error.\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1__format_1_1_format_checker_a30b41324f9f651981203da3955b88a6e}\index{jsonschema.\_format.FormatChecker@{jsonschema.\_format.FormatChecker}!conforms@{conforms}}
+\index{conforms@{conforms}!jsonschema.\_format.FormatChecker@{jsonschema.\_format.FormatChecker}}
+\doxysubsubsection{\texorpdfstring{conforms()}{conforms()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1__format_1_1_format_checker_a30b41324f9f651981203da3955b88a6e} 
+ bool jsonschema.\+\_\+format.\+Format\+Checker.\+conforms (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{instance}{, }\item[{str}]{format}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether the instance conforms to the given format.
+
+Arguments:
+
+    instance (*any primitive type*, i.e. str, number, bool):
+
+        The instance to check
+
+    format:
+
+        The format that instance should conform to
+
+Returns:
+
+    bool: whether it conformed\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/jsonschema/\+\_\+format.\+py\end{DoxyCompactItemize}

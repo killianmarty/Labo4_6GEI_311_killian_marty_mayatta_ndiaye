@@ -1,0 +1,92 @@
+\doxysection{setuptools.\+build\+\_\+meta Namespace Reference}
+\hypertarget{namespacesetuptools_1_1build__meta}{}\label{namespacesetuptools_1_1build__meta}\index{setuptools.build\_meta@{setuptools.build\_meta}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsetuptools_1_1build__meta_1_1___build_meta_backend}{\+\_\+\+Build\+Meta\+Backend}}
+\item 
+class \mbox{\hyperlink{classsetuptools_1_1build__meta_1_1___build_meta_legacy_backend}{\+\_\+\+Build\+Meta\+Legacy\+Backend}}
+\item 
+class \mbox{\hyperlink{classsetuptools_1_1build__meta_1_1_distribution}{Distribution}}
+\item 
+class \mbox{\hyperlink{classsetuptools_1_1build__meta_1_1_setup_requirements_error}{Setup\+Requirements\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacesetuptools_1_1build__meta_a66a274ab9bc4c73b97a62a54e1584fd1}{\+\_\+to\+\_\+str}} (s)
+\item 
+\Hypertarget{namespacesetuptools_1_1build__meta_aa0e0fc4bbd90fdedccf426299c94be0a}\label{namespacesetuptools_1_1build__meta_aa0e0fc4bbd90fdedccf426299c94be0a} 
+{\bfseries \+\_\+get\+\_\+immediate\+\_\+subdirectories} (a\+\_\+dir)
+\item 
+\Hypertarget{namespacesetuptools_1_1build__meta_a14a0b162fb484a0bcd1943af0f8805aa}\label{namespacesetuptools_1_1build__meta_a14a0b162fb484a0bcd1943af0f8805aa} 
+{\bfseries \+\_\+file\+\_\+with\+\_\+extension} (directory, extension)
+\item 
+\Hypertarget{namespacesetuptools_1_1build__meta_a78a256369fa363b521e8b260daf15d47}\label{namespacesetuptools_1_1build__meta_a78a256369fa363b521e8b260daf15d47} 
+{\bfseries \+\_\+open\+\_\+setup\+\_\+script} (setup\+\_\+script)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacesetuptools_1_1build__meta_a4d3c1e4af0615dc82772e9ea7e6171e3}\label{namespacesetuptools_1_1build__meta_a4d3c1e4af0615dc82772e9ea7e6171e3} 
+{\bfseries \+\_\+\+BACKEND} = \mbox{\hyperlink{classsetuptools_1_1build__meta_1_1___build_meta_backend}{\+\_\+\+Build\+Meta\+Backend}}()
+\item 
+\Hypertarget{namespacesetuptools_1_1build__meta_ae422aa2677da3cdad5d9210ff4d3db6c}\label{namespacesetuptools_1_1build__meta_ae422aa2677da3cdad5d9210ff4d3db6c} 
+{\bfseries get\+\_\+requires\+\_\+for\+\_\+build\+\_\+wheel} = \+\_\+\+BACKEND.\+get\+\_\+requires\+\_\+for\+\_\+build\+\_\+wheel
+\item 
+\Hypertarget{namespacesetuptools_1_1build__meta_afa6e72b6701024a70ba35eebabac86ff}\label{namespacesetuptools_1_1build__meta_afa6e72b6701024a70ba35eebabac86ff} 
+{\bfseries get\+\_\+requires\+\_\+for\+\_\+build\+\_\+sdist} = \+\_\+\+BACKEND.\+get\+\_\+requires\+\_\+for\+\_\+build\+\_\+sdist
+\item 
+\Hypertarget{namespacesetuptools_1_1build__meta_a3cdfc997ea294205c834e83b162da242}\label{namespacesetuptools_1_1build__meta_a3cdfc997ea294205c834e83b162da242} 
+{\bfseries prepare\+\_\+metadata\+\_\+for\+\_\+build\+\_\+wheel} = \+\_\+\+BACKEND.\+prepare\+\_\+metadata\+\_\+for\+\_\+build\+\_\+wheel
+\item 
+\Hypertarget{namespacesetuptools_1_1build__meta_aa1e49d651c5d668b3cea0c55420626be}\label{namespacesetuptools_1_1build__meta_aa1e49d651c5d668b3cea0c55420626be} 
+{\bfseries build\+\_\+wheel} = \+\_\+\+BACKEND.\+build\+\_\+wheel
+\item 
+\Hypertarget{namespacesetuptools_1_1build__meta_a313c85d35645c296bbf0fee98cbcb0b8}\label{namespacesetuptools_1_1build__meta_a313c85d35645c296bbf0fee98cbcb0b8} 
+{\bfseries build\+\_\+sdist} = \+\_\+\+BACKEND.\+build\+\_\+sdist
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A PEP 517 interface to setuptools
+
+Previously, when a user or a command line tool (let's call it a "frontend")
+needed to make a request of setuptools to take a certain action, for
+example, generating a list of installation requirements, the frontend would
+would call "setup.py egg_info" or "setup.py bdist_wheel" on the command line.
+
+PEP 517 defines a different method of interfacing with setuptools. Rather
+than calling "setup.py" directly, the frontend should:
+
+  1. Set the current directory to the directory with a setup.py file
+  2. Import this module into a safe python interpreter (one in which
+     setuptools can potentially set global variables or crash hard).
+  3. Call one of the functions defined in PEP 517.
+
+What each function does is defined in PEP 517. However, here is a "casual"
+definition of the functions (this definition should not be relied on for
+bug reports or API stability):
+
+  - `build_wheel`: build a wheel in the folder and return the basename
+  - `get_requires_for_build_wheel`: get the `setup_requires` to build
+  - `prepare_metadata_for_build_wheel`: get the `install_requires`
+  - `build_sdist`: build an sdist in the folder and return the basename
+  - `get_requires_for_build_sdist`: get the `setup_requires` to build
+
+Again, this is not a formal definition! Just a "taste" of the module.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacesetuptools_1_1build__meta_a66a274ab9bc4c73b97a62a54e1584fd1}\index{setuptools.build\_meta@{setuptools.build\_meta}!\_to\_str@{\_to\_str}}
+\index{\_to\_str@{\_to\_str}!setuptools.build\_meta@{setuptools.build\_meta}}
+\doxysubsubsection{\texorpdfstring{\_to\_str()}{\_to\_str()}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1build__meta_a66a274ab9bc4c73b97a62a54e1584fd1} 
+setuptools.\+build\+\_\+meta.\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Convert a filename to a string (on Python 2, explicitly
+a byte string, not Unicode) as distutils checks for the
+exact type str.
+\end{DoxyVerb}
+ 

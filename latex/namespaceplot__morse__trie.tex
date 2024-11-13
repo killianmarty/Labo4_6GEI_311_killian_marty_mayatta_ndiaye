@@ -1,0 +1,118 @@
+\doxysection{plot\+\_\+morse\+\_\+trie Namespace Reference}
+\hypertarget{namespaceplot__morse__trie}{}\label{namespaceplot__morse__trie}\index{plot\_morse\_trie@{plot\_morse\_trie}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__morse__trie_a1218cde724c9795a7a53daf41f7db772}\label{namespaceplot__morse__trie_a1218cde724c9795a7a53daf41f7db772} 
+{\bfseries morse\+\_\+encode} (letter)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__morse__trie_a4516830f39834003ffe4f02f454a210a}\label{namespaceplot__morse__trie_a4516830f39834003ffe4f02f454a210a} 
+str {\bfseries dot} = "{}•"{}
+\item 
+\Hypertarget{namespaceplot__morse__trie_a8f19d4614a57fe59c9e7b5c4037a6630}\label{namespaceplot__morse__trie_a8f19d4614a57fe59c9e7b5c4037a6630} 
+str {\bfseries dash} = "{}—"{}
+\item 
+dict \mbox{\hyperlink{namespaceplot__morse__trie_a6233d058106c7fc1e627daeaaf546f2d}{morse\+\_\+direct\+\_\+mapping}}
+\item 
+\mbox{\hyperlink{namespaceplot__morse__trie_a5a10be7233278775000631f5bb4f60f8}{morse\+\_\+mapping\+\_\+sorted}}
+\begin{DoxyCompactList}\small\item\em Manually construct the prefix tree from this mapping. \end{DoxyCompactList}\item 
+\Hypertarget{namespaceplot__morse__trie_ab913c645d992e81db64da62e869f6590}\label{namespaceplot__morse__trie_ab913c645d992e81db64da62e869f6590} 
+dict {\bfseries reverse\+\_\+mapping} = \{v\+: k for k, v in morse\+\_\+direct\+\_\+mapping.\+items()\}
+\item 
+\Hypertarget{namespaceplot__morse__trie_aeb80bace352a9a260793d9f9c7806a44}\label{namespaceplot__morse__trie_aeb80bace352a9a260793d9f9c7806a44} 
+{\bfseries G} = nx.\+Di\+Graph()
+\item 
+\Hypertarget{namespaceplot__morse__trie_a64e1c7960fedf46bc060b9113b746145}\label{namespaceplot__morse__trie_a64e1c7960fedf46bc060b9113b746145} 
+{\bfseries pred} = char\mbox{[}\+:-\/1\mbox{]}
+\item 
+\Hypertarget{namespaceplot__morse__trie_a75a60d443fa86ba44c85e6fb3b658f50}\label{namespaceplot__morse__trie_a75a60d443fa86ba44c85e6fb3b658f50} 
+{\bfseries node}
+\item 
+\Hypertarget{namespaceplot__morse__trie_ab5abcc34c500acdbdcc4d112c7742597}\label{namespaceplot__morse__trie_ab5abcc34c500acdbdcc4d112c7742597} 
+{\bfseries char}
+\item 
+\Hypertarget{namespaceplot__morse__trie_ac31f3c86d4930f063a325547fdfa428d}\label{namespaceplot__morse__trie_ac31f3c86d4930f063a325547fdfa428d} 
+{\bfseries pos} = nx.\+multipartite\+\_\+layout(G, subset\+\_\+key="{}layer"{}, align="{}horizontal"{})
+\item 
+\Hypertarget{namespaceplot__morse__trie_a8a8fc2927fe5f1651e1bba6d1544acd2}\label{namespaceplot__morse__trie_a8a8fc2927fe5f1651e1bba6d1544acd2} 
+{\bfseries with\+\_\+labels}
+\item 
+\Hypertarget{namespaceplot__morse__trie_ac6bce2e1a89923bc61232041c90f9078}\label{namespaceplot__morse__trie_ac6bce2e1a89923bc61232041c90f9078} 
+dict {\bfseries elabels} = \{(u, v)\+: l for u, v, l in G.\+edges(data="{}char"{})\}
+\item 
+\Hypertarget{namespaceplot__morse__trie_a2935951b435fe821e10afe65e99079b3}\label{namespaceplot__morse__trie_a2935951b435fe821e10afe65e99079b3} 
+{\bfseries edge\+\_\+labels}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}==========
+Morse Trie
+==========
+
+A prefix tree (aka a "trie") representing the Morse encoding of the alphabet.
+A letter can be encoded by tracing the path from the corresponding node in the
+tree to the root node, reversing the order of the symbols encountered along
+the path.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__morse__trie_a6233d058106c7fc1e627daeaaf546f2d}\index{plot\_morse\_trie@{plot\_morse\_trie}!morse\_direct\_mapping@{morse\_direct\_mapping}}
+\index{morse\_direct\_mapping@{morse\_direct\_mapping}!plot\_morse\_trie@{plot\_morse\_trie}}
+\doxysubsubsection{\texorpdfstring{morse\_direct\_mapping}{morse\_direct\_mapping}}
+{\footnotesize\ttfamily \label{namespaceplot__morse__trie_a6233d058106c7fc1e627daeaaf546f2d} 
+dict plot\+\_\+morse\+\_\+trie.\+morse\+\_\+direct\+\_\+mapping}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}a"{}}:\ dot\ +\ dash,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}b"{}}:\ dash\ +\ dot\ *\ 3,}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}c"{}}:\ dash\ +\ dot\ +\ dash\ +\ dot,}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}d"{}}:\ dash\ +\ dot\ *\ 2,}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}e"{}}:\ dot,}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}f"{}}:\ dot\ *\ 2\ +\ dash\ +\ dot,}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}g"{}}:\ dash\ *\ 2\ +\ dot,}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}h"{}}:\ dot\ *\ 4,}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}i"{}}:\ dot\ *\ 2,}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}j"{}}:\ dot\ +\ dash\ *\ 3,}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{"{}k"{}}:\ dash\ +\ dot\ +\ dash,}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{"{}l"{}}:\ dot\ +\ dash\ +\ dot\ *\ 2,}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{"{}m"{}}:\ dash\ *\ 2,}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{"{}n"{}}:\ dash\ +\ dot,}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{"{}o"{}}:\ dash\ *\ 3,}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{stringliteral}{"{}p"{}}:\ dot\ +\ dash\ *\ 2\ +\ dot,}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{stringliteral}{"{}q"{}}:\ dash\ *\ 2\ +\ dot\ +\ dash,}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{stringliteral}{"{}r"{}}:\ dot\ +\ dash\ +\ dot,}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{stringliteral}{"{}s"{}}:\ dot\ *\ 3,}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{stringliteral}{"{}t"{}}:\ dash,}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{stringliteral}{"{}u"{}}:\ dot\ *\ 2\ +\ dash,}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{stringliteral}{"{}v"{}}:\ dot\ *\ 3\ +\ dash,}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{stringliteral}{"{}w"{}}:\ dot\ +\ dash\ *\ 2,}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{stringliteral}{"{}x"{}}:\ dash\ +\ dot\ *\ 2\ +\ dash,}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{stringliteral}{"{}y"{}}:\ dash\ +\ dot\ +\ dash\ *\ 2,}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{stringliteral}{"{}z"{}}:\ dash\ *\ 2\ +\ dot\ *\ 2,}
+\DoxyCodeLine{00028\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceplot__morse__trie_a5a10be7233278775000631f5bb4f60f8}\index{plot\_morse\_trie@{plot\_morse\_trie}!morse\_mapping\_sorted@{morse\_mapping\_sorted}}
+\index{morse\_mapping\_sorted@{morse\_mapping\_sorted}!plot\_morse\_trie@{plot\_morse\_trie}}
+\doxysubsubsection{\texorpdfstring{morse\_mapping\_sorted}{morse\_mapping\_sorted}}
+{\footnotesize\ttfamily \label{namespaceplot__morse__trie_a5a10be7233278775000631f5bb4f60f8} 
+plot\+\_\+morse\+\_\+trie.\+morse\+\_\+mapping\+\_\+sorted}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ dict(}
+\DoxyCodeLine{00002\ \ \ \ \ sorted(morse\_direct\_mapping.items(),\ key=\textcolor{keyword}{lambda}\ item:\ (len(item[1]),\ item[1]))}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}
+
+
+Manually construct the prefix tree from this mapping. 
+

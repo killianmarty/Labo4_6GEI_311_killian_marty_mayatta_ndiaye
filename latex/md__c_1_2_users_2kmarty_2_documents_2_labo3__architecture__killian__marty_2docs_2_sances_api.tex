@@ -1,0 +1,122 @@
+\chapter{swagger\+\_\+client.\+Sances\+Api}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api}{}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api}\index{swagger\_client.SancesApi@{swagger\_client.SancesApi}}
+\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md126}%
+\Hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md126}%
+
+
+All URIs are relative to {\itshape \href{https://localhost}{\texttt{ https\+://localhost}}}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ HTTP request   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ HTTP request   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+\href{SancesApi.md\#cours_seances_id_delete}{\texttt{ {\bfseries{cours\+\_\+seances\+\_\+id\+\_\+delete}}}}   &{\bfseries{DELETE}} /cours/seances/\{id\}   &Supprime une séance    \\\cline{1-3}
+\href{SancesApi.md\#cours_seances_id_get}{\texttt{ {\bfseries{cours\+\_\+seances\+\_\+id\+\_\+get}}}}   &{\bfseries{GET}} /cours/seances/\{id\}   &Retourne les infos sur la séance    \\\cline{1-3}
+\href{SancesApi.md\#cours_seances_id_post}{\texttt{ {\bfseries{cours\+\_\+seances\+\_\+id\+\_\+post}}}}   &{\bfseries{POST}} /cours/seances/\{id\}   &Crée une nouvelle séance   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md127}{}\doxysection{\texorpdfstring{{\bfseries{cours\+\_\+seances\+\_\+id\+\_\+delete}}}{{\bfseries{cours\+\_\+seances\+\_\+id\+\_\+delete}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md127}
+\begin{quote}
+cours\+\_\+seances\+\_\+id\+\_\+delete(id) \end{quote}
+Supprime une séance\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md128}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md128}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.SancesApi()}
+\DoxyCodeLine{id\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Supprime\ une\ séance}}
+\DoxyCodeLine{\ \ \ \ api\_instance.cours\_seances\_id\_delete(id)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ SancesApi-\/>cours\_seances\_id\_delete:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md129}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md129}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md130}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md130}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md131}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md131}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md132}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md132}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: Not defined
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md133}{}\doxysection{\texorpdfstring{{\bfseries{cours\+\_\+seances\+\_\+id\+\_\+get}}}{{\bfseries{cours\+\_\+seances\+\_\+id\+\_\+get}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md133}
+\begin{quote}
+cours\+\_\+seances\+\_\+id\+\_\+get(id) \end{quote}
+Retourne les infos sur la séance\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md134}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md134}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.SancesApi()}
+\DoxyCodeLine{id\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Retourne\ les\ infos\ sur\ la\ séance}}
+\DoxyCodeLine{\ \ \ \ api\_instance.cours\_seances\_id\_get(id)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ SancesApi-\/>cours\_seances\_id\_get:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md135}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md135}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md136}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md136}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md137}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md137}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md138}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md138}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: Not defined
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md139}{}\doxysection{\texorpdfstring{{\bfseries{cours\+\_\+seances\+\_\+id\+\_\+post}}}{{\bfseries{cours\+\_\+seances\+\_\+id\+\_\+post}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md139}
+\begin{quote}
+cours\+\_\+seances\+\_\+id\+\_\+post(id) \end{quote}
+Crée une nouvelle séance\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md140}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md140}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ swagger\_client.SancesApi()}
+\DoxyCodeLine{id\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Crée\ une\ nouvelle\ séance}}
+\DoxyCodeLine{\ \ \ \ api\_instance.cours\_seances\_id\_post(id)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ SancesApi-\/>cours\_seances\_id\_post:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md141}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md141}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md142}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md142}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md143}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md143}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md144}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_sances_api_autotoc_md144}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: Not defined
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0} 

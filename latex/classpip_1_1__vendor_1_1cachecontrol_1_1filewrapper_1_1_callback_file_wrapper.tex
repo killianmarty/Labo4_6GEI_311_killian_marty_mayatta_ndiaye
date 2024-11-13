@@ -1,0 +1,46 @@
+\doxysection{pip.\+\_\+vendor.\+cachecontrol.\+filewrapper.\+Callback\+File\+Wrapper Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper}{}\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper}\index{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}}
+Inheritance diagram for pip.\+\_\+vendor.\+cachecontrol.\+filewrapper.\+Callback\+File\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_ab14e863b3825cea6a339c0770d5ac5dc}\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_ab14e863b3825cea6a339c0770d5ac5dc} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, fp, callback)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a6405d00c4d4eb1883dea5d8b2cd821d8}\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a6405d00c4d4eb1883dea5d8b2cd821d8} 
+{\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, name)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a75efa786cbf1134b93fcfca000469261}\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a75efa786cbf1134b93fcfca000469261} 
+{\bfseries read} (self, amt=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a64807ea9e8678ff346f2cb5bc3fdf163}\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a64807ea9e8678ff346f2cb5bc3fdf163} 
+{\bfseries \+\_\+close} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a5e8e2976c6080ed725626d59d719c1ad}\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a5e8e2976c6080ed725626d59d719c1ad} 
+{\bfseries \+\_\+safe\+\_\+read} (self, amt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Small wrapper around a fp object which will tee everything read into a
+buffer, and when that file is closed it will execute a callback with the
+contents of that buffer.
+
+All attributes are proxied to the underlying file object.
+
+This class uses members with a double underscore (__) leading prefix so as
+not to accidentally shadow an attribute.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/cachecontrol/filewrapper.\+py\end{DoxyCompactItemize}

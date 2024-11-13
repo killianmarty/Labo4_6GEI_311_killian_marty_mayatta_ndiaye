@@ -1,0 +1,44 @@
+\doxysection{werkzeug.\+serving.\+Dechunked\+Input Class Reference}
+\hypertarget{classwerkzeug_1_1serving_1_1_dechunked_input}{}\label{classwerkzeug_1_1serving_1_1_dechunked_input}\index{werkzeug.serving.DechunkedInput@{werkzeug.serving.DechunkedInput}}
+Inheritance diagram for werkzeug.\+serving.\+Dechunked\+Input\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1serving_1_1_dechunked_input}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_dechunked_input_a65ad785906995805508b7c90fa3f6a24}\label{classwerkzeug_1_1serving_1_1_dechunked_input_a65ad785906995805508b7c90fa3f6a24} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+IO\mbox{[}bytes\mbox{]} rfile)
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_dechunked_input_a8e2c46809e5658ad88225d10a46b1824}\label{classwerkzeug_1_1serving_1_1_dechunked_input_a8e2c46809e5658ad88225d10a46b1824} 
+bool {\bfseries readable} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_dechunked_input_af78b5b7a9df068e8012579b4556b4cd7}\label{classwerkzeug_1_1serving_1_1_dechunked_input_af78b5b7a9df068e8012579b4556b4cd7} 
+int {\bfseries read\+\_\+chunk\+\_\+len} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_dechunked_input_aaa6aee2e487c646181028263d100ef62}\label{classwerkzeug_1_1serving_1_1_dechunked_input_aaa6aee2e487c646181028263d100ef62} 
+int {\bfseries readinto} (self, bytearray buf)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_dechunked_input_aa90e2f8a8d7241065eebef4dca273f04}\label{classwerkzeug_1_1serving_1_1_dechunked_input_aa90e2f8a8d7241065eebef4dca273f04} 
+{\bfseries \+\_\+rfile} = rfile
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_dechunked_input_a5ffd79ec3cbf8aba77b6c094ffcd12ad}\label{classwerkzeug_1_1serving_1_1_dechunked_input_a5ffd79ec3cbf8aba77b6c094ffcd12ad} 
+bool {\bfseries \+\_\+done} = False
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_dechunked_input_aeb18756481d536df7c5d6f5725c5a416}\label{classwerkzeug_1_1serving_1_1_dechunked_input_aeb18756481d536df7c5d6f5725c5a416} 
+int {\bfseries \+\_\+len} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An input stream that handles Transfer-Encoding 'chunked'\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/serving.\+py\end{DoxyCompactItemize}

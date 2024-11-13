@@ -1,0 +1,107 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage connexion.\+cli}
+\hypertarget{namespaceconnexion_1_1cli}{}\label{namespaceconnexion_1_1cli}\index{connexion.cli@{connexion.cli}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceconnexion_1_1cli_a9f042c21a0cc7139fa9d96696b7ca5f6}\label{namespaceconnexion_1_1cli_a9f042c21a0cc7139fa9d96696b7ca5f6} 
+{\bfseries validate\+\_\+server\+\_\+requirements} (ctx, param, value)
+\item 
+\Hypertarget{namespaceconnexion_1_1cli_a066ba12fbc921e3b3b5a48c743ca561f}\label{namespaceconnexion_1_1cli_a066ba12fbc921e3b3b5a48c743ca561f} 
+{\bfseries print\+\_\+version} (ctx, param, value)
+\item 
+\Hypertarget{namespaceconnexion_1_1cli_aea71accb1b05d9530599c40876549086}\label{namespaceconnexion_1_1cli_aea71accb1b05d9530599c40876549086} 
+{\bfseries main} ()
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1cli_ab53828013f5f361b592f160a01d2aa25}{run}} (spec\+\_\+file, base\+\_\+module\+\_\+path, port, host, wsgi\+\_\+server, server, stub, mock, hide\+\_\+spec, hide\+\_\+console\+\_\+ui, console\+\_\+ui\+\_\+url, console\+\_\+ui\+\_\+from, auth\+\_\+all\+\_\+paths, validate\+\_\+responses, strict\+\_\+validation, debug, verbose, base\+\_\+path, app\+\_\+framework)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceconnexion_1_1cli_a2929fdfa03e42bd1d3f1f9eccfc46079}\label{namespaceconnexion_1_1cli_a2929fdfa03e42bd1d3f1f9eccfc46079} 
+{\bfseries logger} = logging.\+get\+Logger(\textquotesingle{}connexion.\+cli\textquotesingle{})
+\item 
+\Hypertarget{namespaceconnexion_1_1cli_a3eafcd8afef6e8f4b1ea721615df32f8}\label{namespaceconnexion_1_1cli_a3eafcd8afef6e8f4b1ea721615df32f8} 
+{\bfseries CONTEXT\+\_\+\+SETTINGS} = dict(help\+\_\+option\+\_\+names=\mbox{[}\textquotesingle{}-\/h\textquotesingle{}, \textquotesingle{}-\/-\/help\textquotesingle{}\mbox{]})
+\item 
+\Hypertarget{namespaceconnexion_1_1cli_aa688b488dfbbfe4cb075fca3afa3ae61}\label{namespaceconnexion_1_1cli_aa688b488dfbbfe4cb075fca3afa3ae61} 
+str {\bfseries FLASK\+\_\+\+APP} = \textquotesingle{}flask\textquotesingle{}
+\item 
+\Hypertarget{namespaceconnexion_1_1cli_a8395b778f1b4a64f8c8d6cfc37b349fe}\label{namespaceconnexion_1_1cli_a8395b778f1b4a64f8c8d6cfc37b349fe} 
+str {\bfseries AIOHTTP\+\_\+\+APP} = \textquotesingle{}aiohttp\textquotesingle{}
+\item 
+dict \mbox{\hyperlink{namespaceconnexion_1_1cli_a442ee6164f8ee0c4765f2c52fe73b200}{AVAILABLE\+\_\+\+SERVERS}}
+\item 
+dict \mbox{\hyperlink{namespaceconnexion_1_1cli_a779b0776271fc371f8ff3a881f709ae1}{AVAILABLE\+\_\+\+APPS}}
+\item 
+dict \mbox{\hyperlink{namespaceconnexion_1_1cli_a196277ec030f0312dd5e92de7c742c2d}{DEFAULT\+\_\+\+SERVERS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This module defines a command-line interface (CLI) that runs an OpenAPI specification to be a
+starting point for developing your API with Connexion.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespaceconnexion_1_1cli_ab53828013f5f361b592f160a01d2aa25}\index{connexion.cli@{connexion.cli}!run@{run}}
+\index{run@{run}!connexion.cli@{connexion.cli}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1cli_ab53828013f5f361b592f160a01d2aa25} 
+connexion.\+cli.\+run (\begin{DoxyParamCaption}\item[{}]{spec\+\_\+file}{, }\item[{}]{base\+\_\+module\+\_\+path}{, }\item[{}]{port}{, }\item[{}]{host}{, }\item[{}]{wsgi\+\_\+server}{, }\item[{}]{server}{, }\item[{}]{stub}{, }\item[{}]{mock}{, }\item[{}]{hide\+\_\+spec}{, }\item[{}]{hide\+\_\+console\+\_\+ui}{, }\item[{}]{console\+\_\+ui\+\_\+url}{, }\item[{}]{console\+\_\+ui\+\_\+from}{, }\item[{}]{auth\+\_\+all\+\_\+paths}{, }\item[{}]{validate\+\_\+responses}{, }\item[{}]{strict\+\_\+validation}{, }\item[{}]{debug}{, }\item[{}]{verbose}{, }\item[{}]{base\+\_\+path}{, }\item[{}]{app\+\_\+framework}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs a server compliant with a OpenAPI/Swagger 2.0 Specification file.
+
+Arguments:
+
+- SPEC_FILE: specification file that describes the server endpoints.
+
+- BASE_MODULE_PATH (optional): filesystem path where the API endpoints handlers are going to be imported from.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespaceconnexion_1_1cli_a779b0776271fc371f8ff3a881f709ae1}\index{connexion.cli@{connexion.cli}!AVAILABLE\_APPS@{AVAILABLE\_APPS}}
+\index{AVAILABLE\_APPS@{AVAILABLE\_APPS}!connexion.cli@{connexion.cli}}
+\doxysubsubsection{\texorpdfstring{AVAILABLE\_APPS}{AVAILABLE\_APPS}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1cli_a779b0776271fc371f8ff3a881f709ae1} 
+dict connexion.\+cli.\+AVAILABLE\+\_\+\+APPS}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ FLASK\_APP:\ \textcolor{stringliteral}{'connexion.apps.flask\_app.FlaskApp'},}
+\DoxyCodeLine{00003\ \ \ \ \ AIOHTTP\_APP:\ \textcolor{stringliteral}{'connexion.apps.aiohttp\_app.AioHttpApp'}}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceconnexion_1_1cli_a442ee6164f8ee0c4765f2c52fe73b200}\index{connexion.cli@{connexion.cli}!AVAILABLE\_SERVERS@{AVAILABLE\_SERVERS}}
+\index{AVAILABLE\_SERVERS@{AVAILABLE\_SERVERS}!connexion.cli@{connexion.cli}}
+\doxysubsubsection{\texorpdfstring{AVAILABLE\_SERVERS}{AVAILABLE\_SERVERS}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1cli_a442ee6164f8ee0c4765f2c52fe73b200} 
+dict connexion.\+cli.\+AVAILABLE\+\_\+\+SERVERS}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'flask'}:\ [FLASK\_APP],}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'gevent'}:\ [FLASK\_APP],}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'tornado'}:\ [FLASK\_APP],}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'aiohttp'}:\ [AIOHTTP\_APP]}
+\DoxyCodeLine{00006\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceconnexion_1_1cli_a196277ec030f0312dd5e92de7c742c2d}\index{connexion.cli@{connexion.cli}!DEFAULT\_SERVERS@{DEFAULT\_SERVERS}}
+\index{DEFAULT\_SERVERS@{DEFAULT\_SERVERS}!connexion.cli@{connexion.cli}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SERVERS}{DEFAULT\_SERVERS}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1cli_a196277ec030f0312dd5e92de7c742c2d} 
+dict connexion.\+cli.\+DEFAULT\+\_\+\+SERVERS}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ FLASK\_APP:\ FLASK\_APP,}
+\DoxyCodeLine{00003\ \ \ \ \ AIOHTTP\_APP:\ AIOHTTP\_APP}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}

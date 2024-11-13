@@ -1,0 +1,67 @@
+\doxysection{pip.\+\_\+vendor.\+urllib3.\+packages.\+ssl\+\_\+match\+\_\+hostname.\+\_\+implementation Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation}{}\label{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation}\index{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation@{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_1_1_certificate_error}{Certificate\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_a9d119e60d63cc5061300123d92085c3b}{\+\_\+dnsname\+\_\+match}} (dn, hostname, max\+\_\+wildcards=1)
+\item 
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_a7e17bc67dbce832ae2e80769e0f404bb}\label{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_a7e17bc67dbce832ae2e80769e0f404bb} 
+{\bfseries \+\_\+to\+\_\+unicode} (obj)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_a0236b2a57fec880de68852e8c2dbf19d}{\+\_\+ipaddress\+\_\+match}} (ipname, host\+\_\+ip)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_ac69ab6376a53d73fde808ee379700794}{match\+\_\+hostname}} (cert, hostname)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_ac80eca726dd9c6d28e1bcbf3a6453746}\label{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_ac80eca726dd9c6d28e1bcbf3a6453746} 
+{\bfseries ipaddress} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The match_hostname() function from Python 3.3.3, essential when using SSL.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_a9d119e60d63cc5061300123d92085c3b}\index{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation@{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation}!\_dnsname\_match@{\_dnsname\_match}}
+\index{\_dnsname\_match@{\_dnsname\_match}!pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation@{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation}}
+\doxysubsubsection{\texorpdfstring{\_dnsname\_match()}{\_dnsname\_match()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_a9d119e60d63cc5061300123d92085c3b} 
+pip.\+\_\+vendor.\+urllib3.\+packages.\+ssl\+\_\+match\+\_\+hostname.\+\_\+implementation.\+\_\+dnsname\+\_\+match (\begin{DoxyParamCaption}\item[{}]{dn}{, }\item[{}]{hostname}{, }\item[{}]{max\+\_\+wildcards}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Matching according to RFC 6125, section 6.4.3
+
+http://tools.ietf.org/html/rfc6125#section-6.4.3
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_a0236b2a57fec880de68852e8c2dbf19d}\index{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation@{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation}!\_ipaddress\_match@{\_ipaddress\_match}}
+\index{\_ipaddress\_match@{\_ipaddress\_match}!pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation@{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation}}
+\doxysubsubsection{\texorpdfstring{\_ipaddress\_match()}{\_ipaddress\_match()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_a0236b2a57fec880de68852e8c2dbf19d} 
+pip.\+\_\+vendor.\+urllib3.\+packages.\+ssl\+\_\+match\+\_\+hostname.\+\_\+implementation.\+\_\+ipaddress\+\_\+match (\begin{DoxyParamCaption}\item[{}]{ipname}{, }\item[{}]{host\+\_\+ip}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Exact matching of IP addresses.
+
+RFC 6125 explicitly doesn't define an algorithm for this
+(section 1.7.2 - "Out of Scope").
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_ac69ab6376a53d73fde808ee379700794}\index{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation@{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation}!match\_hostname@{match\_hostname}}
+\index{match\_hostname@{match\_hostname}!pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation@{pip.\_vendor.urllib3.packages.ssl\_match\_hostname.\_implementation}}
+\doxysubsubsection{\texorpdfstring{match\_hostname()}{match\_hostname()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1packages_1_1ssl__match__hostname_1_1__implementation_ac69ab6376a53d73fde808ee379700794} 
+pip.\+\_\+vendor.\+urllib3.\+packages.\+ssl\+\_\+match\+\_\+hostname.\+\_\+implementation.\+match\+\_\+hostname (\begin{DoxyParamCaption}\item[{}]{cert}{, }\item[{}]{hostname}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verify that *cert* (in decoded format as returned by
+SSLSocket.getpeercert()) matches the *hostname*.  RFC 2818 and RFC 6125
+rules are followed, but IP addresses are not accepted for *hostname*.
+
+CertificateError is raised on failure. On success, the function
+returns nothing.
+\end{DoxyVerb}
+ 

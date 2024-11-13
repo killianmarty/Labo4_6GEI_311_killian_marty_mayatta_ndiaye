@@ -1,0 +1,99 @@
+\doxysection{connexion.\+resolver.\+Resty\+Resolver Class Reference}
+\hypertarget{classconnexion_1_1resolver_1_1_resty_resolver}{}\label{classconnexion_1_1resolver_1_1_resty_resolver}\index{connexion.resolver.RestyResolver@{connexion.resolver.RestyResolver}}
+Inheritance diagram for connexion.\+resolver.\+Resty\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classconnexion_1_1resolver_1_1_resty_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resty_resolver_ae1b414754877d96c6921cd2b1b9b6ffb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, default\+\_\+module\+\_\+name, collection\+\_\+endpoint\+\_\+name=\textquotesingle{}search\textquotesingle{})
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resty_resolver_a2cf13df80e0c729da771a2280697f357}{resolve\+\_\+operation\+\_\+id}} (self, operation)
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resty_resolver_aeeab847300a4278bd071d10ed6dadd44}{resolve\+\_\+operation\+\_\+id\+\_\+using\+\_\+rest\+\_\+semantics}} (self, operation)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver}{connexion.\+resolver.\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a052aec285258ea1337ae7537a7a44b8e}{resolve}} (self, operation)
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a6a4a064312a7a9f7fa554358f01b3105}{resolve\+\_\+function\+\_\+from\+\_\+operation\+\_\+id}} (self, operation\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1resolver_1_1_resty_resolver_a0e2c05f0d9251d22c04d22bf35ce7137}\label{classconnexion_1_1resolver_1_1_resty_resolver_a0e2c05f0d9251d22c04d22bf35ce7137} 
+{\bfseries default\+\_\+module\+\_\+name} = default\+\_\+module\+\_\+name
+\item 
+\Hypertarget{classconnexion_1_1resolver_1_1_resty_resolver_a1bd538f17e0bb68e651619b6df9ab793}\label{classconnexion_1_1resolver_1_1_resty_resolver_a1bd538f17e0bb68e651619b6df9ab793} 
+{\bfseries collection\+\_\+endpoint\+\_\+name} = collection\+\_\+endpoint\+\_\+name
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver}{connexion.\+resolver.\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries function\+\_\+resolver} = function\+\_\+resolver
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Resolves endpoint functions using REST semantics (unless overridden by specifying operationId)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classconnexion_1_1resolver_1_1_resty_resolver_ae1b414754877d96c6921cd2b1b9b6ffb}\index{connexion.resolver.RestyResolver@{connexion.resolver.RestyResolver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.resolver.RestyResolver@{connexion.resolver.RestyResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_resty_resolver_ae1b414754877d96c6921cd2b1b9b6ffb} 
+connexion.\+resolver.\+Resty\+Resolver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{default\+\_\+module\+\_\+name}{, }\item[{}]{collection\+\_\+endpoint\+\_\+name}{ = {\ttfamily \textquotesingle{}search\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param default_module_name: Default module name for operations
+:type default_module_name: str
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_aea92122a59acf895ed303178a45ebe56}{connexion.\+resolver.\+Resolver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classconnexion_1_1resolver_1_1_method_view_resolver_a7c4636b859a53b4f148067f7911e81c4}{connexion.\+resolver.\+Method\+View\+Resolver}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classconnexion_1_1resolver_1_1_resty_resolver_a2cf13df80e0c729da771a2280697f357}\index{connexion.resolver.RestyResolver@{connexion.resolver.RestyResolver}!resolve\_operation\_id@{resolve\_operation\_id}}
+\index{resolve\_operation\_id@{resolve\_operation\_id}!connexion.resolver.RestyResolver@{connexion.resolver.RestyResolver}}
+\doxysubsubsection{\texorpdfstring{resolve\_operation\_id()}{resolve\_operation\_id()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_resty_resolver_a2cf13df80e0c729da771a2280697f357} 
+connexion.\+resolver.\+Resty\+Resolver.\+resolve\+\_\+operation\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolves the operationId using REST semantics unless explicitly configured in the spec
+
+:type operation: connexion.operations.AbstractOperation
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a5779c9da3f7d238c207053ce208fb813}{connexion.\+resolver.\+Resolver}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classconnexion_1_1resolver_1_1_method_view_resolver_a4fb2c053a3ac6fdad850604e72035368}{connexion.\+resolver.\+Method\+View\+Resolver}}.
+
+\Hypertarget{classconnexion_1_1resolver_1_1_resty_resolver_aeeab847300a4278bd071d10ed6dadd44}\index{connexion.resolver.RestyResolver@{connexion.resolver.RestyResolver}!resolve\_operation\_id\_using\_rest\_semantics@{resolve\_operation\_id\_using\_rest\_semantics}}
+\index{resolve\_operation\_id\_using\_rest\_semantics@{resolve\_operation\_id\_using\_rest\_semantics}!connexion.resolver.RestyResolver@{connexion.resolver.RestyResolver}}
+\doxysubsubsection{\texorpdfstring{resolve\_operation\_id\_using\_rest\_semantics()}{resolve\_operation\_id\_using\_rest\_semantics()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_resty_resolver_aeeab847300a4278bd071d10ed6dadd44} 
+connexion.\+resolver.\+Resty\+Resolver.\+resolve\+\_\+operation\+\_\+id\+\_\+using\+\_\+rest\+\_\+semantics (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolves the operationId using REST semantics
+
+:type operation: connexion.operations.AbstractOperation
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/resolver.\+py\end{DoxyCompactItemize}

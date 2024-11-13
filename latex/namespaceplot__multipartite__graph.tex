@@ -1,0 +1,64 @@
+\doxysection{plot\+\_\+multipartite\+\_\+graph Namespace Reference}
+\hypertarget{namespaceplot__multipartite__graph}{}\label{namespaceplot__multipartite__graph}\index{plot\_multipartite\_graph@{plot\_multipartite\_graph}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__multipartite__graph_acc5867e07967728d88463034d1671e4c}\label{namespaceplot__multipartite__graph_acc5867e07967728d88463034d1671e4c} 
+{\bfseries multilayered\+\_\+graph} (\texorpdfstring{$\ast$}{*}subset\+\_\+sizes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__multipartite__graph_af19fae6c66da95cf5906632dae3456f6}\label{namespaceplot__multipartite__graph_af19fae6c66da95cf5906632dae3456f6} 
+list {\bfseries subset\+\_\+sizes} = \mbox{[}5, 5, 4, 3, 2, 4, 4, 3\mbox{]}
+\item 
+list \mbox{\hyperlink{namespaceplot__multipartite__graph_abe7b8f6c267c94f73e6b3f7638811d2c}{subset\+\_\+color}}
+\item 
+\Hypertarget{namespaceplot__multipartite__graph_a7e5604423519fe46701264fff501592f}\label{namespaceplot__multipartite__graph_a7e5604423519fe46701264fff501592f} 
+{\bfseries G} = multilayered\+\_\+graph(\texorpdfstring{$\ast$}{*}subset\+\_\+sizes)
+\item 
+\Hypertarget{namespaceplot__multipartite__graph_ac7dc58589f8f00e46b548e31ae4dd0cf}\label{namespaceplot__multipartite__graph_ac7dc58589f8f00e46b548e31ae4dd0cf} 
+list {\bfseries color} = \mbox{[}subset\+\_\+color\mbox{[}data\mbox{[}"{}layer"{}\mbox{]}\mbox{]} for v, data in G.\+nodes(data=True)\mbox{]}
+\item 
+\Hypertarget{namespaceplot__multipartite__graph_a8a498337e2ba8df62181908fa5d8e820}\label{namespaceplot__multipartite__graph_a8a498337e2ba8df62181908fa5d8e820} 
+{\bfseries pos} = nx.\+multipartite\+\_\+layout(G, subset\+\_\+key="{}layer"{})
+\item 
+\Hypertarget{namespaceplot__multipartite__graph_a22a7a679f8e9340d278ba9658598c07a}\label{namespaceplot__multipartite__graph_a22a7a679f8e9340d278ba9658598c07a} 
+{\bfseries figsize}
+\item 
+\Hypertarget{namespaceplot__multipartite__graph_ab6fddeb7dbc86d76e3419ac2f6a82bc4}\label{namespaceplot__multipartite__graph_ab6fddeb7dbc86d76e3419ac2f6a82bc4} 
+{\bfseries node\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__multipartite__graph_a48f1627ed510ddcbb219772ca147edb7}\label{namespaceplot__multipartite__graph_a48f1627ed510ddcbb219772ca147edb7} 
+{\bfseries with\+\_\+labels}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}===================
+Multipartite Layout
+===================
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__multipartite__graph_abe7b8f6c267c94f73e6b3f7638811d2c}\index{plot\_multipartite\_graph@{plot\_multipartite\_graph}!subset\_color@{subset\_color}}
+\index{subset\_color@{subset\_color}!plot\_multipartite\_graph@{plot\_multipartite\_graph}}
+\doxysubsubsection{\texorpdfstring{subset\_color}{subset\_color}}
+{\footnotesize\ttfamily \label{namespaceplot__multipartite__graph_abe7b8f6c267c94f73e6b3f7638811d2c} 
+list plot\+\_\+multipartite\+\_\+graph.\+subset\+\_\+color}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}gold"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}violet"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}violet"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}violet"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}violet"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}limegreen"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}limegreen"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}darkorange"{}},}
+\DoxyCodeLine{00010\ ]}
+
+\end{DoxyCode}

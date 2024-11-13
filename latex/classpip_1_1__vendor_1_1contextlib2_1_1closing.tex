@@ -1,0 +1,48 @@
+\doxysection{pip.\+\_\+vendor.\+contextlib2.\+closing Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1closing}{}\label{classpip_1_1__vendor_1_1contextlib2_1_1closing}\index{pip.\_vendor.contextlib2.closing@{pip.\_vendor.contextlib2.closing}}
+Inheritance diagram for pip.\+\_\+vendor.\+contextlib2.\+closing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1contextlib2_1_1closing}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1closing_a69a71e038e766e054fe4c2606a297ea8}\label{classpip_1_1__vendor_1_1contextlib2_1_1closing_a69a71e038e766e054fe4c2606a297ea8} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, thing)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1closing_a33fd02adf101fd391fab5a687f01263f}\label{classpip_1_1__vendor_1_1contextlib2_1_1closing_a33fd02adf101fd391fab5a687f01263f} 
+{\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1closing_a2c8771efb4c3962a73e544477871522d}\label{classpip_1_1__vendor_1_1contextlib2_1_1closing_a2c8771efb4c3962a73e544477871522d} 
+{\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}exc\+\_\+info)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1closing_af704a6879ed58a950f0b383d0c149c3d}\label{classpip_1_1__vendor_1_1contextlib2_1_1closing_af704a6879ed58a950f0b383d0c149c3d} 
+{\bfseries thing} = thing
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Context to automatically close something at the end of a block.
+
+Code like this:
+
+    with closing(<module>.open(<arguments>)) as f:
+        <block>
+
+is equivalent to this:
+
+    f = <module>.open(<arguments>)
+    try:
+        <block>
+    finally:
+        f.close()\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/contextlib2.\+py\end{DoxyCompactItemize}

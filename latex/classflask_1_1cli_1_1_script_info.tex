@@ -1,0 +1,77 @@
+\doxysection{flask.\+cli.\+Script\+Info Class Reference}
+\hypertarget{classflask_1_1cli_1_1_script_info}{}\label{classflask_1_1cli_1_1_script_info}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1cli_1_1_script_info_aef577d3a64e6fd05a3696256abd36e5a}\label{classflask_1_1cli_1_1_script_info_aef577d3a64e6fd05a3696256abd36e5a} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str\texorpdfstring{$\vert$}{|}None app\+\_\+import\+\_\+path=None, t.\+Callable\mbox{[}..., \mbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}\mbox{]}\texorpdfstring{$\vert$}{|}None create\+\_\+app=None, bool set\+\_\+debug\+\_\+flag=True)
+\item 
+\mbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} \mbox{\hyperlink{classflask_1_1cli_1_1_script_info_a4271d85c57277a8856628c593fd25471}{load\+\_\+app}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1cli_1_1_script_info_add9da67c867a4fa3ca56716ca415334c}\label{classflask_1_1cli_1_1_script_info_add9da67c867a4fa3ca56716ca415334c} 
+{\bfseries app\+\_\+import\+\_\+path} = app\+\_\+import\+\_\+path
+\item 
+\Hypertarget{classflask_1_1cli_1_1_script_info_a34bcd02e13b2cef887ad25dd77880a5a}\label{classflask_1_1cli_1_1_script_info_a34bcd02e13b2cef887ad25dd77880a5a} 
+{\bfseries create\+\_\+app} = create\+\_\+app
+\item 
+\Hypertarget{classflask_1_1cli_1_1_script_info_a38bfea2e354a4ad8fe94913e8694a805}\label{classflask_1_1cli_1_1_script_info_a38bfea2e354a4ad8fe94913e8694a805} 
+dict {\bfseries data} = \{\}
+\item 
+\Hypertarget{classflask_1_1cli_1_1_script_info_aff30b2389f977cc065245afc13521942}\label{classflask_1_1cli_1_1_script_info_aff30b2389f977cc065245afc13521942} 
+{\bfseries set\+\_\+debug\+\_\+flag} = set\+\_\+debug\+\_\+flag
+\item 
+tuple \mbox{\hyperlink{classflask_1_1cli_1_1_script_info_a1ddfc18ec9d3a32f0706223bc28cc339}{app\+\_\+import\+\_\+path}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1cli_1_1_script_info_ad498275c6d86104dd08fd9dac8b66574}\label{classflask_1_1cli_1_1_script_info_ad498275c6d86104dd08fd9dac8b66574} 
+\mbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}\texorpdfstring{$\vert$}{|}None {\bfseries \+\_\+loaded\+\_\+app} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Helper object to deal with Flask applications.  This is usually not
+necessary to interface with as it's used internally in the dispatching
+to click.  In future versions of Flask this object will most likely play
+a bigger role.  Typically it's created automatically by the
+:class:`FlaskGroup` but you can also manually create it and pass it
+onwards as click object.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1cli_1_1_script_info_a4271d85c57277a8856628c593fd25471}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}!load\_app@{load\_app}}
+\index{load\_app@{load\_app}!flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection{\texorpdfstring{load\_app()}{load\_app()}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_script_info_a4271d85c57277a8856628c593fd25471} 
+ \mbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} flask.\+cli.\+Script\+Info.\+load\+\_\+app (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads the Flask app (if not yet loaded) and returns it.  Calling
+this multiple times will just result in the already loaded app to
+be returned.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1cli_1_1_script_info_a1ddfc18ec9d3a32f0706223bc28cc339}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}!app\_import\_path@{app\_import\_path}}
+\index{app\_import\_path@{app\_import\_path}!flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection{\texorpdfstring{app\_import\_path}{app\_import\_path}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_script_info_a1ddfc18ec9d3a32f0706223bc28cc339} 
+tuple flask.\+cli.\+Script\+Info.\+app\+\_\+import\+\_\+path}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ re.split(\textcolor{stringliteral}{r"{}:(?![\(\backslash\)\(\backslash\)/])"{}},\ self.app\_import\_path,\ 1)\ +\ [\textcolor{keywordtype}{None}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )[:2]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/cli.\+py\end{DoxyCompactItemize}

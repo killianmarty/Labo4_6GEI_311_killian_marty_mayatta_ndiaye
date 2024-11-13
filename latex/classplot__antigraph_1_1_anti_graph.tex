@@ -1,0 +1,138 @@
+\doxysection{plot\+\_\+antigraph.\+Anti\+Graph Class Reference}
+\hypertarget{classplot__antigraph_1_1_anti_graph}{}\label{classplot__antigraph_1_1_anti_graph}\index{plot\_antigraph.AntiGraph@{plot\_antigraph.AntiGraph}}
+Inheritance diagram for plot\+\_\+antigraph.\+Anti\+Graph\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classplot__antigraph_1_1_anti_graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classplot__antigraph_1_1_anti_graph_aca1b8b372f24d57f4bfc21b0f8723819}\label{classplot__antigraph_1_1_anti_graph_aca1b8b372f24d57f4bfc21b0f8723819} 
+{\bfseries single\+\_\+edge\+\_\+dict} (self)
+\item 
+\mbox{\hyperlink{classplot__antigraph_1_1_anti_graph_a3585759107bd177a13efe7644da19568}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, n)
+\item 
+\mbox{\hyperlink{classplot__antigraph_1_1_anti_graph_ae2aed33c179758834112e3101fdf9663}{neighbors}} (self, n)
+\item 
+\mbox{\hyperlink{classplot__antigraph_1_1_anti_graph_a2ba7ae6f85431030bfd37148dd3343b0}{degree}} (self, nbunch=None, weight=None)
+\item 
+\mbox{\hyperlink{classplot__antigraph_1_1_anti_graph_a295f80537cc9b58580ee61e538039b27}{adjacency}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classplot__antigraph_1_1_anti_graph_aed42a7d3a58ef9cf512e41942f86fa0b}\label{classplot__antigraph_1_1_anti_graph_aed42a7d3a58ef9cf512e41942f86fa0b} 
+{\bfseries adj}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classplot__antigraph_1_1_anti_graph_ad4f28021c66c0ae21ebb9d4897d911c0}\label{classplot__antigraph_1_1_anti_graph_ad4f28021c66c0ae21ebb9d4897d911c0} 
+dict {\bfseries all\+\_\+edge\+\_\+dict} = \{"{}weight"{}\+: 1\}
+\item 
+\Hypertarget{classplot__antigraph_1_1_anti_graph_ae7827dc88bfc6f1c4b3a27fc7918eb6a}\label{classplot__antigraph_1_1_anti_graph_ae7827dc88bfc6f1c4b3a27fc7918eb6a} 
+{\bfseries edge\+\_\+attr\+\_\+dict\+\_\+factory} = single\+\_\+edge\+\_\+dict
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Class for complement graphs.
+
+The main goal is to be able to work with big and dense graphs with
+a low memory footprint.
+
+In this class you add the edges that *do not exist* in the dense graph,
+the report methods of the class return the neighbors, the edges and
+the degree as if it was the dense graph. Thus it's possible to use
+an instance of this class with some of NetworkX functions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classplot__antigraph_1_1_anti_graph_a3585759107bd177a13efe7644da19568}\index{plot\_antigraph.AntiGraph@{plot\_antigraph.AntiGraph}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!plot\_antigraph.AntiGraph@{plot\_antigraph.AntiGraph}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classplot__antigraph_1_1_anti_graph_a3585759107bd177a13efe7644da19568} 
+plot\+\_\+antigraph.\+Anti\+Graph.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{n}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dict of neighbors of node n in the dense graph.
+
+Parameters
+----------
+n : node
+   A node in the graph.
+
+Returns
+-------
+adj_dict : dictionary
+   The adjacency dictionary for nodes connected to n.\end{DoxyVerb}
+ \Hypertarget{classplot__antigraph_1_1_anti_graph_a295f80537cc9b58580ee61e538039b27}\index{plot\_antigraph.AntiGraph@{plot\_antigraph.AntiGraph}!adjacency@{adjacency}}
+\index{adjacency@{adjacency}!plot\_antigraph.AntiGraph@{plot\_antigraph.AntiGraph}}
+\doxysubsubsection{\texorpdfstring{adjacency()}{adjacency()}}
+{\footnotesize\ttfamily \label{classplot__antigraph_1_1_anti_graph_a295f80537cc9b58580ee61e538039b27} 
+plot\+\_\+antigraph.\+Anti\+Graph.\+adjacency (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator of (node, adjacency set) tuples for all nodes
+   in the dense graph.
+
+This is the fastest way to look at every edge.
+For directed graphs, only outgoing adjacencies are included.
+
+Returns
+-------
+adj_iter : iterator
+   An iterator of (node, adjacency set) for all nodes in
+   the graph.
+\end{DoxyVerb}
+ \Hypertarget{classplot__antigraph_1_1_anti_graph_a2ba7ae6f85431030bfd37148dd3343b0}\index{plot\_antigraph.AntiGraph@{plot\_antigraph.AntiGraph}!degree@{degree}}
+\index{degree@{degree}!plot\_antigraph.AntiGraph@{plot\_antigraph.AntiGraph}}
+\doxysubsubsection{\texorpdfstring{degree()}{degree()}}
+{\footnotesize\ttfamily \label{classplot__antigraph_1_1_anti_graph_a2ba7ae6f85431030bfd37148dd3343b0} 
+plot\+\_\+antigraph.\+Anti\+Graph.\+degree (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nbunch}{ = {\ttfamily None}, }\item[{}]{weight}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator for (node, degree) in the dense graph.
+
+The node degree is the number of edges adjacent to the node.
+
+Parameters
+----------
+nbunch : iterable container, optional (default=all nodes)
+    A container of nodes.  The container will be iterated
+    through once.
+
+weight : string or None, optional (default=None)
+   The edge attribute that holds the numerical value used
+   as a weight.  If None, then each edge has weight 1.
+   The degree is the sum of the edge weights adjacent to the node.
+
+Returns
+-------
+nd_iter : iterator
+    The iterator returns two-tuples of (node, degree).
+
+See Also
+--------
+degree
+
+Examples
+--------
+>>> G = nx.path_graph(4)  # or DiGraph, MultiGraph, MultiDiGraph, etc
+>>> G.degree(0)  # node 0 with degree 1
+1
+>>> list(G.degree([0, 1]))
+[(0, 1), (1, 2)]\end{DoxyVerb}
+ \Hypertarget{classplot__antigraph_1_1_anti_graph_ae2aed33c179758834112e3101fdf9663}\index{plot\_antigraph.AntiGraph@{plot\_antigraph.AntiGraph}!neighbors@{neighbors}}
+\index{neighbors@{neighbors}!plot\_antigraph.AntiGraph@{plot\_antigraph.AntiGraph}}
+\doxysubsubsection{\texorpdfstring{neighbors()}{neighbors()}}
+{\footnotesize\ttfamily \label{classplot__antigraph_1_1_anti_graph_ae2aed33c179758834112e3101fdf9663} 
+plot\+\_\+antigraph.\+Anti\+Graph.\+neighbors (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{n}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterator over all neighbors of node n in the
+dense graph.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/share/doc/networkx-\/3.\+1/examples/subclass/plot\+\_\+antigraph.\+py\end{DoxyCompactItemize}

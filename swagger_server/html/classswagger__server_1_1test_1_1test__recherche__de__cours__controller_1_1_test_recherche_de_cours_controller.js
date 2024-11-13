@@ -1,0 +1,4 @@
+var classswagger__server_1_1test_1_1test__recherche__de__cours__controller_1_1_test_recherche_de_cours_controller =
+[
+    [ "test_search_tag_get", "classswagger__server_1_1test_1_1test__recherche__de__cours__controller_1_1_test_recherche_de_cours_controller.html#a0dbee8616575f92cfa853e0d3cef5733", null ]
+];

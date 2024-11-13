@@ -1,0 +1,32 @@
+\doxysection{werkzeug.\+exceptions.\+Aborter Class Reference}
+\hypertarget{classwerkzeug_1_1exceptions_1_1_aborter}{}\label{classwerkzeug_1_1exceptions_1_1_aborter}\index{werkzeug.exceptions.Aborter@{werkzeug.exceptions.Aborter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_aborter_a7b79f76e461ab7d9b1dcc53e529df773}\label{classwerkzeug_1_1exceptions_1_1_aborter_a7b79f76e461ab7d9b1dcc53e529df773} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}t.\+Dict\mbox{[}int, t.\+Type\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}\mbox{]}\mbox{]}\mbox{]} mapping=None, t.\+Optional\mbox{[}t.\+Dict\mbox{[}int, t.\+Type\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}\mbox{]}\mbox{]}\mbox{]} extra=None)
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_aborter_aefc29d88c69bd2fa1131dfa8e4ed6ada}\label{classwerkzeug_1_1exceptions_1_1_aborter_aefc29d88c69bd2fa1131dfa8e4ed6ada} 
+"{}te.\+No\+Return"{} {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, t.\+Union\mbox{[}int, "{}Response"{}\mbox{]} code, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_aborter_a54caeb59e11fd43eb786189b91a4a612}\label{classwerkzeug_1_1exceptions_1_1_aborter_a54caeb59e11fd43eb786189b91a4a612} 
+{\bfseries mapping} = dict(mapping)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}When passed a dict of code -> exception items it can be used as
+callable that raises exceptions.  If the first argument to the
+callable is an integer it will be looked up in the mapping, if it's
+a WSGI application it will be raised in a proxy exception.
+
+The rest of the arguments are forwarded to the exception constructor.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/exceptions.\+py\end{DoxyCompactItemize}

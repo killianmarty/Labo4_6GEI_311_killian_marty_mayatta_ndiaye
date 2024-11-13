@@ -1,0 +1,105 @@
+\doxysection{Référence de la classe attr.\+\_\+make.\+Converter}
+\hypertarget{classattr_1_1__make_1_1_converter}{}\label{classattr_1_1__make_1_1_converter}\index{attr.\_make.Converter@{attr.\_make.Converter}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classattr_1_1__make_1_1_converter_a0d960234ec395591df025bd46da1308d}\label{classattr_1_1__make_1_1_converter_a0d960234ec395591df025bd46da1308d} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, converter, \texorpdfstring{$\ast$}{*}, takes\+\_\+self=False, takes\+\_\+field=False)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_converter_a8cfadcc44f343105c3eaf5e20b89ecef}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classattr_1_1__make_1_1_converter_a56852390d2e272d7c3cfd6cb4768dad7}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, state)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classattr_1_1__make_1_1_converter_a75b1527c59d0460ba656b5f1d636b04a}\label{classattr_1_1__make_1_1_converter_a75b1527c59d0460ba656b5f1d636b04a} 
+{\bfseries converter} = converter
+\item 
+\Hypertarget{classattr_1_1__make_1_1_converter_a81fe35915cd4fd99f1fe3ac9c30eccc9}\label{classattr_1_1__make_1_1_converter_a81fe35915cd4fd99f1fe3ac9c30eccc9} 
+{\bfseries takes\+\_\+self} = takes\+\_\+self
+\item 
+\Hypertarget{classattr_1_1__make_1_1_converter_a23778a16a9e8f87426f48d16f6afa874}\label{classattr_1_1__make_1_1_converter_a23778a16a9e8f87426f48d16f6afa874} 
+{\bfseries takes\+\_\+field} = takes\+\_\+field
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classattr_1_1__make_1_1_converter_a82f1a171e6ed4d6eebc8513080510318}{\+\_\+fmt\+\_\+converter\+\_\+call}} (self, str attr\+\_\+name, str value\+\_\+var)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées statiques}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classattr_1_1__make_1_1_converter_a3176c338643786c2acb4caf3cceabdc1}{\+\_\+get\+\_\+global\+\_\+name}} (str attr\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classattr_1_1__make_1_1_converter_af78537af3fe6789cefa29377fd6645b7}\label{classattr_1_1__make_1_1_converter_af78537af3fe6789cefa29377fd6645b7} 
+{\bfseries \+\_\+first\+\_\+param\+\_\+type} = ex.\+get\+\_\+first\+\_\+param\+\_\+type()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Stores a converter callable.
+
+Allows for the wrapped converter to take additional arguments. The
+arguments are passed in the order they are documented.
+
+Args:
+    converter (Callable): A callable that converts the passed value.
+
+    takes_self (bool):
+        Pass the partially initialized instance that is being initialized
+        as a positional argument. (default: `False`)
+
+    takes_field (bool):
+        Pass the field definition (an :class:`Attribute`) into the
+        converter as a positional argument. (default: `False`)
+
+.. versionadded:: 24.1.0
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classattr_1_1__make_1_1_converter_a8cfadcc44f343105c3eaf5e20b89ecef}\index{attr.\_make.Converter@{attr.\_make.Converter}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!attr.\_make.Converter@{attr.\_make.Converter}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_converter_a8cfadcc44f343105c3eaf5e20b89ecef} 
+attr.\+\_\+make.\+Converter.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a dict containing only converter and takes_self -- the rest gets
+computed when loading.
+\end{DoxyVerb}
+ \Hypertarget{classattr_1_1__make_1_1_converter_a56852390d2e272d7c3cfd6cb4768dad7}\index{attr.\_make.Converter@{attr.\_make.Converter}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!attr.\_make.Converter@{attr.\_make.Converter}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_converter_a56852390d2e272d7c3cfd6cb4768dad7} 
+attr.\+\_\+make.\+Converter.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load instance from state.
+\end{DoxyVerb}
+ \Hypertarget{classattr_1_1__make_1_1_converter_a82f1a171e6ed4d6eebc8513080510318}\index{attr.\_make.Converter@{attr.\_make.Converter}!\_fmt\_converter\_call@{\_fmt\_converter\_call}}
+\index{\_fmt\_converter\_call@{\_fmt\_converter\_call}!attr.\_make.Converter@{attr.\_make.Converter}}
+\doxysubsubsection{\texorpdfstring{\_fmt\_converter\_call()}{\_fmt\_converter\_call()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_converter_a82f1a171e6ed4d6eebc8513080510318} 
+ str attr.\+\_\+make.\+Converter.\+\_\+fmt\+\_\+converter\+\_\+call (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{attr\+\_\+name}{, }\item[{str}]{value\+\_\+var}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a string that calls the converter for an attribute name
+*attr_name* and the value in variable named *value_var* according to
+`self.takes_self` and `self.takes_field`.
+\end{DoxyVerb}
+ \Hypertarget{classattr_1_1__make_1_1_converter_a3176c338643786c2acb4caf3cceabdc1}\index{attr.\_make.Converter@{attr.\_make.Converter}!\_get\_global\_name@{\_get\_global\_name}}
+\index{\_get\_global\_name@{\_get\_global\_name}!attr.\_make.Converter@{attr.\_make.Converter}}
+\doxysubsubsection{\texorpdfstring{\_get\_global\_name()}{\_get\_global\_name()}}
+{\footnotesize\ttfamily \label{classattr_1_1__make_1_1_converter_a3176c338643786c2acb4caf3cceabdc1} 
+ str attr.\+\_\+make.\+Converter.\+\_\+get\+\_\+global\+\_\+name (\begin{DoxyParamCaption}\item[{str}]{attr\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return the name that a converter for an attribute name *attr_name*
+would have.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/attr/\+\_\+make.\+py\end{DoxyCompactItemize}

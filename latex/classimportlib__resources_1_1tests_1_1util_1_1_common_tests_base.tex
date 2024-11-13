@@ -1,0 +1,113 @@
+\doxysection{importlib\+\_\+resources.\+tests.\+util.\+Common\+Tests\+Base Class Reference}
+\hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base}{}\label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base}\index{importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}}
+Inheritance diagram for importlib\+\_\+resources.\+tests.\+util.\+Common\+Tests\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.333333cm]{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a8212c93bb0c6b977cac3a806c328be86}{execute}} (self, package, path)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a483c8f09f76276c34d2ccdafb9390e94}{test\+\_\+package\+\_\+name}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_abce3ab1b55a8511546a8545c4df71575}{test\+\_\+package\+\_\+object}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a2d9913ddd3ae55517507d0d95e27c374}{test\+\_\+string\+\_\+path}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_aa0d167ce4696cd5798ae8931e71bc0e0}{test\+\_\+pathlib\+\_\+path}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a4bd9f8f00d75fdc01cc5b1c3208b45eb}{test\+\_\+importing\+\_\+module\+\_\+as\+\_\+side\+\_\+effect}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a3a2b845b6e38e65a376f7e7c0e88a7ea}{test\+\_\+missing\+\_\+path}} (self)
+\item 
+\Hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_aef4b1b2c5e49c41442485690f91f6b63}\label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_aef4b1b2c5e49c41442485690f91f6b63} 
+{\bfseries test\+\_\+extant\+\_\+path} (self)
+\item 
+\Hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a1c45007ba890b347d81533a8b795f5d8}\label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a1c45007ba890b347d81533a8b795f5d8} 
+{\bfseries test\+\_\+useless\+\_\+loader} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_ae31c3cb03201231a2be19c08c4d652c2}\label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_ae31c3cb03201231a2be19c08c4d652c2} 
+{\bfseries data} = pathlib.\+Pure\+Path(\textquotesingle{}utf-\/8.file\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tests shared by test_open, test_path, and test_read.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a8212c93bb0c6b977cac3a806c328be86}\index{importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}!execute@{execute}}
+\index{execute@{execute}!importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a8212c93bb0c6b977cac3a806c328be86} 
+importlib\+\_\+resources.\+tests.\+util.\+Common\+Tests\+Base.\+execute (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{package}{, }\item[{}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call the pertinent legacy API function (e.g. open_text, path)
+on package and path.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1test__open_1_1_common_binary_tests_a41c72291b072932269f6c961c9419fcb}{importlib\+\_\+resources.\+tests.\+test\+\_\+open.\+Common\+Binary\+Tests}}, \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1test__open_1_1_common_text_tests_a0484aa1d4499edc3ef1cc803e4e0359b}{importlib\+\_\+resources.\+tests.\+test\+\_\+open.\+Common\+Text\+Tests}}, \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1test__path_1_1_common_tests_af5edb71f690feff115d8ba9af44690a8}{importlib\+\_\+resources.\+tests.\+test\+\_\+path.\+Common\+Tests}}, \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1test__read_1_1_common_binary_tests_ac8147636773df1f0a70356ba6d1cdea5}{importlib\+\_\+resources.\+tests.\+test\+\_\+read.\+Common\+Binary\+Tests}}, and \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1test__read_1_1_common_text_tests_aac2d68154dfa5840266b21022a3025e0}{importlib\+\_\+resources.\+tests.\+test\+\_\+read.\+Common\+Text\+Tests}}.
+
+\Hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a4bd9f8f00d75fdc01cc5b1c3208b45eb}\index{importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}!test\_importing\_module\_as\_side\_effect@{test\_importing\_module\_as\_side\_effect}}
+\index{test\_importing\_module\_as\_side\_effect@{test\_importing\_module\_as\_side\_effect}!importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}}
+\doxysubsubsection{\texorpdfstring{test\_importing\_module\_as\_side\_effect()}{test\_importing\_module\_as\_side\_effect()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a4bd9f8f00d75fdc01cc5b1c3208b45eb} 
+importlib\+\_\+resources.\+tests.\+util.\+Common\+Tests\+Base.\+test\+\_\+importing\+\_\+module\+\_\+as\+\_\+side\+\_\+effect (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The anchor package can already be imported.
+\end{DoxyVerb}
+ \Hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a3a2b845b6e38e65a376f7e7c0e88a7ea}\index{importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}!test\_missing\_path@{test\_missing\_path}}
+\index{test\_missing\_path@{test\_missing\_path}!importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}}
+\doxysubsubsection{\texorpdfstring{test\_missing\_path()}{test\_missing\_path()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a3a2b845b6e38e65a376f7e7c0e88a7ea} 
+importlib\+\_\+resources.\+tests.\+util.\+Common\+Tests\+Base.\+test\+\_\+missing\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempting to open or read or request the path for a
+non-existent path should succeed if open_resource
+can return a viable data stream.
+\end{DoxyVerb}
+ \Hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a483c8f09f76276c34d2ccdafb9390e94}\index{importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}!test\_package\_name@{test\_package\_name}}
+\index{test\_package\_name@{test\_package\_name}!importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}}
+\doxysubsubsection{\texorpdfstring{test\_package\_name()}{test\_package\_name()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a483c8f09f76276c34d2ccdafb9390e94} 
+importlib\+\_\+resources.\+tests.\+util.\+Common\+Tests\+Base.\+test\+\_\+package\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Passing in the package name should succeed.
+\end{DoxyVerb}
+ \Hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_abce3ab1b55a8511546a8545c4df71575}\index{importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}!test\_package\_object@{test\_package\_object}}
+\index{test\_package\_object@{test\_package\_object}!importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}}
+\doxysubsubsection{\texorpdfstring{test\_package\_object()}{test\_package\_object()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_abce3ab1b55a8511546a8545c4df71575} 
+importlib\+\_\+resources.\+tests.\+util.\+Common\+Tests\+Base.\+test\+\_\+package\+\_\+object (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Passing in the package itself should succeed.
+\end{DoxyVerb}
+ \Hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_aa0d167ce4696cd5798ae8931e71bc0e0}\index{importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}!test\_pathlib\_path@{test\_pathlib\_path}}
+\index{test\_pathlib\_path@{test\_pathlib\_path}!importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}}
+\doxysubsubsection{\texorpdfstring{test\_pathlib\_path()}{test\_pathlib\_path()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_aa0d167ce4696cd5798ae8931e71bc0e0} 
+importlib\+\_\+resources.\+tests.\+util.\+Common\+Tests\+Base.\+test\+\_\+pathlib\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Passing in a pathlib.PurePath object for the path should succeed.
+\end{DoxyVerb}
+ \Hypertarget{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a2d9913ddd3ae55517507d0d95e27c374}\index{importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}!test\_string\_path@{test\_string\_path}}
+\index{test\_string\_path@{test\_string\_path}!importlib\_resources.tests.util.CommonTestsBase@{importlib\_resources.tests.util.CommonTestsBase}}
+\doxysubsubsection{\texorpdfstring{test\_string\_path()}{test\_string\_path()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1tests_1_1util_1_1_common_tests_base_a2d9913ddd3ae55517507d0d95e27c374} 
+importlib\+\_\+resources.\+tests.\+util.\+Common\+Tests\+Base.\+test\+\_\+string\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Passing in a string for the path should succeed.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/importlib\+\_\+resources/tests/util.\+py\end{DoxyCompactItemize}

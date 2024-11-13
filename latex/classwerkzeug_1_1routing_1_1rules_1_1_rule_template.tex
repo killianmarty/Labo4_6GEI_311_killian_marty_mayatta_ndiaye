@@ -1,0 +1,42 @@
+\doxysection{werkzeug.\+routing.\+rules.\+Rule\+Template Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template}{}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template}\index{werkzeug.routing.rules.RuleTemplate@{werkzeug.routing.rules.RuleTemplate}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_aaa285caed4fac8115d50b901888f82e2}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_aaa285caed4fac8115d50b901888f82e2} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Iterable\mbox{[}"{}Rule"{}\mbox{]} rules)
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_abc2cf4b041df9d2d880efd51dca301fc}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_abc2cf4b041df9d2d880efd51dca301fc} 
+"{}Rule\+Template\+Factory"{} {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_a28d486f722acfa25410bfc889128989b}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_a28d486f722acfa25410bfc889128989b} 
+{\bfseries rules} = list(rules)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Returns copies of the rules wrapped and expands string templates in
+the endpoint, rule, defaults or subdomain sections.
+
+Here a small example for such a rule template::
+
+    from werkzeug.routing import Map, Rule, RuleTemplate
+
+    resource = RuleTemplate([
+        Rule('/$name/', endpoint='$name.list'),
+        Rule('/$name/<int:id>', endpoint='$name.show')
+    ])
+
+    url_map = Map([resource(name='user'), resource(name='page')])
+
+When a rule template is called the keyword arguments are used to
+replace the placeholders in all the string parameters.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/routing/rules.\+py\end{DoxyCompactItemize}

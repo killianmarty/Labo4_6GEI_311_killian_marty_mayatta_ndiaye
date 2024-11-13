@@ -1,0 +1,62 @@
+\doxysection{pip.\+\_\+vendor.\+pep517.\+envbuild Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1pep517_1_1envbuild}{}\label{namespacepip_1_1__vendor_1_1pep517_1_1envbuild}\index{pip.\_vendor.pep517.envbuild@{pip.\_vendor.pep517.envbuild}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__vendor_1_1pep517_1_1envbuild_1_1_build_environment}{Build\+Environment}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__vendor_1_1pep517_1_1envbuild_a97eba704d54919615445926640586b2f}\label{namespacepip_1_1__vendor_1_1pep517_1_1envbuild_a97eba704d54919615445926640586b2f} 
+{\bfseries \+\_\+load\+\_\+pyproject} (source\+\_\+dir)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1pep517_1_1envbuild_a21930676af7898a047e3b03e50318e9f}{build\+\_\+wheel}} (source\+\_\+dir, wheel\+\_\+dir, config\+\_\+settings=None)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1pep517_1_1envbuild_a3c6c0de77e7a88e3f2e0cd2caa1bad45}{build\+\_\+sdist}} (source\+\_\+dir, sdist\+\_\+dir, config\+\_\+settings=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__vendor_1_1pep517_1_1envbuild_ae935ca4c3ccc5f9a1506a0a5c8e9c53d}\label{namespacepip_1_1__vendor_1_1pep517_1_1envbuild_ae935ca4c3ccc5f9a1506a0a5c8e9c53d} 
+{\bfseries log} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Build wheels/sdists by installing build deps to a temporary environment.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1pep517_1_1envbuild_a3c6c0de77e7a88e3f2e0cd2caa1bad45}\index{pip.\_vendor.pep517.envbuild@{pip.\_vendor.pep517.envbuild}!build\_sdist@{build\_sdist}}
+\index{build\_sdist@{build\_sdist}!pip.\_vendor.pep517.envbuild@{pip.\_vendor.pep517.envbuild}}
+\doxysubsubsection{\texorpdfstring{build\_sdist()}{build\_sdist()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1pep517_1_1envbuild_a3c6c0de77e7a88e3f2e0cd2caa1bad45} 
+pip.\+\_\+vendor.\+pep517.\+envbuild.\+build\+\_\+sdist (\begin{DoxyParamCaption}\item[{}]{source\+\_\+dir}{, }\item[{}]{sdist\+\_\+dir}{, }\item[{}]{config\+\_\+settings}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build an sdist from a source directory using PEP 517 hooks.
+
+:param str source_dir: Source directory containing pyproject.toml
+:param str sdist_dir: Target directory to place sdist in
+:param dict config_settings: Options to pass to build backend
+
+This is a blocking function which will run pip in a subprocess to install
+build requirements.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1pep517_1_1envbuild_a21930676af7898a047e3b03e50318e9f}\index{pip.\_vendor.pep517.envbuild@{pip.\_vendor.pep517.envbuild}!build\_wheel@{build\_wheel}}
+\index{build\_wheel@{build\_wheel}!pip.\_vendor.pep517.envbuild@{pip.\_vendor.pep517.envbuild}}
+\doxysubsubsection{\texorpdfstring{build\_wheel()}{build\_wheel()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1pep517_1_1envbuild_a21930676af7898a047e3b03e50318e9f} 
+pip.\+\_\+vendor.\+pep517.\+envbuild.\+build\+\_\+wheel (\begin{DoxyParamCaption}\item[{}]{source\+\_\+dir}{, }\item[{}]{wheel\+\_\+dir}{, }\item[{}]{config\+\_\+settings}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build a wheel from a source directory using PEP 517 hooks.
+
+:param str source_dir: Source directory containing pyproject.toml
+:param str wheel_dir: Target directory to create wheel in
+:param dict config_settings: Options to pass to build backend
+
+This is a blocking function which will run pip in a subprocess to install
+build requirements.
+\end{DoxyVerb}
+ 

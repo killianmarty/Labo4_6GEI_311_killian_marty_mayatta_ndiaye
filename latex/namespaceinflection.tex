@@ -1,0 +1,348 @@
+\doxysection{inflection Namespace Reference}
+\hypertarget{namespaceinflection}{}\label{namespaceinflection}\index{inflection@{inflection}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespaceinflection_afcf6aa79d7050d011790e395b20fcdd3}{\+\_\+irregular}} (str singular, str plural)
+\item 
+str \mbox{\hyperlink{namespaceinflection_ad26387e0f53697dd876f72481bbd8bf0}{camelize}} (str string, bool uppercase\+\_\+first\+\_\+letter=True)
+\item 
+str \mbox{\hyperlink{namespaceinflection_a7f8787bd36e1c62f7ea5c64d298e0ab1}{dasherize}} (str word)
+\item 
+str \mbox{\hyperlink{namespaceinflection_a153e862cbf802be3b6f56c1d6f28aa6e}{humanize}} (str word)
+\item 
+str \mbox{\hyperlink{namespaceinflection_ac29bd5118cca160a258fc90d97632e7c}{ordinal}} (int number)
+\item 
+str \mbox{\hyperlink{namespaceinflection_a00a0f5b2de0946d1e0885ab156d1e438}{ordinalize}} (int number)
+\item 
+str \mbox{\hyperlink{namespaceinflection_a6b405da0e3786fb4258a2767522e31c8}{parameterize}} (str string, str separator=\textquotesingle{}-\/\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespaceinflection_aae2d217ab805f3e5330d19bd9e9194d9}{pluralize}} (str word)
+\item 
+str \mbox{\hyperlink{namespaceinflection_ad586547997452469908c66123dc8840a}{singularize}} (str word)
+\item 
+str \mbox{\hyperlink{namespaceinflection_a89069691986d07f1d121e6dac8b8e969}{tableize}} (str word)
+\item 
+str \mbox{\hyperlink{namespaceinflection_a27fae6599b37eb3ae7727276693bf554}{titleize}} (str word)
+\item 
+str \mbox{\hyperlink{namespaceinflection_ab8a62dcfd80aff2bb8c3b4f92a9e9b3f}{transliterate}} (str string)
+\item 
+str \mbox{\hyperlink{namespaceinflection_ac6cbe0541f2b06eda58f7d2a26f43207}{underscore}} (str word)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespaceinflection_a698005f2103c6bee354cbfab5bca7969}{PLURALS}}
+\item 
+\Hypertarget{namespaceinflection_aa4835f9d3fae837f3b9e57e751b95849}\label{namespaceinflection_aa4835f9d3fae837f3b9e57e751b95849} 
+list {\bfseries SINGULARS}
+\item 
+dict \mbox{\hyperlink{namespaceinflection_a50225124e422f3cb2044b13629fca0f9}{UNCOUNTABLES}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    inflection
+    ~~~~~~~~~~~~
+
+    A port of Ruby on Rails' inflector to Python.
+
+    :copyright: (c) 2012-2020 by Janne Vanhala
+
+    :license: MIT, see LICENSE for more details.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceinflection_afcf6aa79d7050d011790e395b20fcdd3}\index{inflection@{inflection}!\_irregular@{\_irregular}}
+\index{\_irregular@{\_irregular}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{\_irregular()}{\_irregular()}}
+{\footnotesize\ttfamily \label{namespaceinflection_afcf6aa79d7050d011790e395b20fcdd3} 
+None inflection.\+\_\+irregular (\begin{DoxyParamCaption}\item[{str}]{singular}{, }\item[{str}]{plural}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}A convenience function to add appropriate rules to plurals and singular
+for irregular words.
+
+:param singular: irregular word in singular form
+:param plural: irregular word in plural form
+\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_ad26387e0f53697dd876f72481bbd8bf0}\index{inflection@{inflection}!camelize@{camelize}}
+\index{camelize@{camelize}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{camelize()}{camelize()}}
+{\footnotesize\ttfamily \label{namespaceinflection_ad26387e0f53697dd876f72481bbd8bf0} 
+str inflection.\+camelize (\begin{DoxyParamCaption}\item[{str}]{string}{, }\item[{bool }]{uppercase\+\_\+first\+\_\+letter}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert strings to CamelCase.
+
+Examples::
+
+    >>> camelize("device_type")
+    'DeviceType'
+    >>> camelize("device_type", False)
+    'deviceType'
+
+:func:`camelize` can be thought of as a inverse of :func:`underscore`,
+although there are some cases where that does not hold::
+
+    >>> camelize(underscore("IOError"))
+    'IoError'
+
+:param uppercase_first_letter: if set to `True` :func:`camelize` converts
+    strings to UpperCamelCase. If set to `False` :func:`camelize` produces
+    lowerCamelCase. Defaults to `True`.
+\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_a7f8787bd36e1c62f7ea5c64d298e0ab1}\index{inflection@{inflection}!dasherize@{dasherize}}
+\index{dasherize@{dasherize}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{dasherize()}{dasherize()}}
+{\footnotesize\ttfamily \label{namespaceinflection_a7f8787bd36e1c62f7ea5c64d298e0ab1} 
+str inflection.\+dasherize (\begin{DoxyParamCaption}\item[{str}]{word}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace underscores with dashes in the string.
+
+Example::
+
+    >>> dasherize("puni_puni")
+    'puni-puni'\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_a153e862cbf802be3b6f56c1d6f28aa6e}\index{inflection@{inflection}!humanize@{humanize}}
+\index{humanize@{humanize}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{humanize()}{humanize()}}
+{\footnotesize\ttfamily \label{namespaceinflection_a153e862cbf802be3b6f56c1d6f28aa6e} 
+str inflection.\+humanize (\begin{DoxyParamCaption}\item[{str}]{word}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Capitalize the first word and turn underscores into spaces and strip a
+trailing ``"_id"``, if any. Like :func:`titleize`, this is meant for
+creating pretty output.
+
+Examples::
+
+    >>> humanize("employee_salary")
+    'Employee salary'
+    >>> humanize("author_id")
+    'Author'\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_ac29bd5118cca160a258fc90d97632e7c}\index{inflection@{inflection}!ordinal@{ordinal}}
+\index{ordinal@{ordinal}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{ordinal()}{ordinal()}}
+{\footnotesize\ttfamily \label{namespaceinflection_ac29bd5118cca160a258fc90d97632e7c} 
+str inflection.\+ordinal (\begin{DoxyParamCaption}\item[{int}]{number}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the suffix that should be added to a number to denote the position
+in an ordered sequence such as 1st, 2nd, 3rd, 4th.
+
+Examples::
+
+    >>> ordinal(1)
+    'st'
+    >>> ordinal(2)
+    'nd'
+    >>> ordinal(1002)
+    'nd'
+    >>> ordinal(1003)
+    'rd'
+    >>> ordinal(-11)
+    'th'
+    >>> ordinal(-1021)
+    'st'\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_a00a0f5b2de0946d1e0885ab156d1e438}\index{inflection@{inflection}!ordinalize@{ordinalize}}
+\index{ordinalize@{ordinalize}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{ordinalize()}{ordinalize()}}
+{\footnotesize\ttfamily \label{namespaceinflection_a00a0f5b2de0946d1e0885ab156d1e438} 
+str inflection.\+ordinalize (\begin{DoxyParamCaption}\item[{int}]{number}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Turn a number into an ordinal string used to denote the position in an
+ordered sequence such as 1st, 2nd, 3rd, 4th.
+
+Examples::
+
+    >>> ordinalize(1)
+    '1st'
+    >>> ordinalize(2)
+    '2nd'
+    >>> ordinalize(1002)
+    '1002nd'
+    >>> ordinalize(1003)
+    '1003rd'
+    >>> ordinalize(-11)
+    '-11th'
+    >>> ordinalize(-1021)
+    '-1021st'\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_a6b405da0e3786fb4258a2767522e31c8}\index{inflection@{inflection}!parameterize@{parameterize}}
+\index{parameterize@{parameterize}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{parameterize()}{parameterize()}}
+{\footnotesize\ttfamily \label{namespaceinflection_a6b405da0e3786fb4258a2767522e31c8} 
+str inflection.\+parameterize (\begin{DoxyParamCaption}\item[{str}]{string}{, }\item[{str }]{separator}{ = {\ttfamily \textquotesingle{}-\/\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace special characters in a string so that it may be used as part of a
+'pretty' URL.
+
+Example::
+
+    >>> parameterize(u"Donald E. Knuth")
+    'donald-e-knuth'\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_aae2d217ab805f3e5330d19bd9e9194d9}\index{inflection@{inflection}!pluralize@{pluralize}}
+\index{pluralize@{pluralize}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{pluralize()}{pluralize()}}
+{\footnotesize\ttfamily \label{namespaceinflection_aae2d217ab805f3e5330d19bd9e9194d9} 
+str inflection.\+pluralize (\begin{DoxyParamCaption}\item[{str}]{word}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the plural form of a word.
+
+Examples::
+
+    >>> pluralize("posts")
+    'posts'
+    >>> pluralize("octopus")
+    'octopi'
+    >>> pluralize("sheep")
+    'sheep'
+    >>> pluralize("CamelOctopus")
+    'CamelOctopi'\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_ad586547997452469908c66123dc8840a}\index{inflection@{inflection}!singularize@{singularize}}
+\index{singularize@{singularize}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{singularize()}{singularize()}}
+{\footnotesize\ttfamily \label{namespaceinflection_ad586547997452469908c66123dc8840a} 
+str inflection.\+singularize (\begin{DoxyParamCaption}\item[{str}]{word}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the singular form of a word, the reverse of :func:`pluralize`.
+
+Examples::
+
+    >>> singularize("posts")
+    'post'
+    >>> singularize("octopi")
+    'octopus'
+    >>> singularize("sheep")
+    'sheep'
+    >>> singularize("word")
+    'word'
+    >>> singularize("CamelOctopi")
+    'CamelOctopus'\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_a89069691986d07f1d121e6dac8b8e969}\index{inflection@{inflection}!tableize@{tableize}}
+\index{tableize@{tableize}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{tableize()}{tableize()}}
+{\footnotesize\ttfamily \label{namespaceinflection_a89069691986d07f1d121e6dac8b8e969} 
+str inflection.\+tableize (\begin{DoxyParamCaption}\item[{str}]{word}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create the name of a table like Rails does for models to table names. This
+method uses the :func:`pluralize` method on the last word in the string.
+
+Examples::
+
+    >>> tableize('RawScaledScorer')
+    'raw_scaled_scorers'
+    >>> tableize('egg_and_ham')
+    'egg_and_hams'
+    >>> tableize('fancyCategory')
+    'fancy_categories'
+\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_a27fae6599b37eb3ae7727276693bf554}\index{inflection@{inflection}!titleize@{titleize}}
+\index{titleize@{titleize}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{titleize()}{titleize()}}
+{\footnotesize\ttfamily \label{namespaceinflection_a27fae6599b37eb3ae7727276693bf554} 
+str inflection.\+titleize (\begin{DoxyParamCaption}\item[{str}]{word}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Capitalize all the words and replace some characters in the string to
+create a nicer looking title. :func:`titleize` is meant for creating pretty
+output.
+
+Examples::
+
+  >>> titleize("man from the boondocks")
+  'Man From The Boondocks'
+  >>> titleize("x-men: the last stand")
+  'X Men: The Last Stand'
+  >>> titleize("TheManWithoutAPast")
+  'The Man Without A Past'
+  >>> titleize("raiders_of_the_lost_ark")
+  'Raiders Of The Lost Ark'\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_ab8a62dcfd80aff2bb8c3b4f92a9e9b3f}\index{inflection@{inflection}!transliterate@{transliterate}}
+\index{transliterate@{transliterate}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{transliterate()}{transliterate()}}
+{\footnotesize\ttfamily \label{namespaceinflection_ab8a62dcfd80aff2bb8c3b4f92a9e9b3f} 
+str inflection.\+transliterate (\begin{DoxyParamCaption}\item[{str}]{string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace non-ASCII characters with an ASCII approximation. If no
+approximation exists, the non-ASCII character is ignored. The string must
+be ``unicode``.
+
+Examples::
+
+    >>> transliterate('älämölö')
+    'alamolo'
+    >>> transliterate('Ærøskøbing')
+    'rskbing'\end{DoxyVerb}
+ \Hypertarget{namespaceinflection_ac6cbe0541f2b06eda58f7d2a26f43207}\index{inflection@{inflection}!underscore@{underscore}}
+\index{underscore@{underscore}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{underscore()}{underscore()}}
+{\footnotesize\ttfamily \label{namespaceinflection_ac6cbe0541f2b06eda58f7d2a26f43207} 
+str inflection.\+underscore (\begin{DoxyParamCaption}\item[{str}]{word}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make an underscored, lowercase form from the expression in the string.
+
+Example::
+
+    >>> underscore("DeviceType")
+    'device_type'
+
+As a rule of thumb you can think of :func:`underscore` as the inverse of
+:func:`camelize`, though there are cases where that does not hold::
+
+    >>> camelize(underscore("IOError"))
+    'IoError'\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceinflection_a698005f2103c6bee354cbfab5bca7969}\index{inflection@{inflection}!PLURALS@{PLURALS}}
+\index{PLURALS@{PLURALS}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{PLURALS}{PLURALS}}
+{\footnotesize\ttfamily \label{namespaceinflection_a698005f2103c6bee354cbfab5bca7969} 
+list inflection.\+PLURALS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(quiz)\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1zes'}),}
+\DoxyCodeLine{00003\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)\string^(oxen)\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1'}),}
+\DoxyCodeLine{00004\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)\string^(ox)\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1en'}),}
+\DoxyCodeLine{00005\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(m|l)ice\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1ice'}),}
+\DoxyCodeLine{00006\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(m|l)ouse\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1ice'}),}
+\DoxyCodeLine{00007\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(passer)s?by\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1sby'}),}
+\DoxyCodeLine{00008\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(matr|vert|ind)(?:ix|ex)\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1ices'}),}
+\DoxyCodeLine{00009\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(x|ch|ss|sh)\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1es'}),}
+\DoxyCodeLine{00010\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)([\string^aeiouy]|qu)y\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1ies'}),}
+\DoxyCodeLine{00011\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(hive)\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1s'}),}
+\DoxyCodeLine{00012\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)([lr])f\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1ves'}),}
+\DoxyCodeLine{00013\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)([\string^f])fe\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1ves'}),}
+\DoxyCodeLine{00014\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)sis\$"{}},\ \textcolor{stringliteral}{'ses'}),}
+\DoxyCodeLine{00015\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)([ti])a\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1a'}),}
+\DoxyCodeLine{00016\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)([ti])um\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1a'}),}
+\DoxyCodeLine{00017\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(buffal|potat|tomat)o\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1oes'}),}
+\DoxyCodeLine{00018\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(bu)s\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1ses'}),}
+\DoxyCodeLine{00019\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(alias|status)\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1es'}),}
+\DoxyCodeLine{00020\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(octop|vir)i\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1i'}),}
+\DoxyCodeLine{00021\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)(octop|vir)us\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1i'}),}
+\DoxyCodeLine{00022\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)\string^(ax|test)is\$"{}},\ \textcolor{stringliteral}{r'\(\backslash\)1es'}),}
+\DoxyCodeLine{00023\ \ \ \ \ (\textcolor{stringliteral}{r"{}(?i)s\$"{}},\ \textcolor{stringliteral}{'s'}),}
+\DoxyCodeLine{00024\ \ \ \ \ (\textcolor{stringliteral}{r"{}\$"{}},\ \textcolor{stringliteral}{'s'}),}
+\DoxyCodeLine{00025\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceinflection_a50225124e422f3cb2044b13629fca0f9}\index{inflection@{inflection}!UNCOUNTABLES@{UNCOUNTABLES}}
+\index{UNCOUNTABLES@{UNCOUNTABLES}!inflection@{inflection}}
+\doxysubsubsection{\texorpdfstring{UNCOUNTABLES}{UNCOUNTABLES}}
+{\footnotesize\ttfamily \label{namespaceinflection_a50225124e422f3cb2044b13629fca0f9} 
+dict inflection.\+UNCOUNTABLES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'equipment'},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'fish'},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'information'},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'jeans'},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{'money'},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{'rice'},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{'series'},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{'sheep'},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{'species'}\}}
+
+\end{DoxyCode}

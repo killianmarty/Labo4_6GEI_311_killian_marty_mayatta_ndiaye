@@ -1,0 +1,39 @@
+\doxysection{werkzeug.\+datastructures.\+\_\+omd\+\_\+bucket Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1__omd__bucket}{}\label{classwerkzeug_1_1datastructures_1_1__omd__bucket}\index{werkzeug.datastructures.\_omd\_bucket@{werkzeug.datastructures.\_omd\_bucket}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1__omd__bucket_ab22f6804e89a9487b5581667660932db}\label{classwerkzeug_1_1datastructures_1_1__omd__bucket_ab22f6804e89a9487b5581667660932db} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, omd, key, value)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1__omd__bucket_a2e9501dbf60a179711b371b3be3317bf}\label{classwerkzeug_1_1datastructures_1_1__omd__bucket_a2e9501dbf60a179711b371b3be3317bf} 
+{\bfseries unlink} (self, omd)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1__omd__bucket_a9916b590eb83a814166efdfd5926fb04}\label{classwerkzeug_1_1datastructures_1_1__omd__bucket_a9916b590eb83a814166efdfd5926fb04} 
+{\bfseries prev} = omd.\+\_\+last\+\_\+bucket
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1__omd__bucket_ae95dc617390a3bf7de71e2712802a8a5}\label{classwerkzeug_1_1datastructures_1_1__omd__bucket_ae95dc617390a3bf7de71e2712802a8a5} 
+{\bfseries key} = key
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1__omd__bucket_ab4c9f629355dbfe534f3c5abb0634e6b}\label{classwerkzeug_1_1datastructures_1_1__omd__bucket_ab4c9f629355dbfe534f3c5abb0634e6b} 
+{\bfseries value} = value
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1__omd__bucket_ad8c12cd1753dca8df5776f13bea71862}\label{classwerkzeug_1_1datastructures_1_1__omd__bucket_ad8c12cd1753dca8df5776f13bea71862} 
+{\bfseries next} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wraps values in the :class:`OrderedMultiDict`.  This makes it
+possible to keep an order over multiple different keys.  It requires
+a lot of extra memory and slows down access a lot, but makes it
+possible to access elements in O(1) and iterate in O(n).
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/datastructures.\+py\end{DoxyCompactItemize}

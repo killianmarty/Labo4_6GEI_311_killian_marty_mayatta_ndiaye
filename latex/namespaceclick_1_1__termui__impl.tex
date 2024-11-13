@@ -1,0 +1,85 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage click.\+\_\+termui\+\_\+impl}
+\hypertarget{namespaceclick_1_1__termui__impl}{}\label{namespaceclick_1_1__termui__impl}\index{click.\_termui\_impl@{click.\_termui\_impl}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classclick_1_1__termui__impl_1_1_editor}{Editor}}
+\item 
+class \mbox{\hyperlink{classclick_1_1__termui__impl_1_1_progress_bar}{Progress\+Bar}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespaceclick_1_1__termui__impl_a9308877f6e95f3cb607408288fc16318}{pager}} (t.\+Iterable\mbox{[}str\mbox{]} generator, t.\+Optional\mbox{[}bool\mbox{]} color=None)
+\item 
+None \mbox{\hyperlink{namespaceclick_1_1__termui__impl_a6d57fc1e4de845691a520475a28b9ee1}{\+\_\+pipepager}} (t.\+Iterable\mbox{[}str\mbox{]} generator, str cmd, t.\+Optional\mbox{[}bool\mbox{]} color)
+\item 
+None \mbox{\hyperlink{namespaceclick_1_1__termui__impl_ac5d6582ed98d6d7eedab310582d0a727}{\+\_\+tempfilepager}} (t.\+Iterable\mbox{[}str\mbox{]} generator, str cmd, t.\+Optional\mbox{[}bool\mbox{]} color)
+\item 
+None \mbox{\hyperlink{namespaceclick_1_1__termui__impl_a667de5af9bce7d463b243d46aa042c9a}{\+\_\+nullpager}} (t.\+Text\+IO stream, t.\+Iterable\mbox{[}str\mbox{]} generator, t.\+Optional\mbox{[}bool\mbox{]} color)
+\item 
+\Hypertarget{namespaceclick_1_1__termui__impl_a919f6e51bd79f36d6e97d50c86bd8346}\label{namespaceclick_1_1__termui__impl_a919f6e51bd79f36d6e97d50c86bd8346} 
+int {\bfseries open\+\_\+url} (str url, bool wait=False, bool locate=False)
+\item 
+\Hypertarget{namespaceclick_1_1__termui__impl_af61904f40a6c3723d0b4ece1a1e06f69}\label{namespaceclick_1_1__termui__impl_af61904f40a6c3723d0b4ece1a1e06f69} 
+t.\+Optional\mbox{[}Base\+Exception\mbox{]} {\bfseries \+\_\+translate\+\_\+ch\+\_\+to\+\_\+exc} (str ch)
+\item 
+\Hypertarget{namespaceclick_1_1__termui__impl_a882ce892cd5f705508c71e08d0211859}\label{namespaceclick_1_1__termui__impl_a882ce892cd5f705508c71e08d0211859} 
+t.\+Iterator\mbox{[}int\mbox{]} {\bfseries raw\+\_\+terminal} ()
+\item 
+\Hypertarget{namespaceclick_1_1__termui__impl_aea3c3665c840691a7fabef5d520adeeb}\label{namespaceclick_1_1__termui__impl_aea3c3665c840691a7fabef5d520adeeb} 
+str {\bfseries getchar} (bool echo)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceclick_1_1__termui__impl_ac0511899445fdcae7986b17aeef8d965}\label{namespaceclick_1_1__termui__impl_ac0511899445fdcae7986b17aeef8d965} 
+{\bfseries V} = t.\+Type\+Var("{}V"{})
+\item 
+\Hypertarget{namespaceclick_1_1__termui__impl_a4b873b50b084ff4742ba81e191cfc844}\label{namespaceclick_1_1__termui__impl_a4b873b50b084ff4742ba81e191cfc844} 
+str {\bfseries BEFORE\+\_\+\+BAR} = "{}\textbackslash{}r"{}
+\item 
+\Hypertarget{namespaceclick_1_1__termui__impl_a8b90f7729e1acb693bd0354dfce2e4a9}\label{namespaceclick_1_1__termui__impl_a8b90f7729e1acb693bd0354dfce2e4a9} 
+str {\bfseries AFTER\+\_\+\+BAR} = "{}\textbackslash{}n"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This module contains implementations for the termui module. To keep the
+import time of Click down, some infrequently used functionality is
+placed in this module and only imported as needed.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespaceclick_1_1__termui__impl_a667de5af9bce7d463b243d46aa042c9a}\index{click.\_termui\_impl@{click.\_termui\_impl}!\_nullpager@{\_nullpager}}
+\index{\_nullpager@{\_nullpager}!click.\_termui\_impl@{click.\_termui\_impl}}
+\doxysubsubsection{\texorpdfstring{\_nullpager()}{\_nullpager()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__termui__impl_a667de5af9bce7d463b243d46aa042c9a} 
+ None click.\+\_\+termui\+\_\+impl.\+\_\+nullpager (\begin{DoxyParamCaption}\item[{t.\+Text\+IO}]{stream}{, }\item[{t.\+Iterable\mbox{[}str\mbox{]}}]{generator}{, }\item[{t.\+Optional\mbox{[}bool\mbox{]} }]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Simply print unformatted text.  This is the ultimate fallback.\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1__termui__impl_a6d57fc1e4de845691a520475a28b9ee1}\index{click.\_termui\_impl@{click.\_termui\_impl}!\_pipepager@{\_pipepager}}
+\index{\_pipepager@{\_pipepager}!click.\_termui\_impl@{click.\_termui\_impl}}
+\doxysubsubsection{\texorpdfstring{\_pipepager()}{\_pipepager()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__termui__impl_a6d57fc1e4de845691a520475a28b9ee1} 
+ None click.\+\_\+termui\+\_\+impl.\+\_\+pipepager (\begin{DoxyParamCaption}\item[{t.\+Iterable\mbox{[}str\mbox{]}}]{generator}{, }\item[{str}]{cmd}{, }\item[{t.\+Optional\mbox{[}bool\mbox{]}}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Page through text by feeding it to another program.  Invoking a
+pager through this might support colors.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1__termui__impl_ac5d6582ed98d6d7eedab310582d0a727}\index{click.\_termui\_impl@{click.\_termui\_impl}!\_tempfilepager@{\_tempfilepager}}
+\index{\_tempfilepager@{\_tempfilepager}!click.\_termui\_impl@{click.\_termui\_impl}}
+\doxysubsubsection{\texorpdfstring{\_tempfilepager()}{\_tempfilepager()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__termui__impl_ac5d6582ed98d6d7eedab310582d0a727} 
+ None click.\+\_\+termui\+\_\+impl.\+\_\+tempfilepager (\begin{DoxyParamCaption}\item[{t.\+Iterable\mbox{[}str\mbox{]}}]{generator}{, }\item[{str}]{cmd}{, }\item[{t.\+Optional\mbox{[}bool\mbox{]} }]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Page through text by invoking a program on a temporary file.\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1__termui__impl_a9308877f6e95f3cb607408288fc16318}\index{click.\_termui\_impl@{click.\_termui\_impl}!pager@{pager}}
+\index{pager@{pager}!click.\_termui\_impl@{click.\_termui\_impl}}
+\doxysubsubsection{\texorpdfstring{pager()}{pager()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__termui__impl_a9308877f6e95f3cb607408288fc16318} 
+ None click.\+\_\+termui\+\_\+impl.\+pager (\begin{DoxyParamCaption}\item[{t.\+Iterable\mbox{[}str\mbox{]}}]{generator}{, }\item[{t.\+Optional\mbox{[}bool\mbox{]} }]{color}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decide what method to use for paging through text.\end{DoxyVerb}
+ 

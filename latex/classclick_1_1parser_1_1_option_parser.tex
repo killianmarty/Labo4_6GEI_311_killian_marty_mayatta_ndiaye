@@ -1,0 +1,122 @@
+\doxysection{Référence de la classe click.\+parser.\+Option\+Parser}
+\hypertarget{classclick_1_1parser_1_1_option_parser}{}\label{classclick_1_1parser_1_1_option_parser}\index{click.parser.OptionParser@{click.parser.OptionParser}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a6704dbd0b0cea780769a76805befadbf}\label{classclick_1_1parser_1_1_option_parser_a6704dbd0b0cea780769a76805befadbf} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx=None)
+\item 
+None \mbox{\hyperlink{classclick_1_1parser_1_1_option_parser_aec4e946bf73d4c658995f9b09ccf08b0}{add\+\_\+option}} (self, "{}Core\+Option"{} obj, t.\+Sequence\mbox{[}str\mbox{]} opts, t.\+Optional\mbox{[}str\mbox{]} dest, t.\+Optional\mbox{[}str\mbox{]} action=None, int nargs=1, t.\+Optional\mbox{[}t.\+Any\mbox{]} const=None)
+\item 
+None \mbox{\hyperlink{classclick_1_1parser_1_1_option_parser_a08670e5bb461b36bb0f9b935317e7f2a}{add\+\_\+argument}} (self, "{}Core\+Argument"{} obj, t.\+Optional\mbox{[}str\mbox{]} dest, int nargs=1)
+\item 
+t.\+Tuple\mbox{[}t.\+Dict\mbox{[}str, t.\+Any\mbox{]}, t.\+List\mbox{[}str\mbox{]}, t.\+List\mbox{[}"{}Core\+Parameter"{}\mbox{]}\mbox{]} \mbox{\hyperlink{classclick_1_1parser_1_1_option_parser_ab8906d7d8f13cdc041a3d7f203b6df33}{parse\+\_\+args}} (self, t.\+List\mbox{[}str\mbox{]} args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_adee6d08059ec92e4234d5b00b608e33b}\label{classclick_1_1parser_1_1_option_parser_adee6d08059ec92e4234d5b00b608e33b} 
+{\bfseries ctx} = ctx
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a320b4a3e8deab61561dc1252441caf28}\label{classclick_1_1parser_1_1_option_parser_a320b4a3e8deab61561dc1252441caf28} 
+bool {\bfseries allow\+\_\+interspersed\+\_\+args} = True
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a06a4764edea151630c94f9b9f476bc17}\label{classclick_1_1parser_1_1_option_parser_a06a4764edea151630c94f9b9f476bc17} 
+bool {\bfseries ignore\+\_\+unknown\+\_\+options} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a89ddaec17ffde71100115ce2bb1a60c4}\label{classclick_1_1parser_1_1_option_parser_a89ddaec17ffde71100115ce2bb1a60c4} 
+None {\bfseries \+\_\+process\+\_\+args\+\_\+for\+\_\+args} (self, \mbox{\hyperlink{classclick_1_1parser_1_1_parsing_state}{Parsing\+State}} state)
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a2d3c89c4a70ff47390116d605499d5ef}\label{classclick_1_1parser_1_1_option_parser_a2d3c89c4a70ff47390116d605499d5ef} 
+None {\bfseries \+\_\+process\+\_\+args\+\_\+for\+\_\+options} (self, \mbox{\hyperlink{classclick_1_1parser_1_1_parsing_state}{Parsing\+State}} state)
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a9d9506ccf5a43b3a539a889c61f90d9f}\label{classclick_1_1parser_1_1_option_parser_a9d9506ccf5a43b3a539a889c61f90d9f} 
+None {\bfseries \+\_\+match\+\_\+long\+\_\+opt} (self, str opt, t.\+Optional\mbox{[}str\mbox{]} explicit\+\_\+value, \mbox{\hyperlink{classclick_1_1parser_1_1_parsing_state}{Parsing\+State}} state)
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a637378053a1bdf090ef389141a20aae6}\label{classclick_1_1parser_1_1_option_parser_a637378053a1bdf090ef389141a20aae6} 
+None {\bfseries \+\_\+match\+\_\+short\+\_\+opt} (self, str arg, \mbox{\hyperlink{classclick_1_1parser_1_1_parsing_state}{Parsing\+State}} state)
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a2e7d58862cec772bf228f2a7d85d236a}\label{classclick_1_1parser_1_1_option_parser_a2e7d58862cec772bf228f2a7d85d236a} 
+t.\+Any {\bfseries \+\_\+get\+\_\+value\+\_\+from\+\_\+state} (self, str option\+\_\+name, \mbox{\hyperlink{classclick_1_1core_1_1_option}{Option}} option, \mbox{\hyperlink{classclick_1_1parser_1_1_parsing_state}{Parsing\+State}} state)
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a411021dc9ee69c46a882d23c2c7a6adc}\label{classclick_1_1parser_1_1_option_parser_a411021dc9ee69c46a882d23c2c7a6adc} 
+None {\bfseries \+\_\+process\+\_\+opts} (self, str arg, \mbox{\hyperlink{classclick_1_1parser_1_1_parsing_state}{Parsing\+State}} state)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a5f360bf177e5375d6e720d7b0602da67}\label{classclick_1_1parser_1_1_option_parser_a5f360bf177e5375d6e720d7b0602da67} 
+dict {\bfseries \+\_\+short\+\_\+opt} = \{\}
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a9c654ea3eeb177943e06a69529dd8c5b}\label{classclick_1_1parser_1_1_option_parser_a9c654ea3eeb177943e06a69529dd8c5b} 
+dict {\bfseries \+\_\+long\+\_\+opt} = \{\}
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a365ad827eaf68c81532886674887b7c5}\label{classclick_1_1parser_1_1_option_parser_a365ad827eaf68c81532886674887b7c5} 
+dict {\bfseries \+\_\+opt\+\_\+prefixes} = \{"{}-\/"{}, "{}-\/-\/"{}\}
+\item 
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a8d92cf1ccfb5ecc9b3d758cdf3ffbbbf}\label{classclick_1_1parser_1_1_option_parser_a8d92cf1ccfb5ecc9b3d758cdf3ffbbbf} 
+list {\bfseries \+\_\+args} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}The option parser is an internal class that is ultimately used to
+parse options and arguments.  It's modelled after optparse and brings
+a similar but vastly simplified API.  It should generally not be used
+directly as the high level Click classes wrap it for you.
+
+It's not nearly as extensible as optparse or argparse as it does not
+implement features that are implemented on a higher level (such as
+types or defaults).
+
+:param ctx: optionally the :class:`~click.Context` where this parser
+            should go with.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classclick_1_1parser_1_1_option_parser_a08670e5bb461b36bb0f9b935317e7f2a}\index{click.parser.OptionParser@{click.parser.OptionParser}!add\_argument@{add\_argument}}
+\index{add\_argument@{add\_argument}!click.parser.OptionParser@{click.parser.OptionParser}}
+\doxysubsubsection{\texorpdfstring{add\_argument()}{add\_argument()}}
+{\footnotesize\ttfamily \label{classclick_1_1parser_1_1_option_parser_a08670e5bb461b36bb0f9b935317e7f2a} 
+ None click.\+parser.\+Option\+Parser.\+add\+\_\+argument (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Core\+Argument"{}}]{obj}{, }\item[{t.\+Optional\mbox{[}str\mbox{]}}]{dest}{, }\item[{int }]{nargs}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a positional argument named `dest` to the parser.
+
+The `obj` can be used to identify the option in the order list
+that is returned from the parser.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1parser_1_1_option_parser_aec4e946bf73d4c658995f9b09ccf08b0}\index{click.parser.OptionParser@{click.parser.OptionParser}!add\_option@{add\_option}}
+\index{add\_option@{add\_option}!click.parser.OptionParser@{click.parser.OptionParser}}
+\doxysubsubsection{\texorpdfstring{add\_option()}{add\_option()}}
+{\footnotesize\ttfamily \label{classclick_1_1parser_1_1_option_parser_aec4e946bf73d4c658995f9b09ccf08b0} 
+ None click.\+parser.\+Option\+Parser.\+add\+\_\+option (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Core\+Option"{}}]{obj}{, }\item[{t.\+Sequence\mbox{[}str\mbox{]}}]{opts}{, }\item[{t.\+Optional\mbox{[}str\mbox{]}}]{dest}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{action}{ = {\ttfamily None}, }\item[{int }]{nargs}{ = {\ttfamily 1}, }\item[{t.\+Optional\mbox{[}t.\+Any\mbox{]} }]{const}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a new option named `dest` to the parser.  The destination
+is not inferred (unlike with optparse) and needs to be explicitly
+provided.  Action can be any of ``store``, ``store_const``,
+``append``, ``append_const`` or ``count``.
+
+The `obj` can be used to identify the option in the order list
+that is returned from the parser.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1parser_1_1_option_parser_ab8906d7d8f13cdc041a3d7f203b6df33}\index{click.parser.OptionParser@{click.parser.OptionParser}!parse\_args@{parse\_args}}
+\index{parse\_args@{parse\_args}!click.parser.OptionParser@{click.parser.OptionParser}}
+\doxysubsubsection{\texorpdfstring{parse\_args()}{parse\_args()}}
+{\footnotesize\ttfamily \label{classclick_1_1parser_1_1_option_parser_ab8906d7d8f13cdc041a3d7f203b6df33} 
+ t.\+Tuple\mbox{[}t.\+Dict\mbox{[}str, t.\+Any\mbox{]}, t.\+List\mbox{[}str\mbox{]}, t.\+List\mbox{[}"{}Core\+Parameter"{}\mbox{]}\mbox{]} click.\+parser.\+Option\+Parser.\+parse\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+List\mbox{[}str\mbox{]}     }]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses positional arguments and returns ``(values, args, order)``
+for the parsed options and arguments as well as the leftover
+arguments if there are any.  The order is a list of objects as they
+appear on the command line.  If arguments appear multiple times they
+will be memorized multiple times as well.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/parser.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,30 @@
+\doxysection{Référence de la classe connexion.\+jsonifier.\+JSONEncoder}
+\hypertarget{classconnexion_1_1jsonifier_1_1_j_s_o_n_encoder}{}\label{classconnexion_1_1jsonifier_1_1_j_s_o_n_encoder}\index{connexion.jsonifier.JSONEncoder@{connexion.jsonifier.JSONEncoder}}
+Graphe d\textquotesingle{}héritage de connexion.\+jsonifier.\+JSONEncoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconnexion_1_1jsonifier_1_1_j_s_o_n_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1jsonifier_1_1_j_s_o_n_encoder_a1502424b8b05ad93987d3bd13cc90501}\label{classconnexion_1_1jsonifier_1_1_j_s_o_n_encoder_a1502424b8b05ad93987d3bd13cc90501} 
+{\bfseries default} (self, o)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}The default Connexion JSON encoder. Handles extra types compared to the
+built-in :class:`json.JSONEncoder`.
+
+-   :class:`datetime.datetime` and :class:`datetime.date` are
+    serialized to :rfc:`822` strings. This is the same as the HTTP
+    date format.
+-   :class:`uuid.UUID` is serialized to a string.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/jsonifier.\+py\end{DoxyCompactItemize}

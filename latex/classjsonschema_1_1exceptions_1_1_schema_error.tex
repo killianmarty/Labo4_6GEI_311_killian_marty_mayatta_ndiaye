@@ -1,0 +1,91 @@
+\doxysection{jsonschema.\+exceptions.\+Schema\+Error Class Reference}
+\hypertarget{classjsonschema_1_1exceptions_1_1_schema_error}{}\label{classjsonschema_1_1exceptions_1_1_schema_error}\index{jsonschema.exceptions.SchemaError@{jsonschema.exceptions.SchemaError}}
+Inheritance diagram for jsonschema.\+exceptions.\+Schema\+Error\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classjsonschema_1_1exceptions_1_1_schema_error}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1exceptions_1_1_schema_error_a2c73ad460c411263a20a3bbe289564af}\label{classjsonschema_1_1exceptions_1_1_schema_error_a2c73ad460c411263a20a3bbe289564af} 
+str {\bfseries \+\_\+word\+\_\+for\+\_\+schema\+\_\+in\+\_\+error\+\_\+message} = "{}metaschema"{}
+\item 
+\Hypertarget{classjsonschema_1_1exceptions_1_1_schema_error_abf4d6678b9f81a44b96909214ca6292d}\label{classjsonschema_1_1exceptions_1_1_schema_error_abf4d6678b9f81a44b96909214ca6292d} 
+str {\bfseries \+\_\+word\+\_\+for\+\_\+instance\+\_\+in\+\_\+error\+\_\+message} = "{}schema"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1___error}{jsonschema.\+exceptions.\+\_\+\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+Class\+Var {\bfseries \+\_\+word\+\_\+for\+\_\+schema\+\_\+in\+\_\+error\+\_\+message} \mbox{[}str\mbox{]}
+\item 
+Class\+Var {\bfseries \+\_\+word\+\_\+for\+\_\+instance\+\_\+in\+\_\+error\+\_\+message} \mbox{[}str\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1___error}{jsonschema.\+exceptions.\+\_\+\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str message, str validator=\+\_\+unset, Iterable\mbox{[}str\texorpdfstring{$\vert$}{|}int\mbox{]} path=(), Exception\texorpdfstring{$\vert$}{|}None cause=None, context=(), Any validator\+\_\+value=\+\_\+unset, Any instance=\+\_\+unset, Mapping\mbox{[}str, Any\mbox{]}\texorpdfstring{$\vert$}{|}bool schema=\+\_\+unset, Iterable\mbox{[}str\texorpdfstring{$\vert$}{|}int\mbox{]} schema\+\_\+path=(), \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1___error}{\+\_\+\+Error}}\texorpdfstring{$\vert$}{|}None parent=None, \mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker}{\+\_\+types.\+Type\+Checker}} type\+\_\+checker=\+\_\+unset)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+{\bfseries create\+\_\+from} (cls, \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1___error}{\+\_\+\+Error}} other)
+\item 
+Sequence\mbox{[}str\texorpdfstring{$\vert$}{|}int\mbox{]} {\bfseries absolute\+\_\+path} (self)
+\item 
+Sequence\mbox{[}str\texorpdfstring{$\vert$}{|}int\mbox{]} {\bfseries absolute\+\_\+schema\+\_\+path} (self)
+\item 
+str {\bfseries json\+\_\+path} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1___error}{jsonschema.\+exceptions.\+\_\+\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries message} = message
+\item 
+{\bfseries path} = deque(path)
+\item 
+{\bfseries schema\+\_\+path} = deque(schema\+\_\+path)
+\item 
+{\bfseries context} = list(context)
+\item 
+{\bfseries cause} = cause
+\item 
+{\bfseries validator} = validator
+\item 
+{\bfseries validator\+\_\+value} = validator\+\_\+value
+\item 
+{\bfseries instance} = instance
+\item 
+{\bfseries schema} = schema
+\item 
+{\bfseries parent} = parent
+\item 
+{\bfseries absolute\+\_\+path}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1___error}{jsonschema.\+exceptions.\+\_\+\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+None {\bfseries \+\_\+set} (self, \mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker}{\+\_\+types.\+Type\+Checker}}\texorpdfstring{$\vert$}{|}None type\+\_\+checker=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+{\bfseries \+\_\+contents} (self)
+\item 
+bool {\bfseries \+\_\+matches\+\_\+type} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1___error}{jsonschema.\+exceptions.\+\_\+\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+type\+\_\+checker} = type\+\_\+checker
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A schema was invalid under its corresponding metaschema.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/jsonschema/exceptions.\+py\end{DoxyCompactItemize}

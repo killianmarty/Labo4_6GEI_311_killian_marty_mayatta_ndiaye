@@ -1,0 +1,160 @@
+\doxysection{pkg\+\_\+resources.\+Requirement Class Reference}
+\hypertarget{classpkg__resources_1_1_requirement}{}\label{classpkg__resources_1_1_requirement}\index{pkg\_resources.Requirement@{pkg\_resources.Requirement}}
+Inheritance diagram for pkg\+\_\+resources.\+Requirement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpkg__resources_1_1_requirement}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_requirement_a73f5a0a18f6cab93a0e8b6dda9c6e0df}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, requirement\+\_\+string)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_requirement_a6ad015d2483e1577595fd85a91868f00}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\Hypertarget{classpkg__resources_1_1_requirement_a2e87b7d008a9816ee93968418a012042}\label{classpkg__resources_1_1_requirement_a2e87b7d008a9816ee93968418a012042} 
+{\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, other)
+\item 
+\Hypertarget{classpkg__resources_1_1_requirement_a9203543a2f8f92b15480ea52e0ca6ead}\label{classpkg__resources_1_1_requirement_a9203543a2f8f92b15480ea52e0ca6ead} 
+{\bfseries \+\_\+\+\_\+contains\+\_\+\+\_\+} (self, item)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_requirement_a73bdfc20cc210aba9c23386309219079}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1_requirement_a212c2b0411a9640a17c202f586d247fe}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpackaging_1_1requirements_1_1_requirement}{packaging.\+requirements.\+Requirement}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpkg__resources_1_1_requirement_a6aace7a6d4415dd1e2c045d9c73c5f6d}\label{classpkg__resources_1_1_requirement_a6aace7a6d4415dd1e2c045d9c73c5f6d} 
+{\bfseries parse} (s)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpkg__resources_1_1_requirement_ae3d2f6723f48af3c5336b0dc92ea08b3}\label{classpkg__resources_1_1_requirement_ae3d2f6723f48af3c5336b0dc92ea08b3} 
+{\bfseries unsafe\+\_\+name} = self.\+name
+\item 
+\Hypertarget{classpkg__resources_1_1_requirement_a81a7e0b5b2f9b8f1fcd74c4e32e4ba6c}\label{classpkg__resources_1_1_requirement_a81a7e0b5b2f9b8f1fcd74c4e32e4ba6c} 
+{\bfseries project\+\_\+name}
+\item 
+\Hypertarget{classpkg__resources_1_1_requirement_a87c67bd2d8f19575cc4f0a5928b1cea9}\label{classpkg__resources_1_1_requirement_a87c67bd2d8f19575cc4f0a5928b1cea9} 
+{\bfseries key} = project\+\_\+name, project\+\_\+name.\+lower()
+\item 
+list \mbox{\hyperlink{classpkg__resources_1_1_requirement_a40ca0dd4c7836bdcec8890ed69de5e73}{specs}}
+\item 
+\Hypertarget{classpkg__resources_1_1_requirement_a6db71edd7cc700f63b3d0bfa715da67c}\label{classpkg__resources_1_1_requirement_a6db71edd7cc700f63b3d0bfa715da67c} 
+{\bfseries extras} = tuple(map(\mbox{\hyperlink{namespacepkg__resources_a20663ac6e8a00fe4998f001fb04238a0}{safe\+\_\+extra}}, self.\+extras))
+\item 
+tuple \mbox{\hyperlink{classpkg__resources_1_1_requirement_a0812e917ea5aa8cd9a0c8384f2f715f2}{hash\+Cmp}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpackaging_1_1requirements_1_1_requirement}{packaging.\+requirements.\+Requirement}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries name} = parsed.\+name
+\item 
+str\texorpdfstring{$\vert$}{|}None {\bfseries url} = parsed.\+url or None
+\item 
+set\mbox{[}str\mbox{]} {\bfseries extras} = set(parsed.\+extras or \mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{classpackaging_1_1specifiers_1_1_specifier_set}{Specifier\+Set}} {\bfseries specifier} = \mbox{\hyperlink{classpackaging_1_1specifiers_1_1_specifier_set}{Specifier\+Set}}(parsed.\+specifier)
+\item 
+\mbox{\hyperlink{classpackaging_1_1markers_1_1_marker}{Marker}}\texorpdfstring{$\vert$}{|}None {\bfseries marker} = None
+\item 
+str {\bfseries extras} = "{},"{}.join(sorted(self.\+extras))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpackaging_1_1requirements_1_1_requirement}{packaging.\+requirements.\+Requirement}}}
+\begin{DoxyCompactItemize}
+\item 
+Iterator\mbox{[}str\mbox{]} {\bfseries \+\_\+iter\+\_\+parts} (self, str name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpkg__resources_1_1_requirement_a73f5a0a18f6cab93a0e8b6dda9c6e0df}\index{pkg\_resources.Requirement@{pkg\_resources.Requirement}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pkg\_resources.Requirement@{pkg\_resources.Requirement}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_requirement_a73f5a0a18f6cab93a0e8b6dda9c6e0df} 
+pkg\+\_\+resources.\+Requirement.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{requirement\+\_\+string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}DO NOT CALL THIS UNDOCUMENTED METHOD; use Requirement.parse()!\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpackaging_1_1requirements_1_1_requirement}{packaging.\+requirements.\+Requirement}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpkg__resources_1_1_requirement_a6ad015d2483e1577595fd85a91868f00}\index{pkg\_resources.Requirement@{pkg\_resources.Requirement}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!pkg\_resources.Requirement@{pkg\_resources.Requirement}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_requirement_a6ad015d2483e1577595fd85a91868f00} 
+pkg\+\_\+resources.\+Requirement.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpackaging_1_1requirements_1_1_requirement}{packaging.\+requirements.\+Requirement}}.
+
+\Hypertarget{classpkg__resources_1_1_requirement_a73bdfc20cc210aba9c23386309219079}\index{pkg\_resources.Requirement@{pkg\_resources.Requirement}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!pkg\_resources.Requirement@{pkg\_resources.Requirement}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_requirement_a73bdfc20cc210aba9c23386309219079} 
+pkg\+\_\+resources.\+Requirement.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpackaging_1_1requirements_1_1_requirement}{packaging.\+requirements.\+Requirement}}.
+
+\Hypertarget{classpkg__resources_1_1_requirement_a212c2b0411a9640a17c202f586d247fe}\index{pkg\_resources.Requirement@{pkg\_resources.Requirement}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pkg\_resources.Requirement@{pkg\_resources.Requirement}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_requirement_a212c2b0411a9640a17c202f586d247fe} 
+pkg\+\_\+resources.\+Requirement.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpackaging_1_1requirements_1_1_requirement}{packaging.\+requirements.\+Requirement}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpkg__resources_1_1_requirement_a0812e917ea5aa8cd9a0c8384f2f715f2}\index{pkg\_resources.Requirement@{pkg\_resources.Requirement}!hashCmp@{hashCmp}}
+\index{hashCmp@{hashCmp}!pkg\_resources.Requirement@{pkg\_resources.Requirement}}
+\doxysubsubsection{\texorpdfstring{hashCmp}{hashCmp}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_requirement_a0812e917ea5aa8cd9a0c8384f2f715f2} 
+tuple pkg\+\_\+resources.\+Requirement.\+hash\+Cmp}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.key,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.url,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.specifier,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ frozenset(self.extras),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ str(self.marker)\ \textcolor{keywordflow}{if}\ self.marker\ \textcolor{keywordflow}{else}\ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpkg__resources_1_1_requirement_a40ca0dd4c7836bdcec8890ed69de5e73}\index{pkg\_resources.Requirement@{pkg\_resources.Requirement}!specs@{specs}}
+\index{specs@{specs}!pkg\_resources.Requirement@{pkg\_resources.Requirement}}
+\doxysubsubsection{\texorpdfstring{specs}{specs}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1_requirement_a40ca0dd4c7836bdcec8890ed69de5e73} 
+list pkg\+\_\+resources.\+Requirement.\+specs}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (spec.operator,\ spec.version)\ \textcolor{keywordflow}{for}\ spec\ \textcolor{keywordflow}{in}\ self.specifier]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pkg\+\_\+resources/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

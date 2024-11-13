@@ -1,0 +1,230 @@
+\chapter{swagger\+\_\+client.\+Contenu\+De\+Cours\+Api}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api}{}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api}\index{swagger\_client.ContenuDeCoursApi@{swagger\_client.ContenuDeCoursApi}}
+\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md4}%
+\Hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md4}%
+
+
+All URIs are relative to {\itshape \href{https://localhost}{\texttt{ https\+://localhost}}}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ HTTP request   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Method   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ HTTP request   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-3}
+\endhead
+\href{ContenuDeCoursApi.md\#cours_id_dossier_id_dossier_delete}{\texttt{ {\bfseries{cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+delete}}}}   &{\bfseries{DELETE}} /cours/\{id\}/dossier/\{id\+Dossier\}   &Supprime un dossier du cours    \\\cline{1-3}
+\href{ContenuDeCoursApi.md\#cours_id_dossier_id_dossier_get}{\texttt{ {\bfseries{cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+get}}}}   &{\bfseries{GET}} /cours/\{id\}/dossier/\{id\+Dossier\}   &Retourne un JSON du contenu du dossier    \\\cline{1-3}
+\href{ContenuDeCoursApi.md\#cours_id_dossier_id_dossier_post}{\texttt{ {\bfseries{cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+post}}}}   &{\bfseries{POST}} /cours/\{id\}/dossier/\{id\+Dossier\}   &Crée un nouveau dossier pour le cours    \\\cline{1-3}
+\href{ContenuDeCoursApi.md\#cours_id_fichier_id_fichier_delete}{\texttt{ {\bfseries{cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+delete}}}}   &{\bfseries{DELETE}} /cours/\{id\}/fichier/\{id\+Fichier\}   &Supprime un fichier du cours    \\\cline{1-3}
+\href{ContenuDeCoursApi.md\#cours_id_fichier_id_fichier_get}{\texttt{ {\bfseries{cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+get}}}}   &{\bfseries{GET}} /cours/\{id\}/fichier/\{id\+Fichier\}   &Retourne un fichier selon le chemin spécifié    \\\cline{1-3}
+\href{ContenuDeCoursApi.md\#cours_id_fichier_id_fichier_post}{\texttt{ {\bfseries{cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+post}}}}   &{\bfseries{POST}} /cours/\{id\}/fichier/\{id\+Fichier\}   &Télécharge un fichier pour le cours   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md5}{}\doxysection{\texorpdfstring{{\bfseries{cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+delete}}}{{\bfseries{cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+delete}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md5}
+\begin{quote}
+cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+delete(id, id\+\_\+dossier) \end{quote}
+Supprime un dossier du cours\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md6}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md6}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ \mbox{\hyperlink{classswagger__client_1_1api_1_1contenu__de__cours__api_1_1_contenu_de_cours_api}{swagger\_client.ContenuDeCoursApi}}()}
+\DoxyCodeLine{id\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{id\_dossier\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Supprime\ un\ dossier\ du\ cours}}
+\DoxyCodeLine{\ \ \ \ api\_instance.cours\_id\_dossier\_id\_dossier\_delete(id,\ id\_dossier)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ ContenuDeCoursApi-\/>cours\_id\_dossier\_id\_dossier\_delete:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md7}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md7}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|} {\bfseries{id\+\_\+dossier}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md8}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md8}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md9}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md9}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md10}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: Not defined
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md11}{}\doxysection{\texorpdfstring{{\bfseries{cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+get}}}{{\bfseries{cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+get}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md11}
+\begin{quote}
+cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+get(id, id\+\_\+dossier) \end{quote}
+Retourne un JSON du contenu du dossier\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md12}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md12}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ \mbox{\hyperlink{classswagger__client_1_1api_1_1contenu__de__cours__api_1_1_contenu_de_cours_api}{swagger\_client.ContenuDeCoursApi}}()}
+\DoxyCodeLine{id\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{id\_dossier\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Retourne\ un\ JSON\ du\ contenu\ du\ dossier}}
+\DoxyCodeLine{\ \ \ \ api\_instance.cours\_id\_dossier\_id\_dossier\_get(id,\ id\_dossier)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ ContenuDeCoursApi-\/>cours\_id\_dossier\_id\_dossier\_get:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md13}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md13}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|} {\bfseries{id\+\_\+dossier}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md14}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md14}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md15}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md15}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md16}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md16}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: Not defined
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md17}{}\doxysection{\texorpdfstring{{\bfseries{cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+post}}}{{\bfseries{cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+post}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md17}
+\begin{quote}
+cours\+\_\+id\+\_\+dossier\+\_\+id\+\_\+dossier\+\_\+post(id, id\+\_\+dossier) \end{quote}
+Crée un nouveau dossier pour le cours\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md18}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md18}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ \mbox{\hyperlink{classswagger__client_1_1api_1_1contenu__de__cours__api_1_1_contenu_de_cours_api}{swagger\_client.ContenuDeCoursApi}}()}
+\DoxyCodeLine{id\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{id\_dossier\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Crée\ un\ nouveau\ dossier\ pour\ le\ cours}}
+\DoxyCodeLine{\ \ \ \ api\_instance.cours\_id\_dossier\_id\_dossier\_post(id,\ id\_dossier)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ ContenuDeCoursApi-\/>cours\_id\_dossier\_id\_dossier\_post:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md19}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md19}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|} {\bfseries{id\+\_\+dossier}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md20}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md20}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md21}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md21}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md22}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: Not defined
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md23}{}\doxysection{\texorpdfstring{{\bfseries{cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+delete}}}{{\bfseries{cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+delete}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md23}
+\begin{quote}
+cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+delete(id, id\+\_\+fichier) \end{quote}
+Supprime un fichier du cours\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md24}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md24}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ \mbox{\hyperlink{classswagger__client_1_1api_1_1contenu__de__cours__api_1_1_contenu_de_cours_api}{swagger\_client.ContenuDeCoursApi}}()}
+\DoxyCodeLine{id\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{id\_fichier\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Supprime\ un\ fichier\ du\ cours}}
+\DoxyCodeLine{\ \ \ \ api\_instance.cours\_id\_fichier\_id\_fichier\_delete(id,\ id\_fichier)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ ContenuDeCoursApi-\/>cours\_id\_fichier\_id\_fichier\_delete:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md25}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md25}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|} {\bfseries{id\+\_\+fichier}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md26}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md26}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md27}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md28}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md28}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: Not defined
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md29}{}\doxysection{\texorpdfstring{{\bfseries{cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+get}}}{{\bfseries{cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+get}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md29}
+\begin{quote}
+cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+get(id, id\+\_\+fichier) \end{quote}
+Retourne un fichier selon le chemin spécifié\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md30}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ \mbox{\hyperlink{classswagger__client_1_1api_1_1contenu__de__cours__api_1_1_contenu_de_cours_api}{swagger\_client.ContenuDeCoursApi}}()}
+\DoxyCodeLine{id\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{id\_fichier\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Retourne\ un\ fichier\ selon\ le\ chemin\ spécifié}}
+\DoxyCodeLine{\ \ \ \ api\_instance.cours\_id\_fichier\_id\_fichier\_get(id,\ id\_fichier)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ ContenuDeCoursApi-\/>cours\_id\_fichier\_id\_fichier\_get:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md31}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md31}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|} {\bfseries{id\+\_\+fichier}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md32}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md32}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md33}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md33}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md34}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md34}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: Not defined
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md35}{}\doxysection{\texorpdfstring{{\bfseries{cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+post}}}{{\bfseries{cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+post}}}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md35}
+\begin{quote}
+cours\+\_\+id\+\_\+fichier\+\_\+id\+\_\+fichier\+\_\+post(id, id\+\_\+fichier) \end{quote}
+Télécharge un fichier pour le cours\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md36}{}\doxysubsubsection{\texorpdfstring{Example}{Example}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md36}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \_\_future\_\_\ \textcolor{keyword}{import}\ print\_function}
+\DoxyCodeLine{\textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\textcolor{keyword}{import}\ swagger\_client}
+\DoxyCodeLine{\textcolor{keyword}{from}\ \mbox{\hyperlink{namespaceswagger__client_1_1rest}{swagger\_client.rest}}\ \textcolor{keyword}{import}\ ApiException}
+\DoxyCodeLine{\textcolor{keyword}{from}\ pprint\ \textcolor{keyword}{import}\ pprint}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{\#\ create\ an\ instance\ of\ the\ API\ class}}
+\DoxyCodeLine{api\_instance\ =\ \mbox{\hyperlink{classswagger__client_1_1api_1_1contenu__de__cours__api_1_1_contenu_de_cours_api}{swagger\_client.ContenuDeCoursApi}}()}
+\DoxyCodeLine{id\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{id\_fichier\ =\ 56\ \textcolor{comment}{\#\ int\ |\ }}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Télécharge\ un\ fichier\ pour\ le\ cours}}
+\DoxyCodeLine{\ \ \ \ api\_instance.cours\_id\_fichier\_id\_fichier\_post(id,\ id\_fichier)}
+\DoxyCodeLine{\textcolor{keywordflow}{except}\ ApiException\ \textcolor{keyword}{as}\ e:}
+\DoxyCodeLine{\ \ \ \ print(\textcolor{stringliteral}{"{}Exception\ when\ calling\ ContenuDeCoursApi-\/>cours\_id\_fichier\_id\_fichier\_post:\ \%s\(\backslash\)n"{}}\ \%\ e)}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md37}{}\doxysubsubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md37}
+Name \texorpdfstring{$\vert$}{|} Type \texorpdfstring{$\vert$}{|} Description \texorpdfstring{$\vert$}{|} Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- \texorpdfstring{$\vert$}{|} -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- {\bfseries{id}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|} {\bfseries{id\+\_\+fichier}} \texorpdfstring{$\vert$}{|} {\bfseries{int}}\texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md38}{}\doxysubsubsection{\texorpdfstring{Return type}{Return type}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md38}
+void (empty response body)\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md39}{}\doxysubsubsection{\texorpdfstring{Authorization}{Authorization}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md39}
+No authorization required\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md40}{}\doxysubsubsection{\texorpdfstring{HTTP request headers}{HTTP request headers}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2docs_2_contenu_de_cours_api_autotoc_md40}
+
+\begin{DoxyItemize}
+\item {\bfseries{Content-\/\+Type}}\+: Not defined
+\item {\bfseries{Accept}}\+: Not defined
+\end{DoxyItemize}
+
+"{}"{} "{}\mbox{[}\+Back to top\mbox{]}"{} \href{../README.md\#documentation-for-api-endpoints}{\texttt{ \mbox{[}Back to API list\mbox{]}}} \href{../README.md\#documentation-for-models}{\texttt{ \mbox{[}Back to Model list\mbox{]}}} \doxysectlink{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{\mbox{[}Back to README\mbox{]}}{0} 

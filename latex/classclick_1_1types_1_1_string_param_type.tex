@@ -1,0 +1,85 @@
+\doxysection{Référence de la classe click.\+types.\+String\+Param\+Type}
+\hypertarget{classclick_1_1types_1_1_string_param_type}{}\label{classclick_1_1types_1_1_string_param_type}\index{click.types.StringParamType@{click.types.StringParamType}}
+Graphe d\textquotesingle{}héritage de click.\+types.\+String\+Param\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclick_1_1types_1_1_string_param_type}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \mbox{\hyperlink{classclick_1_1types_1_1_string_param_type_ad3559fbba4be63d1405f4c8deaf9fac5}{convert}} (self, t.\+Any value, t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]} param, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx)
+\item 
+\Hypertarget{classclick_1_1types_1_1_string_param_type_ac5ead124570fb5059ffd0cfd22eb358c}\label{classclick_1_1types_1_1_string_param_type_ac5ead124570fb5059ffd0cfd22eb358c} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1types_1_1_param_type}{click.\+types.\+Param\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Dict\mbox{[}str, t.\+Any\mbox{]} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_a7f109469011dd9467f326c80b205da52}{to\+\_\+info\+\_\+dict}} (self)
+\item 
+t.\+Any {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, t.\+Any value, t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]} param=None, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx=None)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_a3f721d50ade05b3256f9394e7f9b21c2}{get\+\_\+metavar}} (self, "{}Parameter"{} param)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_a418ed931a6b2bfe6070aeebaec8351db}{get\+\_\+missing\+\_\+message}} (self, "{}Parameter"{} param)
+\item 
+t.\+Sequence\mbox{[}str\mbox{]} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_ad1f3a07a49a52bc40708f959127784a0}{split\+\_\+envvar\+\_\+value}} (self, str rv)
+\item 
+"{}t.\+No\+Return"{} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_a7e6973592d7cece9da3abd99676428f4}{fail}} (self, str message, t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]} param=None, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx=None)
+\item 
+t.\+List\mbox{[}"{}Completion\+Item"{}\mbox{]} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_a2c54eb57d38475f9dbac286e4fd6e021}{shell\+\_\+complete}} (self, "{}Context"{} ctx, "{}Parameter"{} param, str incomplete)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1types_1_1_string_param_type_a35a14d07568f8baeb543b3565162d6f7}\label{classclick_1_1types_1_1_string_param_type_a35a14d07568f8baeb543b3565162d6f7} 
+str {\bfseries name} = "{}text"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classclick_1_1types_1_1_param_type}{click.\+types.\+Param\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries is\+\_\+composite} = False
+\item 
+t {\bfseries arity} = 1
+\item 
+t {\bfseries envvar\+\_\+list\+\_\+splitter} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classclick_1_1types_1_1_string_param_type_ad3559fbba4be63d1405f4c8deaf9fac5}\index{click.types.StringParamType@{click.types.StringParamType}!convert@{convert}}
+\index{convert@{convert}!click.types.StringParamType@{click.types.StringParamType}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_string_param_type_ad3559fbba4be63d1405f4c8deaf9fac5} 
+ t.\+Any click.\+types.\+String\+Param\+Type.\+convert (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{, }\item[{t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]}}]{param}{, }\item[{t.\+Optional\mbox{[}"{}Context"{}\mbox{]}     }]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the value to the correct type. This is not called if
+the value is ``None`` (the missing value).
+
+This must accept string values from the command line, as well as
+values that are already the correct type. It may also convert
+other compatible types.
+
+The ``param`` and ``ctx`` arguments may be ``None`` in certain
+situations, such as when converting prompt input.
+
+If the value cannot be converted, call :meth:`fail` with a
+descriptive message.
+
+:param value: The value to convert.
+:param param: The parameter that is using this type to convert
+    its value. May be ``None``.
+:param ctx: The current context that arrived at this value. May
+    be ``None``.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1types_1_1_param_type_ae488798865fc85ecc753874691968e3a}{click.\+types.\+Param\+Type}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/types.\+py\end{DoxyCompactItemize}

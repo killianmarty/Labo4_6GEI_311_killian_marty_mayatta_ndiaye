@@ -1,0 +1,114 @@
+\doxysection{referencing.\+\_\+core.\+Resolver Class Reference}
+\hypertarget{classreferencing_1_1__core_1_1_resolver}{}\label{classreferencing_1_1__core_1_1_resolver}\index{referencing.\_core.Resolver@{referencing.\_core.Resolver}}
+Inheritance diagram for referencing.\+\_\+core.\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreferencing_1_1__core_1_1_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resolved}{Resolved}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver_a3c7d1438805d3d159e6a57147c465ca4}{lookup}} (self, URI ref)
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver}{Resolver}}\mbox{[}D\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver_ae1f3dc409c8e994269d8ac831d11cbfe}{in\+\_\+subresource}} (self, \mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]} subresource)
+\item 
+Iterable\mbox{[}tuple\mbox{[}URI, \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver_acad75a21bd72dfe18cb4eb8852fb28b6}{dynamic\+\_\+scope}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver_a39445e5f2711da5bbbf815c4848e3b45}{\+\_\+evolve}} (self, URI base\+\_\+uri, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classreferencing_1_1__core_1_1_resolver_aea7a29eabf15937cb4dbc27c08360c9f}\label{classreferencing_1_1__core_1_1_resolver_aea7a29eabf15937cb4dbc27c08360c9f} 
+URI {\bfseries \+\_\+base\+\_\+uri} = field(alias="{}base\+\_\+uri"{})
+\item 
+\Hypertarget{classreferencing_1_1__core_1_1_resolver_a90bde3fe9b4ada10c710ba69807c417d}\label{classreferencing_1_1__core_1_1_resolver_a90bde3fe9b4ada10c710ba69807c417d} 
+\mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}} {\bfseries \+\_\+registry} = field(alias="{}registry"{})
+\item 
+\Hypertarget{classreferencing_1_1__core_1_1_resolver_ae7a01a1a6c60070a82dcdff8b22137c0}\label{classreferencing_1_1__core_1_1_resolver_ae7a01a1a6c60070a82dcdff8b22137c0} 
+List {\bfseries \+\_\+previous} = field(default=List(), repr=False, alias="{}previous"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A reference resolver.
+
+Resolvers help resolve references (including relative ones) by
+pairing a fixed base URI with a `Registry`.
+
+This object, under normal circumstances, is expected to be used by
+*implementers of libraries* built on top of `referencing` (e.g. JSON Schema
+implementations or other libraries resolving JSON references),
+not directly by end-users populating registries or while writing
+schemas or other resources.
+
+References are resolved against the base URI, and the combined URI
+is then looked up within the registry.
+
+The process of resolving a reference may itself involve calculating
+a *new* base URI for future reference resolution (e.g. if an
+intermediate resource sets a new base URI), or may involve encountering
+additional subresources and adding them to a new registry.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreferencing_1_1__core_1_1_resolver_a39445e5f2711da5bbbf815c4848e3b45}\index{referencing.\_core.Resolver@{referencing.\_core.Resolver}!\_evolve@{\_evolve}}
+\index{\_evolve@{\_evolve}!referencing.\_core.Resolver@{referencing.\_core.Resolver}}
+\doxysubsubsection{\texorpdfstring{\_evolve()}{\_evolve()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resolver_a39445e5f2711da5bbbf815c4848e3b45} 
+referencing.\+\_\+core.\+Resolver.\+\_\+evolve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{URI}]{base\+\_\+uri}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Evolve, appending to the dynamic scope.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_resolver_acad75a21bd72dfe18cb4eb8852fb28b6}\index{referencing.\_core.Resolver@{referencing.\_core.Resolver}!dynamic\_scope@{dynamic\_scope}}
+\index{dynamic\_scope@{dynamic\_scope}!referencing.\_core.Resolver@{referencing.\_core.Resolver}}
+\doxysubsubsection{\texorpdfstring{dynamic\_scope()}{dynamic\_scope()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resolver_acad75a21bd72dfe18cb4eb8852fb28b6} 
+ Iterable\mbox{[}tuple\mbox{[}URI, \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}\mbox{[}D\mbox{]}\mbox{]}\mbox{]} referencing.\+\_\+core.\+Resolver.\+dynamic\+\_\+scope (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}In specs with such a notion, return the URIs in the dynamic scope.
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_resolver_ae1f3dc409c8e994269d8ac831d11cbfe}\index{referencing.\_core.Resolver@{referencing.\_core.Resolver}!in\_subresource@{in\_subresource}}
+\index{in\_subresource@{in\_subresource}!referencing.\_core.Resolver@{referencing.\_core.Resolver}}
+\doxysubsubsection{\texorpdfstring{in\_subresource()}{in\_subresource()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resolver_ae1f3dc409c8e994269d8ac831d11cbfe} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_resolver}{Resolver}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Resolver.\+in\+\_\+subresource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classreferencing_1_1__core_1_1_resource}{Resource}}\mbox{[}D\mbox{]}}]{subresource}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a resolver for a subresource (which may have a new base URI).
+\end{DoxyVerb}
+ \Hypertarget{classreferencing_1_1__core_1_1_resolver_a3c7d1438805d3d159e6a57147c465ca4}\index{referencing.\_core.Resolver@{referencing.\_core.Resolver}!lookup@{lookup}}
+\index{lookup@{lookup}!referencing.\_core.Resolver@{referencing.\_core.Resolver}}
+\doxysubsubsection{\texorpdfstring{lookup()}{lookup()}}
+{\footnotesize\ttfamily \label{classreferencing_1_1__core_1_1_resolver_a3c7d1438805d3d159e6a57147c465ca4} 
+ \mbox{\hyperlink{classreferencing_1_1__core_1_1_resolved}{Resolved}}\mbox{[}D\mbox{]} referencing.\+\_\+core.\+Resolver.\+lookup (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{URI}]{ref}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve the given reference to the resource it points to.
+
+Raises:
+
+    `exceptions.Unresolvable`
+
+        or a subclass thereof (see below) if the reference isn't
+        resolvable
+
+    `exceptions.NoSuchAnchor`
+
+        if the reference is to a URI where a resource exists but
+        contains a plain name fragment which does not exist within
+        the resource
+
+    `exceptions.PointerToNowhere`
+
+        if the reference is to a URI where a resource exists but
+        contains a JSON pointer to a location within the resource
+        that does not exist\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/referencing/\+\_\+core.\+py\end{DoxyCompactItemize}

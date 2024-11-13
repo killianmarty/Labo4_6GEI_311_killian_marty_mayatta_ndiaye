@@ -1,0 +1,132 @@
+\doxysection{importlib\+\_\+resources.\+\_\+adapters.\+Compatibility\+Files.\+Spec\+Path Class Reference}
+\hypertarget{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path}{}\label{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path}\index{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}}
+Inheritance diagram for importlib\+\_\+resources.\+\_\+adapters.\+Compatibility\+Files.\+Spec\+Path\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a1f11dfbede79d477e2ebdcdd7e1b082d}\label{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a1f11dfbede79d477e2ebdcdd7e1b082d} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, spec, reader)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a5ff004ef7e9a9f9174f58aab7ffd75a4}{iterdir}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a10762433bbb8857b192cf045f42b554c}{is\+\_\+file}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_ab120473b9cce0c34d6ae92950e30bf33}{joinpath}} (self, other)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_aa3a46b15b529b225aed87e0c6adaa58f}{name}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a6abd85ca74c4c66bd26ffe9f202002a6}{open}} (self, mode=\textquotesingle{}r\textquotesingle{}, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable}{importlib\+\_\+resources.\+abc.\+Traversable}}}
+\begin{DoxyCompactItemize}
+\item 
+bytes \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a8dad96761afb634dc5260594651d54f0}{read\+\_\+bytes}} (self)
+\item 
+str \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_aef97aa5627b959c423b8090a257379e1}{read\+\_\+text}} (self, Optional\mbox{[}str\mbox{]} encoding=None)
+\item 
+bool \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a573a887427aa38872fe6cfb37ac21a8d}{is\+\_\+dir}} (self)
+\item 
+"{}Traversable"{} \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a5b8c0411cd2ac693c82927c80eabaa66}{\+\_\+\+\_\+truediv\+\_\+\+\_\+}} (self, Str\+Path child)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a233931a0651c1500b2921844d51bbc59}\label{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a233931a0651c1500b2921844d51bbc59} 
+{\bfseries is\+\_\+dir} = \mbox{\hyperlink{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a10762433bbb8857b192cf045f42b554c}{is\+\_\+file}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a836596cdc6ae43915fe33d02b6be31ff}\label{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a836596cdc6ae43915fe33d02b6be31ff} 
+{\bfseries \+\_\+spec} = spec
+\item 
+\Hypertarget{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a92107bf58c91a90772a1c3eea94f0e31}\label{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a92107bf58c91a90772a1c3eea94f0e31} 
+{\bfseries \+\_\+reader} = reader
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Path tied to a module spec.
+Can be read and exposes the resource reader children.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a10762433bbb8857b192cf045f42b554c}\index{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}!is\_file@{is\_file}}
+\index{is\_file@{is\_file}!importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}}
+\doxysubsubsection{\texorpdfstring{is\_file()}{is\_file()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a10762433bbb8857b192cf045f42b554c} 
+importlib\+\_\+resources.\+\_\+adapters.\+Compatibility\+Files.\+Spec\+Path.\+is\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if self is a file
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a2af85b48385642ac9dad7f081e8f9305}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+\Hypertarget{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a5ff004ef7e9a9f9174f58aab7ffd75a4}\index{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}!iterdir@{iterdir}}
+\index{iterdir@{iterdir}!importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}}
+\doxysubsubsection{\texorpdfstring{iterdir()}{iterdir()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a5ff004ef7e9a9f9174f58aab7ffd75a4} 
+importlib\+\_\+resources.\+\_\+adapters.\+Compatibility\+Files.\+Spec\+Path.\+iterdir (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield Traversable objects in self
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_ae72f33df22449b563fe82a24ed2be347}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+\Hypertarget{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_ab120473b9cce0c34d6ae92950e30bf33}\index{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}!joinpath@{joinpath}}
+\index{joinpath@{joinpath}!importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}}
+\doxysubsubsection{\texorpdfstring{joinpath()}{joinpath()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_ab120473b9cce0c34d6ae92950e30bf33} 
+importlib\+\_\+resources.\+\_\+adapters.\+Compatibility\+Files.\+Spec\+Path.\+joinpath (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{descendants}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return Traversable resolved with any descendants applied.
+
+Each descendant should be a path segment relative to self
+and each may contain multiple levels separated by
+``posixpath.sep`` (``/``).
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a211b977589b9819c264f4fba56b10f6c}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+\Hypertarget{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_aa3a46b15b529b225aed87e0c6adaa58f}\index{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}!name@{name}}
+\index{name@{name}!importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_aa3a46b15b529b225aed87e0c6adaa58f} 
+importlib\+\_\+resources.\+\_\+adapters.\+Compatibility\+Files.\+Spec\+Path.\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The base name of this object without any parent references.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_ad1ff51698810cc2199c69db58000b7b1}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+\Hypertarget{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a6abd85ca74c4c66bd26ffe9f202002a6}\index{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}!open@{open}}
+\index{open@{open}!importlib\_resources.\_adapters.CompatibilityFiles.SpecPath@{importlib\_resources.\_adapters.CompatibilityFiles.SpecPath}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1__adapters_1_1_compatibility_files_1_1_spec_path_a6abd85ca74c4c66bd26ffe9f202002a6} 
+importlib\+\_\+resources.\+\_\+adapters.\+Compatibility\+Files.\+Spec\+Path.\+open (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mode}{ = {\ttfamily \textquotesingle{}r\textquotesingle{}}, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}mode may be 'r' or 'rb' to open as text or binary. Return a handle
+suitable for reading (same as pathlib.Path.open).
+
+When opening as text, accepts encoding parameters such as those
+accepted by io.TextIOWrapper.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_ae5c6ce8f0e043a137c63a70c3178f6a8}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/importlib\+\_\+resources/\+\_\+adapters.\+py\end{DoxyCompactItemize}

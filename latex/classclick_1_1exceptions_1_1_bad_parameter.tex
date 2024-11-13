@@ -1,0 +1,107 @@
+\doxysection{Référence de la classe click.\+exceptions.\+Bad\+Parameter}
+\hypertarget{classclick_1_1exceptions_1_1_bad_parameter}{}\label{classclick_1_1exceptions_1_1_bad_parameter}\index{click.exceptions.BadParameter@{click.exceptions.BadParameter}}
+Graphe d\textquotesingle{}héritage de click.\+exceptions.\+Bad\+Parameter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classclick_1_1exceptions_1_1_bad_parameter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classclick_1_1exceptions_1_1_bad_parameter_a13498265f5aa31901219b6c69d71acb3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx=None, t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]} param=None, t.\+Optional\mbox{[}str\mbox{]} param\+\_\+hint=None)
+\item 
+str \mbox{\hyperlink{classclick_1_1exceptions_1_1_bad_parameter_a658d9a7d80ab51f4a8075416bbc320d1}{format\+\_\+message}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_afdf9f65f4c725b958da22c3e9a4414de}{show}} (self, t.\+Optional\mbox{[}t.\+IO\mbox{[}t.\+Any\mbox{]}\mbox{]} file=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_a0dd7939abe55925b42fdc8ad5abafeb3}\label{classclick_1_1exceptions_1_1_bad_parameter_a0dd7939abe55925b42fdc8ad5abafeb3} 
+{\bfseries param} = param
+\item 
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_a91cbe9fa1e1a2025b7f4e9f5f5428782}\label{classclick_1_1exceptions_1_1_bad_parameter_a91cbe9fa1e1a2025b7f4e9f5f5428782} 
+{\bfseries param\+\_\+hint} = param\+\_\+hint
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries ctx} = ctx
+\item 
+t.\+Optional\mbox{[}$\,$\mbox{]} {\bfseries cmd} = self.\+ctx.\+command if self.\+ctx else None
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries message} = message
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries exit\+\_\+code} = 2
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries exit\+\_\+code} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An exception that formats out a standardized error message for a
+bad parameter.  This is useful when thrown from a callback or type as
+Click will attach contextual information to it (for instance, which
+parameter it is).
+
+.. versionadded:: 2.0
+
+:param param: the parameter object that caused this error.  This can
+              be left out, and Click will attach this info itself
+              if possible.
+:param param_hint: a string that shows up as parameter name.  This
+                   can be used as alternative to `param` in cases
+                   where custom validation should happen.  If it is
+                   a string it's used as such, if it's a list then
+                   each item is quoted and separated.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_a13498265f5aa31901219b6c69d71acb3}\index{click.exceptions.BadParameter@{click.exceptions.BadParameter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.exceptions.BadParameter@{click.exceptions.BadParameter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_bad_parameter_a13498265f5aa31901219b6c69d71acb3} 
+ None click.\+exceptions.\+Bad\+Parameter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{message}{, }\item[{t.\+Optional\mbox{[}"{}Context"{}\mbox{]} }]{ctx}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]} }]{param}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{param\+\_\+hint}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_a658d9a7d80ab51f4a8075416bbc320d1}\index{click.exceptions.BadParameter@{click.exceptions.BadParameter}!format\_message@{format\_message}}
+\index{format\_message@{format\_message}!click.exceptions.BadParameter@{click.exceptions.BadParameter}}
+\doxysubsubsection{\texorpdfstring{format\_message()}{format\_message()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_bad_parameter_a658d9a7d80ab51f4a8075416bbc320d1} 
+ str click.\+exceptions.\+Bad\+Parameter.\+format\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/exceptions.\+py\end{DoxyCompactItemize}

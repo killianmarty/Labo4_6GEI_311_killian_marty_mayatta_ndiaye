@@ -1,0 +1,77 @@
+\doxysection{plot\+\_\+circuits Namespace Reference}
+\hypertarget{namespaceplot__circuits}{}\label{namespaceplot__circuits}\index{plot\_circuits@{plot\_circuits}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__circuits_a5902c9003dea2f1c91f439b2fd542168}\label{namespaceplot__circuits_a5902c9003dea2f1c91f439b2fd542168} 
+{\bfseries circuit\+\_\+to\+\_\+formula} (\mbox{\hyperlink{namespaceplot__circuits_a9bd6403c4050c6fd929cfb75695b5b53}{circuit}})
+\item 
+\Hypertarget{namespaceplot__circuits_a420c648975d8a670c240b5dcf02914b4}\label{namespaceplot__circuits_a420c648975d8a670c240b5dcf02914b4} 
+{\bfseries formula\+\_\+to\+\_\+string} (formula)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplot__circuits_a9bd6403c4050c6fd929cfb75695b5b53}{circuit}} = nx.\+Di\+Graph()
+\item 
+\Hypertarget{namespaceplot__circuits_a810a118dd2957d285f2700ec674e4312}\label{namespaceplot__circuits_a810a118dd2957d285f2700ec674e4312} 
+{\bfseries label}
+\item 
+\Hypertarget{namespaceplot__circuits_a9351e8d5d4497eed0e2242e1ac749d48}\label{namespaceplot__circuits_a9351e8d5d4497eed0e2242e1ac749d48} 
+{\bfseries layer}
+\item 
+\Hypertarget{namespaceplot__circuits_ad769edfa526e13970779974be2996d26}\label{namespaceplot__circuits_ad769edfa526e13970779974be2996d26} 
+{\bfseries formula} = circuit\+\_\+to\+\_\+formula(\mbox{\hyperlink{namespaceplot__circuits_a9bd6403c4050c6fd929cfb75695b5b53}{circuit}})
+\item 
+\Hypertarget{namespaceplot__circuits_a3affc277564d828daacd7c8f07e57470}\label{namespaceplot__circuits_a3affc277564d828daacd7c8f07e57470} 
+{\bfseries labels} = nx.\+get\+\_\+node\+\_\+attributes(\mbox{\hyperlink{namespaceplot__circuits_a9bd6403c4050c6fd929cfb75695b5b53}{circuit}}, "{}label"{})
+\item 
+dict \mbox{\hyperlink{namespaceplot__circuits_a01cce5dafca65c20f7e163c8764e5a8c}{options}}
+\item 
+\Hypertarget{namespaceplot__circuits_ab4f85a0d59ba6f09a08894be18b8c088}\label{namespaceplot__circuits_ab4f85a0d59ba6f09a08894be18b8c088} 
+{\bfseries figsize}
+\item 
+\Hypertarget{namespaceplot__circuits_a2db5a916123a9b7b20e5e94d36702b62}\label{namespaceplot__circuits_a2db5a916123a9b7b20e5e94d36702b62} 
+{\bfseries pos} = nx.\+multipartite\+\_\+layout(\mbox{\hyperlink{namespaceplot__circuits_a9bd6403c4050c6fd929cfb75695b5b53}{circuit}}, subset\+\_\+key="{}layer"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}========
+Circuits
+========
+
+Convert a Boolean circuit to an equivalent Boolean formula.
+
+A Boolean circuit can be exponentially more expressive than an
+equivalent formula in the worst case, since the circuit can reuse
+subcircuits multiple times, whereas a formula cannot reuse subformulas
+more than once. Thus creating a Boolean formula from a Boolean circuit
+in this way may be infeasible if the circuit is large.\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__circuits_a9bd6403c4050c6fd929cfb75695b5b53}\index{plot\_circuits@{plot\_circuits}!circuit@{circuit}}
+\index{circuit@{circuit}!plot\_circuits@{plot\_circuits}}
+\doxysubsubsection{\texorpdfstring{circuit}{circuit}}
+{\footnotesize\ttfamily \label{namespaceplot__circuits_a9bd6403c4050c6fd929cfb75695b5b53} 
+plot\+\_\+circuits.\+circuit = nx.\+Di\+Graph()}
+
+\hypertarget{namespaceplot__circuits_autotoc_md258}{}\doxysubsubsection{\texorpdfstring{Create an example Boolean circuit.}{Create an example Boolean circuit.}}\label{namespaceplot__circuits_autotoc_md258}
+This circuit has a ∧ at the output and two ∨s at the next layer. The third layer has a variable x that appears in the left ∨, a variable y that appears in both the left and right ∨s, and a negation for the variable z that appears as the sole node in the fourth layer. \Hypertarget{namespaceplot__circuits_a01cce5dafca65c20f7e163c8764e5a8c}\index{plot\_circuits@{plot\_circuits}!options@{options}}
+\index{options@{options}!plot\_circuits@{plot\_circuits}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily \label{namespaceplot__circuits_a01cce5dafca65c20f7e163c8764e5a8c} 
+dict plot\+\_\+circuits.\+options}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}node\_size"{}}:\ 600,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}alpha"{}}:\ 0.5,}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}node\_color"{}}:\ \textcolor{stringliteral}{"{}blue"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}labels"{}}:\ labels,}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}font\_size"{}}:\ 22,}
+\DoxyCodeLine{00007\ \}}
+
+\end{DoxyCode}

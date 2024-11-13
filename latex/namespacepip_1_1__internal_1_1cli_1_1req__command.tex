@@ -1,0 +1,66 @@
+\doxysection{pip.\+\_\+internal.\+cli.\+req\+\_\+command Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1cli_1_1req__command}{}\label{namespacepip_1_1__internal_1_1cli_1_1req__command}\index{pip.\_internal.cli.req\_command@{pip.\_internal.cli.req\_command}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_index_group_command}{Index\+Group\+Command}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_requirement_command}{Requirement\+Command}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin}{Session\+Command\+Mixin}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1req__command_a741a397c95961a604fa0965f09daec08}{with\+\_\+cleanup}} (func)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1req__command_ab18cc0612f20d821fa933b64f3a1b605}\label{namespacepip_1_1__internal_1_1cli_1_1req__command_ab18cc0612f20d821fa933b64f3a1b605} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+list \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1req__command_a47e81bdfa7bae2de3748cfa7f57a748d}{KEEPABLE\+\_\+\+TEMPDIR\+\_\+\+TYPES}}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1req__command_a603c7d6de73dceb1951bf859b4b7e254}\label{namespacepip_1_1__internal_1_1cli_1_1req__command_a603c7d6de73dceb1951bf859b4b7e254} 
+{\bfseries tempdir\+\_\+registry}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Contains the Command base classes that depend on PipSession.
+
+The classes in this module are in a separate module so the commands not
+needing download / PackageFinder capability don't unnecessarily import the
+PackageFinder machinery and all its vendored dependencies, etc.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1req__command_a741a397c95961a604fa0965f09daec08}\index{pip.\_internal.cli.req\_command@{pip.\_internal.cli.req\_command}!with\_cleanup@{with\_cleanup}}
+\index{with\_cleanup@{with\_cleanup}!pip.\_internal.cli.req\_command@{pip.\_internal.cli.req\_command}}
+\doxysubsubsection{\texorpdfstring{with\_cleanup()}{with\_cleanup()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1req__command_a741a397c95961a604fa0965f09daec08} 
+pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+with\+\_\+cleanup (\begin{DoxyParamCaption}\item[{}]{func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator for common logic related to managing temporary
+directories.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1req__command_a47e81bdfa7bae2de3748cfa7f57a748d}\index{pip.\_internal.cli.req\_command@{pip.\_internal.cli.req\_command}!KEEPABLE\_TEMPDIR\_TYPES@{KEEPABLE\_TEMPDIR\_TYPES}}
+\index{KEEPABLE\_TEMPDIR\_TYPES@{KEEPABLE\_TEMPDIR\_TYPES}!pip.\_internal.cli.req\_command@{pip.\_internal.cli.req\_command}}
+\doxysubsubsection{\texorpdfstring{KEEPABLE\_TEMPDIR\_TYPES}{KEEPABLE\_TEMPDIR\_TYPES}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1req__command_a47e81bdfa7bae2de3748cfa7f57a748d} 
+list pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+KEEPABLE\+\_\+\+TEMPDIR\+\_\+\+TYPES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ tempdir\_kinds.BUILD\_ENV,}
+\DoxyCodeLine{00003\ \ \ \ \ tempdir\_kinds.EPHEM\_WHEEL\_CACHE,}
+\DoxyCodeLine{00004\ \ \ \ \ tempdir\_kinds.REQ\_BUILD,}
+\DoxyCodeLine{00005\ ]}
+
+\end{DoxyCode}

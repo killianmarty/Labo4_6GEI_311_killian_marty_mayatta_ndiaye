@@ -1,0 +1,116 @@
+\doxysection{pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{}\label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}\index{pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}}
+Inheritance diagram for pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_adc75cb681b6b35e5bf0b6fbf2bcd9177}\label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_adc75cb681b6b35e5bf0b6fbf2bcd9177} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a4842a44101070a009cb9ad6ab7ac8268}{pop\+\_\+all}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_ad75f54caa9e15e46bd80363f1734236d}{push}} (self, exit)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a41ec0b65ce8bfe9f2cb3853dbaefee9c}{callback}} (self, callback, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_aa2ca7f68766d9341ab9ad3f63a1c7286}{enter\+\_\+context}} (self, cm)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a1a637fd05022071ff020925c26102926}{close}} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_af4b2a126c8d353bf64082f342972e62c}\label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_af4b2a126c8d353bf64082f342972e62c} 
+{\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a2ac4427e0f4183d715c1b3c148dd77a2}\label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a2ac4427e0f4183d715c1b3c148dd77a2} 
+{\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}exc\+\_\+details)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a33c9dae6234b5ebcf0fcf183fb056e24}{\+\_\+push\+\_\+cm\+\_\+exit}} (self, cm, cm\+\_\+exit)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_ad214b761b376ecd18e156a9b1f5e7d6c}\label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_ad214b761b376ecd18e156a9b1f5e7d6c} 
+{\bfseries \+\_\+exit\+\_\+callbacks} = deque()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Context manager for dynamic management of a stack of exit callbacks
+
+For example:
+
+    with ExitStack() as stack:
+        files = [stack.enter_context(open(fname)) for fname in filenames]
+        # All opened files will automatically be closed at the end of
+        # the with statement, even if attempts to open files later
+        # in the list raise an exception\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a33c9dae6234b5ebcf0fcf183fb056e24}\index{pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}!\_push\_cm\_exit@{\_push\_cm\_exit}}
+\index{\_push\_cm\_exit@{\_push\_cm\_exit}!pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}}
+\doxysubsubsection{\texorpdfstring{\_push\_cm\_exit()}{\_push\_cm\_exit()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a33c9dae6234b5ebcf0fcf183fb056e24} 
+pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack.\+\_\+push\+\_\+cm\+\_\+exit (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cm}{, }\item[{}]{cm\+\_\+exit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Helper to correctly register callbacks to __exit__ methods\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a41ec0b65ce8bfe9f2cb3853dbaefee9c}\index{pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}!callback@{callback}}
+\index{callback@{callback}!pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a41ec0b65ce8bfe9f2cb3853dbaefee9c} 
+pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack.\+callback (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{callback}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Registers an arbitrary callback and arguments.
+
+Cannot suppress exceptions.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a1a637fd05022071ff020925c26102926}\index{pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}!close@{close}}
+\index{close@{close}!pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a1a637fd05022071ff020925c26102926} 
+pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Immediately unwind the context stack\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_aa2ca7f68766d9341ab9ad3f63a1c7286}\index{pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}!enter\_context@{enter\_context}}
+\index{enter\_context@{enter\_context}!pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}}
+\doxysubsubsection{\texorpdfstring{enter\_context()}{enter\_context()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_aa2ca7f68766d9341ab9ad3f63a1c7286} 
+pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack.\+enter\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cm}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enters the supplied context manager
+
+If successful, also pushes its __exit__ method as a callback and
+returns the result of the __enter__ method.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a4842a44101070a009cb9ad6ab7ac8268}\index{pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}!pop\_all@{pop\_all}}
+\index{pop\_all@{pop\_all}!pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}}
+\doxysubsubsection{\texorpdfstring{pop\_all()}{pop\_all()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a4842a44101070a009cb9ad6ab7ac8268} 
+pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack.\+pop\+\_\+all (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Preserve the context stack by transferring it to a new instance\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_ad75f54caa9e15e46bd80363f1734236d}\index{pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}!push@{push}}
+\index{push@{push}!pip.\_vendor.contextlib2.ExitStack@{pip.\_vendor.contextlib2.ExitStack}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_ad75f54caa9e15e46bd80363f1734236d} 
+pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack.\+push (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exit}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Registers a callback with the standard __exit__ method signature
+
+Can suppress exceptions the same way __exit__ methods can.
+
+Also accepts any object with an __exit__ method (registering a call
+to the method instead of the object itself)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/contextlib2.\+py\end{DoxyCompactItemize}

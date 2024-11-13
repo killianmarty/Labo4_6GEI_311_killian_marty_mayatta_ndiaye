@@ -1,0 +1,63 @@
+\doxysection{setuptools.\+py27compat Namespace Reference}
+\hypertarget{namespacesetuptools_1_1py27compat}{}\label{namespacesetuptools_1_1py27compat}\index{setuptools.py27compat@{setuptools.py27compat}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacesetuptools_1_1py27compat_a2ef87132fe39a244d2adf4392eda9a4f}{get\+\_\+all\+\_\+headers}} (message, key)
+\item 
+\mbox{\hyperlink{namespacesetuptools_1_1py27compat_a536b2bb60ce7c1940a1b036b21fe92c1}{find\+\_\+module}} (module, paths=None)
+\item 
+\Hypertarget{namespacesetuptools_1_1py27compat_a276bb1531b193b35fd70633cd05f46ff}\label{namespacesetuptools_1_1py27compat_a276bb1531b193b35fd70633cd05f46ff} 
+{\bfseries get\+\_\+frozen\+\_\+object} (module, paths)
+\item 
+\Hypertarget{namespacesetuptools_1_1py27compat_a65ef969ada906bd9ee2285308e54502f}\label{namespacesetuptools_1_1py27compat_a65ef969ada906bd9ee2285308e54502f} 
+{\bfseries get\+\_\+module} (module, paths, info)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacesetuptools_1_1py27compat_a968c8663dfb506652a5e08ecdb125786}{linux\+\_\+py2\+\_\+ascii}}
+\item 
+\Hypertarget{namespacesetuptools_1_1py27compat_ac761880bb2a7c20167a02fdecaabafab}\label{namespacesetuptools_1_1py27compat_ac761880bb2a7c20167a02fdecaabafab} 
+x {\bfseries rmtree\+\_\+safe} = str if linux\+\_\+py2\+\_\+ascii else lambda x
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Compatibility Support for Python 2.7 and earlier
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacesetuptools_1_1py27compat_a536b2bb60ce7c1940a1b036b21fe92c1}\index{setuptools.py27compat@{setuptools.py27compat}!find\_module@{find\_module}}
+\index{find\_module@{find\_module}!setuptools.py27compat@{setuptools.py27compat}}
+\doxysubsubsection{\texorpdfstring{find\_module()}{find\_module()}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1py27compat_a536b2bb60ce7c1940a1b036b21fe92c1} 
+setuptools.\+py27compat.\+find\+\_\+module (\begin{DoxyParamCaption}\item[{}]{module}{, }\item[{}]{paths}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Just like 'imp.find_module()', but with package support\end{DoxyVerb}
+ \Hypertarget{namespacesetuptools_1_1py27compat_a2ef87132fe39a244d2adf4392eda9a4f}\index{setuptools.py27compat@{setuptools.py27compat}!get\_all\_headers@{get\_all\_headers}}
+\index{get\_all\_headers@{get\_all\_headers}!setuptools.py27compat@{setuptools.py27compat}}
+\doxysubsubsection{\texorpdfstring{get\_all\_headers()}{get\_all\_headers()}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1py27compat_a2ef87132fe39a244d2adf4392eda9a4f} 
+setuptools.\+py27compat.\+get\+\_\+all\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{message}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given an HTTPMessage, return all headers matching a given key.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacesetuptools_1_1py27compat_a968c8663dfb506652a5e08ecdb125786}\index{setuptools.py27compat@{setuptools.py27compat}!linux\_py2\_ascii@{linux\_py2\_ascii}}
+\index{linux\_py2\_ascii@{linux\_py2\_ascii}!setuptools.py27compat@{setuptools.py27compat}}
+\doxysubsubsection{\texorpdfstring{linux\_py2\_ascii}{linux\_py2\_ascii}}
+{\footnotesize\ttfamily \label{namespacesetuptools_1_1py27compat_a968c8663dfb506652a5e08ecdb125786} 
+tuple setuptools.\+py27compat.\+linux\+\_\+py2\+\_\+ascii}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ platform.system()\ ==\ \textcolor{stringliteral}{'Linux'}\ \textcolor{keywordflow}{and}}
+\DoxyCodeLine{00003\ \ \ \ \ six.PY2}
+\DoxyCodeLine{00004\ )}
+
+\end{DoxyCode}

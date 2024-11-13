@@ -1,0 +1,123 @@
+\doxysection{plot\+\_\+subgraphs Namespace Reference}
+\hypertarget{namespaceplot__subgraphs}{}\label{namespaceplot__subgraphs}\index{plot\_subgraphs@{plot\_subgraphs}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplot__subgraphs_a0bbcafce90442d237d0ac2b844582d2a}{graph\+\_\+partitioning}} (G, plotting=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplot__subgraphs_aeeb9ef77cee70b27558c238fcd5680c7}{G\+\_\+ex}} = nx.\+Di\+Graph()
+\item 
+\Hypertarget{namespaceplot__subgraphs_aa9a603183a3b70fffd5951f0aabd2351}\label{namespaceplot__subgraphs_aa9a603183a3b70fffd5951f0aabd2351} 
+{\bfseries node\+\_\+type}
+\item 
+\Hypertarget{namespaceplot__subgraphs_a213986d85dc521ee0ce2e89d8685ab21}\label{namespaceplot__subgraphs_a213986d85dc521ee0ce2e89d8685ab21} 
+{\bfseries node\+\_\+color}
+\item 
+list \mbox{\hyperlink{namespaceplot__subgraphs_a346d6c58701c71539fb51bc83cf80125}{node\+\_\+color\+\_\+list}} = \mbox{[}nc for \+\_\+, nc in G\+\_\+ex.\+nodes(data="{}node\+\_\+color"{})\mbox{]}
+\item 
+\Hypertarget{namespaceplot__subgraphs_ac0ebd16724190b6b0db17074d3ee6257}\label{namespaceplot__subgraphs_ac0ebd16724190b6b0db17074d3ee6257} 
+{\bfseries pos} = nx.\+spectral\+\_\+layout(\mbox{\hyperlink{namespaceplot__subgraphs_aeeb9ef77cee70b27558c238fcd5680c7}{G\+\_\+ex}})
+\item 
+\Hypertarget{namespaceplot__subgraphs_afc8eeb70eaffcf143a184d1254f34ec7}\label{namespaceplot__subgraphs_afc8eeb70eaffcf143a184d1254f34ec7} 
+{\bfseries figsize}
+\item 
+\Hypertarget{namespaceplot__subgraphs_a5297f2dff8daee6c52a4204797240353}\label{namespaceplot__subgraphs_a5297f2dff8daee6c52a4204797240353} 
+{\bfseries alpha}
+\item 
+\Hypertarget{namespaceplot__subgraphs_a503e13dce40a2ddaaf697c7b8cde0f32}\label{namespaceplot__subgraphs_a503e13dce40a2ddaaf697c7b8cde0f32} 
+{\bfseries edge\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__subgraphs_abc3dc57777a87464b10da6e9176f734c}\label{namespaceplot__subgraphs_abc3dc57777a87464b10da6e9176f734c} 
+{\bfseries font\+\_\+size}
+\item 
+\mbox{\hyperlink{namespaceplot__subgraphs_abb696ac134c854b1e4641c42939d0fe8}{subgraphs\+\_\+of\+\_\+\+G\+\_\+ex}}
+\item 
+\mbox{\hyperlink{namespaceplot__subgraphs_a9395cfc15fa7dae46117c439dc2037ba}{removed\+\_\+edges}}
+\item 
+\Hypertarget{namespaceplot__subgraphs_aff8de3b39a672e96d0465cfec446cbb7}\label{namespaceplot__subgraphs_aff8de3b39a672e96d0465cfec446cbb7} 
+{\bfseries plotting}
+\item 
+\mbox{\hyperlink{namespaceplot__subgraphs_a35f8e2b19bdf2970b037181dec7b4fa7}{\+\_\+pos}} = nx.\+spring\+\_\+layout(subgraph)
+\item 
+\Hypertarget{namespaceplot__subgraphs_a5eb1e4513c3eb412567faf21e3689f6e}\label{namespaceplot__subgraphs_a5eb1e4513c3eb412567faf21e3689f6e} 
+{\bfseries subgraph}
+\item 
+\Hypertarget{namespaceplot__subgraphs_ad67c3293a8349c6ff717fd536f1f004f}\label{namespaceplot__subgraphs_ad67c3293a8349c6ff717fd536f1f004f} 
+list {\bfseries node\+\_\+color\+\_\+list\+\_\+c} = \mbox{[}nc for \+\_\+, nc in subgraph.\+nodes(data="{}node\+\_\+color"{})\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceplot__subgraphs_a5c383ccef7e6911d1f95dc1e07f7b0ec}{G\+\_\+ex\+\_\+r}} = nx.\+Di\+Graph()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}=========
+Subgraphs
+=========
+Example of partitioning a directed graph with nodes labeled as
+supported and unsupported nodes into a list of subgraphs
+that contain only entirely supported or entirely unsupported nodes.
+Adopted from 
+https://github.com/lobpcg/python_examples/blob/master/networkx_example.py
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceplot__subgraphs_a0bbcafce90442d237d0ac2b844582d2a}\index{plot\_subgraphs@{plot\_subgraphs}!graph\_partitioning@{graph\_partitioning}}
+\index{graph\_partitioning@{graph\_partitioning}!plot\_subgraphs@{plot\_subgraphs}}
+\doxysubsubsection{\texorpdfstring{graph\_partitioning()}{graph\_partitioning()}}
+{\footnotesize\ttfamily \label{namespaceplot__subgraphs_a0bbcafce90442d237d0ac2b844582d2a} 
+plot\+\_\+subgraphs.\+graph\+\_\+partitioning (\begin{DoxyParamCaption}\item[{}]{G}{, }\item[{}]{plotting}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Partition a directed graph into a list of subgraphs that contain
+only entirely supported or entirely unsupported nodes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__subgraphs_a35f8e2b19bdf2970b037181dec7b4fa7}\index{plot\_subgraphs@{plot\_subgraphs}!\_pos@{\_pos}}
+\index{\_pos@{\_pos}!plot\_subgraphs@{plot\_subgraphs}}
+\doxysubsubsection{\texorpdfstring{\_pos}{\_pos}}
+{\footnotesize\ttfamily \label{namespaceplot__subgraphs_a35f8e2b19bdf2970b037181dec7b4fa7} 
+plot\+\_\+subgraphs.\+\_\+pos = nx.\+spring\+\_\+layout(subgraph)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{namespaceplot__subgraphs_autotoc_md262}{}\doxysubsubsection{\texorpdfstring{Plot the results\+: every subgraph in the list.}{Plot the results\+: every subgraph in the list.}}\label{namespaceplot__subgraphs_autotoc_md262}
+\Hypertarget{namespaceplot__subgraphs_aeeb9ef77cee70b27558c238fcd5680c7}\index{plot\_subgraphs@{plot\_subgraphs}!G\_ex@{G\_ex}}
+\index{G\_ex@{G\_ex}!plot\_subgraphs@{plot\_subgraphs}}
+\doxysubsubsection{\texorpdfstring{G\_ex}{G\_ex}}
+{\footnotesize\ttfamily \label{namespaceplot__subgraphs_aeeb9ef77cee70b27558c238fcd5680c7} 
+plot\+\_\+subgraphs.\+G\+\_\+ex = nx.\+Di\+Graph()}
+
+\hypertarget{namespaceplot__subgraphs_autotoc_md259}{}\doxysubsubsection{\texorpdfstring{Create an example directed graph.}{Create an example directed graph.}}\label{namespaceplot__subgraphs_autotoc_md259}
+This directed graph has one input node labeled {\ttfamily in} and plotted in blue color and one output node labeled {\ttfamily out} and plotted in magenta color. The other six nodes are classified as four {\ttfamily supported} plotted in green color and two {\ttfamily unsupported} plotted in red color. The goal is computing a list of subgraphs that contain only entirely {\ttfamily supported} or {\ttfamily unsupported} nodes. \Hypertarget{namespaceplot__subgraphs_a5c383ccef7e6911d1f95dc1e07f7b0ec}\index{plot\_subgraphs@{plot\_subgraphs}!G\_ex\_r@{G\_ex\_r}}
+\index{G\_ex\_r@{G\_ex\_r}!plot\_subgraphs@{plot\_subgraphs}}
+\doxysubsubsection{\texorpdfstring{G\_ex\_r}{G\_ex\_r}}
+{\footnotesize\ttfamily \label{namespaceplot__subgraphs_a5c383ccef7e6911d1f95dc1e07f7b0ec} 
+plot\+\_\+subgraphs.\+G\+\_\+ex\+\_\+r = nx.\+Di\+Graph()}
+
+\hypertarget{namespaceplot__subgraphs_autotoc_md263}{}\doxysubsubsection{\texorpdfstring{Put the graph back from the list of subgraphs}{Put the graph back from the list of subgraphs}}\label{namespaceplot__subgraphs_autotoc_md263}
+\Hypertarget{namespaceplot__subgraphs_a346d6c58701c71539fb51bc83cf80125}\index{plot\_subgraphs@{plot\_subgraphs}!node\_color\_list@{node\_color\_list}}
+\index{node\_color\_list@{node\_color\_list}!plot\_subgraphs@{plot\_subgraphs}}
+\doxysubsubsection{\texorpdfstring{node\_color\_list}{node\_color\_list}}
+{\footnotesize\ttfamily \label{namespaceplot__subgraphs_a346d6c58701c71539fb51bc83cf80125} 
+list plot\+\_\+subgraphs.\+node\+\_\+color\+\_\+list = \mbox{[}nc for \+\_\+, nc in G\+\_\+ex.\+nodes(data="{}node\+\_\+color"{})\mbox{]}}
+
+\hypertarget{namespaceplot__subgraphs_autotoc_md260}{}\doxysubsubsection{\texorpdfstring{Plot the original graph.}{Plot the original graph.}}\label{namespaceplot__subgraphs_autotoc_md260}
+\hypertarget{namespaceplot__subgraphs_autotoc_md264}{}\doxysubsubsection{\texorpdfstring{Check that the original graph and the reconstructed graphs are isomorphic.}{Check that the original graph and the reconstructed graphs are isomorphic.}}\label{namespaceplot__subgraphs_autotoc_md264}
+\hypertarget{namespaceplot__subgraphs_autotoc_md265}{}\doxysubsubsection{\texorpdfstring{Plot the reconstructed graph.}{Plot the reconstructed graph.}}\label{namespaceplot__subgraphs_autotoc_md265}
+\Hypertarget{namespaceplot__subgraphs_a9395cfc15fa7dae46117c439dc2037ba}\index{plot\_subgraphs@{plot\_subgraphs}!removed\_edges@{removed\_edges}}
+\index{removed\_edges@{removed\_edges}!plot\_subgraphs@{plot\_subgraphs}}
+\doxysubsubsection{\texorpdfstring{removed\_edges}{removed\_edges}}
+{\footnotesize\ttfamily \label{namespaceplot__subgraphs_a9395cfc15fa7dae46117c439dc2037ba} 
+plot\+\_\+subgraphs.\+removed\+\_\+edges}
+
+\hypertarget{namespaceplot__subgraphs_autotoc_md261}{}\doxysubsubsection{\texorpdfstring{Calculate the subgraphs with plotting all results of intemediate steps.}{Calculate the subgraphs with plotting all results of intemediate steps.}}\label{namespaceplot__subgraphs_autotoc_md261}
+\Hypertarget{namespaceplot__subgraphs_abb696ac134c854b1e4641c42939d0fe8}\index{plot\_subgraphs@{plot\_subgraphs}!subgraphs\_of\_G\_ex@{subgraphs\_of\_G\_ex}}
+\index{subgraphs\_of\_G\_ex@{subgraphs\_of\_G\_ex}!plot\_subgraphs@{plot\_subgraphs}}
+\doxysubsubsection{\texorpdfstring{subgraphs\_of\_G\_ex}{subgraphs\_of\_G\_ex}}
+{\footnotesize\ttfamily \label{namespaceplot__subgraphs_abb696ac134c854b1e4641c42939d0fe8} 
+plot\+\_\+subgraphs.\+subgraphs\+\_\+of\+\_\+\+G\+\_\+ex}
+
+\hypertarget{namespaceplot__subgraphs_autotoc_md261}{}\doxysubsubsection{\texorpdfstring{Calculate the subgraphs with plotting all results of intemediate steps.}{Calculate the subgraphs with plotting all results of intemediate steps.}}\label{namespaceplot__subgraphs_autotoc_md261}

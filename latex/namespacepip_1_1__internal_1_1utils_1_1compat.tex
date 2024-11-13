@@ -1,0 +1,144 @@
+\doxysection{pip.\+\_\+internal.\+utils.\+compat Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat}{}\label{namespacepip_1_1__internal_1_1utils_1_1compat}\index{pip.\_internal.utils.compat@{pip.\_internal.utils.compat}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a013757180c64c18002b2f3dd305237b6}\label{namespacepip_1_1__internal_1_1utils_1_1compat_a013757180c64c18002b2f3dd305237b6} 
+{\bfseries backslashreplace\+\_\+decode\+\_\+fn} (err)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_adb02cad8b7dc0afa6c6e132f8e751caa}\label{namespacepip_1_1__internal_1_1utils_1_1compat_adb02cad8b7dc0afa6c6e132f8e751caa} 
+{\bfseries has\+\_\+tls} ()
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1compat_a904092bad40cdc029e6e81d83012a51c}{str\+\_\+to\+\_\+display}} (data, desc=None)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1compat_aa322be9b1dc3c22971091b55b32ea03a}{console\+\_\+to\+\_\+str}} (data)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1compat_a5c06980a9e53d209cb27b907ab4daafb}{get\+\_\+path\+\_\+uid}} (path)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1compat_a6595b2ee9701a08e0771c48c84dc9f66}{expanduser}} (path)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1compat_a2e547fd776d9a6898f11713704f11143}{samefile}} (file1, file2)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1compat_a38c6d72e39651d1ef5675cab72f71574}{get\+\_\+terminal\+\_\+size}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a5681c734ae1d34860cb543722e3de528}\label{namespacepip_1_1__internal_1_1utils_1_1compat_a5681c734ae1d34860cb543722e3de528} 
+{\bfseries ip\+\_\+address}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a2d9240525f2f5e9360ffbc936123d190}\label{namespacepip_1_1__internal_1_1utils_1_1compat_a2d9240525f2f5e9360ffbc936123d190} 
+{\bfseries ip\+\_\+network}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a65e053f583b83de19eee10b715b84aab}\label{namespacepip_1_1__internal_1_1utils_1_1compat_a65e053f583b83de19eee10b715b84aab} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a107fbaca6ccc4243b7ad7834becfb3f0}\label{namespacepip_1_1__internal_1_1utils_1_1compat_a107fbaca6ccc4243b7ad7834becfb3f0} 
+{\bfseries cache\+\_\+from\+\_\+source} = imp.\+cache\+\_\+from\+\_\+source
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a26d401f29268943dd4f6cb71500688f4}\label{namespacepip_1_1__internal_1_1utils_1_1compat_a26d401f29268943dd4f6cb71500688f4} 
+{\bfseries uses\+\_\+pycache} = cache\+\_\+from\+\_\+source is not None
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a9eef26ed5d856a870ff4a78859d1f200}\label{namespacepip_1_1__internal_1_1utils_1_1compat_a9eef26ed5d856a870ff4a78859d1f200} 
+str {\bfseries backslashreplace\+\_\+decode} = "{}backslashreplace\+\_\+decode"{}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a91c56c36ec95dd8debf2841f3b317363}\label{namespacepip_1_1__internal_1_1utils_1_1compat_a91c56c36ec95dd8debf2841f3b317363} 
+dict {\bfseries stdlib\+\_\+pkgs} = \{"{}python"{}, "{}wsgiref"{}, "{}argparse"{}\}
+\item 
+tuple \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1compat_a92bff1d2e34baee184add4ef4181d365}{WINDOWS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Stuff that differs in different Python versions and platform
+distributions.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_aa322be9b1dc3c22971091b55b32ea03a}\index{pip.\_internal.utils.compat@{pip.\_internal.utils.compat}!console\_to\_str@{console\_to\_str}}
+\index{console\_to\_str@{console\_to\_str}!pip.\_internal.utils.compat@{pip.\_internal.utils.compat}}
+\doxysubsubsection{\texorpdfstring{console\_to\_str()}{console\_to\_str()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1compat_aa322be9b1dc3c22971091b55b32ea03a} 
+pip.\+\_\+internal.\+utils.\+compat.\+console\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string, safe for output, of subprocess output.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a6595b2ee9701a08e0771c48c84dc9f66}\index{pip.\_internal.utils.compat@{pip.\_internal.utils.compat}!expanduser@{expanduser}}
+\index{expanduser@{expanduser}!pip.\_internal.utils.compat@{pip.\_internal.utils.compat}}
+\doxysubsubsection{\texorpdfstring{expanduser()}{expanduser()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1compat_a6595b2ee9701a08e0771c48c84dc9f66} 
+pip.\+\_\+internal.\+utils.\+compat.\+expanduser (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Expand ~ and ~user constructions.
+
+Includes a workaround for https://bugs.python.org/issue14768
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a5c06980a9e53d209cb27b907ab4daafb}\index{pip.\_internal.utils.compat@{pip.\_internal.utils.compat}!get\_path\_uid@{get\_path\_uid}}
+\index{get\_path\_uid@{get\_path\_uid}!pip.\_internal.utils.compat@{pip.\_internal.utils.compat}}
+\doxysubsubsection{\texorpdfstring{get\_path\_uid()}{get\_path\_uid()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1compat_a5c06980a9e53d209cb27b907ab4daafb} 
+pip.\+\_\+internal.\+utils.\+compat.\+get\+\_\+path\+\_\+uid (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return path's uid.
+
+Does not follow symlinks:
+    https://github.com/pypa/pip/pull/935#discussion_r5307003
+
+Placed this function in compat due to differences on AIX and
+Jython, that should eventually go away.
+
+:raises OSError: When path is a symlink or can't be read.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a38c6d72e39651d1ef5675cab72f71574}\index{pip.\_internal.utils.compat@{pip.\_internal.utils.compat}!get\_terminal\_size@{get\_terminal\_size}}
+\index{get\_terminal\_size@{get\_terminal\_size}!pip.\_internal.utils.compat@{pip.\_internal.utils.compat}}
+\doxysubsubsection{\texorpdfstring{get\_terminal\_size()}{get\_terminal\_size()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1compat_a38c6d72e39651d1ef5675cab72f71574} 
+pip.\+\_\+internal.\+utils.\+compat.\+get\+\_\+terminal\+\_\+size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a tuple (x, y) representing the width(x) and the height(y)
+in characters of the terminal window.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a2e547fd776d9a6898f11713704f11143}\index{pip.\_internal.utils.compat@{pip.\_internal.utils.compat}!samefile@{samefile}}
+\index{samefile@{samefile}!pip.\_internal.utils.compat@{pip.\_internal.utils.compat}}
+\doxysubsubsection{\texorpdfstring{samefile()}{samefile()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1compat_a2e547fd776d9a6898f11713704f11143} 
+pip.\+\_\+internal.\+utils.\+compat.\+samefile (\begin{DoxyParamCaption}\item[{}]{file1}{, }\item[{}]{file2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Provide an alternative for os.path.samefile on Windows/Python2\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a904092bad40cdc029e6e81d83012a51c}\index{pip.\_internal.utils.compat@{pip.\_internal.utils.compat}!str\_to\_display@{str\_to\_display}}
+\index{str\_to\_display@{str\_to\_display}!pip.\_internal.utils.compat@{pip.\_internal.utils.compat}}
+\doxysubsubsection{\texorpdfstring{str\_to\_display()}{str\_to\_display()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1compat_a904092bad40cdc029e6e81d83012a51c} 
+pip.\+\_\+internal.\+utils.\+compat.\+str\+\_\+to\+\_\+display (\begin{DoxyParamCaption}\item[{}]{data}{, }\item[{}]{desc}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}For display or logging purposes, convert a bytes object (or text) to
+text (e.g. unicode in Python 2) safe for output.
+
+:param desc: An optional phrase describing the input data, for use in
+    the log message if a warning is logged. Defaults to "Bytes object".
+
+This function should never error out and so can take a best effort
+approach. It is okay to be lossy if needed since the return value is
+just for display.
+
+We assume the data is in the locale preferred encoding. If it won't
+decode properly, we warn the user but decode as best we can.
+
+We also ensure that the output can be safely written to standard output
+without encoding errors.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compat_a92bff1d2e34baee184add4ef4181d365}\index{pip.\_internal.utils.compat@{pip.\_internal.utils.compat}!WINDOWS@{WINDOWS}}
+\index{WINDOWS@{WINDOWS}!pip.\_internal.utils.compat@{pip.\_internal.utils.compat}}
+\doxysubsubsection{\texorpdfstring{WINDOWS}{WINDOWS}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1compat_a92bff1d2e34baee184add4ef4181d365} 
+tuple pip.\+\_\+internal.\+utils.\+compat.\+WINDOWS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (sys.platform.startswith(\textcolor{stringliteral}{"{}win"{}})\ \textcolor{keywordflow}{or}}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ (sys.platform\ ==\ \textcolor{stringliteral}{'cli'}\ \textcolor{keywordflow}{and}\ os.name\ ==\ \textcolor{stringliteral}{'nt'}))}
+
+\end{DoxyCode}

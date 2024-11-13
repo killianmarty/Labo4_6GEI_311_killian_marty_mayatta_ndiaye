@@ -1,0 +1,125 @@
+\doxysection{pip.\+\_\+internal.\+operations.\+prepare Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare}{}\label{namespacepip_1_1__internal_1_1operations_1_1prepare}\index{pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1operations_1_1prepare_1_1_file}{File}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1operations_1_1prepare_1_1_requirement_preparer}{Requirement\+Preparer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1prepare_aa82d4e472f563cc97ec6ff2f0550fc84}{\+\_\+get\+\_\+prepared\+\_\+distribution}} (req, req\+\_\+tracker, finder, build\+\_\+isolation)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_a1ba5b73789936fd66b99744ea41ddf20}\label{namespacepip_1_1__internal_1_1operations_1_1prepare_a1ba5b73789936fd66b99744ea41ddf20} 
+{\bfseries unpack\+\_\+vcs\+\_\+link} (link, location)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_a8c2855fda5990811f567dd347ba3fb0e}\label{namespacepip_1_1__internal_1_1operations_1_1prepare_a8c2855fda5990811f567dd347ba3fb0e} 
+{\bfseries get\+\_\+http\+\_\+url} (link, downloader, download\+\_\+dir=None, hashes=None)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1prepare_a3f106c761cfde79bee302f6cedf4573d}{\+\_\+copy2\+\_\+ignoring\+\_\+special\+\_\+files}} (src, dest)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_a19d423719bc72aa2f701204844c66d10}\label{namespacepip_1_1__internal_1_1operations_1_1prepare_a19d423719bc72aa2f701204844c66d10} 
+{\bfseries \+\_\+copy\+\_\+source\+\_\+tree} (source, target)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1prepare_aac075ca1237bd27eb38f342fdb404768}{get\+\_\+file\+\_\+url}} (link, download\+\_\+dir=None, hashes=None \# type\+:\+Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{Hashes}}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1prepare_a7eaca69a4eff37388d0f2ef60d67d3a3}{unpack\+\_\+url}} (link, location, downloader, download\+\_\+dir=None, hashes=None)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1prepare_a378ff2aab15431fbfef0b5a88b38d939}{\+\_\+download\+\_\+http\+\_\+url}} (link, downloader, temp\+\_\+dir, hashes)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1prepare_ae851abcc525622d5e20ca5b1b780b5d4}{\+\_\+check\+\_\+download\+\_\+dir}} (link, download\+\_\+dir, hashes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1prepare_aa7db2416f8da634963860a7e4ef2f289}{Copytree\+Kwargs}}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_a5711b6d724733a124cdb792d179f0940}\label{namespacepip_1_1__internal_1_1operations_1_1prepare_a5711b6d724733a124cdb792d179f0940} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Prepares a distribution for installation
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_ae851abcc525622d5e20ca5b1b780b5d4}\index{pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}!\_check\_download\_dir@{\_check\_download\_dir}}
+\index{\_check\_download\_dir@{\_check\_download\_dir}!pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}}
+\doxysubsubsection{\texorpdfstring{\_check\_download\_dir()}{\_check\_download\_dir()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1prepare_ae851abcc525622d5e20ca5b1b780b5d4} 
+pip.\+\_\+internal.\+operations.\+prepare.\+\_\+check\+\_\+download\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{link}{, }\item[{}]{download\+\_\+dir}{, }\item[{}]{hashes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} Check download_dir for previously downloaded file with correct hash
+    If a correct file is found return its path else None
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_a3f106c761cfde79bee302f6cedf4573d}\index{pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}!\_copy2\_ignoring\_special\_files@{\_copy2\_ignoring\_special\_files}}
+\index{\_copy2\_ignoring\_special\_files@{\_copy2\_ignoring\_special\_files}!pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}}
+\doxysubsubsection{\texorpdfstring{\_copy2\_ignoring\_special\_files()}{\_copy2\_ignoring\_special\_files()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1prepare_a3f106c761cfde79bee302f6cedf4573d} 
+pip.\+\_\+internal.\+operations.\+prepare.\+\_\+copy2\+\_\+ignoring\+\_\+special\+\_\+files (\begin{DoxyParamCaption}\item[{}]{src}{, }\item[{}]{dest}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Copying special files is not supported, but as a convenience to users
+we skip errors copying them. This supports tools that may create e.g.
+socket files in the project source directory.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_a378ff2aab15431fbfef0b5a88b38d939}\index{pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}!\_download\_http\_url@{\_download\_http\_url}}
+\index{\_download\_http\_url@{\_download\_http\_url}!pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}}
+\doxysubsubsection{\texorpdfstring{\_download\_http\_url()}{\_download\_http\_url()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1prepare_a378ff2aab15431fbfef0b5a88b38d939} 
+pip.\+\_\+internal.\+operations.\+prepare.\+\_\+download\+\_\+http\+\_\+url (\begin{DoxyParamCaption}\item[{}]{link}{, }\item[{}]{downloader}{, }\item[{}]{temp\+\_\+dir}{, }\item[{}]{hashes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Download link url into temp_dir using provided session\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_aa82d4e472f563cc97ec6ff2f0550fc84}\index{pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}!\_get\_prepared\_distribution@{\_get\_prepared\_distribution}}
+\index{\_get\_prepared\_distribution@{\_get\_prepared\_distribution}!pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}}
+\doxysubsubsection{\texorpdfstring{\_get\_prepared\_distribution()}{\_get\_prepared\_distribution()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1prepare_aa82d4e472f563cc97ec6ff2f0550fc84} 
+pip.\+\_\+internal.\+operations.\+prepare.\+\_\+get\+\_\+prepared\+\_\+distribution (\begin{DoxyParamCaption}\item[{}]{req}{, }\item[{}]{req\+\_\+tracker}{, }\item[{}]{finder}{, }\item[{}]{build\+\_\+isolation}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Prepare a distribution for installation.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_aac075ca1237bd27eb38f342fdb404768}\index{pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}!get\_file\_url@{get\_file\_url}}
+\index{get\_file\_url@{get\_file\_url}!pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}}
+\doxysubsubsection{\texorpdfstring{get\_file\_url()}{get\_file\_url()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1prepare_aac075ca1237bd27eb38f342fdb404768} 
+pip.\+\_\+internal.\+operations.\+prepare.\+get\+\_\+file\+\_\+url (\begin{DoxyParamCaption}\item[{}]{link}{, }\item[{}]{download\+\_\+dir}{ = {\ttfamily None}, }\item[{}]{hashes}{ = {\ttfamily None~~\#~type\+:~Optional\mbox{[}\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{Hashes}}\mbox{]}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get file and optionally check its hash.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_a7eaca69a4eff37388d0f2ef60d67d3a3}\index{pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}!unpack\_url@{unpack\_url}}
+\index{unpack\_url@{unpack\_url}!pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}}
+\doxysubsubsection{\texorpdfstring{unpack\_url()}{unpack\_url()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1prepare_a7eaca69a4eff37388d0f2ef60d67d3a3} 
+pip.\+\_\+internal.\+operations.\+prepare.\+unpack\+\_\+url (\begin{DoxyParamCaption}\item[{}]{link}{, }\item[{}]{location}{, }\item[{}]{downloader}{, }\item[{}]{download\+\_\+dir}{ = {\ttfamily None}, }\item[{}]{hashes}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Unpack link into location, downloading if required.
+
+:param hashes: A Hashes object, one of whose embedded hashes must match,
+    or HashMismatch will be raised. If the Hashes is empty, no matches are
+    required, and unhashable types of requirements (like VCS ones, which
+    would ordinarily raise HashUnsupported) are allowed.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1prepare_aa7db2416f8da634963860a7e4ef2f289}\index{pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}!CopytreeKwargs@{CopytreeKwargs}}
+\index{CopytreeKwargs@{CopytreeKwargs}!pip.\_internal.operations.prepare@{pip.\_internal.operations.prepare}}
+\doxysubsubsection{\texorpdfstring{CopytreeKwargs}{CopytreeKwargs}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1prepare_aa7db2416f8da634963860a7e4ef2f289} 
+pip.\+\_\+internal.\+operations.\+prepare.\+Copytree\+Kwargs}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ TypedDict(}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'CopytreeKwargs'},}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'ignore'}:\ Callable[[str,\ List[str]],\ List[str]],}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'symlinks'}:\ bool,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ total=\textcolor{keyword}{False},}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}

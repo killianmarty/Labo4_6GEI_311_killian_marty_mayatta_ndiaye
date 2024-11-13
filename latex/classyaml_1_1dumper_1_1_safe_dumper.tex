@@ -1,0 +1,406 @@
+\doxysection{yaml.\+dumper.\+Safe\+Dumper Class Reference}
+\hypertarget{classyaml_1_1dumper_1_1_safe_dumper}{}\label{classyaml_1_1dumper_1_1_safe_dumper}\index{yaml.dumper.SafeDumper@{yaml.dumper.SafeDumper}}
+Inheritance diagram for yaml.\+dumper.\+Safe\+Dumper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.935484cm]{classyaml_1_1dumper_1_1_safe_dumper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyaml_1_1dumper_1_1_safe_dumper_ab853ce03cf07ff526190e2ced0ccb425}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, stream, default\+\_\+style=None, default\+\_\+flow\+\_\+style=False, canonical=None, indent=None, width=None, allow\+\_\+unicode=None, line\+\_\+break=None, encoding=None, explicit\+\_\+start=None, explicit\+\_\+end=None, version=None, tags=None, sort\+\_\+keys=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1emitter_1_1_emitter}{yaml.\+emitter.\+Emitter}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries dispose} (self)
+\item 
+{\bfseries emit} (self, event)
+\item 
+{\bfseries need\+\_\+more\+\_\+events} (self)
+\item 
+{\bfseries need\+\_\+events} (self, count)
+\item 
+{\bfseries increase\+\_\+indent} (self, flow=False, indentless=False)
+\item 
+{\bfseries expect\+\_\+stream\+\_\+start} (self)
+\item 
+{\bfseries expect\+\_\+nothing} (self)
+\item 
+{\bfseries expect\+\_\+first\+\_\+document\+\_\+start} (self)
+\item 
+{\bfseries expect\+\_\+document\+\_\+start} (self, first=False)
+\item 
+{\bfseries expect\+\_\+document\+\_\+end} (self)
+\item 
+{\bfseries expect\+\_\+document\+\_\+root} (self)
+\item 
+{\bfseries expect\+\_\+node} (self, root=False, sequence=False, mapping=False, simple\+\_\+key=False)
+\item 
+{\bfseries expect\+\_\+alias} (self)
+\item 
+{\bfseries expect\+\_\+scalar} (self)
+\item 
+{\bfseries expect\+\_\+flow\+\_\+sequence} (self)
+\item 
+{\bfseries expect\+\_\+first\+\_\+flow\+\_\+sequence\+\_\+item} (self)
+\item 
+{\bfseries expect\+\_\+flow\+\_\+sequence\+\_\+item} (self)
+\item 
+{\bfseries expect\+\_\+flow\+\_\+mapping} (self)
+\item 
+{\bfseries expect\+\_\+first\+\_\+flow\+\_\+mapping\+\_\+key} (self)
+\item 
+{\bfseries expect\+\_\+flow\+\_\+mapping\+\_\+key} (self)
+\item 
+{\bfseries expect\+\_\+flow\+\_\+mapping\+\_\+simple\+\_\+value} (self)
+\item 
+{\bfseries expect\+\_\+flow\+\_\+mapping\+\_\+value} (self)
+\item 
+{\bfseries expect\+\_\+block\+\_\+sequence} (self)
+\item 
+{\bfseries expect\+\_\+first\+\_\+block\+\_\+sequence\+\_\+item} (self)
+\item 
+{\bfseries expect\+\_\+block\+\_\+sequence\+\_\+item} (self, first=False)
+\item 
+{\bfseries expect\+\_\+block\+\_\+mapping} (self)
+\item 
+{\bfseries expect\+\_\+first\+\_\+block\+\_\+mapping\+\_\+key} (self)
+\item 
+{\bfseries expect\+\_\+block\+\_\+mapping\+\_\+key} (self, first=False)
+\item 
+{\bfseries expect\+\_\+block\+\_\+mapping\+\_\+simple\+\_\+value} (self)
+\item 
+{\bfseries expect\+\_\+block\+\_\+mapping\+\_\+value} (self)
+\item 
+{\bfseries check\+\_\+empty\+\_\+sequence} (self)
+\item 
+{\bfseries check\+\_\+empty\+\_\+mapping} (self)
+\item 
+{\bfseries check\+\_\+empty\+\_\+document} (self)
+\item 
+{\bfseries check\+\_\+simple\+\_\+key} (self)
+\item 
+{\bfseries process\+\_\+anchor} (self, indicator)
+\item 
+{\bfseries process\+\_\+tag} (self)
+\item 
+{\bfseries choose\+\_\+scalar\+\_\+style} (self)
+\item 
+{\bfseries process\+\_\+scalar} (self)
+\item 
+{\bfseries prepare\+\_\+version} (self, version)
+\item 
+{\bfseries prepare\+\_\+tag\+\_\+handle} (self, handle)
+\item 
+{\bfseries prepare\+\_\+tag\+\_\+prefix} (self, prefix)
+\item 
+{\bfseries prepare\+\_\+tag} (self, tag)
+\item 
+{\bfseries prepare\+\_\+anchor} (self, anchor)
+\item 
+{\bfseries analyze\+\_\+scalar} (self, scalar)
+\item 
+{\bfseries flush\+\_\+stream} (self)
+\item 
+{\bfseries write\+\_\+stream\+\_\+start} (self)
+\item 
+{\bfseries write\+\_\+stream\+\_\+end} (self)
+\item 
+{\bfseries write\+\_\+indicator} (self, indicator, need\+\_\+whitespace, whitespace=False, indention=False)
+\item 
+{\bfseries write\+\_\+indent} (self)
+\item 
+{\bfseries write\+\_\+line\+\_\+break} (self, data=None)
+\item 
+{\bfseries write\+\_\+version\+\_\+directive} (self, version\+\_\+text)
+\item 
+{\bfseries write\+\_\+tag\+\_\+directive} (self, handle\+\_\+text, prefix\+\_\+text)
+\item 
+{\bfseries write\+\_\+single\+\_\+quoted} (self, text, split=True)
+\item 
+{\bfseries write\+\_\+double\+\_\+quoted} (self, text, split=True)
+\item 
+{\bfseries determine\+\_\+block\+\_\+hints} (self, text)
+\item 
+{\bfseries write\+\_\+folded} (self, text)
+\item 
+{\bfseries write\+\_\+literal} (self, text)
+\item 
+{\bfseries write\+\_\+plain} (self, text, split=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1serializer_1_1_serializer}{yaml.\+serializer.\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries open} (self)
+\item 
+{\bfseries close} (self)
+\item 
+{\bfseries serialize} (self, node)
+\item 
+{\bfseries anchor\+\_\+node} (self, node)
+\item 
+{\bfseries generate\+\_\+anchor} (self, node)
+\item 
+{\bfseries serialize\+\_\+node} (self, node, parent, index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_safe_representer}{yaml.\+representer.\+Safe\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyaml_1_1representer_1_1_safe_representer_a0c89a03789d54c96bb133637cfe1e18d}{ignore\+\_\+aliases}} (self, data)
+\item 
+{\bfseries represent\+\_\+none} (self, data)
+\item 
+{\bfseries represent\+\_\+str} (self, data)
+\item 
+{\bfseries represent\+\_\+binary} (self, data)
+\item 
+{\bfseries represent\+\_\+bool} (self, data)
+\item 
+{\bfseries represent\+\_\+int} (self, data)
+\item 
+{\bfseries represent\+\_\+float} (self, data)
+\item 
+{\bfseries represent\+\_\+list} (self, data)
+\item 
+{\bfseries represent\+\_\+dict} (self, data)
+\item 
+{\bfseries represent\+\_\+set} (self, data)
+\item 
+{\bfseries represent\+\_\+date} (self, data)
+\item 
+{\bfseries represent\+\_\+datetime} (self, data)
+\item 
+{\bfseries represent\+\_\+yaml\+\_\+object} (self, tag, data, cls, flow\+\_\+style=None)
+\item 
+{\bfseries represent\+\_\+undefined} (self, data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_base_representer}{yaml.\+representer.\+Base\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries represent} (self, data)
+\item 
+{\bfseries represent\+\_\+data} (self, data)
+\item 
+{\bfseries add\+\_\+representer} (cls, data\+\_\+type, representer)
+\item 
+{\bfseries add\+\_\+multi\+\_\+representer} (cls, data\+\_\+type, representer)
+\item 
+{\bfseries represent\+\_\+scalar} (self, tag, value, style=None)
+\item 
+{\bfseries represent\+\_\+sequence} (self, tag, sequence, flow\+\_\+style=None)
+\item 
+{\bfseries represent\+\_\+mapping} (self, tag, mapping, flow\+\_\+style=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1resolver_1_1_base_resolver}{yaml.\+resolver.\+Base\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries add\+\_\+implicit\+\_\+resolver} (cls, tag, regexp, first)
+\item 
+{\bfseries add\+\_\+path\+\_\+resolver} (cls, tag, path, kind=None)
+\item 
+{\bfseries descend\+\_\+resolver} (self, current\+\_\+node, current\+\_\+index)
+\item 
+{\bfseries ascend\+\_\+resolver} (self)
+\item 
+{\bfseries check\+\_\+resolver\+\_\+prefix} (self, depth, path, kind, current\+\_\+node, current\+\_\+index)
+\item 
+{\bfseries resolve} (self, kind, value, implicit)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1emitter_1_1_emitter}{yaml.\+emitter.\+Emitter}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries stream} = stream
+\item 
+list {\bfseries encoding} = None
+\item 
+list {\bfseries states} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries state} = self.\+expect\+\_\+stream\+\_\+start
+\item 
+list {\bfseries events} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries event} = None
+\item 
+list {\bfseries indents} = \mbox{[}$\,$\mbox{]}
+\item 
+int {\bfseries indent} = None
+\item 
+int {\bfseries flow\+\_\+level} = 0
+\item 
+bool {\bfseries root\+\_\+context} = False
+\item 
+bool {\bfseries sequence\+\_\+context} = False
+\item 
+bool {\bfseries mapping\+\_\+context} = False
+\item 
+bool {\bfseries simple\+\_\+key\+\_\+context} = False
+\item 
+int {\bfseries line} = 0
+\item 
+int {\bfseries column} = 0
+\item 
+bool {\bfseries whitespace} = True
+\item 
+bool {\bfseries indention} = True
+\item 
+bool {\bfseries open\+\_\+ended} = False
+\item 
+{\bfseries canonical} = canonical
+\item 
+{\bfseries allow\+\_\+unicode} = allow\+\_\+unicode
+\item 
+int {\bfseries best\+\_\+indent} = 2
+\item 
+int {\bfseries best\+\_\+width} = 80
+\item 
+str {\bfseries best\+\_\+line\+\_\+break} = \textquotesingle{}\textbackslash{}n\textquotesingle{}
+\item 
+dict {\bfseries tag\+\_\+prefixes} = None
+\item 
+{\bfseries prepared\+\_\+anchor} = None
+\item 
+{\bfseries prepared\+\_\+tag} = None
+\item 
+{\bfseries analysis} = None
+\item 
+str {\bfseries style} = None
+\item 
+{\bfseries expect\+\_\+document\+\_\+end}
+\item 
+list {\bfseries indent} = 1
+\item 
+{\bfseries expect\+\_\+flow\+\_\+sequence\+\_\+item} = self.\+states.\+pop()
+\item 
+{\bfseries expect\+\_\+flow\+\_\+mapping\+\_\+simple\+\_\+value} = self.\+states.\+pop()
+\item 
+{\bfseries expect\+\_\+flow\+\_\+mapping\+\_\+value} = True)
+\item 
+{\bfseries expect\+\_\+flow\+\_\+mapping\+\_\+key}
+\item 
+{\bfseries expect\+\_\+block\+\_\+sequence\+\_\+item}
+\item 
+{\bfseries expect\+\_\+block\+\_\+mapping\+\_\+simple\+\_\+value} = self.\+states.\+pop()
+\item 
+{\bfseries expect\+\_\+block\+\_\+mapping\+\_\+value}
+\item 
+{\bfseries expect\+\_\+block\+\_\+mapping\+\_\+key}
+\item 
+str {\bfseries prepared\+\_\+tag} = \textquotesingle{}!\textquotesingle{}
+\item 
+str {\bfseries analysis} = \textquotesingle{}"{}\textquotesingle{} or self.\+canonical\+:
+\item 
+tuple {\bfseries style} = (not self.\+simple\+\_\+key\+\_\+context)
+\item 
+bool {\bfseries allow\+\_\+unicode} = True
+\item 
+str {\bfseries ESCAPE\+\_\+\+REPLACEMENTS} = \textquotesingle{}\textbackslash{}\textbackslash{}\textquotesingle{}+self.\+ESCAPE\+\_\+\+REPLACEMENTS\mbox{[}ch\mbox{]}
+\item 
+str {\bfseries whitespace} = \textquotesingle{} \textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1serializer_1_1_serializer}{yaml.\+serializer.\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries use\+\_\+encoding} = encoding
+\item 
+{\bfseries use\+\_\+explicit\+\_\+start} = explicit\+\_\+start
+\item 
+{\bfseries use\+\_\+explicit\+\_\+end} = explicit\+\_\+end
+\item 
+{\bfseries use\+\_\+version} = version
+\item 
+{\bfseries use\+\_\+tags} = tags
+\item 
+dict {\bfseries serialized\+\_\+nodes} = \{\}
+\item 
+dict {\bfseries anchors} = \{\}
+\item 
+int {\bfseries last\+\_\+anchor\+\_\+id} = 0
+\item 
+bool {\bfseries closed} = None
+\item 
+bool {\bfseries serialized\+\_\+nodes} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_base_representer}{yaml.\+representer.\+Base\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries default\+\_\+style} = default\+\_\+style
+\item 
+{\bfseries sort\+\_\+keys} = sort\+\_\+keys
+\item 
+{\bfseries default\+\_\+flow\+\_\+style} = default\+\_\+flow\+\_\+style
+\item 
+dict {\bfseries represented\+\_\+objects} = \{\}
+\item 
+list {\bfseries object\+\_\+keeper} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries alias\+\_\+key} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1resolver_1_1_base_resolver}{yaml.\+resolver.\+Base\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries resolver\+\_\+exact\+\_\+paths} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries resolver\+\_\+prefix\+\_\+paths} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries yaml\+\_\+implicit\+\_\+resolvers} = \mbox{[}None\mbox{]}
+\item 
+list {\bfseries yaml\+\_\+path\+\_\+resolvers} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1emitter_1_1_emitter}{yaml.\+emitter.\+Emitter}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classyaml_1_1emitter_1_1_emitter_a923012006dcfca306345093e57c830ed}{DEFAULT\+\_\+\+TAG\+\_\+\+PREFIXES}}
+\item 
+dict \mbox{\hyperlink{classyaml_1_1emitter_1_1_emitter_a53da567dfa96c0e89423c9d2879ecc13}{ESCAPE\+\_\+\+REPLACEMENTS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1serializer_1_1_serializer}{yaml.\+serializer.\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries ANCHOR\+\_\+\+TEMPLATE} = \textquotesingle{}id\%03d\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_safe_representer}{yaml.\+representer.\+Safe\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries inf\+\_\+value} = 1e300
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_base_representer}{yaml.\+representer.\+Base\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+dict {\bfseries yaml\+\_\+representers} = \{\}
+\item 
+dict {\bfseries yaml\+\_\+multi\+\_\+representers} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1resolver_1_1_base_resolver}{yaml.\+resolver.\+Base\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries DEFAULT\+\_\+\+SCALAR\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:str\textquotesingle{}
+\item 
+str {\bfseries DEFAULT\+\_\+\+SEQUENCE\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:seq\textquotesingle{}
+\item 
+str {\bfseries DEFAULT\+\_\+\+MAPPING\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:map\textquotesingle{}
+\item 
+dict {\bfseries yaml\+\_\+implicit\+\_\+resolvers} = \{\}
+\item 
+dict {\bfseries yaml\+\_\+path\+\_\+resolvers} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classyaml_1_1dumper_1_1_safe_dumper_ab853ce03cf07ff526190e2ced0ccb425}\index{yaml.dumper.SafeDumper@{yaml.dumper.SafeDumper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!yaml.dumper.SafeDumper@{yaml.dumper.SafeDumper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classyaml_1_1dumper_1_1_safe_dumper_ab853ce03cf07ff526190e2ced0ccb425} 
+yaml.\+dumper.\+Safe\+Dumper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{stream}{, }\item[{}]{default\+\_\+style}{ = {\ttfamily None}, }\item[{}]{default\+\_\+flow\+\_\+style}{ = {\ttfamily False}, }\item[{}]{canonical}{ = {\ttfamily None}, }\item[{}]{indent}{ = {\ttfamily None}, }\item[{}]{width}{ = {\ttfamily None}, }\item[{}]{allow\+\_\+unicode}{ = {\ttfamily None}, }\item[{}]{line\+\_\+break}{ = {\ttfamily None}, }\item[{}]{encoding}{ = {\ttfamily None}, }\item[{}]{explicit\+\_\+start}{ = {\ttfamily None}, }\item[{}]{explicit\+\_\+end}{ = {\ttfamily None}, }\item[{}]{version}{ = {\ttfamily None}, }\item[{}]{tags}{ = {\ttfamily None}, }\item[{}]{sort\+\_\+keys}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classyaml_1_1emitter_1_1_emitter}{yaml.\+emitter.\+Emitter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/yaml/dumper.\+py\end{DoxyCompactItemize}

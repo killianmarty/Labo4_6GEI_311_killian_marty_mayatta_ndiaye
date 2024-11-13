@@ -1,0 +1,135 @@
+\doxysection{Référence de la classe click.\+types.\+Int\+Range}
+\hypertarget{classclick_1_1types_1_1_int_range}{}\label{classclick_1_1types_1_1_int_range}\index{click.types.IntRange@{click.types.IntRange}}
+Graphe d\textquotesingle{}héritage de click.\+types.\+Int\+Range\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classclick_1_1types_1_1_int_range}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1types_1_1_int_range_ad63a97b2bab431ceedd203277b2f5955}\label{classclick_1_1types_1_1_int_range_ad63a97b2bab431ceedd203277b2f5955} 
+str {\bfseries name} = "{}integer range"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classclick_1_1types_1_1_param_type}{click.\+types.\+Param\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries is\+\_\+composite} = False
+\item 
+t {\bfseries arity} = 1
+\item 
+t {\bfseries envvar\+\_\+list\+\_\+splitter} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classclick_1_1types_1_1_int_param_type}{click.\+types.\+Int\+Param\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries name} = "{}integer"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classclick_1_1types_1_1_int_range_a2f0f20b80ebd2ad0b01918b374f82032}{\+\_\+clamp}} (self, int bound, "{}te.\+Literal\mbox{[}1, -\/1\mbox{]}"{} dir, bool open)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classclick_1_1types_1_1___number_range_base}{click.\+types.\+\_\+\+Number\+Range\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classclick_1_1types_1_1___number_range_base_aefabc5738746ef4ae9e08fc943780b41}{\+\_\+describe\+\_\+range}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1types_1_1___number_range_base}{click.\+types.\+\_\+\+Number\+Range\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}float\mbox{]} min=None, t.\+Optional\mbox{[}float\mbox{]} max=None, bool min\+\_\+open=False, bool max\+\_\+open=False, bool clamp=False)
+\item 
+t.\+Dict\mbox{[}str, t.\+Any\mbox{]} \mbox{\hyperlink{classclick_1_1types_1_1___number_range_base_a87a531bf5be8287d73d7fbd8dde83461}{to\+\_\+info\+\_\+dict}} (self)
+\item 
+t.\+Any \mbox{\hyperlink{classclick_1_1types_1_1___number_range_base_a37af1e7f555bae8d64b2df3a92020127}{convert}} (self, t.\+Any value, t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]} param, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1types_1_1___number_param_type_base}{click.\+types.\+\_\+\+Number\+Param\+Type\+Base}}}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1types_1_1_param_type}{click.\+types.\+Param\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, t.\+Any value, t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]} param=None, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx=None)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_a3f721d50ade05b3256f9394e7f9b21c2}{get\+\_\+metavar}} (self, "{}Parameter"{} param)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_a418ed931a6b2bfe6070aeebaec8351db}{get\+\_\+missing\+\_\+message}} (self, "{}Parameter"{} param)
+\item 
+t.\+Sequence\mbox{[}str\mbox{]} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_ad1f3a07a49a52bc40708f959127784a0}{split\+\_\+envvar\+\_\+value}} (self, str rv)
+\item 
+"{}t.\+No\+Return"{} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_a7e6973592d7cece9da3abd99676428f4}{fail}} (self, str message, t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]} param=None, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx=None)
+\item 
+t.\+List\mbox{[}"{}Completion\+Item"{}\mbox{]} \mbox{\hyperlink{classclick_1_1types_1_1_param_type_a2c54eb57d38475f9dbac286e4fd6e021}{shell\+\_\+complete}} (self, "{}Context"{} ctx, "{}Parameter"{} param, str incomplete)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1types_1_1_int_param_type}{click.\+types.\+Int\+Param\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classclick_1_1types_1_1___number_range_base}{click.\+types.\+\_\+\+Number\+Range\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries min} = min
+\item 
+{\bfseries max} = max
+\item 
+{\bfseries min\+\_\+open} = min\+\_\+open
+\item 
+{\bfseries max\+\_\+open} = max\+\_\+open
+\item 
+{\bfseries clamp} = clamp
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classclick_1_1types_1_1___number_param_type_base}{click.\+types.\+\_\+\+Number\+Param\+Type\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries \+\_\+number\+\_\+class} .Class\+Var\mbox{[}t.\+Type\mbox{[}t.\+Any\mbox{]}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs protégés statiques hérités de \mbox{\hyperlink{classclick_1_1types_1_1_int_param_type}{click.\+types.\+Int\+Param\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+number\+\_\+class} = int
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Restrict an :data:`click.INT` value to a range of accepted
+values. See :ref:`ranges`.
+
+If ``min`` or ``max`` are not passed, any value is accepted in that
+direction. If ``min_open`` or ``max_open`` are enabled, the
+corresponding boundary is not included in the range.
+
+If ``clamp`` is enabled, a value outside the range is clamped to the
+boundary instead of failing.
+
+.. versionchanged:: 8.0
+    Added the ``min_open`` and ``max_open`` parameters.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classclick_1_1types_1_1_int_range_a2f0f20b80ebd2ad0b01918b374f82032}\index{click.types.IntRange@{click.types.IntRange}!\_clamp@{\_clamp}}
+\index{\_clamp@{\_clamp}!click.types.IntRange@{click.types.IntRange}}
+\doxysubsubsection{\texorpdfstring{\_clamp()}{\_clamp()}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_int_range_a2f0f20b80ebd2ad0b01918b374f82032} 
+ int click.\+types.\+Int\+Range.\+\_\+clamp (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{bound}{, }\item[{"{}te.\+Literal\mbox{[}1, -\/1\mbox{]}"{}}]{dir}{, }\item[{bool     }]{open}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Find the valid value to clamp to bound in the given
+direction.
+
+:param bound: The boundary value.
+:param dir: 1 or -1 indicating the direction to move.
+:param open: If true, the range does not include the bound.
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1types_1_1___number_range_base_a59ac4ead0fdc7729dc8c1b3a9c414ff2}{click.\+types.\+\_\+\+Number\+Range\+Base}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/types.\+py\end{DoxyCompactItemize}

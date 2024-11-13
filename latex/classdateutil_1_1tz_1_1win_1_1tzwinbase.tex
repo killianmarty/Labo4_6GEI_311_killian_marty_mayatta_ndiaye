@@ -1,0 +1,185 @@
+\doxysection{dateutil.\+tz.\+win.\+tzwinbase Class Reference}
+\hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase}{}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase}\index{dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}}
+Inheritance diagram for dateutil.\+tz.\+win.\+tzwinbase\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classdateutil_1_1tz_1_1win_1_1tzwinbase}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1win_1_1tzwinbase_a53ce101473817abc3e0eba9fa280411d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a2b96ab1ccb2479d1185eef9acbc6d83f}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a2b96ab1ccb2479d1185eef9acbc6d83f} 
+{\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1win_1_1tzwinbase_aea091e220dff01a3cb4747b5d55addd9}{display}} (self)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1win_1_1tzwinbase_a6f9c05354e87f0ce336d1d9f85658585}{transitions}} (self, year)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries utcoffset} (self, dt)
+\item 
+{\bfseries dst} (self, dt)
+\item 
+{\bfseries tzname} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase_ab32e816012c6cb57313b01683e937bb4}{fromutc}} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase_a55fcaef75d41636cf8bf51d61602ae1b}{is\+\_\+ambiguous}} (self, dt)
+\item 
+{\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, other)
+\item 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1win_1_1tzwinbase_a820578d32c81d74a2c38f513131639af}{list}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a0b3dbd4501f942078d2a389f87a2768a}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a0b3dbd4501f942078d2a389f87a2768a} 
+{\bfseries hasdst}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries hasdst} = self.\+transitions(dt.\+year)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_ae48b0c95b86878c831c47d5efd478d06}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_ae48b0c95b86878c831c47d5efd478d06} 
+{\bfseries \+\_\+get\+\_\+hasdst} (self)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1win_1_1tzwinbase_aeaf72ebfc60ed6619e20f2119624dd1c}{\+\_\+dst\+\_\+base\+\_\+offset}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+isdst} (self, dt)
+\item 
+{\bfseries \+\_\+naive\+\_\+isdst} (self, dt, transitions)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo}{dateutil.\+tz.\+\_\+common.\+\_\+tzinfo}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_ae7e407e0576eae35c159484562f1b188}{\+\_\+fold\+\_\+status}} (self, dt\+\_\+utc, dt\+\_\+wall)
+\item 
+{\bfseries \+\_\+fold} (self, dt)
+\item 
+\mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1__tzinfo_aab9e45aceaf243524a55eafd2cb81bb8}{\+\_\+fromutc}} (self, dt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_ad645534fde8dda9eea6626952bfe7203}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_ad645534fde8dda9eea6626952bfe7203} 
+{\bfseries \+\_\+std\+\_\+offset} = other.\+\_\+std\+\_\+offset and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a26895ea296f4e4f5c07a3e1cc115015c}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a26895ea296f4e4f5c07a3e1cc115015c} 
+{\bfseries \+\_\+dst\+\_\+offset} = other.\+\_\+dst\+\_\+offset and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a7e985e715a483f7a5be115a1b3a64a05}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a7e985e715a483f7a5be115a1b3a64a05} 
+{\bfseries \+\_\+stddayofweek} = other.\+\_\+stddayofweek and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_ace80e80189ee3d1ac479fec8365a6a34}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_ace80e80189ee3d1ac479fec8365a6a34} 
+{\bfseries \+\_\+dstdayofweek} = other.\+\_\+dstdayofweek and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a56c2dc3a9d7f1185c5fac31e7439f120}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a56c2dc3a9d7f1185c5fac31e7439f120} 
+{\bfseries \+\_\+stdweeknumber} = other.\+\_\+stdweeknumber and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a23dc8e23174322c6e265d8a35db713ab}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a23dc8e23174322c6e265d8a35db713ab} 
+{\bfseries \+\_\+dstweeknumber} = other.\+\_\+dstweeknumber and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a0988e8f5f0a76115478c3308cc1d98e6}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a0988e8f5f0a76115478c3308cc1d98e6} 
+{\bfseries \+\_\+stdhour} = other.\+\_\+stdhour and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a739c7a4372a948fc00691a457123c7fa}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a739c7a4372a948fc00691a457123c7fa} 
+{\bfseries \+\_\+dsthour} = other.\+\_\+dsthour and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a01d74405a0f4f5859fe56271e4d7eceb}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a01d74405a0f4f5859fe56271e4d7eceb} 
+{\bfseries \+\_\+stdminute} = other.\+\_\+stdminute and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_abd1d426f346a94fd5dd8e2fbf7c39c95}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_abd1d426f346a94fd5dd8e2fbf7c39c95} 
+{\bfseries \+\_\+dstminute} = other.\+\_\+dstminute and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_aed6c0420029a60d679cc929453d084c9}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_aed6c0420029a60d679cc929453d084c9} 
+{\bfseries \+\_\+std\+\_\+abbr} = other.\+\_\+std\+\_\+abbr and
+\item 
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a1baa8f23746800478b2cbbd7e77a405a}\label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a1baa8f23746800478b2cbbd7e77a405a} 
+{\bfseries \+\_\+dst\+\_\+abbr} = other.\+\_\+dst\+\_\+abbr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}tzinfo class based on win32's timezones available in the registry.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a53ce101473817abc3e0eba9fa280411d}\index{dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a53ce101473817abc3e0eba9fa280411d} 
+dateutil.\+tz.\+win.\+tzwinbase.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_aeaf72ebfc60ed6619e20f2119624dd1c}\index{dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}!\_dst\_base\_offset@{\_dst\_base\_offset}}
+\index{\_dst\_base\_offset@{\_dst\_base\_offset}!dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}}
+\doxysubsubsection{\texorpdfstring{\_dst\_base\_offset()}{\_dst\_base\_offset()}}
+{\footnotesize\ttfamily \label{classdateutil_1_1tz_1_1win_1_1tzwinbase_aeaf72ebfc60ed6619e20f2119624dd1c} 
+dateutil.\+tz.\+win.\+tzwinbase.\+\_\+dst\+\_\+base\+\_\+offset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdateutil_1_1tz_1_1__common_1_1tzrangebase}{dateutil.\+tz.\+\_\+common.\+tzrangebase}}.
+
+\Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_aea091e220dff01a3cb4747b5d55addd9}\index{dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}!display@{display}}
+\index{display@{display}!dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{classdateutil_1_1tz_1_1win_1_1tzwinbase_aea091e220dff01a3cb4747b5d55addd9} 
+dateutil.\+tz.\+win.\+tzwinbase.\+display (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the display name of the time zone.
+\end{DoxyVerb}
+ \Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a820578d32c81d74a2c38f513131639af}\index{dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}!list@{list}}
+\index{list@{list}!dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}}
+\doxysubsubsection{\texorpdfstring{list()}{list()}}
+{\footnotesize\ttfamily \label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a820578d32c81d74a2c38f513131639af} 
+dateutil.\+tz.\+win.\+tzwinbase.\+list (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Return a list of all time zones known to the system.\end{DoxyVerb}
+ \Hypertarget{classdateutil_1_1tz_1_1win_1_1tzwinbase_a6f9c05354e87f0ce336d1d9f85658585}\index{dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}!transitions@{transitions}}
+\index{transitions@{transitions}!dateutil.tz.win.tzwinbase@{dateutil.tz.win.tzwinbase}}
+\doxysubsubsection{\texorpdfstring{transitions()}{transitions()}}
+{\footnotesize\ttfamily \label{classdateutil_1_1tz_1_1win_1_1tzwinbase_a6f9c05354e87f0ce336d1d9f85658585} 
+dateutil.\+tz.\+win.\+tzwinbase.\+transitions (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{year}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}For a given year, get the DST on and off transition times, expressed
+always on the standard time side. For zones with no transitions, this
+function returns ``None``.
+
+:param year:
+    The year whose transitions you would like to query.
+
+:return:
+    Returns a :class:`tuple` of :class:`datetime.datetime` objects,
+    ``(dston, dstoff)`` for zones with an annual DST transition, or
+    ``None`` for fixed offset zones.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/dateutil/tz/win.\+py\end{DoxyCompactItemize}

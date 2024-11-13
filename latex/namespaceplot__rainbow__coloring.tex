@@ -1,0 +1,97 @@
+\doxysection{plot\+\_\+rainbow\+\_\+coloring Namespace Reference}
+\hypertarget{namespaceplot__rainbow__coloring}{}\label{namespaceplot__rainbow__coloring}\index{plot\_rainbow\_coloring@{plot\_rainbow\_coloring}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_aed4a9aaf72996890b4ddd49eebab6a97}\label{namespaceplot__rainbow__coloring_aed4a9aaf72996890b4ddd49eebab6a97} 
+{\bfseries cycle} (nlist, n)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespaceplot__rainbow__coloring_a5fe8c0639d8d1eca91eae03b515dd86e}{node\+\_\+dist\+\_\+to\+\_\+color}}
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_a6331c627e48f4bc67fca2269f0f73971}\label{namespaceplot__rainbow__coloring_a6331c627e48f4bc67fca2269f0f73971} 
+int {\bfseries nnodes} = 13
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_a5d928e55e3563566c98f207004e7ff33}\label{namespaceplot__rainbow__coloring_a5d928e55e3563566c98f207004e7ff33} 
+{\bfseries G} = nx.\+complete\+\_\+graph(nnodes)
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_a97d60b301fdb5f7eb738f40ad317d276}\label{namespaceplot__rainbow__coloring_a97d60b301fdb5f7eb738f40ad317d276} 
+tuple {\bfseries n} = (nnodes -\/ 1) // 2
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_a40c9603ac6c9348b4b1689fda92308b0}\label{namespaceplot__rainbow__coloring_a40c9603ac6c9348b4b1689fda92308b0} 
+{\bfseries ndist\+\_\+iter} = list(range(1, n + 1))
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_a3efcc69beb7031e330d68f5382289a96}\label{namespaceplot__rainbow__coloring_a3efcc69beb7031e330d68f5382289a96} 
+{\bfseries nodes} = list(G.\+nodes())
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_aaaf28b5b38706a510f1ccf8f0fe5ecc8}\label{namespaceplot__rainbow__coloring_aaaf28b5b38706a510f1ccf8f0fe5ecc8} 
+{\bfseries pos} = nx.\+circular\+\_\+layout(G)
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_add78b5280ca77213daecd8687ce48a3a}\label{namespaceplot__rainbow__coloring_add78b5280ca77213daecd8687ce48a3a} 
+{\bfseries fig}
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_aaae8a744ac5c90e6b46a1ab9df4750cb}\label{namespaceplot__rainbow__coloring_aaae8a744ac5c90e6b46a1ab9df4750cb} 
+{\bfseries ax}
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_ab32846c945cac407dba8b9ee87ba5db6}\label{namespaceplot__rainbow__coloring_ab32846c945cac407dba8b9ee87ba5db6} 
+{\bfseries figsize}
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_a5dd9d0fa4b99b0b9986ff650c463950e}\label{namespaceplot__rainbow__coloring_a5dd9d0fa4b99b0b9986ff650c463950e} 
+dict {\bfseries node\+\_\+opts} = \{"{}node\+\_\+size"{}\+: 500, "{}node\+\_\+color"{}\+: "{}w"{}, "{}edgecolors"{}\+: "{}k"{}, "{}linewidths"{}\+: 2.\+0\}
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_a15a36dfaab40a4d9380b47c1195f59a3}\label{namespaceplot__rainbow__coloring_a15a36dfaab40a4d9380b47c1195f59a3} 
+{\bfseries font\+\_\+size}
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_a4d7875793fdf3c023391e1e00b8cfbea}\label{namespaceplot__rainbow__coloring_a4d7875793fdf3c023391e1e00b8cfbea} 
+list {\bfseries edge\+\_\+colors} = \mbox{[}edgedata\mbox{[}"{}color"{}\mbox{]} for \+\_\+, \+\_\+, edgedata in G.\+edges(data=True)\mbox{]}
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_a041810854bdc5e6f91652b4c982c2df0}\label{namespaceplot__rainbow__coloring_a041810854bdc5e6f91652b4c982c2df0} 
+{\bfseries width}
+\item 
+\Hypertarget{namespaceplot__rainbow__coloring_a4480b701daf885dc29fd305ae8cabfc7}\label{namespaceplot__rainbow__coloring_a4480b701daf885dc29fd305ae8cabfc7} 
+{\bfseries edge\+\_\+color}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}================
+Rainbow Coloring
+================
+
+Generate a complete graph with 13 nodes in a circular layout with the
+edges colored by node distance. The node distance is given by the minimum
+number of nodes traversed along an arc between any two nodes on the circle.
+
+Such graphs are the subject of Ringel's conjecture, which states: any complete
+graph with ``2n + 1`` nodes can be tiled by any tree with ``n + 1`` nodes
+(i.e. copies of the tree can be placed over the complete graph such that each
+edge in the complete graph is covered exactly once). The edge coloring is
+helpful in determining how to place the tree copies.
+
+References
+----------
+https://www.quantamagazine.org/mathematicians-prove-ringels-graph-theory-conjecture-20200219/
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__rainbow__coloring_a5fe8c0639d8d1eca91eae03b515dd86e}\index{plot\_rainbow\_coloring@{plot\_rainbow\_coloring}!node\_dist\_to\_color@{node\_dist\_to\_color}}
+\index{node\_dist\_to\_color@{node\_dist\_to\_color}!plot\_rainbow\_coloring@{plot\_rainbow\_coloring}}
+\doxysubsubsection{\texorpdfstring{node\_dist\_to\_color}{node\_dist\_to\_color}}
+{\footnotesize\ttfamily \label{namespaceplot__rainbow__coloring_a5fe8c0639d8d1eca91eae03b515dd86e} 
+dict plot\+\_\+rainbow\+\_\+coloring.\+node\+\_\+dist\+\_\+to\+\_\+color}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ 1:\ \textcolor{stringliteral}{"{}tab:red"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ 2:\ \textcolor{stringliteral}{"{}tab:orange"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ 3:\ \textcolor{stringliteral}{"{}tab:olive"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ 4:\ \textcolor{stringliteral}{"{}tab:green"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ 5:\ \textcolor{stringliteral}{"{}tab:blue"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ 6:\ \textcolor{stringliteral}{"{}tab:purple"{}},}
+\DoxyCodeLine{00008\ \}}
+
+\end{DoxyCode}

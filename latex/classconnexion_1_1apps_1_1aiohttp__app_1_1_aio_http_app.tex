@@ -1,0 +1,243 @@
+\doxysection{Référence de la classe connexion.\+apps.\+aiohttp\+\_\+app.\+Aio\+Http\+App}
+\hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app}{}\label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app}\index{connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}}
+Graphe d\textquotesingle{}héritage de connexion.\+apps.\+aiohttp\+\_\+app.\+Aio\+Http\+App\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a0f2d7aef732789b4a8c5a9c3e8b89af3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, import\+\_\+name, only\+\_\+one\+\_\+api=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a0f7fed40a76f2cc27745c7bdc2fc1d21}{create\+\_\+app}} (self)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a88ba08e947f9d07024c9501dffae2664}{get\+\_\+root\+\_\+path}} (self)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ac5e9ffcc0a99f8ebf581c1081656d928}{set\+\_\+errors\+\_\+handlers}} (self)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_aabf8b9cb163588c8f86933f72cdd7760}{add\+\_\+api}} (self, specification, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a3076c1afc9ef4e316ee5a24761cc06d0}{run}} (self, port=None, server=None, debug=None, host=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app}{connexion.\+apps.\+abstract.\+Abstract\+App}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app_a5d182eb51398d4daa78ed12007b1e7d3}{add\+\_\+url\+\_\+rule}} (self, rule, endpoint=None, view\+\_\+func=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app_a5228fc561df15006771de282ecfeb004}{route}} (self, rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}options)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app_a96ab3c11e37ff50c00f762c329aa8d45}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, environ, start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a47a420a4ffeab7259bad52bab3b4c894}\label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a47a420a4ffeab7259bad52bab3b4c894} 
+{\bfseries server\+\_\+args}
+\item 
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_adedcac10506ff755de91789015f0f419}\label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_adedcac10506ff755de91789015f0f419} 
+{\bfseries app} = self.\+\_\+get\+\_\+api(specification, kwargs).subapp
+\item 
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_afdabcc11e993dfeb61cd1604e1aa78d3}\label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_afdabcc11e993dfeb61cd1604e1aa78d3} 
+int {\bfseries port} = port
+\item 
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ab462a3d004e1f4efd1eb1b44d26e8fcc}\label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ab462a3d004e1f4efd1eb1b44d26e8fcc} 
+str {\bfseries server} = server or self.\+server
+\item 
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ad5fdb824ef4f2e4c6645a0494029140b}\label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ad5fdb824ef4f2e4c6645a0494029140b} 
+str {\bfseries host} = host or self.\+host or \textquotesingle{}0.\+0.\+0.\+0\textquotesingle{}
+\item 
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a32afb2db546a59cd5e99802f95206b9c}\label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a32afb2db546a59cd5e99802f95206b9c} 
+{\bfseries debug} = debug
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app}{connexion.\+apps.\+abstract.\+Abstract\+App}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries port} = port
+\item 
+{\bfseries host} = host
+\item 
+{\bfseries debug} = debug
+\item 
+{\bfseries resolver} = resolver
+\item 
+{\bfseries import\+\_\+name} = import\+\_\+name
+\item 
+{\bfseries arguments} = arguments or \{\}
+\item 
+{\bfseries api\+\_\+cls} = api\+\_\+cls
+\item 
+{\bfseries resolver\+\_\+error} = None
+\item 
+{\bfseries auth\+\_\+all\+\_\+paths} = auth\+\_\+all\+\_\+paths
+\item 
+{\bfseries options} = \mbox{\hyperlink{classconnexion_1_1options_1_1_connexion_options}{Connexion\+Options}}(options)
+\item 
+{\bfseries server} = server
+\item 
+{\bfseries server\+\_\+args} = dict() if server\+\_\+args is None else server\+\_\+args
+\item 
+{\bfseries app} = self.\+create\+\_\+app()
+\item 
+{\bfseries root\+\_\+path} = self.\+get\+\_\+root\+\_\+path()
+\item 
+{\bfseries specification\+\_\+dir} = specification\+\_\+dir
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a1d6afe192211f7422251ee26ad226543}\label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a1d6afe192211f7422251ee26ad226543} 
+{\bfseries \+\_\+get\+\_\+api} (self, specification, kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres protégées hérités de \mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app}{connexion.\+apps.\+abstract.\+Abstract\+App}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+resolver\+\_\+error\+\_\+handler} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ad58eac26df690fce187b491e8a56420a}\label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ad58eac26df690fce187b491e8a56420a} 
+{\bfseries \+\_\+only\+\_\+one\+\_\+api} = only\+\_\+one\+\_\+api
+\item 
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ac9883fcd8cd304257c1003e79604a5b4}\label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ac9883fcd8cd304257c1003e79604a5b4} 
+bool {\bfseries \+\_\+api\+\_\+added} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a0f2d7aef732789b4a8c5a9c3e8b89af3}\index{connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a0f2d7aef732789b4a8c5a9c3e8b89af3} 
+connexion.\+apps.\+aiohttp\+\_\+app.\+Aio\+Http\+App.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{import\+\_\+name}{, }\item[{}]{api\+\_\+cls}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{port}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param import_name: the name of the application package
+:type import_name: str
+:param host: the host interface to bind on.
+:type host: str
+:param port: port to listen to
+:type port: int
+:param specification_dir: directory where to look for specifications
+:type specification_dir: pathlib.Path | str
+:param server: which wsgi server to use
+:type server: str | None
+:param server_args: dictionary of arguments which are then passed to appropriate http server (Flask or aio_http)
+:type server_args: dict | None
+:param arguments: arguments to replace on the specification
+:type arguments: dict | None
+:param auth_all_paths: whether to authenticate not defined paths
+:type auth_all_paths: bool
+:param debug: include debugging information
+:type debug: bool
+:param resolver: Callable that maps operationID to a function
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app_a5b76f039babf60fa4dd5b7ee7f60f97d}{connexion.\+apps.\+abstract.\+Abstract\+App}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_aabf8b9cb163588c8f86933f72cdd7760}\index{connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}!add\_api@{add\_api}}
+\index{add\_api@{add\_api}!connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}}
+\doxysubsubsection{\texorpdfstring{add\_api()}{add\_api()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_aabf8b9cb163588c8f86933f72cdd7760} 
+connexion.\+apps.\+aiohttp\+\_\+app.\+Aio\+Http\+App.\+add\+\_\+api (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{specification}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{base\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds an API to the application based on a swagger file or API dict
+
+:param specification: swagger file with the specification | specification dict
+:type specification: pathlib.Path or str or dict
+:param base_path: base path where to add this api
+:type base_path: str | None
+:param arguments: api version specific arguments to replace on the specification
+:type arguments: dict | None
+:param auth_all_paths: whether to authenticate not defined paths
+:type auth_all_paths: bool
+:param validate_responses: True enables validation. Validation errors generate HTTP 500 responses.
+:type validate_responses: bool
+:param strict_validation: True enables validation on invalid request parameters
+:type strict_validation: bool
+:param resolver: Operation resolver.
+:type resolver: Resolver | types.FunctionType
+:param resolver_error: If specified, turns ResolverError into error
+    responses with the given status code.
+:type resolver_error: int | None
+:param pythonic_params: When True CamelCase parameters are converted to snake_case
+:type pythonic_params: bool
+:param options: New style options dictionary.
+:type options: dict | None
+:param pass_context_arg_name: Name of argument in handler functions to pass request context to.
+:type pass_context_arg_name: str | None
+:param validator_map: map of validators
+:type validator_map: dict
+:rtype: AbstractAPI
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app_a6e07f47717df5499e425fd56cccc2b5b}{connexion.\+apps.\+abstract.\+Abstract\+App}}.
+
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a0f7fed40a76f2cc27745c7bdc2fc1d21}\index{connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}!create\_app@{create\_app}}
+\index{create\_app@{create\_app}!connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}}
+\doxysubsubsection{\texorpdfstring{create\_app()}{create\_app()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a0f7fed40a76f2cc27745c7bdc2fc1d21} 
+connexion.\+apps.\+aiohttp\+\_\+app.\+Aio\+Http\+App.\+create\+\_\+app (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates the user framework application
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app_a88dc1108c75b965ff8ddecd7ad6bf778}{connexion.\+apps.\+abstract.\+Abstract\+App}}.
+
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a88ba08e947f9d07024c9501dffae2664}\index{connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}!get\_root\_path@{get\_root\_path}}
+\index{get\_root\_path@{get\_root\_path}!connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}}
+\doxysubsubsection{\texorpdfstring{get\_root\_path()}{get\_root\_path()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a88ba08e947f9d07024c9501dffae2664} 
+connexion.\+apps.\+aiohttp\+\_\+app.\+Aio\+Http\+App.\+get\+\_\+root\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the root path of the user framework application
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app_a55d48c83646df6e92cb1c1a497ffff85}{connexion.\+apps.\+abstract.\+Abstract\+App}}.
+
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a3076c1afc9ef4e316ee5a24761cc06d0}\index{connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}!run@{run}}
+\index{run@{run}!connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_a3076c1afc9ef4e316ee5a24761cc06d0} 
+connexion.\+apps.\+aiohttp\+\_\+app.\+Aio\+Http\+App.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{port}{ = {\ttfamily None}, }\item[{}]{server}{ = {\ttfamily None}, }\item[{}]{debug}{ = {\ttfamily None}, }\item[{}]{host}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs the application on a local development server.
+:param host: the host interface to bind on.
+:type host: str
+:param port: port to listen to
+:type port: int
+:param server: which wsgi server to use
+:type server: str | None
+:param debug: include debugging information
+:type debug: bool
+:param options: options to be forwarded to the underlying server
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app_abfde7afb9a5e0f6c643e479d3d26b435}{connexion.\+apps.\+abstract.\+Abstract\+App}}.
+
+\Hypertarget{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ac5e9ffcc0a99f8ebf581c1081656d928}\index{connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}!set\_errors\_handlers@{set\_errors\_handlers}}
+\index{set\_errors\_handlers@{set\_errors\_handlers}!connexion.apps.aiohttp\_app.AioHttpApp@{connexion.apps.aiohttp\_app.AioHttpApp}}
+\doxysubsubsection{\texorpdfstring{set\_errors\_handlers()}{set\_errors\_handlers()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apps_1_1aiohttp__app_1_1_aio_http_app_ac5e9ffcc0a99f8ebf581c1081656d928} 
+connexion.\+apps.\+aiohttp\+\_\+app.\+Aio\+Http\+App.\+set\+\_\+errors\+\_\+handlers (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets all errors handlers of the user framework application
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1apps_1_1abstract_1_1_abstract_app_a266fc3740a57827fb71d272c9f9454c1}{connexion.\+apps.\+abstract.\+Abstract\+App}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/apps/aiohttp\+\_\+app.\+py\end{DoxyCompactItemize}

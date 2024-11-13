@@ -1,0 +1,121 @@
+\doxysection{connexion.\+security.\+flask\+\_\+security\+\_\+handler\+\_\+factory.\+Flask\+Security\+Handler\+Factory Class Reference}
+\hypertarget{classconnexion_1_1security_1_1flask__security__handler__factory_1_1_flask_security_handler_factory}{}\label{classconnexion_1_1security_1_1flask__security__handler__factory_1_1_flask_security_handler_factory}\index{connexion.security.flask\_security\_handler\_factory.FlaskSecurityHandlerFactory@{connexion.security.flask\_security\_handler\_factory.FlaskSecurityHandlerFactory}}
+Inheritance diagram for connexion.\+security.\+flask\+\_\+security\+\_\+handler\+\_\+factory.\+Flask\+Security\+Handler\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classconnexion_1_1security_1_1flask__security__handler__factory_1_1_flask_security_handler_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1flask__security__handler__factory_1_1_flask_security_handler_factory_a7eb4ea0e009fb70aabd972ce997f7834}{get\+\_\+token\+\_\+info\+\_\+remote}} (self, token\+\_\+info\+\_\+url)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory}{connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, pass\+\_\+context\+\_\+arg\+\_\+name)
+\item 
+t.\+Optional\mbox{[}t.\+Callable\mbox{]} \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aeaa0ba55713bc3dbcd0fb94c084c3de7}{get\+\_\+tokeninfo\+\_\+func}} (self, dict security\+\_\+definition)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a6dad3dd29f62e51de37b63cd0b962b56}{get\+\_\+scope\+\_\+validate\+\_\+func}} (cls, security\+\_\+definition)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9379a810b3b7bef166db6e54b150e970}{get\+\_\+basicinfo\+\_\+func}} (cls, security\+\_\+definition)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9b6fbd0e95d52bf564645ff8aae6e095}{get\+\_\+apikeyinfo\+\_\+func}} (cls, security\+\_\+definition)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a36099f9a4844fb56cc3d490e566fca22}{get\+\_\+bearerinfo\+\_\+func}} (cls, security\+\_\+definition)
+\item 
+{\bfseries verify\+\_\+oauth} (self, token\+\_\+info\+\_\+func, scope\+\_\+validate\+\_\+func, required\+\_\+scopes)
+\item 
+{\bfseries verify\+\_\+basic} (self, basic\+\_\+info\+\_\+func)
+\item 
+{\bfseries verify\+\_\+api\+\_\+key} (self, api\+\_\+key\+\_\+info\+\_\+func, loc, name)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ac44ae35c47c1c710ab929fb0e740ba30}{verify\+\_\+bearer}} (self, token\+\_\+info\+\_\+func)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aab9bd57430a8f73fd837b0c67cdcbcbc}{verify\+\_\+multiple\+\_\+schemes}} (self, schemes)
+\item 
+{\bfseries check\+\_\+bearer\+\_\+token} (self, token\+\_\+info\+\_\+func)
+\item 
+{\bfseries check\+\_\+basic\+\_\+auth} (self, basic\+\_\+info\+\_\+func)
+\item 
+{\bfseries check\+\_\+api\+\_\+key} (self, api\+\_\+key\+\_\+info\+\_\+func)
+\item 
+{\bfseries check\+\_\+oauth\+\_\+func} (self, token\+\_\+info\+\_\+func, scope\+\_\+validate\+\_\+func)
+\item 
+{\bfseries verify\+\_\+security} (cls, auth\+\_\+funcs, function)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory}{connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7031a2d2089118e268a36a5475043028}{security\+\_\+passthrough}} (function)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_ae36af50587b4035332e82ae4f24dd3c5}{security\+\_\+deny}} (function)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_aa0322f80efb01c6479d24239a9badd86}{validate\+\_\+scope}} (required\+\_\+scopes, token\+\_\+scopes)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7a327351d44c5cef2d6495692bff0681}{get\+\_\+auth\+\_\+header\+\_\+value}} (request)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a88ee76056a79b1f41e71bd1b935f69ef}{get\+\_\+cookie\+\_\+value}} (cookies, name)
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a4bdf7d1444f70a0934044109e76494ef}{verify\+\_\+none}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory}{connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries pass\+\_\+context\+\_\+arg\+\_\+name} = pass\+\_\+context\+\_\+arg\+\_\+name
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a9172a39e65b671f46db5b83c78d66cf3}{validate\+\_\+scope}}
+\item 
+list {\bfseries no\+\_\+value} = \mbox{[}$\,$\mbox{]}\+:
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory}{connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries no\+\_\+value} = object()
+\item 
+str {\bfseries required\+\_\+scopes\+\_\+kw} = \textquotesingle{}required\+\_\+scopes\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory}{connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+need\+\_\+to\+\_\+add\+\_\+context\+\_\+or\+\_\+scopes} (self, func)
+\item 
+{\bfseries \+\_\+generic\+\_\+check} (self, func, exception\+\_\+msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory}{connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a7ac63a08d4baf90ee1b3aff4085d2cd4}{\+\_\+get\+\_\+function}} (security\+\_\+definition, security\+\_\+definition\+\_\+key, environ\+\_\+key, default=None)
+\item 
+None \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a684db2e6da0d0e4d8a0735094eef7a1e}{\+\_\+raise\+\_\+most\+\_\+specific}} (t.\+List\mbox{[}Exception\mbox{]} exceptions)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classconnexion_1_1security_1_1flask__security__handler__factory_1_1_flask_security_handler_factory_a7eb4ea0e009fb70aabd972ce997f7834}\index{connexion.security.flask\_security\_handler\_factory.FlaskSecurityHandlerFactory@{connexion.security.flask\_security\_handler\_factory.FlaskSecurityHandlerFactory}!get\_token\_info\_remote@{get\_token\_info\_remote}}
+\index{get\_token\_info\_remote@{get\_token\_info\_remote}!connexion.security.flask\_security\_handler\_factory.FlaskSecurityHandlerFactory@{connexion.security.flask\_security\_handler\_factory.FlaskSecurityHandlerFactory}}
+\doxysubsubsection{\texorpdfstring{get\_token\_info\_remote()}{get\_token\_info\_remote()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1security_1_1flask__security__handler__factory_1_1_flask_security_handler_factory_a7eb4ea0e009fb70aabd972ce997f7834} 
+connexion.\+security.\+flask\+\_\+security\+\_\+handler\+\_\+factory.\+Flask\+Security\+Handler\+Factory.\+get\+\_\+token\+\_\+info\+\_\+remote (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{token\+\_\+info\+\_\+url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a function which will call `token_info_url` to retrieve token info.
+
+Returned function must accept oauth token in parameter.
+It must return a token_info dict in case of success, None otherwise.
+
+:param token_info_url: Url to get information about the token
+:type token_info_url: str
+:rtype: types.FunctionType
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconnexion_1_1security_1_1security__handler__factory_1_1_abstract_security_handler_factory_a2a267551cc172f2d3f1872146dec39cd}{connexion.\+security.\+security\+\_\+handler\+\_\+factory.\+Abstract\+Security\+Handler\+Factory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/security/flask\+\_\+security\+\_\+handler\+\_\+factory.\+py\end{DoxyCompactItemize}

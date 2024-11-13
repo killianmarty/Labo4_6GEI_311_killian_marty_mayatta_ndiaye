@@ -1,0 +1,82 @@
+\doxysection{plot\+\_\+blockmodel Namespace Reference}
+\hypertarget{namespaceplot__blockmodel}{}\label{namespaceplot__blockmodel}\index{plot\_blockmodel@{plot\_blockmodel}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplot__blockmodel_abd76ff473af547551851575acfdfbdd2}{create\+\_\+hc}} (G)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__blockmodel_aa1077094c3bcce46d885616131b65c75}\label{namespaceplot__blockmodel_aa1077094c3bcce46d885616131b65c75} 
+{\bfseries G} = nx.\+read\+\_\+edgelist("{}hartford\+\_\+drug.\+edgelist"{})
+\item 
+\Hypertarget{namespaceplot__blockmodel_adcdf47f3565f6507a473be278f1b2724}\label{namespaceplot__blockmodel_adcdf47f3565f6507a473be278f1b2724} 
+{\bfseries H} = G.\+subgraph(next(nx.\+connected\+\_\+components(G)))
+\item 
+\Hypertarget{namespaceplot__blockmodel_a0990f28445beaed009aa3de0550b5d90}\label{namespaceplot__blockmodel_a0990f28445beaed009aa3de0550b5d90} 
+{\bfseries partitions} = \mbox{\hyperlink{namespaceplot__blockmodel_abd76ff473af547551851575acfdfbdd2}{create\+\_\+hc}}(H)
+\item 
+\Hypertarget{namespaceplot__blockmodel_a7e27ec5e2060dc07088a4c460e80d96d}\label{namespaceplot__blockmodel_a7e27ec5e2060dc07088a4c460e80d96d} 
+{\bfseries BM} = nx.\+quotient\+\_\+graph(H, partitions, relabel=True)
+\item 
+\Hypertarget{namespaceplot__blockmodel_a9e5d6b61eb3e111149a951056a933c03}\label{namespaceplot__blockmodel_a9e5d6b61eb3e111149a951056a933c03} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(H, iterations=100, seed=83)
+\item 
+\Hypertarget{namespaceplot__blockmodel_a857e3b619cf027a41b8ae00aaf6945dc}\label{namespaceplot__blockmodel_a857e3b619cf027a41b8ae00aaf6945dc} 
+{\bfseries with\+\_\+labels}
+\item 
+\Hypertarget{namespaceplot__blockmodel_a9ecd44717fd9513caf58cdf9a0d4385d}\label{namespaceplot__blockmodel_a9ecd44717fd9513caf58cdf9a0d4385d} 
+{\bfseries False}
+\item 
+\Hypertarget{namespaceplot__blockmodel_aa347fec48dd222d2393d4e86166b1d6d}\label{namespaceplot__blockmodel_aa347fec48dd222d2393d4e86166b1d6d} 
+{\bfseries node\+\_\+size} = \mbox{[}BM.\+nodes\mbox{[}x\mbox{]}\mbox{[}"{}nnodes"{}\mbox{]} \texorpdfstring{$\ast$}{*} 10 for x in BM.\+nodes()\mbox{]}
+\item 
+\Hypertarget{namespaceplot__blockmodel_aa924eaa2f590da1d8413f820a9eca10e}\label{namespaceplot__blockmodel_aa924eaa2f590da1d8413f820a9eca10e} 
+list {\bfseries edge\+\_\+width} = \mbox{[}(2 \texorpdfstring{$\ast$}{*} d\mbox{[}"{}weight"{}\mbox{]}) for (u, v, d) in BM.\+edges(data=True)\mbox{]}
+\item 
+\Hypertarget{namespaceplot__blockmodel_a6b338ff5d48aee7fdd82ad90773f013a}\label{namespaceplot__blockmodel_a6b338ff5d48aee7fdd82ad90773f013a} 
+dict {\bfseries pos\+BM} = \{\}
+\item 
+\Hypertarget{namespaceplot__blockmodel_af868e0a7b56c4cb07c9e72e50016e976}\label{namespaceplot__blockmodel_af868e0a7b56c4cb07c9e72e50016e976} 
+{\bfseries xy} = np.\+array(\mbox{[}pos\mbox{[}u\mbox{]} for u in BM.\+nodes\mbox{[}n\mbox{]}\mbox{[}"{}graph"{}\mbox{]}\mbox{]})
+\item 
+\Hypertarget{namespaceplot__blockmodel_af45cd66289ef1c26af661fc6084e6a76}\label{namespaceplot__blockmodel_af45cd66289ef1c26af661fc6084e6a76} 
+{\bfseries axis}
+\item 
+\Hypertarget{namespaceplot__blockmodel_a7df3186406fae883c5e4b2f62082002f}\label{namespaceplot__blockmodel_a7df3186406fae883c5e4b2f62082002f} 
+{\bfseries width}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}==========
+Blockmodel
+==========
+
+Example of creating a block model using the quotient_graph function in NX.  Data
+used is the Hartford, CT drug users network::
+
+    @article{weeks2002social,
+      title={Social networks of drug users in high-risk sites: Finding the connections},
+      url = {https://doi.org/10.1023/A:1015457400897},
+      doi = {10.1023/A:1015457400897},
+      author={Weeks, Margaret R and Clair, Scott and Borgatti, Stephen P and Radda, Kim and Schensul, Jean J},
+      journal={{AIDS and Behavior}},
+      volume={6},
+      number={2},
+      pages={193--206},
+      year={2002},
+      publisher={Springer}
+    }\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceplot__blockmodel_abd76ff473af547551851575acfdfbdd2}\index{plot\_blockmodel@{plot\_blockmodel}!create\_hc@{create\_hc}}
+\index{create\_hc@{create\_hc}!plot\_blockmodel@{plot\_blockmodel}}
+\doxysubsubsection{\texorpdfstring{create\_hc()}{create\_hc()}}
+{\footnotesize\ttfamily \label{namespaceplot__blockmodel_abd76ff473af547551851575acfdfbdd2} 
+plot\+\_\+blockmodel.\+create\+\_\+hc (\begin{DoxyParamCaption}\item[{}]{G}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates hierarchical cluster of graph G from distance matrix\end{DoxyVerb}
+ 

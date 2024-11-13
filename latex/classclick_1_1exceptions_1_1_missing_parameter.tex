@@ -1,0 +1,117 @@
+\doxysection{Référence de la classe click.\+exceptions.\+Missing\+Parameter}
+\hypertarget{classclick_1_1exceptions_1_1_missing_parameter}{}\label{classclick_1_1exceptions_1_1_missing_parameter}\index{click.exceptions.MissingParameter@{click.exceptions.MissingParameter}}
+Graphe d\textquotesingle{}héritage de click.\+exceptions.\+Missing\+Parameter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classclick_1_1exceptions_1_1_missing_parameter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classclick_1_1exceptions_1_1_missing_parameter_a54c82e97639dd4f991f6baada7fef5a3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\mbox{[}str\mbox{]} message=None, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx=None, t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]} param=None, t.\+Optional\mbox{[}str\mbox{]} param\+\_\+hint=None, t.\+Optional\mbox{[}str\mbox{]} param\+\_\+type=None)
+\item 
+str \mbox{\hyperlink{classclick_1_1exceptions_1_1_missing_parameter_a54a19e656f00ade023f049c0d410eb0a}{format\+\_\+message}} (self)
+\item 
+str \mbox{\hyperlink{classclick_1_1exceptions_1_1_missing_parameter_ae3cf133dc27fc009607dab6a14539fd5}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_bad_parameter}{click.\+exceptions.\+Bad\+Parameter}}}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_afdf9f65f4c725b958da22c3e9a4414de}{show}} (self, t.\+Optional\mbox{[}t.\+IO\mbox{[}t.\+Any\mbox{]}\mbox{]} file=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1exceptions_1_1_missing_parameter_a25f2781bc2ba84ff14be8ae214219f23}\label{classclick_1_1exceptions_1_1_missing_parameter_a25f2781bc2ba84ff14be8ae214219f23} 
+{\bfseries param\+\_\+type} = param\+\_\+type
+\item 
+\Hypertarget{classclick_1_1exceptions_1_1_missing_parameter_a5da7fa3b6466c897ebbeac5f467a5697}\label{classclick_1_1exceptions_1_1_missing_parameter_a5da7fa3b6466c897ebbeac5f467a5697} 
+{\bfseries message}
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_bad_parameter}{click.\+exceptions.\+Bad\+Parameter}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries param} = param
+\item 
+{\bfseries param\+\_\+hint} = param\+\_\+hint
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries ctx} = ctx
+\item 
+t.\+Optional\mbox{[}$\,$\mbox{]} {\bfseries cmd} = self.\+ctx.\+command if self.\+ctx else None
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries message} = message
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Membres hérités additionnels}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries exit\+\_\+code} = 2
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries exit\+\_\+code} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Raised if click required an option or argument but it was not
+provided when invoking the script.
+
+.. versionadded:: 4.0
+
+:param param_type: a string that indicates the type of the parameter.
+                   The default is to inherit the parameter type from
+                   the given `param`.  Valid values are ``'parameter'``,
+                   ``'option'`` or ``'argument'``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classclick_1_1exceptions_1_1_missing_parameter_a54c82e97639dd4f991f6baada7fef5a3}\index{click.exceptions.MissingParameter@{click.exceptions.MissingParameter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.exceptions.MissingParameter@{click.exceptions.MissingParameter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_missing_parameter_a54c82e97639dd4f991f6baada7fef5a3} 
+ None click.\+exceptions.\+Missing\+Parameter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{message}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}"{}Context"{}\mbox{]} }]{ctx}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}"{}Parameter"{}\mbox{]} }]{param}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{param\+\_\+hint}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{param\+\_\+type}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1exceptions_1_1_bad_parameter}{click.\+exceptions.\+Bad\+Parameter}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classclick_1_1exceptions_1_1_missing_parameter_ae3cf133dc27fc009607dab6a14539fd5}\index{click.exceptions.MissingParameter@{click.exceptions.MissingParameter}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!click.exceptions.MissingParameter@{click.exceptions.MissingParameter}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_missing_parameter_ae3cf133dc27fc009607dab6a14539fd5} 
+ str click.\+exceptions.\+Missing\+Parameter.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}.
+
+\Hypertarget{classclick_1_1exceptions_1_1_missing_parameter_a54a19e656f00ade023f049c0d410eb0a}\index{click.exceptions.MissingParameter@{click.exceptions.MissingParameter}!format\_message@{format\_message}}
+\index{format\_message@{format\_message}!click.exceptions.MissingParameter@{click.exceptions.MissingParameter}}
+\doxysubsubsection{\texorpdfstring{format\_message()}{format\_message()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_missing_parameter_a54a19e656f00ade023f049c0d410eb0a} 
+ str click.\+exceptions.\+Missing\+Parameter.\+format\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1exceptions_1_1_bad_parameter}{click.\+exceptions.\+Bad\+Parameter}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/exceptions.\+py\end{DoxyCompactItemize}

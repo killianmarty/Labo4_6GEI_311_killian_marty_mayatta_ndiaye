@@ -1,0 +1,87 @@
+\doxysection{importlib\+\_\+resources.\+abc.\+Resource\+Reader Class Reference}
+\hypertarget{classimportlib__resources_1_1abc_1_1_resource_reader}{}\label{classimportlib__resources_1_1abc_1_1_resource_reader}\index{importlib\_resources.abc.ResourceReader@{importlib\_resources.abc.ResourceReader}}
+Inheritance diagram for importlib\+\_\+resources.\+abc.\+Resource\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.365854cm]{classimportlib__resources_1_1abc_1_1_resource_reader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Binary\+IO \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_resource_reader_a080071c8f718c7898b5e6aeb012626ee}{open\+\_\+resource}} (self, Text resource)
+\item 
+Text \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_resource_reader_a972dd7a53c96cec5a5fbe8b1c9da8e83}{resource\+\_\+path}} (self, Text resource)
+\item 
+bool \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_resource_reader_a9516f356d643d5c3155a483adf62b961}{is\+\_\+resource}} (self, Text path)
+\item 
+Iterable\mbox{[}str\mbox{]} \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_resource_reader_a5a7e1a3c46b2bac8c77d3e27d852df98}{contents}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Abstract base class for loaders to provide resource reading support.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classimportlib__resources_1_1abc_1_1_resource_reader_a5a7e1a3c46b2bac8c77d3e27d852df98}\index{importlib\_resources.abc.ResourceReader@{importlib\_resources.abc.ResourceReader}!contents@{contents}}
+\index{contents@{contents}!importlib\_resources.abc.ResourceReader@{importlib\_resources.abc.ResourceReader}}
+\doxysubsubsection{\texorpdfstring{contents()}{contents()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1abc_1_1_resource_reader_a5a7e1a3c46b2bac8c77d3e27d852df98} 
+ Iterable\mbox{[}str\mbox{]} importlib\+\_\+resources.\+abc.\+Resource\+Reader.\+contents (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterable of entries in `package`.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_resources_ae0e0828f8a6b300cab152916ab6f24e9}{importlib\+\_\+resources.\+abc.\+Traversable\+Resources}}, and \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_reader_a9724ee4cc71e7bd005360f798ac43fd2}{importlib\+\_\+resources.\+tests.\+util.\+Reader}}.
+
+\Hypertarget{classimportlib__resources_1_1abc_1_1_resource_reader_a9516f356d643d5c3155a483adf62b961}\index{importlib\_resources.abc.ResourceReader@{importlib\_resources.abc.ResourceReader}!is\_resource@{is\_resource}}
+\index{is\_resource@{is\_resource}!importlib\_resources.abc.ResourceReader@{importlib\_resources.abc.ResourceReader}}
+\doxysubsubsection{\texorpdfstring{is\_resource()}{is\_resource()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1abc_1_1_resource_reader_a9516f356d643d5c3155a483adf62b961} 
+ bool importlib\+\_\+resources.\+abc.\+Resource\+Reader.\+is\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Text}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if the named 'path' is a resource.
+
+Files are resources, directories are not.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_resources_a8d4a23d1414384f83c67502cbdeb41d4}{importlib\+\_\+resources.\+abc.\+Traversable\+Resources}}, \mbox{\hyperlink{classimportlib__resources_1_1readers_1_1_zip_reader_a319266751b3be3a850177b08a15e9d36}{importlib\+\_\+resources.\+readers.\+Zip\+Reader}}, and \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_reader_a61d456cbf81fa374d93e22d08f7e39fc}{importlib\+\_\+resources.\+tests.\+util.\+Reader}}.
+
+\Hypertarget{classimportlib__resources_1_1abc_1_1_resource_reader_a080071c8f718c7898b5e6aeb012626ee}\index{importlib\_resources.abc.ResourceReader@{importlib\_resources.abc.ResourceReader}!open\_resource@{open\_resource}}
+\index{open\_resource@{open\_resource}!importlib\_resources.abc.ResourceReader@{importlib\_resources.abc.ResourceReader}}
+\doxysubsubsection{\texorpdfstring{open\_resource()}{open\_resource()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1abc_1_1_resource_reader_a080071c8f718c7898b5e6aeb012626ee} 
+ Binary\+IO importlib\+\_\+resources.\+abc.\+Resource\+Reader.\+open\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Text}]{resource}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an opened, file-like object for binary reading.
+
+The 'resource' argument is expected to represent only a file name.
+If the resource cannot be found, FileNotFoundError is raised.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_resources_a958ded87d786c69c75263b3fec0de254}{importlib\+\_\+resources.\+abc.\+Traversable\+Resources}}, \mbox{\hyperlink{classimportlib__resources_1_1readers_1_1_zip_reader_a76233be42b8ec338e9e1bccea2bad40a}{importlib\+\_\+resources.\+readers.\+Zip\+Reader}}, and \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_reader_a043ddcbf8aa0f73f0a246b47c09acb30}{importlib\+\_\+resources.\+tests.\+util.\+Reader}}.
+
+\Hypertarget{classimportlib__resources_1_1abc_1_1_resource_reader_a972dd7a53c96cec5a5fbe8b1c9da8e83}\index{importlib\_resources.abc.ResourceReader@{importlib\_resources.abc.ResourceReader}!resource\_path@{resource\_path}}
+\index{resource\_path@{resource\_path}!importlib\_resources.abc.ResourceReader@{importlib\_resources.abc.ResourceReader}}
+\doxysubsubsection{\texorpdfstring{resource\_path()}{resource\_path()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1abc_1_1_resource_reader_a972dd7a53c96cec5a5fbe8b1c9da8e83} 
+ Text importlib\+\_\+resources.\+abc.\+Resource\+Reader.\+resource\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Text}]{resource}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the file system path to the specified resource.
+
+The 'resource' argument is expected to represent only a file name.
+If the resource does not exist on the file system, raise
+FileNotFoundError.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_resources_a568d2268cacaf922825e35a24b4027dd}{importlib\+\_\+resources.\+abc.\+Traversable\+Resources}}, \mbox{\hyperlink{classimportlib__resources_1_1readers_1_1_file_reader_a4e19e0ac7d1f3dc29d36406319e08d80}{importlib\+\_\+resources.\+readers.\+File\+Reader}}, \mbox{\hyperlink{classimportlib__resources_1_1readers_1_1_namespace_reader_ad161d447761017cad996e0bd1233f0f1}{importlib\+\_\+resources.\+readers.\+Namespace\+Reader}}, and \mbox{\hyperlink{classimportlib__resources_1_1tests_1_1util_1_1_reader_aa17a2cc3dfd0133364864f8e7f893530}{importlib\+\_\+resources.\+tests.\+util.\+Reader}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/importlib\+\_\+resources/abc.\+py\end{DoxyCompactItemize}

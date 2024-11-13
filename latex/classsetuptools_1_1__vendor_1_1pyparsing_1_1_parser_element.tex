@@ -1,0 +1,1020 @@
+\doxysection{setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element Class Reference}
+\hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element}{}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+Inheritance diagram for setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.109015cm]{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_1_1___fifo_cache}{\+\_\+\+Fifo\+Cache}}
+\item 
+class \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_1_1___unbounded_cache}{\+\_\+\+Unbounded\+Cache}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a45352789bc3aaeaed9795e8b7fd09bc0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, savelist=False)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a27b935735c69a29b47dca67deece24a8}{copy}} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_acf32b43ff8fffe6f3c628b65421812e3}{set\+Name}} (self, name)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a973dc56edf50932c752abe9cdd1fa973}{set\+Results\+Name}} (self, name, list\+All\+Matches=False)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a6fe8e684b27c6337c71223a802571090}{set\+Break}} (self, break\+Flag=True)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a668cab53351e8405c94fe4e06e97999b}{set\+Parse\+Action}} (self, \texorpdfstring{$\ast$}{*}fns, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac05dc23b91ba24893e9cefc89046fc4a}{add\+Parse\+Action}} (self, \texorpdfstring{$\ast$}{*}fns, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7c0241d6f7cee1e39523eec4dc980c51}{add\+Condition}} (self, \texorpdfstring{$\ast$}{*}fns, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af8e5dcb2b0ed344f7a2aa068cf0295bb}{set\+Fail\+Action}} (self, fn)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a093552c37f749ff1db13eda5db146d12}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a093552c37f749ff1db13eda5db146d12} 
+{\bfseries pre\+Parse} (self, instring, loc)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a8927f9240f9804f99c46f90b6ddb2064}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a8927f9240f9804f99c46f90b6ddb2064} 
+{\bfseries parse\+Impl} (self, instring, loc, do\+Actions=True)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ae710dd5238b070e7e281c522b226fcfd}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ae710dd5238b070e7e281c522b226fcfd} 
+{\bfseries post\+Parse} (self, instring, loc, tokenlist)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a89cc1254330603fa2606a1aaa21ed105}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a89cc1254330603fa2606a1aaa21ed105} 
+{\bfseries try\+Parse} (self, instring, loc)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5e65832a046396517aa00cf8088f6429}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5e65832a046396517aa00cf8088f6429} 
+{\bfseries can\+Parse\+Next} (self, instring, loc)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ad0eabe16f430daee29a99b4e50d75051}{parse\+String}} (self, instring, parse\+All=False)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aaaa4096907c3872e1891c04ecbd62d94}{scan\+String}} (self, instring, max\+Matches=\+\_\+\+MAX\+\_\+\+INT, overlap=False)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac24fc77eda63955fd4f0edbc6f83b24a}{transform\+String}} (self, instring)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a23a8db8b572ea281ce9008bf3020c3b9}{search\+String}} (self, instring, max\+Matches=\+\_\+\+MAX\+\_\+\+INT)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a3799450fc19352ac7cbe8b763090ceee}{split}} (self, instring, maxsplit=\+\_\+\+MAX\+\_\+\+INT, include\+Separators=False)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7d2a9538edf8a39d3552690052634ba9}{\+\_\+\+\_\+add\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a86d7abb3d6a5452bfa3a5f4068e05258}{\+\_\+\+\_\+radd\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5224393a313d7dc036ba0ab10bdea31c}{\+\_\+\+\_\+sub\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7fae96c03f8c4f05efde9d419ffc20b9}{\+\_\+\+\_\+rsub\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a06bec3a896ebe3ffbfb489bf5c2c42f5}{\+\_\+\+\_\+mul\+\_\+\+\_\+}} (self, other)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a112994c259d1824f96881df01d890435}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a112994c259d1824f96881df01d890435} 
+{\bfseries \+\_\+\+\_\+rmul\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a9a1d9a16d009a246dd157aaed9ee7668}{\+\_\+\+\_\+or\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a8f7925bb41dcd9d5b7c2a625d5210e41}{\+\_\+\+\_\+ror\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a2d3d0d98160f854d493c24ff0b5a1c99}{\+\_\+\+\_\+xor\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5a7469e278335635d218dbdb88f33a48}{\+\_\+\+\_\+rxor\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a42daaff46d6d2b490e85bef817901104}{\+\_\+\+\_\+and\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_afc42686032be9d2997431a802761e221}{\+\_\+\+\_\+rand\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ad5e0800bbfde6e4f95baa1e8daa4a386}{\+\_\+\+\_\+invert\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5db1e5e3cda46af751655f74b4897080}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, name=None)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a4161d6b3dd65cdc1dbbcd544948092ca}{suppress}} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_abb18476905f5e70d827e64b5d693b20c}{leave\+Whitespace}} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a657204d514de3aa37b9de6c04702622e}{set\+Whitespace\+Chars}} (self, chars)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a8fde47c7cd24aba2353d782c60df8c83}{parse\+With\+Tabs}} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a2e480d02259a5c4d652d0f2302ebd87a}{ignore}} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7449d6902326b68c56318c3d54587299}{set\+Debug\+Actions}} (self, start\+Action, success\+Action, exception\+Action)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a81683d96dcbed6c051f043d84f460f63}{set\+Debug}} (self, flag=True)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ad183bbfa3d63db8a8b1c34d615ce7836}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ad183bbfa3d63db8a8b1c34d615ce7836} 
+{\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ae304140ac0688f10bc4195ec5ed17940}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ae304140ac0688f10bc4195ec5ed17940} 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a69bf5675ce6531f740443fa0678b1544}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a69bf5675ce6531f740443fa0678b1544} 
+{\bfseries streamline} (self)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ae0267d166d7fe1a87776bd88b9f329f0}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ae0267d166d7fe1a87776bd88b9f329f0} 
+{\bfseries check\+Recursion} (self, parse\+Element\+List)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5f2f3fe13fbf34de7490ad502d72f6c2}{validate}} (self, validate\+Trace=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a9ef777c0cf3d94034eac08bd5555d3c9}{parse\+File}} (self, file\+\_\+or\+\_\+filename, parse\+All=False)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a20cb4a8bb00a32fe91bfb02aa61a6cc0}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a20cb4a8bb00a32fe91bfb02aa61a6cc0} 
+{\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a582b72b08a3d799ece05e124124ad955}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a582b72b08a3d799ece05e124124ad955} 
+{\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, other)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a9f284a1559ae6cc61859134b30f64f17}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a9f284a1559ae6cc61859134b30f64f17} 
+{\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a4cce48f76856ee23b5235d5f246ffb73}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a4cce48f76856ee23b5235d5f246ffb73} 
+{\bfseries \+\_\+\+\_\+req\+\_\+\+\_\+} (self, other)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a30128f8ab7b3aa40463053c7bb777d1a}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a30128f8ab7b3aa40463053c7bb777d1a} 
+{\bfseries \+\_\+\+\_\+rne\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a84b7186468a8a802d1026a6d58f7382a}{matches}} (self, test\+String, parse\+All=True)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aad3a53af2cf357ec5bd28c6523d348c5}{run\+Tests}} (self, tests, parse\+All=True, comment=\textquotesingle{}\#\textquotesingle{}, full\+Dump=True, print\+Results=True, failure\+Tests=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a0a00276c5b0adea03028253ae1b05d6e}{set\+Default\+Whitespace\+Chars}} (chars)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac1514cb38bcbcf10f5fbd22e753a5090}{inline\+Literals\+Using}} (cls)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a6c01cf871bd15df66a2a02ec3caee3a5}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a6c01cf871bd15df66a2a02ec3caee3a5} 
+{\bfseries reset\+Cache} ()
+\item 
+\mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a49c540383f12eafe64c1183b44f94510}{enable\+Packrat}} (cache\+\_\+size\+\_\+limit=128)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ae04295cc96d86ef30c3ee0805d443b72}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ae04295cc96d86ef30c3ee0805d443b72} 
+{\bfseries parse\+Action} = list()
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a9633f2d6837412779901c87470c2a6dc}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a9633f2d6837412779901c87470c2a6dc} 
+{\bfseries fail\+Action} = None
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a27e4efffbe48ece304476108057f4998}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a27e4efffbe48ece304476108057f4998} 
+{\bfseries str\+Repr} = None
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aba96bbd8892533cced040e6edbea7098}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aba96bbd8892533cced040e6edbea7098} 
+{\bfseries results\+Name} = None
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a1f3e48bd60c9e7f257ab217967a6a9c3}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a1f3e48bd60c9e7f257ab217967a6a9c3} 
+{\bfseries save\+As\+List} = savelist
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a0a324dcae6fe70d171bce491d2b4491c}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a0a324dcae6fe70d171bce491d2b4491c} 
+bool {\bfseries skip\+Whitespace} = True
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a6ecaef3b1692189ed5af8ba7a6ac3601}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a6ecaef3b1692189ed5af8ba7a6ac3601} 
+str {\bfseries white\+Chars} = Parser\+Element.\+DEFAULT\+\_\+\+WHITE\+\_\+\+CHARS
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ad6e7b9e2bcd80f3e4e651a9b5e489975}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ad6e7b9e2bcd80f3e4e651a9b5e489975} 
+bool {\bfseries copy\+Default\+White\+Chars} = True
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a234dc557989c74d285be61fd3d6a2a76}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a234dc557989c74d285be61fd3d6a2a76} 
+bool {\bfseries may\+Return\+Empty} = False
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a1860690e1c24890ed7af6f06e5eefe32}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a1860690e1c24890ed7af6f06e5eefe32} 
+bool {\bfseries keep\+Tabs} = False
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac296f8bf8ab4e8d8ea42029172ec3590}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac296f8bf8ab4e8d8ea42029172ec3590} 
+{\bfseries ignore\+Exprs} = list()
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a4400610c7152f3bcca4e3fd0d2ffbb05}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a4400610c7152f3bcca4e3fd0d2ffbb05} 
+bool {\bfseries debug} = False
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aad69a3a44c764f3036db9f8f28939cfb}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aad69a3a44c764f3036db9f8f28939cfb} 
+bool {\bfseries streamlined} = False
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a98456df1d0f38ac5bf369965de587a42}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a98456df1d0f38ac5bf369965de587a42} 
+bool {\bfseries may\+Index\+Error} = True
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a306b7ce3dface33e605137274bef9304}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a306b7ce3dface33e605137274bef9304} 
+str {\bfseries errmsg} = "{}"{}
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_acfc7d98f3568f144a6591cba056983b2}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_acfc7d98f3568f144a6591cba056983b2} 
+bool {\bfseries modal\+Results} = True
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a87f0ad19ed3778f776454b775744733e}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a87f0ad19ed3778f776454b775744733e} 
+tuple {\bfseries debug\+Actions} = ( None, None, None )
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a002dad5e70483ad930e16f04107b2e03}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a002dad5e70483ad930e16f04107b2e03} 
+{\bfseries re} = None
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af0d9d291770799bd64ae273e73a6dd69}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af0d9d291770799bd64ae273e73a6dd69} 
+bool {\bfseries call\+Preparse} = True
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a77732e30b3471b09dd78f0bbb37e15ce}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a77732e30b3471b09dd78f0bbb37e15ce} 
+bool {\bfseries call\+During\+Try} = False
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5e53c19d976b9aa2cdedd18f9227e48c}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5e53c19d976b9aa2cdedd18f9227e48c} 
+str {\bfseries copy\+Default\+White\+Chars} = Parser\+Element.\+DEFAULT\+\_\+\+WHITE\+\_\+\+CHARS
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aeff22f349cb2211b65b16b2eadc52ee5}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aeff22f349cb2211b65b16b2eadc52ee5} 
+{\bfseries name} = name
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a98165e115ba246f73fb7df44c3e19235}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a98165e115ba246f73fb7df44c3e19235} 
+str {\bfseries skip\+Whitespace} = self.\+white\+Chars
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af717ab79d570f9be6a92f2e102d3b010}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af717ab79d570f9be6a92f2e102d3b010} 
+str {\bfseries DEFAULT\+\_\+\+WHITE\+\_\+\+CHARS} = "{} \textbackslash{}n\textbackslash{}t\textbackslash{}r"{}
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af91e29e140205670de0f73d77103ca4e}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af91e29e140205670de0f73d77103ca4e} 
+bool {\bfseries verbose\+\_\+stacktrace} = False
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aa0c6ca744297bef2d3ffa708ca34dfb2}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aa0c6ca744297bef2d3ffa708ca34dfb2} 
+dict {\bfseries packrat\+\_\+cache} = \{\}
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a757af70fb632aeb7596d1adafe3bdc06}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a757af70fb632aeb7596d1adafe3bdc06} 
+{\bfseries packrat\+\_\+cache\+\_\+lock} = RLock()
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af9c6e05b98fd8289d735898925795c16}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af9c6e05b98fd8289d735898925795c16} 
+list {\bfseries packrat\+\_\+cache\+\_\+stats} = \mbox{[}0, 0\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a88402a6474731861698e1714c82992c2}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a88402a6474731861698e1714c82992c2} 
+{\bfseries \+\_\+skip\+Ignorables} (self, instring, loc)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_afa83862825b0683f3f09376744c1666e}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_afa83862825b0683f3f09376744c1666e} 
+{\bfseries \+\_\+parse\+No\+Cache} (self, instring, loc, do\+Actions=True, call\+Pre\+Parse=True)
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a21e672bb3fc59d65a412ac6222ef2137}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a21e672bb3fc59d65a412ac6222ef2137} 
+{\bfseries \+\_\+parse\+Cache} (self, instring, loc, do\+Actions=True, call\+Pre\+Parse=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a3bc65b3ccacad545b7935fe85465d234}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a3bc65b3ccacad545b7935fe85465d234} 
+{\bfseries \+\_\+parse} = \+\_\+parse\+No\+Cache
+\item 
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a6a1beae4d0424439b738a95292eb5dc9}\label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a6a1beae4d0424439b738a95292eb5dc9} 
+bool {\bfseries \+\_\+packrat\+Enabled} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Abstract base level parser element class.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a45352789bc3aaeaed9795e8b7fd09bc0}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a45352789bc3aaeaed9795e8b7fd09bc0} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{savelist}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_regex_a8e9058448a0ba127baa58abd03fb88c5}{setuptools.\+\_\+vendor.\+pyparsing.\+Regex}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7d2a9538edf8a39d3552690052634ba9}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_add\_\_@{\_\_add\_\_}}
+\index{\_\_add\_\_@{\_\_add\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_add\_\_()}{\_\_add\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7d2a9538edf8a39d3552690052634ba9} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+add\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of + operator - returns C{L{And}}. Adding strings to a ParserElement
+converts them to L{Literal}s by default.
+
+Example::
+    greet = Word(alphas) + "," + Word(alphas) + "!"
+    hello = "Hello, World!"
+    print (hello, "->", greet.parseString(hello))
+Prints::
+    Hello, World! -> ['Hello', ',', 'World', '!']
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a42daaff46d6d2b490e85bef817901104}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_and\_\_@{\_\_and\_\_}}
+\index{\_\_and\_\_@{\_\_and\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_and\_\_()}{\_\_and\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a42daaff46d6d2b490e85bef817901104} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+and\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of & operator - returns C{L{Each}}
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5db1e5e3cda46af751655f74b4897080}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5db1e5e3cda46af751655f74b4897080} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for C{L{setResultsName}}, with C{listAllMatches=False}.
+
+If C{name} is given with a trailing C{'*'} character, then C{listAllMatches} will be
+passed as C{True}.
+   
+If C{name} is omitted, same as calling C{L{copy}}.
+
+Example::
+    # these are equivalent
+    userdata = Word(alphas).setResultsName("name") + Word(nums+"-").setResultsName("socsecno")
+    userdata = Word(alphas)("name") + Word(nums+"-")("socsecno")             
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ad5e0800bbfde6e4f95baa1e8daa4a386}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_invert\_\_@{\_\_invert\_\_}}
+\index{\_\_invert\_\_@{\_\_invert\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_invert\_\_()}{\_\_invert\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ad5e0800bbfde6e4f95baa1e8daa4a386} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+invert\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of ~ operator - returns C{L{NotAny}}
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a06bec3a896ebe3ffbfb489bf5c2c42f5}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_mul\_\_@{\_\_mul\_\_}}
+\index{\_\_mul\_\_@{\_\_mul\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_mul\_\_()}{\_\_mul\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a06bec3a896ebe3ffbfb489bf5c2c42f5} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+mul\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of * operator, allows use of C{expr * 3} in place of
+C{expr + expr + expr}.  Expressions may also me multiplied by a 2-integer
+tuple, similar to C{{min,max}} multipliers in regular expressions.  Tuples
+may also include C{None} as in:
+ - C{expr*(n,None)} or C{expr*(n,)} is equivalent
+      to C{expr*n + L{ZeroOrMore}(expr)}
+      (read as "at least n instances of C{expr}")
+ - C{expr*(None,n)} is equivalent to C{expr*(0,n)}
+      (read as "0 to n instances of C{expr}")
+ - C{expr*(None,None)} is equivalent to C{L{ZeroOrMore}(expr)}
+ - C{expr*(1,None)} is equivalent to C{L{OneOrMore}(expr)}
+
+Note that C{expr*(None,n)} does not raise an exception if
+more than n exprs exist in the input stream; that is,
+C{expr*(None,n)} does not enforce a maximum number of expr
+occurrences.  If this behavior is desired, then write
+C{expr*(None,n) + ~expr}
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a9a1d9a16d009a246dd157aaed9ee7668}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_or\_\_@{\_\_or\_\_}}
+\index{\_\_or\_\_@{\_\_or\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_or\_\_()}{\_\_or\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a9a1d9a16d009a246dd157aaed9ee7668} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+or\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of | operator - returns C{L{MatchFirst}}
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a86d7abb3d6a5452bfa3a5f4068e05258}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_radd\_\_@{\_\_radd\_\_}}
+\index{\_\_radd\_\_@{\_\_radd\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_radd\_\_()}{\_\_radd\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a86d7abb3d6a5452bfa3a5f4068e05258} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+radd\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of + operator when left operand is not a C{L{ParserElement}}
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_afc42686032be9d2997431a802761e221}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_rand\_\_@{\_\_rand\_\_}}
+\index{\_\_rand\_\_@{\_\_rand\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_rand\_\_()}{\_\_rand\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_afc42686032be9d2997431a802761e221} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+rand\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of & operator when left operand is not a C{L{ParserElement}}
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a8f7925bb41dcd9d5b7c2a625d5210e41}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_ror\_\_@{\_\_ror\_\_}}
+\index{\_\_ror\_\_@{\_\_ror\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_ror\_\_()}{\_\_ror\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a8f7925bb41dcd9d5b7c2a625d5210e41} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+ror\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of | operator when left operand is not a C{L{ParserElement}}
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7fae96c03f8c4f05efde9d419ffc20b9}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_rsub\_\_@{\_\_rsub\_\_}}
+\index{\_\_rsub\_\_@{\_\_rsub\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_rsub\_\_()}{\_\_rsub\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7fae96c03f8c4f05efde9d419ffc20b9} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+rsub\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of - operator when left operand is not a C{L{ParserElement}}
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5a7469e278335635d218dbdb88f33a48}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_rxor\_\_@{\_\_rxor\_\_}}
+\index{\_\_rxor\_\_@{\_\_rxor\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_rxor\_\_()}{\_\_rxor\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5a7469e278335635d218dbdb88f33a48} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+rxor\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of ^ operator when left operand is not a C{L{ParserElement}}
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5224393a313d7dc036ba0ab10bdea31c}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_sub\_\_@{\_\_sub\_\_}}
+\index{\_\_sub\_\_@{\_\_sub\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_sub\_\_()}{\_\_sub\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5224393a313d7dc036ba0ab10bdea31c} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+sub\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of - operator, returns C{L{And}} with error stop
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a2d3d0d98160f854d493c24ff0b5a1c99}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!\_\_xor\_\_@{\_\_xor\_\_}}
+\index{\_\_xor\_\_@{\_\_xor\_\_}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{\_\_xor\_\_()}{\_\_xor\_\_()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a2d3d0d98160f854d493c24ff0b5a1c99} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+\_\+\+\_\+xor\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implementation of ^ operator - returns C{L{Or}}
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7c0241d6f7cee1e39523eec4dc980c51}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!addCondition@{addCondition}}
+\index{addCondition@{addCondition}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{addCondition()}{addCondition()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7c0241d6f7cee1e39523eec4dc980c51} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+add\+Condition (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{fns}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a boolean predicate function to expression's list of parse actions. See 
+L{I{setParseAction}<setParseAction>} for function call signatures. Unlike C{setParseAction}, 
+functions passed to C{addCondition} need to return boolean success/fail of the condition.
+
+Optional keyword arguments:
+ - message = define a custom message to be used in the raised exception
+ - fatal   = if True, will raise ParseFatalException to stop parsing immediately; otherwise will raise ParseException
+ 
+Example::
+    integer = Word(nums).setParseAction(lambda toks: int(toks[0]))
+    year_int = integer.copy()
+    year_int.addCondition(lambda toks: toks[0] >= 2000, message="Only support years 2000 and later")
+    date_str = year_int + '/' + integer + '/' + integer
+
+    result = date_str.parseString("1999/12/31")  # -> Exception: Only support years 2000 and later (at char 0), (line:1, col:1)
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac05dc23b91ba24893e9cefc89046fc4a}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!addParseAction@{addParseAction}}
+\index{addParseAction@{addParseAction}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{addParseAction()}{addParseAction()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac05dc23b91ba24893e9cefc89046fc4a} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+add\+Parse\+Action (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{fns}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add one or more parse actions to expression's list of parse actions. See L{I{setParseAction}<setParseAction>}.
+
+See examples in L{I{copy}<copy>}.
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a27b935735c69a29b47dca67deece24a8}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!copy@{copy}}
+\index{copy@{copy}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a27b935735c69a29b47dca67deece24a8} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+copy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make a copy of this C{ParserElement}.  Useful for defining different parse actions
+for the same parsing pattern, using copies of the original parse element.
+
+Example::
+    integer = Word(nums).setParseAction(lambda toks: int(toks[0]))
+    integerK = integer.copy().addParseAction(lambda toks: toks[0]*1024) + Suppress("K")
+    integerM = integer.copy().addParseAction(lambda toks: toks[0]*1024*1024) + Suppress("M")
+    
+    print(OneOrMore(integerK | integerM | integer).parseString("5K 100 640K 256M"))
+prints::
+    [5120, 100, 655360, 268435456]
+Equivalent form of C{expr.copy()} is just C{expr()}::
+    integerM = integer().addParseAction(lambda toks: toks[0]*1024*1024) + Suppress("M")
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_forward_a197867b81915acbb9cdd1741b046afff}{setuptools.\+\_\+vendor.\+pyparsing.\+Forward}}, \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_keyword_ab1b89ff749f80b368f3d8afd04a5f14a}{setuptools.\+\_\+vendor.\+pyparsing.\+Keyword}}, and \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parse_expression_aec747e0432931530044f7b0c38b3ecf0}{setuptools.\+\_\+vendor.\+pyparsing.\+Parse\+Expression}}.
+
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a49c540383f12eafe64c1183b44f94510}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!enablePackrat@{enablePackrat}}
+\index{enablePackrat@{enablePackrat}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{enablePackrat()}{enablePackrat()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a49c540383f12eafe64c1183b44f94510} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+enable\+Packrat (\begin{DoxyParamCaption}\item[{}]{cache\+\_\+size\+\_\+limit}{ = {\ttfamily 128}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Enables "packrat" parsing, which adds memoizing to the parsing logic.
+   Repeated parse attempts at the same string location (which happens
+   often in many complex grammars) can immediately return a cached value,
+   instead of re-executing parsing/validating code.  Memoizing is done of
+   both valid results and parsing exceptions.
+   
+   Parameters:
+    - cache_size_limit - (default=C{128}) - if an integer value is provided
+      will limit the size of the packrat cache; if None is passed, then
+      the cache size will be unbounded; if 0 is passed, the cache will
+      be effectively disabled.
+    
+   This speedup may break existing programs that use parse actions that
+   have side-effects.  For this reason, packrat parsing is disabled when
+   you first import pyparsing.  To activate the packrat feature, your
+   program must call the class method C{ParserElement.enablePackrat()}.  If
+   your program uses C{psyco} to "compile as you go", you must call
+   C{enablePackrat} before calling C{psyco.full()}.  If you do not do this,
+   Python will crash.  For best results, call C{enablePackrat()} immediately
+   after importing pyparsing.
+   
+   Example::
+       import pyparsing
+       pyparsing.ParserElement.enablePackrat()
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a2e480d02259a5c4d652d0f2302ebd87a}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!ignore@{ignore}}
+\index{ignore@{ignore}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{ignore()}{ignore()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a2e480d02259a5c4d652d0f2302ebd87a} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+ignore (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Define expression to be ignored (e.g., comments) while doing pattern
+matching; may be called repeatedly, to define multiple comment or other
+ignorable patterns.
+
+Example::
+    patt = OneOrMore(Word(alphas))
+    patt.parseString('ablaj /* comment */ lskjd') # -> ['ablaj']
+    
+    patt.ignore(cStyleComment)
+    patt.parseString('ablaj /* comment */ lskjd') # -> ['ablaj', 'lskjd']
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_combine_a655e43b3939327eb72ae111de429569a}{setuptools.\+\_\+vendor.\+pyparsing.\+Combine}}, \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parse_element_enhance_a6e69588edd15f4fb688eb19bfeaabc29}{setuptools.\+\_\+vendor.\+pyparsing.\+Parse\+Element\+Enhance}}, and \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parse_expression_a8bd6a179e9a82e011db39f6538d28f82}{setuptools.\+\_\+vendor.\+pyparsing.\+Parse\+Expression}}.
+
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac1514cb38bcbcf10f5fbd22e753a5090}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!inlineLiteralsUsing@{inlineLiteralsUsing}}
+\index{inlineLiteralsUsing@{inlineLiteralsUsing}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{inlineLiteralsUsing()}{inlineLiteralsUsing()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac1514cb38bcbcf10f5fbd22e753a5090} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+inline\+Literals\+Using (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Set class to be used for inclusion of string literals into a parser.
+
+Example::
+    # default literal class used is Literal
+    integer = Word(nums)
+    date_str = integer("year") + '/' + integer("month") + '/' + integer("day")           
+
+    date_str.parseString("1999/12/31")  # -> ['1999', '/', '12', '/', '31']
+
+
+    # change to Suppress
+    ParserElement.inlineLiteralsUsing(Suppress)
+    date_str = integer("year") + '/' + integer("month") + '/' + integer("day")           
+
+    date_str.parseString("1999/12/31")  # -> ['1999', '12', '31']
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_abb18476905f5e70d827e64b5d693b20c}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!leaveWhitespace@{leaveWhitespace}}
+\index{leaveWhitespace@{leaveWhitespace}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{leaveWhitespace()}{leaveWhitespace()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_abb18476905f5e70d827e64b5d693b20c} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+leave\+Whitespace (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Disables the skipping of whitespace before matching the characters in the
+C{ParserElement}'s defined pattern.  This is normally only used internally by
+the pyparsing module, but may be needed in some whitespace-sensitive grammars.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_forward_a664a5ca9cd4d2386087ee1c85c110149}{setuptools.\+\_\+vendor.\+pyparsing.\+Forward}}, \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parse_element_enhance_ac03c056f265c57a21b9b6ffe466f20df}{setuptools.\+\_\+vendor.\+pyparsing.\+Parse\+Element\+Enhance}}, and \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parse_expression_a3469ca76da4b7380fcb7c8a623d732f7}{setuptools.\+\_\+vendor.\+pyparsing.\+Parse\+Expression}}.
+
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a84b7186468a8a802d1026a6d58f7382a}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!matches@{matches}}
+\index{matches@{matches}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a84b7186468a8a802d1026a6d58f7382a} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+matches (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{test\+String}{, }\item[{}]{parse\+All}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method for quick testing of a parser against a test string. Good for simple 
+inline microtests of sub expressions while building up larger parser.
+   
+Parameters:
+ - testString - to test against this expression for a match
+ - parseAll - (default=C{True}) - flag to pass to C{L{parseString}} when running tests
+    
+Example::
+    expr = Word(nums)
+    assert expr.matches("100")
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a9ef777c0cf3d94034eac08bd5555d3c9}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!parseFile@{parseFile}}
+\index{parseFile@{parseFile}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{parseFile()}{parseFile()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a9ef777c0cf3d94034eac08bd5555d3c9} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+parse\+File (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file\+\_\+or\+\_\+filename}{, }\item[{}]{parse\+All}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Execute the parse expression on the given file or filename.
+If a filename is specified (instead of a file object),
+the entire file is opened, read, and closed before parsing.
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ad0eabe16f430daee29a99b4e50d75051}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!parseString@{parseString}}
+\index{parseString@{parseString}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{parseString()}{parseString()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ad0eabe16f430daee29a99b4e50d75051} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+parse\+String (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instring}{, }\item[{}]{parse\+All}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Execute the parse expression with the given string.
+This is the main interface to the client code, once the complete
+expression has been built.
+
+If you want the grammar to require that the entire input string be
+successfully parsed, then set C{parseAll} to True (equivalent to ending
+the grammar with C{L{StringEnd()}}).
+
+Note: C{parseString} implicitly calls C{expandtabs()} on the input string,
+in order to report proper column numbers in parse actions.
+If the input string contains tabs and
+the grammar uses parse actions that use the C{loc} argument to index into the
+string being parsed, you can ensure you have a consistent view of the input
+string by:
+ - calling C{parseWithTabs} on your grammar before calling C{parseString}
+   (see L{I{parseWithTabs}<parseWithTabs>})
+ - define your parse action using the full C{(s,loc,toks)} signature, and
+   reference the input string using the parse action's C{s} argument
+ - explictly expand the tabs in your input string before calling
+   C{parseString}
+
+Example::
+    Word('a').parseString('aaaaabaaa')  # -> ['aaaaa']
+    Word('a').parseString('aaaaabaaa', parseAll=True)  # -> Exception: Expected end of text
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a8fde47c7cd24aba2353d782c60df8c83}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!parseWithTabs@{parseWithTabs}}
+\index{parseWithTabs@{parseWithTabs}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{parseWithTabs()}{parseWithTabs()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a8fde47c7cd24aba2353d782c60df8c83} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+parse\+With\+Tabs (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Overrides default behavior to expand C{<TAB>}s to spaces before parsing the input string.
+Must be called before C{parseString} when the input grammar contains elements that
+match C{<TAB>} characters.
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aad3a53af2cf357ec5bd28c6523d348c5}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!runTests@{runTests}}
+\index{runTests@{runTests}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{runTests()}{runTests()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aad3a53af2cf357ec5bd28c6523d348c5} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+run\+Tests (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tests}{, }\item[{}]{parse\+All}{ = {\ttfamily True}, }\item[{}]{comment}{ = {\ttfamily \textquotesingle{}\#\textquotesingle{}}, }\item[{}]{full\+Dump}{ = {\ttfamily True}, }\item[{}]{print\+Results}{ = {\ttfamily True}, }\item[{}]{failure\+Tests}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Execute the parse expression on a series of test strings, showing each
+test, the parsed results or where the parse failed. Quick and easy way to
+run a parse expression against a list of sample strings.
+   
+Parameters:
+ - tests - a list of separate test strings, or a multiline string of test strings
+ - parseAll - (default=C{True}) - flag to pass to C{L{parseString}} when running tests           
+ - comment - (default=C{'#'}) - expression for indicating embedded comments in the test 
+      string; pass None to disable comment filtering
+ - fullDump - (default=C{True}) - dump results as list followed by results names in nested outline;
+      if False, only dump nested list
+ - printResults - (default=C{True}) prints test output to stdout
+ - failureTests - (default=C{False}) indicates if these tests are expected to fail parsing
+
+Returns: a (success, results) tuple, where success indicates that all tests succeeded
+(or failed if C{failureTests} is True), and the results contain a list of lines of each 
+test's output
+
+Example::
+    number_expr = pyparsing_common.number.copy()
+
+    result = number_expr.runTests('''
+        # unsigned integer
+        100
+        # negative integer
+        -100
+        # float with scientific notation
+        6.02e23
+        # integer with scientific notation
+        1e-12
+        ''')
+    print("Success" if result[0] else "Failed!")
+
+    result = number_expr.runTests('''
+        # stray character
+        100Z
+        # missing leading digit before '.'
+        -.100
+        # too many '.'
+        3.14.159
+        ''', failureTests=True)
+    print("Success" if result[0] else "Failed!")
+prints::
+    # unsigned integer
+    100
+    [100]
+
+    # negative integer
+    -100
+    [-100]
+
+    # float with scientific notation
+    6.02e23
+    [6.02e+23]
+
+    # integer with scientific notation
+    1e-12
+    [1e-12]
+
+    Success
+    
+    # stray character
+    100Z
+       ^
+    FAIL: Expected end of text (at char 3), (line:1, col:4)
+
+    # missing leading digit before '.'
+    -.100
+    ^
+    FAIL: Expected {real number with scientific notation | real number | signed integer} (at char 0), (line:1, col:1)
+
+    # too many '.'
+    3.14.159
+        ^
+    FAIL: Expected end of text (at char 4), (line:1, col:5)
+
+    Success
+
+Each test string must be on a single line. If you want to test a string that spans multiple
+lines, create a test like this::
+
+    expr.runTest(r"this is a test\\n of strings that spans \\n 3 lines")
+
+(Note that this is a raw string literal, you must include the leading 'r'.)
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aaaa4096907c3872e1891c04ecbd62d94}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!scanString@{scanString}}
+\index{scanString@{scanString}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{scanString()}{scanString()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_aaaa4096907c3872e1891c04ecbd62d94} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+scan\+String (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instring}{, }\item[{}]{max\+Matches}{ = {\ttfamily \+\_\+MAX\+\_\+INT}, }\item[{}]{overlap}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Scan the input string for expression matches.  Each match will return the
+matching tokens, start location, and end location.  May be called with optional
+C{maxMatches} argument, to clip scanning after 'n' matches are found.  If
+C{overlap} is specified, then overlapping matches will be reported.
+
+Note that the start and end locations are reported relative to the string
+being parsed.  See L{I{parseString}<parseString>} for more information on parsing
+strings with embedded tabs.
+
+Example::
+    source = "sldjf123lsdjjkf345sldkjf879lkjsfd987"
+    print(source)
+    for tokens,start,end in Word(alphas).scanString(source):
+        print(' '*start + '^'*(end-start))
+        print(' '*start + tokens[0])
+
+prints::
+
+    sldjf123lsdjjkf345sldkjf879lkjsfd987
+    ^^^^^
+    sldjf
+            ^^^^^^^
+            lsdjjkf
+                      ^^^^^^
+                      sldkjf
+                               ^^^^^^
+                               lkjsfd
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a23a8db8b572ea281ce9008bf3020c3b9}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!searchString@{searchString}}
+\index{searchString@{searchString}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{searchString()}{searchString()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a23a8db8b572ea281ce9008bf3020c3b9} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+search\+String (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instring}{, }\item[{}]{max\+Matches}{ = {\ttfamily \+\_\+MAX\+\_\+INT}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Another extension to C{L{scanString}}, simplifying the access to the tokens found
+to match the given parse expression.  May be called with optional
+C{maxMatches} argument, to clip searching after 'n' matches are found.
+
+Example::
+    # a capitalized word starts with an uppercase letter, followed by zero or more lowercase letters
+    cap_word = Word(alphas.upper(), alphas.lower())
+    
+    print(cap_word.searchString("More than Iron, more than Lead, more than Gold I need Electricity"))
+
+    # the sum() builtin can be used to merge results into a single ParseResults object
+    print(sum(cap_word.searchString("More than Iron, more than Lead, more than Gold I need Electricity")))
+prints::
+    [['More'], ['Iron'], ['Lead'], ['Gold'], ['I'], ['Electricity']]
+    ['More', 'Iron', 'Lead', 'Gold', 'I', 'Electricity']
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a6fe8e684b27c6337c71223a802571090}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!setBreak@{setBreak}}
+\index{setBreak@{setBreak}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{setBreak()}{setBreak()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a6fe8e684b27c6337c71223a802571090} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+set\+Break (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{break\+Flag}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Method to invoke the Python pdb debugger when this element is
+   about to be parsed. Set C{breakFlag} to True to enable, False to
+   disable.
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a81683d96dcbed6c051f043d84f460f63}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!setDebug@{setDebug}}
+\index{setDebug@{setDebug}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{setDebug()}{setDebug()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a81683d96dcbed6c051f043d84f460f63} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+set\+Debug (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{flag}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enable display of debugging messages while doing pattern matching.
+Set C{flag} to True to enable, False to disable.
+
+Example::
+    wd = Word(alphas).setName("alphaword")
+    integer = Word(nums).setName("numword")
+    term = wd | integer
+    
+    # turn on debugging for wd
+    wd.setDebug()
+
+    OneOrMore(term).parseString("abc 123 xyz 890")
+
+prints::
+    Match alphaword at loc 0(1,1)
+    Matched alphaword -> ['abc']
+    Match alphaword at loc 3(1,4)
+    Exception raised:Expected alphaword (at char 4), (line:1, col:5)
+    Match alphaword at loc 7(1,8)
+    Matched alphaword -> ['xyz']
+    Match alphaword at loc 11(1,12)
+    Exception raised:Expected alphaword (at char 12), (line:1, col:13)
+    Match alphaword at loc 15(1,16)
+    Exception raised:Expected alphaword (at char 15), (line:1, col:16)
+
+The output shown is that produced by the default debug actions - custom debug actions can be
+specified using L{setDebugActions}. Prior to attempting
+to match the C{wd} expression, the debugging message C{"Match <exprname> at loc <n>(<line>,<col>)"}
+is shown. Then if the parse succeeds, a C{"Matched"} message is shown, or an C{"Exception raised"}
+message is shown. Also note the use of L{setName} to assign a human-readable name to the expression,
+which makes debugging and exception messages easier to understand - for instance, the default
+name created for the C{Word} expression without calling C{setName} is C{"W:(ABCD...)"}.
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7449d6902326b68c56318c3d54587299}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!setDebugActions@{setDebugActions}}
+\index{setDebugActions@{setDebugActions}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{setDebugActions()}{setDebugActions()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a7449d6902326b68c56318c3d54587299} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+set\+Debug\+Actions (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start\+Action}{, }\item[{}]{success\+Action}{, }\item[{}]{exception\+Action}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enable display of debugging messages while doing pattern matching.
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a0a00276c5b0adea03028253ae1b05d6e}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!setDefaultWhitespaceChars@{setDefaultWhitespaceChars}}
+\index{setDefaultWhitespaceChars@{setDefaultWhitespaceChars}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{setDefaultWhitespaceChars()}{setDefaultWhitespaceChars()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a0a00276c5b0adea03028253ae1b05d6e} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+set\+Default\+Whitespace\+Chars (\begin{DoxyParamCaption}\item[{}]{chars}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}    Overrides the default whitespace chars
+
+    Example::
+        # default whitespace chars are space, <TAB> and newline
+        OneOrMore(Word(alphas)).parseString("abc def\nghi jkl")  # -> ['abc', 'def', 'ghi', 'jkl']
+        
+        # change to just treat newline as significant
+        ParserElement.setDefaultWhitespaceChars(" \t")
+        OneOrMore(Word(alphas)).parseString("abc def\nghi jkl")  # -> ['abc', 'def']\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af8e5dcb2b0ed344f7a2aa068cf0295bb}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!setFailAction@{setFailAction}}
+\index{setFailAction@{setFailAction}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{setFailAction()}{setFailAction()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_af8e5dcb2b0ed344f7a2aa068cf0295bb} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+set\+Fail\+Action (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fn}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Define action to perform if parsing fails at this expression.
+   Fail acton fn is a callable function that takes the arguments
+   C{fn(s,loc,expr,err)} where:
+    - s = string being parsed
+    - loc = location where expression match was attempted and failed
+    - expr = the parse expression that failed
+    - err = the exception thrown
+   The function returns no value.  It may throw C{L{ParseFatalException}}
+   if it is desired to stop parsing immediately.\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_acf32b43ff8fffe6f3c628b65421812e3}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!setName@{setName}}
+\index{setName@{setName}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_acf32b43ff8fffe6f3c628b65421812e3} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+set\+Name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Define name for this expression, makes debugging and exception messages clearer.
+
+Example::
+    Word(nums).parseString("ABC")  # -> Exception: Expected W:(0123...) (at char 0), (line:1, col:1)
+    Word(nums).setName("integer").parseString("ABC")  # -> Exception: Expected integer (at char 0), (line:1, col:1)
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a668cab53351e8405c94fe4e06e97999b}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!setParseAction@{setParseAction}}
+\index{setParseAction@{setParseAction}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{setParseAction()}{setParseAction()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a668cab53351e8405c94fe4e06e97999b} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+set\+Parse\+Action (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{fns}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Define one or more actions to perform when successfully matching parse element definition.
+Parse action fn is a callable method with 0-3 arguments, called as C{fn(s,loc,toks)},
+C{fn(loc,toks)}, C{fn(toks)}, or just C{fn()}, where:
+ - s   = the original string being parsed (see note below)
+ - loc = the location of the matching substring
+ - toks = a list of the matched tokens, packaged as a C{L{ParseResults}} object
+If the functions in fns modify the tokens, they can return them as the return
+value from fn, and the modified list of tokens will replace the original.
+Otherwise, fn does not need to return any value.
+
+Optional keyword arguments:
+ - callDuringTry = (default=C{False}) indicate if parse action should be run during lookaheads and alternate testing
+
+Note: the default parsing behavior is to expand tabs in the input string
+before starting the parsing process.  See L{I{parseString}<parseString>} for more information
+on parsing strings containing C{<TAB>}s, and suggested methods to maintain a
+consistent view of the parsed string, the parse location, and line and column
+positions within the parsed string.
+
+Example::
+    integer = Word(nums)
+    date_str = integer + '/' + integer + '/' + integer
+
+    date_str.parseString("1999/12/31")  # -> ['1999', '/', '12', '/', '31']
+
+    # use parse action to convert to ints at parse time
+    integer = Word(nums).setParseAction(lambda toks: int(toks[0]))
+    date_str = integer + '/' + integer + '/' + integer
+
+    # note that integer fields are now ints, not strings
+    date_str.parseString("1999/12/31")  # -> [1999, '/', 12, '/', 31]
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a973dc56edf50932c752abe9cdd1fa973}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!setResultsName@{setResultsName}}
+\index{setResultsName@{setResultsName}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{setResultsName()}{setResultsName()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a973dc56edf50932c752abe9cdd1fa973} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+set\+Results\+Name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{list\+All\+Matches}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Define name for referencing matching tokens as a nested attribute
+of the returned parse results.
+NOTE: this returns a *copy* of the original C{ParserElement} object;
+this is so that the client can define a basic element, such as an
+integer, and reference it in multiple places with different names.
+
+You can also set results names using the abbreviated syntax,
+C{expr("name")} in place of C{expr.setResultsName("name")} - 
+see L{I{__call__}<__call__>}.
+
+Example::
+    date_str = (integer.setResultsName("year") + '/' 
+                + integer.setResultsName("month") + '/' 
+                + integer.setResultsName("day"))
+
+    # equivalent form:
+    date_str = integer("year") + '/' + integer("month") + '/' + integer("day")
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parse_expression_af009e412cdfa3e256af563150b1e3d35}{setuptools.\+\_\+vendor.\+pyparsing.\+Parse\+Expression}}.
+
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a657204d514de3aa37b9de6c04702622e}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!setWhitespaceChars@{setWhitespaceChars}}
+\index{setWhitespaceChars@{setWhitespaceChars}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{setWhitespaceChars()}{setWhitespaceChars()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a657204d514de3aa37b9de6c04702622e} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+set\+Whitespace\+Chars (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{chars}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Overrides the default whitespace chars
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a3799450fc19352ac7cbe8b763090ceee}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!split@{split}}
+\index{split@{split}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a3799450fc19352ac7cbe8b763090ceee} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+split (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instring}{, }\item[{}]{maxsplit}{ = {\ttfamily \+\_\+MAX\+\_\+INT}, }\item[{}]{include\+Separators}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generator method to split a string using the given expression as a separator.
+May be called with optional C{maxsplit} argument, to limit the number of splits;
+and the optional C{includeSeparators} argument (default=C{False}), if the separating
+matching text should be included in the split results.
+
+Example::        
+    punc = oneOf(list(".,;:/-!?"))
+    print(list(punc.split("This, this?, this sentence, is badly punctuated!")))
+prints::
+    ['This', ' this', '', ' this sentence', ' is badly punctuated', '']
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a4161d6b3dd65cdc1dbbcd544948092ca}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!suppress@{suppress}}
+\index{suppress@{suppress}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{suppress()}{suppress()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a4161d6b3dd65cdc1dbbcd544948092ca} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+suppress (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Suppresses the output of this C{ParserElement}; useful to keep punctuation from
+cluttering up returned output.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_suppress_a632b7cbe9d430dd78b1bf48be334b3f5}{setuptools.\+\_\+vendor.\+pyparsing.\+Suppress}}.
+
+\Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac24fc77eda63955fd4f0edbc6f83b24a}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!transformString@{transformString}}
+\index{transformString@{transformString}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{transformString()}{transformString()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_ac24fc77eda63955fd4f0edbc6f83b24a} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+transform\+String (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instring}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extension to C{L{scanString}}, to modify matching text with modified tokens that may
+be returned from a parse action.  To use C{transformString}, define a grammar and
+attach a parse action to it that modifies the returned token list.
+Invoking C{transformString()} on a target string will then scan for matches,
+and replace the matched text patterns according to the logic in the parse
+action.  C{transformString()} returns the resulting transformed string.
+
+Example::
+    wd = Word(alphas)
+    wd.setParseAction(lambda toks: toks[0].title())
+    
+    print(wd.transformString("now is the winter of our discontent made glorious summer by this sun of york."))
+Prints::
+    Now Is The Winter Of Our Discontent Made Glorious Summer By This Sun Of York.
+\end{DoxyVerb}
+ \Hypertarget{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5f2f3fe13fbf34de7490ad502d72f6c2}\index{setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}!validate@{validate}}
+\index{validate@{validate}!setuptools.\_vendor.pyparsing.ParserElement@{setuptools.\_vendor.pyparsing.ParserElement}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parser_element_a5f2f3fe13fbf34de7490ad502d72f6c2} 
+setuptools.\+\_\+vendor.\+pyparsing.\+Parser\+Element.\+validate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{validate\+Trace}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check defined expressions for valid structure, check for infinite recursive definitions.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_forward_ab6161d899d09faaa105607c1888c3564}{setuptools.\+\_\+vendor.\+pyparsing.\+Forward}}, \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parse_element_enhance_a0041aa24590370fc269b606ac96fff2e}{setuptools.\+\_\+vendor.\+pyparsing.\+Parse\+Element\+Enhance}}, and \mbox{\hyperlink{classsetuptools_1_1__vendor_1_1pyparsing_1_1_parse_expression_a6ff8edaa0207389332cbb77df56a8eef}{setuptools.\+\_\+vendor.\+pyparsing.\+Parse\+Expression}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/setuptools/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

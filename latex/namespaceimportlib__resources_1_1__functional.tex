@@ -1,0 +1,95 @@
+\doxysection{importlib\+\_\+resources.\+\_\+functional Namespace Reference}
+\hypertarget{namespaceimportlib__resources_1_1__functional}{}\label{namespaceimportlib__resources_1_1__functional}\index{importlib\_resources.\_functional@{importlib\_resources.\_functional}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceimportlib__resources_1_1__functional_ab81012e6bfe36841af7b11294e1d25d3}{open\+\_\+binary}} (anchor, \texorpdfstring{$\ast$}{*}path\+\_\+names)
+\item 
+\mbox{\hyperlink{namespaceimportlib__resources_1_1__functional_a19b26e414946fe4ce54478f4c3002432}{open\+\_\+text}} (anchor, \texorpdfstring{$\ast$}{*}path\+\_\+names, encoding=\+\_\+\+MISSING, errors=\textquotesingle{}strict\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceimportlib__resources_1_1__functional_a294d74cbf1df2ee2297086cf554d5003}{read\+\_\+binary}} (anchor, \texorpdfstring{$\ast$}{*}path\+\_\+names)
+\item 
+\mbox{\hyperlink{namespaceimportlib__resources_1_1__functional_abd92d95108c02cbdeaf54f36b363f9a2}{read\+\_\+text}} (anchor, \texorpdfstring{$\ast$}{*}path\+\_\+names, encoding=\+\_\+\+MISSING, errors=\textquotesingle{}strict\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceimportlib__resources_1_1__functional_a36aac18782fa3fa0225623d78a298c28}{path}} (anchor, \texorpdfstring{$\ast$}{*}path\+\_\+names)
+\item 
+\mbox{\hyperlink{namespaceimportlib__resources_1_1__functional_a5de64b0ebcfac006fdd98195ff77ffb1}{is\+\_\+resource}} (anchor, \texorpdfstring{$\ast$}{*}path\+\_\+names)
+\item 
+\mbox{\hyperlink{namespaceimportlib__resources_1_1__functional_ae6492a58d8d9a1caf6f7e6d3fcde75a8}{contents}} (anchor, \texorpdfstring{$\ast$}{*}path\+\_\+names)
+\item 
+\Hypertarget{namespaceimportlib__resources_1_1__functional_af5a81cf3722ad3a37184d80c91cabb4c}\label{namespaceimportlib__resources_1_1__functional_af5a81cf3722ad3a37184d80c91cabb4c} 
+{\bfseries \+\_\+get\+\_\+encoding\+\_\+arg} (path\+\_\+names, encoding)
+\item 
+\Hypertarget{namespaceimportlib__resources_1_1__functional_aef9380109fd885058716cb94898d3e07}\label{namespaceimportlib__resources_1_1__functional_aef9380109fd885058716cb94898d3e07} 
+{\bfseries \+\_\+get\+\_\+resource} (anchor, path\+\_\+names)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceimportlib__resources_1_1__functional_a3ad6354ebef9e9dc81c7f3af77fdc00b}\label{namespaceimportlib__resources_1_1__functional_a3ad6354ebef9e9dc81c7f3af77fdc00b} 
+{\bfseries \+\_\+\+MISSING} = object()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Simplified function-based API for importlib.resources\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceimportlib__resources_1_1__functional_ae6492a58d8d9a1caf6f7e6d3fcde75a8}\index{importlib\_resources.\_functional@{importlib\_resources.\_functional}!contents@{contents}}
+\index{contents@{contents}!importlib\_resources.\_functional@{importlib\_resources.\_functional}}
+\doxysubsubsection{\texorpdfstring{contents()}{contents()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__resources_1_1__functional_ae6492a58d8d9a1caf6f7e6d3fcde75a8} 
+importlib\+\_\+resources.\+\_\+functional.\+contents (\begin{DoxyParamCaption}\item[{}]{anchor}{, }\item[{\texorpdfstring{$\ast$}{*}}]{path\+\_\+names}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an iterable over the named resources within the package.
+
+The iterable returns :class:`str` resources (e.g. files).
+The iterable does not recurse into subdirectories.
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__resources_1_1__functional_a5de64b0ebcfac006fdd98195ff77ffb1}\index{importlib\_resources.\_functional@{importlib\_resources.\_functional}!is\_resource@{is\_resource}}
+\index{is\_resource@{is\_resource}!importlib\_resources.\_functional@{importlib\_resources.\_functional}}
+\doxysubsubsection{\texorpdfstring{is\_resource()}{is\_resource()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__resources_1_1__functional_a5de64b0ebcfac006fdd98195ff77ffb1} 
+importlib\+\_\+resources.\+\_\+functional.\+is\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{anchor}{, }\item[{\texorpdfstring{$\ast$}{*}}]{path\+\_\+names}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return ``True`` if there is a resource named *name* in the package,
+
+Otherwise returns ``False``.
+\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__resources_1_1__functional_ab81012e6bfe36841af7b11294e1d25d3}\index{importlib\_resources.\_functional@{importlib\_resources.\_functional}!open\_binary@{open\_binary}}
+\index{open\_binary@{open\_binary}!importlib\_resources.\_functional@{importlib\_resources.\_functional}}
+\doxysubsubsection{\texorpdfstring{open\_binary()}{open\_binary()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__resources_1_1__functional_ab81012e6bfe36841af7b11294e1d25d3} 
+importlib\+\_\+resources.\+\_\+functional.\+open\+\_\+binary (\begin{DoxyParamCaption}\item[{}]{anchor}{, }\item[{\texorpdfstring{$\ast$}{*}}]{path\+\_\+names}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Open for binary reading the *resource* within *package*.\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__resources_1_1__functional_a19b26e414946fe4ce54478f4c3002432}\index{importlib\_resources.\_functional@{importlib\_resources.\_functional}!open\_text@{open\_text}}
+\index{open\_text@{open\_text}!importlib\_resources.\_functional@{importlib\_resources.\_functional}}
+\doxysubsubsection{\texorpdfstring{open\_text()}{open\_text()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__resources_1_1__functional_a19b26e414946fe4ce54478f4c3002432} 
+importlib\+\_\+resources.\+\_\+functional.\+open\+\_\+text (\begin{DoxyParamCaption}\item[{}]{anchor}{, }\item[{\texorpdfstring{$\ast$}{*}}]{path\+\_\+names}{, }\item[{}]{encoding}{ = {\ttfamily \+\_\+MISSING}, }\item[{}]{errors}{ = {\ttfamily \textquotesingle{}strict\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Open for text reading the *resource* within *package*.\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__resources_1_1__functional_a36aac18782fa3fa0225623d78a298c28}\index{importlib\_resources.\_functional@{importlib\_resources.\_functional}!path@{path}}
+\index{path@{path}!importlib\_resources.\_functional@{importlib\_resources.\_functional}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__resources_1_1__functional_a36aac18782fa3fa0225623d78a298c28} 
+importlib\+\_\+resources.\+\_\+functional.\+path (\begin{DoxyParamCaption}\item[{}]{anchor}{, }\item[{\texorpdfstring{$\ast$}{*}}]{path\+\_\+names}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the path to the *resource* as an actual file system path.\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__resources_1_1__functional_a294d74cbf1df2ee2297086cf554d5003}\index{importlib\_resources.\_functional@{importlib\_resources.\_functional}!read\_binary@{read\_binary}}
+\index{read\_binary@{read\_binary}!importlib\_resources.\_functional@{importlib\_resources.\_functional}}
+\doxysubsubsection{\texorpdfstring{read\_binary()}{read\_binary()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__resources_1_1__functional_a294d74cbf1df2ee2297086cf554d5003} 
+importlib\+\_\+resources.\+\_\+functional.\+read\+\_\+binary (\begin{DoxyParamCaption}\item[{}]{anchor}{, }\item[{\texorpdfstring{$\ast$}{*}}]{path\+\_\+names}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read and return contents of *resource* within *package* as bytes.\end{DoxyVerb}
+ \Hypertarget{namespaceimportlib__resources_1_1__functional_abd92d95108c02cbdeaf54f36b363f9a2}\index{importlib\_resources.\_functional@{importlib\_resources.\_functional}!read\_text@{read\_text}}
+\index{read\_text@{read\_text}!importlib\_resources.\_functional@{importlib\_resources.\_functional}}
+\doxysubsubsection{\texorpdfstring{read\_text()}{read\_text()}}
+{\footnotesize\ttfamily \label{namespaceimportlib__resources_1_1__functional_abd92d95108c02cbdeaf54f36b363f9a2} 
+importlib\+\_\+resources.\+\_\+functional.\+read\+\_\+text (\begin{DoxyParamCaption}\item[{}]{anchor}{, }\item[{\texorpdfstring{$\ast$}{*}}]{path\+\_\+names}{, }\item[{}]{encoding}{ = {\ttfamily \+\_\+MISSING}, }\item[{}]{errors}{ = {\ttfamily \textquotesingle{}strict\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read and return contents of *resource* within *package* as str.\end{DoxyVerb}
+ 

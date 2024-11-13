@@ -1,0 +1,50 @@
+\doxysection{setuptools.\+extension.\+Extension Class Reference}
+\hypertarget{classsetuptools_1_1extension_1_1_extension}{}\label{classsetuptools_1_1extension_1_1_extension}\index{setuptools.extension.Extension@{setuptools.extension.Extension}}
+Inheritance diagram for setuptools.\+extension.\+Extension\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classsetuptools_1_1extension_1_1_extension}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsetuptools_1_1extension_1_1_extension_a4146b56fd12f985fa82995e48172dc3f}\label{classsetuptools_1_1extension_1_1_extension_a4146b56fd12f985fa82995e48172dc3f} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, name, sources, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kw)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsetuptools_1_1extension_1_1_extension_a738c98bc01dd531f3c7ff4bc9a893011}\label{classsetuptools_1_1extension_1_1_extension_a738c98bc01dd531f3c7ff4bc9a893011} 
+{\bfseries py\+\_\+limited\+\_\+api} = kw.\+pop("{}py\+\_\+limited\+\_\+api"{}, False)
+\item 
+\Hypertarget{classsetuptools_1_1extension_1_1_extension_a267f08175ebbf89924e8f8d6d707c5f8}\label{classsetuptools_1_1extension_1_1_extension_a267f08175ebbf89924e8f8d6d707c5f8} 
+{\bfseries sources} = list(map(sub, self.\+sources))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsetuptools_1_1extension_1_1_extension_aaf601d7106ef472a4913e4bacd039c2a}{\+\_\+convert\+\_\+pyx\+\_\+sources\+\_\+to\+\_\+lang}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Extension that uses '.c' files in place of '.pyx' files\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsetuptools_1_1extension_1_1_extension_aaf601d7106ef472a4913e4bacd039c2a}\index{setuptools.extension.Extension@{setuptools.extension.Extension}!\_convert\_pyx\_sources\_to\_lang@{\_convert\_pyx\_sources\_to\_lang}}
+\index{\_convert\_pyx\_sources\_to\_lang@{\_convert\_pyx\_sources\_to\_lang}!setuptools.extension.Extension@{setuptools.extension.Extension}}
+\doxysubsubsection{\texorpdfstring{\_convert\_pyx\_sources\_to\_lang()}{\_convert\_pyx\_sources\_to\_lang()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1extension_1_1_extension_aaf601d7106ef472a4913e4bacd039c2a} 
+setuptools.\+extension.\+Extension.\+\_\+convert\+\_\+pyx\+\_\+sources\+\_\+to\+\_\+lang (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Replace sources with .pyx extensions to sources with the target
+language extension. This mechanism allows language authors to supply
+pre-converted sources but to prefer the .pyx sources.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/setuptools/extension.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\doxysection{Référence de la classe connexion.\+decorators.\+validation.\+Parameter\+Validator}
+\hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator}{}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator}\index{connexion.decorators.validation.ParameterValidator@{connexion.decorators.validation.ParameterValidator}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a90f3f9945395a588e853281caa55d353}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, parameters, api, strict\+\_\+validation=False)
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_ad841eadbc196b9045f82e7ea551e622a}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_ad841eadbc196b9045f82e7ea551e622a} 
+{\bfseries validate\+\_\+query\+\_\+parameter\+\_\+list} (self, request)
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a2d664d6d44ddd06dcf67f7977a3a7dce}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a2d664d6d44ddd06dcf67f7977a3a7dce} 
+{\bfseries validate\+\_\+formdata\+\_\+parameter\+\_\+list} (self, request)
+\item 
+\mbox{\hyperlink{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_aca58c01951d1da612e41e9851ba4cb60}{validate\+\_\+query\+\_\+parameter}} (self, param, request)
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_adfe5f232be037344bd147ddd6f2045c4}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_adfe5f232be037344bd147ddd6f2045c4} 
+{\bfseries validate\+\_\+path\+\_\+parameter} (self, param, request)
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a07fb91b547d83f9d819d8f0f1ab8d655}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a07fb91b547d83f9d819d8f0f1ab8d655} 
+{\bfseries validate\+\_\+header\+\_\+parameter} (self, param, request)
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a42d951cdc9676a91976a18d9aa20e21a}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a42d951cdc9676a91976a18d9aa20e21a} 
+{\bfseries validate\+\_\+cookie\+\_\+parameter} (self, param, request)
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a323f5f66ca443023580a751fa2e6533a}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a323f5f66ca443023580a751fa2e6533a} 
+{\bfseries validate\+\_\+formdata\+\_\+parameter} (self, param\+\_\+name, param, request)
+\item 
+\mbox{\hyperlink{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_aba011feb3a0a60274a260428d915bf15}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, function)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a84abf6e978ea260d99642fe1cbe316bf}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a84abf6e978ea260d99642fe1cbe316bf} 
+{\bfseries validate\+\_\+parameter} (parameter\+\_\+type, value, param, param\+\_\+name=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a809404ce26143f09fda680deff0f5649}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a809404ce26143f09fda680deff0f5649} 
+\# Swagger 2 {\bfseries parameters} = collections.\+defaultdict(list)
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a827743d33de7294e8a00c8b3d3579dd5}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a827743d33de7294e8a00c8b3d3579dd5} 
+{\bfseries api} = api
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a8afb833534011a43ceba94ae3b5f72c6}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a8afb833534011a43ceba94ae3b5f72c6} 
+{\bfseries strict\+\_\+validation} = strict\+\_\+validation
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_af53932c19dab783c9e03b413e10310fb}\label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_af53932c19dab783c9e03b413e10310fb} 
+list {\bfseries parameters} = \mbox{[}x\mbox{[}\textquotesingle{}name\textquotesingle{}\mbox{]} for x in self.\+parameters\mbox{[}\textquotesingle{}form\+Data\textquotesingle{}\mbox{]}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a90f3f9945395a588e853281caa55d353}\index{connexion.decorators.validation.ParameterValidator@{connexion.decorators.validation.ParameterValidator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.decorators.validation.ParameterValidator@{connexion.decorators.validation.ParameterValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_a90f3f9945395a588e853281caa55d353} 
+connexion.\+decorators.\+validation.\+Parameter\+Validator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{parameters}{, }\item[{}]{api}{, }\item[{}]{strict\+\_\+validation}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param parameters: List of request parameter dictionaries
+:param api: api that the validator is attached to
+:param strict_validation: Flag indicating if parameters not in spec are allowed
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_aba011feb3a0a60274a260428d915bf15}\index{connexion.decorators.validation.ParameterValidator@{connexion.decorators.validation.ParameterValidator}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!connexion.decorators.validation.ParameterValidator@{connexion.decorators.validation.ParameterValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_aba011feb3a0a60274a260428d915bf15} 
+connexion.\+decorators.\+validation.\+Parameter\+Validator.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{function}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type function: types.FunctionType
+:rtype: types.FunctionType
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_aca58c01951d1da612e41e9851ba4cb60}\index{connexion.decorators.validation.ParameterValidator@{connexion.decorators.validation.ParameterValidator}!validate\_query\_parameter@{validate\_query\_parameter}}
+\index{validate\_query\_parameter@{validate\_query\_parameter}!connexion.decorators.validation.ParameterValidator@{connexion.decorators.validation.ParameterValidator}}
+\doxysubsubsection{\texorpdfstring{validate\_query\_parameter()}{validate\_query\_parameter()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator_aca58c01951d1da612e41e9851ba4cb60} 
+connexion.\+decorators.\+validation.\+Parameter\+Validator.\+validate\+\_\+query\+\_\+parameter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{param}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Validate a single query parameter (request.args in Flask)
+
+:type param: dict
+:rtype: str
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/decorators/validation.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,36 @@
+\doxysection{werkzeug.\+middleware.\+dispatcher.\+Dispatcher\+Middleware Class Reference}
+\hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware}{}\label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware}\index{werkzeug.middleware.dispatcher.DispatcherMiddleware@{werkzeug.middleware.dispatcher.DispatcherMiddleware}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_acf2b08019286bec748d25302bc940ef5}\label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_acf2b08019286bec748d25302bc940ef5} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, "{}WSGIApplication"{} app, t.\+Optional\mbox{[}t.\+Dict\mbox{[}str, "{}WSGIApplication"{}\mbox{]}\mbox{]} mounts=None)
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_ab4e78c2e183c1f616678c73505be8d87}\label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_ab4e78c2e183c1f616678c73505be8d87} 
+t.\+Iterable\mbox{[}bytes\mbox{]} {\bfseries \+\_\+\+\_\+call\+\_\+\+\_\+} (self, "{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a2fddac85e22892311c55e1f6dda825b6}\label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a2fddac85e22892311c55e1f6dda825b6} 
+{\bfseries app} = app
+\item 
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_addf0f710f166141f2c9c14873afc07a0}\label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_addf0f710f166141f2c9c14873afc07a0} 
+{\bfseries mounts} = mounts or \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Combine multiple applications as a single WSGI application.
+Requests are dispatched to an application based on the path it is
+mounted under.
+
+:param app: The WSGI application to dispatch to if the request
+    doesn't match a mounted path.
+:param mounts: Maps path prefixes to applications for dispatching.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/middleware/dispatcher.\+py\end{DoxyCompactItemize}

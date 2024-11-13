@@ -1,0 +1,64 @@
+\doxysection{pip.\+\_\+vendor.\+packaging.\+requirements.\+Requirement Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement}{}\label{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement}\index{pip.\_vendor.packaging.requirements.Requirement@{pip.\_vendor.packaging.requirements.Requirement}}
+Inheritance diagram for pip.\+\_\+vendor.\+packaging.\+requirements.\+Requirement\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_aab009f605ec3ebd3a64fd2cab61e3469}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, requirement\+\_\+string)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_ace84e7793e09d0bf4e9b765fcf9f3e7b}\label{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_ace84e7793e09d0bf4e9b765fcf9f3e7b} 
+{\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_ae4ca0b68ebcebfdafe2ed57621a533ae}\label{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_ae4ca0b68ebcebfdafe2ed57621a533ae} 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_ac93d3d878d82ccfa6a1a30df1de766d8}\label{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_ac93d3d878d82ccfa6a1a30df1de766d8} 
+{\bfseries name} = req.\+name
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_ae9fcc103f907ab4191dcf42f2ef36daf}\label{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_ae9fcc103f907ab4191dcf42f2ef36daf} 
+{\bfseries url} = req.\+url
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_a0aaccf856546702ad1697b9fbe962619}\label{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_a0aaccf856546702ad1697b9fbe962619} 
+{\bfseries extras} = set(req.\+extras.\+as\+List() if req.\+extras else \mbox{[}$\,$\mbox{]})
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_a2b0856da19ade70c5560545d1b9c1e88}\label{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_a2b0856da19ade70c5560545d1b9c1e88} 
+{\bfseries specifier} = \mbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1specifiers_1_1_specifier_set}{Specifier\+Set}}(req.\+specifier)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_a611b7a6e95fd371cfe1b6a5404a53671}\label{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_a611b7a6e95fd371cfe1b6a5404a53671} 
+{\bfseries marker} = req.\+marker if req.\+marker else None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Parse a requirement.
+
+Parse a given requirement string into its parts, such as name, specifier,
+URL, and extras. Raises InvalidRequirement on a badly-formed requirement
+string.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_aab009f605ec3ebd3a64fd2cab61e3469}\index{pip.\_vendor.packaging.requirements.Requirement@{pip.\_vendor.packaging.requirements.Requirement}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.packaging.requirements.Requirement@{pip.\_vendor.packaging.requirements.Requirement}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement_aab009f605ec3ebd3a64fd2cab61e3469} 
+pip.\+\_\+vendor.\+packaging.\+requirements.\+Requirement.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{requirement\+\_\+string}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__vendor_1_1pkg__resources_1_1_requirement_af9326c179945df552c053d331cd5e172}{pip.\+\_\+vendor.\+pkg\+\_\+resources.\+Requirement}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/packaging/requirements.\+py\end{DoxyCompactItemize}

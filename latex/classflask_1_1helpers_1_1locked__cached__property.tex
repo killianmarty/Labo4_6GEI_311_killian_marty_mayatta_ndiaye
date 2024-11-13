@@ -1,0 +1,92 @@
+\doxysection{flask.\+helpers.\+locked\+\_\+cached\+\_\+property Class Reference}
+\hypertarget{classflask_1_1helpers_1_1locked__cached__property}{}\label{classflask_1_1helpers_1_1locked__cached__property}\index{flask.helpers.locked\_cached\_property@{flask.helpers.locked\_cached\_property}}
+Inheritance diagram for flask.\+helpers.\+locked\+\_\+cached\+\_\+property\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.362869cm]{classflask_1_1helpers_1_1locked__cached__property}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classflask_1_1helpers_1_1locked__cached__property_a57df02215429d5d5fdc062668edff87a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Callable\mbox{[}\mbox{[}t.\+Any\mbox{]}, t.\+Any\mbox{]} fget, t.\+Optional\mbox{[}str\mbox{]} name=None, t.\+Optional\mbox{[}str\mbox{]} doc=None)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1helpers_1_1locked__cached__property_a8d127d04c887b6b2d16051efc8abd3b7}{\+\_\+\+\_\+get\+\_\+\+\_\+}} (self, object obj, type type=None)
+\item 
+None \mbox{\hyperlink{classflask_1_1helpers_1_1locked__cached__property_ac0e806e475a4e651e497616fe43eb2b2}{\+\_\+\+\_\+set\+\_\+\+\_\+}} (self, object obj, t.\+Any value)
+\item 
+None \mbox{\hyperlink{classflask_1_1helpers_1_1locked__cached__property_ac3a57675ac24f82d3f436e8133a2faf9}{\+\_\+\+\_\+delete\+\_\+\+\_\+}} (self, object obj)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property}{werkzeug.\+utils.\+cached\+\_\+property}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1helpers_1_1locked__cached__property_a4fe080fffeb3393d01fa38e3d5a1dd2b}\label{classflask_1_1helpers_1_1locked__cached__property_a4fe080fffeb3393d01fa38e3d5a1dd2b} 
+{\bfseries lock} = RLock()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property}{werkzeug.\+utils.\+cached\+\_\+property}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries slot\+\_\+name} = f"{}\+\_\+cache\+\_\+\{self.\+\_\+\+\_\+name\+\_\+\+\_\+\}"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A :func:`property` that is only evaluated once. Like
+:class:`werkzeug.utils.cached_property` except access uses a lock
+for thread safety.
+
+.. versionchanged:: 2.0
+    Inherits from Werkzeug's ``cached_property`` (and ``property``).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1helpers_1_1locked__cached__property_a57df02215429d5d5fdc062668edff87a}\index{flask.helpers.locked\_cached\_property@{flask.helpers.locked\_cached\_property}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.helpers.locked\_cached\_property@{flask.helpers.locked\_cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1helpers_1_1locked__cached__property_a57df02215429d5d5fdc062668edff87a} 
+ None flask.\+helpers.\+locked\+\_\+cached\+\_\+property.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Callable\mbox{[}\mbox{[}t.\+Any\mbox{]}, t.\+Any\mbox{]}}]{fget}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{name}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{doc}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property}{werkzeug.\+utils.\+cached\+\_\+property}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1helpers_1_1locked__cached__property_ac3a57675ac24f82d3f436e8133a2faf9}\index{flask.helpers.locked\_cached\_property@{flask.helpers.locked\_cached\_property}!\_\_delete\_\_@{\_\_delete\_\_}}
+\index{\_\_delete\_\_@{\_\_delete\_\_}!flask.helpers.locked\_cached\_property@{flask.helpers.locked\_cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_delete\_\_()}{\_\_delete\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1helpers_1_1locked__cached__property_ac3a57675ac24f82d3f436e8133a2faf9} 
+ None flask.\+helpers.\+locked\+\_\+cached\+\_\+property.\+\_\+\+\_\+delete\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property}{werkzeug.\+utils.\+cached\+\_\+property}}.
+
+\Hypertarget{classflask_1_1helpers_1_1locked__cached__property_a8d127d04c887b6b2d16051efc8abd3b7}\index{flask.helpers.locked\_cached\_property@{flask.helpers.locked\_cached\_property}!\_\_get\_\_@{\_\_get\_\_}}
+\index{\_\_get\_\_@{\_\_get\_\_}!flask.helpers.locked\_cached\_property@{flask.helpers.locked\_cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_\_()}{\_\_get\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1helpers_1_1locked__cached__property_a8d127d04c887b6b2d16051efc8abd3b7} 
+ t.\+Any flask.\+helpers.\+locked\+\_\+cached\+\_\+property.\+\_\+\+\_\+get\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{obj}{, }\item[{type }]{type}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property}{werkzeug.\+utils.\+cached\+\_\+property}}.
+
+\Hypertarget{classflask_1_1helpers_1_1locked__cached__property_ac0e806e475a4e651e497616fe43eb2b2}\index{flask.helpers.locked\_cached\_property@{flask.helpers.locked\_cached\_property}!\_\_set\_\_@{\_\_set\_\_}}
+\index{\_\_set\_\_@{\_\_set\_\_}!flask.helpers.locked\_cached\_property@{flask.helpers.locked\_cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_set\_\_()}{\_\_set\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1helpers_1_1locked__cached__property_ac0e806e475a4e651e497616fe43eb2b2} 
+ None flask.\+helpers.\+locked\+\_\+cached\+\_\+property.\+\_\+\+\_\+set\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{obj}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property}{werkzeug.\+utils.\+cached\+\_\+property}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/helpers.\+py\end{DoxyCompactItemize}

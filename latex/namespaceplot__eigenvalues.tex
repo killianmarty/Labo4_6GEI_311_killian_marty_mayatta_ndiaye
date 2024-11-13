@@ -1,0 +1,33 @@
+\doxysection{plot\+\_\+eigenvalues Namespace Reference}
+\hypertarget{namespaceplot__eigenvalues}{}\label{namespaceplot__eigenvalues}\index{plot\_eigenvalues@{plot\_eigenvalues}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__eigenvalues_a4f9753c45cca8f4c77bc01c7edab68ba}\label{namespaceplot__eigenvalues_a4f9753c45cca8f4c77bc01c7edab68ba} 
+int {\bfseries n} = 1000
+\item 
+\Hypertarget{namespaceplot__eigenvalues_af8da38540f13e38bd7d59c5360b646ef}\label{namespaceplot__eigenvalues_af8da38540f13e38bd7d59c5360b646ef} 
+int {\bfseries m} = 5000
+\item 
+\Hypertarget{namespaceplot__eigenvalues_ad87b69353e34b03bf905427135f2e586}\label{namespaceplot__eigenvalues_ad87b69353e34b03bf905427135f2e586} 
+{\bfseries G} = nx.\+gnm\+\_\+random\+\_\+graph(n, m, seed=5040)
+\item 
+\Hypertarget{namespaceplot__eigenvalues_a71540c4ba801154f698f6dc8c29ab0e8}\label{namespaceplot__eigenvalues_a71540c4ba801154f698f6dc8c29ab0e8} 
+{\bfseries L} = nx.\+normalized\+\_\+laplacian\+\_\+matrix(G)
+\item 
+\Hypertarget{namespaceplot__eigenvalues_a8a3958eb0511c67bdb1b416f2a3c8740}\label{namespaceplot__eigenvalues_a8a3958eb0511c67bdb1b416f2a3c8740} 
+{\bfseries e} = numpy.\+linalg.\+eigvals(L.\+toarray())
+\item 
+\Hypertarget{namespaceplot__eigenvalues_a559e0b03f4e220f6e9482b65eaa7daee}\label{namespaceplot__eigenvalues_a559e0b03f4e220f6e9482b65eaa7daee} 
+{\bfseries bins}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}===========
+Eigenvalues
+===========
+
+Create an G{n,m} random graph and compute the eigenvalues.
+\end{DoxyVerb}
+ 

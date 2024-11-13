@@ -1,0 +1,116 @@
+\doxysection{flask.\+wrappers.\+Request Class Reference}
+\hypertarget{classflask_1_1wrappers_1_1_request}{}\label{classflask_1_1wrappers_1_1_request}\index{flask.wrappers.Request@{flask.wrappers.Request}}
+Inheritance diagram for flask.\+wrappers.\+Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1wrappers_1_1_request}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classflask_1_1wrappers_1_1_request_abfe2f8e239ff66691275b812165da53b}{max\+\_\+content\+\_\+length}} (self)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1wrappers_1_1_request_a1c13a6eaac2bc546753947f3a2a9104a}{endpoint}} (self)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1wrappers_1_1_request_a59835c63ea1cee6bb89596a8ab2ba9c2}{blueprint}} (self)
+\item 
+t.\+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1wrappers_1_1_request_a4c79c6516ff21fb0da0559d29c94830e}{blueprints}} (self)
+\item 
+\Hypertarget{classflask_1_1wrappers_1_1_request_ac89c219594b4de7e3f100b9df1f3aeb3}\label{classflask_1_1wrappers_1_1_request_ac89c219594b4de7e3f100b9df1f3aeb3} 
+t.\+Any {\bfseries on\+\_\+json\+\_\+loading\+\_\+failed} (self, t.\+Optional\mbox{[}Value\+Error\mbox{]} e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1wrappers_1_1_request_acaac70d5dab0aa4f9c1cb3af526ed5c0}\label{classflask_1_1wrappers_1_1_request_acaac70d5dab0aa4f9c1cb3af526ed5c0} 
+t {\bfseries json\+\_\+module} = json
+\item 
+\Hypertarget{classflask_1_1wrappers_1_1_request_a39bb3377fdb4aa5d2473687adce95625}\label{classflask_1_1wrappers_1_1_request_a39bb3377fdb4aa5d2473687adce95625} 
+t {\bfseries url\+\_\+rule} = None
+\item 
+\Hypertarget{classflask_1_1wrappers_1_1_request_ac2d7412e155768368663ef0cb17084e6}\label{classflask_1_1wrappers_1_1_request_ac2d7412e155768368663ef0cb17084e6} 
+t {\bfseries view\+\_\+args} = None
+\item 
+\Hypertarget{classflask_1_1wrappers_1_1_request_a5b37b60d53af283c8b0ce47ef2faf5c3}\label{classflask_1_1wrappers_1_1_request_a5b37b60d53af283c8b0ce47ef2faf5c3} 
+t {\bfseries routing\+\_\+exception} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1wrappers_1_1_request_a350367e9f72813da479fd3d9fef3e465}\label{classflask_1_1wrappers_1_1_request_a350367e9f72813da479fd3d9fef3e465} 
+None {\bfseries \+\_\+load\+\_\+form\+\_\+data} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The request object used by default in Flask.  Remembers the
+matched endpoint and view arguments.
+
+It is what ends up as :class:`~flask.request`.  If you want to replace
+the request object used you can subclass this and set
+:attr:`~flask.Flask.request_class` to your subclass.
+
+The request object is a :class:`~werkzeug.wrappers.Request` subclass and
+provides all of the attributes Werkzeug defines plus a few Flask
+specific ones.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1wrappers_1_1_request_a59835c63ea1cee6bb89596a8ab2ba9c2}\index{flask.wrappers.Request@{flask.wrappers.Request}!blueprint@{blueprint}}
+\index{blueprint@{blueprint}!flask.wrappers.Request@{flask.wrappers.Request}}
+\doxysubsubsection{\texorpdfstring{blueprint()}{blueprint()}}
+{\footnotesize\ttfamily \label{classflask_1_1wrappers_1_1_request_a59835c63ea1cee6bb89596a8ab2ba9c2} 
+ t.\+Optional\mbox{[}str\mbox{]} flask.\+wrappers.\+Request.\+blueprint (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The registered name of the current blueprint.
+
+This will be ``None`` if the endpoint is not part of a
+blueprint, or if URL matching failed or has not been performed
+yet.
+
+This does not necessarily match the name the blueprint was
+created with. It may have been nested, or registered with a
+different name.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1wrappers_1_1_request_a4c79c6516ff21fb0da0559d29c94830e}\index{flask.wrappers.Request@{flask.wrappers.Request}!blueprints@{blueprints}}
+\index{blueprints@{blueprints}!flask.wrappers.Request@{flask.wrappers.Request}}
+\doxysubsubsection{\texorpdfstring{blueprints()}{blueprints()}}
+{\footnotesize\ttfamily \label{classflask_1_1wrappers_1_1_request_a4c79c6516ff21fb0da0559d29c94830e} 
+ t.\+List\mbox{[}str\mbox{]} flask.\+wrappers.\+Request.\+blueprints (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The registered names of the current blueprint upwards through
+parent blueprints.
+
+This will be an empty list if there is no current blueprint, or
+if URL matching failed.
+
+.. versionadded:: 2.0.1
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1wrappers_1_1_request_a1c13a6eaac2bc546753947f3a2a9104a}\index{flask.wrappers.Request@{flask.wrappers.Request}!endpoint@{endpoint}}
+\index{endpoint@{endpoint}!flask.wrappers.Request@{flask.wrappers.Request}}
+\doxysubsubsection{\texorpdfstring{endpoint()}{endpoint()}}
+{\footnotesize\ttfamily \label{classflask_1_1wrappers_1_1_request_a1c13a6eaac2bc546753947f3a2a9104a} 
+ t.\+Optional\mbox{[}str\mbox{]} flask.\+wrappers.\+Request.\+endpoint (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The endpoint that matched the request URL.
+
+This will be ``None`` if matching failed or has not been
+performed yet.
+
+This in combination with :attr:`view_args` can be used to
+reconstruct the same URL or a modified URL.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1wrappers_1_1_request_abfe2f8e239ff66691275b812165da53b}\index{flask.wrappers.Request@{flask.wrappers.Request}!max\_content\_length@{max\_content\_length}}
+\index{max\_content\_length@{max\_content\_length}!flask.wrappers.Request@{flask.wrappers.Request}}
+\doxysubsubsection{\texorpdfstring{max\_content\_length()}{max\_content\_length()}}
+{\footnotesize\ttfamily \label{classflask_1_1wrappers_1_1_request_abfe2f8e239ff66691275b812165da53b} 
+ t.\+Optional\mbox{[}int\mbox{]} flask.\+wrappers.\+Request.\+max\+\_\+content\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read-only view of the ``MAX_CONTENT_LENGTH`` config key.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/wrappers.\+py\end{DoxyCompactItemize}

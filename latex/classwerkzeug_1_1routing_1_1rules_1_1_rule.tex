@@ -1,0 +1,394 @@
+\doxysection{werkzeug.\+routing.\+rules.\+Rule Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule}{}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+Inheritance diagram for werkzeug.\+routing.\+rules.\+Rule\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1routing_1_1rules_1_1_rule}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_ad7e95a231f33aff681ba39e0d564324f}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_ad7e95a231f33aff681ba39e0d564324f} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str string, t.\+Optional\mbox{[}t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}\mbox{]} defaults=None, t.\+Optional\mbox{[}str\mbox{]} subdomain=None, t.\+Optional\mbox{[}t.\+Iterable\mbox{[}str\mbox{]}\mbox{]} methods=None, bool build\+\_\+only=False, t.\+Optional\mbox{[}str\mbox{]} endpoint=None, t.\+Optional\mbox{[}bool\mbox{]} strict\+\_\+slashes=None, t.\+Optional\mbox{[}bool\mbox{]} merge\+\_\+slashes=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}str, t.\+Callable\mbox{[}..., str\mbox{]}\mbox{]}\mbox{]} redirect\+\_\+to=None, bool alias=False, t.\+Optional\mbox{[}str\mbox{]} host=None, bool websocket=False)
+\item 
+"{}Rule"{} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_a299ca356202aa02aac4abdda519a02a3}{empty}} (self)
+\item 
+t.\+Mapping\mbox{[}str, t.\+Any\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_ad0d421db24617b30cb5e51883726eac6}{get\+\_\+empty\+\_\+kwargs}} (self)
+\item 
+t.\+Iterator\mbox{[}"{}Rule"{}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_a4b3d38e796426c4a96531096bbde7143}{get\+\_\+rules}} (self, "{}Map"{} map)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_af94fd57707d98e47bbf2e9c8f567b68c}{refresh}} (self)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_aea4ea8dd6717296c9c48e75cd9795660}{bind}} (self, "{}Map"{} map, bool rebind=False)
+\item 
+"{}Base\+Converter"{} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_ae65b2976bc9739d777822ec37d398e01}{get\+\_\+converter}} (self, str variable\+\_\+name, str converter\+\_\+name, t.\+Tuple args, t.\+Mapping\mbox{[}str, t.\+Any\mbox{]} kwargs)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_a1f6481999da010c9eec4171161d19a70}{compile}} (self)
+\item 
+t.\+Optional\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_a3377620319e788378e8e0878565ef3fe}{build}} (self, t.\+Mapping\mbox{[}str, t.\+Any\mbox{]} values, bool append\+\_\+unknown=True)
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_aeb5f6a0db4b6266aa62ca4c4e3826b38}{provides\+\_\+defaults\+\_\+for}} (self, "{}Rule"{} rule)
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_a281b8401d3332aad3312c4c27b7bfecd}{suitable\+\_\+for}} (self, t.\+Mapping\mbox{[}str, t.\+Any\mbox{]} values, t.\+Optional\mbox{[}str\mbox{]} method=None)
+\item 
+t.\+Tuple\mbox{[}int, int, int\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_a3234e8ad215691fcadd23f228d6b856b}{build\+\_\+compare\+\_\+key}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a4d49c4904f91ea75b53d270cf20da985}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a4d49c4904f91ea75b53d270cf20da985} 
+bool {\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, object other)
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_add384b7d3253b61f19ce56fee54153e0}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_add384b7d3253b61f19ce56fee54153e0} 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_ac1e44fb683fc624de7d5bfd1ba7d1b79}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_ac1e44fb683fc624de7d5bfd1ba7d1b79} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{werkzeug.\+routing.\+rules.\+Rule\+Factory}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_af48cb173c272627ffd904f3df102e377}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_af48cb173c272627ffd904f3df102e377} 
+{\bfseries rule} = string
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a1d1cea50dbebc2a0ca0cad5246792b9f}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a1d1cea50dbebc2a0ca0cad5246792b9f} 
+{\bfseries is\+\_\+leaf} = not string.\+endswith("{}/"{})
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a8960a41c7066bfdfeabad170c0ee7e37}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a8960a41c7066bfdfeabad170c0ee7e37} 
+{\bfseries is\+\_\+branch} = string.\+endswith("{}/"{})
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a5f0f2fc5a9b492a46d5da8d67ffdf02e}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a5f0f2fc5a9b492a46d5da8d67ffdf02e} 
+{\bfseries map} = None
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_af22180a194bce1e94b898bd2136d324b}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_af22180a194bce1e94b898bd2136d324b} 
+{\bfseries strict\+\_\+slashes} = strict\+\_\+slashes
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a8230e653f9a0c994a1f27ce35f87f4d0}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a8230e653f9a0c994a1f27ce35f87f4d0} 
+{\bfseries merge\+\_\+slashes} = merge\+\_\+slashes
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a93ea74a64d29ae83c6cda601a80c9137}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a93ea74a64d29ae83c6cda601a80c9137} 
+{\bfseries subdomain} = subdomain
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_abd44fb80447f75e44735281ae0ff44c2}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_abd44fb80447f75e44735281ae0ff44c2} 
+{\bfseries host} = host
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a6731883e7bc790fe8b9810c4144b02ee}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a6731883e7bc790fe8b9810c4144b02ee} 
+{\bfseries defaults} = defaults
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_adee8ab5be7f1edb641c439915b0e67e9}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_adee8ab5be7f1edb641c439915b0e67e9} 
+{\bfseries build\+\_\+only} = build\+\_\+only
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a96f5db02cdb26dfe3bac16e8a3bffacc}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a96f5db02cdb26dfe3bac16e8a3bffacc} 
+{\bfseries alias} = alias
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_aaeffcd5e9dc6022d3fc18c5078131b98}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_aaeffcd5e9dc6022d3fc18c5078131b98} 
+{\bfseries websocket} = websocket
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_af267721da8db59f380a5fb98521dd588}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_af267721da8db59f380a5fb98521dd588} 
+{\bfseries methods} = methods
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_ab658495b26421fa68e5f4bb0262e58c4}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_ab658495b26421fa68e5f4bb0262e58c4} 
+str {\bfseries endpoint} = endpoint
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a35cc26ad16f016b86abc685143a5910c}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a35cc26ad16f016b86abc685143a5910c} 
+{\bfseries redirect\+\_\+to} = redirect\+\_\+to
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a4aa4c322bf017e37248cf11d602c9fe6}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a4aa4c322bf017e37248cf11d602c9fe6} 
+{\bfseries arguments} = set(map(str, defaults))
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a543ffbb9e2425567ea4178939017f854}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a543ffbb9e2425567ea4178939017f854} 
+str {\bfseries \+\_\+trace} = "{}\texorpdfstring{$\vert$}{|}"{} and opl is dom\+\_\+ops\+:
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_ab1c3423303bea9c61a915bbd6c4511ed}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_ab1c3423303bea9c61a915bbd6c4511ed} 
+str {\bfseries \+\_\+encode\+\_\+query\+\_\+vars} (self, t.\+Mapping\mbox{[}str, t.\+Any\mbox{]} query\+\_\+vars)
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a6d29fd123920f888d1523fc29dced6da}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a6d29fd123920f888d1523fc29dced6da} 
+t.\+Iterable\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_part}{Rule\+Part}}\mbox{]} {\bfseries \+\_\+parse\+\_\+rule} (self, str rule)
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a5f9dfe7d1af23b389ea1ff0dbcdc026c}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a5f9dfe7d1af23b389ea1ff0dbcdc026c} 
+t.\+Callable\mbox{[}..., t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} {\bfseries \+\_\+compile\+\_\+builder} (self, bool append\+\_\+unknown=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a7661759eedcbcaf8c8d844fd3c4e6f21}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a7661759eedcbcaf8c8d844fd3c4e6f21} 
+t.\+Callable\mbox{[}..., t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} {\bfseries \+\_\+get\+\_\+func\+\_\+code} (Code\+Type code, str name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_ac0b8bb1725069795b863a68456890ff7}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_ac0b8bb1725069795b863a68456890ff7} 
+dict {\bfseries \+\_\+converters} = \{\}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a543ffbb9e2425567ea4178939017f854}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a543ffbb9e2425567ea4178939017f854} 
+list {\bfseries \+\_\+trace} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_afdadb0d99f7660338f32f7c6bb9ad782}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_afdadb0d99f7660338f32f7c6bb9ad782} 
+list {\bfseries \+\_\+parts} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a0d5c3b8c95f05317cae9aba5b221f7d3}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a0d5c3b8c95f05317cae9aba5b221f7d3} 
+t.\+Callable\mbox{[}..., t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} {\bfseries \+\_\+build}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_ad71caa49642c03fe98df54246315d5f0}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_ad71caa49642c03fe98df54246315d5f0} 
+t.\+Callable\mbox{[}..., t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} {\bfseries \+\_\+build\+\_\+unknown} = self.\+\_\+compile\+\_\+builder(False).\+\_\+\+\_\+get\+\_\+\+\_\+(self, None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A Rule represents one URL pattern.  There are some options for `Rule`
+that change the way it behaves and are passed to the `Rule` constructor.
+Note that besides the rule-string all arguments *must* be keyword arguments
+in order to not break the application on Werkzeug upgrades.
+
+`string`
+    Rule strings basically are just normal URL paths with placeholders in
+    the format ``<converter(arguments):name>`` where the converter and the
+    arguments are optional.  If no converter is defined the `default`
+    converter is used which means `string` in the normal configuration.
+
+    URL rules that end with a slash are branch URLs, others are leaves.
+    If you have `strict_slashes` enabled (which is the default), all
+    branch URLs that are matched without a trailing slash will trigger a
+    redirect to the same URL with the missing slash appended.
+
+    The converters are defined on the `Map`.
+
+`endpoint`
+    The endpoint for this rule. This can be anything. A reference to a
+    function, a string, a number etc.  The preferred way is using a string
+    because the endpoint is used for URL generation.
+
+`defaults`
+    An optional dict with defaults for other rules with the same endpoint.
+    This is a bit tricky but useful if you want to have unique URLs::
+
+        url_map = Map([
+            Rule('/all/', defaults={'page': 1}, endpoint='all_entries'),
+            Rule('/all/page/<int:page>', endpoint='all_entries')
+        ])
+
+    If a user now visits ``http://example.com/all/page/1`` they will be
+    redirected to ``http://example.com/all/``.  If `redirect_defaults` is
+    disabled on the `Map` instance this will only affect the URL
+    generation.
+
+`subdomain`
+    The subdomain rule string for this rule. If not specified the rule
+    only matches for the `default_subdomain` of the map.  If the map is
+    not bound to a subdomain this feature is disabled.
+
+    Can be useful if you want to have user profiles on different subdomains
+    and all subdomains are forwarded to your application::
+
+        url_map = Map([
+            Rule('/', subdomain='<username>', endpoint='user/homepage'),
+            Rule('/stats', subdomain='<username>', endpoint='user/stats')
+        ])
+
+`methods`
+    A sequence of http methods this rule applies to.  If not specified, all
+    methods are allowed. For example this can be useful if you want different
+    endpoints for `POST` and `GET`.  If methods are defined and the path
+    matches but the method matched against is not in this list or in the
+    list of another rule for that path the error raised is of the type
+    `MethodNotAllowed` rather than `NotFound`.  If `GET` is present in the
+    list of methods and `HEAD` is not, `HEAD` is added automatically.
+
+`strict_slashes`
+    Override the `Map` setting for `strict_slashes` only for this rule. If
+    not specified the `Map` setting is used.
+
+`merge_slashes`
+    Override :attr:`Map.merge_slashes` for this rule.
+
+`build_only`
+    Set this to True and the rule will never match but will create a URL
+    that can be build. This is useful if you have resources on a subdomain
+    or folder that are not handled by the WSGI application (like static data)
+
+`redirect_to`
+    If given this must be either a string or callable.  In case of a
+    callable it's called with the url adapter that triggered the match and
+    the values of the URL as keyword arguments and has to return the target
+    for the redirect, otherwise it has to be a string with placeholders in
+    rule syntax::
+
+        def foo_with_slug(adapter, id):
+            # ask the database for the slug for the old id.  this of
+            # course has nothing to do with werkzeug.
+            return f'foo/{Foo.get_slug_for_id(id)}'
+
+        url_map = Map([
+            Rule('/foo/<slug>', endpoint='foo'),
+            Rule('/some/old/url/<slug>', redirect_to='foo/<slug>'),
+            Rule('/other/old/url/<int:id>', redirect_to=foo_with_slug)
+        ])
+
+    When the rule is matched the routing system will raise a
+    `RequestRedirect` exception with the target for the redirect.
+
+    Keep in mind that the URL will be joined against the URL root of the
+    script so don't use a leading slash on the target URL unless you
+    really mean root of that domain.
+
+`alias`
+    If enabled this rule serves as an alias for another rule with the same
+    endpoint and arguments.
+
+`host`
+    If provided and the URL map has host matching enabled this can be
+    used to provide a match rule for the whole host.  This also means
+    that the subdomain feature is disabled.
+
+`websocket`
+    If ``True``, this rule is only matches for WebSocket (``ws://``,
+    ``wss://``) requests. By default, rules will only match for HTTP
+    requests.
+
+.. versionchanged:: 2.1
+    Percent-encoded newlines (``%0a``), which are decoded by WSGI
+    servers, are considered when routing instead of terminating the
+    match early.
+
+.. versionadded:: 1.0
+    Added ``websocket``.
+
+.. versionadded:: 1.0
+    Added ``merge_slashes``.
+
+.. versionadded:: 0.7
+    Added ``alias`` and ``host``.
+
+.. versionchanged:: 0.6.1
+   ``HEAD`` is added to ``methods`` if ``GET`` is present.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_aea4ea8dd6717296c9c48e75cd9795660}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!bind@{bind}}
+\index{bind@{bind}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_aea4ea8dd6717296c9c48e75cd9795660} 
+ None werkzeug.\+routing.\+rules.\+Rule.\+bind (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Map"{}}]{map}{, }\item[{bool }]{rebind}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Bind the url to a map and create a regular expression based on
+the information from the rule itself and the defaults from the map.
+
+:internal:
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a3377620319e788378e8e0878565ef3fe}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!build@{build}}
+\index{build@{build}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a3377620319e788378e8e0878565ef3fe} 
+ t.\+Optional\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} werkzeug.\+routing.\+rules.\+Rule.\+build (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}}]{values}{, }\item[{bool }]{append\+\_\+unknown}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Assembles the relative url for that rule and the subdomain.
+If building doesn't work for some reasons `None` is returned.
+
+:internal:
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a3234e8ad215691fcadd23f228d6b856b}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!build\_compare\_key@{build\_compare\_key}}
+\index{build\_compare\_key@{build\_compare\_key}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{build\_compare\_key()}{build\_compare\_key()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a3234e8ad215691fcadd23f228d6b856b} 
+ t.\+Tuple\mbox{[}int, int, int\mbox{]} werkzeug.\+routing.\+rules.\+Rule.\+build\+\_\+compare\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The build compare key for sorting.
+
+:internal:
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a1f6481999da010c9eec4171161d19a70}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!compile@{compile}}
+\index{compile@{compile}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{compile()}{compile()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a1f6481999da010c9eec4171161d19a70} 
+ None werkzeug.\+routing.\+rules.\+Rule.\+compile (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compiles the regular expression and stores it.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a299ca356202aa02aac4abdda519a02a3}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!empty@{empty}}
+\index{empty@{empty}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a299ca356202aa02aac4abdda519a02a3} 
+ "{}Rule"{} werkzeug.\+routing.\+rules.\+Rule.\+empty (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an unbound copy of this rule.
+
+This can be useful if want to reuse an already bound URL for another
+map.  See ``get_empty_kwargs`` to override what keyword arguments are
+provided to the new copy.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_ae65b2976bc9739d777822ec37d398e01}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!get\_converter@{get\_converter}}
+\index{get\_converter@{get\_converter}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{get\_converter()}{get\_converter()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_ae65b2976bc9739d777822ec37d398e01} 
+ "{}Base\+Converter"{} werkzeug.\+routing.\+rules.\+Rule.\+get\+\_\+converter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{variable\+\_\+name}{, }\item[{str}]{converter\+\_\+name}{, }\item[{t.\+Tuple}]{args}{, }\item[{t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Looks up the converter for the given parameter.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_ad0d421db24617b30cb5e51883726eac6}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!get\_empty\_kwargs@{get\_empty\_kwargs}}
+\index{get\_empty\_kwargs@{get\_empty\_kwargs}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{get\_empty\_kwargs()}{get\_empty\_kwargs()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_ad0d421db24617b30cb5e51883726eac6} 
+ t.\+Mapping\mbox{[}str, t.\+Any\mbox{]} werkzeug.\+routing.\+rules.\+Rule.\+get\+\_\+empty\+\_\+kwargs (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Provides kwargs for instantiating empty copy with empty()
+
+Use this method to provide custom keyword arguments to the subclass of
+``Rule`` when calling ``some_rule.empty()``.  Helpful when the subclass
+has custom keyword arguments that are needed at instantiation.
+
+Must return a ``dict`` that will be provided as kwargs to the new
+instance of ``Rule``, following the initial ``self.rule`` value which
+is always provided as the first, required positional argument.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a4b3d38e796426c4a96531096bbde7143}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!get\_rules@{get\_rules}}
+\index{get\_rules@{get\_rules}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{get\_rules()}{get\_rules()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a4b3d38e796426c4a96531096bbde7143} 
+ t.\+Iterator\mbox{[}"{}Rule"{}\mbox{]} werkzeug.\+routing.\+rules.\+Rule.\+get\+\_\+rules (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Map"{}}]{map}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subclasses of `RuleFactory` have to override this method and return
+an iterable of rules.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory_ae8ae0efbbb17f08d3fbbb4384b06a549}{werkzeug.\+routing.\+rules.\+Rule\+Factory}}.
+
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_aeb5f6a0db4b6266aa62ca4c4e3826b38}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!provides\_defaults\_for@{provides\_defaults\_for}}
+\index{provides\_defaults\_for@{provides\_defaults\_for}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{provides\_defaults\_for()}{provides\_defaults\_for()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_aeb5f6a0db4b6266aa62ca4c4e3826b38} 
+ bool werkzeug.\+routing.\+rules.\+Rule.\+provides\+\_\+defaults\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Rule"{}}]{rule}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if this rule has defaults for a given rule.
+
+:internal:
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_af94fd57707d98e47bbf2e9c8f567b68c}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!refresh@{refresh}}
+\index{refresh@{refresh}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_af94fd57707d98e47bbf2e9c8f567b68c} 
+ None werkzeug.\+routing.\+rules.\+Rule.\+refresh (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Rebinds and refreshes the URL.  Call this if you modified the
+rule in place.
+
+:internal:
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_a281b8401d3332aad3312c4c27b7bfecd}\index{werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}!suitable\_for@{suitable\_for}}
+\index{suitable\_for@{suitable\_for}!werkzeug.routing.rules.Rule@{werkzeug.routing.rules.Rule}}
+\doxysubsubsection{\texorpdfstring{suitable\_for()}{suitable\_for()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_a281b8401d3332aad3312c4c27b7bfecd} 
+ bool werkzeug.\+routing.\+rules.\+Rule.\+suitable\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}}]{values}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{method}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the dict of values has enough data for url generation.
+
+:internal:
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/routing/rules.\+py\end{DoxyCompactItemize}

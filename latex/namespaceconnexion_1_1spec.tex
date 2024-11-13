@@ -1,0 +1,68 @@
+\doxysection{connexion.\+spec Namespace Reference}
+\hypertarget{namespaceconnexion_1_1spec}{}\label{namespaceconnexion_1_1spec}\index{connexion.spec@{connexion.spec}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classconnexion_1_1spec_1_1_open_a_p_i_specification}{Open\+APISpecification}}
+\item 
+class \mbox{\hyperlink{classconnexion_1_1spec_1_1_specification}{Specification}}
+\item 
+class \mbox{\hyperlink{classconnexion_1_1spec_1_1_swagger2_specification}{Swagger2\+Specification}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Draft4\+Validator \mbox{\hyperlink{namespaceconnexion_1_1spec_ae2ad318279a7a9b89b568685dd9e0182}{create\+\_\+spec\+\_\+validator}} (dict spec)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1spec_a217468ea228c3f90a2cdfc5f7972001e}{canonical\+\_\+base\+\_\+path}} (base\+\_\+path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceconnexion_1_1spec_a7a8ef7f64ec79541815fb439646917a0}\label{namespaceconnexion_1_1spec_a7a8ef7f64ec79541815fb439646917a0} 
+{\bfseries validate\+\_\+properties} = Draft4\+Validator.\+VALIDATORS\mbox{[}"{}properties"{}\mbox{]}
+\item 
+str \mbox{\hyperlink{namespaceconnexion_1_1spec_a9a58a8fb79d4db159e12849c804a5091}{NO\+\_\+\+SPEC\+\_\+\+VERSION\+\_\+\+ERR\+\_\+\+MSG}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module defines Python interfaces for OpenAPI specifications.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceconnexion_1_1spec_a217468ea228c3f90a2cdfc5f7972001e}\index{connexion.spec@{connexion.spec}!canonical\_base\_path@{canonical\_base\_path}}
+\index{canonical\_base\_path@{canonical\_base\_path}!connexion.spec@{connexion.spec}}
+\doxysubsubsection{\texorpdfstring{canonical\_base\_path()}{canonical\_base\_path()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1spec_a217468ea228c3f90a2cdfc5f7972001e} 
+connexion.\+spec.\+canonical\+\_\+base\+\_\+path (\begin{DoxyParamCaption}\item[{}]{base\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make given "basePath" a canonical base URL which can be prepended to paths starting with "/".
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1spec_ae2ad318279a7a9b89b568685dd9e0182}\index{connexion.spec@{connexion.spec}!create\_spec\_validator@{create\_spec\_validator}}
+\index{create\_spec\_validator@{create\_spec\_validator}!connexion.spec@{connexion.spec}}
+\doxysubsubsection{\texorpdfstring{create\_spec\_validator()}{create\_spec\_validator()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1spec_ae2ad318279a7a9b89b568685dd9e0182} 
+ Draft4\+Validator connexion.\+spec.\+create\+\_\+spec\+\_\+validator (\begin{DoxyParamCaption}\item[{dict}]{spec}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a Validator to validate an OpenAPI spec against the OpenAPI schema.
+
+:param spec: specification to validate
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceconnexion_1_1spec_a9a58a8fb79d4db159e12849c804a5091}\index{connexion.spec@{connexion.spec}!NO\_SPEC\_VERSION\_ERR\_MSG@{NO\_SPEC\_VERSION\_ERR\_MSG}}
+\index{NO\_SPEC\_VERSION\_ERR\_MSG@{NO\_SPEC\_VERSION\_ERR\_MSG}!connexion.spec@{connexion.spec}}
+\doxysubsubsection{\texorpdfstring{NO\_SPEC\_VERSION\_ERR\_MSG}{NO\_SPEC\_VERSION\_ERR\_MSG}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1spec_a9a58a8fb79d4db159e12849c804a5091} 
+str connexion.\+spec.\+NO\+\_\+\+SPEC\+\_\+\+VERSION\+\_\+\+ERR\+\_\+\+MSG}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \textcolor{stringliteral}{"{}"{}"{}Unable\ to\ get\ the\ spec\ version.}}
+\DoxyCodeLine{00002\ \textcolor{stringliteral}{You\ are\ missing\ either\ '"{}swagger"{}:\ "{}2.0"{}'\ or\ '"{}openapi"{}:\ "{}3.0.0"{}'}}
+\DoxyCodeLine{00003\ \textcolor{stringliteral}{from\ the\ top\ level\ of\ your\ spec."{}"{}"{}}}
+
+\end{DoxyCode}

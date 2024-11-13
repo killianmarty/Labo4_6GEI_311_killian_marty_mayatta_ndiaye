@@ -1,0 +1,94 @@
+\doxysection{dateutil.\+rrule.\+\_\+iterinfo Class Reference}
+\hypertarget{classdateutil_1_1rrule_1_1__iterinfo}{}\label{classdateutil_1_1rrule_1_1__iterinfo}\index{dateutil.rrule.\_iterinfo@{dateutil.rrule.\_iterinfo}}
+Inheritance diagram for dateutil.\+rrule.\+\_\+iterinfo\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdateutil_1_1rrule_1_1__iterinfo}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_ae1ead53cb2202c41de82315c44675909}\label{classdateutil_1_1rrule_1_1__iterinfo_ae1ead53cb2202c41de82315c44675909} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \mbox{\hyperlink{classdateutil_1_1rrule_1_1rrule}{rrule}})
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a3bfd0addba3730cb995c9dc98d850874}\label{classdateutil_1_1rrule_1_1__iterinfo_a3bfd0addba3730cb995c9dc98d850874} 
+{\bfseries rebuild} (self, year, month)
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a46ff2802ee008b89eb2b15a345dfb6ab}\label{classdateutil_1_1rrule_1_1__iterinfo_a46ff2802ee008b89eb2b15a345dfb6ab} 
+{\bfseries ydayset} (self, year, month, day)
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_ad7e18ae94fa25beda1062988fcfb39c6}\label{classdateutil_1_1rrule_1_1__iterinfo_ad7e18ae94fa25beda1062988fcfb39c6} 
+{\bfseries mdayset} (self, year, month, day)
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a7ef09c6f0a18b20fea31d3314b2a7d05}\label{classdateutil_1_1rrule_1_1__iterinfo_a7ef09c6f0a18b20fea31d3314b2a7d05} 
+{\bfseries wdayset} (self, year, month, day)
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_aefa487e9a1874b88589a5321bd252f6e}\label{classdateutil_1_1rrule_1_1__iterinfo_aefa487e9a1874b88589a5321bd252f6e} 
+{\bfseries ddayset} (self, year, month, day)
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a22d5e5a0a47eccedf0ec04cdb65e1808}\label{classdateutil_1_1rrule_1_1__iterinfo_a22d5e5a0a47eccedf0ec04cdb65e1808} 
+{\bfseries htimeset} (self, hour, minute, second)
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a751d8c8ddc612eb5cf6f0c26b441b184}\label{classdateutil_1_1rrule_1_1__iterinfo_a751d8c8ddc612eb5cf6f0c26b441b184} 
+{\bfseries mtimeset} (self, hour, minute, second)
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_ab38e0098c5343abca486088f80435c93}\label{classdateutil_1_1rrule_1_1__iterinfo_ab38e0098c5343abca486088f80435c93} 
+{\bfseries stimeset} (self, hour, minute, second)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a005379ff4201f629eecc7fec93a02e31}\label{classdateutil_1_1rrule_1_1__iterinfo_a005379ff4201f629eecc7fec93a02e31} 
+{\bfseries rrule} = \mbox{\hyperlink{classdateutil_1_1rrule_1_1rrule}{rrule}}
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a0fda21b29d610680df98fb35366fbeed}\label{classdateutil_1_1rrule_1_1__iterinfo_a0fda21b29d610680df98fb35366fbeed} 
+int {\bfseries yearlen} = 365 + calendar.\+isleap(year)
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_af166f9aa9a13b06478e39d8a0eb8bac6}\label{classdateutil_1_1rrule_1_1__iterinfo_af166f9aa9a13b06478e39d8a0eb8bac6} 
+int {\bfseries nextyearlen} = 365 + calendar.\+isleap(year + 1)
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a61c7f07c828989ec5ec7a07605d19507}\label{classdateutil_1_1rrule_1_1__iterinfo_a61c7f07c828989ec5ec7a07605d19507} 
+{\bfseries yearordinal} = firstyday.\+toordinal()
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a7faed4ae91cbb46ffa8136378852e594}\label{classdateutil_1_1rrule_1_1__iterinfo_a7faed4ae91cbb46ffa8136378852e594} 
+{\bfseries yearweekday} = firstyday.\+weekday()
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a855a642c99d52711ce38eb3518d1e367}\label{classdateutil_1_1rrule_1_1__iterinfo_a855a642c99d52711ce38eb3518d1e367} 
+{\bfseries mmask} = M365\+MASK
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a4323d4242e56f1749ac7466ef11f7432}\label{classdateutil_1_1rrule_1_1__iterinfo_a4323d4242e56f1749ac7466ef11f7432} 
+{\bfseries mdaymask} = MDAY365\+MASK
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_ad05f4e0986187f9d2d6ff20c73a2135f}\label{classdateutil_1_1rrule_1_1__iterinfo_ad05f4e0986187f9d2d6ff20c73a2135f} 
+{\bfseries nmdaymask} = NMDAY365\+MASK
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_ae26f38ecddada352ad55d08c945a4a3b}\label{classdateutil_1_1rrule_1_1__iterinfo_ae26f38ecddada352ad55d08c945a4a3b} 
+{\bfseries wdaymask} = WDAYMASK\mbox{[}wday\+:\mbox{]}
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a1e4284ac5e87c1bb9b86d5ee2a895025}\label{classdateutil_1_1rrule_1_1__iterinfo_a1e4284ac5e87c1bb9b86d5ee2a895025} 
+{\bfseries mrange} = M365\+RANGE
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a8c19700cdc7700d7c9e725836ebdfa22}\label{classdateutil_1_1rrule_1_1__iterinfo_a8c19700cdc7700d7c9e725836ebdfa22} 
+list {\bfseries wnomask} = None
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a16832760771249867f22c82f6e0fdd9e}\label{classdateutil_1_1rrule_1_1__iterinfo_a16832760771249867f22c82f6e0fdd9e} 
+tuple {\bfseries wnomask} = (7-\/self.\+yearweekday+rr.\+\_\+wkst) \% 7
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_aea64e1f798a61a359af5e063ae775397}\label{classdateutil_1_1rrule_1_1__iterinfo_aea64e1f798a61a359af5e063ae775397} 
+list {\bfseries nwdaymask} = \mbox{[}0\mbox{]}\texorpdfstring{$\ast$}{*}self.\+yearlen
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a745d4630d40faa916bf0a5f7e0d270ee}\label{classdateutil_1_1rrule_1_1__iterinfo_a745d4630d40faa916bf0a5f7e0d270ee} 
+list {\bfseries eastermask} = \mbox{[}0\mbox{]}\texorpdfstring{$\ast$}{*}(self.\+yearlen+7)
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a41111dd1487986894b14134429985af5}\label{classdateutil_1_1rrule_1_1__iterinfo_a41111dd1487986894b14134429985af5} 
+{\bfseries lastyear} = year
+\item 
+\Hypertarget{classdateutil_1_1rrule_1_1__iterinfo_a5b3bc2bed480b84933d241af23a5c9b2}\label{classdateutil_1_1rrule_1_1__iterinfo_a5b3bc2bed480b84933d241af23a5c9b2} 
+{\bfseries lastmonth} = month
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/dateutil/rrule.\+py\end{DoxyCompactItemize}

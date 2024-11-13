@@ -1,0 +1,394 @@
+\doxysection{pip.\+\_\+vendor.\+pyparsing.\+Quoted\+String Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string}{}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string}\index{pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}}
+Inheritance diagram for pip.\+\_\+vendor.\+pyparsing.\+Quoted\+String\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_ad20f53c51584831e1f2cc7ac8b507393}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, quote\+Char, esc\+Char=None, esc\+Quote=None, multiline=False, unquote\+Results=True, end\+Quote\+Char=None, convert\+Whitespace\+Escapes=True)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_af575ff735808b15ab59260780b6324a6}{parse\+Impl}} (self, instring, loc, do\+Actions=True)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_aad33a4e87c389cf2684fc9d76cd77a1c}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_token}{pip.\+\_\+vendor.\+pyparsing.\+Token}}}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element}{pip.\+\_\+vendor.\+pyparsing.\+Parser\+Element}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a7362d44dcf36509c6f8c9283a4119494}{copy}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_aae489d3c3d81e1d69d3b9cc1409b3cec}{set\+Name}} (self, name)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_ab36bdc59d4681221b31f7b93db161251}{set\+Results\+Name}} (self, name, list\+All\+Matches=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a9fe7d98407f7f24aa15d13ed67ebb86c}{set\+Break}} (self, break\+Flag=True)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a066490b160ed1c6824ea1107f6ef39ef}{set\+Parse\+Action}} (self, \texorpdfstring{$\ast$}{*}fns, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_ab8edef89690715344d96fa3d43aa8e6e}{add\+Parse\+Action}} (self, \texorpdfstring{$\ast$}{*}fns, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_afe7e9248bb187ab0bcc4b754090b3b28}{add\+Condition}} (self, \texorpdfstring{$\ast$}{*}fns, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a00807123cf0dd9edb5844b4a91770de9}{set\+Fail\+Action}} (self, fn)
+\item 
+{\bfseries pre\+Parse} (self, instring, loc)
+\item 
+{\bfseries post\+Parse} (self, instring, loc, tokenlist)
+\item 
+{\bfseries try\+Parse} (self, instring, loc)
+\item 
+{\bfseries can\+Parse\+Next} (self, instring, loc)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a0fb139eea8ea407ebe09bb06fd393ede}{parse\+String}} (self, instring, parse\+All=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_adbc47ab5e8036b8100f313d13bb92031}{scan\+String}} (self, instring, max\+Matches=\+\_\+\+MAX\+\_\+\+INT, overlap=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a23e96e268be2c4aa96b81ede512e3db1}{transform\+String}} (self, instring)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a172546b164e83a7e238c47746143d7b0}{search\+String}} (self, instring, max\+Matches=\+\_\+\+MAX\+\_\+\+INT)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_acb910b4d10bf6b8c93572f6d7e9afbf1}{split}} (self, instring, maxsplit=\+\_\+\+MAX\+\_\+\+INT, include\+Separators=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a01dce6dd485fdddf5012e845f5347da8}{\+\_\+\+\_\+add\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a0ca2a225eac9fc89dd82dc4320879da9}{\+\_\+\+\_\+radd\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_af281a41b78ebf306315da61602a94b63}{\+\_\+\+\_\+sub\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_aa22f8885a3c71cce4abc9371b84b5a2f}{\+\_\+\+\_\+rsub\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a3292771df05257663b751743274fbaf3}{\+\_\+\+\_\+mul\+\_\+\+\_\+}} (self, other)
+\item 
+{\bfseries \+\_\+\+\_\+rmul\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a77d7f927bb8744d9cd40096dae7cecef}{\+\_\+\+\_\+or\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a2008cc8e02f6893e26a4a3f67100f28d}{\+\_\+\+\_\+ror\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a756bccf3038cbf1f0cc464e7b9f68599}{\+\_\+\+\_\+xor\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a685ef37b4c982b7d2b1633998c4bb7cf}{\+\_\+\+\_\+rxor\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a86ec3dd60b23038f1ce5955e3f0883fb}{\+\_\+\+\_\+and\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_afb7ceb9f90afde8256feb9f003d3a8ac}{\+\_\+\+\_\+rand\+\_\+\+\_\+}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a9c3b463f08b3ab4995aa8c02ffc6cde9}{\+\_\+\+\_\+invert\+\_\+\+\_\+}} (self)
+\item 
+{\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a7bf439e3905cb44d9ff5ca68b65cf622}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a436c9088ab42bdcc5ab7e7f8a8e58d78}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, name=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a4f8ff7743d80971c88dce4aa206fe7fe}{suppress}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a11c23ac908215a8df4eb1db79c0b55fe}{leave\+Whitespace}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_aafbda0b98a08bc0ee31dbd391ef1d891}{set\+Whitespace\+Chars}} (self, chars)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_ae8ebfc164f761e98bc72f0c4a71368e5}{parse\+With\+Tabs}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_ab85e675f57b90d2889d4530b24b0fe62}{ignore}} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_ab6267a654a26ae61490a3b8e6750ef56}{set\+Debug\+Actions}} (self, start\+Action, success\+Action, exception\+Action)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a220f9b0b813266121d3ef34e245c160d}{set\+Debug}} (self, flag=True)
+\item 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+{\bfseries streamline} (self)
+\item 
+{\bfseries check\+Recursion} (self, parse\+Element\+List)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a3395297027bdf3e1f61b9ea04bdfc639}{validate}} (self, validate\+Trace=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a3f675287d56c65c9e4a15283edeb4e79}{parse\+File}} (self, file\+\_\+or\+\_\+filename, parse\+All=False)
+\item 
+{\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+{\bfseries \+\_\+\+\_\+ne\+\_\+\+\_\+} (self, other)
+\item 
+{\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+{\bfseries \+\_\+\+\_\+req\+\_\+\+\_\+} (self, other)
+\item 
+{\bfseries \+\_\+\+\_\+rne\+\_\+\+\_\+} (self, other)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a299c444ddbcfa3a5cc29051ba37d5a01}{matches}} (self, test\+String, parse\+All=True)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a131d353051655c747b2bfee6f9216c4c}{run\+Tests}} (self, tests, parse\+All=True, comment=\textquotesingle{}\#\textquotesingle{}, full\+Dump=True, print\+Results=True, failure\+Tests=False, post\+Parse=None, file=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a263d334015c34174910bee106c800922}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a263d334015c34174910bee106c800922} 
+{\bfseries quote\+Char} = quote\+Char
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_ae4907771312a16caa3c9fc3d25d8f458}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_ae4907771312a16caa3c9fc3d25d8f458} 
+{\bfseries quote\+Char\+Len} = len(quote\+Char)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_adb95c37f986aababba93a395d744dca9}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_adb95c37f986aababba93a395d744dca9} 
+{\bfseries first\+Quote\+Char} = quote\+Char\mbox{[}0\mbox{]}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a66cc9eed65116014c79312070229603f}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a66cc9eed65116014c79312070229603f} 
+{\bfseries end\+Quote\+Char} = end\+Quote\+Char
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a1e57031a7b3318db3147a2947a657d12}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a1e57031a7b3318db3147a2947a657d12} 
+{\bfseries end\+Quote\+Char\+Len} = len(end\+Quote\+Char)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a9af79cccad754367303fdb70410b63a3}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a9af79cccad754367303fdb70410b63a3} 
+{\bfseries esc\+Char} = esc\+Char
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a0fd2638dccd75aea7bfe89001a3a9bdb}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a0fd2638dccd75aea7bfe89001a3a9bdb} 
+{\bfseries esc\+Quote} = esc\+Quote
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a454062dbd08fda7582f5f6e162cec42a}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a454062dbd08fda7582f5f6e162cec42a} 
+{\bfseries unquote\+Results} = unquote\+Results
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_ac396605160c4927c39ebc995874039de}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_ac396605160c4927c39ebc995874039de} 
+{\bfseries convert\+Whitespace\+Escapes} = convert\+Whitespace\+Escapes
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a471e7c74cbc940e302227d31666649bf}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a471e7c74cbc940e302227d31666649bf} 
+int {\bfseries flags} = re.\+MULTILINE \texorpdfstring{$\vert$}{|} re.\+DOTALL
+\item 
+str \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a16dcc7671edd50526eba8d51920c156d}{pattern}}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a6d4132c45d1045852c5ed4d924b8e36e}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a6d4132c45d1045852c5ed4d924b8e36e} 
+str {\bfseries esc\+Char\+Replace\+Pattern} = re.\+escape(self.\+esc\+Char) + "{}(.)"{}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a15c93b33a233943cf26b92aeff818144}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a15c93b33a233943cf26b92aeff818144} 
+{\bfseries re} = re.\+compile(self.\+pattern, self.\+flags)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a3d009e34c6ffc890ed509a686f81b862}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a3d009e34c6ffc890ed509a686f81b862} 
+str {\bfseries re\+String} = self.\+pattern
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_aa4cc74db838eca0239cd189f9b870ce7}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_aa4cc74db838eca0239cd189f9b870ce7} 
+{\bfseries re\+\_\+match} = self.\+re.\+match
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a0144ceb022febfb94d0b5a560f6f93ce}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a0144ceb022febfb94d0b5a560f6f93ce} 
+{\bfseries name} = \+\_\+ustr(self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a1c27b21da717a2f27cc310d261805e85}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a1c27b21da717a2f27cc310d261805e85} 
+str {\bfseries errmsg} = "{}Expected "{} + self.\+name
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a8bf686a316b54b71192c8f6e4ca383c0}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a8bf686a316b54b71192c8f6e4ca383c0} 
+bool {\bfseries may\+Index\+Error} = False
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a3ada45756b322fb8c8761e163e50124b}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a3ada45756b322fb8c8761e163e50124b} 
+bool {\bfseries may\+Return\+Empty} = True
+\item 
+dict \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a475a38b1bd79612641039a243152b407}{convert\+Whitespace\+Escapes}}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_ad30b27452370d8e1e2d084702cc6eb53}\label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_ad30b27452370d8e1e2d084702cc6eb53} 
+str {\bfseries str\+Repr} = "{}quoted string, starting with \%s ending with \%s"{} \% (self.\+quote\+Char, self.\+end\+Quote\+Char)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element}{pip.\+\_\+vendor.\+pyparsing.\+Parser\+Element}}}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries parse\+Action} = list()
+\item 
+{\bfseries fail\+Action} = None
+\item 
+{\bfseries str\+Repr} = None
+\item 
+{\bfseries results\+Name} = None
+\item 
+{\bfseries save\+As\+List} = savelist
+\item 
+bool {\bfseries skip\+Whitespace} = True
+\item 
+{\bfseries white\+Chars} = set(Parser\+Element.\+DEFAULT\+\_\+\+WHITE\+\_\+\+CHARS)
+\item 
+bool {\bfseries copy\+Default\+White\+Chars} = True
+\item 
+bool {\bfseries may\+Return\+Empty} = False
+\item 
+bool {\bfseries keep\+Tabs} = False
+\item 
+{\bfseries ignore\+Exprs} = list()
+\item 
+bool {\bfseries debug} = False
+\item 
+bool {\bfseries streamlined} = False
+\item 
+bool {\bfseries may\+Index\+Error} = True
+\item 
+str {\bfseries errmsg} = "{}"{}
+\item 
+bool {\bfseries modal\+Results} = True
+\item 
+tuple {\bfseries debug\+Actions} = (None, None, None)
+\item 
+{\bfseries re} = None
+\item 
+bool {\bfseries call\+Preparse} = True
+\item 
+bool {\bfseries call\+During\+Try} = False
+\item 
+str {\bfseries copy\+Default\+White\+Chars} = Parser\+Element.\+DEFAULT\+\_\+\+WHITE\+\_\+\+CHARS
+\item 
+{\bfseries name} = name
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element}{pip.\+\_\+vendor.\+pyparsing.\+Parser\+Element}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_a0ae6f14af0b6d108c86d0b2465a39190}{set\+Default\+Whitespace\+Chars}} (chars)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_ae6aa56220fec2f49611db1e84f021acb}{inline\+Literals\+Using}} (cls)
+\item 
+{\bfseries reset\+Cache} ()
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element_ae0fa3608876db6a412bf71dc2d273595}{enable\+Packrat}} (cache\+\_\+size\+\_\+limit=128)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element}{pip.\+\_\+vendor.\+pyparsing.\+Parser\+Element}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries DEFAULT\+\_\+\+WHITE\+\_\+\+CHARS} = "{} \textbackslash{}n\textbackslash{}t\textbackslash{}r"{}
+\item 
+bool {\bfseries verbose\+\_\+stacktrace} = False
+\item 
+dict {\bfseries packrat\+\_\+cache} = \{\}
+\item 
+{\bfseries packrat\+\_\+cache\+\_\+lock} = RLock()
+\item 
+list {\bfseries packrat\+\_\+cache\+\_\+stats} = \mbox{[}0, 0\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element}{pip.\+\_\+vendor.\+pyparsing.\+Parser\+Element}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+trim\+\_\+traceback} (cls, tb)
+\item 
+{\bfseries \+\_\+set\+Results\+Name} (self, name, list\+All\+Matches=False)
+\item 
+{\bfseries \+\_\+skip\+Ignorables} (self, instring, loc)
+\item 
+{\bfseries \+\_\+parse\+No\+Cache} (self, instring, loc, do\+Actions=True, call\+Pre\+Parse=True)
+\item 
+{\bfseries \+\_\+parse\+Cache} (self, instring, loc, do\+Actions=True, call\+Pre\+Parse=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element}{pip.\+\_\+vendor.\+pyparsing.\+Parser\+Element}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+parse} = \+\_\+parse\+No\+Cache
+\item 
+bool {\bfseries \+\_\+packrat\+Enabled} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Token for matching strings that are delimited by quoting characters.
+
+Defined with the following parameters:
+
+    - quoteChar - string of one or more characters defining the
+      quote delimiting string
+    - escChar - character to escape quotes, typically backslash
+      (default= ``None``)
+    - escQuote - special quote sequence to escape an embedded quote
+      string (such as SQL's ``""`` to escape an embedded ``"``)
+      (default= ``None``)
+    - multiline - boolean indicating whether quotes can span
+      multiple lines (default= ``False``)
+    - unquoteResults - boolean indicating whether the matched text
+      should be unquoted (default= ``True``)
+    - endQuoteChar - string of one or more characters defining the
+      end of the quote delimited string (default= ``None``  => same as
+      quoteChar)
+    - convertWhitespaceEscapes - convert escaped whitespace
+      (``'\t'``, ``'\n'``, etc.) to actual whitespace
+      (default= ``True``)
+
+Example::
+
+    qs = QuotedString('"')
+    print(qs.searchString('lsjdf "This is the quote" sldjf'))
+    complex_qs = QuotedString('{{', endQuoteChar='}}')
+    print(complex_qs.searchString('lsjdf {{This is the "quote"}} sldjf'))
+    sql_qs = QuotedString('"', escQuote='""')
+    print(sql_qs.searchString('lsjdf "This is the quote with ""embedded"" quotes" sldjf'))
+
+prints::
+
+    [['This is the quote']]
+    [['This is the "quote"']]
+    [['This is the quote with "embedded" quotes']]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_ad20f53c51584831e1f2cc7ac8b507393}\index{pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_ad20f53c51584831e1f2cc7ac8b507393} 
+pip.\+\_\+vendor.\+pyparsing.\+Quoted\+String.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{quote\+Char}{, }\item[{}]{esc\+Char}{ = {\ttfamily None}, }\item[{}]{esc\+Quote}{ = {\ttfamily None}, }\item[{}]{multiline}{ = {\ttfamily False}, }\item[{}]{unquote\+Results}{ = {\ttfamily True}, }\item[{}]{end\+Quote\+Char}{ = {\ttfamily None}, }\item[{}]{convert\+Whitespace\+Escapes}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_token}{pip.\+\_\+vendor.\+pyparsing.\+Token}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_aad33a4e87c389cf2684fc9d76cd77a1c}\index{pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_aad33a4e87c389cf2684fc9d76cd77a1c} 
+pip.\+\_\+vendor.\+pyparsing.\+Quoted\+String.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element}{pip.\+\_\+vendor.\+pyparsing.\+Parser\+Element}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_af575ff735808b15ab59260780b6324a6}\index{pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}!parseImpl@{parseImpl}}
+\index{parseImpl@{parseImpl}!pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}}
+\doxysubsubsection{\texorpdfstring{parseImpl()}{parseImpl()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_af575ff735808b15ab59260780b6324a6} 
+pip.\+\_\+vendor.\+pyparsing.\+Quoted\+String.\+parse\+Impl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instring}{, }\item[{}]{loc}{, }\item[{}]{do\+Actions}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parser_element}{pip.\+\_\+vendor.\+pyparsing.\+Parser\+Element}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a475a38b1bd79612641039a243152b407}\index{pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}!convertWhitespaceEscapes@{convertWhitespaceEscapes}}
+\index{convertWhitespaceEscapes@{convertWhitespaceEscapes}!pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}}
+\doxysubsubsection{\texorpdfstring{convertWhitespaceEscapes}{convertWhitespaceEscapes}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a475a38b1bd79612641039a243152b407} 
+dict pip.\+\_\+vendor.\+pyparsing.\+Quoted\+String.\+convert\+Whitespace\+Escapes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'\(\backslash\)t'}:\ \textcolor{stringliteral}{'\(\backslash\)t'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'\(\backslash\)n'}:\ \textcolor{stringliteral}{'\(\backslash\)n'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'\(\backslash\)f'}:\ \textcolor{stringliteral}{'\(\backslash\)f'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{r'\(\backslash\)r'}:\ \textcolor{stringliteral}{'\(\backslash\)r'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a16dcc7671edd50526eba8d51920c156d}\index{pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}!pattern@{pattern}}
+\index{pattern@{pattern}!pip.\_vendor.pyparsing.QuotedString@{pip.\_vendor.pyparsing.QuotedString}}
+\doxysubsubsection{\texorpdfstring{pattern}{pattern}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1_quoted_string_a16dcc7671edd50526eba8d51920c156d} 
+pip.\+\_\+vendor.\+pyparsing.\+Quoted\+String.\+pattern}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{r'\%s(?:[\string^\%s\%s]'}\ \%\ (re.escape(self.quoteChar),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_escapeRegexRangeChars(self.endQuoteChar[0]),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (escChar\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None}\ \textcolor{keywordflow}{and}\ \_escapeRegexRangeChars(escChar)\ \textcolor{keywordflow}{or}\ \textcolor{stringliteral}{''}))}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\doxysection{plot\+\_\+davis\+\_\+club Namespace Reference}
+\hypertarget{namespaceplot__davis__club}{}\label{namespaceplot__davis__club}\index{plot\_davis\_club@{plot\_davis\_club}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__davis__club_ad7bff9f3e063d18a001c27dc51bd4bb1}\label{namespaceplot__davis__club_ad7bff9f3e063d18a001c27dc51bd4bb1} 
+{\bfseries G} = nx.\+davis\+\_\+southern\+\_\+women\+\_\+graph()
+\item 
+\Hypertarget{namespaceplot__davis__club_a231af121832e6abce7dc610d75563e7c}\label{namespaceplot__davis__club_a231af121832e6abce7dc610d75563e7c} 
+{\bfseries women} = G.\+graph\mbox{[}"{}top"{}\mbox{]}
+\item 
+\Hypertarget{namespaceplot__davis__club_a8af73e7c2bd308c6e63de21c01723893}\label{namespaceplot__davis__club_a8af73e7c2bd308c6e63de21c01723893} 
+{\bfseries clubs} = G.\+graph\mbox{[}"{}bottom"{}\mbox{]}
+\item 
+\Hypertarget{namespaceplot__davis__club_a85d8cd291cc6db2d14d8705df87807a2}\label{namespaceplot__davis__club_a85d8cd291cc6db2d14d8705df87807a2} 
+{\bfseries W} = bipartite.\+projected\+\_\+graph(G, women)
+\item 
+\Hypertarget{namespaceplot__davis__club_a647fdf4b443afac5a8a719a03418347b}\label{namespaceplot__davis__club_a647fdf4b443afac5a8a719a03418347b} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(G, seed=648)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}==========
+Davis Club
+==========
+
+Davis Southern Club Women
+
+Shows how to make unipartite projections of the graph and compute the
+properties of those graphs.
+
+These data were collected by Davis et al. in the 1930s.
+They represent observed attendance at 14 social events by 18 Southern women.
+The graph is bipartite (clubs, women).
+\end{DoxyVerb}
+ 

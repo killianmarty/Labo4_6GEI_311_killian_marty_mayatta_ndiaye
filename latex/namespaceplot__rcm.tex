@@ -1,0 +1,54 @@
+\doxysection{plot\+\_\+rcm Namespace Reference}
+\hypertarget{namespaceplot__rcm}{}\label{namespaceplot__rcm}\index{plot\_rcm@{plot\_rcm}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__rcm_ab09fd50b0e9507cc510118def558b1dd}\label{namespaceplot__rcm_ab09fd50b0e9507cc510118def558b1dd} 
+{\bfseries G} = nx.\+grid\+\_\+2d\+\_\+graph(3, 3)
+\item 
+\Hypertarget{namespaceplot__rcm_a7494c9685039ff30d550a196fb23a067}\label{namespaceplot__rcm_a7494c9685039ff30d550a196fb23a067} 
+{\bfseries rcm} = list(nx.\+utils.\+reverse\+\_\+cuthill\+\_\+mckee\+\_\+ordering(G))
+\item 
+\Hypertarget{namespaceplot__rcm_ae495ff50f03e65bef06be76f3b06dd81}\label{namespaceplot__rcm_ae495ff50f03e65bef06be76f3b06dd81} 
+{\bfseries A} = nx.\+laplacian\+\_\+matrix(G)
+\item 
+\Hypertarget{namespaceplot__rcm_a1f3cde8f38bc7928d92d6afc51c69cf3}\label{namespaceplot__rcm_a1f3cde8f38bc7928d92d6afc51c69cf3} 
+{\bfseries x}
+\item 
+\Hypertarget{namespaceplot__rcm_a96a70910115eef0c354ab1999dd4d1e0}\label{namespaceplot__rcm_a96a70910115eef0c354ab1999dd4d1e0} 
+{\bfseries y}
+\item 
+\Hypertarget{namespaceplot__rcm_a8c3b2a50fe9f5d3213a99b9e716193f0}\label{namespaceplot__rcm_a8c3b2a50fe9f5d3213a99b9e716193f0} 
+{\bfseries B} = nx.\+laplacian\+\_\+matrix(G, nodelist=rcm)
+\item 
+\Hypertarget{namespaceplot__rcm_a3cf0323365da0a116e64aa4965622f53}\label{namespaceplot__rcm_a3cf0323365da0a116e64aa4965622f53} 
+{\bfseries cbar}
+\item 
+\Hypertarget{namespaceplot__rcm_a4115af8fd0a3297606a763427ae2e819}\label{namespaceplot__rcm_a4115af8fd0a3297606a763427ae2e819} 
+{\bfseries False}
+\item 
+\Hypertarget{namespaceplot__rcm_ae7ee881a1afcaf593945dfc052f5ed65}\label{namespaceplot__rcm_ae7ee881a1afcaf593945dfc052f5ed65} 
+{\bfseries square}
+\item 
+\Hypertarget{namespaceplot__rcm_a7dc61cb0b711ffa3f11d1039850372ab}\label{namespaceplot__rcm_a7dc61cb0b711ffa3f11d1039850372ab} 
+{\bfseries True}
+\item 
+\Hypertarget{namespaceplot__rcm_a981810fc48df01b575ff4ef268df8014}\label{namespaceplot__rcm_a981810fc48df01b575ff4ef268df8014} 
+{\bfseries linewidths}
+\item 
+\Hypertarget{namespaceplot__rcm_a1e309164c3788fe431553fef42fb9b9c}\label{namespaceplot__rcm_a1e309164c3788fe431553fef42fb9b9c} 
+{\bfseries annot}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}======================
+Reverse Cuthill--McKee
+======================
+
+Cuthill-McKee ordering of matrices
+
+The reverse Cuthill--McKee algorithm gives a sparse matrix ordering that
+reduces the matrix bandwidth.
+\end{DoxyVerb}
+ 

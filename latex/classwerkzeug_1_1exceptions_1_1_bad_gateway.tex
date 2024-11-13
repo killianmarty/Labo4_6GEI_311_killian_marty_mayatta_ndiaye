@@ -1,0 +1,80 @@
+\doxysection{werkzeug.\+exceptions.\+Bad\+Gateway Class Reference}
+\hypertarget{classwerkzeug_1_1exceptions_1_1_bad_gateway}{}\label{classwerkzeug_1_1exceptions_1_1_bad_gateway}\index{werkzeug.exceptions.BadGateway@{werkzeug.exceptions.BadGateway}}
+Inheritance diagram for werkzeug.\+exceptions.\+Bad\+Gateway\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1exceptions_1_1_bad_gateway}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_bad_gateway_ad3fe36785c77be8d1afdaa23d4e31351}\label{classwerkzeug_1_1exceptions_1_1_bad_gateway_ad3fe36785c77be8d1afdaa23d4e31351} 
+int {\bfseries code} = 502
+\item 
+tuple \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_bad_gateway_ad94f69273307702b860b465c7a4a841f}{description}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries code} = None
+\item 
+t {\bfseries description} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a850abc5d1a7368a8c41555c612a77815}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\mbox{[}str\mbox{]} description=None, t.\+Optional\mbox{[}"{}Response"{}\mbox{]} response=None)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798}{name}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aaeabc66be206d8416ce68dd45127459e}{get\+\_\+description}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2d4bdf6b9951d455d40c9f55ba28b41f}{get\+\_\+body}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_afbcf1071c68f1c81ba64b4e08b968893}{get\+\_\+headers}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+"{}Response"{} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0552eb47de6a896d4d242893198e23d2}{get\+\_\+response}} (self, t.\+Optional\mbox{[}t.\+Union\mbox{[}"{}WSGIEnvironment"{}, "{}WSGIRequest"{}\mbox{]}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+t.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aebdfbbad37e22021a48f9235e637d4ab}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries response} = response
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}*502* `Bad Gateway`
+
+If you do proxying in your application you should return this status code
+if you received an invalid response from the upstream server it accessed
+in attempting to fulfill the request.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_bad_gateway_ad94f69273307702b860b465c7a4a841f}\index{werkzeug.exceptions.BadGateway@{werkzeug.exceptions.BadGateway}!description@{description}}
+\index{description@{description}!werkzeug.exceptions.BadGateway@{werkzeug.exceptions.BadGateway}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_bad_gateway_ad94f69273307702b860b465c7a4a841f} 
+tuple werkzeug.\+exceptions.\+Bad\+Gateway.\+description\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}The\ proxy\ server\ received\ an\ invalid\ response\ from\ an\ upstream\ server."{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/exceptions.\+py\end{DoxyCompactItemize}

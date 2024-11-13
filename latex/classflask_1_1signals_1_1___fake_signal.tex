@@ -1,0 +1,48 @@
+\doxysection{flask.\+signals.\+\_\+\+Fake\+Signal Class Reference}
+\hypertarget{classflask_1_1signals_1_1___fake_signal}{}\label{classflask_1_1signals_1_1___fake_signal}\index{flask.signals.\_FakeSignal@{flask.signals.\_FakeSignal}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1signals_1_1___fake_signal_aa83cb48d541c76890966ffc7b6f2002b}\label{classflask_1_1signals_1_1___fake_signal_aa83cb48d541c76890966ffc7b6f2002b} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str name, t.\+Optional\mbox{[}str\mbox{]} doc=None)
+\item 
+\Hypertarget{classflask_1_1signals_1_1___fake_signal_a5e435e982d0f14dbcf63d4420c407f50}\label{classflask_1_1signals_1_1___fake_signal_a5e435e982d0f14dbcf63d4420c407f50} 
+t.\+Any {\bfseries send} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1signals_1_1___fake_signal_aa1216eac5e4d3b94794ba3e25ddb0afb}\label{classflask_1_1signals_1_1___fake_signal_aa1216eac5e4d3b94794ba3e25ddb0afb} 
+{\bfseries name} = name
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1signals_1_1___fake_signal_ae5fc7ca704d622d27821eda6f4acfe65}\label{classflask_1_1signals_1_1___fake_signal_ae5fc7ca704d622d27821eda6f4acfe65} 
+t.\+Any {\bfseries connect} = \+\_\+fail
+\item 
+\Hypertarget{classflask_1_1signals_1_1___fake_signal_ab65bc0eb53904280b63a94b160432248}\label{classflask_1_1signals_1_1___fake_signal_ab65bc0eb53904280b63a94b160432248} 
+t.\+Any {\bfseries disconnect} = \+\_\+fail
+\item 
+\Hypertarget{classflask_1_1signals_1_1___fake_signal_aa87c1a5f2ed2b45e8ad386f5c7b6e343}\label{classflask_1_1signals_1_1___fake_signal_aa87c1a5f2ed2b45e8ad386f5c7b6e343} 
+t.\+Any {\bfseries has\+\_\+receivers\+\_\+for} = \+\_\+fail
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1signals_1_1___fake_signal_aa271b6d9d1a7d998e7379927744e80c8}\label{classflask_1_1signals_1_1___fake_signal_aa271b6d9d1a7d998e7379927744e80c8} 
+t.\+Any {\bfseries \+\_\+fail} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}If blinker is unavailable, create a fake class with the same
+interface that allows sending of signals but will fail with an
+error on anything else.  Instead of doing anything on send, it
+will just ignore the arguments and do nothing instead.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/signals.\+py\end{DoxyCompactItemize}

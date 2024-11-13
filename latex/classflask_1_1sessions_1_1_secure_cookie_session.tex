@@ -1,0 +1,114 @@
+\doxysection{flask.\+sessions.\+Secure\+Cookie\+Session Class Reference}
+\hypertarget{classflask_1_1sessions_1_1_secure_cookie_session}{}\label{classflask_1_1sessions_1_1_secure_cookie_session}\index{flask.sessions.SecureCookieSession@{flask.sessions.SecureCookieSession}}
+Inheritance diagram for flask.\+sessions.\+Secure\+Cookie\+Session\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.689065cm]{classflask_1_1sessions_1_1_secure_cookie_session}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_acce8971400492743922d22a97ec00b90}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Any initial=None)
+\item 
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_a6ec4ff3602827817c564f9a7e7fb44c1}\label{classflask_1_1sessions_1_1_secure_cookie_session_a6ec4ff3602827817c564f9a7e7fb44c1} 
+t.\+Any {\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, str key)
+\item 
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_ac959d357e8fd462433758e19e9863455}\label{classflask_1_1sessions_1_1_secure_cookie_session_ac959d357e8fd462433758e19e9863455} 
+t.\+Any {\bfseries get} (self, str key, t.\+Any default=None)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_a3ebf46e800acde2c84c1b137f94d7780}{setdefault}} (self, str key, t.\+Any default=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_callback_dict}{werkzeug.\+datastructures.\+Callback\+Dict}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_update_dict_mixin}{werkzeug.\+datastructures.\+Update\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries pop} (self, key, default=\+\_\+missing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{flask.\+sessions.\+Session\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin_ab8b1ebb1e1f075c8e4797386ac30f170}{permanent}} (self)
+\item 
+None {\bfseries permanent} (self, bool value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_aa2e632a0b94649dc3143a66a7ec50bbd}\label{classflask_1_1sessions_1_1_secure_cookie_session_aa2e632a0b94649dc3143a66a7ec50bbd} 
+bool {\bfseries modified} = False
+\item 
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_a57a33c50e4b65985ddb55414165b1a48}\label{classflask_1_1sessions_1_1_secure_cookie_session_a57a33c50e4b65985ddb55414165b1a48} 
+bool {\bfseries accessed} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_update_dict_mixin}{werkzeug.\+datastructures.\+Update\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries on\+\_\+update} = None
+\item 
+{\bfseries clear} = \+\_\+calls\+\_\+update("{}clear"{})
+\item 
+{\bfseries popitem} = \+\_\+calls\+\_\+update("{}popitem"{})
+\item 
+{\bfseries update} = \+\_\+calls\+\_\+update("{}update"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{flask.\+sessions.\+Session\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries new} = False
+\item 
+bool {\bfseries modified} = True
+\item 
+bool {\bfseries accessed} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_callback_dict}{werkzeug.\+datastructures.\+Callback\+Dict}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries on\+\_\+update} = on\+\_\+update
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base class for sessions based on signed cookies.
+
+This session backend will set the :attr:`modified` and
+:attr:`accessed` attributes. It cannot reliably track whether a
+session is new (vs. empty), so :attr:`new` remains hard coded to
+``False``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_acce8971400492743922d22a97ec00b90}\index{flask.sessions.SecureCookieSession@{flask.sessions.SecureCookieSession}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.sessions.SecureCookieSession@{flask.sessions.SecureCookieSession}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1sessions_1_1_secure_cookie_session_acce8971400492743922d22a97ec00b90} 
+ None flask.\+sessions.\+Secure\+Cookie\+Session.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any }]{initial}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_callback_dict}{werkzeug.\+datastructures.\+Callback\+Dict}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_a3ebf46e800acde2c84c1b137f94d7780}\index{flask.sessions.SecureCookieSession@{flask.sessions.SecureCookieSession}!setdefault@{setdefault}}
+\index{setdefault@{setdefault}!flask.sessions.SecureCookieSession@{flask.sessions.SecureCookieSession}}
+\doxysubsubsection{\texorpdfstring{setdefault()}{setdefault()}}
+{\footnotesize\ttfamily \label{classflask_1_1sessions_1_1_secure_cookie_session_a3ebf46e800acde2c84c1b137f94d7780} 
+ t.\+Any flask.\+sessions.\+Secure\+Cookie\+Session.\+setdefault (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{t.\+Any }]{default}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_update_dict_mixin}{werkzeug.\+datastructures.\+Update\+Dict\+Mixin}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/sessions.\+py\end{DoxyCompactItemize}

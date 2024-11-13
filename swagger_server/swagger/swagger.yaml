@@ -1,0 +1,274 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "API de Cours"
+paths:
+  /cours:
+    get:
+      tags:
+      - "Cours"
+      summary: "Retourne la liste des cours"
+      operationId: "cours_get"
+      parameters: []
+      responses:
+        "200":
+          description: "Liste des cours"
+      x-swagger-router-controller: "swagger_server.controllers.cours_controller"
+  /cours/{id}:
+    get:
+      tags:
+      - "Cours"
+      summary: "Retourne les informations du cours"
+      operationId: "cours_id_get"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "mode"
+        in: "query"
+        required: false
+        type: "string"
+      responses:
+        "200":
+          description: "Informations du cours"
+      x-swagger-router-controller: "swagger_server.controllers.cours_controller"
+    post:
+      tags:
+      - "Cours"
+      summary: "Crée un nouveau cours"
+      operationId: "cours_id_post"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "201":
+          description: "Cours créé"
+      x-swagger-router-controller: "swagger_server.controllers.cours_controller"
+    delete:
+      tags:
+      - "Cours"
+      summary: "Supprime un cours"
+      operationId: "cours_id_delete"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "204":
+          description: "Cours supprimé"
+      x-swagger-router-controller: "swagger_server.controllers.cours_controller"
+  /cours/{id}/fichier/{idFichier}:
+    get:
+      tags:
+      - "Contenu de cours"
+      summary: "Retourne un fichier selon le chemin spécifié"
+      operationId: "cours_id_fichier_id_fichier_get"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "idFichier"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "200":
+          description: "Fichier retourné"
+      x-swagger-router-controller: "swagger_server.controllers.contenu_de_cours_controller"
+    post:
+      tags:
+      - "Contenu de cours"
+      summary: "Télécharge un fichier pour le cours"
+      operationId: "cours_id_fichier_id_fichier_post"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "idFichier"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "201":
+          description: "Fichier téléchargé"
+      x-swagger-router-controller: "swagger_server.controllers.contenu_de_cours_controller"
+    delete:
+      tags:
+      - "Contenu de cours"
+      summary: "Supprime un fichier du cours"
+      operationId: "cours_id_fichier_id_fichier_delete"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "idFichier"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "204":
+          description: "Fichier supprimé"
+      x-swagger-router-controller: "swagger_server.controllers.contenu_de_cours_controller"
+  /cours/{id}/dossier/{idDossier}:
+    get:
+      tags:
+      - "Contenu de cours"
+      summary: "Retourne un JSON du contenu du dossier"
+      operationId: "cours_id_dossier_id_dossier_get"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "idDossier"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "200":
+          description: "Contenu JSON du dossier"
+      x-swagger-router-controller: "swagger_server.controllers.contenu_de_cours_controller"
+    post:
+      tags:
+      - "Contenu de cours"
+      summary: "Crée un nouveau dossier pour le cours"
+      operationId: "cours_id_dossier_id_dossier_post"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "idDossier"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "201":
+          description: "Dossier créé"
+      x-swagger-router-controller: "swagger_server.controllers.contenu_de_cours_controller"
+    delete:
+      tags:
+      - "Contenu de cours"
+      summary: "Supprime un dossier du cours"
+      operationId: "cours_id_dossier_id_dossier_delete"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "idDossier"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "204":
+          description: "Dossier supprimé"
+      x-swagger-router-controller: "swagger_server.controllers.contenu_de_cours_controller"
+  /cours/{id}/seances/{idSeance}:
+    get:
+      tags:
+      - "seances"
+      summary: "Retourne les infos sur la séance"
+      operationId: "cours_id_seances_id_seance_get"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "idSeance"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "200":
+          description: "Informations sur la séance"
+      x-swagger-router-controller: "swagger_server.controllers.seances_controller"
+    post:
+      tags:
+      - "seances"
+      summary: "Crée une nouvelle séance"
+      operationId: "cours_id_seances_id_seance_post"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "idSeance"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "201":
+          description: "Séance créée"
+      x-swagger-router-controller: "swagger_server.controllers.seances_controller"
+    delete:
+      tags:
+      - "seances"
+      summary: "Supprime une séance"
+      operationId: "cours_id_seances_id_seance_delete"
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "integer"
+      - name: "idSeance"
+        in: "path"
+        required: true
+        type: "integer"
+      responses:
+        "204":
+          description: "Séance supprimée"
+      x-swagger-router-controller: "swagger_server.controllers.seances_controller"
+  /search:
+    get:
+      tags:
+      - "Recherche de cours"
+      summary: "Recherche de cours par tag"
+      operationId: "search_get"
+      parameters:
+      - name: "tag"
+        in: "query"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "Liste des cours correspondants"
+      x-swagger-router-controller: "swagger_server.controllers.recherche_de_cours_controller"
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+  petstore_auth:
+    type: "oauth2"
+    authorizationUrl: "https://petstore.swagger.io/oauth/authorize"
+    flow: "implicit"
+    scopes:
+      read:pets: "read your pets"
+      write:pets: "modify pets in your account"
+definitions:
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "string"
+      message:
+        type: "string"
+    example:
+      code: 0
+      type: "type"
+      message: "message"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"

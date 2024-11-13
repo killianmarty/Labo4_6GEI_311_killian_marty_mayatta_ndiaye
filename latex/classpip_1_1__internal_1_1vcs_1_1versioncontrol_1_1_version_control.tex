@@ -1,0 +1,449 @@
+\doxysection{pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control Class Reference}
+\hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control}{}\label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+Inheritance diagram for pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.458333cm]{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac9df07a3392f7aa8948b986dc95c6017}{should\+\_\+add\+\_\+vcs\+\_\+url\+\_\+prefix}} (cls, remote\+\_\+url)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac25a2be8e9d816a4c4bb8551408c87ce}{get\+\_\+subdirectory}} (cls, location)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a8175de3df8b724c912a6ef36e74cc6a3}{get\+\_\+requirement\+\_\+revision}} (cls, repo\+\_\+dir)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a402f5215ee89bd1f813902cc2e9917e7}{get\+\_\+src\+\_\+requirement}} (cls, repo\+\_\+dir, project\+\_\+name)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a30cb7adfde55824a63e74153da90b257}{is\+\_\+immutable\+\_\+rev\+\_\+checkout}} (self, url, dest)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a0df76c2402ac01d3e4c85c1fb67e3763}{make\+\_\+rev\+\_\+options}} (cls, rev=None, extra\+\_\+args=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_aef927c7e2386a1936afd2c4ae79865ee}{export}} (self, location, url)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad3b127bca4d8f0a189f346fad419ff2c}{get\+\_\+netloc\+\_\+and\+\_\+auth}} (cls, netloc, scheme)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a0459993e189c1874ae7a4e615711b5ea}{get\+\_\+url\+\_\+rev\+\_\+and\+\_\+auth}} (cls, url)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_af9284b509fc0ae7ab51ad3f0b2eb4c9d}{get\+\_\+url\+\_\+rev\+\_\+options}} (self, url)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a3b2ca8bc8be75f7f002a24cad9743361}{compare\+\_\+urls}} (cls, url1, url2)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a9193967f13fabfc8c90267ac65ca7dc6}{fetch\+\_\+new}} (self, dest, url, rev\+\_\+options)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac48fe504437f51f60821c631c8c74cf3}{switch}} (self, dest, url, rev\+\_\+options)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a2853faf7b277c7ef0c4181fe506559cd}{update}} (self, dest, url, rev\+\_\+options)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac37b45fa5f9a2cd92f3fdf4bb26110c1}{is\+\_\+commit\+\_\+id\+\_\+equal}} (cls, dest, name)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ab2b83943d54f1c99b7a21e7e4017ae47}{obtain}} (self, dest, url)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a5057ef0655aa0fb1053ef0f6dbdbc8e1}{unpack}} (self, location, url)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a3fb14786ff20615f787b287b111a72ae}{get\+\_\+remote\+\_\+url}} (cls, location)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a86eda027b02a24b399e21626b6c7e596}{get\+\_\+revision}} (cls, location)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad8859a9e3f049ff244a5b2b45b4f4ab5}{run\+\_\+command}} (cls, cmd, show\+\_\+stdout=True, cwd=None, on\+\_\+returncode=\textquotesingle{}raise\textquotesingle{}, extra\+\_\+ok\+\_\+returncodes=None, command\+\_\+desc=None, extra\+\_\+environ=None, spinner=None, log\+\_\+failed\+\_\+cmd=True \# type\+:bool)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a6f268c6bea27d23dc10adf4cbf4fe6c3}{is\+\_\+repository\+\_\+directory}} (cls, path)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a48900f10224340afb17350cfd6a9e078}{get\+\_\+repository\+\_\+root}} (cls, location)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a16f1f04e20bd1b578efee236384b2570}{get\+\_\+base\+\_\+rev\+\_\+args}} (rev)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a10841b05c78b0762881927fd69197225}{make\+\_\+rev\+\_\+args}} (username, password)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad893fb501bd384db0cde4cb420ba9fd8}{normalize\+\_\+url}} (url)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad4d195fdcc6f01601aa267ae571b4732}\label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad4d195fdcc6f01601aa267ae571b4732} 
+str {\bfseries name} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_acc3c666f2e569f1b0f925a9d595c06ba}\label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_acc3c666f2e569f1b0f925a9d595c06ba} 
+str {\bfseries dirname} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ab75c1eedb3b7ac7881aefb09b1b70416}\label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ab75c1eedb3b7ac7881aefb09b1b70416} 
+str {\bfseries repo\+\_\+name} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a8dda8785f57d5daa870d7c1c31193f88}\label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a8dda8785f57d5daa870d7c1c31193f88} 
+tuple {\bfseries schemes} = ()
+\item 
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a881a5bb321544be026633f1a331bbcef}\label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a881a5bb321544be026633f1a331bbcef} 
+tuple {\bfseries unset\+\_\+environ} = ()
+\item 
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a08ff6d9279c5c43fd7be066742f6b305}\label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a08ff6d9279c5c43fd7be066742f6b305} 
+{\bfseries default\+\_\+arg\+\_\+rev} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a48220eb1975864706685a1f15f1351fd}{\+\_\+is\+\_\+local\+\_\+repository}} (cls, repo)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a48220eb1975864706685a1f15f1351fd}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!\_is\_local\_repository@{\_is\_local\_repository}}
+\index{\_is\_local\_repository@{\_is\_local\_repository}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{\_is\_local\_repository()}{\_is\_local\_repository()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a48220eb1975864706685a1f15f1351fd} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+\_\+is\+\_\+local\+\_\+repository (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{repo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}   posix absolute paths start with os.path.sep,
+   win32 ones start with drive (like c:\\folder)
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a3b2ca8bc8be75f7f002a24cad9743361}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!compare\_urls@{compare\_urls}}
+\index{compare\_urls@{compare\_urls}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{compare\_urls()}{compare\_urls()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a3b2ca8bc8be75f7f002a24cad9743361} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+compare\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{url1}{, }\item[{}]{url2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compare two repo URLs for identity, ignoring incidental differences.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_aef927c7e2386a1936afd2c4ae79865ee}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!export@{export}}
+\index{export@{export}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{export()}{export()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_aef927c7e2386a1936afd2c4ae79865ee} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+export (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{location}{, }\item[{}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Export the repository at the url to the destination location
+i.e. only download the files, without vcs informations
+
+:param url: the repository URL starting with a vcs prefix.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1bazaar_1_1_bazaar_aacb7a4ac273cb5d8655a3f550857a7a9}{pip.\+\_\+internal.\+vcs.\+bazaar.\+Bazaar}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_a22d9786d1638845f349a4aec0512a1eb}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_a6ea940f1ab34f902fc5c6e3eb1e50b34}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_a114867e15b666f2a63a56394eca80ab8}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a9193967f13fabfc8c90267ac65ca7dc6}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!fetch\_new@{fetch\_new}}
+\index{fetch\_new@{fetch\_new}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{fetch\_new()}{fetch\_new()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a9193967f13fabfc8c90267ac65ca7dc6} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+fetch\+\_\+new (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dest}{, }\item[{}]{url}{, }\item[{}]{rev\+\_\+options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fetch a revision from a repository, in the case that this is the
+first fetch from the repository.
+
+Args:
+  dest: the directory to fetch the repository to.
+  rev_options: a RevOptions object.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1bazaar_1_1_bazaar_a563cabcebf355cbc0e3fb3a1a4739978}{pip.\+\_\+internal.\+vcs.\+bazaar.\+Bazaar}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_a13aa78669cf3f0719a0abc9bb62d7cdd}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_a2bbedffe0cf6edb4af2f64f6bc2d1829}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_a2a22cca41b79ed9aa128d2bb4b9bd9de}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a16f1f04e20bd1b578efee236384b2570}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!get\_base\_rev\_args@{get\_base\_rev\_args}}
+\index{get\_base\_rev\_args@{get\_base\_rev\_args}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{get\_base\_rev\_args()}{get\_base\_rev\_args()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a16f1f04e20bd1b578efee236384b2570} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+get\+\_\+base\+\_\+rev\+\_\+args (\begin{DoxyParamCaption}\item[{}]{rev}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Return the base revision arguments for a vcs command.
+
+Args:
+  rev: the name of a revision to install.  Cannot be None.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1bazaar_1_1_bazaar_a388dfe17013731363b9d9559cdef0f81}{pip.\+\_\+internal.\+vcs.\+bazaar.\+Bazaar}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_a6292154dd55cf20056b4d0711bd9cabd}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_a0765f2614c9c68efcb35e0f1d3a16977}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_a6775d5164555f1524cdffec03c32e589}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad3b127bca4d8f0a189f346fad419ff2c}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!get\_netloc\_and\_auth@{get\_netloc\_and\_auth}}
+\index{get\_netloc\_and\_auth@{get\_netloc\_and\_auth}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{get\_netloc\_and\_auth()}{get\_netloc\_and\_auth()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad3b127bca4d8f0a189f346fad419ff2c} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+get\+\_\+netloc\+\_\+and\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{netloc}{, }\item[{}]{scheme}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the repository URL's netloc, and return the new netloc to use
+along with auth information.
+
+Args:
+  netloc: the original repository URL netloc.
+  scheme: the repository URL's scheme without the vcs prefix.
+
+This is mainly for the Subversion class to override, so that auth
+information can be provided via the --username and --password options
+instead of through the URL.  For other subclasses like Git without
+such an option, auth information must stay in the URL.
+
+Returns: (netloc, (username, password)).
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_acb9fd403c6b669b61a9356d80d9bd78d}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a3fb14786ff20615f787b287b111a72ae}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!get\_remote\_url@{get\_remote\_url}}
+\index{get\_remote\_url@{get\_remote\_url}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{get\_remote\_url()}{get\_remote\_url()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a3fb14786ff20615f787b287b111a72ae} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+get\+\_\+remote\+\_\+url (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{location}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the url used at location
+
+Raises RemoteNotFoundError if the repository does not have a remote
+url configured.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1bazaar_1_1_bazaar_a32b2985b950fa79b27e8a764b48ada1e}{pip.\+\_\+internal.\+vcs.\+bazaar.\+Bazaar}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_ae1d7e74ba1db5e87d3d487253dcc5003}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_a08b7271286bf817da586eac564fb7242}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_a24fb62b24491eabc27060bcb6df393c2}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a48900f10224340afb17350cfd6a9e078}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!get\_repository\_root@{get\_repository\_root}}
+\index{get\_repository\_root@{get\_repository\_root}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{get\_repository\_root()}{get\_repository\_root()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a48900f10224340afb17350cfd6a9e078} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+get\+\_\+repository\+\_\+root (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{location}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the "root" (top-level) directory controlled by the vcs,
+or `None` if the directory is not in any.
+
+It is meant to be overridden to implement smarter detection
+mechanisms for specific vcs.
+
+This can do more than is_repository_directory() alone. For
+example, the Git override checks that Git is actually available.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_af841e32d192ef9713f87ff6ccd7018c7}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_a6d45daebcc466f4f403132bd281b91e1}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a8175de3df8b724c912a6ef36e74cc6a3}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!get\_requirement\_revision@{get\_requirement\_revision}}
+\index{get\_requirement\_revision@{get\_requirement\_revision}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{get\_requirement\_revision()}{get\_requirement\_revision()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a8175de3df8b724c912a6ef36e74cc6a3} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+get\+\_\+requirement\+\_\+revision (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{repo\+\_\+dir}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the revision string that should be used in a requirement.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_ac18883949152b8a6cc99f20c35fb2fc2}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a86eda027b02a24b399e21626b6c7e596}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!get\_revision@{get\_revision}}
+\index{get\_revision@{get\_revision}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{get\_revision()}{get\_revision()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a86eda027b02a24b399e21626b6c7e596} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+get\+\_\+revision (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{location}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the current commit id of the files at the given location.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1bazaar_1_1_bazaar_a10ff5feb60737f34b1ac1f4fae6e2bd3}{pip.\+\_\+internal.\+vcs.\+bazaar.\+Bazaar}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_ab4847a60035321f827dc7a4a92765af2}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_a6a6a40a5ca446ede42fc35da99330b12}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_a099e3cac156de66c39688b1eafa07fd6}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a402f5215ee89bd1f813902cc2e9917e7}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!get\_src\_requirement@{get\_src\_requirement}}
+\index{get\_src\_requirement@{get\_src\_requirement}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{get\_src\_requirement()}{get\_src\_requirement()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a402f5215ee89bd1f813902cc2e9917e7} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+get\+\_\+src\+\_\+requirement (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{repo\+\_\+dir}{, }\item[{}]{project\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the requirement string to use to redownload the files
+currently at the given repository directory.
+
+Args:
+  project_name: the (unescaped) project name.
+
+The return value has a form similar to the following:
+
+    {repository_url}@{revision}#egg={project_name}
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac25a2be8e9d816a4c4bb8551408c87ce}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!get\_subdirectory@{get\_subdirectory}}
+\index{get\_subdirectory@{get\_subdirectory}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{get\_subdirectory()}{get\_subdirectory()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac25a2be8e9d816a4c4bb8551408c87ce} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+get\+\_\+subdirectory (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{location}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the path to setup.py, relative to the repo root.
+Return None if setup.py is in the repo root.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_a719a49f9ada4b9946e59c1775d9617de}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_ad3ccc6ccbccef404b75e284ff954a157}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a0459993e189c1874ae7a4e615711b5ea}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!get\_url\_rev\_and\_auth@{get\_url\_rev\_and\_auth}}
+\index{get\_url\_rev\_and\_auth@{get\_url\_rev\_and\_auth}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{get\_url\_rev\_and\_auth()}{get\_url\_rev\_and\_auth()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a0459993e189c1874ae7a4e615711b5ea} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+get\+\_\+url\+\_\+rev\+\_\+and\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the repository URL to use, and return the URL, revision,
+and auth info to use.
+
+Returns: (url, rev, (username, password)).
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1bazaar_1_1_bazaar_a96cb65588ffbb2c18b2d4bda149bef43}{pip.\+\_\+internal.\+vcs.\+bazaar.\+Bazaar}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_a1e19ec9c576438811fdcccb88ab2e54c}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_a0cf44178ee358f5a8768f132da663b76}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_af9284b509fc0ae7ab51ad3f0b2eb4c9d}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!get\_url\_rev\_options@{get\_url\_rev\_options}}
+\index{get\_url\_rev\_options@{get\_url\_rev\_options}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{get\_url\_rev\_options()}{get\_url\_rev\_options()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_af9284b509fc0ae7ab51ad3f0b2eb4c9d} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+get\+\_\+url\+\_\+rev\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the URL and RevOptions object to use in obtain() and in
+some cases export(), as a tuple (url, rev_options).
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac37b45fa5f9a2cd92f3fdf4bb26110c1}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!is\_commit\_id\_equal@{is\_commit\_id\_equal}}
+\index{is\_commit\_id\_equal@{is\_commit\_id\_equal}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{is\_commit\_id\_equal()}{is\_commit\_id\_equal()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac37b45fa5f9a2cd92f3fdf4bb26110c1} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+is\+\_\+commit\+\_\+id\+\_\+equal (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{dest}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether the id of the current commit equals the given name.
+
+Args:
+  dest: the repository directory.
+  name: a string name.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1bazaar_1_1_bazaar_a9c387196dd94742bb80cdc581c74bc63}{pip.\+\_\+internal.\+vcs.\+bazaar.\+Bazaar}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_a8581c84e67518978b52a5c77c24e28aa}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_afab3358af1fa3da5af9c061be007d29f}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_a5f9fd492a7fb2a83c37ba0869662da58}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a30cb7adfde55824a63e74153da90b257}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!is\_immutable\_rev\_checkout@{is\_immutable\_rev\_checkout}}
+\index{is\_immutable\_rev\_checkout@{is\_immutable\_rev\_checkout}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{is\_immutable\_rev\_checkout()}{is\_immutable\_rev\_checkout()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a30cb7adfde55824a63e74153da90b257} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+is\+\_\+immutable\+\_\+rev\+\_\+checkout (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{url}{, }\item[{}]{dest}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return true if the commit hash checked out at dest matches
+the revision in url.
+
+Always return False, if the VCS does not support immutable commit
+hashes.
+
+This method does not check if there are local uncommitted changes
+in dest after checkout, as pip currently has no use case for that.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_a130e600069de634b1dd2dc92eeff8165}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a6f268c6bea27d23dc10adf4cbf4fe6c3}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!is\_repository\_directory@{is\_repository\_directory}}
+\index{is\_repository\_directory@{is\_repository\_directory}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{is\_repository\_directory()}{is\_repository\_directory()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a6f268c6bea27d23dc10adf4cbf4fe6c3} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+is\+\_\+repository\+\_\+directory (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether a directory path is a repository directory.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a10841b05c78b0762881927fd69197225}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!make\_rev\_args@{make\_rev\_args}}
+\index{make\_rev\_args@{make\_rev\_args}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{make\_rev\_args()}{make\_rev\_args()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a10841b05c78b0762881927fd69197225} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+make\+\_\+rev\+\_\+args (\begin{DoxyParamCaption}\item[{}]{username}{, }\item[{}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Return the RevOptions "extra arguments" to use in obtain().
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_adb1b5d503809e480875d1cfec67d6839}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a0df76c2402ac01d3e4c85c1fb67e3763}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!make\_rev\_options@{make\_rev\_options}}
+\index{make\_rev\_options@{make\_rev\_options}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{make\_rev\_options()}{make\_rev\_options()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a0df76c2402ac01d3e4c85c1fb67e3763} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+make\+\_\+rev\+\_\+options (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{rev}{ = {\ttfamily None}, }\item[{}]{extra\+\_\+args}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a RevOptions object.
+
+Args:
+  rev: the name of a revision to install.
+  extra_args: a list of extra options.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad893fb501bd384db0cde4cb420ba9fd8}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!normalize\_url@{normalize\_url}}
+\index{normalize\_url@{normalize\_url}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{normalize\_url()}{normalize\_url()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad893fb501bd384db0cde4cb420ba9fd8} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+normalize\+\_\+url (\begin{DoxyParamCaption}\item[{}]{url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Normalize a URL for comparison by unquoting it and removing any
+trailing slash.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ab2b83943d54f1c99b7a21e7e4017ae47}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!obtain@{obtain}}
+\index{obtain@{obtain}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{obtain()}{obtain()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ab2b83943d54f1c99b7a21e7e4017ae47} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+obtain (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dest}{, }\item[{}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Install or update in editable mode the package represented by this
+VersionControl object.
+
+:param dest: the repository directory in which to install or update.
+:param url: the repository URL starting with a vcs prefix.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad8859a9e3f049ff244a5b2b45b4f4ab5}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!run\_command@{run\_command}}
+\index{run\_command@{run\_command}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{run\_command()}{run\_command()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ad8859a9e3f049ff244a5b2b45b4f4ab5} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+run\+\_\+command (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{cmd}{, }\item[{}]{show\+\_\+stdout}{ = {\ttfamily True}, }\item[{}]{cwd}{ = {\ttfamily None}, }\item[{}]{on\+\_\+returncode}{ = {\ttfamily \textquotesingle{}raise\textquotesingle{}}, }\item[{}]{extra\+\_\+ok\+\_\+returncodes}{ = {\ttfamily None}, }\item[{}]{command\+\_\+desc}{ = {\ttfamily None}, }\item[{}]{extra\+\_\+environ}{ = {\ttfamily None}, }\item[{}]{spinner}{ = {\ttfamily None}, }\item[{}]{log\+\_\+failed\+\_\+cmd}{ = {\ttfamily True~~\#~type\+:~bool}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a VCS subcommand
+This is simply a wrapper around call_subprocess that adds the VCS
+command name, and checks that the VCS is available
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac9df07a3392f7aa8948b986dc95c6017}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!should\_add\_vcs\_url\_prefix@{should\_add\_vcs\_url\_prefix}}
+\index{should\_add\_vcs\_url\_prefix@{should\_add\_vcs\_url\_prefix}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{should\_add\_vcs\_url\_prefix()}{should\_add\_vcs\_url\_prefix()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac9df07a3392f7aa8948b986dc95c6017} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+should\+\_\+add\+\_\+vcs\+\_\+url\+\_\+prefix (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{remote\+\_\+url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether the vcs prefix (e.g. "git+") should be added to a
+repository's remote url when used in a requirement.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_a4c05900b8861422975cdfe7924df7dae}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac48fe504437f51f60821c631c8c74cf3}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!switch@{switch}}
+\index{switch@{switch}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{switch()}{switch()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_ac48fe504437f51f60821c631c8c74cf3} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+switch (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dest}{, }\item[{}]{url}{, }\item[{}]{rev\+\_\+options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Switch the repo at ``dest`` to point to ``URL``.
+
+Args:
+  rev_options: a RevOptions object.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1bazaar_1_1_bazaar_a55e082d65ca554c5110e2f515f0f9b92}{pip.\+\_\+internal.\+vcs.\+bazaar.\+Bazaar}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_a7084743351c3abf62901885bba4c841a}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_a2d118b7f93a33572843693b3f80ea96e}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_a199bd339a0401c8c98c317e2c9aebd0b}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+\Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a5057ef0655aa0fb1053ef0f6dbdbc8e1}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!unpack@{unpack}}
+\index{unpack@{unpack}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{unpack()}{unpack()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a5057ef0655aa0fb1053ef0f6dbdbc8e1} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+unpack (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{location}{, }\item[{}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clean up current location and download the url repository
+(and vcs infos) into location
+
+:param url: the repository URL starting with a vcs prefix.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a2853faf7b277c7ef0c4181fe506559cd}\index{pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}!update@{update}}
+\index{update@{update}!pip.\_internal.vcs.versioncontrol.VersionControl@{pip.\_internal.vcs.versioncontrol.VersionControl}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1vcs_1_1versioncontrol_1_1_version_control_a2853faf7b277c7ef0c4181fe506559cd} 
+pip.\+\_\+internal.\+vcs.\+versioncontrol.\+Version\+Control.\+update (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dest}{, }\item[{}]{url}{, }\item[{}]{rev\+\_\+options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update an already-existing repo to the given ``rev_options``.
+
+Args:
+  rev_options: a RevOptions object.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1bazaar_1_1_bazaar_a985f20a752538db0a46ebe55b27c24e9}{pip.\+\_\+internal.\+vcs.\+bazaar.\+Bazaar}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git_a0fa8801b6132451e2b413ddc46b0c876}{pip.\+\_\+internal.\+vcs.\+git.\+Git}}, \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1mercurial_1_1_mercurial_a092a344866315aa9ecbc89f97d8122ee}{pip.\+\_\+internal.\+vcs.\+mercurial.\+Mercurial}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1subversion_1_1_subversion_ae2a88b1e7d69a1b23515e343c108f273}{pip.\+\_\+internal.\+vcs.\+subversion.\+Subversion}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/vcs/versioncontrol.\+py\end{DoxyCompactItemize}

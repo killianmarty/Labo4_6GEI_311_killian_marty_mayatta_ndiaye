@@ -1,0 +1,106 @@
+\doxysection{importlib\+\_\+resources.\+simple.\+Resource\+Container Class Reference}
+\hypertarget{classimportlib__resources_1_1simple_1_1_resource_container}{}\label{classimportlib__resources_1_1simple_1_1_resource_container}\index{importlib\_resources.simple.ResourceContainer@{importlib\_resources.simple.ResourceContainer}}
+Inheritance diagram for importlib\+\_\+resources.\+simple.\+Resource\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classimportlib__resources_1_1simple_1_1_resource_container}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_container_a57e50ef5367b8f3393b113668eb13a02}\label{classimportlib__resources_1_1simple_1_1_resource_container_a57e50ef5367b8f3393b113668eb13a02} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \mbox{\hyperlink{classimportlib__resources_1_1simple_1_1_simple_reader}{Simple\+Reader}} reader)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1simple_1_1_resource_container_a2f81d4e44304abe95f9d450e9481f5c3}{is\+\_\+dir}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1simple_1_1_resource_container_a2b676987715796ddd260d8511f5dbe23}{is\+\_\+file}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1simple_1_1_resource_container_a3782ef9e1742ef3efe63e3e6d5586f98}{iterdir}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1simple_1_1_resource_container_a32f1929c630e388085e057130f55e9f2}{open}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable}{importlib\+\_\+resources.\+abc.\+Traversable}}}
+\begin{DoxyCompactItemize}
+\item 
+bytes \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a8dad96761afb634dc5260594651d54f0}{read\+\_\+bytes}} (self)
+\item 
+str \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_aef97aa5627b959c423b8090a257379e1}{read\+\_\+text}} (self, Optional\mbox{[}str\mbox{]} encoding=None)
+\item 
+"{}Traversable"{} \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a211b977589b9819c264f4fba56b10f6c}{joinpath}} (self, \texorpdfstring{$\ast$}{*}Str\+Path descendants)
+\item 
+"{}Traversable"{} \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a5b8c0411cd2ac693c82927c80eabaa66}{\+\_\+\+\_\+truediv\+\_\+\+\_\+}} (self, Str\+Path child)
+\item 
+str \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_ad1ff51698810cc2199c69db58000b7b1}{name}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_container_ab55ddab70317b1f3a1d34586c81b9254}\label{classimportlib__resources_1_1simple_1_1_resource_container_ab55ddab70317b1f3a1d34586c81b9254} 
+{\bfseries reader} = reader
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Traversable container for a package's resources via its reader.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_container_a2f81d4e44304abe95f9d450e9481f5c3}\index{importlib\_resources.simple.ResourceContainer@{importlib\_resources.simple.ResourceContainer}!is\_dir@{is\_dir}}
+\index{is\_dir@{is\_dir}!importlib\_resources.simple.ResourceContainer@{importlib\_resources.simple.ResourceContainer}}
+\doxysubsubsection{\texorpdfstring{is\_dir()}{is\_dir()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1simple_1_1_resource_container_a2f81d4e44304abe95f9d450e9481f5c3} 
+importlib\+\_\+resources.\+simple.\+Resource\+Container.\+is\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if self is a directory
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a573a887427aa38872fe6cfb37ac21a8d}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_container_a2b676987715796ddd260d8511f5dbe23}\index{importlib\_resources.simple.ResourceContainer@{importlib\_resources.simple.ResourceContainer}!is\_file@{is\_file}}
+\index{is\_file@{is\_file}!importlib\_resources.simple.ResourceContainer@{importlib\_resources.simple.ResourceContainer}}
+\doxysubsubsection{\texorpdfstring{is\_file()}{is\_file()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1simple_1_1_resource_container_a2b676987715796ddd260d8511f5dbe23} 
+importlib\+\_\+resources.\+simple.\+Resource\+Container.\+is\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if self is a file
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a2af85b48385642ac9dad7f081e8f9305}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_container_a3782ef9e1742ef3efe63e3e6d5586f98}\index{importlib\_resources.simple.ResourceContainer@{importlib\_resources.simple.ResourceContainer}!iterdir@{iterdir}}
+\index{iterdir@{iterdir}!importlib\_resources.simple.ResourceContainer@{importlib\_resources.simple.ResourceContainer}}
+\doxysubsubsection{\texorpdfstring{iterdir()}{iterdir()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1simple_1_1_resource_container_a3782ef9e1742ef3efe63e3e6d5586f98} 
+importlib\+\_\+resources.\+simple.\+Resource\+Container.\+iterdir (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield Traversable objects in self
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_ae72f33df22449b563fe82a24ed2be347}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_container_a32f1929c630e388085e057130f55e9f2}\index{importlib\_resources.simple.ResourceContainer@{importlib\_resources.simple.ResourceContainer}!open@{open}}
+\index{open@{open}!importlib\_resources.simple.ResourceContainer@{importlib\_resources.simple.ResourceContainer}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1simple_1_1_resource_container_a32f1929c630e388085e057130f55e9f2} 
+importlib\+\_\+resources.\+simple.\+Resource\+Container.\+open (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{mode}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}mode may be 'r' or 'rb' to open as text or binary. Return a handle
+suitable for reading (same as pathlib.Path.open).
+
+When opening as text, accepts encoding parameters such as those
+accepted by io.TextIOWrapper.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_ae5c6ce8f0e043a137c63a70c3178f6a8}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/importlib\+\_\+resources/simple.\+py\end{DoxyCompactItemize}

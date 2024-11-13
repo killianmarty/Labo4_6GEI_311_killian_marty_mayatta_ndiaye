@@ -1,0 +1,66 @@
+\doxysection{werkzeug.\+routing.\+rules.\+Subdomain Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain}{}\label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain}\index{werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}}
+Inheritance diagram for werkzeug.\+routing.\+rules.\+Subdomain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1routing_1_1rules_1_1_subdomain}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a6fbbe87b7185622618ff3628f168232f}\label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a6fbbe87b7185622618ff3628f168232f} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str subdomain, t.\+Iterable\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{Rule\+Factory}}\mbox{]} rules)
+\item 
+t.\+Iterator\mbox{[}"{}Rule"{}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a063efbdd7e48f665f3a43c1208a43d1c}{get\+\_\+rules}} (self, "{}Map"{} map)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{werkzeug.\+routing.\+rules.\+Rule\+Factory}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_adbc032f8a5f7cbdb7f5f34ef34580a1b}\label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_adbc032f8a5f7cbdb7f5f34ef34580a1b} 
+{\bfseries subdomain} = subdomain
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_afdf8cffa71aa572984060025b014a852}\label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_afdf8cffa71aa572984060025b014a852} 
+{\bfseries rules} = rules
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}All URLs provided by this factory have the subdomain set to a
+specific domain. For example if you want to use the subdomain for
+the current language this can be a good setup::
+
+    url_map = Map([
+        Rule('/', endpoint='#select_language'),
+        Subdomain('<string(length=2):lang_code>', [
+            Rule('/', endpoint='index'),
+            Rule('/about', endpoint='about'),
+            Rule('/help', endpoint='help')
+        ])
+    ])
+
+All the rules except for the ``'#select_language'`` endpoint will now
+listen on a two letter long subdomain that holds the language code
+for the current request.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a063efbdd7e48f665f3a43c1208a43d1c}\index{werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}!get\_rules@{get\_rules}}
+\index{get\_rules@{get\_rules}!werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}}
+\doxysubsubsection{\texorpdfstring{get\_rules()}{get\_rules()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a063efbdd7e48f665f3a43c1208a43d1c} 
+ t.\+Iterator\mbox{[}"{}Rule"{}\mbox{]} werkzeug.\+routing.\+rules.\+Subdomain.\+get\+\_\+rules (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Map"{}}]{map}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subclasses of `RuleFactory` have to override this method and return
+an iterable of rules.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory_ae8ae0efbbb17f08d3fbbb4384b06a549}{werkzeug.\+routing.\+rules.\+Rule\+Factory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/routing/rules.\+py\end{DoxyCompactItemize}

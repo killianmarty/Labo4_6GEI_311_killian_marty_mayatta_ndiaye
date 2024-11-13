@@ -1,0 +1,59 @@
+\doxysection{pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+Base\+Heuristic Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic}{}\label{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic}\index{pip.\_vendor.cachecontrol.heuristics.BaseHeuristic@{pip.\_vendor.cachecontrol.heuristics.BaseHeuristic}}
+Inheritance diagram for pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+Base\+Heuristic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.794872cm]{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic_a3d0add548780e9be58013ed9b6ab2d5f}{warning}} (self, response)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic_a422f3966d5fdba08040f13bc270d0989}{update\+\_\+headers}} (self, response)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic_a25204b778d359040e976c4140d0af12b}\label{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic_a25204b778d359040e976c4140d0af12b} 
+{\bfseries apply} (self, response)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic_a422f3966d5fdba08040f13bc270d0989}\index{pip.\_vendor.cachecontrol.heuristics.BaseHeuristic@{pip.\_vendor.cachecontrol.heuristics.BaseHeuristic}!update\_headers@{update\_headers}}
+\index{update\_headers@{update\_headers}!pip.\_vendor.cachecontrol.heuristics.BaseHeuristic@{pip.\_vendor.cachecontrol.heuristics.BaseHeuristic}}
+\doxysubsubsection{\texorpdfstring{update\_headers()}{update\_headers()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic_a422f3966d5fdba08040f13bc270d0989} 
+pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+Base\+Heuristic.\+update\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the response headers with any new headers.
+
+NOTE: This SHOULD always include some Warning header to
+      signify that the response was cached by the client, not
+      by way of the provided headers.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_expires_after_ac82d6ae28bacd3a0229cef6c8209a62a}{pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+Expires\+After}}, \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_last_modified_ad9f8e91814a3532559ac92200cabaa1d}{pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+Last\+Modified}}, and \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_one_day_cache_a6214c26cf8b79abc1c48b5beb6fea1c8}{pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+One\+Day\+Cache}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic_a3d0add548780e9be58013ed9b6ab2d5f}\index{pip.\_vendor.cachecontrol.heuristics.BaseHeuristic@{pip.\_vendor.cachecontrol.heuristics.BaseHeuristic}!warning@{warning}}
+\index{warning@{warning}!pip.\_vendor.cachecontrol.heuristics.BaseHeuristic@{pip.\_vendor.cachecontrol.heuristics.BaseHeuristic}}
+\doxysubsubsection{\texorpdfstring{warning()}{warning()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_base_heuristic_a3d0add548780e9be58013ed9b6ab2d5f} 
+pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+Base\+Heuristic.\+warning (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a valid 1xx warning header value describing the cache
+adjustments.
+
+The response is provided too allow warnings like 113
+http://tools.ietf.org/html/rfc7234#section-5.5.4 where we need
+to explicitly say response is over 24 hours old.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_expires_after_a2b3ca46d9167028b66b34f59bca3dd42}{pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+Expires\+After}}, and \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1heuristics_1_1_last_modified_a3d99c8e7ac48287234f884ed2a4f4c37}{pip.\+\_\+vendor.\+cachecontrol.\+heuristics.\+Last\+Modified}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/cachecontrol/heuristics.\+py\end{DoxyCompactItemize}

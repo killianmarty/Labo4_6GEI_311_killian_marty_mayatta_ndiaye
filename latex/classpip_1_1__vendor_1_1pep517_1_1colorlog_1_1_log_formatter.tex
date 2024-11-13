@@ -1,0 +1,88 @@
+\doxysection{pip.\+\_\+vendor.\+pep517.\+colorlog.\+Log\+Formatter Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter}{}\label{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter}\index{pip.\_vendor.pep517.colorlog.LogFormatter@{pip.\_vendor.pep517.colorlog.LogFormatter}}
+Inheritance diagram for pip.\+\_\+vendor.\+pep517.\+colorlog.\+Log\+Formatter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a07267b42816c781f81062c8300fc4b28}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, color=True, datefmt=None)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a292e025ecf061ea1e9eb2d97524bfe87}\label{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a292e025ecf061ea1e9eb2d97524bfe87} 
+{\bfseries format\+Message} (self, record)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a4929d3c77cbd8feee867659bb8810b12}\label{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a4929d3c77cbd8feee867659bb8810b12} 
+int {\bfseries termwidth} = scr.\+getmaxyx()\mbox{[}1\mbox{]}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a3ffe87aa2c3bd0425c509fa0f3572215}\label{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a3ffe87aa2c3bd0425c509fa0f3572215} 
+str {\bfseries termwidth} = \textquotesingle{} \textquotesingle{} \texorpdfstring{$\ast$}{*} (self.\+termwidth -\/ (mlen + len(right\+\_\+text)))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a42c7b97cac99ecb2a8bef26216661a1e}{DEFAULT\+\_\+\+COLORS}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_ae8e2b2a064956edb0baee8385818deec}\label{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_ae8e2b2a064956edb0baee8385818deec} 
+dict {\bfseries \+\_\+colors} = \{\}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a9fc084f191d80eef9726b465eb75c059}\label{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a9fc084f191d80eef9726b465eb75c059} 
+str {\bfseries \+\_\+normal} = str(curses.\+tigetstr("{}sgr0"{}), "{}ascii"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Log formatter with colour support
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a07267b42816c781f81062c8300fc4b28}\index{pip.\_vendor.pep517.colorlog.LogFormatter@{pip.\_vendor.pep517.colorlog.LogFormatter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.pep517.colorlog.LogFormatter@{pip.\_vendor.pep517.colorlog.LogFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a07267b42816c781f81062c8300fc4b28} 
+pip.\+\_\+vendor.\+pep517.\+colorlog.\+Log\+Formatter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{color}{ = {\ttfamily True}, }\item[{}]{datefmt}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    :arg bool color: Enables color support.
+    :arg string fmt: Log message format.
+    It will be applied to the attributes dict of log records. The
+    text between ``%(color)s`` and ``%(end_color)s`` will be colored
+    depending on the level if color support is on.
+    :arg dict colors: color mappings from logging level to terminal color
+    code
+    :arg string datefmt: Datetime format.
+    Used for formatting ``(asctime)`` placeholder in ``prefix_fmt``.
+    .. versionchanged:: 3.2
+    Added ``fmt`` and ``datefmt`` arguments.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a42c7b97cac99ecb2a8bef26216661a1e}\index{pip.\_vendor.pep517.colorlog.LogFormatter@{pip.\_vendor.pep517.colorlog.LogFormatter}!DEFAULT\_COLORS@{DEFAULT\_COLORS}}
+\index{DEFAULT\_COLORS@{DEFAULT\_COLORS}!pip.\_vendor.pep517.colorlog.LogFormatter@{pip.\_vendor.pep517.colorlog.LogFormatter}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_COLORS}{DEFAULT\_COLORS}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pep517_1_1colorlog_1_1_log_formatter_a42c7b97cac99ecb2a8bef26216661a1e} 
+dict pip.\+\_\+vendor.\+pep517.\+colorlog.\+Log\+Formatter.\+DEFAULT\+\_\+\+COLORS\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ logging.INFO:\ 2,\ \ \textcolor{comment}{\#\ Green}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ logging.WARNING:\ 3,\ \ \textcolor{comment}{\#\ Yellow}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ logging.ERROR:\ 1,\ \ \textcolor{comment}{\#\ Red}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ logging.CRITICAL:\ 1,}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/pep517/colorlog.\+py\end{DoxyCompactItemize}

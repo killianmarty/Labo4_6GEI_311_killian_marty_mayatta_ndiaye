@@ -1,0 +1,61 @@
+\doxysection{plot\+\_\+tsp Namespace Reference}
+\hypertarget{namespaceplot__tsp}{}\label{namespaceplot__tsp}\index{plot\_tsp@{plot\_tsp}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__tsp_af32ab63b77a32cab97a2c6fe6427bd19}\label{namespaceplot__tsp_af32ab63b77a32cab97a2c6fe6427bd19} 
+{\bfseries G} = nx.\+random\+\_\+geometric\+\_\+graph(20, radius=0.\+4, seed=3)
+\item 
+\Hypertarget{namespaceplot__tsp_aa536ac365bde9bc764105a0bb97378bd}\label{namespaceplot__tsp_aa536ac365bde9bc764105a0bb97378bd} 
+{\bfseries pos} = nx.\+get\+\_\+node\+\_\+attributes(G, "{}pos"{})
+\item 
+\Hypertarget{namespaceplot__tsp_a85aa8d570e5855bdeb26cd050a65a749}\label{namespaceplot__tsp_a85aa8d570e5855bdeb26cd050a65a749} 
+{\bfseries H} = G.\+copy()
+\item 
+\Hypertarget{namespaceplot__tsp_a70f6e3414d561a8ed85504e14290aa6a}\label{namespaceplot__tsp_a70f6e3414d561a8ed85504e14290aa6a} 
+{\bfseries dist} = math.\+hypot(pos\mbox{[}i\mbox{]}\mbox{[}0\mbox{]} -\/ pos\mbox{[}j\mbox{]}\mbox{[}0\mbox{]}, pos\mbox{[}i\mbox{]}\mbox{[}1\mbox{]} -\/ pos\mbox{[}j\mbox{]}\mbox{[}1\mbox{]})
+\item 
+\Hypertarget{namespaceplot__tsp_abae40dd7708ba4c86d24cdb71654baa9}\label{namespaceplot__tsp_abae40dd7708ba4c86d24cdb71654baa9} 
+{\bfseries i}
+\item 
+\Hypertarget{namespaceplot__tsp_a926ade0d29a011d46010c1f7db8510f1}\label{namespaceplot__tsp_a926ade0d29a011d46010c1f7db8510f1} 
+{\bfseries j}
+\item 
+\Hypertarget{namespaceplot__tsp_ad6fcbe8ca3cabf9f91629a205e5f19fb}\label{namespaceplot__tsp_ad6fcbe8ca3cabf9f91629a205e5f19fb} 
+{\bfseries weight}
+\item 
+\Hypertarget{namespaceplot__tsp_abe3c1671364e9a326cdda204fb14d658}\label{namespaceplot__tsp_abe3c1671364e9a326cdda204fb14d658} 
+{\bfseries cycle} = nx\+\_\+app.\+christofides(G, weight="{}weight"{})
+\item 
+\Hypertarget{namespaceplot__tsp_affa41e506b8ee31ef29d2ce57119629b}\label{namespaceplot__tsp_affa41e506b8ee31ef29d2ce57119629b} 
+{\bfseries edge\+\_\+list} = list(nx.\+utils.\+pairwise(cycle))
+\item 
+\Hypertarget{namespaceplot__tsp_ac86d48106471fd8f06b58029ae8e605c}\label{namespaceplot__tsp_ac86d48106471fd8f06b58029ae8e605c} 
+{\bfseries edge\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__tsp_a33fc31b137dfb07aaa68ea269bd4550f}\label{namespaceplot__tsp_a33fc31b137dfb07aaa68ea269bd4550f} 
+{\bfseries width}
+\item 
+\Hypertarget{namespaceplot__tsp_ad26a509acf57ca38101c9e81ff82ef19}\label{namespaceplot__tsp_ad26a509acf57ca38101c9e81ff82ef19} 
+{\bfseries with\+\_\+labels}
+\item 
+\Hypertarget{namespaceplot__tsp_a9b2ff2cce3f1720cd2ca238ab8e41b1d}\label{namespaceplot__tsp_a9b2ff2cce3f1720cd2ca238ab8e41b1d} 
+{\bfseries edgelist}
+\item 
+\Hypertarget{namespaceplot__tsp_a523dba2be6873d1c9bf719528b7aa4e5}\label{namespaceplot__tsp_a523dba2be6873d1c9bf719528b7aa4e5} 
+{\bfseries node\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}==========================
+Traveling Salesman Problem
+==========================
+
+This is an example of a drawing solution of the traveling salesman problem
+
+The function is used to produce the solution is christofides,
+where given a set of nodes, it calculates the route of the nodes
+that the traveler has to follow in order to minimize the total cost.
+\end{DoxyVerb}
+ 

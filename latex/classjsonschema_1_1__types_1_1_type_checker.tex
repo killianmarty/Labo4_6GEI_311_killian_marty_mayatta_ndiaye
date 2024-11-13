@@ -1,0 +1,124 @@
+\doxysection{jsonschema.\+\_\+types.\+Type\+Checker Class Reference}
+\hypertarget{classjsonschema_1_1__types_1_1_type_checker}{}\label{classjsonschema_1_1__types_1_1_type_checker}\index{jsonschema.\_types.TypeChecker@{jsonschema.\_types.TypeChecker}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1__types_1_1_type_checker_a0978ade137df368f9e7e7f29729a085f}\label{classjsonschema_1_1__types_1_1_type_checker_a0978ade137df368f9e7e7f29729a085f} 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+bool \mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker_a6b25627e08f817ab0ae7b3d36529fec6}{is\+\_\+type}} (self, instance, str type)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker}{Type\+Checker}} \mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker_a382b601054cf66a1d42ad60fadcddf90}{redefine}} (self, str type, fn)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker}{Type\+Checker}} \mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker_a9a5626d6344d1ecd07283359e08a4bc1}{redefine\+\_\+many}} (self, definitions=())
+\item 
+\mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker}{Type\+Checker}} \mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker_a85ffc231ca473ca49cae0aefbb078736}{remove}} (self, \texorpdfstring{$\ast$}{*}types)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1__types_1_1_type_checker_a5cdcb88c1f90f95441f4aad0e88682f3}\label{classjsonschema_1_1__types_1_1_type_checker_a5cdcb88c1f90f95441f4aad0e88682f3} 
+Hash\+Trie\+Map {\bfseries \+\_\+type\+\_\+checkers} = field(default=Hash\+Trie\+Map(), converter=\+\_\+typed\+\_\+map\+\_\+converter)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A :kw:`type` property checker.
+
+A `TypeChecker` performs type checking for a `Validator`, converting
+between the defined JSON Schema types and some associated Python types or
+objects.
+
+Modifying the behavior just mentioned by redefining which Python objects
+are considered to be of which JSON Schema types can be done using
+`TypeChecker.redefine` or `TypeChecker.redefine_many`, and types can be
+removed via `TypeChecker.remove`. Each of these return a new `TypeChecker`.
+
+Arguments:
+
+    type_checkers:
+
+        The initial mapping of types to their checking functions.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjsonschema_1_1__types_1_1_type_checker_a6b25627e08f817ab0ae7b3d36529fec6}\index{jsonschema.\_types.TypeChecker@{jsonschema.\_types.TypeChecker}!is\_type@{is\_type}}
+\index{is\_type@{is\_type}!jsonschema.\_types.TypeChecker@{jsonschema.\_types.TypeChecker}}
+\doxysubsubsection{\texorpdfstring{is\_type()}{is\_type()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1__types_1_1_type_checker_a6b25627e08f817ab0ae7b3d36529fec6} 
+ bool jsonschema.\+\_\+types.\+Type\+Checker.\+is\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{instance}{, }\item[{str}]{type}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the instance is of the appropriate type.
+
+Arguments:
+
+    instance:
+
+        The instance to check
+
+    type:
+
+        The name of the type that is expected.
+
+Raises:
+
+    `jsonschema.exceptions.UndefinedTypeCheck`:
+
+        if ``type`` is unknown to this object.\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1__types_1_1_type_checker_a382b601054cf66a1d42ad60fadcddf90}\index{jsonschema.\_types.TypeChecker@{jsonschema.\_types.TypeChecker}!redefine@{redefine}}
+\index{redefine@{redefine}!jsonschema.\_types.TypeChecker@{jsonschema.\_types.TypeChecker}}
+\doxysubsubsection{\texorpdfstring{redefine()}{redefine()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1__types_1_1_type_checker_a382b601054cf66a1d42ad60fadcddf90} 
+ \mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker}{Type\+Checker}} jsonschema.\+\_\+types.\+Type\+Checker.\+redefine (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{type}{, }\item[{}]{fn}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Produce a new checker with the given type redefined.
+
+Arguments:
+
+    type:
+
+        The name of the type to check.
+
+    fn (collections.abc.Callable):
+
+        A callable taking exactly two parameters - the type
+        checker calling the function and the instance to check.
+        The function should return true if instance is of this
+        type and false otherwise.\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1__types_1_1_type_checker_a9a5626d6344d1ecd07283359e08a4bc1}\index{jsonschema.\_types.TypeChecker@{jsonschema.\_types.TypeChecker}!redefine\_many@{redefine\_many}}
+\index{redefine\_many@{redefine\_many}!jsonschema.\_types.TypeChecker@{jsonschema.\_types.TypeChecker}}
+\doxysubsubsection{\texorpdfstring{redefine\_many()}{redefine\_many()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1__types_1_1_type_checker_a9a5626d6344d1ecd07283359e08a4bc1} 
+ \mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker}{Type\+Checker}} jsonschema.\+\_\+types.\+Type\+Checker.\+redefine\+\_\+many (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{definitions}{ = {\ttfamily ()}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Produce a new checker with the given types redefined.
+
+Arguments:
+
+    definitions (dict):
+
+        A dictionary mapping types to their checking functions.\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1__types_1_1_type_checker_a85ffc231ca473ca49cae0aefbb078736}\index{jsonschema.\_types.TypeChecker@{jsonschema.\_types.TypeChecker}!remove@{remove}}
+\index{remove@{remove}!jsonschema.\_types.TypeChecker@{jsonschema.\_types.TypeChecker}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1__types_1_1_type_checker_a85ffc231ca473ca49cae0aefbb078736} 
+ \mbox{\hyperlink{classjsonschema_1_1__types_1_1_type_checker}{Type\+Checker}} jsonschema.\+\_\+types.\+Type\+Checker.\+remove (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{types}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Produce a new checker with the given types forgotten.
+
+Arguments:
+
+    types:
+
+        the names of the types to remove.
+
+Raises:
+
+    `jsonschema.exceptions.UndefinedTypeCheck`:
+
+        if any given type is unknown to this object\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/jsonschema/\+\_\+types.\+py\end{DoxyCompactItemize}

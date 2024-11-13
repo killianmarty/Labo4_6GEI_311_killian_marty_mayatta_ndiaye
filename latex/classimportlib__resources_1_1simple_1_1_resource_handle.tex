@@ -1,0 +1,113 @@
+\doxysection{importlib\+\_\+resources.\+simple.\+Resource\+Handle Class Reference}
+\hypertarget{classimportlib__resources_1_1simple_1_1_resource_handle}{}\label{classimportlib__resources_1_1simple_1_1_resource_handle}\index{importlib\_resources.simple.ResourceHandle@{importlib\_resources.simple.ResourceHandle}}
+Inheritance diagram for importlib\+\_\+resources.\+simple.\+Resource\+Handle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classimportlib__resources_1_1simple_1_1_resource_handle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_handle_a6ed5a933aaa6a4fd871199bacb8bf18c}\label{classimportlib__resources_1_1simple_1_1_resource_handle_a6ed5a933aaa6a4fd871199bacb8bf18c} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \mbox{\hyperlink{classimportlib__resources_1_1simple_1_1_resource_container}{Resource\+Container}} parent, str name)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1simple_1_1_resource_handle_a2e231d89de1cf05f45a54debf08b3ac8}{is\+\_\+file}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1simple_1_1_resource_handle_a6e478ea1faec74d764c523f0c8c7388c}{is\+\_\+dir}} (self)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1simple_1_1_resource_handle_a763234ab0c622e87adff843132808be2}{open}} (self, mode=\textquotesingle{}r\textquotesingle{}, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classimportlib__resources_1_1simple_1_1_resource_handle_aa44e9b9cef43f02496b478ae28ffb512}{joinpath}} (self, name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable}{importlib\+\_\+resources.\+abc.\+Traversable}}}
+\begin{DoxyCompactItemize}
+\item 
+Iterator\mbox{[}"{}Traversable"{}\mbox{]} \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_ae72f33df22449b563fe82a24ed2be347}{iterdir}} (self)
+\item 
+bytes \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a8dad96761afb634dc5260594651d54f0}{read\+\_\+bytes}} (self)
+\item 
+str \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_aef97aa5627b959c423b8090a257379e1}{read\+\_\+text}} (self, Optional\mbox{[}str\mbox{]} encoding=None)
+\item 
+"{}Traversable"{} \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a5b8c0411cd2ac693c82927c80eabaa66}{\+\_\+\+\_\+truediv\+\_\+\+\_\+}} (self, Str\+Path child)
+\item 
+str \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_ad1ff51698810cc2199c69db58000b7b1}{name}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_handle_af71b1660ded3335231fb4c4fa5294c93}\label{classimportlib__resources_1_1simple_1_1_resource_handle_af71b1660ded3335231fb4c4fa5294c93} 
+{\bfseries parent} = parent
+\item 
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_handle_a8ebc276d0fc5c3a7c65949cfa972529e}\label{classimportlib__resources_1_1simple_1_1_resource_handle_a8ebc276d0fc5c3a7c65949cfa972529e} 
+{\bfseries name} = name
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Handle to a named resource in a ResourceReader.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_handle_a6e478ea1faec74d764c523f0c8c7388c}\index{importlib\_resources.simple.ResourceHandle@{importlib\_resources.simple.ResourceHandle}!is\_dir@{is\_dir}}
+\index{is\_dir@{is\_dir}!importlib\_resources.simple.ResourceHandle@{importlib\_resources.simple.ResourceHandle}}
+\doxysubsubsection{\texorpdfstring{is\_dir()}{is\_dir()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1simple_1_1_resource_handle_a6e478ea1faec74d764c523f0c8c7388c} 
+importlib\+\_\+resources.\+simple.\+Resource\+Handle.\+is\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if self is a directory
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a573a887427aa38872fe6cfb37ac21a8d}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_handle_a2e231d89de1cf05f45a54debf08b3ac8}\index{importlib\_resources.simple.ResourceHandle@{importlib\_resources.simple.ResourceHandle}!is\_file@{is\_file}}
+\index{is\_file@{is\_file}!importlib\_resources.simple.ResourceHandle@{importlib\_resources.simple.ResourceHandle}}
+\doxysubsubsection{\texorpdfstring{is\_file()}{is\_file()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1simple_1_1_resource_handle_a2e231d89de1cf05f45a54debf08b3ac8} 
+importlib\+\_\+resources.\+simple.\+Resource\+Handle.\+is\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if self is a file
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a2af85b48385642ac9dad7f081e8f9305}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_handle_aa44e9b9cef43f02496b478ae28ffb512}\index{importlib\_resources.simple.ResourceHandle@{importlib\_resources.simple.ResourceHandle}!joinpath@{joinpath}}
+\index{joinpath@{joinpath}!importlib\_resources.simple.ResourceHandle@{importlib\_resources.simple.ResourceHandle}}
+\doxysubsubsection{\texorpdfstring{joinpath()}{joinpath()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1simple_1_1_resource_handle_aa44e9b9cef43f02496b478ae28ffb512} 
+importlib\+\_\+resources.\+simple.\+Resource\+Handle.\+joinpath (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{descendants}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return Traversable resolved with any descendants applied.
+
+Each descendant should be a path segment relative to self
+and each may contain multiple levels separated by
+``posixpath.sep`` (``/``).
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_a211b977589b9819c264f4fba56b10f6c}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+\Hypertarget{classimportlib__resources_1_1simple_1_1_resource_handle_a763234ab0c622e87adff843132808be2}\index{importlib\_resources.simple.ResourceHandle@{importlib\_resources.simple.ResourceHandle}!open@{open}}
+\index{open@{open}!importlib\_resources.simple.ResourceHandle@{importlib\_resources.simple.ResourceHandle}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{classimportlib__resources_1_1simple_1_1_resource_handle_a763234ab0c622e87adff843132808be2} 
+importlib\+\_\+resources.\+simple.\+Resource\+Handle.\+open (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mode}{ = {\ttfamily \textquotesingle{}r\textquotesingle{}}, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}mode may be 'r' or 'rb' to open as text or binary. Return a handle
+suitable for reading (same as pathlib.Path.open).
+
+When opening as text, accepts encoding parameters such as those
+accepted by io.TextIOWrapper.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classimportlib__resources_1_1abc_1_1_traversable_ae5c6ce8f0e043a137c63a70c3178f6a8}{importlib\+\_\+resources.\+abc.\+Traversable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/importlib\+\_\+resources/simple.\+py\end{DoxyCompactItemize}

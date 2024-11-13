@@ -1,0 +1,60 @@
+\doxysection{werkzeug.\+routing.\+rules.\+Endpoint\+Prefix Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix}{}\label{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix}\index{werkzeug.routing.rules.EndpointPrefix@{werkzeug.routing.rules.EndpointPrefix}}
+Inheritance diagram for werkzeug.\+routing.\+rules.\+Endpoint\+Prefix\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix_a8fb3a005a6bc6bf52126235dc4083e23}\label{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix_a8fb3a005a6bc6bf52126235dc4083e23} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str prefix, t.\+Iterable\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{Rule\+Factory}}\mbox{]} rules)
+\item 
+t.\+Iterator\mbox{[}"{}Rule"{}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix_a5abf2dc214ede03f523c328945d35f04}{get\+\_\+rules}} (self, "{}Map"{} map)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{werkzeug.\+routing.\+rules.\+Rule\+Factory}}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix_a9e2525f36731d4e2d6f3992f980f585a}\label{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix_a9e2525f36731d4e2d6f3992f980f585a} 
+{\bfseries prefix} = prefix
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix_ae9825b184e26dba940ac2074d8f1d6bb}\label{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix_ae9825b184e26dba940ac2074d8f1d6bb} 
+{\bfseries rules} = rules
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Prefixes all endpoints (which must be strings for this factory) with
+another string. This can be useful for sub applications::
+
+    url_map = Map([
+        Rule('/', endpoint='index'),
+        EndpointPrefix('blog/', [Submount('/blog', [
+            Rule('/', endpoint='index'),
+            Rule('/entry/<entry_slug>', endpoint='show')
+        ])])
+    ])
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix_a5abf2dc214ede03f523c328945d35f04}\index{werkzeug.routing.rules.EndpointPrefix@{werkzeug.routing.rules.EndpointPrefix}!get\_rules@{get\_rules}}
+\index{get\_rules@{get\_rules}!werkzeug.routing.rules.EndpointPrefix@{werkzeug.routing.rules.EndpointPrefix}}
+\doxysubsubsection{\texorpdfstring{get\_rules()}{get\_rules()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix_a5abf2dc214ede03f523c328945d35f04} 
+ t.\+Iterator\mbox{[}"{}Rule"{}\mbox{]} werkzeug.\+routing.\+rules.\+Endpoint\+Prefix.\+get\+\_\+rules (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Map"{}}]{map}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subclasses of `RuleFactory` have to override this method and return
+an iterable of rules.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory_ae8ae0efbbb17f08d3fbbb4384b06a549}{werkzeug.\+routing.\+rules.\+Rule\+Factory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/routing/rules.\+py\end{DoxyCompactItemize}

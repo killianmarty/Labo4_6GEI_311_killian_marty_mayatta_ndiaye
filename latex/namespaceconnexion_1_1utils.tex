@@ -1,0 +1,184 @@
+\doxysection{connexion.\+utils Namespace Reference}
+\hypertarget{namespaceconnexion_1_1utils}{}\label{namespaceconnexion_1_1utils}\index{connexion.utils@{connexion.utils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1utils_a5f1f9a5114d08f7d268d95e0efbd3cbd}{boolean}} (s)
+\item 
+\Hypertarget{namespaceconnexion_1_1utils_a8d811127f659fdfb40247d661607d973}\label{namespaceconnexion_1_1utils_a8d811127f659fdfb40247d661607d973} 
+{\bfseries make\+\_\+type} (value, \+\_\+type)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1utils_a97b375b25d4e44ba1db3759f34f1f739}{deep\+\_\+merge}} (a, b)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1utils_ab3df98882e5916cc88f387d98a7219b6}{deep\+\_\+getattr}} (obj, attr)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1utils_a8141ddc02674c7873794d92b0897e319}{deep\+\_\+get}} (obj, keys)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1utils_a2a138d2c37f5555557648df253df0df7}{get\+\_\+function\+\_\+from\+\_\+name}} (function\+\_\+name)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1utils_aae8ae8936cb4fe9d7eaeb93ae0199270}{is\+\_\+json\+\_\+mimetype}} (mimetype)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1utils_accc87542ac28e0aca5beb245c386b1f5}{all\+\_\+json}} (mimetypes)
+\item 
+\Hypertarget{namespaceconnexion_1_1utils_ad1359b1066374b2cf5a8ce8db756b9f0}\label{namespaceconnexion_1_1utils_ad1359b1066374b2cf5a8ce8db756b9f0} 
+{\bfseries is\+\_\+nullable} (param\+\_\+def)
+\item 
+\Hypertarget{namespaceconnexion_1_1utils_aeb49ea34d5920adca497b8c88d94b9d6}\label{namespaceconnexion_1_1utils_aeb49ea34d5920adca497b8c88d94b9d6} 
+{\bfseries is\+\_\+null} (value)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1utils_a750d985658e2a51fcdfbd10ee34563ad}{has\+\_\+coroutine}} (function, api=None)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1utils_a7d64b111368f3312cc6c6bce87b5b26f}{yamldumper}} (openapi)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1utils_a5a107a4071c849be9fa1835c9e232af9}{not\+\_\+installed\+\_\+error}} (exc)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespaceconnexion_1_1utils_a7afa4db363fceed1466ac4de5d1ccffc}{TYPE\+\_\+\+MAP}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module provides general utility functions used within Connexion.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceconnexion_1_1utils_accc87542ac28e0aca5beb245c386b1f5}\index{connexion.utils@{connexion.utils}!all\_json@{all\_json}}
+\index{all\_json@{all\_json}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{all\_json()}{all\_json()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_accc87542ac28e0aca5beb245c386b1f5} 
+connexion.\+utils.\+all\+\_\+json (\begin{DoxyParamCaption}\item[{}]{mimetypes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns True if all mimetypes are serialized with json
+
+:type mimetypes: list
+:rtype: bool
+
+>>> all_json(['application/json'])
+True
+>>> all_json(['application/x.custom+json'])
+True
+>>> all_json([])
+True
+>>> all_json(['application/xml'])
+False
+>>> all_json(['text/json'])
+False
+>>> all_json(['application/json', 'other/type'])
+False
+>>> all_json(['application/json', 'application/x.custom+json'])
+True
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1utils_a5f1f9a5114d08f7d268d95e0efbd3cbd}\index{connexion.utils@{connexion.utils}!boolean@{boolean}}
+\index{boolean@{boolean}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{boolean()}{boolean()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_a5f1f9a5114d08f7d268d95e0efbd3cbd} 
+connexion.\+utils.\+boolean (\begin{DoxyParamCaption}\item[{}]{s}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert JSON/Swagger boolean value to Python, raise ValueError otherwise
+
+>>> boolean('true')
+True
+
+>>> boolean('false')
+False
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1utils_a8141ddc02674c7873794d92b0897e319}\index{connexion.utils@{connexion.utils}!deep\_get@{deep\_get}}
+\index{deep\_get@{deep\_get}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{deep\_get()}{deep\_get()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_a8141ddc02674c7873794d92b0897e319} 
+connexion.\+utils.\+deep\+\_\+get (\begin{DoxyParamCaption}\item[{}]{obj}{, }\item[{}]{keys}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Recurses through a nested object get a leaf value.
+
+There are cases where the use of inheritance or polymorphism-- the use of allOf or
+oneOf keywords-- will cause the obj to be a list. In this case the keys will
+contain one or more strings containing integers.
+
+:type obj: list or dict
+:type keys: list of strings
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1utils_ab3df98882e5916cc88f387d98a7219b6}\index{connexion.utils@{connexion.utils}!deep\_getattr@{deep\_getattr}}
+\index{deep\_getattr@{deep\_getattr}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{deep\_getattr()}{deep\_getattr()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_ab3df98882e5916cc88f387d98a7219b6} 
+connexion.\+utils.\+deep\+\_\+getattr (\begin{DoxyParamCaption}\item[{}]{obj}{, }\item[{}]{attr}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Recurses through an attribute chain to get the ultimate value.
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1utils_a97b375b25d4e44ba1db3759f34f1f739}\index{connexion.utils@{connexion.utils}!deep\_merge@{deep\_merge}}
+\index{deep\_merge@{deep\_merge}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{deep\_merge()}{deep\_merge()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_a97b375b25d4e44ba1db3759f34f1f739} 
+connexion.\+utils.\+deep\+\_\+merge (\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} merges b into a
+    in case of conflict the value from b is used
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1utils_a2a138d2c37f5555557648df253df0df7}\index{connexion.utils@{connexion.utils}!get\_function\_from\_name@{get\_function\_from\_name}}
+\index{get\_function\_from\_name@{get\_function\_from\_name}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{get\_function\_from\_name()}{get\_function\_from\_name()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_a2a138d2c37f5555557648df253df0df7} 
+connexion.\+utils.\+get\+\_\+function\+\_\+from\+\_\+name (\begin{DoxyParamCaption}\item[{}]{function\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tries to get function by fully qualified name (e.g. "mymodule.myobj.myfunc")
+
+:type function_name: str
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1utils_a750d985658e2a51fcdfbd10ee34563ad}\index{connexion.utils@{connexion.utils}!has\_coroutine@{has\_coroutine}}
+\index{has\_coroutine@{has\_coroutine}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{has\_coroutine()}{has\_coroutine()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_a750d985658e2a51fcdfbd10ee34563ad} 
+connexion.\+utils.\+has\+\_\+coroutine (\begin{DoxyParamCaption}\item[{}]{function}{, }\item[{}]{api}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if function is a coroutine.
+If ``function`` is a decorator (has a ``__wrapped__`` attribute)
+this function will also look at the wrapped function.
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1utils_aae8ae8936cb4fe9d7eaeb93ae0199270}\index{connexion.utils@{connexion.utils}!is\_json\_mimetype@{is\_json\_mimetype}}
+\index{is\_json\_mimetype@{is\_json\_mimetype}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{is\_json\_mimetype()}{is\_json\_mimetype()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_aae8ae8936cb4fe9d7eaeb93ae0199270} 
+connexion.\+utils.\+is\+\_\+json\+\_\+mimetype (\begin{DoxyParamCaption}\item[{}]{mimetype}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type mimetype: str
+:rtype: bool
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1utils_a5a107a4071c849be9fa1835c9e232af9}\index{connexion.utils@{connexion.utils}!not\_installed\_error@{not\_installed\_error}}
+\index{not\_installed\_error@{not\_installed\_error}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{not\_installed\_error()}{not\_installed\_error()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_a5a107a4071c849be9fa1835c9e232af9} 
+connexion.\+utils.\+not\+\_\+installed\+\_\+error (\begin{DoxyParamCaption}\item[{}]{exc}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Raises the ImportError when the module/object is actually called.\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1utils_a7d64b111368f3312cc6c6bce87b5b26f}\index{connexion.utils@{connexion.utils}!yamldumper@{yamldumper}}
+\index{yamldumper@{yamldumper}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{yamldumper()}{yamldumper()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_a7d64b111368f3312cc6c6bce87b5b26f} 
+connexion.\+utils.\+yamldumper (\begin{DoxyParamCaption}\item[{}]{openapi}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a nicely-formatted yaml spec.
+:param openapi: a spec dictionary.
+:return: a nicely-formatted, serialized yaml spec.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceconnexion_1_1utils_a7afa4db363fceed1466ac4de5d1ccffc}\index{connexion.utils@{connexion.utils}!TYPE\_MAP@{TYPE\_MAP}}
+\index{TYPE\_MAP@{TYPE\_MAP}!connexion.utils@{connexion.utils}}
+\doxysubsubsection{\texorpdfstring{TYPE\_MAP}{TYPE\_MAP}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1utils_a7afa4db363fceed1466ac4de5d1ccffc} 
+dict connexion.\+utils.\+TYPE\+\_\+\+MAP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{\textcolor{stringliteral}{'integer'}:\ int,}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'number'}:\ float,}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'string'}:\ str,}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'boolean'}:\ boolean,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'array'}:\ list,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'object'}:\ dict\}}
+
+\end{DoxyCode}

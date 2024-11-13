@@ -1,0 +1,42 @@
+\doxysection{werkzeug.\+middleware Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1middleware}{}\label{namespacewerkzeug_1_1middleware}\index{werkzeug.middleware@{werkzeug.middleware}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1dispatcher}{dispatcher}}
+\item 
+namespace \mbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1http__proxy}{http\+\_\+proxy}}
+\item 
+namespace \mbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1lint}{lint}}
+\item 
+namespace \mbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1profiler}{profiler}}
+\item 
+namespace \mbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1proxy__fix}{proxy\+\_\+fix}}
+\item 
+namespace \mbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1shared__data}{shared\+\_\+data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Middleware
+==========
+
+A WSGI middleware is a WSGI application that wraps another application
+in order to observe or change its behavior. Werkzeug provides some
+middleware for common use cases.
+
+.. toctree::
+    :maxdepth: 1
+
+    proxy_fix
+    shared_data
+    dispatcher
+    http_proxy
+    lint
+    profiler
+
+The :doc:`interactive debugger </debug>` is also a middleware that can
+be applied manually, although it is typically used automatically with
+the :doc:`development server </serving>`.
+\end{DoxyVerb}
+ 

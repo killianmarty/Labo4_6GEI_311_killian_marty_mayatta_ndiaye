@@ -1,0 +1,135 @@
+\doxysection{plot\+\_\+chess\+\_\+masters Namespace Reference}
+\hypertarget{namespaceplot__chess__masters}{}\label{namespaceplot__chess__masters}\index{plot\_chess\_masters@{plot\_chess\_masters}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplot__chess__masters_aa59305056c19555c2bd8333b709b6fba}{chess\+\_\+pgn\+\_\+graph}} (pgn\+\_\+file="{}chess\+\_\+masters\+\_\+\+WCC.\+pgn.\+bz2"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a9287d248c8e59ae224ed8a0082e731a0}\label{namespaceplot__chess__masters_a9287d248c8e59ae224ed8a0082e731a0} 
+list {\bfseries game\+\_\+details} = \mbox{[}"{}Event"{}, "{}Date"{}, "{}Result"{}, "{}ECO"{}, "{}Site"{}\mbox{]}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a6eabfb0c608eaeb1f95108336922a52a}\label{namespaceplot__chess__masters_a6eabfb0c608eaeb1f95108336922a52a} 
+{\bfseries G} = \mbox{\hyperlink{namespaceplot__chess__masters_aa59305056c19555c2bd8333b709b6fba}{chess\+\_\+pgn\+\_\+graph}}()
+\item 
+\Hypertarget{namespaceplot__chess__masters_a16c9af2bf9ed9402fde48296fae883fb}\label{namespaceplot__chess__masters_a16c9af2bf9ed9402fde48296fae883fb} 
+{\bfseries H} = G.\+to\+\_\+undirected()
+\item 
+\Hypertarget{namespaceplot__chess__masters_ac327a138e4e34d9434361b8615bcdc4f}\label{namespaceplot__chess__masters_ac327a138e4e34d9434361b8615bcdc4f} 
+list {\bfseries Gcc} = \mbox{[}H.\+subgraph(c) for c in nx.\+connected\+\_\+components(H)\mbox{]}
+\item 
+\Hypertarget{namespaceplot__chess__masters_afdc5c6591e099c5e2c55c745acc4d4fb}\label{namespaceplot__chess__masters_afdc5c6591e099c5e2c55c745acc4d4fb} 
+dict {\bfseries openings} = \{game\+\_\+info\mbox{[}"{}ECO"{}\mbox{]} for (white, black, game\+\_\+info) in G.\+edges(data=True)\}
+\item 
+\Hypertarget{namespaceplot__chess__masters_ad6cde5a774f2a591a5970fcd99f49ab6}\label{namespaceplot__chess__masters_ad6cde5a774f2a591a5970fcd99f49ab6} 
+{\bfseries data}
+\item 
+\Hypertarget{namespaceplot__chess__masters_adde45ffed167027c16d70a6888abd6bc}\label{namespaceplot__chess__masters_adde45ffed167027c16d70a6888abd6bc} 
+str {\bfseries summary} = f"{}\{white\} vs \{black\}\textbackslash{}n"{}
+\item 
+\Hypertarget{namespaceplot__chess__masters_aef2c1dfc1fe858c3e7e578036486456f}\label{namespaceplot__chess__masters_aef2c1dfc1fe858c3e7e578036486456f} 
+list {\bfseries edgewidth} = \mbox{[}len(G.\+get\+\_\+edge\+\_\+data(u, v)) for u, v in H.\+edges()\mbox{]}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a4c9ca045e04e73e15da3754775756955}\label{namespaceplot__chess__masters_a4c9ca045e04e73e15da3754775756955} 
+{\bfseries wins} = dict.\+fromkeys(G.\+nodes(), 0.\+0)
+\item 
+\Hypertarget{namespaceplot__chess__masters_a8bc7d9d15156d622689d213a4149f9ac}\label{namespaceplot__chess__masters_a8bc7d9d15156d622689d213a4149f9ac} 
+{\bfseries r} = d\mbox{[}"{}Result"{}\mbox{]}.split("{}-\/"{})
+\item 
+\Hypertarget{namespaceplot__chess__masters_a3b9092438b8cd205f548cac6625fd565}\label{namespaceplot__chess__masters_a3b9092438b8cd205f548cac6625fd565} 
+list {\bfseries nodesize} = \mbox{[}wins\mbox{[}v\mbox{]} \texorpdfstring{$\ast$}{*} 50 for v in H\mbox{]}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a08dc9cb2082d741991740c2fe4e665ff}\label{namespaceplot__chess__masters_a08dc9cb2082d741991740c2fe4e665ff} 
+{\bfseries pos} = nx.\+kamada\+\_\+kawai\+\_\+layout(H)
+\item 
+\Hypertarget{namespaceplot__chess__masters_aa6c7b1e2ae5e6827dbf62e58190bfde5}\label{namespaceplot__chess__masters_aa6c7b1e2ae5e6827dbf62e58190bfde5} 
+{\bfseries fig}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a14ad4300f09a3eb782afc048a5fc7650}\label{namespaceplot__chess__masters_a14ad4300f09a3eb782afc048a5fc7650} 
+{\bfseries ax}
+\item 
+\Hypertarget{namespaceplot__chess__masters_abd5f8d5e98ec1a3f442159a97b5ea16f}\label{namespaceplot__chess__masters_abd5f8d5e98ec1a3f442159a97b5ea16f} 
+{\bfseries figsize}
+\item 
+\Hypertarget{namespaceplot__chess__masters_abd323dff0f26170ff399fc17e0ec8470}\label{namespaceplot__chess__masters_abd323dff0f26170ff399fc17e0ec8470} 
+{\bfseries alpha}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a09778d2d525c078f702a79cfb18e3cc5}\label{namespaceplot__chess__masters_a09778d2d525c078f702a79cfb18e3cc5} 
+{\bfseries width}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a30aac82fb35eeaca452b1a39d5c250dd}\label{namespaceplot__chess__masters_a30aac82fb35eeaca452b1a39d5c250dd} 
+{\bfseries edge\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a76c7509572b6618091e9240725c74194}\label{namespaceplot__chess__masters_a76c7509572b6618091e9240725c74194} 
+{\bfseries node\+\_\+size}
+\item 
+\Hypertarget{namespaceplot__chess__masters_aae032c5ad84a74292862a4071ce7a86a}\label{namespaceplot__chess__masters_aae032c5ad84a74292862a4071ce7a86a} 
+{\bfseries node\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a6ea1063568e660a23cc26f46464d70a5}\label{namespaceplot__chess__masters_a6ea1063568e660a23cc26f46464d70a5} 
+dict {\bfseries label\+\_\+options} = \{"{}ec"{}\+: "{}k"{}, "{}fc"{}\+: "{}white"{}, "{}alpha"{}\+: 0.\+7\}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a2a864018b024c476b67eacaf887b6145}\label{namespaceplot__chess__masters_a2a864018b024c476b67eacaf887b6145} 
+{\bfseries font\+\_\+size}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a734bc1049d83031c90e87bbd811cfb2d}\label{namespaceplot__chess__masters_a734bc1049d83031c90e87bbd811cfb2d} 
+{\bfseries bbox}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a05dec1ec15ea027045fc28a7477b0d55}\label{namespaceplot__chess__masters_a05dec1ec15ea027045fc28a7477b0d55} 
+dict {\bfseries font} = \{"{}fontname"{}\+: "{}Helvetica"{}, "{}color"{}\+: "{}k"{}, "{}fontweight"{}\+: "{}bold"{}, "{}fontsize"{}\+: 14\}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a8852f68f96e472fccc7e571c4a3c5e40}\label{namespaceplot__chess__masters_a8852f68f96e472fccc7e571c4a3c5e40} 
+{\bfseries horizontalalignment}
+\item 
+\Hypertarget{namespaceplot__chess__masters_abf17e843ddf30122963d57ffc9160066}\label{namespaceplot__chess__masters_abf17e843ddf30122963d57ffc9160066} 
+{\bfseries transform}
+\item 
+\Hypertarget{namespaceplot__chess__masters_a5d139ff0a14cb0c6fdadc0b4cbf88bed}\label{namespaceplot__chess__masters_a5d139ff0a14cb0c6fdadc0b4cbf88bed} 
+{\bfseries fontdict}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}=============
+Chess Masters
+=============
+
+An example of the MultiDiGraph class.
+
+The function `chess_pgn_graph` reads a collection of chess matches stored in
+the specified PGN file (PGN ="Portable Game Notation").  Here the (compressed)
+default file::
+
+    chess_masters_WCC.pgn.bz2
+
+contains all 685 World Chess Championship matches from 1886--1985.
+(data from http://chessproblem.my-free-games.com/chess/games/Download-PGN.php)
+
+The `chess_pgn_graph()` function returns a `MultiDiGraph` with multiple edges.
+Each node is the last name of a chess master. Each edge is directed from white
+to black and contains selected game info.
+
+The key statement in `chess_pgn_graph` below is::
+
+    G.add_edge(white, black, game_info)
+
+where `game_info` is a `dict` describing each game.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceplot__chess__masters_aa59305056c19555c2bd8333b709b6fba}\index{plot\_chess\_masters@{plot\_chess\_masters}!chess\_pgn\_graph@{chess\_pgn\_graph}}
+\index{chess\_pgn\_graph@{chess\_pgn\_graph}!plot\_chess\_masters@{plot\_chess\_masters}}
+\doxysubsubsection{\texorpdfstring{chess\_pgn\_graph()}{chess\_pgn\_graph()}}
+{\footnotesize\ttfamily \label{namespaceplot__chess__masters_aa59305056c19555c2bd8333b709b6fba} 
+plot\+\_\+chess\+\_\+masters.\+chess\+\_\+pgn\+\_\+graph (\begin{DoxyParamCaption}\item[{}]{pgn\+\_\+file}{ = {\ttfamily "{}chess\+\_\+masters\+\_\+WCC.pgn.bz2"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read chess games in pgn format in pgn_file.
+
+Filenames ending in .bz2 will be uncompressed.
+
+Return the MultiDiGraph of players connected by a chess game.
+Edges contain game data in a dict.\end{DoxyVerb}
+ 

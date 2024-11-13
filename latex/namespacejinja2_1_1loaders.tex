@@ -1,0 +1,47 @@
+\doxysection{jinja2.\+loaders Namespace Reference}
+\hypertarget{namespacejinja2_1_1loaders}{}\label{namespacejinja2_1_1loaders}\index{jinja2.loaders@{jinja2.loaders}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1loaders_1_1___template_module}{\+\_\+\+Template\+Module}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader}{Base\+Loader}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1loaders_1_1_choice_loader}{Choice\+Loader}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1loaders_1_1_dict_loader}{Dict\+Loader}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1loaders_1_1_file_system_loader}{File\+System\+Loader}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1loaders_1_1_function_loader}{Function\+Loader}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1loaders_1_1_module_loader}{Module\+Loader}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1loaders_1_1_package_loader}{Package\+Loader}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1loaders_1_1_prefix_loader}{Prefix\+Loader}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+List\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacejinja2_1_1loaders_a18b430f0013bc6b197ba4e574e8583cb}{split\+\_\+template\+\_\+path}} (str template)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}API and implementations for loading templates from different data
+sources.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacejinja2_1_1loaders_a18b430f0013bc6b197ba4e574e8583cb}\index{jinja2.loaders@{jinja2.loaders}!split\_template\_path@{split\_template\_path}}
+\index{split\_template\_path@{split\_template\_path}!jinja2.loaders@{jinja2.loaders}}
+\doxysubsubsection{\texorpdfstring{split\_template\_path()}{split\_template\_path()}}
+{\footnotesize\ttfamily \label{namespacejinja2_1_1loaders_a18b430f0013bc6b197ba4e574e8583cb} 
+ t.\+List\mbox{[}str\mbox{]} jinja2.\+loaders.\+split\+\_\+template\+\_\+path (\begin{DoxyParamCaption}\item[{str}]{template}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split a path into segments and perform a sanity check.  If it detects
+'..' in the path it will raise a `TemplateNotFound` error.
+\end{DoxyVerb}
+ 

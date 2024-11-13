@@ -1,0 +1,400 @@
+\doxysection{Référence de la classe connexion.\+apis.\+abstract.\+Abstract\+API}
+\hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i}{}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+Graphe d\textquotesingle{}héritage de connexion.\+apis.\+abstract.\+Abstract\+API\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ac9dd4e461c654ce68fdee02d9715ff79}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, specification, base\+\_\+path=None, arguments=None, validate\+\_\+responses=False, strict\+\_\+validation=False, resolver=None, auth\+\_\+all\+\_\+paths=False, debug=False, resolver\+\_\+error\+\_\+handler=None, validator\+\_\+map=None, pythonic\+\_\+params=False, pass\+\_\+context\+\_\+arg\+\_\+name=None, options=None)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a258cdf7c3e11a194090657297156fec2}{add\+\_\+openapi\+\_\+json}} (self)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a138922d79faa699a0da60430a5efca5f}{add\+\_\+swagger\+\_\+ui}} (self)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a3f1b75074f0873cbcd0dc2a4375c22f3}{add\+\_\+auth\+\_\+on\+\_\+not\+\_\+found}} (self, security, security\+\_\+definitions)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ac826606acb5155852b738646e8ffee13}{add\+\_\+operation}} (self, path, method)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a5e61a663636673f2b84dad9222d4e0ca}{add\+\_\+paths}} (self, paths=None)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a6eb1b1f7dfe2e6a9f02f17bbe9fb5ee1}{get\+\_\+request}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a392c228018a5449a054c8fc8ff8d59e0}{get\+\_\+response}} (self, response, mimetype=None, request=None)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_af2b5d2069e54926f25b695b3eb1bcff0}{get\+\_\+connexion\+\_\+response}} (cls, response, mimetype=None)
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_adc69501ffb64fb0f68323264686affe3}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_adc69501ffb64fb0f68323264686affe3} 
+{\bfseries json\+\_\+loads} (self, data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_meta}{connexion.\+apis.\+abstract.\+Abstract\+APIMeta}}}
+\doxysubsubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ae5c1cc8108177dd7e2ee3b24c37c1e2a}{make\+\_\+security\+\_\+handler\+\_\+factory}} (pass\+\_\+context\+\_\+arg\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ad44ead0c79328ebbbe767fd213d2206a}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ad44ead0c79328ebbbe767fd213d2206a} 
+{\bfseries debug} = debug
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_af9f34f16d54604c1ecb6aa118c1e78bb}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_af9f34f16d54604c1ecb6aa118c1e78bb} 
+{\bfseries validator\+\_\+map} = validator\+\_\+map
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ad07af9807b9856d0097fc7ade809ae47}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ad07af9807b9856d0097fc7ade809ae47} 
+{\bfseries resolver\+\_\+error\+\_\+handler} = resolver\+\_\+error\+\_\+handler
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aaec6588fed7f74dae7155f0f14d40d7b}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aaec6588fed7f74dae7155f0f14d40d7b} 
+{\bfseries specification} = Specification.\+load(specification, arguments=arguments)
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ac81379ba98f4342b55957a93f2a78acc}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ac81379ba98f4342b55957a93f2a78acc} 
+{\bfseries options} = \mbox{\hyperlink{classconnexion_1_1options_1_1_connexion_options}{Connexion\+Options}}(options, oas\+\_\+version=self.\+specification.\+version)
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a7adf4c5ee6aa4a6abfb9b9491118f86d}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a7adf4c5ee6aa4a6abfb9b9491118f86d} 
+{\bfseries resolver} = resolver or \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver}{Resolver}}()
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a0721cbe6f2dcfdb7d3746a3e2dbfcdaa}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a0721cbe6f2dcfdb7d3746a3e2dbfcdaa} 
+{\bfseries validate\+\_\+responses} = validate\+\_\+responses
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_abf31009e0e8eb9e9702b8d4504b390f6}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_abf31009e0e8eb9e9702b8d4504b390f6} 
+{\bfseries strict\+\_\+validation} = strict\+\_\+validation
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a33210d72107cab2039b2aa80567a7bf6}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a33210d72107cab2039b2aa80567a7bf6} 
+{\bfseries pythonic\+\_\+params} = pythonic\+\_\+params
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a9629d4c8b677319c5f5c7acee9f95251}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a9629d4c8b677319c5f5c7acee9f95251} 
+{\bfseries pass\+\_\+context\+\_\+arg\+\_\+name} = pass\+\_\+context\+\_\+arg\+\_\+name
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aa478886499ed9712319352df6477438e}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aa478886499ed9712319352df6477438e} 
+{\bfseries security\+\_\+handler\+\_\+factory} = self.\+make\+\_\+security\+\_\+handler\+\_\+factory(pass\+\_\+context\+\_\+arg\+\_\+name)
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a06712c098768d7399ff411330f9f796c}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a06712c098768d7399ff411330f9f796c} 
+{\bfseries base\+\_\+path} = base\+\_\+path
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aafa1eb4a2ea86b890ba64913e85593fe}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aafa1eb4a2ea86b890ba64913e85593fe} 
+{\bfseries jsonifier} = \mbox{\hyperlink{classconnexion_1_1jsonifier_1_1_jsonifier}{Jsonifier}}()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a16ec1607e3b67f235a4988b86687202b}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a16ec1607e3b67f235a4988b86687202b} 
+{\bfseries \+\_\+set\+\_\+base\+\_\+path} (self, base\+\_\+path=None)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a7761ddbf8bab233db54046d134b0a2a1}{\+\_\+add\+\_\+operation\+\_\+internal}} (self, method, path, operation)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a3f3bc0a2ab403d22a726242c6c728665}{\+\_\+add\+\_\+resolver\+\_\+error\+\_\+handler}} (self, method, path, err)
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aded7fb5a2d5572996d345c580a2ead42}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aded7fb5a2d5572996d345c580a2ead42} 
+{\bfseries \+\_\+handle\+\_\+add\+\_\+operation\+\_\+error} (self, path, method, exc\+\_\+info)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a93d0a9f73ed7bb86ab8ea689d9a3ef4a}{\+\_\+get\+\_\+response}} (cls, response, mimetype=None, extra\+\_\+context=None)
+\item 
+t.\+Any \mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ad1eb46355294388929ed2bfc221f335e}{\+\_\+response\+\_\+from\+\_\+handler}} (cls, t.\+Union\mbox{[}t.\+Any, str, t.\+Tuple\mbox{[}str\mbox{]}, t.\+Tuple\mbox{[}str, int\mbox{]}, t.\+Tuple\mbox{[}str, int, dict\mbox{]}\mbox{]} response, str mimetype, t.\+Optional\mbox{[}dict\mbox{]} extra\+\_\+context=None)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a9f1e50d6fbf4a1e18769fb36ab2d395f}{\+\_\+is\+\_\+framework\+\_\+response}} (cls, response)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a41c287213a29beac44e6d5f4093bb59a}{\+\_\+framework\+\_\+to\+\_\+connexion\+\_\+response}} (cls, response, mimetype)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aeb0da54ba243359d754643ef76b14d76}{\+\_\+connexion\+\_\+to\+\_\+framework\+\_\+response}} (cls, response, mimetype, extra\+\_\+context=None)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a32f60ea9a55043c10c201b59f3a7902b}{\+\_\+build\+\_\+response}} (cls, data, mimetype, content\+\_\+type=None, status\+\_\+code=None, headers=None, extra\+\_\+context=None)
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a340fe95a36bff83ba6273de170cf3064}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a340fe95a36bff83ba6273de170cf3064} 
+{\bfseries \+\_\+prepare\+\_\+body\+\_\+and\+\_\+status\+\_\+code} (cls, data, mimetype, status\+\_\+code=None, extra\+\_\+context=None)
+\item 
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a69a0e3e8a8492ca8fd9d137ee439e4dc}\label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a69a0e3e8a8492ca8fd9d137ee439e4dc} 
+{\bfseries \+\_\+serialize\+\_\+data} (cls, data, mimetype)
+\item 
+\mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a3ceb3507772cbdd4183346d72ab1b25f}{\+\_\+set\+\_\+jsonifier}} (cls)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Defines an abstract interface for a Swagger API
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ac9dd4e461c654ce68fdee02d9715ff79}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ac9dd4e461c654ce68fdee02d9715ff79} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{specification}{, }\item[{}]{base\+\_\+path}{ = {\ttfamily None}, }\item[{}]{arguments}{ = {\ttfamily None}, }\item[{}]{validate\+\_\+responses}{ = {\ttfamily False}, }\item[{}]{strict\+\_\+validation}{ = {\ttfamily False}, }\item[{}]{resolver}{ = {\ttfamily None}, }\item[{}]{auth\+\_\+all\+\_\+paths}{ = {\ttfamily False}, }\item[{}]{debug}{ = {\ttfamily False}, }\item[{}]{resolver\+\_\+error\+\_\+handler}{ = {\ttfamily None}, }\item[{}]{validator\+\_\+map}{ = {\ttfamily None}, }\item[{}]{pythonic\+\_\+params}{ = {\ttfamily False}, }\item[{}]{pass\+\_\+context\+\_\+arg\+\_\+name}{ = {\ttfamily None}, }\item[{}]{options}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type specification: pathlib.Path | dict
+:type base_path: str | None
+:type arguments: dict | None
+:type validate_responses: bool
+:type strict_validation: bool
+:type auth_all_paths: bool
+:type debug: bool
+:param validator_map: Custom validators for the types "parameter", "body" and "response".
+:type validator_map: dict
+:param resolver: Callable that maps operationID to a function
+:param resolver_error_handler: If given, a callable that generates an
+    Operation used for handling ResolveErrors
+:type resolver_error_handler: callable | None
+:param pythonic_params: When True CamelCase parameters are converted to snake_case and an underscore is appended
+    to any shadowed built-ins
+:type pythonic_params: bool
+:param options: New style options dictionary.
+:type options: dict | None
+:param pass_context_arg_name: If not None URL request handling functions with an argument matching this name
+    will be passed the framework's request context.
+:type pass_context_arg_name: str | None
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_meta}{connexion.\+apis.\+abstract.\+Abstract\+APIMeta}}.
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_a06ce1508d247e60bae4d723d9504c9b8}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a7761ddbf8bab233db54046d134b0a2a1}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!\_add\_operation\_internal@{\_add\_operation\_internal}}
+\index{\_add\_operation\_internal@{\_add\_operation\_internal}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{\_add\_operation\_internal()}{\_add\_operation\_internal()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a7761ddbf8bab233db54046d134b0a2a1} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+\_\+add\+\_\+operation\+\_\+internal (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{method}{, }\item[{}]{path}{, }\item[{}]{operation}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Adds the operation according to the user framework in use.
+It will be used to register the operation on the user framework router.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_a65ac1934bdb74170a8804e81fbc8e700}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_a702fc784fb4228a5c446912bbf6e6bb1}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a3f3bc0a2ab403d22a726242c6c728665}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!\_add\_resolver\_error\_handler@{\_add\_resolver\_error\_handler}}
+\index{\_add\_resolver\_error\_handler@{\_add\_resolver\_error\_handler}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{\_add\_resolver\_error\_handler()}{\_add\_resolver\_error\_handler()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a3f3bc0a2ab403d22a726242c6c728665} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+\_\+add\+\_\+resolver\+\_\+error\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{method}{, }\item[{}]{path}{, }\item[{}]{err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Adds a handler for ResolverError for the given method and path.
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a32f60ea9a55043c10c201b59f3a7902b}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!\_build\_response@{\_build\_response}}
+\index{\_build\_response@{\_build\_response}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{\_build\_response()}{\_build\_response()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a32f60ea9a55043c10c201b59f3a7902b} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+\_\+build\+\_\+response (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{data}{, }\item[{}]{mimetype}{, }\item[{}]{content\+\_\+type}{ = {\ttfamily None}, }\item[{}]{status\+\_\+code}{ = {\ttfamily None}, }\item[{}]{headers}{ = {\ttfamily None}, }\item[{}]{extra\+\_\+context}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create a framework response from the provided arguments.
+:param data: Body data.
+:param content_type: The response mimetype.
+:type content_type: str
+:param content_type: The response status code.
+:type status_code: int
+:param headers: The response status code.
+:type headers: Union[Iterable[Tuple[str, str]], Dict[str, str]]
+:param extra_context: dict of extra details, like url, to include in logs
+:type extra_context: Union[None, dict]
+:return A framework response.
+:rtype Response
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_a4fe4fba76498af36244c91c1a516aee1}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_a3242a19b3047298c1077c9a92995537b}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aeb0da54ba243359d754643ef76b14d76}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!\_connexion\_to\_framework\_response@{\_connexion\_to\_framework\_response}}
+\index{\_connexion\_to\_framework\_response@{\_connexion\_to\_framework\_response}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{\_connexion\_to\_framework\_response()}{\_connexion\_to\_framework\_response()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_aeb0da54ba243359d754643ef76b14d76} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+\_\+connexion\+\_\+to\+\_\+framework\+\_\+response (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{response}{, }\item[{}]{mimetype}{, }\item[{}]{extra\+\_\+context}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} Cast ConnexionResponse to framework response class \end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_a8ab79ca114d9968aac28542daee982da}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_a47b872ac58a3568d0a17fdeb8468818d}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a41c287213a29beac44e6d5f4093bb59a}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!\_framework\_to\_connexion\_response@{\_framework\_to\_connexion\_response}}
+\index{\_framework\_to\_connexion\_response@{\_framework\_to\_connexion\_response}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{\_framework\_to\_connexion\_response()}{\_framework\_to\_connexion\_response()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a41c287213a29beac44e6d5f4093bb59a} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+\_\+framework\+\_\+to\+\_\+connexion\+\_\+response (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{response}{, }\item[{}]{mimetype}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} Cast framework response class to ConnexionResponse used for schema validation \end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_a75d65927d26d2edb39e1c877c8b86ed7}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_a34cf8b571bfa22dc0dedbc0b77294d42}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a93d0a9f73ed7bb86ab8ea689d9a3ef4a}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!\_get\_response@{\_get\_response}}
+\index{\_get\_response@{\_get\_response}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{\_get\_response()}{\_get\_response()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a93d0a9f73ed7bb86ab8ea689d9a3ef4a} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+\_\+get\+\_\+response (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{response}{, }\item[{}]{mimetype}{ = {\ttfamily None}, }\item[{}]{extra\+\_\+context}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This method converts a handler response to a framework response.
+The response can be a ConnexionResponse, an operation handler, a framework response or a tuple.
+Other type than ConnexionResponse are handled by `cls._response_from_handler`
+:param response: A response to cast (tuple, framework response, etc).
+:param mimetype: The response mimetype.
+:type mimetype: Union[None, str]
+:param extra_context: dict of extra details, like url, to include in logs
+:type extra_context: Union[None, dict]
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a9f1e50d6fbf4a1e18769fb36ab2d395f}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!\_is\_framework\_response@{\_is\_framework\_response}}
+\index{\_is\_framework\_response@{\_is\_framework\_response}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{\_is\_framework\_response()}{\_is\_framework\_response()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a9f1e50d6fbf4a1e18769fb36ab2d395f} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+\_\+is\+\_\+framework\+\_\+response (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb} Return True if `response` is a framework response class \end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_a42ba06745ac95fd9f91290e19ed73352}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_a33abb5a6d94d47bd93a8e4edeb76cf20}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ad1eb46355294388929ed2bfc221f335e}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!\_response\_from\_handler@{\_response\_from\_handler}}
+\index{\_response\_from\_handler@{\_response\_from\_handler}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{\_response\_from\_handler()}{\_response\_from\_handler()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ad1eb46355294388929ed2bfc221f335e} 
+ t.\+Any connexion.\+apis.\+abstract.\+Abstract\+API.\+\_\+response\+\_\+from\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{t.\+Union\mbox{[}t.\+Any, str, t.\+Tuple\mbox{[}str\mbox{]}, t.\+Tuple\mbox{[}str, int\mbox{]}, t.\+Tuple\mbox{[}str, int, dict\mbox{]}\mbox{]}}]{response}{, }\item[{str}]{mimetype}{, }\item[{t.\+Optional\mbox{[}dict\mbox{]} }]{extra\+\_\+context}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create a framework response from the operation handler data.
+An operation handler can return:
+- a framework response
+- a body (str / binary / dict / list), a response will be created
+with a status code 200 by default and empty headers.
+- a tuple of (body: str, status_code: int)
+- a tuple of (body: str, status_code: int, headers: dict)
+
+:param response: A response from an operation handler.
+:param mimetype: The response mimetype.
+:param extra_context: dict of extra details, like url, to include in logs
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a3ceb3507772cbdd4183346d72ab1b25f}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!\_set\_jsonifier@{\_set\_jsonifier}}
+\index{\_set\_jsonifier@{\_set\_jsonifier}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{\_set\_jsonifier()}{\_set\_jsonifier()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a3ceb3507772cbdd4183346d72ab1b25f} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+\_\+set\+\_\+jsonifier (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_a155a8101fb3626f66d8cdc3dc609b093}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a3f1b75074f0873cbcd0dc2a4375c22f3}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!add\_auth\_on\_not\_found@{add\_auth\_on\_not\_found}}
+\index{add\_auth\_on\_not\_found@{add\_auth\_on\_not\_found}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{add\_auth\_on\_not\_found()}{add\_auth\_on\_not\_found()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a3f1b75074f0873cbcd0dc2a4375c22f3} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+add\+\_\+auth\+\_\+on\+\_\+not\+\_\+found (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{security}{, }\item[{}]{security\+\_\+definitions}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a 404 error handler to authenticate and only expose the 404 status if the security validation pass.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_a4aea15672bda5faa36c9a5a4dbb22b09}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_a152acf25e44a986bb17c65608d01ec66}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a258cdf7c3e11a194090657297156fec2}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!add\_openapi\_json@{add\_openapi\_json}}
+\index{add\_openapi\_json@{add\_openapi\_json}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{add\_openapi\_json()}{add\_openapi\_json()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a258cdf7c3e11a194090657297156fec2} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+add\+\_\+openapi\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds openapi spec to {base_path}/openapi.json
+     (or {base_path}/swagger.json for swagger2)
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_abd2b7bb034f06644db5a52bddea00428}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_a92acebb3e8a4bef1cd39eeb0dc864580}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ac826606acb5155852b738646e8ffee13}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!add\_operation@{add\_operation}}
+\index{add\_operation@{add\_operation}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{add\_operation()}{add\_operation()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ac826606acb5155852b738646e8ffee13} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+add\+\_\+operation (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{, }\item[{}]{method}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds one operation to the api.
+
+This method uses the OperationID identify the module and function that will handle the operation
+
+From Swagger Specification:
+
+**OperationID**
+
+A friendly name for the operation. The id MUST be unique among all operations described in the API.
+Tools and libraries MAY use the operation id to uniquely identify an operation.
+
+:type method: str
+:type path: str
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a5e61a663636673f2b84dad9222d4e0ca}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!add\_paths@{add\_paths}}
+\index{add\_paths@{add\_paths}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{add\_paths()}{add\_paths()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a5e61a663636673f2b84dad9222d4e0ca} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+add\+\_\+paths (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{paths}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds the paths defined in the specification as endpoints
+
+:type paths: list
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a138922d79faa699a0da60430a5efca5f}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!add\_swagger\_ui@{add\_swagger\_ui}}
+\index{add\_swagger\_ui@{add\_swagger\_ui}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{add\_swagger\_ui()}{add\_swagger\_ui()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a138922d79faa699a0da60430a5efca5f} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+add\+\_\+swagger\+\_\+ui (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds swagger ui to {base_path}/ui/
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_ad35ec79d6eb90acd9a25c15937fbb57f}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_a3f0b1abd1820e983ea3e08b8b4c7db0c}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_af2b5d2069e54926f25b695b3eb1bcff0}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!get\_connexion\_response@{get\_connexion\_response}}
+\index{get\_connexion\_response@{get\_connexion\_response}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{get\_connexion\_response()}{get\_connexion\_response()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_af2b5d2069e54926f25b695b3eb1bcff0} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+get\+\_\+connexion\+\_\+response (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{response}{, }\item[{}]{mimetype}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Cast framework dependent response to ConnexionResponse used for schema validation \end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a6eb1b1f7dfe2e6a9f02f17bbe9fb5ee1}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!get\_request@{get\_request}}
+\index{get\_request@{get\_request}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{get\_request()}{get\_request()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a6eb1b1f7dfe2e6a9f02f17bbe9fb5ee1} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+get\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method converts the user framework request to a ConnexionRequest.
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_a02fe11065cd6812977a067f010c27683}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_aa3df5a7e6e858b8192131b9c260bb6ca}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a392c228018a5449a054c8fc8ff8d59e0}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!get\_response@{get\_response}}
+\index{get\_response@{get\_response}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{get\_response()}{get\_response()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_a392c228018a5449a054c8fc8ff8d59e0} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+get\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{response}{, }\item[{}]{mimetype}{ = {\ttfamily None}, }\item[{}]{request}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method converts a handler response to a framework response.
+This method should just retrieve response from handler then call `cls._get_response`.
+It is mainly here to handle AioHttp async handler.
+:param response: A response to cast (tuple, framework response, etc).
+:param mimetype: The response mimetype.
+:type mimetype: Union[None, str]
+:param request: The request associated with this response (the user framework request).
+\end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_a000b07b4c0864006b7c13f451116f0cf}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_aed95132cbbdf959490b08d41ecfdbc19}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+\Hypertarget{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ae5c1cc8108177dd7e2ee3b24c37c1e2a}\index{connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}!make\_security\_handler\_factory@{make\_security\_handler\_factory}}
+\index{make\_security\_handler\_factory@{make\_security\_handler\_factory}!connexion.apis.abstract.AbstractAPI@{connexion.apis.abstract.AbstractAPI}}
+\doxysubsubsection{\texorpdfstring{make\_security\_handler\_factory()}{make\_security\_handler\_factory()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1apis_1_1abstract_1_1_abstract_a_p_i_ae5c1cc8108177dd7e2ee3b24c37c1e2a} 
+connexion.\+apis.\+abstract.\+Abstract\+API.\+make\+\_\+security\+\_\+handler\+\_\+factory (\begin{DoxyParamCaption}\item[{}]{pass\+\_\+context\+\_\+arg\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb} Create SecurityHandlerFactory to create all security check handlers \end{DoxyVerb}
+ 
+
+Réimplémentée dans \mbox{\hyperlink{classconnexion_1_1apis_1_1aiohttp__api_1_1_aio_http_api_a246be1b2f5918b57af7bbbe28dd5f27b}{connexion.\+apis.\+aiohttp\+\_\+api.\+Aio\+Http\+Api}}, et \mbox{\hyperlink{classconnexion_1_1apis_1_1flask__api_1_1_flask_api_af5d88793daaa2eee1f3b9e41319a7c3f}{connexion.\+apis.\+flask\+\_\+api.\+Flask\+Api}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/apis/abstract.\+py\end{DoxyCompactItemize}

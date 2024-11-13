@@ -1,0 +1,52 @@
+\doxysection{pip.\+\_\+vendor.\+chardet.\+cli.\+chardetect Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1chardet_1_1cli_1_1chardetect}{}\label{namespacepip_1_1__vendor_1_1chardet_1_1cli_1_1chardetect}\index{pip.\_vendor.chardet.cli.chardetect@{pip.\_vendor.chardet.cli.chardetect}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1chardet_1_1cli_1_1chardetect_adf9fc8cd48b6bdee160b7e5f6c6b1eb7}{description\+\_\+of}} (lines, name=\textquotesingle{}stdin\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacepip_1_1__vendor_1_1chardet_1_1cli_1_1chardetect_a44323f3845b7f6bd556c9f79cba669d8}{main}} (argv=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Script which takes one or more file paths and reports on their detected
+encodings
+
+Example::
+
+    % chardetect somefile someotherfile
+    somefile: windows-1252 with confidence 0.5
+    someotherfile: ascii with confidence 1.0
+
+If no paths are provided, it takes its input from stdin.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1chardet_1_1cli_1_1chardetect_adf9fc8cd48b6bdee160b7e5f6c6b1eb7}\index{pip.\_vendor.chardet.cli.chardetect@{pip.\_vendor.chardet.cli.chardetect}!description\_of@{description\_of}}
+\index{description\_of@{description\_of}!pip.\_vendor.chardet.cli.chardetect@{pip.\_vendor.chardet.cli.chardetect}}
+\doxysubsubsection{\texorpdfstring{description\_of()}{description\_of()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1chardet_1_1cli_1_1chardetect_adf9fc8cd48b6bdee160b7e5f6c6b1eb7} 
+pip.\+\_\+vendor.\+chardet.\+cli.\+chardetect.\+description\+\_\+of (\begin{DoxyParamCaption}\item[{}]{lines}{, }\item[{}]{name}{ = {\ttfamily \textquotesingle{}stdin\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string describing the probable encoding of a file or
+list of strings.
+
+:param lines: The lines to get the encoding of.
+:type lines: Iterable of bytes
+:param name: Name of file or collection of lines
+:type name: str
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1chardet_1_1cli_1_1chardetect_a44323f3845b7f6bd556c9f79cba669d8}\index{pip.\_vendor.chardet.cli.chardetect@{pip.\_vendor.chardet.cli.chardetect}!main@{main}}
+\index{main@{main}!pip.\_vendor.chardet.cli.chardetect@{pip.\_vendor.chardet.cli.chardetect}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1chardet_1_1cli_1_1chardetect_a44323f3845b7f6bd556c9f79cba669d8} 
+pip.\+\_\+vendor.\+chardet.\+cli.\+chardetect.\+main (\begin{DoxyParamCaption}\item[{}]{argv}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles command line arguments and gets things started.
+
+:param argv: List of arguments, as if specified on the command-line.
+             If None, ``sys.argv[1:]`` is used instead.
+:type argv: list of str
+\end{DoxyVerb}
+ 

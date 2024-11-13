@@ -1,0 +1,171 @@
+\doxysection{pip.\+\_\+vendor.\+chardet.\+universaldetector.\+Universal\+Detector Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector}{}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector}\index{pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}}
+Inheritance diagram for pip.\+\_\+vendor.\+chardet.\+universaldetector.\+Universal\+Detector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a304ec9631f326945442b54e8c9e91287}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a304ec9631f326945442b54e8c9e91287} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, lang\+\_\+filter=Language\+Filter.\+ALL)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a92dae5df3a97e304684e9dca2293b99d}{reset}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a92b52c49cefb7400dea8250f7867cbb0}{feed}} (self, byte\+\_\+str)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a92870a8c0ea3b0dfd2485ed900838f37}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a47887b914f49879125b39df9d6042413}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a47887b914f49879125b39df9d6042413} 
+dict {\bfseries result} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_ab3879d9f0ac59ade62d386da0bd12abc}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_ab3879d9f0ac59ade62d386da0bd12abc} 
+bool {\bfseries done} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a29caa6ccd4284571e91a8fde58f1da12}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a29caa6ccd4284571e91a8fde58f1da12} 
+{\bfseries lang\+\_\+filter} = lang\+\_\+filter
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_adf2fad75beb55d70a1c6f7cac452dda3}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_adf2fad75beb55d70a1c6f7cac452dda3} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+dict \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_afeca9e8f91459cbce18006bbe8ec75ab}{\+\_\+has\+\_\+win\+\_\+bytes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_ab3fdbb1b58714f4121dc29f1a7a88617}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_ab3fdbb1b58714f4121dc29f1a7a88617} 
+float {\bfseries MINIMUM\+\_\+\+THRESHOLD} = 0.\+20
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_accded4e9f8a1d0af00274890c04e7d4c}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_accded4e9f8a1d0af00274890c04e7d4c} 
+{\bfseries HIGH\+\_\+\+BYTE\+\_\+\+DETECTOR} = re.\+compile(b\textquotesingle{}\mbox{[}\textbackslash{}x80-\/\textbackslash{}x\+FF\mbox{]}\textquotesingle{})
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a28cc5560720b6bf07a7b12f70ac3b0bd}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a28cc5560720b6bf07a7b12f70ac3b0bd} 
+{\bfseries ESC\+\_\+\+DETECTOR} = re.\+compile(b\textquotesingle{}(\textbackslash{}033\texorpdfstring{$\vert$}{|}\texorpdfstring{$\sim$}{\string~}\{)\textquotesingle{})
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a9d29b5cb44a592afb68f4d7f71449318}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a9d29b5cb44a592afb68f4d7f71449318} 
+{\bfseries WIN\+\_\+\+BYTE\+\_\+\+DETECTOR} = re.\+compile(b\textquotesingle{}\mbox{[}\textbackslash{}x80-\/\textbackslash{}x9F\mbox{]}\textquotesingle{})
+\item 
+dict \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a54a86b89c5b0e04e9f7a6487d21db464}{ISO\+\_\+\+WIN\+\_\+\+MAP}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a97f7b6e976c77c40389d60e596e39a16}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a97f7b6e976c77c40389d60e596e39a16} 
+{\bfseries \+\_\+esc\+\_\+charset\+\_\+prober} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_abab46f3d5fe7b7449b9885181efb13c4}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_abab46f3d5fe7b7449b9885181efb13c4} 
+list {\bfseries \+\_\+charset\+\_\+probers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a8ad2b94f1dc3d84a86c57ba1e49db95f}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a8ad2b94f1dc3d84a86c57ba1e49db95f} 
+bool {\bfseries \+\_\+got\+\_\+data} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_af8590fb64ef69031e737ca81f4cf6262}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_af8590fb64ef69031e737ca81f4cf6262} 
+{\bfseries \+\_\+input\+\_\+state} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a6451fad0cad7209ce2d5c78b3d339f8a}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a6451fad0cad7209ce2d5c78b3d339f8a} 
+str {\bfseries \+\_\+last\+\_\+char} = None
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a62df852eccb03ea758a0fb0dc5e34059}\label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a62df852eccb03ea758a0fb0dc5e34059} 
+bool {\bfseries \+\_\+has\+\_\+win\+\_\+bytes} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The ``UniversalDetector`` class underlies the ``chardet.detect`` function
+and coordinates all of the different charset probers.
+
+To get a ``dict`` containing an encoding and its confidence, you can simply
+run:
+
+.. code::
+
+        u = UniversalDetector()
+        u.feed(some_bytes)
+        u.close()
+        detected = u.result\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a92870a8c0ea3b0dfd2485ed900838f37}\index{pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}!close@{close}}
+\index{close@{close}!pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a92870a8c0ea3b0dfd2485ed900838f37} 
+pip.\+\_\+vendor.\+chardet.\+universaldetector.\+Universal\+Detector.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stop analyzing the current document and come up with a final
+prediction.
+
+:returns:  The ``result`` attribute, a ``dict`` with the keys
+           `encoding`, `confidence`, and `language`.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a92b52c49cefb7400dea8250f7867cbb0}\index{pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}!feed@{feed}}
+\index{feed@{feed}!pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a92b52c49cefb7400dea8250f7867cbb0} 
+pip.\+\_\+vendor.\+chardet.\+universaldetector.\+Universal\+Detector.\+feed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{byte\+\_\+str}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes a chunk of a document and feeds it through all of the relevant
+charset probers.
+
+After calling ``feed``, you can check the value of the ``done``
+attribute to see if you need to continue feeding the
+``UniversalDetector`` more data, or if it has made a prediction
+(in the ``result`` attribute).
+
+.. note::
+   You should always call ``close`` when you're done feeding in your
+   document if ``done`` is not already ``True``.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a92dae5df3a97e304684e9dca2293b99d}\index{pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}!reset@{reset}}
+\index{reset@{reset}!pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a92dae5df3a97e304684e9dca2293b99d} 
+pip.\+\_\+vendor.\+chardet.\+universaldetector.\+Universal\+Detector.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset the UniversalDetector and all of its probers back to their
+initial states.  This is called by ``__init__``, so you only need to
+call this directly in between analyses of different documents.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_afeca9e8f91459cbce18006bbe8ec75ab}\index{pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}!\_has\_win\_bytes@{\_has\_win\_bytes}}
+\index{\_has\_win\_bytes@{\_has\_win\_bytes}!pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}}
+\doxysubsubsection{\texorpdfstring{\_has\_win\_bytes}{\_has\_win\_bytes}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_afeca9e8f91459cbce18006bbe8ec75ab} 
+dict pip.\+\_\+vendor.\+chardet.\+universaldetector.\+Universal\+Detector.\+\_\+has\+\_\+win\+\_\+bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ self.ISO\_WIN\_MAP.get(lower\_charset\_name,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ charset\_name)}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a54a86b89c5b0e04e9f7a6487d21db464}\index{pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}!ISO\_WIN\_MAP@{ISO\_WIN\_MAP}}
+\index{ISO\_WIN\_MAP@{ISO\_WIN\_MAP}!pip.\_vendor.chardet.universaldetector.UniversalDetector@{pip.\_vendor.chardet.universaldetector.UniversalDetector}}
+\doxysubsubsection{\texorpdfstring{ISO\_WIN\_MAP}{ISO\_WIN\_MAP}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1universaldetector_1_1_universal_detector_a54a86b89c5b0e04e9f7a6487d21db464} 
+dict pip.\+\_\+vendor.\+chardet.\+universaldetector.\+Universal\+Detector.\+ISO\+\_\+\+WIN\+\_\+\+MAP\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{\textcolor{stringliteral}{'iso-\/8859-\/1'}:\ \textcolor{stringliteral}{'Windows-\/1252'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'iso-\/8859-\/2'}:\ \textcolor{stringliteral}{'Windows-\/1250'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'iso-\/8859-\/5'}:\ \textcolor{stringliteral}{'Windows-\/1251'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'iso-\/8859-\/6'}:\ \textcolor{stringliteral}{'Windows-\/1256'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'iso-\/8859-\/7'}:\ \textcolor{stringliteral}{'Windows-\/1253'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'iso-\/8859-\/8'}:\ \textcolor{stringliteral}{'Windows-\/1255'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'iso-\/8859-\/9'}:\ \textcolor{stringliteral}{'Windows-\/1254'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'iso-\/8859-\/13'}:\ \textcolor{stringliteral}{'Windows-\/1257'}\}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/chardet/universaldetector.\+py\end{DoxyCompactItemize}

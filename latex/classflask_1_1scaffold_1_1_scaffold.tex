@@ -1,0 +1,662 @@
+\doxysection{flask.\+scaffold.\+Scaffold Class Reference}
+\hypertarget{classflask_1_1scaffold_1_1_scaffold}{}\label{classflask_1_1scaffold_1_1_scaffold}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+Inheritance diagram for flask.\+scaffold.\+Scaffold\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1scaffold_1_1_scaffold}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a1850b62c9dd39a4f1716574931ebefdb}\label{classflask_1_1scaffold_1_1_scaffold_a1850b62c9dd39a4f1716574931ebefdb} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str import\+\_\+name, t.\+Optional\mbox{[}t.\+Union\mbox{[}str, os.\+Path\+Like\mbox{]}\mbox{]} static\+\_\+folder=None, t.\+Optional\mbox{[}str\mbox{]} static\+\_\+url\+\_\+path=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}str, os.\+Path\+Like\mbox{]}\mbox{]} template\+\_\+folder=None, t.\+Optional\mbox{[}str\mbox{]} root\+\_\+path=None)
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a925e99bebc15c98e26436d314fec3cb2}\label{classflask_1_1scaffold_1_1_scaffold_a925e99bebc15c98e26436d314fec3cb2} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a79873609b1be287661951bc9c262d436}{static\+\_\+folder}} (self)
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a6291f76f9c7302e1d2d0b18dcacecfd3}\label{classflask_1_1scaffold_1_1_scaffold_a6291f76f9c7302e1d2d0b18dcacecfd3} 
+None {\bfseries static\+\_\+folder} (self, t.\+Optional\mbox{[}t.\+Union\mbox{[}str, os.\+Path\+Like\mbox{]}\mbox{]} value)
+\item 
+bool \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_aa7e2489f0912522c3fa65d976262ae35}{has\+\_\+static\+\_\+folder}} (self)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_af751e9b26d64b985441180e17ca624d8}{static\+\_\+url\+\_\+path}} (self)
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_aca7308252e85160ff855ccb70cdcc125}\label{classflask_1_1scaffold_1_1_scaffold_aca7308252e85160ff855ccb70cdcc125} 
+None {\bfseries static\+\_\+url\+\_\+path} (self, t.\+Optional\mbox{[}str\mbox{]} value)
+\item 
+t.\+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a352dfa37c45dfdc77ca0ddea73d6010a}{get\+\_\+send\+\_\+file\+\_\+max\+\_\+age}} (self, t.\+Optional\mbox{[}str\mbox{]} filename)
+\item 
+"{}Response"{} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a368e7e9e6d1e1ab70f979d69c24dfb92}{send\+\_\+static\+\_\+file}} (self, str filename)
+\item 
+t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1loaders_1_1_file_system_loader}{File\+System\+Loader}}\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_ad0e05bc4fc21d0f68daff072d41f1a16}{jinja\+\_\+loader}} (self)
+\item 
+t.\+IO\mbox{[}t.\+Any\+Str\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a6ebbe9991d57c0752cf6c2137aa0db71}{open\+\_\+resource}} (self, str resource, str mode="{}rb"{})
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_afd3e079b0ef1ebce155d8d38072002d7}{get}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a14f80c21143d414c5fd30d0e5d18a899}{post}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a312117262a4bf15e0eb63714937b7414}{put}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a3756ea5a9f39a5c0d787b0d46b4eec5c}{delete}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a1ef3c7a0ec0e014861dd94cb2e0e873c}{patch}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_ad6415b60d8ad443d7c6e9aafff002567}{route}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+None \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a7172518b453c5e4579ebcc68105f07f7}{add\+\_\+url\+\_\+rule}} (self, str rule, t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a30387c9d4f0786e4c6316bd3ffdc619e}{endpoint}}=None, t.\+Optional\mbox{[}ft.\+Route\+Callable\mbox{]} view\+\_\+func=None, t.\+Optional\mbox{[}bool\mbox{]} provide\+\_\+automatic\+\_\+options=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\mbox{[}\mbox{[}F\mbox{]}, F\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a30387c9d4f0786e4c6316bd3ffdc619e}{endpoint}} (self, str endpoint)
+\item 
+T\+\_\+before\+\_\+request \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_adb501752405a30a6c16baa132699f729}{before\+\_\+request}} (self, T\+\_\+before\+\_\+request f)
+\item 
+T\+\_\+after\+\_\+request \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a0a7ed4ae1b5894d3ea5f35e7ddf6f4ae}{after\+\_\+request}} (self, T\+\_\+after\+\_\+request f)
+\item 
+T\+\_\+teardown \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_ad7f1392a1f8f117de2248e5370e741a2}{teardown\+\_\+request}} (self, T\+\_\+teardown f)
+\item 
+T\+\_\+template\+\_\+context\+\_\+processor \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a932ad7d2ab5d382061485e02126c64b1}{context\+\_\+processor}} (self, T\+\_\+template\+\_\+context\+\_\+processor f)
+\item 
+T\+\_\+url\+\_\+value\+\_\+preprocessor \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_aa8df17c765d1198b7fc02d84219ea0fd}{url\+\_\+value\+\_\+preprocessor}} (self, T\+\_\+url\+\_\+value\+\_\+preprocessor f)
+\item 
+T\+\_\+url\+\_\+defaults \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a63ec817e43cfe55da82de7c0f96c09a9}{url\+\_\+defaults}} (self, T\+\_\+url\+\_\+defaults f)
+\item 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+error\+\_\+handler\mbox{]}, T\+\_\+error\+\_\+handler\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_a3b55883f39aa0684b6e1b4fca68c305b}{errorhandler}} (self, t.\+Union\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, int\mbox{]} code\+\_\+or\+\_\+exception)
+\item 
+None \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_ae966e5ca44c47ea45c1ee4fd3dd98ee6}{register\+\_\+error\+\_\+handler}} (self, t.\+Union\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, int\mbox{]} code\+\_\+or\+\_\+exception, ft.\+Error\+Handler\+Callable f)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a532c2b8509f83bbe22023dbcd104e38a}\label{classflask_1_1scaffold_1_1_scaffold_a532c2b8509f83bbe22023dbcd104e38a} 
+{\bfseries import\+\_\+name} = import\+\_\+name
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a6535b625f9d6f438c422284f567e9e29}\label{classflask_1_1scaffold_1_1_scaffold_a6535b625f9d6f438c422284f567e9e29} 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries static\+\_\+folder} = static\+\_\+folder
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a91f3223048ba1ceef97961dd256af4d4}\label{classflask_1_1scaffold_1_1_scaffold_a91f3223048ba1ceef97961dd256af4d4} 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries static\+\_\+url\+\_\+path} = static\+\_\+url\+\_\+path
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a97405f63b930633ef695840c3c78efad}\label{classflask_1_1scaffold_1_1_scaffold_a97405f63b930633ef695840c3c78efad} 
+{\bfseries template\+\_\+folder} = template\+\_\+folder
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_aef5f5e007858d19474e925624c462a8e}\label{classflask_1_1scaffold_1_1_scaffold_aef5f5e007858d19474e925624c462a8e} 
+{\bfseries root\+\_\+path} = root\+\_\+path
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_abdf1a0c586fdae6fba97f0ce5fcf3fe8}\label{classflask_1_1scaffold_1_1_scaffold_abdf1a0c586fdae6fba97f0ce5fcf3fe8} 
+{\bfseries cli} = \mbox{\hyperlink{classflask_1_1cli_1_1_app_group}{App\+Group}}()
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_aee0b693db7b77971d6b7485e8ecd0523}\label{classflask_1_1scaffold_1_1_scaffold_aee0b693db7b77971d6b7485e8ecd0523} 
+dict {\bfseries view\+\_\+functions} = \{\}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a6aaf7167dec2adc906ff9beea8e70ecc}\label{classflask_1_1scaffold_1_1_scaffold_a6aaf7167dec2adc906ff9beea8e70ecc} 
+t.\+Dict\mbox{[} {\bfseries error\+\_\+handler\+\_\+spec}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a88c7c892115bdfda06895fb8e12ae51e}\label{classflask_1_1scaffold_1_1_scaffold_a88c7c892115bdfda06895fb8e12ae51e} 
+t.\+Dict\mbox{[} {\bfseries before\+\_\+request\+\_\+funcs}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a8d50cffa4ff929908d0e61a3be808400}\label{classflask_1_1scaffold_1_1_scaffold_a8d50cffa4ff929908d0e61a3be808400} 
+t.\+Dict\mbox{[} {\bfseries after\+\_\+request\+\_\+funcs}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a5f6d23e1c1cb5272b9b658827ccc41db}\label{classflask_1_1scaffold_1_1_scaffold_a5f6d23e1c1cb5272b9b658827ccc41db} 
+t.\+Dict\mbox{[} {\bfseries teardown\+\_\+request\+\_\+funcs}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a6cacd2abb094be791c9be5b977bf496c}\label{classflask_1_1scaffold_1_1_scaffold_a6cacd2abb094be791c9be5b977bf496c} 
+t.\+Dict\mbox{[} {\bfseries template\+\_\+context\+\_\+processors}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a5b4c5a6476e533cd6a19134b9fa43345}\label{classflask_1_1scaffold_1_1_scaffold_a5b4c5a6476e533cd6a19134b9fa43345} 
+t.\+Dict\mbox{[} {\bfseries url\+\_\+value\+\_\+preprocessors}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a0eae3277c804c363e5892ecb72fd33a6}\label{classflask_1_1scaffold_1_1_scaffold_a0eae3277c804c363e5892ecb72fd33a6} 
+t.\+Dict\mbox{[} {\bfseries url\+\_\+default\+\_\+functions}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a8eb0a01a1b9cd1cf34702f798add0616}\label{classflask_1_1scaffold_1_1_scaffold_a8eb0a01a1b9cd1cf34702f798add0616} 
+{\bfseries has\+\_\+static\+\_\+folder}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_acfd01a1d9341684caab673aa81b068f3}{json\+\_\+encoder}} = None
+\item 
+t \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_acfb3025183cd3d64c1ca77071e480dec}{json\+\_\+decoder}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_addae52f7837012e05e1d5d85243bdc53}\label{classflask_1_1scaffold_1_1_scaffold_addae52f7837012e05e1d5d85243bdc53} 
+None {\bfseries \+\_\+check\+\_\+setup\+\_\+finished} (self, str f\+\_\+name)
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a5d9b9dc0b710a30c7018291617f9dfc1}\label{classflask_1_1scaffold_1_1_scaffold_a5d9b9dc0b710a30c7018291617f9dfc1} 
+t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} {\bfseries \+\_\+method\+\_\+route} (self, str method, str rule, dict options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Tuple\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, t.\+Optional\mbox{[}int\mbox{]}\mbox{]} \mbox{\hyperlink{classflask_1_1scaffold_1_1_scaffold_af41014b18529e4f60c36e0eb7a9d9862}{\+\_\+get\+\_\+exc\+\_\+class\+\_\+and\+\_\+code}} (t.\+Union\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, int\mbox{]} exc\+\_\+class\+\_\+or\+\_\+code)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_aae70747202573df33aafe6c0ff635b0a}\label{classflask_1_1scaffold_1_1_scaffold_aae70747202573df33aafe6c0ff635b0a} 
+t {\bfseries \+\_\+static\+\_\+folder} = None
+\item 
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a7f7f9e058d08f2f8367f29ec7f892844}\label{classflask_1_1scaffold_1_1_scaffold_a7f7f9e058d08f2f8367f29ec7f892844} 
+t {\bfseries \+\_\+static\+\_\+url\+\_\+path} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Common behavior shared between :class:`~flask.Flask` and
+:class:`~flask.blueprints.Blueprint`.
+
+:param import_name: The import name of the module where this object
+    is defined. Usually :attr:`__name__` should be used.
+:param static_folder: Path to a folder of static files to serve.
+    If this is set, a static route will be added.
+:param static_url_path: URL prefix for the static route.
+:param template_folder: Path to a folder containing template files.
+    for rendering. If this is set, a Jinja loader will be added.
+:param root_path: The path that static, template, and resource files
+    are relative to. Typically not set, it is discovered based on
+    the ``import_name``.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_af41014b18529e4f60c36e0eb7a9d9862}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!\_get\_exc\_class\_and\_code@{\_get\_exc\_class\_and\_code}}
+\index{\_get\_exc\_class\_and\_code@{\_get\_exc\_class\_and\_code}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{\_get\_exc\_class\_and\_code()}{\_get\_exc\_class\_and\_code()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_af41014b18529e4f60c36e0eb7a9d9862} 
+ t.\+Tuple\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, t.\+Optional\mbox{[}int\mbox{]}\mbox{]} flask.\+scaffold.\+Scaffold.\+\_\+get\+\_\+exc\+\_\+class\+\_\+and\+\_\+code (\begin{DoxyParamCaption}\item[{t.\+Union\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, int\mbox{]}     }]{exc\+\_\+class\+\_\+or\+\_\+code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get the exception class being handled. For HTTP status codes
+or ``HTTPException`` subclasses, return both the exception and
+status code.
+
+:param exc_class_or_code: Any exception class, or an HTTP status
+    code as an integer.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a7172518b453c5e4579ebcc68105f07f7}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!add\_url\_rule@{add\_url\_rule}}
+\index{add\_url\_rule@{add\_url\_rule}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{add\_url\_rule()}{add\_url\_rule()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a7172518b453c5e4579ebcc68105f07f7} 
+ None flask.\+scaffold.\+Scaffold.\+add\+\_\+url\+\_\+rule (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{endpoint}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}ft.\+Route\+Callable\mbox{]} }]{view\+\_\+func}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}bool\mbox{]} }]{provide\+\_\+automatic\+\_\+options}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a rule for routing incoming requests and building
+URLs. The :meth:`route` decorator is a shortcut to call this
+with the ``view_func`` argument. These are equivalent:
+
+.. code-block:: python
+
+    @app.route("/")
+    def index():
+        ...
+
+.. code-block:: python
+
+    def index():
+        ...
+
+    app.add_url_rule("/", view_func=index)
+
+See :ref:`url-route-registrations`.
+
+The endpoint name for the route defaults to the name of the view
+function if the ``endpoint`` parameter isn't passed. An error
+will be raised if a function has already been registered for the
+endpoint.
+
+The ``methods`` parameter defaults to ``["GET"]``. ``HEAD`` is
+always added automatically, and ``OPTIONS`` is added
+automatically by default.
+
+``view_func`` does not necessarily need to be passed, but if the
+rule should participate in routing an endpoint name must be
+associated with a view function at some point with the
+:meth:`endpoint` decorator.
+
+.. code-block:: python
+
+    app.add_url_rule("/", endpoint="index")
+
+    @app.endpoint("index")
+    def index():
+        ...
+
+If ``view_func`` has a ``required_methods`` attribute, those
+methods are added to the passed and automatic methods. If it
+has a ``provide_automatic_methods`` attribute, it is used as the
+default if the parameter is not passed.
+
+:param rule: The URL rule string.
+:param endpoint: The endpoint name to associate with the rule
+    and view function. Used when routing and building URLs.
+    Defaults to ``view_func.__name__``.
+:param view_func: The view function to associate with the
+    endpoint name.
+:param provide_automatic_options: Add the ``OPTIONS`` method and
+    respond to ``OPTIONS`` requests automatically.
+:param options: Extra options passed to the
+    :class:`~werkzeug.routing.Rule` object.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classflask_1_1app_1_1_flask_a344aec8d650a4eeb0452c6cf007aad53}{flask.\+app.\+Flask}}, and \mbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_af0c6713b1faef514712a32870dc020b7}{flask.\+blueprints.\+Blueprint}}.
+
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_a0a7ed4ae1b5894d3ea5f35e7ddf6f4ae}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!after\_request@{after\_request}}
+\index{after\_request@{after\_request}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{after\_request()}{after\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a0a7ed4ae1b5894d3ea5f35e7ddf6f4ae} 
+ T\+\_\+after\+\_\+request flask.\+scaffold.\+Scaffold.\+after\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{T\+\_\+after\+\_\+request}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a function to run after each request to this object.
+
+The function is called with the response object, and must return
+a response object. This allows the functions to modify or
+replace the response before it is sent.
+
+If a function raises an exception, any remaining
+``after_request`` functions will not be called. Therefore, this
+should not be used for actions that must execute, such as to
+close resources. Use :meth:`teardown_request` for that.
+
+This is available on both app and blueprint objects. When used on an app, this
+executes after every request. When used on a blueprint, this executes after
+every request that the blueprint handles. To register with a blueprint and
+execute after every request, use :meth:`.Blueprint.after_app_request`.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_adb501752405a30a6c16baa132699f729}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!before\_request@{before\_request}}
+\index{before\_request@{before\_request}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{before\_request()}{before\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_adb501752405a30a6c16baa132699f729} 
+ T\+\_\+before\+\_\+request flask.\+scaffold.\+Scaffold.\+before\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{T\+\_\+before\+\_\+request}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a function to run before each request.
+
+For example, this can be used to open a database connection, or
+to load the logged in user from the session.
+
+.. code-block:: python
+
+    @app.before_request
+    def load_user():
+        if "user_id" in session:
+            g.user = db.session.get(session["user_id"])
+
+The function will be called without any arguments. If it returns
+a non-``None`` value, the value is handled as if it was the
+return value from the view, and further request handling is
+stopped.
+
+This is available on both app and blueprint objects. When used on an app, this
+executes before every request. When used on a blueprint, this executes before
+every request that the blueprint handles. To register with a blueprint and
+execute before every request, use :meth:`.Blueprint.before_app_request`.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a932ad7d2ab5d382061485e02126c64b1}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!context\_processor@{context\_processor}}
+\index{context\_processor@{context\_processor}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{context\_processor()}{context\_processor()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a932ad7d2ab5d382061485e02126c64b1} 
+ T\+\_\+template\+\_\+context\+\_\+processor flask.\+scaffold.\+Scaffold.\+context\+\_\+processor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{T\+\_\+template\+\_\+context\+\_\+processor}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Registers a template context processor function. These functions run before
+rendering a template. The keys of the returned dict are added as variables
+available in the template.
+
+This is available on both app and blueprint objects. When used on an app, this
+is called for every rendered template. When used on a blueprint, this is called
+for templates rendered from the blueprint's views. To register with a blueprint
+and affect every template, use :meth:`.Blueprint.app_context_processor`.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a3756ea5a9f39a5c0d787b0d46b4eec5c}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!delete@{delete}}
+\index{delete@{delete}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a3756ea5a9f39a5c0d787b0d46b4eec5c} 
+ t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} flask.\+scaffold.\+Scaffold.\+delete (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for :meth:`route` with ``methods=["DELETE"]``.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a30387c9d4f0786e4c6316bd3ffdc619e}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!endpoint@{endpoint}}
+\index{endpoint@{endpoint}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{endpoint()}{endpoint()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a30387c9d4f0786e4c6316bd3ffdc619e} 
+ t.\+Callable\mbox{[}\mbox{[}F\mbox{]}, F\mbox{]} flask.\+scaffold.\+Scaffold.\+endpoint (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{endpoint}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorate a view function to register it for the given
+endpoint. Used if a rule is added without a ``view_func`` with
+:meth:`add_url_rule`.
+
+.. code-block:: python
+
+    app.add_url_rule("/ex", endpoint="example")
+
+    @app.endpoint("example")
+    def example():
+        ...
+
+:param endpoint: The endpoint name to associate with the view
+    function.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a3b55883f39aa0684b6e1b4fca68c305b}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!errorhandler@{errorhandler}}
+\index{errorhandler@{errorhandler}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{errorhandler()}{errorhandler()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a3b55883f39aa0684b6e1b4fca68c305b} 
+ t.\+Callable\mbox{[}\mbox{[}T\+\_\+error\+\_\+handler\mbox{]}, T\+\_\+error\+\_\+handler\mbox{]} flask.\+scaffold.\+Scaffold.\+errorhandler (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Union\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, int\mbox{]}     }]{code\+\_\+or\+\_\+exception}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a function to handle errors by code or exception class.
+
+A decorator that is used to register a function given an
+error code.  Example::
+
+    @app.errorhandler(404)
+    def page_not_found(error):
+        return 'This page does not exist', 404
+
+You can also register handlers for arbitrary exceptions::
+
+    @app.errorhandler(DatabaseError)
+    def special_exception_handler(error):
+        return 'Database connection failed', 500
+
+This is available on both app and blueprint objects. When used on an app, this
+can handle errors from every request. When used on a blueprint, this can handle
+errors from requests that the blueprint handles. To register with a blueprint
+and affect every request, use :meth:`.Blueprint.app_errorhandler`.
+
+.. versionadded:: 0.7
+    Use :meth:`register_error_handler` instead of modifying
+    :attr:`error_handler_spec` directly, for application wide error
+    handlers.
+
+.. versionadded:: 0.7
+   One can now additionally also register custom exception types
+   that do not necessarily have to be a subclass of the
+   :class:`~werkzeug.exceptions.HTTPException` class.
+
+:param code_or_exception: the code as integer for the handler, or
+                          an arbitrary exception
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_afd3e079b0ef1ebce155d8d38072002d7}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!get@{get}}
+\index{get@{get}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_afd3e079b0ef1ebce155d8d38072002d7} 
+ t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} flask.\+scaffold.\+Scaffold.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for :meth:`route` with ``methods=["GET"]``.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a352dfa37c45dfdc77ca0ddea73d6010a}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!get\_send\_file\_max\_age@{get\_send\_file\_max\_age}}
+\index{get\_send\_file\_max\_age@{get\_send\_file\_max\_age}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{get\_send\_file\_max\_age()}{get\_send\_file\_max\_age()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a352dfa37c45dfdc77ca0ddea73d6010a} 
+ t.\+Optional\mbox{[}int\mbox{]} flask.\+scaffold.\+Scaffold.\+get\+\_\+send\+\_\+file\+\_\+max\+\_\+age (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}str\mbox{]}}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used by :func:`send_file` to determine the ``max_age`` cache
+value for a given file path if it wasn't passed.
+
+By default, this returns :data:`SEND_FILE_MAX_AGE_DEFAULT` from
+the configuration of :data:`~flask.current_app`. This defaults
+to ``None``, which tells the browser to use conditional requests
+instead of a timed cache, which is usually preferable.
+
+.. versionchanged:: 2.0
+    The default configuration is ``None`` instead of 12 hours.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_aa7e2489f0912522c3fa65d976262ae35}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!has\_static\_folder@{has\_static\_folder}}
+\index{has\_static\_folder@{has\_static\_folder}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{has\_static\_folder()}{has\_static\_folder()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_aa7e2489f0912522c3fa65d976262ae35} 
+ bool flask.\+scaffold.\+Scaffold.\+has\+\_\+static\+\_\+folder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}``True`` if :attr:`static_folder` is set.
+
+.. versionadded:: 0.5
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_ad0e05bc4fc21d0f68daff072d41f1a16}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!jinja\_loader@{jinja\_loader}}
+\index{jinja\_loader@{jinja\_loader}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{jinja\_loader()}{jinja\_loader()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_ad0e05bc4fc21d0f68daff072d41f1a16} 
+ t.\+Optional\mbox{[}\mbox{\hyperlink{classjinja2_1_1loaders_1_1_file_system_loader}{File\+System\+Loader}}\mbox{]} flask.\+scaffold.\+Scaffold.\+jinja\+\_\+loader (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Jinja loader for this object's templates. By default this
+is a class :class:`jinja2.loaders.FileSystemLoader` to
+:attr:`template_folder` if it is set.
+
+.. versionadded:: 0.5
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a6ebbe9991d57c0752cf6c2137aa0db71}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!open\_resource@{open\_resource}}
+\index{open\_resource@{open\_resource}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{open\_resource()}{open\_resource()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a6ebbe9991d57c0752cf6c2137aa0db71} 
+ t.\+IO\mbox{[}t.\+Any\+Str\mbox{]} flask.\+scaffold.\+Scaffold.\+open\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{resource}{, }\item[{str }]{mode}{ = {\ttfamily "{}rb"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Open a resource file relative to :attr:`root_path` for
+reading.
+
+For example, if the file ``schema.sql`` is next to the file
+``app.py`` where the ``Flask`` app is defined, it can be opened
+with:
+
+.. code-block:: python
+
+    with app.open_resource("schema.sql") as f:
+        conn.executescript(f.read())
+
+:param resource: Path to the resource relative to
+    :attr:`root_path`.
+:param mode: Open the file in this mode. Only reading is
+    supported, valid values are "r" (or "rt") and "rb".
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a1ef3c7a0ec0e014861dd94cb2e0e873c}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!patch@{patch}}
+\index{patch@{patch}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{patch()}{patch()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a1ef3c7a0ec0e014861dd94cb2e0e873c} 
+ t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} flask.\+scaffold.\+Scaffold.\+patch (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for :meth:`route` with ``methods=["PATCH"]``.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a14f80c21143d414c5fd30d0e5d18a899}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!post@{post}}
+\index{post@{post}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a14f80c21143d414c5fd30d0e5d18a899} 
+ t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} flask.\+scaffold.\+Scaffold.\+post (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for :meth:`route` with ``methods=["POST"]``.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a312117262a4bf15e0eb63714937b7414}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!put@{put}}
+\index{put@{put}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a312117262a4bf15e0eb63714937b7414} 
+ t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} flask.\+scaffold.\+Scaffold.\+put (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shortcut for :meth:`route` with ``methods=["PUT"]``.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_ae966e5ca44c47ea45c1ee4fd3dd98ee6}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!register\_error\_handler@{register\_error\_handler}}
+\index{register\_error\_handler@{register\_error\_handler}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{register\_error\_handler()}{register\_error\_handler()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_ae966e5ca44c47ea45c1ee4fd3dd98ee6} 
+ None flask.\+scaffold.\+Scaffold.\+register\+\_\+error\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Union\mbox{[}t.\+Type\mbox{[}Exception\mbox{]}, int\mbox{]}}]{code\+\_\+or\+\_\+exception}{, }\item[{ft.\+Error\+Handler\+Callable}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Alternative error attach function to the :meth:`errorhandler`
+decorator that is more straightforward to use for non decorator
+usage.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_ad6415b60d8ad443d7c6e9aafff002567}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!route@{route}}
+\index{route@{route}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{route()}{route()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_ad6415b60d8ad443d7c6e9aafff002567} 
+ t.\+Callable\mbox{[}\mbox{[}T\+\_\+route\mbox{]}, T\+\_\+route\mbox{]} flask.\+scaffold.\+Scaffold.\+route (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorate a view function to register it with the given URL
+rule and options. Calls :meth:`add_url_rule`, which has more
+details about the implementation.
+
+.. code-block:: python
+
+    @app.route("/")
+    def index():
+        return "Hello, World!"
+
+See :ref:`url-route-registrations`.
+
+The endpoint name for the route defaults to the name of the view
+function if the ``endpoint`` parameter isn't passed.
+
+The ``methods`` parameter defaults to ``["GET"]``. ``HEAD`` and
+``OPTIONS`` are added automatically.
+
+:param rule: The URL rule string.
+:param options: Extra options passed to the
+    :class:`~werkzeug.routing.Rule` object.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a368e7e9e6d1e1ab70f979d69c24dfb92}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!send\_static\_file@{send\_static\_file}}
+\index{send\_static\_file@{send\_static\_file}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{send\_static\_file()}{send\_static\_file()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a368e7e9e6d1e1ab70f979d69c24dfb92} 
+ "{}Response"{} flask.\+scaffold.\+Scaffold.\+send\+\_\+static\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The view function used to serve files from
+:attr:`static_folder`. A route is automatically registered for
+this view at :attr:`static_url_path` if :attr:`static_folder` is
+set.
+
+.. versionadded:: 0.5
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a79873609b1be287661951bc9c262d436}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!static\_folder@{static\_folder}}
+\index{static\_folder@{static\_folder}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{static\_folder()}{static\_folder()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a79873609b1be287661951bc9c262d436} 
+ t.\+Optional\mbox{[}str\mbox{]} flask.\+scaffold.\+Scaffold.\+static\+\_\+folder (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The absolute path to the configured static folder. ``None``
+if no static folder is set.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_af751e9b26d64b985441180e17ca624d8}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!static\_url\_path@{static\_url\_path}}
+\index{static\_url\_path@{static\_url\_path}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{static\_url\_path()}{static\_url\_path()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_af751e9b26d64b985441180e17ca624d8} 
+ t.\+Optional\mbox{[}str\mbox{]} flask.\+scaffold.\+Scaffold.\+static\+\_\+url\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The URL prefix that the static route will be accessible from.
+
+If it was not configured during init, it is derived from
+:attr:`static_folder`.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_ad7f1392a1f8f117de2248e5370e741a2}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!teardown\_request@{teardown\_request}}
+\index{teardown\_request@{teardown\_request}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{teardown\_request()}{teardown\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_ad7f1392a1f8f117de2248e5370e741a2} 
+ T\+\_\+teardown flask.\+scaffold.\+Scaffold.\+teardown\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{T\+\_\+teardown}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a function to be called when the request context is
+popped. Typically this happens at the end of each request, but
+contexts may be pushed manually as well during testing.
+
+.. code-block:: python
+
+    with app.test_request_context():
+        ...
+
+When the ``with`` block exits (or ``ctx.pop()`` is called), the
+teardown functions are called just before the request context is
+made inactive.
+
+When a teardown function was called because of an unhandled
+exception it will be passed an error object. If an
+:meth:`errorhandler` is registered, it will handle the exception
+and the teardown will not receive it.
+
+Teardown functions must avoid raising exceptions. If they
+execute code that might fail they must surround that code with a
+``try``/``except`` block and log any errors.
+
+The return values of teardown functions are ignored.
+
+This is available on both app and blueprint objects. When used on an app, this
+executes after every request. When used on a blueprint, this executes after
+every request that the blueprint handles. To register with a blueprint and
+execute after every request, use :meth:`.Blueprint.teardown_app_request`.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_a63ec817e43cfe55da82de7c0f96c09a9}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!url\_defaults@{url\_defaults}}
+\index{url\_defaults@{url\_defaults}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{url\_defaults()}{url\_defaults()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_a63ec817e43cfe55da82de7c0f96c09a9} 
+ T\+\_\+url\+\_\+defaults flask.\+scaffold.\+Scaffold.\+url\+\_\+defaults (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{T\+\_\+url\+\_\+defaults}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Callback function for URL defaults for all view functions of the
+application.  It's called with the endpoint and values and should
+update the values passed in place.
+
+This is available on both app and blueprint objects. When used on an app, this
+is called for every request. When used on a blueprint, this is called for
+requests that the blueprint handles. To register with a blueprint and affect
+every request, use :meth:`.Blueprint.app_url_defaults`.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1scaffold_1_1_scaffold_aa8df17c765d1198b7fc02d84219ea0fd}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!url\_value\_preprocessor@{url\_value\_preprocessor}}
+\index{url\_value\_preprocessor@{url\_value\_preprocessor}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{url\_value\_preprocessor()}{url\_value\_preprocessor()}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_aa8df17c765d1198b7fc02d84219ea0fd} 
+ T\+\_\+url\+\_\+value\+\_\+preprocessor flask.\+scaffold.\+Scaffold.\+url\+\_\+value\+\_\+preprocessor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{T\+\_\+url\+\_\+value\+\_\+preprocessor}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a URL value preprocessor function for all view
+functions in the application. These functions will be called before the
+:meth:`before_request` functions.
+
+The function can modify the values captured from the matched url before
+they are passed to the view. For example, this can be used to pop a
+common language code value and place it in ``g`` rather than pass it to
+every view.
+
+The function is passed the endpoint name and values dict. The return
+value is ignored.
+
+This is available on both app and blueprint objects. When used on an app, this
+is called for every request. When used on a blueprint, this is called for
+requests that the blueprint handles. To register with a blueprint and affect
+every request, use :meth:`.Blueprint.app_url_value_preprocessor`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_acfb3025183cd3d64c1ca77071e480dec}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!json\_decoder@{json\_decoder}}
+\index{json\_decoder@{json\_decoder}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{json\_decoder}{json\_decoder}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_acfb3025183cd3d64c1ca77071e480dec} 
+t flask.\+scaffold.\+Scaffold.\+json\+\_\+decoder = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classflask_1_1app_1_1_flask_af402ebf99b6af81ade2bdb766e85de8e}{flask.\+app.\+Flask}}, and \mbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_afd145f0e78d3d5df74f28c27f056c027}{flask.\+blueprints.\+Blueprint}}.
+
+\Hypertarget{classflask_1_1scaffold_1_1_scaffold_acfd01a1d9341684caab673aa81b068f3}\index{flask.scaffold.Scaffold@{flask.scaffold.Scaffold}!json\_encoder@{json\_encoder}}
+\index{json\_encoder@{json\_encoder}!flask.scaffold.Scaffold@{flask.scaffold.Scaffold}}
+\doxysubsubsection{\texorpdfstring{json\_encoder}{json\_encoder}}
+{\footnotesize\ttfamily \label{classflask_1_1scaffold_1_1_scaffold_acfd01a1d9341684caab673aa81b068f3} 
+t flask.\+scaffold.\+Scaffold.\+json\+\_\+encoder = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classflask_1_1app_1_1_flask_ab4a6464b500819c9c3605417080384df}{flask.\+app.\+Flask}}, and \mbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_a7dcd423e2a92282a19ce7b5c8b1cf250}{flask.\+blueprints.\+Blueprint}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/scaffold.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,88 @@
+\doxysection{Référence de la classe click.\+exceptions.\+Usage\+Error}
+\hypertarget{classclick_1_1exceptions_1_1_usage_error}{}\label{classclick_1_1exceptions_1_1_usage_error}\index{click.exceptions.UsageError@{click.exceptions.UsageError}}
+Graphe d\textquotesingle{}héritage de click.\+exceptions.\+Usage\+Error\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.488889cm]{classclick_1_1exceptions_1_1_usage_error}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_aa426378a8cccca1f55c7107a8dec6fe1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} ctx=None)
+\item 
+None \mbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_afdf9f65f4c725b958da22c3e9a4414de}{show}} (self, t.\+Optional\mbox{[}t.\+IO\mbox{[}t.\+Any\mbox{]}\mbox{]} file=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries format\+\_\+message} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1exceptions_1_1_usage_error_a8943db49f348999b204674239df428da}\label{classclick_1_1exceptions_1_1_usage_error_a8943db49f348999b204674239df428da} 
+{\bfseries ctx} = ctx
+\item 
+\Hypertarget{classclick_1_1exceptions_1_1_usage_error_a525f2f2c77fa50397a90b5094c0cfc07}\label{classclick_1_1exceptions_1_1_usage_error_a525f2f2c77fa50397a90b5094c0cfc07} 
+t.\+Optional\mbox{[}$\,$\mbox{]} {\bfseries cmd} = self.\+ctx.\+command if self.\+ctx else None
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries message} = message
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1exceptions_1_1_usage_error_a8e14036769ba64da08a1f112ecc50023}\label{classclick_1_1exceptions_1_1_usage_error_a8e14036769ba64da08a1f112ecc50023} 
+int {\bfseries exit\+\_\+code} = 2
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques hérités de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries exit\+\_\+code} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}An internal exception that signals a usage error.  This typically
+aborts any further handling.
+
+:param message: the error message to display.
+:param ctx: optionally the context that caused this error.  Click will
+            fill in the context automatically in some situations.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classclick_1_1exceptions_1_1_usage_error_aa426378a8cccca1f55c7107a8dec6fe1}\index{click.exceptions.UsageError@{click.exceptions.UsageError}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.exceptions.UsageError@{click.exceptions.UsageError}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_usage_error_aa426378a8cccca1f55c7107a8dec6fe1} 
+ None click.\+exceptions.\+Usage\+Error.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{message}{, }\item[{t.\+Optional\mbox{[}"{}Context"{}\mbox{]} }]{ctx}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classclick_1_1exceptions_1_1_usage_error_afdf9f65f4c725b958da22c3e9a4414de}\index{click.exceptions.UsageError@{click.exceptions.UsageError}!show@{show}}
+\index{show@{show}!click.exceptions.UsageError@{click.exceptions.UsageError}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_usage_error_afdf9f65f4c725b958da22c3e9a4414de} 
+ None click.\+exceptions.\+Usage\+Error.\+show (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}t.\+IO\mbox{[}t.\+Any\mbox{]}\mbox{]} }]{file}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Réimplémentée à partir de \mbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/exceptions.\+py\end{DoxyCompactItemize}

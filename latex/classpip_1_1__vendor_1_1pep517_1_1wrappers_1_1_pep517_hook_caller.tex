@@ -1,0 +1,158 @@
+\doxysection{pip.\+\_\+vendor.\+pep517.\+wrappers.\+Pep517\+Hook\+Caller Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller}{}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller}\index{pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}}
+Inheritance diagram for pip.\+\_\+vendor.\+pep517.\+wrappers.\+Pep517\+Hook\+Caller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a563a9f09caa10afca0e5c73c31a5f1e7}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a563a9f09caa10afca0e5c73c31a5f1e7} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, source\+\_\+dir, build\+\_\+backend, backend\+\_\+path=None, runner=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_ad645c7bf5eced481d2a9ed62cfabb238}{subprocess\+\_\+runner}} (self, runner)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_aa633dc7389fcddfefc98d9ca3e708da0}{get\+\_\+requires\+\_\+for\+\_\+build\+\_\+wheel}} (self, config\+\_\+settings=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a5c2718ea9cee14bf2b5c1d497c46bf4a}{prepare\+\_\+metadata\+\_\+for\+\_\+build\+\_\+wheel}} (self, metadata\+\_\+directory, config\+\_\+settings=None, \+\_\+allow\+\_\+fallback=True)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a24375b9ac8b59ddd1362068269009fcb}{build\+\_\+wheel}} (self, wheel\+\_\+directory, config\+\_\+settings=None, metadata\+\_\+directory=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a4c6ffe805146e3d67e375da9aa827af3}{get\+\_\+requires\+\_\+for\+\_\+build\+\_\+sdist}} (self, config\+\_\+settings=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a98ae9c1469d7264b2c2349005b437d1d}{build\+\_\+sdist}} (self, sdist\+\_\+directory, config\+\_\+settings=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_aab251dbd969837d76cc2849517a313e9}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_aab251dbd969837d76cc2849517a313e9} 
+{\bfseries source\+\_\+dir} = abspath(source\+\_\+dir)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_aa13c5b77e490ae5cff1e4a23f8eefcea}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_aa13c5b77e490ae5cff1e4a23f8eefcea} 
+{\bfseries build\+\_\+backend} = build\+\_\+backend
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a839e0732ae080d960a35a3bff7b9cc44}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a839e0732ae080d960a35a3bff7b9cc44} 
+{\bfseries backend\+\_\+path} = backend\+\_\+path
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a20c3a67c79f746d6c0fa57026482c266}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a20c3a67c79f746d6c0fa57026482c266} 
+{\bfseries \+\_\+call\+\_\+hook} (self, hook\+\_\+name, kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a810dd9ba380fffe44bc3e79e10a1ec94}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a810dd9ba380fffe44bc3e79e10a1ec94} 
+{\bfseries \+\_\+subprocess\+\_\+runner} = runner
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A wrapper around a source directory to be built with a PEP 517 backend.
+
+source_dir : The path to the source directory, containing pyproject.toml.
+build_backend : The build backend spec, as per PEP 517, from
+    pyproject.toml.
+backend_path : The backend path, as per PEP 517, from pyproject.toml.
+runner : A callable that invokes the wrapper subprocess.
+
+The 'runner', if provided, must expect the following:
+    cmd : a list of strings representing the command and arguments to
+        execute, as would be passed to e.g. 'subprocess.check_call'.
+    cwd : a string representing the working directory that must be
+        used for the subprocess. Corresponds to the provided source_dir.
+    extra_environ : a dict mapping environment variable names to values
+        which must be set for the subprocess execution.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a98ae9c1469d7264b2c2349005b437d1d}\index{pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}!build\_sdist@{build\_sdist}}
+\index{build\_sdist@{build\_sdist}!pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}}
+\doxysubsubsection{\texorpdfstring{build\_sdist()}{build\_sdist()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a98ae9c1469d7264b2c2349005b437d1d} 
+pip.\+\_\+vendor.\+pep517.\+wrappers.\+Pep517\+Hook\+Caller.\+build\+\_\+sdist (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sdist\+\_\+directory}{, }\item[{}]{config\+\_\+settings}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build an sdist from this project.
+
+Returns the name of the newly created file.
+
+This calls the 'build_sdist' backend hook in a subprocess.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a24375b9ac8b59ddd1362068269009fcb}\index{pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}!build\_wheel@{build\_wheel}}
+\index{build\_wheel@{build\_wheel}!pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}}
+\doxysubsubsection{\texorpdfstring{build\_wheel()}{build\_wheel()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a24375b9ac8b59ddd1362068269009fcb} 
+pip.\+\_\+vendor.\+pep517.\+wrappers.\+Pep517\+Hook\+Caller.\+build\+\_\+wheel (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{wheel\+\_\+directory}{, }\item[{}]{config\+\_\+settings}{ = {\ttfamily None}, }\item[{}]{metadata\+\_\+directory}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build a wheel from this project.
+
+Returns the name of the newly created file.
+
+In general, this will call the 'build_wheel' hook in the backend.
+However, if that was previously called by
+'prepare_metadata_for_build_wheel', and the same metadata_directory is
+used, the previously built wheel will be copied to wheel_directory.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a4c6ffe805146e3d67e375da9aa827af3}\index{pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}!get\_requires\_for\_build\_sdist@{get\_requires\_for\_build\_sdist}}
+\index{get\_requires\_for\_build\_sdist@{get\_requires\_for\_build\_sdist}!pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}}
+\doxysubsubsection{\texorpdfstring{get\_requires\_for\_build\_sdist()}{get\_requires\_for\_build\_sdist()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a4c6ffe805146e3d67e375da9aa827af3} 
+pip.\+\_\+vendor.\+pep517.\+wrappers.\+Pep517\+Hook\+Caller.\+get\+\_\+requires\+\_\+for\+\_\+build\+\_\+sdist (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{config\+\_\+settings}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Identify packages required for building a wheel
+
+Returns a list of dependency specifications, e.g.:
+    ["setuptools >= 26"]
+
+This does not include requirements specified in pyproject.toml.
+It returns the result of calling the equivalently named hook in a
+subprocess.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_aa633dc7389fcddfefc98d9ca3e708da0}\index{pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}!get\_requires\_for\_build\_wheel@{get\_requires\_for\_build\_wheel}}
+\index{get\_requires\_for\_build\_wheel@{get\_requires\_for\_build\_wheel}!pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}}
+\doxysubsubsection{\texorpdfstring{get\_requires\_for\_build\_wheel()}{get\_requires\_for\_build\_wheel()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_aa633dc7389fcddfefc98d9ca3e708da0} 
+pip.\+\_\+vendor.\+pep517.\+wrappers.\+Pep517\+Hook\+Caller.\+get\+\_\+requires\+\_\+for\+\_\+build\+\_\+wheel (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{config\+\_\+settings}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Identify packages required for building a wheel
+
+Returns a list of dependency specifications, e.g.:
+    ["wheel >= 0.25", "setuptools"]
+
+This does not include requirements specified in pyproject.toml.
+It returns the result of calling the equivalently named hook in a
+subprocess.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a5c2718ea9cee14bf2b5c1d497c46bf4a}\index{pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}!prepare\_metadata\_for\_build\_wheel@{prepare\_metadata\_for\_build\_wheel}}
+\index{prepare\_metadata\_for\_build\_wheel@{prepare\_metadata\_for\_build\_wheel}!pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}}
+\doxysubsubsection{\texorpdfstring{prepare\_metadata\_for\_build\_wheel()}{prepare\_metadata\_for\_build\_wheel()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_a5c2718ea9cee14bf2b5c1d497c46bf4a} 
+pip.\+\_\+vendor.\+pep517.\+wrappers.\+Pep517\+Hook\+Caller.\+prepare\+\_\+metadata\+\_\+for\+\_\+build\+\_\+wheel (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{metadata\+\_\+directory}{, }\item[{}]{config\+\_\+settings}{ = {\ttfamily None}, }\item[{}]{\+\_\+allow\+\_\+fallback}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prepare a *.dist-info folder with metadata for this project.
+
+Returns the name of the newly created folder.
+
+If the build backend defines a hook with this name, it will be called
+in a subprocess. If not, the backend will be asked to build a wheel,
+and the dist-info extracted from that (unless _allow_fallback is
+False).
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_ad645c7bf5eced481d2a9ed62cfabb238}\index{pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}!subprocess\_runner@{subprocess\_runner}}
+\index{subprocess\_runner@{subprocess\_runner}!pip.\_vendor.pep517.wrappers.Pep517HookCaller@{pip.\_vendor.pep517.wrappers.Pep517HookCaller}}
+\doxysubsubsection{\texorpdfstring{subprocess\_runner()}{subprocess\_runner()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_pep517_hook_caller_ad645c7bf5eced481d2a9ed62cfabb238} 
+pip.\+\_\+vendor.\+pep517.\+wrappers.\+Pep517\+Hook\+Caller.\+subprocess\+\_\+runner (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{runner}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A context manager for temporarily overriding the default subprocess
+runner.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/pep517/wrappers.\+py\end{DoxyCompactItemize}

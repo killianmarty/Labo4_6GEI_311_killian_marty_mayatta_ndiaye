@@ -1,0 +1,104 @@
+\doxysection{werkzeug.\+local.\+Local\+Proxy Class Reference}
+\hypertarget{classwerkzeug_1_1local_1_1_local_proxy}{}\label{classwerkzeug_1_1local_1_1_local_proxy}\index{werkzeug.local.LocalProxy@{werkzeug.local.LocalProxy}}
+Inheritance diagram for werkzeug.\+local.\+Local\+Proxy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1local_1_1_local_proxy}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1local_1_1_local_proxy_a717991567d9a466f561ce692a6d44034}\label{classwerkzeug_1_1local_1_1_local_proxy_a717991567d9a466f561ce692a6d44034} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Union\mbox{[}Context\+Var\mbox{[}T\mbox{]}, \mbox{\hyperlink{classwerkzeug_1_1local_1_1_local}{Local}}, \mbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack}{Local\+Stack}}\mbox{[}T\mbox{]}, t.\+Callable\mbox{[}\mbox{[}$\,$\mbox{]}, T\mbox{]}\mbox{]} local, t.\+Optional\mbox{[}str\mbox{]} name=None, \texorpdfstring{$\ast$}{*}, t.\+Optional\mbox{[}str\mbox{]} unbound\+\_\+message=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1local_1_1_local_proxy_a66495fc1633833d06aaee9a60543ce4d}\label{classwerkzeug_1_1local_1_1_local_proxy_a66495fc1633833d06aaee9a60543ce4d} 
+t {\bfseries \+\_\+get\+\_\+current\+\_\+object} .Callable\mbox{[}\mbox{[}$\,$\mbox{]}, T\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A proxy to the object bound to a context-local object. All
+operations on the proxy are forwarded to the bound object. If no
+object is bound, a ``RuntimeError`` is raised.
+
+:param local: The context-local object that provides the proxied
+    object.
+:param name: Proxy this attribute from the proxied object.
+:param unbound_message: The error message to show if the
+    context-local object is unbound.
+
+Proxy a :class:`~contextvars.ContextVar` to make it easier to
+access. Pass a name to proxy that attribute.
+
+.. code-block:: python
+
+    _request_var = ContextVar("request")
+    request = LocalProxy(_request_var)
+    session = LocalProxy(_request_var, "session")
+
+Proxy an attribute on a :class:`Local` namespace by calling the
+local with the attribute name:
+
+.. code-block:: python
+
+    data = Local()
+    user = data("user")
+
+Proxy the top item on a :class:`LocalStack` by calling the local.
+Pass a name to proxy that attribute.
+
+.. code-block::
+
+    app_stack = LocalStack()
+    current_app = app_stack()
+    g = app_stack("g")
+
+Pass a function to proxy the return value from that function. This
+was previously used to access attributes of local objects before
+that was supported directly.
+
+.. code-block:: python
+
+    session = LocalProxy(lambda: request.session)
+
+``__repr__`` and ``__class__`` are proxied, so ``repr(x)`` and
+``isinstance(x, cls)`` will look like the proxied object. Use
+``issubclass(type(x), LocalProxy)`` to check if an object is a
+proxy.
+
+.. code-block:: python
+
+    repr(user)  # <User admin>
+    isinstance(user, User)  # True
+    issubclass(type(user), LocalProxy)  # True
+
+.. versionchanged:: 2.2.2
+    ``__wrapped__`` is set when wrapping an object, not only when
+    wrapping a function, to prevent doctest from failing.
+
+.. versionchanged:: 2.2
+    Can proxy a ``ContextVar`` or ``LocalStack`` directly.
+
+.. versionchanged:: 2.2
+    The ``name`` parameter can be used with any proxied object, not
+    only ``Local``.
+
+.. versionchanged:: 2.2
+    Added the ``unbound_message`` parameter.
+
+.. versionchanged:: 2.0
+    Updated proxied attributes and methods to reflect the current
+    data model.
+
+.. versionchanged:: 0.6.1
+    The class can be instantiated with a callable.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/local.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\doxysection{werkzeug.\+serving.\+Base\+WSGIServer Class Reference}
+\hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+Inheritance diagram for werkzeug.\+serving.\+Base\+WSGIServer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a16a17c9b7534e9877ffbdbe3d8e967df}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a16a17c9b7534e9877ffbdbe3d8e967df} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str host, int port, "{}WSGIApplication"{} app, t.\+Optional\mbox{[}t.\+Type\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}\mbox{]}\mbox{]} handler=None, bool passthrough\+\_\+errors=False, t.\+Optional\mbox{[}\+\_\+\+TSSLContext\+Arg\mbox{]} ssl\+\_\+context=None, t.\+Optional\mbox{[}int\mbox{]} fd=None)
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a191d9f65f0c3f3d5e3c1e53c5e62cf3e}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a191d9f65f0c3f3d5e3c1e53c5e62cf3e} 
+None {\bfseries log} (self, str type, str message, \texorpdfstring{$\ast$}{*}t.\+Any args)
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad5f84c5955823b19ca54b84747fd481a}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad5f84c5955823b19ca54b84747fd481a} 
+None {\bfseries serve\+\_\+forever} (self, float poll\+\_\+interval=0.\+5)
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a56736052ed20883b68a79b61947ea91c}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a56736052ed20883b68a79b61947ea91c} 
+None {\bfseries handle\+\_\+error} (self, t.\+Any request, t.\+Union\mbox{[}t.\+Tuple\mbox{[}str, int\mbox{]}, str\mbox{]} client\+\_\+address)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad7a8ca791fbd0fc61abb1f99012cfe68}{log\+\_\+startup}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a421e83e894877a264d33be319a9f4de1}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a421e83e894877a264d33be319a9f4de1} 
+str {\bfseries host} = host
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaaf70995346324282937ff5b922f3c}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaaf70995346324282937ff5b922f3c} 
+{\bfseries port} = port
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaee9d8f099234e8fd0c7d2a3e2aea7}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaee9d8f099234e8fd0c7d2a3e2aea7} 
+{\bfseries app} = app
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afe145a0b58b63765330cb926d8b77bfd}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afe145a0b58b63765330cb926d8b77bfd} 
+{\bfseries passthrough\+\_\+errors} = passthrough\+\_\+errors
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a5ecc76b4596cc8db7f133f3b29ce82fd}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a5ecc76b4596cc8db7f133f3b29ce82fd} 
+{\bfseries address\+\_\+family} = \mbox{\hyperlink{namespacewerkzeug_1_1serving_a311672e48cf7a2e9712c9363c92306e4}{select\+\_\+address\+\_\+family}}(host, port)
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a11e932a4bf02213dcff1b3c572887aa8}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a11e932a4bf02213dcff1b3c572887aa8} 
+{\bfseries socket} = socket.\+fromfd(fd, address\+\_\+family, socket.\+SOCK\+\_\+\+STREAM)
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afb397578c2783ae604836535b9436e60}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afb397578c2783ae604836535b9436e60} 
+{\bfseries server\+\_\+address} = self.\+socket.\+getsockname()
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0f17a8836ce0397840f612391981ae7c}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0f17a8836ce0397840f612391981ae7c} 
+t.\+Optional\mbox{[}$\,$\mbox{]} {\bfseries ssl\+\_\+context} = ssl\+\_\+context
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad897bafdd561963e833e703824c94cbd}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad897bafdd561963e833e703824c94cbd} 
+str {\bfseries address\+\_\+family} = "{}http"{} if self.\+ssl\+\_\+context is None else "{}https"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a3917c4411de731b76fb048978ae0ff1d}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a3917c4411de731b76fb048978ae0ff1d} 
+bool {\bfseries multithread} = False
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a7d53f2b5ee2d8d7aec27dafd2b4b8af6}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a7d53f2b5ee2d8d7aec27dafd2b4b8af6} 
+bool {\bfseries multiprocess} = False
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_aab5a78598e48474a1b2ca3d930544fbc}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_aab5a78598e48474a1b2ca3d930544fbc} 
+{\bfseries request\+\_\+queue\+\_\+size} = LISTEN\+\_\+\+QUEUE
+\item 
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad2d6f9ca7e8815ea8362c1c7da6d7072}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad2d6f9ca7e8815ea8362c1c7da6d7072} 
+bool {\bfseries allow\+\_\+reuse\+\_\+address} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A WSGI server that that handles one request at a time.
+
+Use :func:`make_server` to create a server instance.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad7a8ca791fbd0fc61abb1f99012cfe68}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!log\_startup@{log\_startup}}
+\index{log\_startup@{log\_startup}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{log\_startup()}{log\_startup()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad7a8ca791fbd0fc61abb1f99012cfe68} 
+ None werkzeug.\+serving.\+Base\+WSGIServer.\+log\+\_\+startup (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Show information about the address when starting the server.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/serving.\+py\end{DoxyCompactItemize}

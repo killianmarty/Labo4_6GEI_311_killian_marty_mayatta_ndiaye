@@ -1,0 +1,101 @@
+\doxysection{flask.\+ctx.\+\_\+\+App\+Ctx\+Globals Class Reference}
+\hypertarget{classflask_1_1ctx_1_1___app_ctx_globals}{}\label{classflask_1_1ctx_1_1___app_ctx_globals}\index{flask.ctx.\_AppCtxGlobals@{flask.ctx.\_AppCtxGlobals}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1ctx_1_1___app_ctx_globals_a9e271eaa75beecda9882b973bbdfb571}\label{classflask_1_1ctx_1_1___app_ctx_globals_a9e271eaa75beecda9882b973bbdfb571} 
+t.\+Any {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, str name)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1___app_ctx_globals_a9cc16fe279da0adf48d259337e0fbe3a}\label{classflask_1_1ctx_1_1___app_ctx_globals_a9cc16fe279da0adf48d259337e0fbe3a} 
+None {\bfseries \+\_\+\+\_\+setattr\+\_\+\+\_\+} (self, str name, t.\+Any value)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1___app_ctx_globals_adf823a5842545a3e03a342e0bd766467}\label{classflask_1_1ctx_1_1___app_ctx_globals_adf823a5842545a3e03a342e0bd766467} 
+None {\bfseries \+\_\+\+\_\+delattr\+\_\+\+\_\+} (self, str name)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1ctx_1_1___app_ctx_globals_af417c4a72c988673ee41ab37d42e05be}{get}} (self, str name, t.\+Optional\mbox{[}t.\+Any\mbox{]} default=None)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1ctx_1_1___app_ctx_globals_a30daab5445025189bcba808e8c680a93}{pop}} (self, str name, t.\+Any default=\+\_\+sentinel)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1ctx_1_1___app_ctx_globals_aa26682c15eacc4432e6c583a515331ac}{setdefault}} (self, str name, t.\+Any default=None)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1___app_ctx_globals_a4876f3c47fbff2d5d13b7263437a041d}\label{classflask_1_1ctx_1_1___app_ctx_globals_a4876f3c47fbff2d5d13b7263437a041d} 
+bool {\bfseries \+\_\+\+\_\+contains\+\_\+\+\_\+} (self, str item)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1___app_ctx_globals_a095690027ce130c2d1a97602d7f70032}\label{classflask_1_1ctx_1_1___app_ctx_globals_a095690027ce130c2d1a97602d7f70032} 
+t.\+Iterator\mbox{[}str\mbox{]} {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1___app_ctx_globals_a32086825a7a02c0eaf44468cb38aea39}\label{classflask_1_1ctx_1_1___app_ctx_globals_a32086825a7a02c0eaf44468cb38aea39} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A plain object. Used as a namespace for storing data during an
+application context.
+
+Creating an app context automatically creates this object, which is
+made available as the :data:`g` proxy.
+
+.. describe:: 'key' in g
+
+    Check whether an attribute is present.
+
+    .. versionadded:: 0.10
+
+.. describe:: iter(g)
+
+    Return an iterator over the attribute names.
+
+    .. versionadded:: 0.10
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1ctx_1_1___app_ctx_globals_af417c4a72c988673ee41ab37d42e05be}\index{flask.ctx.\_AppCtxGlobals@{flask.ctx.\_AppCtxGlobals}!get@{get}}
+\index{get@{get}!flask.ctx.\_AppCtxGlobals@{flask.ctx.\_AppCtxGlobals}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1___app_ctx_globals_af417c4a72c988673ee41ab37d42e05be} 
+ t.\+Any flask.\+ctx.\+\_\+\+App\+Ctx\+Globals.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{t.\+Optional\mbox{[}t.\+Any\mbox{]} }]{default}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get an attribute by name, or a default value. Like
+:meth:`dict.get`.
+
+:param name: Name of attribute to get.
+:param default: Value to return if the attribute is not present.
+
+.. versionadded:: 0.10
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1ctx_1_1___app_ctx_globals_a30daab5445025189bcba808e8c680a93}\index{flask.ctx.\_AppCtxGlobals@{flask.ctx.\_AppCtxGlobals}!pop@{pop}}
+\index{pop@{pop}!flask.ctx.\_AppCtxGlobals@{flask.ctx.\_AppCtxGlobals}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1___app_ctx_globals_a30daab5445025189bcba808e8c680a93} 
+ t.\+Any flask.\+ctx.\+\_\+\+App\+Ctx\+Globals.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{t.\+Any }]{default}{ = {\ttfamily \+\_\+sentinel}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get and remove an attribute by name. Like :meth:`dict.pop`.
+
+:param name: Name of attribute to pop.
+:param default: Value to return if the attribute is not present,
+    instead of raising a ``KeyError``.
+
+.. versionadded:: 0.11
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1ctx_1_1___app_ctx_globals_aa26682c15eacc4432e6c583a515331ac}\index{flask.ctx.\_AppCtxGlobals@{flask.ctx.\_AppCtxGlobals}!setdefault@{setdefault}}
+\index{setdefault@{setdefault}!flask.ctx.\_AppCtxGlobals@{flask.ctx.\_AppCtxGlobals}}
+\doxysubsubsection{\texorpdfstring{setdefault()}{setdefault()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1___app_ctx_globals_aa26682c15eacc4432e6c583a515331ac} 
+ t.\+Any flask.\+ctx.\+\_\+\+App\+Ctx\+Globals.\+setdefault (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{t.\+Any }]{default}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the value of an attribute if it is present, otherwise
+set and return a default value. Like :meth:`dict.setdefault`.
+
+:param name: Name of attribute to get.
+:param default: Value to set and return if the attribute is not
+    present.
+
+.. versionadded:: 0.11
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/ctx.\+py\end{DoxyCompactItemize}

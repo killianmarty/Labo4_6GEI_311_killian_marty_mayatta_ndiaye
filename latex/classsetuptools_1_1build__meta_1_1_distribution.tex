@@ -1,0 +1,169 @@
+\doxysection{setuptools.\+build\+\_\+meta.\+Distribution Class Reference}
+\hypertarget{classsetuptools_1_1build__meta_1_1_distribution}{}\label{classsetuptools_1_1build__meta_1_1_distribution}\index{setuptools.build\_meta.Distribution@{setuptools.build\_meta.Distribution}}
+Inheritance diagram for setuptools.\+build\+\_\+meta.\+Distribution\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classsetuptools_1_1build__meta_1_1_distribution}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsetuptools_1_1build__meta_1_1_distribution_ab9cf7fe353cf71aa452afa3860b19a42}{fetch\+\_\+build\+\_\+eggs}} (self, specifiers)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1build__meta_1_1_distribution_a2afc01e48da6761e9360ecebcb3279a1}{patch}} (cls)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution}{setuptools.\+dist.\+Distribution}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries patch\+\_\+missing\+\_\+pkg\+\_\+info} (self, attrs)
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, attrs=None)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a7b5dfa4326c1caf90e42ea4ae7eb2c51}{parse\+\_\+config\+\_\+files}} (self, filenames=None, ignore\+\_\+option\+\_\+errors=False)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_aa44a17f5d381c76ff3d8623afc3a0d91}{finalize\+\_\+options}} (self)
+\item 
+{\bfseries get\+\_\+egg\+\_\+cache\+\_\+dir} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_ad8d7bd91d1e65ff1c484bacf5430040d}{fetch\+\_\+build\+\_\+egg}} (self, req)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a3de52a5602385e14389bee35e6338278}{get\+\_\+command\+\_\+class}} (self, command)
+\item 
+{\bfseries print\+\_\+commands} (self)
+\item 
+{\bfseries get\+\_\+command\+\_\+list} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_acbda718774c4c011674f0ac10163300c}{include}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}attrs)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_ad2bdbc81485ec572fd3a417f35334fc0}{exclude\+\_\+package}} (self, package)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a5b7cf97d2817ae7572fbeeacc2e970e1}{has\+\_\+contents\+\_\+for}} (self, package)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_aba0ce07cc13c0dd245b3b5977c4e4ea7}{exclude}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}attrs)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a49a8fb0fcb8fa87749bd81d913027474}{get\+\_\+cmdline\+\_\+options}} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a8551883dc619e7ce53df998963a5c4f5}{iter\+\_\+distribution\+\_\+names}} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a8d072960d025b24146cdc070aacbc004}{handle\+\_\+display\+\_\+options}} (self, option\+\_\+order)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution}{setuptools.\+dist.\+Distribution}}}
+\begin{DoxyCompactItemize}
+\item 
+dict {\bfseries package\+\_\+data} = \{\}
+\item 
+list {\bfseries dist\+\_\+files} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries src\+\_\+root} = attrs.\+pop("{}src\+\_\+root"{}, None)
+\item 
+{\bfseries dependency\+\_\+links} = attrs.\+pop(\textquotesingle{}dependency\+\_\+links\textquotesingle{}, \mbox{[}$\,$\mbox{]})
+\item 
+{\bfseries setup\+\_\+requires} = attrs.\+pop(\textquotesingle{}setup\+\_\+requires\textquotesingle{}, \mbox{[}$\,$\mbox{]})
+\item 
+{\bfseries metadata}
+\item 
+{\bfseries install\+\_\+requires} = list(map(str, simple\+\_\+reqs))
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_af047fb9e8cc081d960c3d15d3c1b2b8c}{extras\+\_\+require}}
+\item 
+{\bfseries command\+\_\+options}
+\item 
+list \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a93e3fcb18ed950110eec750461faa2c3}{convert\+\_\+2to3\+\_\+doctests}}
+\item 
+{\bfseries cmdclass} = ep.\+resolve()
+\item 
+list {\bfseries packages}
+\item 
+list \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a1e4444343da0f575fdfd4a2028b7e2e1}{py\+\_\+modules}}
+\item 
+list \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_aa4f237104a36fe69ea4fb61fdba87887}{ext\+\_\+modules}}
+\item 
+{\bfseries exclude\+\_\+package}
+\item 
+{\bfseries global\+\_\+options} = self.\+\_\+\+\_\+class\+\_\+\+\_\+.\+global\+\_\+options
+\item 
+{\bfseries negative\+\_\+opt} = self.\+\_\+\+\_\+class\+\_\+\+\_\+.\+negative\+\_\+opt
+\item 
+{\bfseries help\+\_\+commands}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution}{setuptools.\+dist.\+Distribution}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a55af4b1fb63c7e7d1827fbfaad53dd45}{\+\_\+finalize\+\_\+requires}} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_ad2b41ee0da4fbce0e58f57165b409415}{\+\_\+convert\+\_\+extras\+\_\+requirements}} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a2bf211bdd509e4d6746fbdc5e7b093ae}{\+\_\+move\+\_\+install\+\_\+requirements\+\_\+markers}} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_ad164471e9d75f2522e53ea8d600bbb2a}{\+\_\+clean\+\_\+req}} (self, req)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a37147bd9ff1925b5cf308012e0012637}{\+\_\+parse\+\_\+config\+\_\+files}} (self, filenames=None)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a57b1e11e1a51083fc73877872ac0728c}{\+\_\+set\+\_\+command\+\_\+options}} (self, command\+\_\+obj, option\+\_\+dict=None)
+\item 
+{\bfseries \+\_\+finalize\+\_\+setup\+\_\+keywords} (self)
+\item 
+{\bfseries \+\_\+finalize\+\_\+2to3\+\_\+doctests} (self)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_ae04cabbd21effa67cff84adf692849c5}{\+\_\+exclude\+\_\+misc}} (self, name, value)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a4c4c24442b7399bdfa050fd163147fd1}{\+\_\+include\+\_\+misc}} (self, name, value)
+\item 
+{\bfseries \+\_\+exclude\+\_\+packages} (self, packages)
+\item 
+{\bfseries \+\_\+parse\+\_\+command\+\_\+opts} (self, parser, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution}{setuptools.\+dist.\+Distribution}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+normalize\+\_\+version} (version)
+\item 
+{\bfseries \+\_\+validate\+\_\+version} (version)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a16ff660e8fbe238b4ef3c7353187a1e8}{\+\_\+suffix\+\_\+for}} (req)
+\item 
+\mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_ae9f3052c6d19e2f473161cc08914ea37}{\+\_\+try\+\_\+str}} (val)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution}{setuptools.\+dist.\+Distribution}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+tmp\+\_\+extras\+\_\+require} = defaultdict(list)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution}{setuptools.\+dist.\+Distribution}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_adfc1a9878e98c443be2f119452502e38}{\+\_\+\+DISTUTILS\+\_\+\+UNSUPPORTED\+\_\+\+METADATA}}
+\item 
+{\bfseries \+\_\+patched\+\_\+dist} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsetuptools_1_1build__meta_1_1_distribution_ab9cf7fe353cf71aa452afa3860b19a42}\index{setuptools.build\_meta.Distribution@{setuptools.build\_meta.Distribution}!fetch\_build\_eggs@{fetch\_build\_eggs}}
+\index{fetch\_build\_eggs@{fetch\_build\_eggs}!setuptools.build\_meta.Distribution@{setuptools.build\_meta.Distribution}}
+\doxysubsubsection{\texorpdfstring{fetch\_build\_eggs()}{fetch\_build\_eggs()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1build__meta_1_1_distribution_ab9cf7fe353cf71aa452afa3860b19a42} 
+setuptools.\+build\+\_\+meta.\+Distribution.\+fetch\+\_\+build\+\_\+eggs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{requires}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve pre-setup requirements\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classsetuptools_1_1dist_1_1_distribution_a9644ed37eb07e5aedd429426d5902e5d}{setuptools.\+dist.\+Distribution}}.
+
+\Hypertarget{classsetuptools_1_1build__meta_1_1_distribution_a2afc01e48da6761e9360ecebcb3279a1}\index{setuptools.build\_meta.Distribution@{setuptools.build\_meta.Distribution}!patch@{patch}}
+\index{patch@{patch}!setuptools.build\_meta.Distribution@{setuptools.build\_meta.Distribution}}
+\doxysubsubsection{\texorpdfstring{patch()}{patch()}}
+{\footnotesize\ttfamily \label{classsetuptools_1_1build__meta_1_1_distribution_a2afc01e48da6761e9360ecebcb3279a1} 
+setuptools.\+build\+\_\+meta.\+Distribution.\+patch (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace
+distutils.dist.Distribution with this class
+for the duration of this context.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/setuptools/build\+\_\+meta.\+py\end{DoxyCompactItemize}

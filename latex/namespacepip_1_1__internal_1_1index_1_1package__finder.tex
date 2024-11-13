@@ -1,0 +1,127 @@
+\doxysection{pip.\+\_\+internal.\+index.\+package\+\_\+finder Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1index_1_1package__finder}{}\label{namespacepip_1_1__internal_1_1index_1_1package__finder}\index{pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_best_candidate_result}{Best\+Candidate\+Result}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator}{Candidate\+Evaluator}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_preferences}{Candidate\+Preferences}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator}{Link\+Evaluator}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_package_finder}{Package\+Finder}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_ae31b10eecd7efc2b1ad3f5f2f5583caa}{\+\_\+check\+\_\+link\+\_\+requires\+\_\+python}} (link, version\+\_\+info, ignore\+\_\+requires\+\_\+python=False)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_aca8d1bd701dede3c939483a4bdd9e31a}{filter\+\_\+unallowed\+\_\+hashes}} (candidates, hashes, project\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_a4664be24d3319a54350bfa1edc351bdf}{\+\_\+find\+\_\+name\+\_\+version\+\_\+sep}} (fragment, canonical\+\_\+name)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_a047ceda1313b591504175cef5a48a978}{\+\_\+extract\+\_\+version\+\_\+from\+\_\+fragment}} (fragment, canonical\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1package__finder_a6e43cd6584e1508c9578cad30e0fdc2a}\label{namespacepip_1_1__internal_1_1index_1_1package__finder_a6e43cd6584e1508c9578cad30e0fdc2a} 
+{\bfseries Build\+Tag} = Union\mbox{[}Tuple\mbox{[}()\mbox{]}, Tuple\mbox{[}int, str\mbox{]}\mbox{]}
+\item 
+tuple \mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_aed2ebdb9b68aa324426dac8374b59dd6}{Candidate\+Sorting\+Key}}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1package__finder_a230f7eba264091230ab47832046fc2f5}\label{namespacepip_1_1__internal_1_1index_1_1package__finder_a230f7eba264091230ab47832046fc2f5} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Routines related to PyPI, indexes\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1package__finder_ae31b10eecd7efc2b1ad3f5f2f5583caa}\index{pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}!\_check\_link\_requires\_python@{\_check\_link\_requires\_python}}
+\index{\_check\_link\_requires\_python@{\_check\_link\_requires\_python}!pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}}
+\doxysubsubsection{\texorpdfstring{\_check\_link\_requires\_python()}{\_check\_link\_requires\_python()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1package__finder_ae31b10eecd7efc2b1ad3f5f2f5583caa} 
+pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+\_\+check\+\_\+link\+\_\+requires\+\_\+python (\begin{DoxyParamCaption}\item[{}]{link}{, }\item[{}]{version\+\_\+info}{, }\item[{}]{ignore\+\_\+requires\+\_\+python}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return whether the given Python version is compatible with a link's
+"Requires-Python" value.
+
+:param version_info: A 3-tuple of ints representing the Python
+    major-minor-micro version to check.
+:param ignore_requires_python: Whether to ignore the "Requires-Python"
+    value if the given Python version isn't compatible.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1package__finder_a047ceda1313b591504175cef5a48a978}\index{pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}!\_extract\_version\_from\_fragment@{\_extract\_version\_from\_fragment}}
+\index{\_extract\_version\_from\_fragment@{\_extract\_version\_from\_fragment}!pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}}
+\doxysubsubsection{\texorpdfstring{\_extract\_version\_from\_fragment()}{\_extract\_version\_from\_fragment()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1package__finder_a047ceda1313b591504175cef5a48a978} 
+pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+\_\+extract\+\_\+version\+\_\+from\+\_\+fragment (\begin{DoxyParamCaption}\item[{}]{fragment}{, }\item[{}]{canonical\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parse the version string from a <package>+<version> filename
+"fragment" (stem) or egg fragment.
+
+:param fragment: The string to parse. E.g. foo-2.1
+:param canonical_name: The canonicalized name of the package this
+    belongs to.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1package__finder_a4664be24d3319a54350bfa1edc351bdf}\index{pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}!\_find\_name\_version\_sep@{\_find\_name\_version\_sep}}
+\index{\_find\_name\_version\_sep@{\_find\_name\_version\_sep}!pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}}
+\doxysubsubsection{\texorpdfstring{\_find\_name\_version\_sep()}{\_find\_name\_version\_sep()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1package__finder_a4664be24d3319a54350bfa1edc351bdf} 
+pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+\_\+find\+\_\+name\+\_\+version\+\_\+sep (\begin{DoxyParamCaption}\item[{}]{fragment}{, }\item[{}]{canonical\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Find the separator's index based on the package's canonical name.
+
+:param fragment: A <package>+<version> filename "fragment" (stem) or
+    egg fragment.
+:param canonical_name: The package's canonical name.
+
+This function is needed since the canonicalized name does not necessarily
+have the same length as the egg info's name part. An example::
+
+>>> fragment = 'foo__bar-1.0'
+>>> canonical_name = 'foo-bar'
+>>> _find_name_version_sep(fragment, canonical_name)
+8
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1package__finder_aca8d1bd701dede3c939483a4bdd9e31a}\index{pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}!filter\_unallowed\_hashes@{filter\_unallowed\_hashes}}
+\index{filter\_unallowed\_hashes@{filter\_unallowed\_hashes}!pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}}
+\doxysubsubsection{\texorpdfstring{filter\_unallowed\_hashes()}{filter\_unallowed\_hashes()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1package__finder_aca8d1bd701dede3c939483a4bdd9e31a} 
+pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+filter\+\_\+unallowed\+\_\+hashes (\begin{DoxyParamCaption}\item[{}]{candidates}{, }\item[{}]{hashes}{, }\item[{}]{project\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filter out candidates whose hashes aren't allowed, and return a new
+list of candidates.
+
+If at least one candidate has an allowed hash, then all candidates with
+either an allowed hash or no hash specified are returned.  Otherwise,
+the given candidates are returned.
+
+Including the candidates with no hash specified when there is a match
+allows a warning to be logged if there is a more preferred candidate
+with no hash specified.  Returning all candidates in the case of no
+matches lets pip report the hash of the candidate that would otherwise
+have been installed (e.g. permitting the user to more easily update
+their requirements file with the desired hash).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1package__finder_aed2ebdb9b68aa324426dac8374b59dd6}\index{pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}!CandidateSortingKey@{CandidateSortingKey}}
+\index{CandidateSortingKey@{CandidateSortingKey}!pip.\_internal.index.package\_finder@{pip.\_internal.index.package\_finder}}
+\doxysubsubsection{\texorpdfstring{CandidateSortingKey}{CandidateSortingKey}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1package__finder_aed2ebdb9b68aa324426dac8374b59dd6} 
+tuple pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Sorting\+Key}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ Tuple[int,\ int,\ int,\ \_BaseVersion,\ BuildTag,\ Optional[int]]}
+\DoxyCodeLine{00003\ \ \ \ \ )}
+
+\end{DoxyCode}

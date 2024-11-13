@@ -1,0 +1,82 @@
+\doxysection{Référence de la classe connexion.\+mock.\+Mock\+Resolver}
+\hypertarget{classconnexion_1_1mock_1_1_mock_resolver}{}\label{classconnexion_1_1mock_1_1_mock_resolver}\index{connexion.mock.MockResolver@{connexion.mock.MockResolver}}
+Graphe d\textquotesingle{}héritage de connexion.\+mock.\+Mock\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconnexion_1_1mock_1_1_mock_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1mock_1_1_mock_resolver_a5fa3b0dc238010ed97efa2daa6a28822}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, mock\+\_\+all)
+\item 
+\mbox{\hyperlink{classconnexion_1_1mock_1_1_mock_resolver_a9e5a00fb3d9e6a970f5595861469bd98}{resolve}} (self, operation)
+\item 
+\Hypertarget{classconnexion_1_1mock_1_1_mock_resolver_acead835ccfde819edfa68bc158154fef}\label{classconnexion_1_1mock_1_1_mock_resolver_acead835ccfde819edfa68bc158154fef} 
+{\bfseries mock\+\_\+operation} (self, operation, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver}{connexion.\+resolver.\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a5779c9da3f7d238c207053ce208fb813}{resolve\+\_\+operation\+\_\+id}} (self, operation)
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a6a4a064312a7a9f7fa554358f01b3105}{resolve\+\_\+function\+\_\+from\+\_\+operation\+\_\+id}} (self, operation\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1mock_1_1_mock_resolver_ad6a0aaa28c5d4474f15d13975dfb0623}\label{classconnexion_1_1mock_1_1_mock_resolver_ad6a0aaa28c5d4474f15d13975dfb0623} 
+{\bfseries mock\+\_\+all} = mock\+\_\+all
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics hérités de \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver}{connexion.\+resolver.\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries function\+\_\+resolver} = function\+\_\+resolver
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1mock_1_1_mock_resolver_a13237c744f15f21e855012af95e98de9}\label{classconnexion_1_1mock_1_1_mock_resolver_a13237c744f15f21e855012af95e98de9} 
+int {\bfseries \+\_\+operation\+\_\+id\+\_\+counter} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classconnexion_1_1mock_1_1_mock_resolver_a5fa3b0dc238010ed97efa2daa6a28822}\index{connexion.mock.MockResolver@{connexion.mock.MockResolver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.mock.MockResolver@{connexion.mock.MockResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1mock_1_1_mock_resolver_a5fa3b0dc238010ed97efa2daa6a28822} 
+connexion.\+mock.\+Mock\+Resolver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{function\+\_\+resolver}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Standard resolver
+
+:param function_resolver: Function that resolves functions using an operationId
+:type function_resolver: types.FunctionType
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_aea92122a59acf895ed303178a45ebe56}{connexion.\+resolver.\+Resolver}}.
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classconnexion_1_1mock_1_1_mock_resolver_a9e5a00fb3d9e6a970f5595861469bd98}\index{connexion.mock.MockResolver@{connexion.mock.MockResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!connexion.mock.MockResolver@{connexion.mock.MockResolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1mock_1_1_mock_resolver_a9e5a00fb3d9e6a970f5595861469bd98} 
+connexion.\+mock.\+Mock\+Resolver.\+resolve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Mock operation resolver
+
+:type operation: connexion.operations.AbstractOperation
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a052aec285258ea1337ae7537a7a44b8e}{connexion.\+resolver.\+Resolver}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/mock.\+py\end{DoxyCompactItemize}

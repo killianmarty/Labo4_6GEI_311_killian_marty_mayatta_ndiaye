@@ -1,0 +1,54 @@
+\doxysection{Référence de la classe click.\+shell\+\_\+completion.\+Completion\+Item}
+\hypertarget{classclick_1_1shell__completion_1_1_completion_item}{}\label{classclick_1_1shell__completion_1_1_completion_item}\index{click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_a2c00a91980b1fef24c3ecd4e6df04b39}\label{classclick_1_1shell__completion_1_1_completion_item_a2c00a91980b1fef24c3ecd4e6df04b39} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Any value, str type="{}plain"{}, t.\+Optional\mbox{[}str\mbox{]} help=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_a1be306d18de56eb4949869f68a834f7f}\label{classclick_1_1shell__completion_1_1_completion_item_a1be306d18de56eb4949869f68a834f7f} 
+t.\+Any {\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (self, str name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_a0c2c60cf2af2bfc220eae2a49df97331}\label{classclick_1_1shell__completion_1_1_completion_item_a0c2c60cf2af2bfc220eae2a49df97331} 
+t.\+Any {\bfseries value} = value
+\item 
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_a2b0f96896ef0bcf4753c4cc139c4dd10}\label{classclick_1_1shell__completion_1_1_completion_item_a2b0f96896ef0bcf4753c4cc139c4dd10} 
+str {\bfseries type} = type
+\item 
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_adf32f1cfe822fc1dce2ca4ca92f56d39}\label{classclick_1_1shell__completion_1_1_completion_item_adf32f1cfe822fc1dce2ca4ca92f56d39} 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries help} = help
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_a5fc0f403d13938fc3bd523e10e575118}\label{classclick_1_1shell__completion_1_1_completion_item_a5fc0f403d13938fc3bd523e10e575118} 
+{\bfseries \+\_\+info} = kwargs
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Represents a completion value and metadata about the value. The
+default metadata is ``type`` to indicate special shell handling,
+and ``help`` if a shell supports showing a help string next to the
+value.
+
+Arbitrary parameters can be passed when creating the object, and
+accessed using ``item.attr``. If an attribute wasn't passed,
+accessing it returns ``None``.
+
+:param value: The completion suggestion.
+:param type: Tells the shell script to provide special completion
+    support for the type. Click uses ``"dir"`` and ``"file"``.
+:param help: String shown next to the value if supported.
+:param kwargs: Arbitrary metadata. The built-in implementations
+    don't use this, but custom type completions paired with custom
+    shell support could use it.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/shell\+\_\+completion.\+py\end{DoxyCompactItemize}

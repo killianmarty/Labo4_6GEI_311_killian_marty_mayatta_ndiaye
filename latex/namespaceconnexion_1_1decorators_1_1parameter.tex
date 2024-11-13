@@ -1,0 +1,74 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage connexion.\+decorators.\+parameter}
+\hypertarget{namespaceconnexion_1_1decorators_1_1parameter}{}\label{namespaceconnexion_1_1decorators_1_1parameter}\index{connexion.decorators.parameter@{connexion.decorators.parameter}}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1decorators_1_1parameter_a9f31e7343b8aa1dd1e211f1ce53dfc13}{inspect\+\_\+function\+\_\+arguments}} (function)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1decorators_1_1parameter_aab8472fdf24846efa87404f170995872}{snake\+\_\+and\+\_\+shadow}} (name)
+\item 
+\Hypertarget{namespaceconnexion_1_1decorators_1_1parameter_a79f90e66c79102f3f4c9757d884211be}\label{namespaceconnexion_1_1decorators_1_1parameter_a79f90e66c79102f3f4c9757d884211be} 
+{\bfseries sanitized} (name)
+\item 
+\Hypertarget{namespaceconnexion_1_1decorators_1_1parameter_adfa8cc5ec1a3b147213f694a82be5743}\label{namespaceconnexion_1_1decorators_1_1parameter_adfa8cc5ec1a3b147213f694a82be5743} 
+{\bfseries pythonic} (name)
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1decorators_1_1parameter_adac43e7bc9ef4c6bdbdfee1479985a83}{parameter\+\_\+to\+\_\+arg}} (operation, function, pythonic\+\_\+params=False, pass\+\_\+context\+\_\+arg\+\_\+name=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceconnexion_1_1decorators_1_1parameter_ad3a15b60ce07ee6583ba62b0a5c85fe1}\label{namespaceconnexion_1_1decorators_1_1parameter_ad3a15b60ce07ee6583ba62b0a5c85fe1} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This module defines a decorator to convert request parameters to arguments for the view function.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespaceconnexion_1_1decorators_1_1parameter_a9f31e7343b8aa1dd1e211f1ce53dfc13}\index{connexion.decorators.parameter@{connexion.decorators.parameter}!inspect\_function\_arguments@{inspect\_function\_arguments}}
+\index{inspect\_function\_arguments@{inspect\_function\_arguments}!connexion.decorators.parameter@{connexion.decorators.parameter}}
+\doxysubsubsection{\texorpdfstring{inspect\_function\_arguments()}{inspect\_function\_arguments()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1decorators_1_1parameter_a9f31e7343b8aa1dd1e211f1ce53dfc13} 
+connexion.\+decorators.\+parameter.\+inspect\+\_\+function\+\_\+arguments (\begin{DoxyParamCaption}\item[{}]{function}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the list of variables names of a function and if it
+accepts keyword arguments.
+
+:type function: Callable
+:rtype: tuple[list[str], bool]
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1decorators_1_1parameter_adac43e7bc9ef4c6bdbdfee1479985a83}\index{connexion.decorators.parameter@{connexion.decorators.parameter}!parameter\_to\_arg@{parameter\_to\_arg}}
+\index{parameter\_to\_arg@{parameter\_to\_arg}!connexion.decorators.parameter@{connexion.decorators.parameter}}
+\doxysubsubsection{\texorpdfstring{parameter\_to\_arg()}{parameter\_to\_arg()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1decorators_1_1parameter_adac43e7bc9ef4c6bdbdfee1479985a83} 
+connexion.\+decorators.\+parameter.\+parameter\+\_\+to\+\_\+arg (\begin{DoxyParamCaption}\item[{}]{operation}{, }\item[{}]{function}{, }\item[{}]{pythonic\+\_\+params}{ = {\ttfamily False}, }\item[{}]{pass\+\_\+context\+\_\+arg\+\_\+name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pass query and body parameters as keyword arguments to handler function.
+
+See (https://github.com/zalando/connexion/issues/59)
+:param operation: The operation being called
+:type operation: connexion.operations.AbstractOperation
+:param pythonic_params: When True CamelCase parameters are converted to snake_case and an underscore is appended to
+any shadowed built-ins
+:type pythonic_params: bool
+:param pass_context_arg_name: If not None URL and function has an argument matching this name, the framework's
+request context will be passed as that argument.
+:type pass_context_arg_name: str|None
+\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1decorators_1_1parameter_aab8472fdf24846efa87404f170995872}\index{connexion.decorators.parameter@{connexion.decorators.parameter}!snake\_and\_shadow@{snake\_and\_shadow}}
+\index{snake\_and\_shadow@{snake\_and\_shadow}!connexion.decorators.parameter@{connexion.decorators.parameter}}
+\doxysubsubsection{\texorpdfstring{snake\_and\_shadow()}{snake\_and\_shadow()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1decorators_1_1parameter_aab8472fdf24846efa87404f170995872} 
+connexion.\+decorators.\+parameter.\+snake\+\_\+and\+\_\+shadow (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts the given name into Pythonic form. Firstly it converts CamelCase names to snake_case. Secondly it looks to
+see if the name matches a known built-in and if it does it appends an underscore to the name.
+:param name: The parameter name
+:type name: str
+:return:
+\end{DoxyVerb}
+ 

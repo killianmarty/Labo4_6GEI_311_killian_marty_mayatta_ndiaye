@@ -1,0 +1,128 @@
+\doxysection{jsonschema.\+exceptions Namespace Reference}
+\hypertarget{namespacejsonschema_1_1exceptions}{}\label{namespacejsonschema_1_1exceptions}\index{jsonschema.exceptions@{jsonschema.exceptions}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1___error}{\+\_\+\+Error}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1___ref_resolution_error}{\+\_\+\+Ref\+Resolution\+Error}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1___wrapped_referencing_error}{\+\_\+\+Wrapped\+Referencing\+Error}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_error_tree}{Error\+Tree}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_format_error}{Format\+Error}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_schema_error}{Schema\+Error}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_undefined_type_check}{Undefined\+Type\+Check}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_unknown_type}{Unknown\+Type}}
+\item 
+class \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_validation_error}{Validation\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1exceptions_a73d3a3f813d8eaa33ee85b065a6866dc}{\+\_\+pretty}} (Any thing, str prefix)
+\item 
+\Hypertarget{namespacejsonschema_1_1exceptions_a0e5ad22b9d4fc3bfa01fc8026447736b}\label{namespacejsonschema_1_1exceptions_a0e5ad22b9d4fc3bfa01fc8026447736b} 
+{\bfseries \+\_\+\+\_\+getattr\+\_\+\+\_\+} (name)
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1exceptions_a936ae96b17abcf23fcd968166c396e3a}{by\+\_\+relevance}} (weak=WEAK\+\_\+\+MATCHES, strong=STRONG\+\_\+\+MATCHES)
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1exceptions_abeedb7a173c1c4df43e26043a348c088}{best\+\_\+match}} (errors, key=relevance)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejsonschema_1_1exceptions_af3fbc717674a8d5d48eb4d9a03f66807}\label{namespacejsonschema_1_1exceptions_af3fbc717674a8d5d48eb4d9a03f66807} 
+frozenset {\bfseries WEAK\+\_\+\+MATCHES} = frozenset(\mbox{[}"{}any\+Of"{}, "{}one\+Of"{}\mbox{]})
+\item 
+\Hypertarget{namespacejsonschema_1_1exceptions_a007daf3083899836124b425083ea9e89}\label{namespacejsonschema_1_1exceptions_a007daf3083899836124b425083ea9e89} 
+frozenset {\bfseries STRONG\+\_\+\+MATCHES} = frozenset()
+\item 
+\Hypertarget{namespacejsonschema_1_1exceptions_a1bb99784e27f8e0728ede5ba1b22e859}\label{namespacejsonschema_1_1exceptions_a1bb99784e27f8e0728ede5ba1b22e859} 
+{\bfseries \+\_\+unset} = \mbox{\hyperlink{classjsonschema_1_1__utils_1_1_unset}{\+\_\+utils.\+Unset}}()
+\item 
+\Hypertarget{namespacejsonschema_1_1exceptions_a194ae65e1174e6a9b85744de3d77f977}\label{namespacejsonschema_1_1exceptions_a194ae65e1174e6a9b85744de3d77f977} 
+{\bfseries relevance} = \mbox{\hyperlink{namespacejsonschema_1_1exceptions_a936ae96b17abcf23fcd968166c396e3a}{by\+\_\+relevance}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Validation errors, and some surrounding helpers.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacejsonschema_1_1exceptions_a73d3a3f813d8eaa33ee85b065a6866dc}\index{jsonschema.exceptions@{jsonschema.exceptions}!\_pretty@{\_pretty}}
+\index{\_pretty@{\_pretty}!jsonschema.exceptions@{jsonschema.exceptions}}
+\doxysubsubsection{\texorpdfstring{\_pretty()}{\_pretty()}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1exceptions_a73d3a3f813d8eaa33ee85b065a6866dc} 
+jsonschema.\+exceptions.\+\_\+pretty (\begin{DoxyParamCaption}\item[{Any}]{thing}{, }\item[{str}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Format something for an error message as prettily as we currently can.
+\end{DoxyVerb}
+ \Hypertarget{namespacejsonschema_1_1exceptions_abeedb7a173c1c4df43e26043a348c088}\index{jsonschema.exceptions@{jsonschema.exceptions}!best\_match@{best\_match}}
+\index{best\_match@{best\_match}!jsonschema.exceptions@{jsonschema.exceptions}}
+\doxysubsubsection{\texorpdfstring{best\_match()}{best\_match()}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1exceptions_abeedb7a173c1c4df43e26043a348c088} 
+jsonschema.\+exceptions.\+best\+\_\+match (\begin{DoxyParamCaption}\item[{}]{errors}{, }\item[{}]{key}{ = {\ttfamily relevance}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Try to find an error that appears to be the best match among given errors.
+
+In general, errors that are higher up in the instance (i.e. for which
+`ValidationError.path` is shorter) are considered better matches,
+since they indicate "more" is wrong with the instance.
+
+If the resulting match is either :kw:`oneOf` or :kw:`anyOf`, the
+*opposite* assumption is made -- i.e. the deepest error is picked,
+since these keywords only need to match once, and any other errors
+may not be relevant.
+
+Arguments:
+    errors (collections.abc.Iterable):
+
+        the errors to select from. Do not provide a mixture of
+        errors from different validation attempts (i.e. from
+        different instances or schemas), since it won't produce
+        sensical output.
+
+    key (collections.abc.Callable):
+
+        the key to use when sorting errors. See `relevance` and
+        transitively `by_relevance` for more details (the default is
+        to sort with the defaults of that function). Changing the
+        default is only useful if you want to change the function
+        that rates errors but still want the error context descent
+        done by this function.
+
+Returns:
+    the best matching error, or ``None`` if the iterable was empty
+
+.. note::
+
+    This function is a heuristic. Its return value may change for a given
+    set of inputs from version to version if better heuristics are added.\end{DoxyVerb}
+ \Hypertarget{namespacejsonschema_1_1exceptions_a936ae96b17abcf23fcd968166c396e3a}\index{jsonschema.exceptions@{jsonschema.exceptions}!by\_relevance@{by\_relevance}}
+\index{by\_relevance@{by\_relevance}!jsonschema.exceptions@{jsonschema.exceptions}}
+\doxysubsubsection{\texorpdfstring{by\_relevance()}{by\_relevance()}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1exceptions_a936ae96b17abcf23fcd968166c396e3a} 
+jsonschema.\+exceptions.\+by\+\_\+relevance (\begin{DoxyParamCaption}\item[{}]{weak}{ = {\ttfamily WEAK\+\_\+MATCHES}, }\item[{}]{strong}{ = {\ttfamily STRONG\+\_\+MATCHES}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a key function that can be used to sort errors by relevance.
+
+Arguments:
+    weak (set):
+        a collection of validation keywords to consider to be
+        "weak".  If there are two errors at the same level of the
+        instance and one is in the set of weak validation keywords,
+        the other error will take priority. By default, :kw:`anyOf`
+        and :kw:`oneOf` are considered weak keywords and will be
+        superseded by other same-level validation errors.
+
+    strong (set):
+        a collection of validation keywords to consider to be
+        "strong"\end{DoxyVerb}
+ 

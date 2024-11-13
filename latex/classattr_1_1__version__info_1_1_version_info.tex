@@ -1,0 +1,81 @@
+\doxysection{Référence de la classe attr.\+\_\+version\+\_\+info.\+Version\+Info}
+\hypertarget{classattr_1_1__version__info_1_1_version_info}{}\label{classattr_1_1__version__info_1_1_version_info}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_ab3d9b96558c9f9b1bff8bfb8619c62f6}\label{classattr_1_1__version__info_1_1_version_info_ab3d9b96558c9f9b1bff8bfb8619c62f6} 
+{\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_aec5cdefd1f09c7eb054009182c7ae350}\label{classattr_1_1__version__info_1_1_version_info_aec5cdefd1f09c7eb054009182c7ae350} 
+{\bfseries \+\_\+\+\_\+lt\+\_\+\+\_\+} (self, other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_ab583873016fb5525a1916e498edc6f5e}\label{classattr_1_1__version__info_1_1_version_info_ab583873016fb5525a1916e498edc6f5e} 
+{\bfseries year} = attrib(type=int)
+\item 
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_aef4ab70909ee35c4d4535ade1afdfedc}\label{classattr_1_1__version__info_1_1_version_info_aef4ab70909ee35c4d4535ade1afdfedc} 
+{\bfseries minor} = attrib(type=int)
+\item 
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_a4139f2047f274ada9596a6be2594bee0}\label{classattr_1_1__version__info_1_1_version_info_a4139f2047f274ada9596a6be2594bee0} 
+{\bfseries micro} = attrib(type=int)
+\item 
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_a5a95367d815b184c5799b3c53373529b}\label{classattr_1_1__version__info_1_1_version_info_a5a95367d815b184c5799b3c53373529b} 
+{\bfseries releaselevel} = attrib(type=str)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_abc28280abb99d71547caef7386569c75}{\+\_\+from\+\_\+version\+\_\+string}} (cls, s)
+\item 
+\mbox{\hyperlink{classattr_1_1__version__info_1_1_version_info_a4f73db2ccebe79c5c9273e6b655ec9f8}{\+\_\+ensure\+\_\+tuple}} (self, other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}A version object that can be compared to tuple of length 1--4:
+
+>>> attr.VersionInfo(19, 1, 0, "final")  <= (19, 2)
+True
+>>> attr.VersionInfo(19, 1, 0, "final") < (19, 1, 1)
+True
+>>> vi = attr.VersionInfo(19, 2, 0, "final")
+>>> vi < (19, 1, 1)
+False
+>>> vi < (19,)
+False
+>>> vi == (19, 2,)
+True
+>>> vi == (19, 2, 1)
+False
+
+.. versionadded:: 19.2
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classattr_1_1__version__info_1_1_version_info_a4f73db2ccebe79c5c9273e6b655ec9f8}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!\_ensure\_tuple@{\_ensure\_tuple}}
+\index{\_ensure\_tuple@{\_ensure\_tuple}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_tuple()}{\_ensure\_tuple()}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_a4f73db2ccebe79c5c9273e6b655ec9f8} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+\_\+ensure\+\_\+tuple (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Ensure *other* is a tuple of a valid length.
+
+Returns a possibly transformed *other* and ourselves as a tuple of
+the same length as *other*.
+\end{DoxyVerb}
+ \Hypertarget{classattr_1_1__version__info_1_1_version_info_abc28280abb99d71547caef7386569c75}\index{attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}!\_from\_version\_string@{\_from\_version\_string}}
+\index{\_from\_version\_string@{\_from\_version\_string}!attr.\_version\_info.VersionInfo@{attr.\_version\_info.VersionInfo}}
+\doxysubsubsection{\texorpdfstring{\_from\_version\_string()}{\_from\_version\_string()}}
+{\footnotesize\ttfamily \label{classattr_1_1__version__info_1_1_version_info_abc28280abb99d71547caef7386569c75} 
+attr.\+\_\+version\+\_\+info.\+Version\+Info.\+\_\+from\+\_\+version\+\_\+string (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parse *s* and return a _VersionInfo.
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/attr/\+\_\+version\+\_\+info.\+py\end{DoxyCompactItemize}

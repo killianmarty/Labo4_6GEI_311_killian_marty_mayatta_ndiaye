@@ -1,0 +1,80 @@
+\doxysection{pip.\+\_\+internal.\+exceptions.\+Hash\+Error Class Reference}
+\hypertarget{classpip_1_1__internal_1_1exceptions_1_1_hash_error}{}\label{classpip_1_1__internal_1_1exceptions_1_1_hash_error}\index{pip.\_internal.exceptions.HashError@{pip.\_internal.exceptions.HashError}}
+Inheritance diagram for pip.\+\_\+internal.\+exceptions.\+Hash\+Error\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.712538cm]{classpip_1_1__internal_1_1exceptions_1_1_hash_error}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1exceptions_1_1_hash_error_af9a0a12e3d262c1002c25579adc9c53e}{body}} (self)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1exceptions_1_1_hash_error_a0b43ea83258a8a894dbc9895ffcc15ee}\label{classpip_1_1__internal_1_1exceptions_1_1_hash_error_a0b43ea83258a8a894dbc9895ffcc15ee} 
+{\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1exceptions_1_1_hash_error_af3c50ea4f7da6636a64b938cda7052c9}\label{classpip_1_1__internal_1_1exceptions_1_1_hash_error_af3c50ea4f7da6636a64b938cda7052c9} 
+{\bfseries req} = None
+\item 
+\Hypertarget{classpip_1_1__internal_1_1exceptions_1_1_hash_error_a8dc528f839ced7bff0f8909445b48b1b}\label{classpip_1_1__internal_1_1exceptions_1_1_hash_error_a8dc528f839ced7bff0f8909445b48b1b} 
+str {\bfseries head} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1exceptions_1_1_hash_error_a421ed938c154705c08b43da35b4bfc71}{\+\_\+requirement\+\_\+name}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A failure to verify a package against known-good hashes
+
+:cvar order: An int sorting hash exception classes by difficulty of
+    recovery (lower being harder), so the user doesn't bother fretting
+    about unpinned packages when he has deeper issues, like VCS
+    dependencies, to deal with. Also keeps error reports in a
+    deterministic order.
+:cvar head: A section heading for display above potentially many
+    exceptions of this kind
+:ivar req: The InstallRequirement that triggered this error. This is
+    pasted on after the exception is instantiated, because it's not
+    typically available earlier.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1exceptions_1_1_hash_error_a421ed938c154705c08b43da35b4bfc71}\index{pip.\_internal.exceptions.HashError@{pip.\_internal.exceptions.HashError}!\_requirement\_name@{\_requirement\_name}}
+\index{\_requirement\_name@{\_requirement\_name}!pip.\_internal.exceptions.HashError@{pip.\_internal.exceptions.HashError}}
+\doxysubsubsection{\texorpdfstring{\_requirement\_name()}{\_requirement\_name()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1exceptions_1_1_hash_error_a421ed938c154705c08b43da35b4bfc71} 
+pip.\+\_\+internal.\+exceptions.\+Hash\+Error.\+\_\+requirement\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a description of the requirement that triggered me.
+
+This default implementation returns long description of the req, with
+line numbers\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1exceptions_1_1_hash_error_af9a0a12e3d262c1002c25579adc9c53e}\index{pip.\_internal.exceptions.HashError@{pip.\_internal.exceptions.HashError}!body@{body}}
+\index{body@{body}!pip.\_internal.exceptions.HashError@{pip.\_internal.exceptions.HashError}}
+\doxysubsubsection{\texorpdfstring{body()}{body()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1exceptions_1_1_hash_error_af9a0a12e3d262c1002c25579adc9c53e} 
+pip.\+\_\+internal.\+exceptions.\+Hash\+Error.\+body (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a summary of me for display under the heading.
+
+This default implementation simply prints a description of the
+triggering requirement.
+
+:param req: The InstallRequirement that provoked this error, with
+    its link already populated by the resolver's _populate_link().\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1exceptions_1_1_hash_mismatch_a1f025ec7fd856c8ea513de197d17185e}{pip.\+\_\+internal.\+exceptions.\+Hash\+Mismatch}}, and \mbox{\hyperlink{classpip_1_1__internal_1_1exceptions_1_1_hash_missing_afcca8093a8f82cc941e6edb3a6f65d58}{pip.\+\_\+internal.\+exceptions.\+Hash\+Missing}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/exceptions.\+py\end{DoxyCompactItemize}

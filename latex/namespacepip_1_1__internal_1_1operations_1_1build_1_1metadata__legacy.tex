@@ -1,0 +1,42 @@
+\doxysection{pip.\+\_\+internal.\+operations.\+build.\+metadata\+\_\+legacy Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1metadata__legacy}{}\label{namespacepip_1_1__internal_1_1operations_1_1build_1_1metadata__legacy}\index{pip.\_internal.operations.build.metadata\_legacy@{pip.\_internal.operations.build.metadata\_legacy}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1build_1_1metadata__legacy_a239d18ebd4c78c0e5139c80fedc4945d}{\+\_\+find\+\_\+egg\+\_\+info}} (directory)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1build_1_1metadata__legacy_aafc7d32eb303e251ccbb14cd8ef07d37}{generate\+\_\+metadata}} (build\+\_\+env, setup\+\_\+py\+\_\+path, source\+\_\+dir, isolated, details)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1metadata__legacy_ae07a76dc057c51776b8740cf4014eefd}\label{namespacepip_1_1__internal_1_1operations_1_1build_1_1metadata__legacy_ae07a76dc057c51776b8740cf4014eefd} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Metadata generation logic for legacy source distributions.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1metadata__legacy_a239d18ebd4c78c0e5139c80fedc4945d}\index{pip.\_internal.operations.build.metadata\_legacy@{pip.\_internal.operations.build.metadata\_legacy}!\_find\_egg\_info@{\_find\_egg\_info}}
+\index{\_find\_egg\_info@{\_find\_egg\_info}!pip.\_internal.operations.build.metadata\_legacy@{pip.\_internal.operations.build.metadata\_legacy}}
+\doxysubsubsection{\texorpdfstring{\_find\_egg\_info()}{\_find\_egg\_info()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1build_1_1metadata__legacy_a239d18ebd4c78c0e5139c80fedc4945d} 
+pip.\+\_\+internal.\+operations.\+build.\+metadata\+\_\+legacy.\+\_\+find\+\_\+egg\+\_\+info (\begin{DoxyParamCaption}\item[{}]{directory}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Find an .egg-info subdirectory in `directory`.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1metadata__legacy_aafc7d32eb303e251ccbb14cd8ef07d37}\index{pip.\_internal.operations.build.metadata\_legacy@{pip.\_internal.operations.build.metadata\_legacy}!generate\_metadata@{generate\_metadata}}
+\index{generate\_metadata@{generate\_metadata}!pip.\_internal.operations.build.metadata\_legacy@{pip.\_internal.operations.build.metadata\_legacy}}
+\doxysubsubsection{\texorpdfstring{generate\_metadata()}{generate\_metadata()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1build_1_1metadata__legacy_aafc7d32eb303e251ccbb14cd8ef07d37} 
+pip.\+\_\+internal.\+operations.\+build.\+metadata\+\_\+legacy.\+generate\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{build\+\_\+env}{, }\item[{}]{setup\+\_\+py\+\_\+path}{, }\item[{}]{source\+\_\+dir}{, }\item[{}]{isolated}{, }\item[{}]{details}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate metadata using setup.py-based defacto mechanisms.
+
+Returns the generated metadata directory.
+\end{DoxyVerb}
+ 

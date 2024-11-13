@@ -1,0 +1,98 @@
+\doxysection{werkzeug.\+datastructures.\+Immutable\+Multi\+Dict\+Mixin Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin}{}\label{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin}\index{werkzeug.datastructures.ImmutableMultiDictMixin@{werkzeug.datastructures.ImmutableMultiDictMixin}}
+Inheritance diagram for werkzeug.\+datastructures.\+Immutable\+Multi\+Dict\+Mixin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.783440cm]{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a6e54182c8c59f30a4e4a968248f67e14}{\+\_\+\+\_\+reduce\+\_\+ex\+\_\+\+\_\+}} (self, protocol)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a3c1389ae41976762a5b29b904902afd9}\label{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a3c1389ae41976762a5b29b904902afd9} 
+{\bfseries add} (self, key, value)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a127d6bf645114d49db7c9175629c8505}\label{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a127d6bf645114d49db7c9175629c8505} 
+{\bfseries popitemlist} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a22a8dbb7c9027fd56d84c0306948a553}\label{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a22a8dbb7c9027fd56d84c0306948a553} 
+{\bfseries poplist} (self, key)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a6a86944c8f79c3dd3d1f4d1e8c133efd}\label{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a6a86944c8f79c3dd3d1f4d1e8c133efd} 
+{\bfseries setlist} (self, key, new\+\_\+list)
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a28d72074baf343ca8d4056d54c3748c9}\label{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a28d72074baf343ca8d4056d54c3748c9} 
+{\bfseries setlistdefault} (self, key, default\+\_\+list=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries fromkeys} (cls, keys, value=None)
+\item 
+{\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+{\bfseries setdefault} (self, key, default=None)
+\item 
+{\bfseries update} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+{\bfseries pop} (self, key, default=None)
+\item 
+{\bfseries popitem} (self)
+\item 
+{\bfseries \+\_\+\+\_\+setitem\+\_\+\+\_\+} (self, key, value)
+\item 
+{\bfseries \+\_\+\+\_\+delitem\+\_\+\+\_\+} (self, key)
+\item 
+{\bfseries clear} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a887a2839cfb4b06646a4b1fc5180f778}{\+\_\+iter\+\_\+hashitems}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+hash\+\_\+cache} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Makes a :class:`MultiDict` immutable.
+
+.. versionadded:: 0.5
+
+:private:
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a6e54182c8c59f30a4e4a968248f67e14}\index{werkzeug.datastructures.ImmutableMultiDictMixin@{werkzeug.datastructures.ImmutableMultiDictMixin}!\_\_reduce\_ex\_\_@{\_\_reduce\_ex\_\_}}
+\index{\_\_reduce\_ex\_\_@{\_\_reduce\_ex\_\_}!werkzeug.datastructures.ImmutableMultiDictMixin@{werkzeug.datastructures.ImmutableMultiDictMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_reduce\_ex\_\_()}{\_\_reduce\_ex\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a6e54182c8c59f30a4e4a968248f67e14} 
+werkzeug.\+datastructures.\+Immutable\+Multi\+Dict\+Mixin.\+\_\+\+\_\+reduce\+\_\+ex\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{protocol}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}.
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a887a2839cfb4b06646a4b1fc5180f778}\index{werkzeug.datastructures.ImmutableMultiDictMixin@{werkzeug.datastructures.ImmutableMultiDictMixin}!\_iter\_hashitems@{\_iter\_hashitems}}
+\index{\_iter\_hashitems@{\_iter\_hashitems}!werkzeug.datastructures.ImmutableMultiDictMixin@{werkzeug.datastructures.ImmutableMultiDictMixin}}
+\doxysubsubsection{\texorpdfstring{\_iter\_hashitems()}{\_iter\_hashitems()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_immutable_multi_dict_mixin_a887a2839cfb4b06646a4b1fc5180f778} 
+werkzeug.\+datastructures.\+Immutable\+Multi\+Dict\+Mixin.\+\_\+iter\+\_\+hashitems (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/datastructures.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\doxysection{Référence de la classe connexion.\+decorators.\+response.\+Response\+Validator}
+\hypertarget{classconnexion_1_1decorators_1_1response_1_1_response_validator}{}\label{classconnexion_1_1decorators_1_1response_1_1_response_validator}\index{connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}}
+Graphe d\textquotesingle{}héritage de connexion.\+decorators.\+response.\+Response\+Validator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconnexion_1_1decorators_1_1response_1_1_response_validator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1decorators_1_1response_1_1_response_validator_a52d38b5328b09c40d437a0caaf5c7048}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, operation, mimetype, validator=None)
+\item 
+\mbox{\hyperlink{classconnexion_1_1decorators_1_1response_1_1_response_validator_a5a40df03376ba716796f980ebc32f65f}{validate\+\_\+response}} (self, data, status\+\_\+code, headers, url)
+\item 
+bool \mbox{\hyperlink{classconnexion_1_1decorators_1_1response_1_1_response_validator_a27a2f594558c64b53d1c50ec18673a8c}{is\+\_\+json\+\_\+schema\+\_\+compatible}} (self, dict response\+\_\+schema)
+\item 
+\mbox{\hyperlink{classconnexion_1_1decorators_1_1response_1_1_response_validator_a3097a914c2f5ad837d3a87ad7bea2aa3}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, function)
+\item 
+\mbox{\hyperlink{classconnexion_1_1decorators_1_1response_1_1_response_validator_ac54afa639335ee585bcbc83dddc8bfa1}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques hérités de \mbox{\hyperlink{classconnexion_1_1decorators_1_1decorator_1_1_base_decorator}{connexion.\+decorators.\+decorator.\+Base\+Decorator}}}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1response_1_1_response_validator_a6777168a0728509d29d8330881f12536}\label{classconnexion_1_1decorators_1_1response_1_1_response_validator_a6777168a0728509d29d8330881f12536} 
+{\bfseries operation} = operation
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1response_1_1_response_validator_a50fb9faa33b3ac136ec5094943994265}\label{classconnexion_1_1decorators_1_1response_1_1_response_validator_a50fb9faa33b3ac136ec5094943994265} 
+str {\bfseries mimetype} = mimetype
+\item 
+\Hypertarget{classconnexion_1_1decorators_1_1response_1_1_response_validator_a59fa8d50869f80f37624451f1a09046f}\label{classconnexion_1_1decorators_1_1response_1_1_response_validator_a59fa8d50869f80f37624451f1a09046f} 
+{\bfseries validator} = validator
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\Hypertarget{classconnexion_1_1decorators_1_1response_1_1_response_validator_a52d38b5328b09c40d437a0caaf5c7048}\index{connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1decorators_1_1response_1_1_response_validator_a52d38b5328b09c40d437a0caaf5c7048} 
+connexion.\+decorators.\+response.\+Response\+Validator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation}{, }\item[{}]{mimetype}{, }\item[{}]{validator}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type operation: Operation
+:type mimetype: str
+:param validator: Validator class that should be used to validate passed data
+                  against API schema.
+:type validator: jsonschema.IValidator
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classconnexion_1_1decorators_1_1response_1_1_response_validator_a3097a914c2f5ad837d3a87ad7bea2aa3}\index{connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1decorators_1_1response_1_1_response_validator_a3097a914c2f5ad837d3a87ad7bea2aa3} 
+connexion.\+decorators.\+response.\+Response\+Validator.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{function}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:type function: types.FunctionType
+:rtype: types.FunctionType
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1decorators_1_1decorator_1_1_base_decorator_af00f8fbdc82701eb23d203646f1a903c}{connexion.\+decorators.\+decorator.\+Base\+Decorator}}.
+
+\Hypertarget{classconnexion_1_1decorators_1_1response_1_1_response_validator_ac54afa639335ee585bcbc83dddc8bfa1}\index{connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1decorators_1_1response_1_1_response_validator_ac54afa639335ee585bcbc83dddc8bfa1} 
+connexion.\+decorators.\+response.\+Response\+Validator.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:rtype: str
+\end{DoxyVerb}
+ 
+
+Réimplémentée à partir de \mbox{\hyperlink{classconnexion_1_1decorators_1_1decorator_1_1_base_decorator_a8689791b893d72606482fbda0273370d}{connexion.\+decorators.\+decorator.\+Base\+Decorator}}.
+
+\Hypertarget{classconnexion_1_1decorators_1_1response_1_1_response_validator_a27a2f594558c64b53d1c50ec18673a8c}\index{connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}!is\_json\_schema\_compatible@{is\_json\_schema\_compatible}}
+\index{is\_json\_schema\_compatible@{is\_json\_schema\_compatible}!connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}}
+\doxysubsubsection{\texorpdfstring{is\_json\_schema\_compatible()}{is\_json\_schema\_compatible()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1decorators_1_1response_1_1_response_validator_a27a2f594558c64b53d1c50ec18673a8c} 
+ bool connexion.\+decorators.\+response.\+Response\+Validator.\+is\+\_\+json\+\_\+schema\+\_\+compatible (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict}]{response\+\_\+schema}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verify if the specified operation responses are JSON schema
+compatible.
+
+All operations that specify a JSON schema and have content
+type "application/json" or "text/plain" can be validated using
+json_schema package.
+\end{DoxyVerb}
+ \Hypertarget{classconnexion_1_1decorators_1_1response_1_1_response_validator_a5a40df03376ba716796f980ebc32f65f}\index{connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}!validate\_response@{validate\_response}}
+\index{validate\_response@{validate\_response}!connexion.decorators.response.ResponseValidator@{connexion.decorators.response.ResponseValidator}}
+\doxysubsubsection{\texorpdfstring{validate\_response()}{validate\_response()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1decorators_1_1response_1_1_response_validator_a5a40df03376ba716796f980ebc32f65f} 
+connexion.\+decorators.\+response.\+Response\+Validator.\+validate\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{data}{, }\item[{}]{status\+\_\+code}{, }\item[{}]{headers}{, }\item[{}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Validates the Response object based on what has been declared in the specification.
+Ensures the response body matches the declared schema.
+:type data: dict
+:type status_code: int
+:type headers: dict
+:rtype bool | None
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/decorators/response.\+py\end{DoxyCompactItemize}

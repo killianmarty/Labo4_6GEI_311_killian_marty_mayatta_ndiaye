@@ -1,0 +1,41 @@
+\doxysection{zipp.\+compat.\+overlay Namespace Reference}
+\hypertarget{namespacezipp_1_1compat_1_1overlay}{}\label{namespacezipp_1_1compat_1_1overlay}\index{zipp.compat.overlay@{zipp.compat.overlay}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classzipp_1_1compat_1_1overlay_1_1_hashable_namespace}{Hashable\+Namespace}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacezipp_1_1compat_1_1overlay_a427506637157a95ea854cf2c28d705a7}\label{namespacezipp_1_1compat_1_1overlay_a427506637157a95ea854cf2c28d705a7} 
+{\bfseries zipfile} = \mbox{\hyperlink{classzipp_1_1compat_1_1overlay_1_1_hashable_namespace}{Hashable\+Namespace}}(\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}vars(importlib.\+import\+\_\+module(\textquotesingle{}zipfile\textquotesingle{})))
+\item 
+\Hypertarget{namespacezipp_1_1compat_1_1overlay_ac3bbff4af26ec215e0678a7e619b194b}\label{namespacezipp_1_1compat_1_1overlay_ac3bbff4af26ec215e0678a7e619b194b} 
+{\bfseries Path}
+\item 
+\Hypertarget{namespacezipp_1_1compat_1_1overlay_aacc0c6d4619b665078629f80b651d216}\label{namespacezipp_1_1compat_1_1overlay_aacc0c6d4619b665078629f80b651d216} 
+{\bfseries \+\_\+path}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Expose zipp.Path as .zipfile.Path.
+
+Includes everything else in ``zipfile`` to match future usage. Just
+use:
+
+>>> from zipp.compat.overlay import zipfile
+
+in place of ``import zipfile``.
+
+Relative imports are supported too.
+
+>>> from zipp.compat.overlay.zipfile import ZipInfo
+
+The ``zipfile`` object added to ``sys.modules`` needs to be
+hashable (#126).
+
+>>> _ = hash(sys.modules['zipp.compat.overlay.zipfile'])
+\end{DoxyVerb}
+ 

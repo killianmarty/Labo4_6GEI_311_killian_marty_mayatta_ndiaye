@@ -1,0 +1,61 @@
+\doxysection{pip.\+\_\+internal.\+utils.\+compatibility\+\_\+tags Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags}{}\label{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags}\index{pip.\_internal.utils.compatibility\_tags@{pip.\_internal.utils.compatibility\_tags}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_af044e171d0539977f0aaf6405fdbf1bf}\label{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_af044e171d0539977f0aaf6405fdbf1bf} 
+{\bfseries version\+\_\+info\+\_\+to\+\_\+nodot} (version\+\_\+info)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_ab18be39c5106f0436f5dfc95be39ef65}\label{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_ab18be39c5106f0436f5dfc95be39ef65} 
+{\bfseries \+\_\+mac\+\_\+platforms} (arch)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_af044f59a39eee35af4cb6970e591b368}\label{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_af044f59a39eee35af4cb6970e591b368} 
+{\bfseries \+\_\+custom\+\_\+manylinux\+\_\+platforms} (arch)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_a88c7fb0f0984918540a385c08d377d67}\label{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_a88c7fb0f0984918540a385c08d377d67} 
+{\bfseries \+\_\+get\+\_\+custom\+\_\+platforms} (arch)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_ac1e264d92681262f7b16e11bdaaab5aa}\label{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_ac1e264d92681262f7b16e11bdaaab5aa} 
+{\bfseries \+\_\+get\+\_\+python\+\_\+version} (version)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_a9cc49224f624253bdf9545f999264285}\label{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_a9cc49224f624253bdf9545f999264285} 
+{\bfseries \+\_\+get\+\_\+custom\+\_\+interpreter} (implementation=None, version=None)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_a897922d00b48ca04e9cb2d90e38c48d8}{get\+\_\+supported}} (version=None, platform=None, impl=None, abi=None \# type\+:\+Optional\mbox{[}str\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_a56b5aae9fb456e80cbc8cb1759c9caef}\label{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_a56b5aae9fb456e80cbc8cb1759c9caef} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_af4d0cc9e5c7b4bf66cf3b8ae487d8f2f}\label{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_af4d0cc9e5c7b4bf66cf3b8ae487d8f2f} 
+{\bfseries \+\_\+osx\+\_\+arch\+\_\+pat} = re.\+compile(r\textquotesingle{}(.+)\+\_\+(\textbackslash{}d+)\+\_\+(\textbackslash{}d+)\+\_\+(.+)\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Generate and work with PEP 425 Compatibility Tags.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_a897922d00b48ca04e9cb2d90e38c48d8}\index{pip.\_internal.utils.compatibility\_tags@{pip.\_internal.utils.compatibility\_tags}!get\_supported@{get\_supported}}
+\index{get\_supported@{get\_supported}!pip.\_internal.utils.compatibility\_tags@{pip.\_internal.utils.compatibility\_tags}}
+\doxysubsubsection{\texorpdfstring{get\_supported()}{get\_supported()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1utils_1_1compatibility__tags_a897922d00b48ca04e9cb2d90e38c48d8} 
+pip.\+\_\+internal.\+utils.\+compatibility\+\_\+tags.\+get\+\_\+supported (\begin{DoxyParamCaption}\item[{}]{version}{ = {\ttfamily None}, }\item[{}]{platform}{ = {\ttfamily None}, }\item[{}]{impl}{ = {\ttfamily None}, }\item[{}]{abi}{ = {\ttfamily None~~\#~type\+:~Optional\mbox{[}str\mbox{]}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of supported tags for each version specified in
+`versions`.
+
+:param version: a string version, of the form "33" or "32",
+    or None. The version will be assumed to support our ABI.
+:param platform: specify the exact platform you want valid
+    tags for, or None. If None, use the local system platform.
+:param impl: specify the exact implementation you want valid
+    tags for, or None. If None, use the local interpreter impl.
+:param abi: specify the exact abi you want valid
+    tags for, or None. If None, use the local interpreter abi.
+\end{DoxyVerb}
+ 

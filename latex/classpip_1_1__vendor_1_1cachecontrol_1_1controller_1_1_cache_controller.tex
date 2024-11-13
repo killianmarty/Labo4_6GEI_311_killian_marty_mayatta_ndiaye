@@ -1,0 +1,100 @@
+\doxysection{pip.\+\_\+vendor.\+cachecontrol.\+controller.\+Cache\+Controller Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller}{}\label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller}\index{pip.\_vendor.cachecontrol.controller.CacheController@{pip.\_vendor.cachecontrol.controller.CacheController}}
+Inheritance diagram for pip.\+\_\+vendor.\+cachecontrol.\+controller.\+Cache\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_abba551dd9f988f1403b73dbf6bc2a95a}\label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_abba551dd9f988f1403b73dbf6bc2a95a} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, cache=None, cache\+\_\+etags=True, serializer=None, status\+\_\+codes=None)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a26c2d2be77caf21df50bdfbd0c220320}\label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a26c2d2be77caf21df50bdfbd0c220320} 
+{\bfseries cache\+\_\+url} (cls, uri)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_acbbbcd912dd3c239a713d6a08ff86085}\label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_acbbbcd912dd3c239a713d6a08ff86085} 
+{\bfseries parse\+\_\+cache\+\_\+control} (self, headers)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_adc2b71902e1da6de3b175589c3791234}{cached\+\_\+request}} (self, request)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a2dd258262bbb4f60be796a5db4744a64}\label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a2dd258262bbb4f60be796a5db4744a64} 
+{\bfseries conditional\+\_\+headers} (self, request)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a4e243e109b4ebc072230acbabf4ff195}{cache\+\_\+response}} (self, request, response, body=None, status\+\_\+codes=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a3ca068d724ed02420e33991966bf5531}{update\+\_\+cached\+\_\+response}} (self, request, response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a3dbf93b9fc54cfded816c822aa5da97a}\label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a3dbf93b9fc54cfded816c822aa5da97a} 
+{\bfseries cache} = \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1cache_1_1_dict_cache}{Dict\+Cache}}() if cache is None else cache
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a0a782fbeaf69f197b84087738fce482c}\label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a0a782fbeaf69f197b84087738fce482c} 
+{\bfseries cache\+\_\+etags} = cache\+\_\+etags
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a9899019b9ffcb403ab15e42aef0123fa}\label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a9899019b9ffcb403ab15e42aef0123fa} 
+{\bfseries serializer} = serializer or \mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1serialize_1_1_serializer}{Serializer}}()
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a32c74cb854aeaf097b2e469a4d03b197}\label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a32c74cb854aeaf097b2e469a4d03b197} 
+{\bfseries cacheable\+\_\+status\+\_\+codes} = status\+\_\+codes or (200, 203, 300, 301)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a6ab03c36f6bf233ec4a93bbad5eb11ca}{\+\_\+urlnorm}} (cls, uri)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An interface to see if request should cached or not.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a6ab03c36f6bf233ec4a93bbad5eb11ca}\index{pip.\_vendor.cachecontrol.controller.CacheController@{pip.\_vendor.cachecontrol.controller.CacheController}!\_urlnorm@{\_urlnorm}}
+\index{\_urlnorm@{\_urlnorm}!pip.\_vendor.cachecontrol.controller.CacheController@{pip.\_vendor.cachecontrol.controller.CacheController}}
+\doxysubsubsection{\texorpdfstring{\_urlnorm()}{\_urlnorm()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a6ab03c36f6bf233ec4a93bbad5eb11ca} 
+pip.\+\_\+vendor.\+cachecontrol.\+controller.\+Cache\+Controller.\+\_\+urlnorm (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Normalize the URL to create a safe key for the cache\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a4e243e109b4ebc072230acbabf4ff195}\index{pip.\_vendor.cachecontrol.controller.CacheController@{pip.\_vendor.cachecontrol.controller.CacheController}!cache\_response@{cache\_response}}
+\index{cache\_response@{cache\_response}!pip.\_vendor.cachecontrol.controller.CacheController@{pip.\_vendor.cachecontrol.controller.CacheController}}
+\doxysubsubsection{\texorpdfstring{cache\_response()}{cache\_response()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a4e243e109b4ebc072230acbabf4ff195} 
+pip.\+\_\+vendor.\+cachecontrol.\+controller.\+Cache\+Controller.\+cache\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{, }\item[{}]{response}{, }\item[{}]{body}{ = {\ttfamily None}, }\item[{}]{status\+\_\+codes}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Algorithm for caching requests.
+
+This assumes a requests Response object.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_adc2b71902e1da6de3b175589c3791234}\index{pip.\_vendor.cachecontrol.controller.CacheController@{pip.\_vendor.cachecontrol.controller.CacheController}!cached\_request@{cached\_request}}
+\index{cached\_request@{cached\_request}!pip.\_vendor.cachecontrol.controller.CacheController@{pip.\_vendor.cachecontrol.controller.CacheController}}
+\doxysubsubsection{\texorpdfstring{cached\_request()}{cached\_request()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_adc2b71902e1da6de3b175589c3791234} 
+pip.\+\_\+vendor.\+cachecontrol.\+controller.\+Cache\+Controller.\+cached\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a cached response if it exists in the cache, otherwise
+return False.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a3ca068d724ed02420e33991966bf5531}\index{pip.\_vendor.cachecontrol.controller.CacheController@{pip.\_vendor.cachecontrol.controller.CacheController}!update\_cached\_response@{update\_cached\_response}}
+\index{update\_cached\_response@{update\_cached\_response}!pip.\_vendor.cachecontrol.controller.CacheController@{pip.\_vendor.cachecontrol.controller.CacheController}}
+\doxysubsubsection{\texorpdfstring{update\_cached\_response()}{update\_cached\_response()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1controller_1_1_cache_controller_a3ca068d724ed02420e33991966bf5531} 
+pip.\+\_\+vendor.\+cachecontrol.\+controller.\+Cache\+Controller.\+update\+\_\+cached\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{request}{, }\item[{}]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}On a 304 we will get a new set of headers that we want to
+update our cached value with, assuming we have one.
+
+This should only ever be called when we've sent an ETag and
+gotten a 304 as the response.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/cachecontrol/controller.\+py\end{DoxyCompactItemize}

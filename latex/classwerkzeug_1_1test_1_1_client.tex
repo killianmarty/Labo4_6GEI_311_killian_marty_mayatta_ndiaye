@@ -1,0 +1,231 @@
+\doxysection{werkzeug.\+test.\+Client Class Reference}
+\hypertarget{classwerkzeug_1_1test_1_1_client}{}\label{classwerkzeug_1_1test_1_1_client}\index{werkzeug.test.Client@{werkzeug.test.Client}}
+Inheritance diagram for werkzeug.\+test.\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1test_1_1_client}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_client_aa18c6aa31d708eac9e5bea20d04ae210}\label{classwerkzeug_1_1test_1_1_client_aa18c6aa31d708eac9e5bea20d04ae210} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, "{}WSGIApplication"{} application, t.\+Optional\mbox{[}t.\+Type\mbox{[}"{}Response"{}\mbox{]}\mbox{]} response\+\_\+wrapper=None, bool use\+\_\+cookies=True, bool allow\+\_\+subdomain\+\_\+redirects=False)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a94c3e3771279f987abbfec12d4a81239}{set\+\_\+cookie}} (self, str server\+\_\+name, str key, str value="{}"{}, t.\+Optional\mbox{[}t.\+Union\mbox{[}timedelta, int\mbox{]}\mbox{]} max\+\_\+age=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}str, datetime, int, float\mbox{]}\mbox{]} expires=None, str path="{}/"{}, t.\+Optional\mbox{[}str\mbox{]} domain=None, bool secure=False, bool httponly=False, t.\+Optional\mbox{[}str\mbox{]} samesite=None, str charset="{}utf-\/8"{})
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a33ce304cb579fd0735d4b8b4964f4e7b}{delete\+\_\+cookie}} (self, str server\+\_\+name, str key, str path="{}/"{}, t.\+Optional\mbox{[}str\mbox{]} domain=None, bool secure=False, bool httponly=False, t.\+Optional\mbox{[}str\mbox{]} samesite=None)
+\item 
+t.\+Tuple\mbox{[}t.\+Iterable\mbox{[}bytes\mbox{]}, str, \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_headers}{Headers}}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_aa59422ef24397acb836416cb223d648b}{run\+\_\+wsgi\+\_\+app}} (self, "{}WSGIEnvironment"{} environ, bool buffered=False)
+\item 
+"{}Test\+Response"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_ab71ab480aa995371c8341d0403129375}{resolve\+\_\+redirect}} (self, "{}Test\+Response"{} response, bool buffered=False)
+\item 
+"{}Test\+Response"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a8556c208fe84482e285abe061f0a1499}{open}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, bool buffered=False, bool follow\+\_\+redirects=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+"{}Test\+Response"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a971398b73132dbc4620166a42d759694}{get}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+"{}Test\+Response"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_ae77fa938fbc30c939b5e8887c91093ce}{post}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+"{}Test\+Response"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a520c36be46e8843550805628209f5c0f}{put}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+"{}Test\+Response"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a63a2208d670826e329372b3b2b271abd}{delete}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+"{}Test\+Response"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a3f89d8520db54a681f4655ea61d6df92}{patch}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+"{}Test\+Response"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a83cf7851c6303d9a115b1406b3677743}{options}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+"{}Test\+Response"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a1be86cac68fd67b25c68880a78155500}{head}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+"{}Test\+Response"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_client_afd1dbbf5a70f7e5571623e9173d7a661}{trace}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_client_a8b4f19df0d31108afcb65ae87ade1a62}\label{classwerkzeug_1_1test_1_1_client_a8b4f19df0d31108afcb65ae87ade1a62} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_client_aa0b596a3d11683a018305b11e32625a0}\label{classwerkzeug_1_1test_1_1_client_aa0b596a3d11683a018305b11e32625a0} 
+{\bfseries application} = application
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_client_afcd8674c057a49ed94bcb28d85c4fa8f}\label{classwerkzeug_1_1test_1_1_client_afcd8674c057a49ed94bcb28d85c4fa8f} 
+{\bfseries response\+\_\+wrapper} = t.\+cast(t.\+Type\mbox{[}"{}Test\+Response"{}\mbox{]}, response\+\_\+wrapper)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_client_aa14f4cfb259198f46f1b7438f18af1a6}\label{classwerkzeug_1_1test_1_1_client_aa14f4cfb259198f46f1b7438f18af1a6} 
+t.\+Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1test_1_1___test_cookie_jar}{\+\_\+\+Test\+Cookie\+Jar}}\mbox{]} {\bfseries cookie\+\_\+jar} = \mbox{\hyperlink{classwerkzeug_1_1test_1_1___test_cookie_jar}{\+\_\+\+Test\+Cookie\+Jar}}()
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_client_adeeb9bc77510f8037639780e4ff40bba}\label{classwerkzeug_1_1test_1_1_client_adeeb9bc77510f8037639780e4ff40bba} 
+{\bfseries allow\+\_\+subdomain\+\_\+redirects} = allow\+\_\+subdomain\+\_\+redirects
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class allows you to send requests to a wrapped application.
+
+The use_cookies parameter indicates whether cookies should be stored and
+sent for subsequent requests. This is True by default, but passing False
+will disable this behaviour.
+
+If you want to request some subdomain of your application you may set
+`allow_subdomain_redirects` to `True` as if not no external redirects
+are allowed.
+
+.. versionchanged:: 2.1
+    Removed deprecated behavior of treating the response as a
+    tuple. All data is available as properties on the returned
+    response object.
+
+.. versionchanged:: 2.0
+    ``response_wrapper`` is always a subclass of
+    :class:``TestResponse``.
+
+.. versionchanged:: 0.5
+    Added the ``use_cookies`` parameter.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1test_1_1_client_a63a2208d670826e329372b3b2b271abd}\index{werkzeug.test.Client@{werkzeug.test.Client}!delete@{delete}}
+\index{delete@{delete}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_a63a2208d670826e329372b3b2b271abd} 
+ "{}Test\+Response"{} werkzeug.\+test.\+Client.\+delete (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kw}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call :meth:`open` with ``method`` set to ``DELETE``.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_a33ce304cb579fd0735d4b8b4964f4e7b}\index{werkzeug.test.Client@{werkzeug.test.Client}!delete\_cookie@{delete\_cookie}}
+\index{delete\_cookie@{delete\_cookie}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{delete\_cookie()}{delete\_cookie()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_a33ce304cb579fd0735d4b8b4964f4e7b} 
+ None werkzeug.\+test.\+Client.\+delete\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{server\+\_\+name}{, }\item[{str}]{key}{, }\item[{str }]{path}{ = {\ttfamily "{}/"{}}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{domain}{ = {\ttfamily None}, }\item[{bool }]{secure}{ = {\ttfamily False}, }\item[{bool }]{httponly}{ = {\ttfamily False}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{samesite}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deletes a cookie in the test client.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_a971398b73132dbc4620166a42d759694}\index{werkzeug.test.Client@{werkzeug.test.Client}!get@{get}}
+\index{get@{get}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_a971398b73132dbc4620166a42d759694} 
+ "{}Test\+Response"{} werkzeug.\+test.\+Client.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kw}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call :meth:`open` with ``method`` set to ``GET``.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_a1be86cac68fd67b25c68880a78155500}\index{werkzeug.test.Client@{werkzeug.test.Client}!head@{head}}
+\index{head@{head}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{head()}{head()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_a1be86cac68fd67b25c68880a78155500} 
+ "{}Test\+Response"{} werkzeug.\+test.\+Client.\+head (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kw}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call :meth:`open` with ``method`` set to ``HEAD``.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_a8556c208fe84482e285abe061f0a1499}\index{werkzeug.test.Client@{werkzeug.test.Client}!open@{open}}
+\index{open@{open}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_a8556c208fe84482e285abe061f0a1499} 
+ "{}Test\+Response"{} werkzeug.\+test.\+Client.\+open (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{bool }]{buffered}{ = {\ttfamily False}, }\item[{bool }]{follow\+\_\+redirects}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate an environ dict from the given arguments, make a
+request to the application using it, and return the response.
+
+:param args: Passed to :class:`EnvironBuilder` to create the
+    environ for the request. If a single arg is passed, it can
+    be an existing :class:`EnvironBuilder` or an environ dict.
+:param buffered: Convert the iterator returned by the app into
+    a list. If the iterator has a ``close()`` method, it is
+    called automatically.
+:param follow_redirects: Make additional requests to follow HTTP
+    redirects until a non-redirect status is returned.
+    :attr:`TestResponse.history` lists the intermediate
+    responses.
+
+.. versionchanged:: 2.1
+    Removed the ``as_tuple`` parameter.
+
+.. versionchanged:: 2.0
+    ``as_tuple`` is deprecated and will be removed in Werkzeug
+    2.1. Use :attr:`TestResponse.request` and
+    ``request.environ`` instead.
+
+.. versionchanged:: 2.0
+    The request input stream is closed when calling
+    ``response.close()``. Input streams for redirects are
+    automatically closed.
+
+.. versionchanged:: 0.5
+    If a dict is provided as file in the dict for the ``data``
+    parameter the content type has to be called ``content_type``
+    instead of ``mimetype``. This change was made for
+    consistency with :class:`werkzeug.FileWrapper`.
+
+.. versionchanged:: 0.5
+    Added the ``follow_redirects`` parameter.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classflask_1_1testing_1_1_flask_client_a2c01adfd16e821505cb799f6d7963b53}{flask.\+testing.\+Flask\+Client}}.
+
+\Hypertarget{classwerkzeug_1_1test_1_1_client_a83cf7851c6303d9a115b1406b3677743}\index{werkzeug.test.Client@{werkzeug.test.Client}!options@{options}}
+\index{options@{options}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_a83cf7851c6303d9a115b1406b3677743} 
+ "{}Test\+Response"{} werkzeug.\+test.\+Client.\+options (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kw}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call :meth:`open` with ``method`` set to ``OPTIONS``.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_a3f89d8520db54a681f4655ea61d6df92}\index{werkzeug.test.Client@{werkzeug.test.Client}!patch@{patch}}
+\index{patch@{patch}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{patch()}{patch()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_a3f89d8520db54a681f4655ea61d6df92} 
+ "{}Test\+Response"{} werkzeug.\+test.\+Client.\+patch (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kw}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call :meth:`open` with ``method`` set to ``PATCH``.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_ae77fa938fbc30c939b5e8887c91093ce}\index{werkzeug.test.Client@{werkzeug.test.Client}!post@{post}}
+\index{post@{post}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_ae77fa938fbc30c939b5e8887c91093ce} 
+ "{}Test\+Response"{} werkzeug.\+test.\+Client.\+post (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kw}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call :meth:`open` with ``method`` set to ``POST``.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_a520c36be46e8843550805628209f5c0f}\index{werkzeug.test.Client@{werkzeug.test.Client}!put@{put}}
+\index{put@{put}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_a520c36be46e8843550805628209f5c0f} 
+ "{}Test\+Response"{} werkzeug.\+test.\+Client.\+put (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kw}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call :meth:`open` with ``method`` set to ``PUT``.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_ab71ab480aa995371c8341d0403129375}\index{werkzeug.test.Client@{werkzeug.test.Client}!resolve\_redirect@{resolve\_redirect}}
+\index{resolve\_redirect@{resolve\_redirect}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{resolve\_redirect()}{resolve\_redirect()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_ab71ab480aa995371c8341d0403129375} 
+ "{}Test\+Response"{} werkzeug.\+test.\+Client.\+resolve\+\_\+redirect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Test\+Response"{}}]{response}{, }\item[{bool }]{buffered}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform a new request to the location given by the redirect
+response to the previous request.
+
+:meta private:
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_aa59422ef24397acb836416cb223d648b}\index{werkzeug.test.Client@{werkzeug.test.Client}!run\_wsgi\_app@{run\_wsgi\_app}}
+\index{run\_wsgi\_app@{run\_wsgi\_app}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{run\_wsgi\_app()}{run\_wsgi\_app()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_aa59422ef24397acb836416cb223d648b} 
+ t.\+Tuple\mbox{[}t.\+Iterable\mbox{[}bytes\mbox{]}, str, \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_headers}{Headers}}\mbox{]} werkzeug.\+test.\+Client.\+run\+\_\+wsgi\+\_\+app (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}WSGIEnvironment"{}}]{environ}{, }\item[{bool }]{buffered}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs the wrapped WSGI app with the given environment.
+
+:meta private:
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_a94c3e3771279f987abbfec12d4a81239}\index{werkzeug.test.Client@{werkzeug.test.Client}!set\_cookie@{set\_cookie}}
+\index{set\_cookie@{set\_cookie}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{set\_cookie()}{set\_cookie()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_a94c3e3771279f987abbfec12d4a81239} 
+ None werkzeug.\+test.\+Client.\+set\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{server\+\_\+name}{, }\item[{str}]{key}{, }\item[{str }]{value}{ = {\ttfamily "{}"{}}, }\item[{t.\+Optional\mbox{[}t.\+Union\mbox{[}timedelta, int\mbox{]}\mbox{]} }]{max\+\_\+age}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}t.\+Union\mbox{[}str, datetime, int, float\mbox{]}\mbox{]} }]{expires}{ = {\ttfamily None}, }\item[{str }]{path}{ = {\ttfamily "{}/"{}}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{domain}{ = {\ttfamily None}, }\item[{bool }]{secure}{ = {\ttfamily False}, }\item[{bool }]{httponly}{ = {\ttfamily False}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{samesite}{ = {\ttfamily None}, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets a cookie in the client's cookie jar.  The server name
+is required and has to match the one that is also passed to
+the open call.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_client_afd1dbbf5a70f7e5571623e9173d7a661}\index{werkzeug.test.Client@{werkzeug.test.Client}!trace@{trace}}
+\index{trace@{trace}!werkzeug.test.Client@{werkzeug.test.Client}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_client_afd1dbbf5a70f7e5571623e9173d7a661} 
+ "{}Test\+Response"{} werkzeug.\+test.\+Client.\+trace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kw}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call :meth:`open` with ``method`` set to ``TRACE``.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/test.\+py\end{DoxyCompactItemize}

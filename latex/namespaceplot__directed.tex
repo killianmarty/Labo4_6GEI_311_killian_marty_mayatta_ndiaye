@@ -1,0 +1,74 @@
+\doxysection{plot\+\_\+directed Namespace Reference}
+\hypertarget{namespaceplot__directed}{}\label{namespaceplot__directed}\index{plot\_directed@{plot\_directed}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__directed_a908704dff7f30a13772d2e6df37f4e22}\label{namespaceplot__directed_a908704dff7f30a13772d2e6df37f4e22} 
+int {\bfseries seed} = 13648
+\item 
+\Hypertarget{namespaceplot__directed_a092250c49ed5b4f2f22ad54a9c0139f0}\label{namespaceplot__directed_a092250c49ed5b4f2f22ad54a9c0139f0} 
+{\bfseries G} = nx.\+random\+\_\+k\+\_\+out\+\_\+graph(10, 3, 0.\+5, seed=seed)
+\item 
+\Hypertarget{namespaceplot__directed_a78aea26e34763b0cafe73f527626f445}\label{namespaceplot__directed_a78aea26e34763b0cafe73f527626f445} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(G, seed=seed)
+\item 
+\Hypertarget{namespaceplot__directed_a36282eaddd50ceb734c1feb39b6b2a35}\label{namespaceplot__directed_a36282eaddd50ceb734c1feb39b6b2a35} 
+list {\bfseries node\+\_\+sizes} = \mbox{[}3 + 10 \texorpdfstring{$\ast$}{*} i for i in range(len(G))\mbox{]}
+\item 
+\Hypertarget{namespaceplot__directed_aa204b2c8be5f31ce327fce0a9d383f90}\label{namespaceplot__directed_aa204b2c8be5f31ce327fce0a9d383f90} 
+{\bfseries M} = G.\+number\+\_\+of\+\_\+edges()
+\item 
+\Hypertarget{namespaceplot__directed_abebe72b5e8b2f29983c27d28032e5eb9}\label{namespaceplot__directed_abebe72b5e8b2f29983c27d28032e5eb9} 
+{\bfseries edge\+\_\+colors} = range(2, M + 2)
+\item 
+\Hypertarget{namespaceplot__directed_a28ee070e24d27397fe31137bc9b0c2e5}\label{namespaceplot__directed_a28ee070e24d27397fe31137bc9b0c2e5} 
+list {\bfseries edge\+\_\+alphas} = \mbox{[}(5 + i) / (M + 4) for i in range(M)\mbox{]}
+\item 
+\Hypertarget{namespaceplot__directed_a33d775365f05135e5d50ed14c1beae3c}\label{namespaceplot__directed_a33d775365f05135e5d50ed14c1beae3c} 
+{\bfseries cmap} = plt.\+cm.\+plasma
+\item 
+\Hypertarget{namespaceplot__directed_ae251c329afcef36227e099b623236d2d}\label{namespaceplot__directed_ae251c329afcef36227e099b623236d2d} 
+{\bfseries nodes} = nx.\+draw\+\_\+networkx\+\_\+nodes(G, pos, node\+\_\+size=node\+\_\+sizes, node\+\_\+color="{}indigo"{})
+\item 
+\mbox{\hyperlink{namespaceplot__directed_a3720d80ef4047a9b43b8157ee4400bd8}{edges}}
+\item 
+\Hypertarget{namespaceplot__directed_ae526f969120566eaf18a5c57909e8362}\label{namespaceplot__directed_ae526f969120566eaf18a5c57909e8362} 
+{\bfseries pc} = mpl.\+collections.\+Patch\+Collection(edges, cmap=cmap)
+\item 
+\Hypertarget{namespaceplot__directed_a602991187a35820a4270b5f81d3b22ae}\label{namespaceplot__directed_a602991187a35820a4270b5f81d3b22ae} 
+{\bfseries ax} = plt.\+gca()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}==============
+Directed Graph
+==============
+
+Draw a graph with directed edges using a colormap and different node sizes.
+
+Edges have different colors and alphas (opacity). Drawn using matplotlib.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__directed_a3720d80ef4047a9b43b8157ee4400bd8}\index{plot\_directed@{plot\_directed}!edges@{edges}}
+\index{edges@{edges}!plot\_directed@{plot\_directed}}
+\doxysubsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily \label{namespaceplot__directed_a3720d80ef4047a9b43b8157ee4400bd8} 
+plot\+\_\+directed.\+edges}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ nx.draw\_networkx\_edges(}
+\DoxyCodeLine{00002\ \ \ \ \ G,}
+\DoxyCodeLine{00003\ \ \ \ \ pos,}
+\DoxyCodeLine{00004\ \ \ \ \ node\_size=node\_sizes,}
+\DoxyCodeLine{00005\ \ \ \ \ arrowstyle=\textcolor{stringliteral}{"{}-\/>"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ arrowsize=10,}
+\DoxyCodeLine{00007\ \ \ \ \ edge\_color=edge\_colors,}
+\DoxyCodeLine{00008\ \ \ \ \ edge\_cmap=cmap,}
+\DoxyCodeLine{00009\ \ \ \ \ width=2,}
+\DoxyCodeLine{00010\ )}
+
+\end{DoxyCode}

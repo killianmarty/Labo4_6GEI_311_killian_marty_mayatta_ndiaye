@@ -1,0 +1,55 @@
+\doxysection{jsonschema.\+benchmarks.\+subcomponents Namespace Reference}
+\hypertarget{namespacejsonschema_1_1benchmarks_1_1subcomponents}{}\label{namespacejsonschema_1_1benchmarks_1_1subcomponents}\index{jsonschema.benchmarks.subcomponents@{jsonschema.benchmarks.subcomponents}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1subcomponents_a052b56279c9f6cc6e67779cb08471c72}\label{namespacejsonschema_1_1benchmarks_1_1subcomponents_a052b56279c9f6cc6e67779cb08471c72} 
+{\bfseries registry\+\_\+data\+\_\+structures} ()
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1subcomponents_ac6f616e0b3fcf8a1e69743ef57ee34ad}\label{namespacejsonschema_1_1benchmarks_1_1subcomponents_ac6f616e0b3fcf8a1e69743ef57ee34ad} 
+{\bfseries registry\+\_\+add} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacejsonschema_1_1benchmarks_1_1subcomponents_a279771e48998dfd33c4fc2e698c86386}{schema}}
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1subcomponents_a5e49564eae7544eb97ed15473d2866f4}\label{namespacejsonschema_1_1benchmarks_1_1subcomponents_a5e49564eae7544eb97ed15473d2866f4} 
+{\bfseries hmap} = Hash\+Trie\+Map()
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1subcomponents_ac3b96fd5322f92dd5aece88580081328}\label{namespacejsonschema_1_1benchmarks_1_1subcomponents_ac3b96fd5322f92dd5aece88580081328} 
+{\bfseries hset} = Hash\+Trie\+Set()
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1subcomponents_aab6484a9bab79a30ed75190e2a90d907}\label{namespacejsonschema_1_1benchmarks_1_1subcomponents_aab6484a9bab79a30ed75190e2a90d907} 
+{\bfseries registry} = \mbox{\hyperlink{classreferencing_1_1__core_1_1_registry}{Registry}}()
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1subcomponents_a9a3d4e6c05b57710eab2730626db0ca6}\label{namespacejsonschema_1_1benchmarks_1_1subcomponents_a9a3d4e6c05b57710eab2730626db0ca6} 
+{\bfseries v} = Draft202012\+Validator(schema)
+\item 
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1subcomponents_ade52f61970735556ab5ce58217772735}\label{namespacejsonschema_1_1benchmarks_1_1subcomponents_ade52f61970735556ab5ce58217772735} 
+{\bfseries runner} = Runner()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A benchmark which tries to compare the possible slow subparts of validation.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacejsonschema_1_1benchmarks_1_1subcomponents_a279771e48998dfd33c4fc2e698c86386}\index{jsonschema.benchmarks.subcomponents@{jsonschema.benchmarks.subcomponents}!schema@{schema}}
+\index{schema@{schema}!jsonschema.benchmarks.subcomponents@{jsonschema.benchmarks.subcomponents}}
+\doxysubsubsection{\texorpdfstring{schema}{schema}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1benchmarks_1_1subcomponents_a279771e48998dfd33c4fc2e698c86386} 
+dict jsonschema.\+benchmarks.\+subcomponents.\+schema}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}type"{}}:\ \textcolor{stringliteral}{"{}array"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}minLength"{}}:\ 1,}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}maxLength"{}}:\ 1,}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}items"{}}:\ \{\textcolor{stringliteral}{"{}type"{}}:\ \textcolor{stringliteral}{"{}integer"{}}\},}
+\DoxyCodeLine{00006\ \}}
+
+\end{DoxyCode}

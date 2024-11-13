@@ -1,0 +1,62 @@
+\doxysection{jsonschema.\+tests.\+fuzz\+\_\+validate Namespace Reference}
+\hypertarget{namespacejsonschema_1_1tests_1_1fuzz__validate}{}\label{namespacejsonschema_1_1tests_1_1fuzz__validate}\index{jsonschema.tests.fuzz\_validate@{jsonschema.tests.fuzz\_validate}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejsonschema_1_1tests_1_1fuzz__validate_a8576eb57a9371e5300258e22e1eca910}\label{namespacejsonschema_1_1tests_1_1fuzz__validate_a8576eb57a9371e5300258e22e1eca910} 
+{\bfseries test\+\_\+schemas} (obj1, obj2)
+\item 
+\Hypertarget{namespacejsonschema_1_1tests_1_1fuzz__validate_a328c717391dfcc23877596359c754641}\label{namespacejsonschema_1_1tests_1_1fuzz__validate_a328c717391dfcc23877596359c754641} 
+{\bfseries main} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1tests_1_1fuzz__validate_af62cbdba1a7c7d06e4178a23ac790f95}{PRIM}}
+\item 
+\mbox{\hyperlink{namespacejsonschema_1_1tests_1_1fuzz__validate_ae9c23e1e05fac6aaa16005d8eb3fbf72}{DICT}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Fuzzing setup for OSS-Fuzz.
+
+See https://github.com/google/oss-fuzz/tree/master/projects/jsonschema for the
+other half of the setup here.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacejsonschema_1_1tests_1_1fuzz__validate_ae9c23e1e05fac6aaa16005d8eb3fbf72}\index{jsonschema.tests.fuzz\_validate@{jsonschema.tests.fuzz\_validate}!DICT@{DICT}}
+\index{DICT@{DICT}!jsonschema.tests.fuzz\_validate@{jsonschema.tests.fuzz\_validate}}
+\doxysubsubsection{\texorpdfstring{DICT}{DICT}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1tests_1_1fuzz__validate_ae9c23e1e05fac6aaa16005d8eb3fbf72} 
+jsonschema.\+tests.\+fuzz\+\_\+validate.\+DICT}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ strategies.recursive(}
+\DoxyCodeLine{00002\ \ \ \ \ base=strategies.one\_of(}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ strategies.booleans(),}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ strategies.dictionaries(strategies.text(),\ PRIM),}
+\DoxyCodeLine{00005\ \ \ \ \ ),}
+\DoxyCodeLine{00006\ \ \ \ \ extend=\textcolor{keyword}{lambda}\ inner:\ strategies.dictionaries(strategies.text(),\ inner),}
+\DoxyCodeLine{00007\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacejsonschema_1_1tests_1_1fuzz__validate_af62cbdba1a7c7d06e4178a23ac790f95}\index{jsonschema.tests.fuzz\_validate@{jsonschema.tests.fuzz\_validate}!PRIM@{PRIM}}
+\index{PRIM@{PRIM}!jsonschema.tests.fuzz\_validate@{jsonschema.tests.fuzz\_validate}}
+\doxysubsubsection{\texorpdfstring{PRIM}{PRIM}}
+{\footnotesize\ttfamily \label{namespacejsonschema_1_1tests_1_1fuzz__validate_af62cbdba1a7c7d06e4178a23ac790f95} 
+jsonschema.\+tests.\+fuzz\+\_\+validate.\+PRIM}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ strategies.one\_of(}
+\DoxyCodeLine{00002\ \ \ \ \ strategies.booleans(),}
+\DoxyCodeLine{00003\ \ \ \ \ strategies.integers(),}
+\DoxyCodeLine{00004\ \ \ \ \ strategies.floats(allow\_nan=\textcolor{keyword}{False},\ allow\_infinity=\textcolor{keyword}{False}),}
+\DoxyCodeLine{00005\ \ \ \ \ strategies.text(),}
+\DoxyCodeLine{00006\ )}
+
+\end{DoxyCode}

@@ -1,0 +1,98 @@
+\doxysection{pip.\+\_\+vendor.\+chardet.\+jpcntx.\+SJISContext\+Analysis Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis}{}\label{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis}\index{pip.\_vendor.chardet.jpcntx.SJISContextAnalysis@{pip.\_vendor.chardet.jpcntx.SJISContextAnalysis}}
+Inheritance diagram for pip.\+\_\+vendor.\+chardet.\+jpcntx.\+SJISContext\+Analysis\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis_a7a95ed06318ff5f979af793b0bb21dec}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis_a2b923a36fb2fe713ad3c73a0248f94c6}\label{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis_a2b923a36fb2fe713ad3c73a0248f94c6} 
+{\bfseries charset\+\_\+name} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis_aa7cb2b12efedb06f248afeab29be5078}{get\+\_\+order}} (self, byte\+\_\+str)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_japanese_context_analysis}{pip.\+\_\+vendor.\+chardet.\+jpcntx.\+Japanese\+Context\+Analysis}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries reset} (self)
+\item 
+{\bfseries feed} (self, byte\+\_\+str, num\+\_\+bytes)
+\item 
+{\bfseries got\+\_\+enough\+\_\+data} (self)
+\item 
+{\bfseries get\+\_\+confidence} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis_a33dba3e79c34cc030126aac87361d124}\label{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis_a33dba3e79c34cc030126aac87361d124} 
+str {\bfseries \+\_\+charset\+\_\+name} = "{}SHIFT\+\_\+\+JIS"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_japanese_context_analysis}{pip.\+\_\+vendor.\+chardet.\+jpcntx.\+Japanese\+Context\+Analysis}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+total\+\_\+rel} = None
+\item 
+list {\bfseries \+\_\+rel\+\_\+sample} = None
+\item 
+int {\bfseries \+\_\+need\+\_\+to\+\_\+skip\+\_\+char\+\_\+num} = None
+\item 
+int {\bfseries \+\_\+last\+\_\+char\+\_\+order} = None
+\item 
+bool {\bfseries \+\_\+done} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_japanese_context_analysis}{pip.\+\_\+vendor.\+chardet.\+jpcntx.\+Japanese\+Context\+Analysis}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+done} = self.\+\_\+need\+\_\+to\+\_\+skip\+\_\+char\+\_\+num
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_japanese_context_analysis}{pip.\+\_\+vendor.\+chardet.\+jpcntx.\+Japanese\+Context\+Analysis}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries NUM\+\_\+\+OF\+\_\+\+CATEGORY} = 6
+\item 
+int {\bfseries DONT\+\_\+\+KNOW} = -\/1
+\item 
+int {\bfseries ENOUGH\+\_\+\+REL\+\_\+\+THRESHOLD} = 100
+\item 
+int {\bfseries MAX\+\_\+\+REL\+\_\+\+THRESHOLD} = 1000
+\item 
+int {\bfseries MINIMUM\+\_\+\+DATA\+\_\+\+THRESHOLD} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis_a7a95ed06318ff5f979af793b0bb21dec}\index{pip.\_vendor.chardet.jpcntx.SJISContextAnalysis@{pip.\_vendor.chardet.jpcntx.SJISContextAnalysis}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.chardet.jpcntx.SJISContextAnalysis@{pip.\_vendor.chardet.jpcntx.SJISContextAnalysis}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis_a7a95ed06318ff5f979af793b0bb21dec} 
+pip.\+\_\+vendor.\+chardet.\+jpcntx.\+SJISContext\+Analysis.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_japanese_context_analysis}{pip.\+\_\+vendor.\+chardet.\+jpcntx.\+Japanese\+Context\+Analysis}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis_aa7cb2b12efedb06f248afeab29be5078}\index{pip.\_vendor.chardet.jpcntx.SJISContextAnalysis@{pip.\_vendor.chardet.jpcntx.SJISContextAnalysis}!get\_order@{get\_order}}
+\index{get\_order@{get\_order}!pip.\_vendor.chardet.jpcntx.SJISContextAnalysis@{pip.\_vendor.chardet.jpcntx.SJISContextAnalysis}}
+\doxysubsubsection{\texorpdfstring{get\_order()}{get\_order()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_s_j_i_s_context_analysis_aa7cb2b12efedb06f248afeab29be5078} 
+pip.\+\_\+vendor.\+chardet.\+jpcntx.\+SJISContext\+Analysis.\+get\+\_\+order (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{byte\+\_\+str}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1jpcntx_1_1_japanese_context_analysis}{pip.\+\_\+vendor.\+chardet.\+jpcntx.\+Japanese\+Context\+Analysis}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/chardet/jpcntx.\+py\end{DoxyCompactItemize}

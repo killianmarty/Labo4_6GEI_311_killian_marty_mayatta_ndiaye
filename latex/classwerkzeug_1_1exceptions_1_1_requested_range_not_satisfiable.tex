@@ -1,0 +1,106 @@
+\doxysection{werkzeug.\+exceptions.\+Requested\+Range\+Not\+Satisfiable Class Reference}
+\hypertarget{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable}{}\label{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable}\index{werkzeug.exceptions.RequestedRangeNotSatisfiable@{werkzeug.exceptions.RequestedRangeNotSatisfiable}}
+Inheritance diagram for werkzeug.\+exceptions.\+Requested\+Range\+Not\+Satisfiable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_a341312f72d00daf4bced332827bc4cd7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\mbox{[}int\mbox{]} length=None, str units="{}bytes"{}, t.\+Optional\mbox{[}str\mbox{]} description=None, t.\+Optional\mbox{[}"{}Response"{}\mbox{]} response=None)
+\item 
+t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_ada3c0b865f979b5b135c21813cf7e6a7}{get\+\_\+headers}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798}{name}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aaeabc66be206d8416ce68dd45127459e}{get\+\_\+description}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2d4bdf6b9951d455d40c9f55ba28b41f}{get\+\_\+body}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+"{}Response"{} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0552eb47de6a896d4d242893198e23d2}{get\+\_\+response}} (self, t.\+Optional\mbox{[}t.\+Union\mbox{[}"{}WSGIEnvironment"{}, "{}WSGIRequest"{}\mbox{]}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+t.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aebdfbbad37e22021a48f9235e637d4ab}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_ae34fc7d4ac8eab169b71820c9e3a62b5}\label{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_ae34fc7d4ac8eab169b71820c9e3a62b5} 
+{\bfseries length} = length
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_a7081c6748e40c702c1646ba1337f8f84}\label{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_a7081c6748e40c702c1646ba1337f8f84} 
+{\bfseries units} = units
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries response} = response
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_a4f35bd65b0a65fac8efa7f0ac83f503f}\label{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_a4f35bd65b0a65fac8efa7f0ac83f503f} 
+int {\bfseries code} = 416
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_a379ec37acada2992a94cb6332ee7cfe4}\label{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_a379ec37acada2992a94cb6332ee7cfe4} 
+str {\bfseries description} = "{}The server cannot provide the requested range."{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries code} = None
+\item 
+t {\bfseries description} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}*416* `Requested Range Not Satisfiable`
+
+The client asked for an invalid part of the file.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_a341312f72d00daf4bced332827bc4cd7}\index{werkzeug.exceptions.RequestedRangeNotSatisfiable@{werkzeug.exceptions.RequestedRangeNotSatisfiable}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.exceptions.RequestedRangeNotSatisfiable@{werkzeug.exceptions.RequestedRangeNotSatisfiable}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_a341312f72d00daf4bced332827bc4cd7} 
+ None werkzeug.\+exceptions.\+Requested\+Range\+Not\+Satisfiable.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}int\mbox{]} }]{length}{ = {\ttfamily None}, }\item[{str }]{units}{ = {\ttfamily "{}bytes"{}}, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{description}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}"{}Response"{}\mbox{]} }]{response}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes an optional `Content-Range` header value based on ``length``
+parameter.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_ada3c0b865f979b5b135c21813cf7e6a7}\index{werkzeug.exceptions.RequestedRangeNotSatisfiable@{werkzeug.exceptions.RequestedRangeNotSatisfiable}!get\_headers@{get\_headers}}
+\index{get\_headers@{get\_headers}!werkzeug.exceptions.RequestedRangeNotSatisfiable@{werkzeug.exceptions.RequestedRangeNotSatisfiable}}
+\doxysubsubsection{\texorpdfstring{get\_headers()}{get\_headers()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_ada3c0b865f979b5b135c21813cf7e6a7} 
+ t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} werkzeug.\+exceptions.\+Requested\+Range\+Not\+Satisfiable.\+get\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} }]{environ}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}dict\mbox{]} }]{scope}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a list of headers.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_afbcf1071c68f1c81ba64b4e08b968893}{werkzeug.\+exceptions.\+HTTPException}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/exceptions.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,55 @@
+\doxysection{pip.\+\_\+vendor.\+pyparsing.\+unicode\+\_\+set Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set}{}\label{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set}\index{pip.\_vendor.pyparsing.unicode\_set@{pip.\_vendor.pyparsing.unicode\_set}}
+Inheritance diagram for pip.\+\_\+vendor.\+pyparsing.\+unicode\+\_\+set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_a710a8cc7d8ed18d05e8ff11fbf0238ec}\label{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_a710a8cc7d8ed18d05e8ff11fbf0238ec} 
+{\bfseries printables} (cls)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_aee2556314a1beb1453c719067889d142}\label{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_aee2556314a1beb1453c719067889d142} 
+{\bfseries alphas} (cls)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_ab81a90953c52958241f783da34f7184e}\label{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_ab81a90953c52958241f783da34f7184e} 
+{\bfseries nums} (cls)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_a59d8de7d8fe4b5ba6bbff8f6a5533b28}\label{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_a59d8de7d8fe4b5ba6bbff8f6a5533b28} 
+{\bfseries alphanums} (cls)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_a4a35f0480f839acb3ad19a76b5e6200e}\label{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_a4a35f0480f839acb3ad19a76b5e6200e} 
+{\bfseries \+\_\+get\+\_\+chars\+\_\+for\+\_\+ranges} (cls)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_ae1aaac36b5497ada08b20b02351e8f04}\label{classpip_1_1__vendor_1_1pyparsing_1_1unicode__set_ae1aaac36b5497ada08b20b02351e8f04} 
+list {\bfseries \+\_\+ranges} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A set of Unicode characters, for language-specific strings for
+``alphas``, ``nums``, ``alphanums``, and ``printables``.
+A unicode_set is defined by a list of ranges in the Unicode character
+set, in a class attribute ``_ranges``, such as::
+
+    _ranges = [(0x0020, 0x007e), (0x00a0, 0x00ff),]
+
+A unicode set can also be defined using multiple inheritance of other unicode sets::
+
+    class CJK(Chinese, Japanese, Korean):
+        pass
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

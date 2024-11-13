@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Math",
+        "discipline": "Math",
+        "tags": [
+            "Math",
+            "Algebra",
+            "Calculus"
+        ],
+        "fichiers": [
+            {
+                "id": 1,
+                "titre": "Cours 1",
+                "type": "pdf",
+                "chemin": "http://example.com/cours1.pdf",
+                "idParent": 1
+            },
+            {
+                "id": 2,
+                "titre": "Cours 2",
+                "type": "pdf",
+                "chemin": "http://example.com/cours2.pdf",
+                "idParent": 1
+            }
+        ],
+        "dossiers": [
+            {
+                "id": 1,
+                "titre": "Exercices",
+                "idParent": 0,
+                "chemin": "/Exercices"
+            }
+        ],
+        "seances": [
+            {
+                "id": 1,
+                "semaine": 1,
+                "titre": "Introduction",
+                "thematique": "Introduction \u00c3\u00a0 la math\u00c3\u00a9matique",
+                "fichiers": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "id": 2,
+                "semaine": 2,
+                "titre": "Les nombres",
+                "thematique": "Les nombres entiers, rationnels, r\u00c3\u00a9els",
+                "fichiers": [
+                    2
+                ]
+            },
+            {
+                "id": 3,
+                "semaine": 3,
+                "titre": "Les fonctions",
+                "thematique": "Les fonctions, les limites",
+                "fichiers": [
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Physique",
+        "discipline": "Physique",
+        "tags": [
+            "Physique",
+            "M\u00c3\u00a9canique",
+            "Thermodynamique"
+        ],
+        "fichiers": [
+            {
+                "id": 3,
+                "titre": "Cours 1",
+                "type": "pdf",
+                "chemin": "http://example.com/physique_cours1.pdf",
+                "idParent": 2
+            },
+            {
+                "id": 4,
+                "titre": "Cours 2",
+                "type": "pdf",
+                "chemin": "http://example.com/physique_cours2.pdf",
+                "idParent": 3
+            }
+        ],
+        "dossiers": [
+            {
+                "id": 2,
+                "titre": "Exercices",
+                "idParent": 0,
+                "chemin": "/Exercices"
+            },
+            {
+                "id": 3,
+                "titre": "Examens",
+                "idParent": 0,
+                "chemin": "/Examens"
+            }
+        ],
+        "seances": [
+            {
+                "id": 4,
+                "semaine": 1,
+                "titre": "Introduction \u00c3\u00a0 la physique",
+                "thematique": "Principes fondamentaux de la physique",
+                "fichiers": [
+                    3,
+                    4
+                ]
+            },
+            {
+                "id": 5,
+                "semaine": 2,
+                "titre": "M\u00c3\u00a9canique",
+                "thematique": "Lois du mouvement et forces",
+                "fichiers": [
+                    3
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Chimie",
+        "discipline": "Chimie",
+        "tags": [
+            "Chimie",
+            "Organique",
+            "Inorganique"
+        ],
+        "fichiers": [
+            {
+                "id": 5,
+                "titre": "Cours 1",
+                "type": "pdf",
+                "chemin": "http://example.com/chimie_cours1.pdf",
+                "idParent": 3
+            },
+            {
+                "id": 6,
+                "titre": "Cours 2",
+                "type": "pdf",
+                "chemin": "http://example.com/chimie_cours2.pdf",
+                "idParent": 3
+            }
+        ],
+        "dossiers": [
+            {
+                "id": 3,
+                "titre": "Exercices",
+                "idParent": 0,
+                "chemin": "/Exercices"
+            }
+        ],
+        "seances": [
+            {
+                "id": 6,
+                "semaine": 1,
+                "titre": "Introduction \u00c3\u00a0 la chimie",
+                "thematique": "Concepts de base et classification des substances",
+                "fichiers": [
+                    5,
+                    6
+                ]
+            },
+            {
+                "id": 7,
+                "semaine": 2,
+                "titre": "Chimie organique",
+                "thematique": "Structures et r\u00c3\u00a9actions des compos\u00c3\u00a9s organiques",
+                "fichiers": [
+                    5
+                ]
+            }
+        ]
+    }
+]

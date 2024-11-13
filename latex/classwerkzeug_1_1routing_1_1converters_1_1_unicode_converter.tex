@@ -1,0 +1,83 @@
+\doxysection{werkzeug.\+routing.\+converters.\+Unicode\+Converter Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter}{}\label{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter}\index{werkzeug.routing.converters.UnicodeConverter@{werkzeug.routing.converters.UnicodeConverter}}
+Inheritance diagram for werkzeug.\+routing.\+converters.\+Unicode\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_a2172e25cb8b494244bf04c1b60b879ab}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}Map"{} map, int minlength=1, t.\+Optional\mbox{[}int\mbox{]} maxlength=None, t.\+Optional\mbox{[}int\mbox{]} length=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any {\bfseries to\+\_\+python} (self, str value)
+\item 
+str {\bfseries to\+\_\+url} (self, t.\+Any value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_ae478d8c010feae459fa08cab0f785abc}\label{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_ae478d8c010feae459fa08cab0f785abc} 
+str {\bfseries regex} = f"{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}/\mbox{]}\{length\+\_\+regex\}"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries map} = map
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_ad366e04143c95cd1307bb8a01a53534d}\label{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_ad366e04143c95cd1307bb8a01a53534d} 
+bool {\bfseries part\+\_\+isolating} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries regex} = "{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}/\mbox{]}+"{}
+\item 
+int {\bfseries weight} = 100
+\item 
+bool {\bfseries part\+\_\+isolating} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This converter is the default converter and accepts any string but
+only one path segment.  Thus the string can not include a slash.
+
+This is the default validator.
+
+Example::
+
+    Rule('/pages/<page>'),
+    Rule('/<string(length=2):lang_code>')
+
+:param map: the :class:`Map`.
+:param minlength: the minimum length of the string.  Must be greater
+                  or equal 1.
+:param maxlength: the maximum length of the string.
+:param length: the exact length of the string.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_a2172e25cb8b494244bf04c1b60b879ab}\index{werkzeug.routing.converters.UnicodeConverter@{werkzeug.routing.converters.UnicodeConverter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.routing.converters.UnicodeConverter@{werkzeug.routing.converters.UnicodeConverter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_a2172e25cb8b494244bf04c1b60b879ab} 
+ None werkzeug.\+routing.\+converters.\+Unicode\+Converter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Map"{}}]{map}{, }\item[{int }]{minlength}{ = {\ttfamily 1}, }\item[{t.\+Optional\mbox{[}int\mbox{]} }]{maxlength}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}int\mbox{]} }]{length}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/routing/converters.\+py\end{DoxyCompactItemize}

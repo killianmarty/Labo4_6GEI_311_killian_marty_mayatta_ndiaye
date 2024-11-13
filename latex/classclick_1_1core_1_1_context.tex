@@ -1,0 +1,593 @@
+\doxysection{Référence de la classe click.\+core.\+Context}
+\hypertarget{classclick_1_1core_1_1_context}{}\label{classclick_1_1core_1_1_context}\index{click.core.Context@{click.core.Context}}
+\doxysubsubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a3a0edb7a56623c61fbf783b027bec5d5}\label{classclick_1_1core_1_1_context_a3a0edb7a56623c61fbf783b027bec5d5} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, "{}Command"{} command, t.\+Optional\mbox{[}"{}Context"{}\mbox{]} parent=None, t.\+Optional\mbox{[}str\mbox{]} info\+\_\+name=None, t.\+Optional\mbox{[}t.\+Any\mbox{]} obj=None, t.\+Optional\mbox{[}str\mbox{]} auto\+\_\+envvar\+\_\+prefix=None, t.\+Optional\mbox{[}t.\+Mutable\+Mapping\mbox{[}str, t.\+Any\mbox{]}\mbox{]} default\+\_\+map=None, t.\+Optional\mbox{[}int\mbox{]} terminal\+\_\+width=None, t.\+Optional\mbox{[}int\mbox{]} max\+\_\+content\+\_\+width=None, bool resilient\+\_\+parsing=False, t.\+Optional\mbox{[}bool\mbox{]} allow\+\_\+extra\+\_\+args=None, t.\+Optional\mbox{[}bool\mbox{]} allow\+\_\+interspersed\+\_\+args=None, t.\+Optional\mbox{[}bool\mbox{]} ignore\+\_\+unknown\+\_\+options=None, t.\+Optional\mbox{[}t.\+List\mbox{[}str\mbox{]}\mbox{]} help\+\_\+option\+\_\+names=None, t.\+Optional\mbox{[}t.\+Callable\mbox{[}\mbox{[}str\mbox{]}, str\mbox{]}\mbox{]} token\+\_\+normalize\+\_\+func=None, t.\+Optional\mbox{[}bool\mbox{]} color=None, t.\+Optional\mbox{[}bool\mbox{]} show\+\_\+default=None)
+\item 
+t.\+Dict\mbox{[}str, t.\+Any\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_context_a7da56a14f29b7c28fe0cd1fafeabc5de}{to\+\_\+info\+\_\+dict}} (self)
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a2842e3c6d7e29bcdedbd800b655a1155}\label{classclick_1_1core_1_1_context_a2842e3c6d7e29bcdedbd800b655a1155} 
+"{}Context"{} {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_af45c970d073768b9aef6d36446a30ebd}\label{classclick_1_1core_1_1_context_af45c970d073768b9aef6d36446a30ebd} 
+None {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}t.\+Type\mbox{[}Base\+Exception\mbox{]}\mbox{]} exc\+\_\+type, t.\+Optional\mbox{[}Base\+Exception\mbox{]} exc\+\_\+value, t.\+Optional\mbox{[}Traceback\+Type\mbox{]} tb)
+\item 
+t.\+Iterator\mbox{[}"{}Context"{}\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_context_ab445bcdcfb37431435b10b94aed88b9e}{scope}} (self, bool cleanup=True)
+\item 
+t.\+Dict\mbox{[}str, t.\+Any\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_context_ad375eed8ed42835d5ef500b7b7275b6c}{meta}} (self)
+\item 
+\mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} \mbox{\hyperlink{classclick_1_1core_1_1_context_a340f2d2a8421210332123367e7c85fb6}{make\+\_\+formatter}} (self)
+\item 
+V \mbox{\hyperlink{classclick_1_1core_1_1_context_a6651bdb2141d63ffb4feee240e1c11f2}{with\+\_\+resource}} (self, t.\+Context\+Manager\mbox{[}V\mbox{]} context\+\_\+manager)
+\item 
+t.\+Callable\mbox{[}..., t.\+Any\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_context_abd2f1574d85734c9dc9acfbbd4cd14e1}{call\+\_\+on\+\_\+close}} (self, t.\+Callable\mbox{[}..., t.\+Any\mbox{]} f)
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_context_a6449e9761d129e36f2290265904a526a}{close}} (self)
+\item 
+str \mbox{\hyperlink{classclick_1_1core_1_1_context_a165df6533b65e1878eab3d20f5a5ece9}{command\+\_\+path}} (self)
+\item 
+"{}Context"{} \mbox{\hyperlink{classclick_1_1core_1_1_context_acf0382f3c190ff515d1d59bd4bef8e6a}{find\+\_\+root}} (self)
+\item 
+t.\+Optional\mbox{[}V\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_context_ae7f4ce2c576ae4b5a638fe6b94f1214b}{find\+\_\+object}} (self, t.\+Type\mbox{[}V\mbox{]} object\+\_\+type)
+\item 
+V \mbox{\hyperlink{classclick_1_1core_1_1_context_a237c3ebdb452c6527d045eceb60db7be}{ensure\+\_\+object}} (self, t.\+Type\mbox{[}V\mbox{]} object\+\_\+type)
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_afa48edf5411e62a2be27cefcd9f09ffe}\label{classclick_1_1core_1_1_context_afa48edf5411e62a2be27cefcd9f09ffe} 
+t.\+Optional\mbox{[}t.\+Any\mbox{]} {\bfseries lookup\+\_\+default} (self, str name, "{}te.\+Literal\mbox{[}True\mbox{]}"{} call=True)
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_ad1a0d6105dbcd0faba71291ea33a762b}\label{classclick_1_1core_1_1_context_ad1a0d6105dbcd0faba71291ea33a762b} 
+t.\+Optional\mbox{[}t.\+Union\mbox{[}t.\+Any, t.\+Callable\mbox{[}\mbox{[}$\,$\mbox{]}, t.\+Any\mbox{]}\mbox{]}\mbox{]} {\bfseries lookup\+\_\+default} (self, str name, "{}te.\+Literal\mbox{[}False\mbox{]}"{} call=...)
+\item 
+t.\+Optional\mbox{[}t.\+Any\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_context_a4ebe4173606e89438cde9ddd26bc6f27}{lookup\+\_\+default}} (self, str name, bool call=True)
+\item 
+"{}te.\+No\+Return"{} \mbox{\hyperlink{classclick_1_1core_1_1_context_a12b6ec4751d1c8d9a24608e4462757b5}{fail}} (self, str message)
+\item 
+"{}te.\+No\+Return"{} \mbox{\hyperlink{classclick_1_1core_1_1_context_a13a9d6d1c8875dd30d221e2193151678}{abort}} (self)
+\item 
+"{}te.\+No\+Return"{} \mbox{\hyperlink{classclick_1_1core_1_1_context_a83b77ae657ac6e68cf8f15d4941b465e}{exit}} (self, int code=0)
+\item 
+str \mbox{\hyperlink{classclick_1_1core_1_1_context_a4dfda3ed07706a287b40db1b404b71ac}{get\+\_\+usage}} (self)
+\item 
+str \mbox{\hyperlink{classclick_1_1core_1_1_context_a815205bc4f42b5f7ee0e0f8a76dc8a4a}{get\+\_\+help}} (self)
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a94d9a2c5cba47586e9edc359e4f6a813}\label{classclick_1_1core_1_1_context_a94d9a2c5cba47586e9edc359e4f6a813} 
+V {\bfseries invoke} (\+\_\+\+\_\+self, "{}t.\+Callable\mbox{[}..., V\mbox{]}"{} \+\_\+\+\_\+callback, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a0cc0b59cfd0f5b72c54d6e71de7f8770}\label{classclick_1_1core_1_1_context_a0cc0b59cfd0f5b72c54d6e71de7f8770} 
+t.\+Any {\bfseries invoke} (\+\_\+\+\_\+self, "{}Command"{} \+\_\+\+\_\+callback, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Union\mbox{[}t.\+Any, V\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_context_a3131ad2472e9db220f76d98021583d6b}{invoke}} (\+\_\+\+\_\+self, t.\+Union\mbox{[}"{}Command"{}, "{}t.\+Callable\mbox{[}..., V\mbox{]}"{}\mbox{]} \+\_\+\+\_\+callback, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \mbox{\hyperlink{classclick_1_1core_1_1_context_af34dd7c63ac5fcf73d3b5f1264a658e2}{forward}} (\+\_\+\+\_\+self, "{}Command"{} \+\_\+\+\_\+cmd, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any \# noqa\+:\+B902 kwargs)
+\item 
+None \mbox{\hyperlink{classclick_1_1core_1_1_context_a130046d6b2856d2c3f402f8373976684}{set\+\_\+parameter\+\_\+source}} (self, str name, \mbox{\hyperlink{classclick_1_1core_1_1_parameter_source}{Parameter\+Source}} source)
+\item 
+t.\+Optional\mbox{[}\mbox{\hyperlink{classclick_1_1core_1_1_parameter_source}{Parameter\+Source}}\mbox{]} \mbox{\hyperlink{classclick_1_1core_1_1_context_a3e26b2c616a37bd12762edfc8ee2551c}{get\+\_\+parameter\+\_\+source}} (self, str name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_adec403fb2e8ab387e52493d3f2aa11a3}\label{classclick_1_1core_1_1_context_adec403fb2e8ab387e52493d3f2aa11a3} 
+{\bfseries parent} = parent
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a752adae338fd4b370a7b050d2e9202a9}\label{classclick_1_1core_1_1_context_a752adae338fd4b370a7b050d2e9202a9} 
+{\bfseries command} = command
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a93aa46069c935a1f6f1d86f73d7821d6}\label{classclick_1_1core_1_1_context_a93aa46069c935a1f6f1d86f73d7821d6} 
+{\bfseries info\+\_\+name} = info\+\_\+name
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a6f810275181e578f37fb60473d864dc7}\label{classclick_1_1core_1_1_context_a6f810275181e578f37fb60473d864dc7} 
+dict {\bfseries params} = \{\}
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_ad477d048d695c44e7afc518afa042457}\label{classclick_1_1core_1_1_context_ad477d048d695c44e7afc518afa042457} 
+list {\bfseries args} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a1a6495abfee3661b2ccade62ad34a3b6}\label{classclick_1_1core_1_1_context_a1a6495abfee3661b2ccade62ad34a3b6} 
+list {\bfseries protected\+\_\+args} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a6b6b4a4546211f5421286db44f04111e}\label{classclick_1_1core_1_1_context_a6b6b4a4546211f5421286db44f04111e} 
+t.\+Any {\bfseries obj} = obj
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a48525323a1c3246d0c881be32e450150}\label{classclick_1_1core_1_1_context_a48525323a1c3246d0c881be32e450150} 
+t.\+Optional\mbox{[}t.\+Mutable\+Mapping\mbox{[}str, t.\+Any\mbox{]}\mbox{]} {\bfseries default\+\_\+map} = default\+\_\+map
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a590be24ef20bed79564e900cb3fe0b6d}\label{classclick_1_1core_1_1_context_a590be24ef20bed79564e900cb3fe0b6d} 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries invoked\+\_\+subcommand} = None
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a996e6e96e993c4eb9f63ab2332689c85}\label{classclick_1_1core_1_1_context_a996e6e96e993c4eb9f63ab2332689c85} 
+t.\+Optional\mbox{[}int\mbox{]} {\bfseries terminal\+\_\+width} = terminal\+\_\+width
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a36a8b9c07f73dd3e18c5851626d975be}\label{classclick_1_1core_1_1_context_a36a8b9c07f73dd3e18c5851626d975be} 
+t.\+Optional\mbox{[}int\mbox{]} {\bfseries max\+\_\+content\+\_\+width} = max\+\_\+content\+\_\+width
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a991fedd03af89b2bf1e2c4c49523fdb9}\label{classclick_1_1core_1_1_context_a991fedd03af89b2bf1e2c4c49523fdb9} 
+{\bfseries allow\+\_\+extra\+\_\+args} = allow\+\_\+extra\+\_\+args
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a85720385e2da9c547d365a85eadf48e6}\label{classclick_1_1core_1_1_context_a85720385e2da9c547d365a85eadf48e6} 
+bool {\bfseries allow\+\_\+interspersed\+\_\+args} = allow\+\_\+interspersed\+\_\+args
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a843c046b8b71718e5d61acda5c0b2321}\label{classclick_1_1core_1_1_context_a843c046b8b71718e5d61acda5c0b2321} 
+bool {\bfseries ignore\+\_\+unknown\+\_\+options} = ignore\+\_\+unknown\+\_\+options
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_ab04ba5052f52ffded4dccd07b4d1c52f}\label{classclick_1_1core_1_1_context_ab04ba5052f52ffded4dccd07b4d1c52f} 
+t.\+List\mbox{[}str\mbox{]} {\bfseries help\+\_\+option\+\_\+names} = help\+\_\+option\+\_\+names
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a8462984204b678aacef9d98b88ba8fa7}\label{classclick_1_1core_1_1_context_a8462984204b678aacef9d98b88ba8fa7} 
+t.\+Optional\mbox{[} {\bfseries token\+\_\+normalize\+\_\+func}
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a3c1787d767f973e4c6c1fb2cb250553c}\label{classclick_1_1core_1_1_context_a3c1787d767f973e4c6c1fb2cb250553c} 
+bool {\bfseries resilient\+\_\+parsing} = resilient\+\_\+parsing
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a2ffa122dc6f1da37b9045b0cda8acfb3}\label{classclick_1_1core_1_1_context_a2ffa122dc6f1da37b9045b0cda8acfb3} 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries auto\+\_\+envvar\+\_\+prefix} = auto\+\_\+envvar\+\_\+prefix
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a4776e81a4ebf69aac7a2441f9c861b54}\label{classclick_1_1core_1_1_context_a4776e81a4ebf69aac7a2441f9c861b54} 
+t.\+Optional\mbox{[}bool\mbox{]} {\bfseries color} = color
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a8b2f5b1ab73fc20106444d27b513d995}\label{classclick_1_1core_1_1_context_a8b2f5b1ab73fc20106444d27b513d995} 
+t.\+Optional\mbox{[}bool\mbox{]} {\bfseries show\+\_\+default} = show\+\_\+default
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_aab6bd413088eafc36c96df16777da501}\label{classclick_1_1core_1_1_context_aab6bd413088eafc36c96df16777da501} 
+t {\bfseries formatter\+\_\+class} = \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+"{}Context"{} \mbox{\hyperlink{classclick_1_1core_1_1_context_a588b53ffb987fed5620b0523cebb5eac}{\+\_\+make\+\_\+sub\+\_\+context}} (self, "{}Command"{} command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a987d0416f051c1c00b07e82d29ef41a8}\label{classclick_1_1core_1_1_context_a987d0416f051c1c00b07e82d29ef41a8} 
+t.\+Set\mbox{[}str\mbox{]} {\bfseries \+\_\+opt\+\_\+prefixes} = set(parent.\+\_\+opt\+\_\+prefixes) if parent else set()
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a0a54f24a4a00ec70de2c81e645caaf55}\label{classclick_1_1core_1_1_context_a0a54f24a4a00ec70de2c81e645caaf55} 
+t.\+Dict\mbox{[}str, t.\+Any\mbox{]} {\bfseries \+\_\+meta} = getattr(parent, "{}meta"{}, \{\})
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_aeca55f3a15194c89043c5780e6fe644a}\label{classclick_1_1core_1_1_context_aeca55f3a15194c89043c5780e6fe644a} 
+list {\bfseries \+\_\+close\+\_\+callbacks} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_aebd37270e9a6fb1131775e3a8404e77c}\label{classclick_1_1core_1_1_context_aebd37270e9a6fb1131775e3a8404e77c} 
+int {\bfseries \+\_\+depth} = 0
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_ab844eb34d3d305adf8f15a01a3694abe}\label{classclick_1_1core_1_1_context_ab844eb34d3d305adf8f15a01a3694abe} 
+dict {\bfseries \+\_\+parameter\+\_\+source} = \{\}
+\item 
+\Hypertarget{classclick_1_1core_1_1_context_a97f688eb9dd8411d90ccc34d5a563d55}\label{classclick_1_1core_1_1_context_a97f688eb9dd8411d90ccc34d5a563d55} 
+{\bfseries \+\_\+exit\+\_\+stack} = Exit\+Stack()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}The context is a special internal object that holds state relevant
+for the script execution at every single level.  It's normally invisible
+to commands unless they opt-in to getting access to it.
+
+The context is useful as it can pass internal objects around and can
+control special execution features such as reading data from
+environment variables.
+
+A context can be used as context manager in which case it will call
+:meth:`close` on teardown.
+
+:param command: the command class for this context.
+:param parent: the parent context.
+:param info_name: the info name for this invocation.  Generally this
+                  is the most descriptive name for the script or
+                  command.  For the toplevel script it is usually
+                  the name of the script, for commands below it it's
+                  the name of the script.
+:param obj: an arbitrary object of user data.
+:param auto_envvar_prefix: the prefix to use for automatic environment
+                           variables.  If this is `None` then reading
+                           from environment variables is disabled.  This
+                           does not affect manually set environment
+                           variables which are always read.
+:param default_map: a dictionary (like object) with default values
+                    for parameters.
+:param terminal_width: the width of the terminal.  The default is
+                       inherit from parent context.  If no context
+                       defines the terminal width then auto
+                       detection will be applied.
+:param max_content_width: the maximum width for content rendered by
+                          Click (this currently only affects help
+                          pages).  This defaults to 80 characters if
+                          not overridden.  In other words: even if the
+                          terminal is larger than that, Click will not
+                          format things wider than 80 characters by
+                          default.  In addition to that, formatters might
+                          add some safety mapping on the right.
+:param resilient_parsing: if this flag is enabled then Click will
+                          parse without any interactivity or callback
+                          invocation.  Default values will also be
+                          ignored.  This is useful for implementing
+                          things such as completion support.
+:param allow_extra_args: if this is set to `True` then extra arguments
+                         at the end will not raise an error and will be
+                         kept on the context.  The default is to inherit
+                         from the command.
+:param allow_interspersed_args: if this is set to `False` then options
+                                and arguments cannot be mixed.  The
+                                default is to inherit from the command.
+:param ignore_unknown_options: instructs click to ignore options it does
+                               not know and keeps them for later
+                               processing.
+:param help_option_names: optionally a list of strings that define how
+                          the default help parameter is named.  The
+                          default is ``['--help']``.
+:param token_normalize_func: an optional function that is used to
+                             normalize tokens (options, choices,
+                             etc.).  This for instance can be used to
+                             implement case insensitive behavior.
+:param color: controls if the terminal supports ANSI colors or not.  The
+              default is autodetection.  This is only needed if ANSI
+              codes are used in texts that Click prints which is by
+              default not the case.  This for instance would affect
+              help output.
+:param show_default: Show the default value for commands. If this
+    value is not set, it defaults to the value from the parent
+    context. ``Command.show_default`` overrides this default for the
+    specific command.
+
+.. versionchanged:: 8.1
+    The ``show_default`` parameter is overridden by
+    ``Command.show_default``, instead of the other way around.
+
+.. versionchanged:: 8.0
+    The ``show_default`` parameter defaults to the value from the
+    parent context.
+
+.. versionchanged:: 7.1
+   Added the ``show_default`` parameter.
+
+.. versionchanged:: 4.0
+    Added the ``color``, ``ignore_unknown_options``, and
+    ``max_content_width`` parameters.
+
+.. versionchanged:: 3.0
+    Added the ``allow_extra_args`` and ``allow_interspersed_args``
+    parameters.
+
+.. versionchanged:: 2.0
+    Added the ``resilient_parsing``, ``help_option_names``, and
+    ``token_normalize_func`` parameters.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions membres}
+\Hypertarget{classclick_1_1core_1_1_context_a588b53ffb987fed5620b0523cebb5eac}\index{click.core.Context@{click.core.Context}!\_make\_sub\_context@{\_make\_sub\_context}}
+\index{\_make\_sub\_context@{\_make\_sub\_context}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{\_make\_sub\_context()}{\_make\_sub\_context()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a588b53ffb987fed5620b0523cebb5eac} 
+ "{}Context"{} click.\+core.\+Context.\+\_\+make\+\_\+sub\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Command"{}}]{command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create a new context of the same type as this context, but
+for a new command.
+
+:meta private:
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a13a9d6d1c8875dd30d221e2193151678}\index{click.core.Context@{click.core.Context}!abort@{abort}}
+\index{abort@{abort}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{abort()}{abort()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a13a9d6d1c8875dd30d221e2193151678} 
+ "{}te.\+No\+Return"{} click.\+core.\+Context.\+abort (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Aborts the script.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_abd2f1574d85734c9dc9acfbbd4cd14e1}\index{click.core.Context@{click.core.Context}!call\_on\_close@{call\_on\_close}}
+\index{call\_on\_close@{call\_on\_close}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{call\_on\_close()}{call\_on\_close()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_abd2f1574d85734c9dc9acfbbd4cd14e1} 
+ t.\+Callable\mbox{[}..., t.\+Any\mbox{]} click.\+core.\+Context.\+call\+\_\+on\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Callable\mbox{[}..., t.\+Any\mbox{]}}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a function to be called when the context tears down.
+
+This can be used to close resources opened during the script
+execution. Resources that support Python's context manager
+protocol which would be used in a ``with`` statement should be
+registered with :meth:`with_resource` instead.
+
+:param f: The function to execute on teardown.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a6449e9761d129e36f2290265904a526a}\index{click.core.Context@{click.core.Context}!close@{close}}
+\index{close@{close}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a6449e9761d129e36f2290265904a526a} 
+ None click.\+core.\+Context.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Invoke all close callbacks registered with
+:meth:`call_on_close`, and exit all context managers entered
+with :meth:`with_resource`.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a165df6533b65e1878eab3d20f5a5ece9}\index{click.core.Context@{click.core.Context}!command\_path@{command\_path}}
+\index{command\_path@{command\_path}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{command\_path()}{command\_path()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a165df6533b65e1878eab3d20f5a5ece9} 
+ str click.\+core.\+Context.\+command\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The computed command path.  This is used for the ``usage``
+information on the help page.  It's automatically created by
+combining the info names of the chain of contexts to the root.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a237c3ebdb452c6527d045eceb60db7be}\index{click.core.Context@{click.core.Context}!ensure\_object@{ensure\_object}}
+\index{ensure\_object@{ensure\_object}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{ensure\_object()}{ensure\_object()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a237c3ebdb452c6527d045eceb60db7be} 
+ V click.\+core.\+Context.\+ensure\+\_\+object (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Type\mbox{[}V\mbox{]}}]{object\+\_\+type}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`find_object` but sets the innermost object to a
+new instance of `object_type` if it does not exist.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a83b77ae657ac6e68cf8f15d4941b465e}\index{click.core.Context@{click.core.Context}!exit@{exit}}
+\index{exit@{exit}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a83b77ae657ac6e68cf8f15d4941b465e} 
+ "{}te.\+No\+Return"{} click.\+core.\+Context.\+exit (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{code}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Exits the application with a given exit code.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a12b6ec4751d1c8d9a24608e4462757b5}\index{click.core.Context@{click.core.Context}!fail@{fail}}
+\index{fail@{fail}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a12b6ec4751d1c8d9a24608e4462757b5} 
+ "{}te.\+No\+Return"{} click.\+core.\+Context.\+fail (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{message}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Aborts the execution of the program with a specific error
+message.
+
+:param message: the error message to fail with.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_ae7f4ce2c576ae4b5a638fe6b94f1214b}\index{click.core.Context@{click.core.Context}!find\_object@{find\_object}}
+\index{find\_object@{find\_object}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{find\_object()}{find\_object()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_ae7f4ce2c576ae4b5a638fe6b94f1214b} 
+ t.\+Optional\mbox{[}V\mbox{]} click.\+core.\+Context.\+find\+\_\+object (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Type\mbox{[}V\mbox{]}}]{object\+\_\+type}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finds the closest object of a given type.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_acf0382f3c190ff515d1d59bd4bef8e6a}\index{click.core.Context@{click.core.Context}!find\_root@{find\_root}}
+\index{find\_root@{find\_root}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{find\_root()}{find\_root()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_acf0382f3c190ff515d1d59bd4bef8e6a} 
+ "{}Context"{} click.\+core.\+Context.\+find\+\_\+root (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finds the outermost context.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_af34dd7c63ac5fcf73d3b5f1264a658e2}\index{click.core.Context@{click.core.Context}!forward@{forward}}
+\index{forward@{forward}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_af34dd7c63ac5fcf73d3b5f1264a658e2} 
+ t.\+Any click.\+core.\+Context.\+forward (\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+self}{, }\item[{"{}Command"{}}]{\+\_\+\+\_\+cmd}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any  \# noqa\+: B902     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Similar to :meth:`invoke` but fills in default keyword
+arguments from the current context if the other command expects
+it.  This cannot invoke callbacks directly, only other commands.
+
+.. versionchanged:: 8.0
+    All ``kwargs`` are tracked in :attr:`params` so they will be
+    passed if ``forward`` is called at multiple levels.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a815205bc4f42b5f7ee0e0f8a76dc8a4a}\index{click.core.Context@{click.core.Context}!get\_help@{get\_help}}
+\index{get\_help@{get\_help}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{get\_help()}{get\_help()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a815205bc4f42b5f7ee0e0f8a76dc8a4a} 
+ str click.\+core.\+Context.\+get\+\_\+help (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper method to get formatted help page for the current
+context and command.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a3e26b2c616a37bd12762edfc8ee2551c}\index{click.core.Context@{click.core.Context}!get\_parameter\_source@{get\_parameter\_source}}
+\index{get\_parameter\_source@{get\_parameter\_source}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{get\_parameter\_source()}{get\_parameter\_source()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a3e26b2c616a37bd12762edfc8ee2551c} 
+ t.\+Optional\mbox{[}\mbox{\hyperlink{classclick_1_1core_1_1_parameter_source}{Parameter\+Source}}\mbox{]} click.\+core.\+Context.\+get\+\_\+parameter\+\_\+source (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the source of a parameter. This indicates the location
+from which the value of the parameter was obtained.
+
+This can be useful for determining when a user specified a value
+on the command line that is the same as the default value. It
+will be :attr:`~click.core.ParameterSource.DEFAULT` only if the
+value was actually taken from the default.
+
+:param name: The name of the parameter.
+:rtype: ParameterSource
+
+.. versionchanged:: 8.0
+    Returns ``None`` if the parameter was not provided from any
+    source.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a4dfda3ed07706a287b40db1b404b71ac}\index{click.core.Context@{click.core.Context}!get\_usage@{get\_usage}}
+\index{get\_usage@{get\_usage}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{get\_usage()}{get\_usage()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a4dfda3ed07706a287b40db1b404b71ac} 
+ str click.\+core.\+Context.\+get\+\_\+usage (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper method to get formatted usage string for the current
+context and command.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a3131ad2472e9db220f76d98021583d6b}\index{click.core.Context@{click.core.Context}!invoke@{invoke}}
+\index{invoke@{invoke}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a3131ad2472e9db220f76d98021583d6b} 
+ t.\+Union\mbox{[}t.\+Any, V\mbox{]} click.\+core.\+Context.\+invoke (\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+self}{, }\item[{t.\+Union\mbox{[}"{}Command"{}, "{}t.\+Callable\mbox{[}..., V\mbox{]}"{}\mbox{]}}]{\+\_\+\+\_\+callback}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Invokes a command callback in exactly the way it expects.  There
+are two ways to invoke this method:
+
+1.  the first argument can be a callback and all other arguments and
+    keyword arguments are forwarded directly to the function.
+2.  the first argument is a click command object.  In that case all
+    arguments are forwarded as well but proper click parameters
+    (options and click arguments) must be keyword arguments and Click
+    will fill in defaults.
+
+Note that before Click 3.2 keyword arguments were not properly filled
+in against the intention of this code and no context was created.  For
+more information about this change and why it was done in a bugfix
+release see :ref:`upgrade-to-3.2`.
+
+.. versionchanged:: 8.0
+    All ``kwargs`` are tracked in :attr:`params` so they will be
+    passed if :meth:`forward` is called at multiple levels.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a4ebe4173606e89438cde9ddd26bc6f27}\index{click.core.Context@{click.core.Context}!lookup\_default@{lookup\_default}}
+\index{lookup\_default@{lookup\_default}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{lookup\_default()}{lookup\_default()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a4ebe4173606e89438cde9ddd26bc6f27} 
+ t.\+Optional\mbox{[}t.\+Any\mbox{]} click.\+core.\+Context.\+lookup\+\_\+default (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{bool }]{call}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the default for a parameter from :attr:`default_map`.
+
+:param name: Name of the parameter.
+:param call: If the default is a callable, call it. Disable to
+    return the callable instead.
+
+.. versionchanged:: 8.0
+    Added the ``call`` parameter.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a340f2d2a8421210332123367e7c85fb6}\index{click.core.Context@{click.core.Context}!make\_formatter@{make\_formatter}}
+\index{make\_formatter@{make\_formatter}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{make\_formatter()}{make\_formatter()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a340f2d2a8421210332123367e7c85fb6} 
+ \mbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} click.\+core.\+Context.\+make\+\_\+formatter (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates the :class:`~click.HelpFormatter` for the help and
+usage output.
+
+To quickly customize the formatter class used without overriding
+this method, set the :attr:`formatter_class` attribute.
+
+.. versionchanged:: 8.0
+    Added the :attr:`formatter_class` attribute.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_ad375eed8ed42835d5ef500b7b7275b6c}\index{click.core.Context@{click.core.Context}!meta@{meta}}
+\index{meta@{meta}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{meta()}{meta()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_ad375eed8ed42835d5ef500b7b7275b6c} 
+ t.\+Dict\mbox{[}str, t.\+Any\mbox{]} click.\+core.\+Context.\+meta (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is a dictionary which is shared with all the contexts
+that are nested.  It exists so that click utilities can store some
+state here if they need to.  It is however the responsibility of
+that code to manage this dictionary well.
+
+The keys are supposed to be unique dotted strings.  For instance
+module paths are a good choice for it.  What is stored in there is
+irrelevant for the operation of click.  However what is important is
+that code that places data here adheres to the general semantics of
+the system.
+
+Example usage::
+
+    LANG_KEY = f'{__name__}.lang'
+
+    def set_language(value):
+        ctx = get_current_context()
+        ctx.meta[LANG_KEY] = value
+
+    def get_language():
+        return get_current_context().meta.get(LANG_KEY, 'en_US')
+
+.. versionadded:: 5.0
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_ab445bcdcfb37431435b10b94aed88b9e}\index{click.core.Context@{click.core.Context}!scope@{scope}}
+\index{scope@{scope}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{scope()}{scope()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_ab445bcdcfb37431435b10b94aed88b9e} 
+ t.\+Iterator\mbox{[}"{}Context"{}\mbox{]} click.\+core.\+Context.\+scope (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{cleanup}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This helper method can be used with the context object to promote
+it to the current thread local (see :func:`get_current_context`).
+The default behavior of this is to invoke the cleanup functions which
+can be disabled by setting `cleanup` to `False`.  The cleanup
+functions are typically used for things such as closing file handles.
+
+If the cleanup is intended the context object can also be directly
+used as a context manager.
+
+Example usage::
+
+    with ctx.scope():
+        assert get_current_context() is ctx
+
+This is equivalent::
+
+    with ctx:
+        assert get_current_context() is ctx
+
+.. versionadded:: 5.0
+
+:param cleanup: controls if the cleanup functions should be run or
+                not.  The default is to run these functions.  In
+                some situations the context only wants to be
+                temporarily pushed in which case this can be disabled.
+                Nested pushes automatically defer the cleanup.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a130046d6b2856d2c3f402f8373976684}\index{click.core.Context@{click.core.Context}!set\_parameter\_source@{set\_parameter\_source}}
+\index{set\_parameter\_source@{set\_parameter\_source}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{set\_parameter\_source()}{set\_parameter\_source()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a130046d6b2856d2c3f402f8373976684} 
+ None click.\+core.\+Context.\+set\+\_\+parameter\+\_\+source (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{\mbox{\hyperlink{classclick_1_1core_1_1_parameter_source}{Parameter\+Source}}}]{source}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the source of a parameter. This indicates the location
+from which the value of the parameter was obtained.
+
+:param name: The name of the parameter.
+:param source: A member of :class:`~click.core.ParameterSource`.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a7da56a14f29b7c28fe0cd1fafeabc5de}\index{click.core.Context@{click.core.Context}!to\_info\_dict@{to\_info\_dict}}
+\index{to\_info\_dict@{to\_info\_dict}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{to\_info\_dict()}{to\_info\_dict()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a7da56a14f29b7c28fe0cd1fafeabc5de} 
+ t.\+Dict\mbox{[}str, t.\+Any\mbox{]} click.\+core.\+Context.\+to\+\_\+info\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gather information that could be useful for a tool generating
+user-facing documentation. This traverses the entire CLI
+structure.
+
+.. code-block:: python
+
+    with Context(cli) as ctx:
+        info = ctx.to_info_dict()
+
+.. versionadded:: 8.0
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_context_a6651bdb2141d63ffb4feee240e1c11f2}\index{click.core.Context@{click.core.Context}!with\_resource@{with\_resource}}
+\index{with\_resource@{with\_resource}!click.core.Context@{click.core.Context}}
+\doxysubsubsection{\texorpdfstring{with\_resource()}{with\_resource()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_context_a6651bdb2141d63ffb4feee240e1c11f2} 
+ V click.\+core.\+Context.\+with\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Context\+Manager\mbox{[}V\mbox{]}}]{context\+\_\+manager}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a resource as if it were used in a ``with``
+statement. The resource will be cleaned up when the context is
+popped.
+
+Uses :meth:`contextlib.ExitStack.enter_context`. It calls the
+resource's ``__enter__()`` method and returns the result. When
+the context is popped, it closes the stack, which calls the
+resource's ``__exit__()`` method.
+
+To register a cleanup function for something that isn't a
+context manager, use :meth:`call_on_close`. Or use something
+from :mod:`contextlib` to turn it into a context manager first.
+
+.. code-block:: python
+
+    @click.group()
+    @click.option("--name")
+    @click.pass_context
+    def cli(ctx):
+        ctx.obj = ctx.with_resource(connect_db(name))
+
+:param context_manager: The context manager to enter.
+:return: Whatever ``context_manager.__enter__()`` returns.
+
+.. versionadded:: 8.0
+\end{DoxyVerb}
+ 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/click/core.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\doxysection{pkg\+\_\+resources.\+extern.\+Vendor\+Importer Class Reference}
+\hypertarget{classpkg__resources_1_1extern_1_1_vendor_importer}{}\label{classpkg__resources_1_1extern_1_1_vendor_importer}\index{pkg\_resources.extern.VendorImporter@{pkg\_resources.extern.VendorImporter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpkg__resources_1_1extern_1_1_vendor_importer_ab4e79821b26754bdb7e1bfc8c30daac1}\label{classpkg__resources_1_1extern_1_1_vendor_importer_ab4e79821b26754bdb7e1bfc8c30daac1} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, root\+\_\+name, vendored\+\_\+names=(), vendor\+\_\+pkg=None)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1extern_1_1_vendor_importer_a559e21aa20432dd82f7b140273b4d80f}{search\+\_\+path}} (self)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1extern_1_1_vendor_importer_ad8c4a4ae5749e0d9691e0434bb19b9b5}{find\+\_\+module}} (self, fullname, path=None)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1extern_1_1_vendor_importer_a3ea48380949f41764dd9d79fc167ec01}{load\+\_\+module}} (self, fullname)
+\item 
+\mbox{\hyperlink{classpkg__resources_1_1extern_1_1_vendor_importer_a859ebab4cfbd9de0fc4d5b6ce36dc3b6}{install}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpkg__resources_1_1extern_1_1_vendor_importer_aa6dd174ffafaa82d89e9e7783558688e}\label{classpkg__resources_1_1extern_1_1_vendor_importer_aa6dd174ffafaa82d89e9e7783558688e} 
+{\bfseries root\+\_\+name} = root\+\_\+name
+\item 
+\Hypertarget{classpkg__resources_1_1extern_1_1_vendor_importer_abe2261f2f4d60f73258bec4857aefa27}\label{classpkg__resources_1_1extern_1_1_vendor_importer_abe2261f2f4d60f73258bec4857aefa27} 
+{\bfseries vendored\+\_\+names} = set(vendored\+\_\+names)
+\item 
+\Hypertarget{classpkg__resources_1_1extern_1_1_vendor_importer_a2aa3e3831167177b75341e463bfdbeb6}\label{classpkg__resources_1_1extern_1_1_vendor_importer_a2aa3e3831167177b75341e463bfdbeb6} 
+{\bfseries vendor\+\_\+pkg} = vendor\+\_\+pkg or root\+\_\+name.\+replace(\textquotesingle{}extern\textquotesingle{}, \textquotesingle{}\+\_\+vendor\textquotesingle{})
+\item 
+\Hypertarget{classpkg__resources_1_1extern_1_1_vendor_importer_a2eddc6579997b1731c86b32c09b946b1}\label{classpkg__resources_1_1extern_1_1_vendor_importer_a2eddc6579997b1731c86b32c09b946b1} 
+{\bfseries search\+\_\+path} = fullname.\+partition(self.\+root\+\_\+name + \textquotesingle{}.\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A PEP 302 meta path importer for finding optionally-vendored
+or otherwise naturally-installed packages from root_name.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpkg__resources_1_1extern_1_1_vendor_importer_ad8c4a4ae5749e0d9691e0434bb19b9b5}\index{pkg\_resources.extern.VendorImporter@{pkg\_resources.extern.VendorImporter}!find\_module@{find\_module}}
+\index{find\_module@{find\_module}!pkg\_resources.extern.VendorImporter@{pkg\_resources.extern.VendorImporter}}
+\doxysubsubsection{\texorpdfstring{find\_module()}{find\_module()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1extern_1_1_vendor_importer_ad8c4a4ae5749e0d9691e0434bb19b9b5} 
+pkg\+\_\+resources.\+extern.\+Vendor\+Importer.\+find\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fullname}{, }\item[{}]{path}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return self when fullname starts with root_name and the
+target module is one vendored through this importer.
+\end{DoxyVerb}
+ \Hypertarget{classpkg__resources_1_1extern_1_1_vendor_importer_a859ebab4cfbd9de0fc4d5b6ce36dc3b6}\index{pkg\_resources.extern.VendorImporter@{pkg\_resources.extern.VendorImporter}!install@{install}}
+\index{install@{install}!pkg\_resources.extern.VendorImporter@{pkg\_resources.extern.VendorImporter}}
+\doxysubsubsection{\texorpdfstring{install()}{install()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1extern_1_1_vendor_importer_a859ebab4cfbd9de0fc4d5b6ce36dc3b6} 
+pkg\+\_\+resources.\+extern.\+Vendor\+Importer.\+install (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Install this importer into sys.meta_path if not already present.
+\end{DoxyVerb}
+ \Hypertarget{classpkg__resources_1_1extern_1_1_vendor_importer_a3ea48380949f41764dd9d79fc167ec01}\index{pkg\_resources.extern.VendorImporter@{pkg\_resources.extern.VendorImporter}!load\_module@{load\_module}}
+\index{load\_module@{load\_module}!pkg\_resources.extern.VendorImporter@{pkg\_resources.extern.VendorImporter}}
+\doxysubsubsection{\texorpdfstring{load\_module()}{load\_module()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1extern_1_1_vendor_importer_a3ea48380949f41764dd9d79fc167ec01} 
+pkg\+\_\+resources.\+extern.\+Vendor\+Importer.\+load\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fullname}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate over the search path to locate and load fullname.
+\end{DoxyVerb}
+ \Hypertarget{classpkg__resources_1_1extern_1_1_vendor_importer_a559e21aa20432dd82f7b140273b4d80f}\index{pkg\_resources.extern.VendorImporter@{pkg\_resources.extern.VendorImporter}!search\_path@{search\_path}}
+\index{search\_path@{search\_path}!pkg\_resources.extern.VendorImporter@{pkg\_resources.extern.VendorImporter}}
+\doxysubsubsection{\texorpdfstring{search\_path()}{search\_path()}}
+{\footnotesize\ttfamily \label{classpkg__resources_1_1extern_1_1_vendor_importer_a559e21aa20432dd82f7b140273b4d80f} 
+pkg\+\_\+resources.\+extern.\+Vendor\+Importer.\+search\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Search first the vendor package then as a natural package.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pkg\+\_\+resources/extern/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

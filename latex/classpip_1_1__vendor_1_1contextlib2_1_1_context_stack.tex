@@ -1,0 +1,72 @@
+\doxysection{pip.\+\_\+vendor.\+contextlib2.\+Context\+Stack Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack}{}\label{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack}\index{pip.\_vendor.contextlib2.ContextStack@{pip.\_vendor.contextlib2.ContextStack}}
+Inheritance diagram for pip.\+\_\+vendor.\+contextlib2.\+Context\+Stack\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack_a9c99455d54926c9960a3927a92aa39fc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack_a7980e2da378f8dc92dd7309f89a4eec5}\label{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack_a7980e2da378f8dc92dd7309f89a4eec5} 
+{\bfseries register\+\_\+exit} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a41ec0b65ce8bfe9f2cb3853dbaefee9c}{callback}})
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack_a43cb3c3589bd064e63a47a96364f1d28}\label{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack_a43cb3c3589bd064e63a47a96364f1d28} 
+{\bfseries register} (self, \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a41ec0b65ce8bfe9f2cb3853dbaefee9c}{callback}}, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack_ab3272f06375f6aa5d2c93887ffbcb461}\label{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack_ab3272f06375f6aa5d2c93887ffbcb461} 
+{\bfseries preserve} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a4842a44101070a009cb9ad6ab7ac8268}{pop\+\_\+all}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_ad75f54caa9e15e46bd80363f1734236d}{push}} (self, exit)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a41ec0b65ce8bfe9f2cb3853dbaefee9c}{callback}} (self, callback, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_aa2ca7f68766d9341ab9ad3f63a1c7286}{enter\+\_\+context}} (self, cm)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a1a637fd05022071ff020925c26102926}{close}} (self)
+\item 
+{\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+{\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}exc\+\_\+details)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack_a33c9dae6234b5ebcf0fcf183fb056e24}{\+\_\+push\+\_\+cm\+\_\+exit}} (self, cm, cm\+\_\+exit)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+exit\+\_\+callbacks} = deque()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Backwards compatibility alias for ExitStack\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack_a9c99455d54926c9960a3927a92aa39fc}\index{pip.\_vendor.contextlib2.ContextStack@{pip.\_vendor.contextlib2.ContextStack}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.contextlib2.ContextStack@{pip.\_vendor.contextlib2.ContextStack}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1_context_stack_a9c99455d54926c9960a3927a92aa39fc} 
+pip.\+\_\+vendor.\+contextlib2.\+Context\+Stack.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{pip.\+\_\+vendor.\+contextlib2.\+Exit\+Stack}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/contextlib2.\+py\end{DoxyCompactItemize}

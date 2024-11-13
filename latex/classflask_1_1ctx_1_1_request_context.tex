@@ -1,0 +1,124 @@
+\doxysection{flask.\+ctx.\+Request\+Context Class Reference}
+\hypertarget{classflask_1_1ctx_1_1_request_context}{}\label{classflask_1_1ctx_1_1_request_context}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a8ca603d00b69954f57b79bc99c7e1515}\label{classflask_1_1ctx_1_1_request_context_a8ca603d00b69954f57b79bc99c7e1515} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, "{}Flask"{} app, dict environ, t.\+Optional\mbox{[}"{}Request"{}\mbox{]} request=None, t.\+Optional\mbox{[}"{}Session\+Mixin"{}\mbox{]} session=None)
+\item 
+"{}Request\+Context"{} \mbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a8a17b2d09a4ea8370c00e80b8b28fb43}{copy}} (self)
+\item 
+None \mbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a7480486b72a0ed25750e62cbce31dc85}{match\+\_\+request}} (self)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a5d8f087ae791f4099b1e0559f8220fdd}\label{classflask_1_1ctx_1_1_request_context_a5d8f087ae791f4099b1e0559f8220fdd} 
+None {\bfseries push} (self)
+\item 
+None \mbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a38ef24d6de795bcefcd1cdd2dbc5badc}{pop}} (self, t.\+Optional\mbox{[}Base\+Exception\mbox{]} exc=\+\_\+sentinel)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a5cc2e6f07d190fe8c56ae12cb43c4b5f}\label{classflask_1_1ctx_1_1_request_context_a5cc2e6f07d190fe8c56ae12cb43c4b5f} 
+"{}Request\+Context"{} {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a73b7e75658cceb21b52a8232c4d49a39}\label{classflask_1_1ctx_1_1_request_context_a73b7e75658cceb21b52a8232c4d49a39} 
+None {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}type\mbox{]} exc\+\_\+type, t.\+Optional\mbox{[}Base\+Exception\mbox{]} exc\+\_\+value, t.\+Optional\mbox{[}Traceback\+Type\mbox{]} tb)
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a8dda599c445d8684c0783c37293efb6a}\label{classflask_1_1ctx_1_1_request_context_a8dda599c445d8684c0783c37293efb6a} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_ac459a00600309c425da12b22a32fe6ff}\label{classflask_1_1ctx_1_1_request_context_ac459a00600309c425da12b22a32fe6ff} 
+{\bfseries app} = app
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a9df8fdbec442982a68d8cd3e5abbabd0}\label{classflask_1_1ctx_1_1_request_context_a9df8fdbec442982a68d8cd3e5abbabd0} 
+\mbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}} {\bfseries request} = request
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_ad5197d29fe312300b3d872cf1503708a}\label{classflask_1_1ctx_1_1_request_context_ad5197d29fe312300b3d872cf1503708a} 
+{\bfseries url\+\_\+adapter} = None
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a9171c4bf11b913b45fd3e89917cc9ae9}\label{classflask_1_1ctx_1_1_request_context_a9171c4bf11b913b45fd3e89917cc9ae9} 
+t.\+Optional\mbox{[}t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} {\bfseries flashes} = None
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_ad31e8f21732a2a807ccc8e56601bb134}\label{classflask_1_1ctx_1_1_request_context_ad31e8f21732a2a807ccc8e56601bb134} 
+t.\+Optional\mbox{[}$\,$\mbox{]} {\bfseries session} = session
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a24a1ae469a86c4e48e85b4961a150574}\label{classflask_1_1ctx_1_1_request_context_a24a1ae469a86c4e48e85b4961a150574} 
+list {\bfseries \+\_\+after\+\_\+request\+\_\+functions} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a7b5e9a9887bbcc211851446458a2b092}\label{classflask_1_1ctx_1_1_request_context_a7b5e9a9887bbcc211851446458a2b092} 
+list {\bfseries \+\_\+cv\+\_\+tokens} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The request context contains per-request information. The Flask
+app creates and pushes it at the beginning of the request, then pops
+it at the end of the request. It will create the URL adapter and
+request object for the WSGI environment provided.
+
+Do not attempt to use this class directly, instead use
+:meth:`~flask.Flask.test_request_context` and
+:meth:`~flask.Flask.request_context` to create this object.
+
+When the request context is popped, it will evaluate all the
+functions registered on the application for teardown execution
+(:meth:`~flask.Flask.teardown_request`).
+
+The request context is automatically popped at the end of the
+request. When using the interactive debugger, the context will be
+restored so ``request`` is still accessible. Similarly, the test
+client can preserve the context after the request ends. However,
+teardown functions may already have closed some resources such as
+database connections.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a8a17b2d09a4ea8370c00e80b8b28fb43}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!copy@{copy}}
+\index{copy@{copy}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a8a17b2d09a4ea8370c00e80b8b28fb43} 
+ "{}Request\+Context"{} flask.\+ctx.\+Request\+Context.\+copy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a copy of this request context with the same request object.
+This can be used to move a request context to a different greenlet.
+Because the actual request object is the same this cannot be used to
+move a request context to a different thread unless access to the
+request object is locked.
+
+.. versionadded:: 0.10
+
+.. versionchanged:: 1.1
+   The current session object is used instead of reloading the original
+   data. This prevents `flask.session` pointing to an out-of-date object.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1ctx_1_1_request_context_a7480486b72a0ed25750e62cbce31dc85}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!match\_request@{match\_request}}
+\index{match\_request@{match\_request}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{match\_request()}{match\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a7480486b72a0ed25750e62cbce31dc85} 
+ None flask.\+ctx.\+Request\+Context.\+match\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Can be overridden by a subclass to hook into the matching
+of the request.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1ctx_1_1_request_context_a38ef24d6de795bcefcd1cdd2dbc5badc}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!pop@{pop}}
+\index{pop@{pop}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a38ef24d6de795bcefcd1cdd2dbc5badc} 
+ None flask.\+ctx.\+Request\+Context.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}Base\+Exception\mbox{]} }]{exc}{ = {\ttfamily \+\_\+sentinel}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pops the request context and unbinds it by doing that.  This will
+also trigger the execution of functions registered by the
+:meth:`~flask.Flask.teardown_request` decorator.
+
+.. versionchanged:: 0.9
+   Added the `exc` argument.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/ctx.\+py\end{DoxyCompactItemize}

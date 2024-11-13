@@ -1,0 +1,89 @@
+\doxysection{requests.\+structures.\+Case\+Insensitive\+Dict Class Reference}
+\hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict}{}\label{classrequests_1_1structures_1_1_case_insensitive_dict}\index{requests.structures.CaseInsensitiveDict@{requests.structures.CaseInsensitiveDict}}
+Inheritance diagram for requests.\+structures.\+Case\+Insensitive\+Dict\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrequests_1_1structures_1_1_case_insensitive_dict}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_aa8cdba5fdbe0a24943df44c1cbf0fad6}\label{classrequests_1_1structures_1_1_case_insensitive_dict_aa8cdba5fdbe0a24943df44c1cbf0fad6} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, data=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_ad4852806c5f372f55e817b2118ffacd1}\label{classrequests_1_1structures_1_1_case_insensitive_dict_ad4852806c5f372f55e817b2118ffacd1} 
+{\bfseries \+\_\+\+\_\+setitem\+\_\+\+\_\+} (self, key, value)
+\item 
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_ae69173830fa0bf2d84a16bcaa04e27eb}\label{classrequests_1_1structures_1_1_case_insensitive_dict_ae69173830fa0bf2d84a16bcaa04e27eb} 
+{\bfseries \+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, key)
+\item 
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_a8be31f7057ecac4441a03b5d3692f81d}\label{classrequests_1_1structures_1_1_case_insensitive_dict_a8be31f7057ecac4441a03b5d3692f81d} 
+{\bfseries \+\_\+\+\_\+delitem\+\_\+\+\_\+} (self, key)
+\item 
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_aa1aa9964be16c782acfb95f444d1db81}\label{classrequests_1_1structures_1_1_case_insensitive_dict_aa1aa9964be16c782acfb95f444d1db81} 
+{\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_a4ae0b05f6c0cfcaed93a88b4729b90c9}\label{classrequests_1_1structures_1_1_case_insensitive_dict_a4ae0b05f6c0cfcaed93a88b4729b90c9} 
+{\bfseries \+\_\+\+\_\+len\+\_\+\+\_\+} (self)
+\item 
+\mbox{\hyperlink{classrequests_1_1structures_1_1_case_insensitive_dict_ab44737f4769afb61963056e97f5c4ac8}{lower\+\_\+items}} (self)
+\item 
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_a9d1dca7b94b15a6caef57232b4973395}\label{classrequests_1_1structures_1_1_case_insensitive_dict_a9d1dca7b94b15a6caef57232b4973395} 
+{\bfseries \+\_\+\+\_\+eq\+\_\+\+\_\+} (self, other)
+\item 
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_abb5e6d196a69c586360d40628cf46e65}\label{classrequests_1_1structures_1_1_case_insensitive_dict_abb5e6d196a69c586360d40628cf46e65} 
+{\bfseries copy} (self)
+\item 
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_ab22eb9c4c3a5d7bc447f05096549e142}\label{classrequests_1_1structures_1_1_case_insensitive_dict_ab22eb9c4c3a5d7bc447f05096549e142} 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_ae04f971e32252d29e93ef3cce5b56114}\label{classrequests_1_1structures_1_1_case_insensitive_dict_ae04f971e32252d29e93ef3cce5b56114} 
+{\bfseries \+\_\+store} = Ordered\+Dict()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A case-insensitive ``dict``-like object.
+
+Implements all methods and operations of
+``MutableMapping`` as well as dict's ``copy``. Also
+provides ``lower_items``.
+
+All keys are expected to be strings. The structure remembers the
+case of the last key to be set, and ``iter(instance)``,
+``keys()``, ``items()``, ``iterkeys()``, and ``iteritems()``
+will contain case-sensitive keys. However, querying and contains
+testing is case insensitive::
+
+    cid = CaseInsensitiveDict()
+    cid['Accept'] = 'application/json'
+    cid['aCCEPT'] == 'application/json'  # True
+    list(cid) == ['Accept']  # True
+
+For example, ``headers['content-encoding']`` will return the
+value of a ``'Content-Encoding'`` response header, regardless
+of how the header name was originally stored.
+
+If the constructor, ``.update``, or equality comparison
+operations are given keys that have equal ``.lower()``s, the
+behavior is undefined.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classrequests_1_1structures_1_1_case_insensitive_dict_ab44737f4769afb61963056e97f5c4ac8}\index{requests.structures.CaseInsensitiveDict@{requests.structures.CaseInsensitiveDict}!lower\_items@{lower\_items}}
+\index{lower\_items@{lower\_items}!requests.structures.CaseInsensitiveDict@{requests.structures.CaseInsensitiveDict}}
+\doxysubsubsection{\texorpdfstring{lower\_items()}{lower\_items()}}
+{\footnotesize\ttfamily \label{classrequests_1_1structures_1_1_case_insensitive_dict_ab44737f4769afb61963056e97f5c4ac8} 
+requests.\+structures.\+Case\+Insensitive\+Dict.\+lower\+\_\+items (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like iteritems(), but with all lowercase keys.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/requests/structures.\+py\end{DoxyCompactItemize}

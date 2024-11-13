@@ -1,0 +1,113 @@
+\doxysection{jsonschema.\+exceptions.\+Error\+Tree Class Reference}
+\hypertarget{classjsonschema_1_1exceptions_1_1_error_tree}{}\label{classjsonschema_1_1exceptions_1_1_error_tree}\index{jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_a551ee95f581d3583c1ce6cae93f162d2}\label{classjsonschema_1_1exceptions_1_1_error_tree_a551ee95f581d3583c1ce6cae93f162d2} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, Iterable\mbox{[}\mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_validation_error}{Validation\+Error}}\mbox{]} errors=())
+\item 
+\mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_error_tree_ab762d49ba13413fe287120af397a4c03}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}int index)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_error_tree_ade5d76605ced71378a6bc11ebd703874}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, index)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_error_tree_a75e0023ead91d66d681a319370547e68}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}int index, \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_error_tree}{Error\+Tree}} value)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_error_tree_a480679114d46f72ac5785e771066780a}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_error_tree_a4606ab017b122898a5fd47e471afb3a6}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_a7974de7e2f649f5f4e16d6c88e560915}\label{classjsonschema_1_1exceptions_1_1_error_tree_a7974de7e2f649f5f4e16d6c88e560915} 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_error_tree_aec952e3a7462c8948fbc0a9afef8be66}{total\+\_\+errors}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_addd9521eb7afc5847bf841cc633577c7}\label{classjsonschema_1_1exceptions_1_1_error_tree_addd9521eb7afc5847bf841cc633577c7} 
+dict {\bfseries errors} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_af2cde9d19224eb1598929ac6e341a6b4}\label{classjsonschema_1_1exceptions_1_1_error_tree_af2cde9d19224eb1598929ac6e341a6b4} 
+Mapping\mbox{[}str, \mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_error_tree}{Error\+Tree}}\mbox{]} {\bfseries \+\_\+contents} = defaultdict(self.\+\_\+\+\_\+class\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_a7fd44be7a49f14d872f57f01507bb8cd}\label{classjsonschema_1_1exceptions_1_1_error_tree_a7fd44be7a49f14d872f57f01507bb8cd} 
+{\bfseries \+\_\+instance} = \+\_\+unset
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}ErrorTrees make it easier to check which validations failed.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_ab762d49ba13413fe287120af397a4c03}\index{jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1exceptions_1_1_error_tree_ab762d49ba13413fe287120af397a4c03} 
+jsonschema.\+exceptions.\+Error\+Tree.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} int}]{index}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether ``instance[index]`` has any errors.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_ade5d76605ced71378a6bc11ebd703874}\index{jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1exceptions_1_1_error_tree_ade5d76605ced71378a6bc11ebd703874} 
+jsonschema.\+exceptions.\+Error\+Tree.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{index}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve the child tree one level down at the given ``index``.
+
+If the index is not in the instance that this tree corresponds
+to and is not known by this tree, whatever error would be raised
+by ``instance.__getitem__`` will be propagated (usually this is
+some subclass of `LookupError`.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_a480679114d46f72ac5785e771066780a}\index{jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1exceptions_1_1_error_tree_a480679114d46f72ac5785e771066780a} 
+jsonschema.\+exceptions.\+Error\+Tree.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate (non-recursively) over the indices in the instance with errors.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_a4606ab017b122898a5fd47e471afb3a6}\index{jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1exceptions_1_1_error_tree_a4606ab017b122898a5fd47e471afb3a6} 
+jsonschema.\+exceptions.\+Error\+Tree.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the `total_errors`.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_a75e0023ead91d66d681a319370547e68}\index{jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1exceptions_1_1_error_tree_a75e0023ead91d66d681a319370547e68} 
+jsonschema.\+exceptions.\+Error\+Tree.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} int}]{index}{, }\item[{\mbox{\hyperlink{classjsonschema_1_1exceptions_1_1_error_tree}{Error\+Tree}}}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add an error to the tree at the given ``index``.
+
+.. deprecated:: v4.20.0
+
+    Setting items on an `ErrorTree` is deprecated without replacement.
+    To populate a tree, provide all of its sub-errors when you
+    construct the tree.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1exceptions_1_1_error_tree_aec952e3a7462c8948fbc0a9afef8be66}\index{jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}!total\_errors@{total\_errors}}
+\index{total\_errors@{total\_errors}!jsonschema.exceptions.ErrorTree@{jsonschema.exceptions.ErrorTree}}
+\doxysubsubsection{\texorpdfstring{total\_errors()}{total\_errors()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1exceptions_1_1_error_tree_aec952e3a7462c8948fbc0a9afef8be66} 
+jsonschema.\+exceptions.\+Error\+Tree.\+total\+\_\+errors (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The total number of errors in the entire tree, including children.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/jsonschema/exceptions.\+py\end{DoxyCompactItemize}

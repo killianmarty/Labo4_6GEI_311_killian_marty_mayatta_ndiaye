@@ -1,0 +1,64 @@
+\doxysection{pip.\+\_\+vendor.\+pep517.\+wrappers.\+Logger\+Wrapper Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper}{}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper}\index{pip.\_vendor.pep517.wrappers.LoggerWrapper@{pip.\_vendor.pep517.wrappers.LoggerWrapper}}
+Inheritance diagram for pip.\+\_\+vendor.\+pep517.\+wrappers.\+Logger\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_ac384215dffc318f862dd2ae42ede2d7e}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_ac384215dffc318f862dd2ae42ede2d7e} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, logger, level)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_aa94fbb6c589ac115ef337f9d1591bf21}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_aa94fbb6c589ac115ef337f9d1591bf21} 
+{\bfseries fileno} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_af0cd599cf5fb8fc78dfe01fe08e94ebb}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_af0cd599cf5fb8fc78dfe01fe08e94ebb} 
+{\bfseries run} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_a155352b490371e8278299aa5c125930e}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_a155352b490371e8278299aa5c125930e} 
+{\bfseries remove\+\_\+newline} (msg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_ae19c1c44f74c0f1fd8977f4e3290e6c9}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_ae19c1c44f74c0f1fd8977f4e3290e6c9} 
+bool {\bfseries daemon} = True
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_ab555038d69a9e94137cc3d6ffc87504f}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_ab555038d69a9e94137cc3d6ffc87504f} 
+{\bfseries logger} = logger
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_a48348e81efb30816b7a3020541fdba8a}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_a48348e81efb30816b7a3020541fdba8a} 
+{\bfseries level} = level
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_a46b428faeaf8bde28589eb37e5900b2b}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_a46b428faeaf8bde28589eb37e5900b2b} 
+{\bfseries fd\+\_\+read}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_ace9994ae233eef79fdc67d104071fc0e}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_ace9994ae233eef79fdc67d104071fc0e} 
+{\bfseries fd\+\_\+write} = os.\+pipe()
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_a024fb6c737de023c69905963f882a5bb}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_a024fb6c737de023c69905963f882a5bb} 
+{\bfseries reader} = os.\+fdopen(self.\+fd\+\_\+read)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_ab6cfbff146cc928f4f4bdfbabc268ca7}\label{classpip_1_1__vendor_1_1pep517_1_1wrappers_1_1_logger_wrapper_ab6cfbff146cc928f4f4bdfbabc268ca7} 
+{\bfseries \+\_\+write} (self, message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Read messages from a pipe and redirect them
+to a logger (see python's logging module).
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/pep517/wrappers.\+py\end{DoxyCompactItemize}

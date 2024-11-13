@@ -1,0 +1,165 @@
+\doxysection{pip.\+\_\+vendor.\+retrying.\+Retrying Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying}{}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying}\index{pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}}
+Inheritance diagram for pip.\+\_\+vendor.\+retrying.\+Retrying\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1retrying_1_1_retrying}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_aa44a3a0628ef7a049dfa3142e847d4a4}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_aa44a3a0628ef7a049dfa3142e847d4a4} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, stop=None, wait=None, stop\+\_\+max\+\_\+attempt\+\_\+number=None, stop\+\_\+max\+\_\+delay=None, wait\+\_\+fixed=None, wait\+\_\+random\+\_\+min=None, wait\+\_\+random\+\_\+max=None, wait\+\_\+incrementing\+\_\+start=None, wait\+\_\+incrementing\+\_\+increment=None, wait\+\_\+exponential\+\_\+multiplier=None, wait\+\_\+exponential\+\_\+max=None, retry\+\_\+on\+\_\+exception=None, retry\+\_\+on\+\_\+result=None, wrap\+\_\+exception=False, stop\+\_\+func=None, wait\+\_\+func=None, wait\+\_\+jitter\+\_\+max=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1retrying_1_1_retrying_ad93c315b9073537ae771f457a5fdf602}{stop\+\_\+after\+\_\+attempt}} (self, previous\+\_\+attempt\+\_\+number, delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1retrying_1_1_retrying_a28cb56b8ae506ffbcb9997ae7303603b}{stop\+\_\+after\+\_\+delay}} (self, previous\+\_\+attempt\+\_\+number, delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1retrying_1_1_retrying_a05cf8a68a250c60c6c6fb8164483fc46}{no\+\_\+sleep}} (self, previous\+\_\+attempt\+\_\+number, delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1retrying_1_1_retrying_a692ab002937298a12a18ad02a74fcbf2}{fixed\+\_\+sleep}} (self, previous\+\_\+attempt\+\_\+number, delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1retrying_1_1_retrying_a30925a420e81583c7a5c41d609b24d6e}{random\+\_\+sleep}} (self, previous\+\_\+attempt\+\_\+number, delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1retrying_1_1_retrying_a65025e67be51e6027a151d6ca4c45b2d}{incrementing\+\_\+sleep}} (self, previous\+\_\+attempt\+\_\+number, delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a7673f8775b8ec79def9f26ab968b3dd6}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a7673f8775b8ec79def9f26ab968b3dd6} 
+{\bfseries exponential\+\_\+sleep} (self, previous\+\_\+attempt\+\_\+number, delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_af7bd4887b42149245135601a12178d52}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_af7bd4887b42149245135601a12178d52} 
+{\bfseries never\+\_\+reject} (self, result)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a9862274dc3addfb5c7c011f62a087f39}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a9862274dc3addfb5c7c011f62a087f39} 
+{\bfseries always\+\_\+reject} (self, result)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a6c3289cb5a55ed57ef884c14ba3982d8}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a6c3289cb5a55ed57ef884c14ba3982d8} 
+{\bfseries should\+\_\+reject} (self, attempt)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a3c7b8071ee59912f96624ccbf58f2a70}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a3c7b8071ee59912f96624ccbf58f2a70} 
+{\bfseries call} (self, fn, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a8a50ee9cb01008ccc3471af1a7cfeda6}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a8a50ee9cb01008ccc3471af1a7cfeda6} 
+{\bfseries stop\+\_\+after\+\_\+attempt}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_aa49a442945e8ed61bcae3f64cbc992a6}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_aa49a442945e8ed61bcae3f64cbc992a6} 
+{\bfseries stop\+\_\+after\+\_\+delay}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_ac420d87967a58f5387e63190091326d3}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_ac420d87967a58f5387e63190091326d3} 
+{\bfseries stop} = stop\+\_\+func
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a3c95c7fb9261c534518e0654440cd5a8}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a3c95c7fb9261c534518e0654440cd5a8} 
+list {\bfseries stop} = \mbox{[}lambda \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs\+: 0\mbox{]}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a613fb8e799454cfb74c6cdb58bde8cbf}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a613fb8e799454cfb74c6cdb58bde8cbf} 
+{\bfseries fixed\+\_\+sleep}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a2dad97b1b5ceee1ee04a217e08be27a5}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a2dad97b1b5ceee1ee04a217e08be27a5} 
+{\bfseries random\+\_\+sleep}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a69c9e737630127dbe3a23f519f45996c}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a69c9e737630127dbe3a23f519f45996c} 
+{\bfseries incrementing\+\_\+sleep}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_ac021e4cd74277179e599386b465ecff5}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_ac021e4cd74277179e599386b465ecff5} 
+{\bfseries exponential\+\_\+sleep}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a9ef2a9c50efec6840c018b13529c6733}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a9ef2a9c50efec6840c018b13529c6733} 
+{\bfseries wait} = wait\+\_\+func
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_aa61812680f7639ecf286fb148ba5cccc}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_aa61812680f7639ecf286fb148ba5cccc} 
+int {\bfseries \+\_\+stop\+\_\+max\+\_\+attempt\+\_\+number} = 5 if stop\+\_\+max\+\_\+attempt\+\_\+number is None else stop\+\_\+max\+\_\+attempt\+\_\+number
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a6f1d50f386d0f74a07cf73bf09979639}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a6f1d50f386d0f74a07cf73bf09979639} 
+int {\bfseries \+\_\+stop\+\_\+max\+\_\+delay} = 100 if stop\+\_\+max\+\_\+delay is None else stop\+\_\+max\+\_\+delay
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a208113f4c2ca95e611f5429a30b92579}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a208113f4c2ca95e611f5429a30b92579} 
+int {\bfseries \+\_\+wait\+\_\+fixed} = 1000 if wait\+\_\+fixed is None else wait\+\_\+fixed
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_ac1a00b5bb6107e2a5e783e7768ba7b25}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_ac1a00b5bb6107e2a5e783e7768ba7b25} 
+int {\bfseries \+\_\+wait\+\_\+random\+\_\+min} = 0 if wait\+\_\+random\+\_\+min is None else wait\+\_\+random\+\_\+min
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a02f1c92453f2bb9585292b51facb1a6b}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a02f1c92453f2bb9585292b51facb1a6b} 
+int {\bfseries \+\_\+wait\+\_\+random\+\_\+max} = 1000 if wait\+\_\+random\+\_\+max is None else wait\+\_\+random\+\_\+max
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a4e2035642bc903d0730c2dec084df14b}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a4e2035642bc903d0730c2dec084df14b} 
+int {\bfseries \+\_\+wait\+\_\+incrementing\+\_\+start} = 0 if wait\+\_\+incrementing\+\_\+start is None else wait\+\_\+incrementing\+\_\+start
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a3a47f0b78ea6de9ff21d54f1c6045fe3}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a3a47f0b78ea6de9ff21d54f1c6045fe3} 
+int {\bfseries \+\_\+wait\+\_\+incrementing\+\_\+increment} = 100 if wait\+\_\+incrementing\+\_\+increment is None else wait\+\_\+incrementing\+\_\+increment
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a5123f0badcb14868043433e6c2aaf793}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a5123f0badcb14868043433e6c2aaf793} 
+int {\bfseries \+\_\+wait\+\_\+exponential\+\_\+multiplier} = 1 if wait\+\_\+exponential\+\_\+multiplier is None else wait\+\_\+exponential\+\_\+multiplier
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a2b6c3e15e33cf26cb148a6b84ce5ccdd}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a2b6c3e15e33cf26cb148a6b84ce5ccdd} 
+{\bfseries \+\_\+wait\+\_\+exponential\+\_\+max} = MAX\+\_\+\+WAIT if wait\+\_\+exponential\+\_\+max is None else wait\+\_\+exponential\+\_\+max
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_aeaa1e861727583b2bae0b9f43acbb0b3}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_aeaa1e861727583b2bae0b9f43acbb0b3} 
+int {\bfseries \+\_\+wait\+\_\+jitter\+\_\+max} = 0 if wait\+\_\+jitter\+\_\+max is None else wait\+\_\+jitter\+\_\+max
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_ab31966287f9ddc42be26973643d181f9}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_ab31966287f9ddc42be26973643d181f9} 
+{\bfseries \+\_\+retry\+\_\+on\+\_\+exception} = self.\+always\+\_\+reject
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a4c64b62520b58a20cfdfb21db180c7dd}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a4c64b62520b58a20cfdfb21db180c7dd} 
+{\bfseries \+\_\+retry\+\_\+on\+\_\+result} = self.\+never\+\_\+reject
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a54c248abb04e2ca2a8ce3866aa73e6bd}\label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a54c248abb04e2ca2a8ce3866aa73e6bd} 
+{\bfseries \+\_\+wrap\+\_\+exception} = wrap\+\_\+exception
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a692ab002937298a12a18ad02a74fcbf2}\index{pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}!fixed\_sleep@{fixed\_sleep}}
+\index{fixed\_sleep@{fixed\_sleep}!pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}}
+\doxysubsubsection{\texorpdfstring{fixed\_sleep()}{fixed\_sleep()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a692ab002937298a12a18ad02a74fcbf2} 
+pip.\+\_\+vendor.\+retrying.\+Retrying.\+fixed\+\_\+sleep (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{previous\+\_\+attempt\+\_\+number}{, }\item[{}]{delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sleep a fixed amount of time between each retry.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a65025e67be51e6027a151d6ca4c45b2d}\index{pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}!incrementing\_sleep@{incrementing\_sleep}}
+\index{incrementing\_sleep@{incrementing\_sleep}!pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}}
+\doxysubsubsection{\texorpdfstring{incrementing\_sleep()}{incrementing\_sleep()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a65025e67be51e6027a151d6ca4c45b2d} 
+pip.\+\_\+vendor.\+retrying.\+Retrying.\+incrementing\+\_\+sleep (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{previous\+\_\+attempt\+\_\+number}{, }\item[{}]{delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sleep an incremental amount of time after each attempt, starting at
+wait_incrementing_start and incrementing by wait_incrementing_increment
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a05cf8a68a250c60c6c6fb8164483fc46}\index{pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}!no\_sleep@{no\_sleep}}
+\index{no\_sleep@{no\_sleep}!pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}}
+\doxysubsubsection{\texorpdfstring{no\_sleep()}{no\_sleep()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a05cf8a68a250c60c6c6fb8164483fc46} 
+pip.\+\_\+vendor.\+retrying.\+Retrying.\+no\+\_\+sleep (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{previous\+\_\+attempt\+\_\+number}{, }\item[{}]{delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Don't sleep at all before retrying.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a30925a420e81583c7a5c41d609b24d6e}\index{pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}!random\_sleep@{random\_sleep}}
+\index{random\_sleep@{random\_sleep}!pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}}
+\doxysubsubsection{\texorpdfstring{random\_sleep()}{random\_sleep()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a30925a420e81583c7a5c41d609b24d6e} 
+pip.\+\_\+vendor.\+retrying.\+Retrying.\+random\+\_\+sleep (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{previous\+\_\+attempt\+\_\+number}{, }\item[{}]{delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sleep a random amount of time between wait_random_min and wait_random_max\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_ad93c315b9073537ae771f457a5fdf602}\index{pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}!stop\_after\_attempt@{stop\_after\_attempt}}
+\index{stop\_after\_attempt@{stop\_after\_attempt}!pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}}
+\doxysubsubsection{\texorpdfstring{stop\_after\_attempt()}{stop\_after\_attempt()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1retrying_1_1_retrying_ad93c315b9073537ae771f457a5fdf602} 
+pip.\+\_\+vendor.\+retrying.\+Retrying.\+stop\+\_\+after\+\_\+attempt (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{previous\+\_\+attempt\+\_\+number}{, }\item[{}]{delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stop after the previous attempt >= stop_max_attempt_number.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1retrying_1_1_retrying_a28cb56b8ae506ffbcb9997ae7303603b}\index{pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}!stop\_after\_delay@{stop\_after\_delay}}
+\index{stop\_after\_delay@{stop\_after\_delay}!pip.\_vendor.retrying.Retrying@{pip.\_vendor.retrying.Retrying}}
+\doxysubsubsection{\texorpdfstring{stop\_after\_delay()}{stop\_after\_delay()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1retrying_1_1_retrying_a28cb56b8ae506ffbcb9997ae7303603b} 
+pip.\+\_\+vendor.\+retrying.\+Retrying.\+stop\+\_\+after\+\_\+delay (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{previous\+\_\+attempt\+\_\+number}{, }\item[{}]{delay\+\_\+since\+\_\+first\+\_\+attempt\+\_\+ms}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stop after the time from the first attempt >= stop_max_delay.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/retrying.\+py\end{DoxyCompactItemize}

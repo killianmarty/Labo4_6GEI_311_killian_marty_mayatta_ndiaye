@@ -1,0 +1,208 @@
+\doxysection{werkzeug.\+test.\+Test\+Response Class Reference}
+\hypertarget{classwerkzeug_1_1test_1_1_test_response}{}\label{classwerkzeug_1_1test_1_1_test_response}\index{werkzeug.test.TestResponse@{werkzeug.test.TestResponse}}
+Inheritance diagram for werkzeug.\+test.\+Test\+Response\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1test_1_1_test_response}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response_a694aa47b2c409be7f189cc7d354b582a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Iterable\mbox{[}bytes\mbox{]} response, str status, \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_headers}{Headers}} headers, \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}} request, t.\+Tuple\mbox{[}"{}Test\+Response"{}\mbox{]} history=(), \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response_aac660d726ee8dcd6233b7b0ee994548e}{text}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{werkzeug.\+wrappers.\+response.\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Callable\mbox{[}\mbox{[}$\,$\mbox{]}, t.\+Any\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a9b930d9e5d953ee1f5f1aed2584c6cec}{call\+\_\+on\+\_\+close}} (self, t.\+Callable\mbox{[}\mbox{[}$\,$\mbox{]}, t.\+Any\mbox{]} func)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+"{}Response"{} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1651579266dcd8bb857f2befe96c0274}{force\+\_\+type}} (cls, "{}Response"{} response, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None)
+\item 
+"{}Response"{} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_aa36661ed267d13c14da0399b72ee2015}{from\+\_\+app}} (cls, "{}WSGIApplication"{} app, "{}WSGIEnvironment"{} environ, bool buffered=False)
+\item 
+bytes {\bfseries get\+\_\+data} (self, "{}te.\+Literal\mbox{[}False\mbox{]}"{} as\+\_\+text=False)
+\item 
+str {\bfseries get\+\_\+data} (self, "{}te.\+Literal\mbox{[}True\mbox{]}"{} as\+\_\+text)
+\item 
+t.\+Union\mbox{[}bytes, str\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_ac49bb28b3a22b17c4c84f37a28be9038}{get\+\_\+data}} (self, bool as\+\_\+text=False)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_aab9cdfcd6b7b1dbb8858de3c6c2f913c}{set\+\_\+data}} (self, t.\+Union\mbox{[}bytes, str\mbox{]} value)
+\item 
+t.\+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_af20817be5905d6f657a12d78219c709c}{calculate\+\_\+content\+\_\+length}} (self)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a27cb191821f624adfa92b029f2a82e71}{make\+\_\+sequence}} (self)
+\item 
+t.\+Iterator\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a023f39d217774fdc40a20d721ebf72e7}{iter\+\_\+encoded}} (self)
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_aecb2f41497504447b92a5a559d01b808}{is\+\_\+streamed}} (self)
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a74725f5697627e5a535ad0f73941b93e}{is\+\_\+sequence}} (self)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_aa761fe11c5dccb7797bcc4c84f2a9188}{close}} (self)
+\item 
+"{}Response"{} {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+{\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exc\+\_\+type, exc\+\_\+value, tb)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2a94ef11ae57e1af13c2496a71425a4e}{freeze}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_headers}{Headers}} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6a9d4baf1d82f4e715f252368596a11f}{get\+\_\+wsgi\+\_\+headers}} (self, "{}WSGIEnvironment"{} environ)
+\item 
+t.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a768c44b80fca7935da9d7a0cb124976f}{get\+\_\+app\+\_\+iter}} (self, "{}WSGIEnvironment"{} environ)
+\item 
+t.\+Tuple\mbox{[}t.\+Iterable\mbox{[}bytes\mbox{]}, str, t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_ae4aaedf1833ebc38acb56710358778e6}{get\+\_\+wsgi\+\_\+response}} (self, "{}WSGIEnvironment"{} environ)
+\item 
+t.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a9ffb76c821930d560a8f5f9038033a59}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\item 
+t.\+Optional\mbox{[}t.\+Any\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6becbd5df7594ee00e4cc15ed5f5a395}{json}} (self)
+\item 
+t.\+Any {\bfseries get\+\_\+json} (self, bool force=..., "{}te.\+Literal\mbox{[}False\mbox{]}"{} silent=...)
+\item 
+t.\+Optional\mbox{[}t.\+Any\mbox{]} {\bfseries get\+\_\+json} (self, bool force=..., bool silent=...)
+\item 
+t.\+Optional\mbox{[}t.\+Any\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_aba69a7e3f3c19c688678ac57dc62416f}{get\+\_\+json}} (self, bool force=False, bool silent=False)
+\item 
+"{}Response\+Stream"{} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a50d804e5d373bc3f8b828b4af08d9ef3}{stream}} (self)
+\item 
+"{}Response"{} \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a786c52ff879cdffa6be8114a6980bdbd}{make\+\_\+conditional}} (self, t.\+Union\mbox{[}"{}WSGIEnvironment"{}, "{}Request"{}\mbox{]} request\+\_\+or\+\_\+environ, t.\+Union\mbox{[}bool, str\mbox{]} accept\+\_\+ranges=False, t.\+Optional\mbox{[}int\mbox{]} complete\+\_\+length=None)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a8255cd97059cce326a06045bc6202655}{add\+\_\+etag}} (self, bool overwrite=False, bool weak=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_test_response_a137e2ba81b1de5f5203fc2ed567fbb34}\label{classwerkzeug_1_1test_1_1_test_response_a137e2ba81b1de5f5203fc2ed567fbb34} 
+{\bfseries request} = request
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{werkzeug.\+wrappers.\+response.\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries direct\+\_\+passthrough} = direct\+\_\+passthrough
+\item 
+{\bfseries is\+\_\+sequence} = getattr(self.\+response, "{}close"{}, None)
+\item 
+{\bfseries charset}
+\item 
+{\bfseries close} = self.\+iter\+\_\+encoded()
+\item 
+{\bfseries status}
+\item 
+{\bfseries is\+\_\+json}
+\item 
+int {\bfseries status\+\_\+code} = 206\+:
+\item 
+{\bfseries content\+\_\+range} = content\+\_\+range\+\_\+header
+\item 
+{\bfseries headers}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_test_response_a64ef31b2eecb1db0d96c5718ed4765ff}\label{classwerkzeug_1_1test_1_1_test_response_a64ef31b2eecb1db0d96c5718ed4765ff} 
+{\bfseries default\+\_\+mimetype} = None
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_test_response_a9bb89148a23e080c88be6e4333991b6b}\label{classwerkzeug_1_1test_1_1_test_response_a9bb89148a23e080c88be6e4333991b6b} 
+t {\bfseries history} .Tuple\mbox{[}"{}Test\+Response"{}, ...\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{werkzeug.\+wrappers.\+response.\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries implicit\+\_\+sequence\+\_\+conversion} = True
+\item 
+bool {\bfseries autocorrect\+\_\+location\+\_\+header} = False
+\item 
+bool {\bfseries automatically\+\_\+set\+\_\+content\+\_\+length} = True
+\item 
+t {\bfseries response} .Union\mbox{[}t.\+Iterable\mbox{[}str\mbox{]}, t.\+Iterable\mbox{[}bytes\mbox{]}\mbox{]}
+\item 
+{\bfseries json\+\_\+module} = json
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_test_response_a0ff9be784fcf0b8b0a06d91bd31636c1}\label{classwerkzeug_1_1test_1_1_test_response_a0ff9be784fcf0b8b0a06d91bd31636c1} 
+{\bfseries \+\_\+compat\+\_\+tuple} = response, status, headers
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{werkzeug.\+wrappers.\+response.\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries \+\_\+on\+\_\+close} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{werkzeug.\+wrappers.\+response.\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a15ab1669d3913e3004b1117516d791b5}{\+\_\+ensure\+\_\+sequence}} (self, bool mutable=False)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2f78ae7c3ab947c3ffae70d2eb837ad8}{\+\_\+wrap\+\_\+range\+\_\+response}} (self, int start, int length)
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a57f8c8cbe9c5b1518d5f00dd7ad1350a}{\+\_\+is\+\_\+range\+\_\+request\+\_\+processable}} (self, "{}WSGIEnvironment"{} environ)
+\item 
+bool \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a27da4e69e0f315f7221818c043779bd1}{\+\_\+process\+\_\+range\+\_\+request}} (self, "{}WSGIEnvironment"{} environ, t.\+Optional\mbox{[}int\mbox{]} complete\+\_\+length=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}bool, str\mbox{]}\mbox{]} accept\+\_\+ranges=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{werkzeug.\+wrappers.\+response.\+Response}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2d1822b5ebf0d2bf1ef9fe2da08d766a}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}:class:`~werkzeug.wrappers.Response` subclass that provides extra
+information about requests made with the test :class:`Client`.
+
+Test client requests will always return an instance of this class.
+If a custom response class is passed to the client, it is
+subclassed along with this to support test information.
+
+If the test request included large files, or if the application is
+serving a file, call :meth:`close` to close any open files and
+prevent Python showing a ``ResourceWarning``.
+
+.. versionchanged:: 2.2
+    Set the ``default_mimetype`` to None to prevent a mimetype being
+    assumed if missing.
+
+.. versionchanged:: 2.1
+    Removed deprecated behavior for treating the response instance
+    as a tuple.
+
+.. versionadded:: 2.0
+    Test client methods always return instances of this class.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1test_1_1_test_response_a694aa47b2c409be7f189cc7d354b582a}\index{werkzeug.test.TestResponse@{werkzeug.test.TestResponse}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.test.TestResponse@{werkzeug.test.TestResponse}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_test_response_a694aa47b2c409be7f189cc7d354b582a} 
+ None werkzeug.\+test.\+Test\+Response.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Iterable\mbox{[}bytes\mbox{]}}]{response}{, }\item[{str}]{status}{, }\item[{\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_headers}{Headers}}}]{headers}{, }\item[{\mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}}]{request}{, }\item[{t.\+Tuple\mbox{[}"{}Test\+Response"{}\mbox{]} }]{history}{ = {\ttfamily ()}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{werkzeug.\+wrappers.\+response.\+Response}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1test_1_1_test_response_aac660d726ee8dcd6233b7b0ee994548e}\index{werkzeug.test.TestResponse@{werkzeug.test.TestResponse}!text@{text}}
+\index{text@{text}!werkzeug.test.TestResponse@{werkzeug.test.TestResponse}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_test_response_aac660d726ee8dcd6233b7b0ee994548e} 
+ str werkzeug.\+test.\+Test\+Response.\+text (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The response data as text. A shortcut for
+``response.get_data(as_text=True)``.
+
+.. versionadded:: 2.1
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/test.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\doxysection{werkzeug.\+routing.\+exceptions.\+Websocket\+Mismatch Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1exceptions_1_1_websocket_mismatch}{}\label{classwerkzeug_1_1routing_1_1exceptions_1_1_websocket_mismatch}\index{werkzeug.routing.exceptions.WebsocketMismatch@{werkzeug.routing.exceptions.WebsocketMismatch}}
+Inheritance diagram for werkzeug.\+routing.\+exceptions.\+Websocket\+Mismatch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classwerkzeug_1_1routing_1_1exceptions_1_1_websocket_mismatch}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a850abc5d1a7368a8c41555c612a77815}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\mbox{[}str\mbox{]} description=None, t.\+Optional\mbox{[}"{}Response"{}\mbox{]} response=None)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798}{name}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aaeabc66be206d8416ce68dd45127459e}{get\+\_\+description}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2d4bdf6b9951d455d40c9f55ba28b41f}{get\+\_\+body}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_afbcf1071c68f1c81ba64b4e08b968893}{get\+\_\+headers}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+"{}Response"{} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0552eb47de6a896d4d242893198e23d2}{get\+\_\+response}} (self, t.\+Optional\mbox{[}t.\+Union\mbox{[}"{}WSGIEnvironment"{}, "{}WSGIRequest"{}\mbox{]}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+t.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aebdfbbad37e22021a48f9235e637d4ab}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries response} = response
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_bad_request}{werkzeug.\+exceptions.\+Bad\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries code} = 400
+\item 
+tuple \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_bad_request_a3d6bf8850d7e7eb35f8a86b5e3e50b5e}{description}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries code} = None
+\item 
+t {\bfseries description} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The only matched rule is either a WebSocket and the request is
+HTTP, or the rule is HTTP and the request is a WebSocket.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/routing/exceptions.\+py\end{DoxyCompactItemize}

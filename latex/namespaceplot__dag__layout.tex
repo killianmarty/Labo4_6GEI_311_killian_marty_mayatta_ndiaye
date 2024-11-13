@@ -1,0 +1,53 @@
+\doxysection{plot\+\_\+dag\+\_\+layout Namespace Reference}
+\hypertarget{namespaceplot__dag__layout}{}\label{namespaceplot__dag__layout}\index{plot\_dag\_layout@{plot\_dag\_layout}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceplot__dag__layout_ae03aed006b922effd8c99133de499ec9}{G}}
+\item 
+\Hypertarget{namespaceplot__dag__layout_a5b74ba468a5363ea316ede397df474b5}\label{namespaceplot__dag__layout_a5b74ba468a5363ea316ede397df474b5} 
+{\bfseries pos} = nx.\+multipartite\+\_\+layout(G, subset\+\_\+key="{}layer"{})
+\item 
+\Hypertarget{namespaceplot__dag__layout_ab6834ad82d2b59ed4bb5060a764be197}\label{namespaceplot__dag__layout_ab6834ad82d2b59ed4bb5060a764be197} 
+{\bfseries fig}
+\item 
+\Hypertarget{namespaceplot__dag__layout_a94ac1b396ef45e1f06c4aa197bb80878}\label{namespaceplot__dag__layout_a94ac1b396ef45e1f06c4aa197bb80878} 
+{\bfseries ax}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}========================
+DAG - Topological Layout
+========================
+
+This example combines the `topological_generations` generator with
+`multipartite_layout` to show how to visualize a DAG in topologically-sorted
+order.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__dag__layout_ae03aed006b922effd8c99133de499ec9}\index{plot\_dag\_layout@{plot\_dag\_layout}!G@{G}}
+\index{G@{G}!plot\_dag\_layout@{plot\_dag\_layout}}
+\doxysubsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily \label{namespaceplot__dag__layout_ae03aed006b922effd8c99133de499ec9} 
+plot\+\_\+dag\+\_\+layout.\+G}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ nx.DiGraph(}
+\DoxyCodeLine{00002\ \ \ \ \ [}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}f"{}},\ \textcolor{stringliteral}{"{}a"{}}),}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}a"{}},\ \textcolor{stringliteral}{"{}b"{}}),}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}a"{}},\ \textcolor{stringliteral}{"{}e"{}}),}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}b"{}},\ \textcolor{stringliteral}{"{}c"{}}),}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}b"{}},\ \textcolor{stringliteral}{"{}d"{}}),}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}d"{}},\ \textcolor{stringliteral}{"{}e"{}}),}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}f"{}},\ \textcolor{stringliteral}{"{}c"{}}),}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}f"{}},\ \textcolor{stringliteral}{"{}g"{}}),}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}h"{}},\ \textcolor{stringliteral}{"{}f"{}}),}
+\DoxyCodeLine{00012\ \ \ \ \ ]}
+\DoxyCodeLine{00013\ )}
+
+\end{DoxyCode}

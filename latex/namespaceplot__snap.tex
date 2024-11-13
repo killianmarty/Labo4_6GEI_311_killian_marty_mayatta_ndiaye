@@ -1,0 +1,148 @@
+\doxysection{plot\+\_\+snap Namespace Reference}
+\hypertarget{namespaceplot__snap}{}\label{namespaceplot__snap}\index{plot\_snap@{plot\_snap}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespaceplot__snap_a4b1999f7c9304fb2708b17e0f5c15749}{nodes}}
+\item 
+list \mbox{\hyperlink{namespaceplot__snap_ab350577b848281acc868a2354f517551}{edges}}
+\item 
+\Hypertarget{namespaceplot__snap_a8c7ebc6a6d8daff03fcb57363bf68663}\label{namespaceplot__snap_a8c7ebc6a6d8daff03fcb57363bf68663} 
+{\bfseries original\+\_\+graph} = nx.\+Graph()
+\item 
+\Hypertarget{namespaceplot__snap_ac5c8b24cc9a1b5e904c4304dc8f4de7b}\label{namespaceplot__snap_ac5c8b24cc9a1b5e904c4304dc8f4de7b} 
+dict {\bfseries base\+\_\+options} = \{"{}with\+\_\+labels"{}\+: True, "{}edgecolors"{}\+: "{}black"{}, "{}node\+\_\+size"{}\+: 500\}
+\item 
+\Hypertarget{namespaceplot__snap_a1c3018eead7d1820f702a4ce7144aea2}\label{namespaceplot__snap_a1c3018eead7d1820f702a4ce7144aea2} 
+{\bfseries ax1} = plt.\+subplot(1, 2, 1)
+\item 
+\Hypertarget{namespaceplot__snap_aef620191132792b8ed47ba963156ada0}\label{namespaceplot__snap_aef620191132792b8ed47ba963156ada0} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(original\+\_\+graph, seed=7482934)
+\item 
+\Hypertarget{namespaceplot__snap_a9de92e9b82535658c777cf592b375b56}\label{namespaceplot__snap_a9de92e9b82535658c777cf592b375b56} 
+list {\bfseries node\+\_\+colors} = \mbox{[}d\mbox{[}"{}color"{}\mbox{]} for \+\_\+, d in original\+\_\+graph.\+nodes(data=True)\mbox{]}
+\item 
+\Hypertarget{namespaceplot__snap_a6f45a41c293f9dfcee4a58a79c6b2807}\label{namespaceplot__snap_a6f45a41c293f9dfcee4a58a79c6b2807} 
+dict {\bfseries edge\+\_\+type\+\_\+visual\+\_\+weight\+\_\+lookup} = \{"{}Weak"{}\+: 1.\+0, "{}Strong"{}\+: 3.\+0\}
+\item 
+list \mbox{\hyperlink{namespaceplot__snap_a033736c4aeafc0739116638ff204636d}{edge\+\_\+weights}}
+\item 
+\Hypertarget{namespaceplot__snap_ab83b5155d058b60fe2102be3d3da4532}\label{namespaceplot__snap_ab83b5155d058b60fe2102be3d3da4532} 
+{\bfseries node\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__snap_a88b481a3717503b9c7b3bbae73889760}\label{namespaceplot__snap_a88b481a3717503b9c7b3bbae73889760} 
+{\bfseries width}
+\item 
+\Hypertarget{namespaceplot__snap_a8972229b7cd40c479ccf7b9baebefa06}\label{namespaceplot__snap_a8972229b7cd40c479ccf7b9baebefa06} 
+tuple {\bfseries node\+\_\+attributes} = ("{}color"{},)
+\item 
+\Hypertarget{namespaceplot__snap_ac444804ac6cba77aa0bcc4f8cda94082}\label{namespaceplot__snap_ac444804ac6cba77aa0bcc4f8cda94082} 
+tuple {\bfseries edge\+\_\+attributes} = ("{}type"{},)
+\item 
+\mbox{\hyperlink{namespaceplot__snap_a8b966cf636d460bc2bc46c3c1030fdaf}{summary\+\_\+graph}}
+\item 
+\Hypertarget{namespaceplot__snap_ac43f700d400bd54c69ba5804dbecfea2}\label{namespaceplot__snap_ac43f700d400bd54c69ba5804dbecfea2} 
+{\bfseries summary\+\_\+pos} = nx.\+spring\+\_\+layout(summary\+\_\+graph, seed=8375428)
+\item 
+\Hypertarget{namespaceplot__snap_a2231a441fb7781dc4a96ab07c97b5794}\label{namespaceplot__snap_a2231a441fb7781dc4a96ab07c97b5794} 
+dict {\bfseries color} = summary\+\_\+graph.\+nodes\mbox{[}node\mbox{]}\mbox{[}"{}color"{}\mbox{]}
+\item 
+\Hypertarget{namespaceplot__snap_aff06bd64ba327608abae435e650ecd46}\label{namespaceplot__snap_aff06bd64ba327608abae435e650ecd46} 
+{\bfseries edge\+\_\+types} = summary\+\_\+graph.\+get\+\_\+edge\+\_\+data(\texorpdfstring{$\ast$}{*}edge)\mbox{[}"{}types"{}\mbox{]}
+\item 
+\Hypertarget{namespaceplot__snap_a8d4324af69a5633d2afbffa307e8d71d}\label{namespaceplot__snap_a8d4324af69a5633d2afbffa307e8d71d} 
+float {\bfseries edge\+\_\+weight} = 0.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}==================
+SNAP Graph Summary
+==================
+An example of summarizing a graph based on node attributes and edge attributes
+using the Summarization by Grouping Nodes on Attributes and Pairwise
+edges (SNAP) algorithm (not to be confused with the Stanford Network
+Analysis Project).  The algorithm groups nodes by their unique
+combinations of node attribute values and edge types with other groups
+of nodes to produce a summary graph.  The summary graph can then be used to
+infer how nodes with different attributes values relate to other nodes in the
+graph.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__snap_a033736c4aeafc0739116638ff204636d}\index{plot\_snap@{plot\_snap}!edge\_weights@{edge\_weights}}
+\index{edge\_weights@{edge\_weights}!plot\_snap@{plot\_snap}}
+\doxysubsubsection{\texorpdfstring{edge\_weights}{edge\_weights}}
+{\footnotesize\ttfamily \label{namespaceplot__snap_a033736c4aeafc0739116638ff204636d} 
+list plot\+\_\+snap.\+edge\+\_\+weights}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ edge\_type\_visual\_weight\_lookup[d[\textcolor{stringliteral}{"{}type"{}}]]}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{keywordflow}{for}\ \_,\ \_,\ d\ \textcolor{keywordflow}{in}\ original\_graph.edges(data=\textcolor{keyword}{True})}
+\DoxyCodeLine{00004\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceplot__snap_ab350577b848281acc868a2354f517551}\index{plot\_snap@{plot\_snap}!edges@{edges}}
+\index{edges@{edges}!plot\_snap@{plot\_snap}}
+\doxysubsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily \label{namespaceplot__snap_ab350577b848281acc868a2354f517551} 
+list plot\+\_\+snap.\+edges}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ (\textcolor{stringliteral}{"{}A"{}},\ \textcolor{stringliteral}{"{}B"{}},\ \textcolor{stringliteral}{"{}Strong"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ (\textcolor{stringliteral}{"{}A"{}},\ \textcolor{stringliteral}{"{}C"{}},\ \textcolor{stringliteral}{"{}Weak"{}}),}
+\DoxyCodeLine{00004\ \ \ \ \ (\textcolor{stringliteral}{"{}A"{}},\ \textcolor{stringliteral}{"{}E"{}},\ \textcolor{stringliteral}{"{}Strong"{}}),}
+\DoxyCodeLine{00005\ \ \ \ \ (\textcolor{stringliteral}{"{}A"{}},\ \textcolor{stringliteral}{"{}I"{}},\ \textcolor{stringliteral}{"{}Weak"{}}),}
+\DoxyCodeLine{00006\ \ \ \ \ (\textcolor{stringliteral}{"{}B"{}},\ \textcolor{stringliteral}{"{}D"{}},\ \textcolor{stringliteral}{"{}Weak"{}}),}
+\DoxyCodeLine{00007\ \ \ \ \ (\textcolor{stringliteral}{"{}B"{}},\ \textcolor{stringliteral}{"{}J"{}},\ \textcolor{stringliteral}{"{}Weak"{}}),}
+\DoxyCodeLine{00008\ \ \ \ \ (\textcolor{stringliteral}{"{}B"{}},\ \textcolor{stringliteral}{"{}F"{}},\ \textcolor{stringliteral}{"{}Strong"{}}),}
+\DoxyCodeLine{00009\ \ \ \ \ (\textcolor{stringliteral}{"{}C"{}},\ \textcolor{stringliteral}{"{}G"{}},\ \textcolor{stringliteral}{"{}Weak"{}}),}
+\DoxyCodeLine{00010\ \ \ \ \ (\textcolor{stringliteral}{"{}D"{}},\ \textcolor{stringliteral}{"{}H"{}},\ \textcolor{stringliteral}{"{}Weak"{}}),}
+\DoxyCodeLine{00011\ \ \ \ \ (\textcolor{stringliteral}{"{}I"{}},\ \textcolor{stringliteral}{"{}J"{}},\ \textcolor{stringliteral}{"{}Strong"{}}),}
+\DoxyCodeLine{00012\ \ \ \ \ (\textcolor{stringliteral}{"{}J"{}},\ \textcolor{stringliteral}{"{}K"{}},\ \textcolor{stringliteral}{"{}Strong"{}}),}
+\DoxyCodeLine{00013\ \ \ \ \ (\textcolor{stringliteral}{"{}I"{}},\ \textcolor{stringliteral}{"{}L"{}},\ \textcolor{stringliteral}{"{}Strong"{}}),}
+\DoxyCodeLine{00014\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceplot__snap_a4b1999f7c9304fb2708b17e0f5c15749}\index{plot\_snap@{plot\_snap}!nodes@{nodes}}
+\index{nodes@{nodes}!plot\_snap@{plot\_snap}}
+\doxysubsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily \label{namespaceplot__snap_a4b1999f7c9304fb2708b17e0f5c15749} 
+dict plot\+\_\+snap.\+nodes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}A"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Red"{}}\},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}B"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Red"{}}\},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}C"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Red"{}}\},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}D"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Red"{}}\},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}E"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Blue"{}}\},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}F"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Blue"{}}\},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}G"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Blue"{}}\},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}H"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Blue"{}}\},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}I"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Yellow"{}}\},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}J"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Yellow"{}}\},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{"{}K"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Yellow"{}}\},}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{"{}L"{}}:\ \{\textcolor{stringliteral}{"{}color"{}}:\ \textcolor{stringliteral}{"{}Yellow"{}}\},}
+\DoxyCodeLine{00014\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceplot__snap_a8b966cf636d460bc2bc46c3c1030fdaf}\index{plot\_snap@{plot\_snap}!summary\_graph@{summary\_graph}}
+\index{summary\_graph@{summary\_graph}!plot\_snap@{plot\_snap}}
+\doxysubsubsection{\texorpdfstring{summary\_graph}{summary\_graph}}
+{\footnotesize\ttfamily \label{namespaceplot__snap_a8b966cf636d460bc2bc46c3c1030fdaf} 
+plot\+\_\+snap.\+summary\+\_\+graph}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ nx.snap\_aggregation(}
+\DoxyCodeLine{00002\ \ \ \ \ original\_graph,\ node\_attributes,\ edge\_attributes,\ prefix=\textcolor{stringliteral}{"{}S-\/"{}}}
+\DoxyCodeLine{00003\ )}
+
+\end{DoxyCode}

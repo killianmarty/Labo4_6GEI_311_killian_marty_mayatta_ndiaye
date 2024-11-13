@@ -1,0 +1,66 @@
+\doxysection{werkzeug.\+utils.\+cached\+\_\+property Class Reference}
+\hypertarget{classwerkzeug_1_1utils_1_1cached__property}{}\label{classwerkzeug_1_1utils_1_1cached__property}\index{werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}}
+Inheritance diagram for werkzeug.\+utils.\+cached\+\_\+property\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.362869cm]{classwerkzeug_1_1utils_1_1cached__property}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_a2e84cdbc87db066fd28756ab6e9bce8a}\label{classwerkzeug_1_1utils_1_1cached__property_a2e84cdbc87db066fd28756ab6e9bce8a} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Callable\mbox{[}\mbox{[}t.\+Any\mbox{]}, \+\_\+T\mbox{]} fget, t.\+Optional\mbox{[}str\mbox{]} name=None, t.\+Optional\mbox{[}str\mbox{]} doc=None)
+\item 
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_aadde0e81fd78aea2a3253f4ee5b1dd93}\label{classwerkzeug_1_1utils_1_1cached__property_aadde0e81fd78aea2a3253f4ee5b1dd93} 
+None {\bfseries \+\_\+\+\_\+set\+\_\+\+\_\+} (self, object obj, \+\_\+T value)
+\item 
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_a2c99c70132e2049cf64f31f0e94514c8}\label{classwerkzeug_1_1utils_1_1cached__property_a2c99c70132e2049cf64f31f0e94514c8} 
+\+\_\+T {\bfseries \+\_\+\+\_\+get\+\_\+\+\_\+} (self, object obj, type type=None)
+\item 
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_ae8eb441a1a5b8fc7d1954e2c7725da23}\label{classwerkzeug_1_1utils_1_1cached__property_ae8eb441a1a5b8fc7d1954e2c7725da23} 
+None {\bfseries \+\_\+\+\_\+delete\+\_\+\+\_\+} (self, object obj)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_afc13a5b09132378a4332cb11c8bc8241}\label{classwerkzeug_1_1utils_1_1cached__property_afc13a5b09132378a4332cb11c8bc8241} 
+str {\bfseries slot\+\_\+name} = f"{}\+\_\+cache\+\_\+\{self.\+\_\+\+\_\+name\+\_\+\+\_\+\}"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A :func:`property` that is only evaluated once. Subsequent access
+returns the cached value. Setting the property sets the cached
+value. Deleting the property clears the cached value, accessing it
+again will evaluate it again.
+
+.. code-block:: python
+
+    class Example:
+        @cached_property
+        def value(self):
+            # calculate something important here
+            return 42
+
+    e = Example()
+    e.value  # evaluates
+    e.value  # uses cache
+    e.value = 16  # sets cache
+    del e.value  # clears cache
+
+If the class defines ``__slots__``, it must add ``_cache_{name}`` as
+a slot. Alternatively, it can add ``__dict__``, but that's usually
+not desirable.
+
+.. versionchanged:: 2.1
+    Works with ``__slots__``.
+
+.. versionchanged:: 2.0
+    ``del obj.name`` clears the cached value.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/utils.\+py\end{DoxyCompactItemize}

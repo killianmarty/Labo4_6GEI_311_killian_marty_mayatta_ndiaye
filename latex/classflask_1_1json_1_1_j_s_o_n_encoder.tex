@@ -1,0 +1,61 @@
+\doxysection{flask.\+json.\+JSONEncoder Class Reference}
+\hypertarget{classflask_1_1json_1_1_j_s_o_n_encoder}{}\label{classflask_1_1json_1_1_j_s_o_n_encoder}\index{flask.json.JSONEncoder@{flask.json.JSONEncoder}}
+Inheritance diagram for flask.\+json.\+JSONEncoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classflask_1_1json_1_1_j_s_o_n_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1json_1_1_j_s_o_n_encoder_a6056f3166e3d25b2a5b39d39f6ef89db}\label{classflask_1_1json_1_1_j_s_o_n_encoder_a6056f3166e3d25b2a5b39d39f6ef89db} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1json_1_1_j_s_o_n_encoder_a0f1437fdbecced0c550142f46a6adc65}{default}} (self, t.\+Any o)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The default JSON encoder. Handles extra types compared to the
+built-in :class:`json.JSONEncoder`.
+
+-   :class:`datetime.datetime` and :class:`datetime.date` are
+    serialized to :rfc:`822` strings. This is the same as the HTTP
+    date format.
+-   :class:`decimal.Decimal` is serialized to a string.
+-   :class:`uuid.UUID` is serialized to a string.
+-   :class:`dataclasses.dataclass` is passed to
+    :func:`dataclasses.asdict`.
+-   :class:`~markupsafe.Markup` (or any object with a ``__html__``
+    method) will call the ``__html__`` method to get a string.
+
+Assign a subclass of this to :attr:`flask.Flask.json_encoder` or
+:attr:`flask.Blueprint.json_encoder` to override the default.
+
+.. deprecated:: 2.2
+    Will be removed in Flask 2.3. Use ``app.json`` instead.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1json_1_1_j_s_o_n_encoder_a0f1437fdbecced0c550142f46a6adc65}\index{flask.json.JSONEncoder@{flask.json.JSONEncoder}!default@{default}}
+\index{default@{default}!flask.json.JSONEncoder@{flask.json.JSONEncoder}}
+\doxysubsubsection{\texorpdfstring{default()}{default()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1_j_s_o_n_encoder_a0f1437fdbecced0c550142f46a6adc65} 
+ t.\+Any flask.\+json.\+JSONEncoder.\+default (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{o}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert ``o`` to a JSON serializable type. See
+:meth:`json.JSONEncoder.default`. Python does not support
+overriding how basic types like ``str`` or ``list`` are
+serialized, they are handled before this method.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classconnexion_1_1apps_1_1flask__app_1_1_flask_j_s_o_n_encoder_a200cf9f075c89789387dc63e009c97aa}{connexion.\+apps.\+flask\+\_\+app.\+Flask\+JSONEncoder}}, and \mbox{\hyperlink{classswagger__server_1_1encoder_1_1_j_s_o_n_encoder_a1a6b6e378e4919488d74291b98a48784}{swagger\+\_\+server.\+encoder.\+JSONEncoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/json/\+\_\+\+\_\+init\+\_\+\+\_\+.\+py\end{DoxyCompactItemize}

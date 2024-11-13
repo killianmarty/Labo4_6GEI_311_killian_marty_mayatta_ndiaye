@@ -1,0 +1,118 @@
+\doxysection{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command Class Reference}
+\hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+Inheritance diagram for pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.475410cm]{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_aeb6231fcfb1a3c39e6948c0e47631525}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, summary, isolated=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a61150bcbabc0e311e66297583c80d7bb}{handle\+\_\+pip\+\_\+version\+\_\+check}} (self, options)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a83ccfc27953c5f7319bdcb83c4311e83}{run}} (self, options, args)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a393715d3f43825c9cc85fe8978c39ae8}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a393715d3f43825c9cc85fe8978c39ae8} 
+{\bfseries parse\+\_\+args} (self, args)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a53e2088eef2a60e7a1bf4b524b65eaef}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a53e2088eef2a60e7a1bf4b524b65eaef} 
+{\bfseries main} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries main\+\_\+context} (self)
+\item 
+{\bfseries enter\+\_\+context} (self, context\+\_\+provider)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a0da6dc821b6ea82a287734d22bf13b36}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a0da6dc821b6ea82a287734d22bf13b36} 
+{\bfseries name} = name
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a48a6dcdddf38765713fec5d08731bef3}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a48a6dcdddf38765713fec5d08731bef3} 
+{\bfseries summary} = summary
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_af55279eb904d389000b26fec0cdfb165}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_af55279eb904d389000b26fec0cdfb165} 
+{\bfseries parser} = \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser}{Config\+Option\+Parser}}(\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}parser\+\_\+kw)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a5dc04e349a7387dd3faac77580f3ddc0}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a5dc04e349a7387dd3faac77580f3ddc0} 
+{\bfseries tempdir\+\_\+registry} = None
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_ac92a9689689c17dc866ddeeb2a276ef1}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_ac92a9689689c17dc866ddeeb2a276ef1} 
+{\bfseries cmd\+\_\+opts} = optparse.\+Option\+Group(self.\+parser, optgroup\+\_\+name)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a958ba174a0d03ffa3cfdd3cb2b6d3b9e}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a958ba174a0d03ffa3cfdd3cb2b6d3b9e} 
+{\bfseries verbosity} = options.\+verbose -\/ options.\+quiet
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a1d1d6c9f5882ef5a77da6bb881593dc0}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a1d1d6c9f5882ef5a77da6bb881593dc0} 
+{\bfseries usage} = None
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a4861a2de2b9454c117ddbe64a6434275}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a4861a2de2b9454c117ddbe64a6434275} 
+bool {\bfseries ignore\+\_\+require\+\_\+venv} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_abe46d68bce1215e81d3f1e0d8a29f43d}\label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_abe46d68bce1215e81d3f1e0d8a29f43d} 
+{\bfseries \+\_\+main} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries \+\_\+in\+\_\+main\+\_\+context} = False
+\item 
+{\bfseries \+\_\+main\+\_\+context} = \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{Exit\+Stack}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_aeb6231fcfb1a3c39e6948c0e47631525}\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_aeb6231fcfb1a3c39e6948c0e47631525} 
+pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{summary}{, }\item[{}]{isolated}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a61150bcbabc0e311e66297583c80d7bb}\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!handle\_pip\_version\_check@{handle\_pip\_version\_check}}
+\index{handle\_pip\_version\_check@{handle\_pip\_version\_check}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{handle\_pip\_version\_check()}{handle\_pip\_version\_check()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a61150bcbabc0e311e66297583c80d7bb} 
+pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+handle\+\_\+pip\+\_\+version\+\_\+check (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is a no-op so that commands by default do not do the pip version
+check.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_index_group_command_acadb8dd5eb94efc64340fdd87bdd093a}{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Index\+Group\+Command}}.
+
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a83ccfc27953c5f7319bdcb83c4311e83}\index{pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}!run@{run}}
+\index{run@{run}!pip.\_internal.cli.base\_command.Command@{pip.\_internal.cli.base\_command.Command}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command_a83ccfc27953c5f7319bdcb83c4311e83} 
+pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command.\+run (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{options}{, }\item[{}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1completion_1_1_completion_command_a78213f7ed0544dd251d36dea4009cfdf}{pip.\+\_\+internal.\+commands.\+completion.\+Completion\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/cli/base\+\_\+command.\+py\end{DoxyCompactItemize}

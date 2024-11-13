@@ -1,0 +1,62 @@
+\doxysection{pip.\+\_\+internal.\+models.\+search\+\_\+scope.\+Search\+Scope Class Reference}
+\hypertarget{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope}{}\label{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope}\index{pip.\_internal.models.search\_scope.SearchScope@{pip.\_internal.models.search\_scope.SearchScope}}
+Inheritance diagram for pip.\+\_\+internal.\+models.\+search\+\_\+scope.\+Search\+Scope\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_aab3b38a92fbe5001dfa1a2a10a004352}{create}} (cls, find\+\_\+links, index\+\_\+urls)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_a9496ce2989279ed167cd93320834a266}\label{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_a9496ce2989279ed167cd93320834a266} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, find\+\_\+links, index\+\_\+urls)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_abfe0a0a471df03427598cfcfc5705797}\label{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_abfe0a0a471df03427598cfcfc5705797} 
+{\bfseries get\+\_\+formatted\+\_\+locations} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_aee32c297853c26c7996109586ce5d60b}{get\+\_\+index\+\_\+urls\+\_\+locations}} (self, project\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_ad6cf9374b6acb55433b73989d7da6a97}\label{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_ad6cf9374b6acb55433b73989d7da6a97} 
+{\bfseries find\+\_\+links} = find\+\_\+links
+\item 
+\Hypertarget{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_a874836737b4a33819768faa2223a41b1}\label{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_a874836737b4a33819768faa2223a41b1} 
+{\bfseries index\+\_\+urls} = index\+\_\+urls
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Encapsulates the locations that pip is configured to search.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_aab3b38a92fbe5001dfa1a2a10a004352}\index{pip.\_internal.models.search\_scope.SearchScope@{pip.\_internal.models.search\_scope.SearchScope}!create@{create}}
+\index{create@{create}!pip.\_internal.models.search\_scope.SearchScope@{pip.\_internal.models.search\_scope.SearchScope}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_aab3b38a92fbe5001dfa1a2a10a004352} 
+pip.\+\_\+internal.\+models.\+search\+\_\+scope.\+Search\+Scope.\+create (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{find\+\_\+links}{, }\item[{}]{index\+\_\+urls}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a SearchScope object after normalizing the `find_links`.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_aee32c297853c26c7996109586ce5d60b}\index{pip.\_internal.models.search\_scope.SearchScope@{pip.\_internal.models.search\_scope.SearchScope}!get\_index\_urls\_locations@{get\_index\_urls\_locations}}
+\index{get\_index\_urls\_locations@{get\_index\_urls\_locations}!pip.\_internal.models.search\_scope.SearchScope@{pip.\_internal.models.search\_scope.SearchScope}}
+\doxysubsubsection{\texorpdfstring{get\_index\_urls\_locations()}{get\_index\_urls\_locations()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1models_1_1search__scope_1_1_search_scope_aee32c297853c26c7996109586ce5d60b} 
+pip.\+\_\+internal.\+models.\+search\+\_\+scope.\+Search\+Scope.\+get\+\_\+index\+\_\+urls\+\_\+locations (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{project\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the locations found via self.index_urls
+
+Checks the url_name on the main (first in the list) index and
+use this url_name to produce all locations
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/models/search\+\_\+scope.\+py\end{DoxyCompactItemize}

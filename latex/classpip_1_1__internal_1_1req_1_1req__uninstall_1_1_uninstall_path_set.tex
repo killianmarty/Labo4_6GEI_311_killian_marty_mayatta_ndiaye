@@ -1,0 +1,126 @@
+\doxysection{pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set Class Reference}
+\hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set}{}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set}\index{pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}}
+Inheritance diagram for pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a26a62318a73e2c55c5a4787b4fdae799}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a26a62318a73e2c55c5a4787b4fdae799} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, dist)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a05d2801393d2b2f5984cfe16d1e6934c}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a05d2801393d2b2f5984cfe16d1e6934c} 
+{\bfseries add} (self, path)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a2a8a75ee64d9a2b8762e4d3694499401}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a2a8a75ee64d9a2b8762e4d3694499401} 
+{\bfseries add\+\_\+pth} (self, pth\+\_\+file, entry)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a78a8b706f1113b579265b222205c256d}{remove}} (self, auto\+\_\+confirm=False, verbose=False)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a46d29df0b0b770f1160e5e67cb9df219}{rollback}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a518d1883d630ae3a075ccc11ace39f91}{commit}} (self)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a1373aad838eeaf2ca7673f09f09366f7}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a1373aad838eeaf2ca7673f09f09366f7} 
+{\bfseries from\+\_\+dist} (cls, dist)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a5a3011cd6fa5b47620a2b9a9d3eae132}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a5a3011cd6fa5b47620a2b9a9d3eae132} 
+{\bfseries paths} = set()
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_ac2f09fce56e7d842ae837d8b7afa8001}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_ac2f09fce56e7d842ae837d8b7afa8001} 
+dict {\bfseries pth} = \{\}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a043ffbf49882f8c71274584224120da9}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a043ffbf49882f8c71274584224120da9} 
+{\bfseries dist} = dist
+\item 
+tuple \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a665150a8442dbd69a9c8be07d5feccde}{paths}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_ad56c922dfb5cd4d65e7bea88b4701a02}{\+\_\+permitted}} (self, path)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a3fcc2187717c440ed9459310453c9993}{\+\_\+allowed\+\_\+to\+\_\+proceed}} (self, verbose)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a41eac4036ebdac48bc2f022f875640e6}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a41eac4036ebdac48bc2f022f875640e6} 
+{\bfseries \+\_\+refuse} = set()
+\item 
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a3b8679278fa3a45c40ad93ced1169a5e}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a3b8679278fa3a45c40ad93ced1169a5e} 
+{\bfseries \+\_\+moved\+\_\+paths} = \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set}{Stashed\+Uninstall\+Path\+Set}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A set of file paths to be removed in the uninstallation of a
+requirement.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a3fcc2187717c440ed9459310453c9993}\index{pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}!\_allowed\_to\_proceed@{\_allowed\_to\_proceed}}
+\index{\_allowed\_to\_proceed@{\_allowed\_to\_proceed}!pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}}
+\doxysubsubsection{\texorpdfstring{\_allowed\_to\_proceed()}{\_allowed\_to\_proceed()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a3fcc2187717c440ed9459310453c9993} 
+pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set.\+\_\+allowed\+\_\+to\+\_\+proceed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{verbose}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Display which files would be deleted and prompt for confirmation
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_ad56c922dfb5cd4d65e7bea88b4701a02}\index{pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}!\_permitted@{\_permitted}}
+\index{\_permitted@{\_permitted}!pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}}
+\doxysubsubsection{\texorpdfstring{\_permitted()}{\_permitted()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_ad56c922dfb5cd4d65e7bea88b4701a02} 
+pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set.\+\_\+permitted (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return True if the given path is one we are permitted to
+remove/modify, False otherwise.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a518d1883d630ae3a075ccc11ace39f91}\index{pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}!commit@{commit}}
+\index{commit@{commit}!pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}}
+\doxysubsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a518d1883d630ae3a075ccc11ace39f91} 
+pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set.\+commit (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove temporary save dir: rollback will no longer be possible.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a78a8b706f1113b579265b222205c256d}\index{pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}!remove@{remove}}
+\index{remove@{remove}!pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a78a8b706f1113b579265b222205c256d} 
+pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set.\+remove (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{auto\+\_\+confirm}{ = {\ttfamily False}, }\item[{}]{verbose}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove paths in ``self.paths`` with confirmation (unless
+``auto_confirm`` is True).\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a46d29df0b0b770f1160e5e67cb9df219}\index{pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}!rollback@{rollback}}
+\index{rollback@{rollback}!pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}}
+\doxysubsubsection{\texorpdfstring{rollback()}{rollback()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a46d29df0b0b770f1160e5e67cb9df219} 
+pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set.\+rollback (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Rollback the changes previously made by remove().\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a665150a8442dbd69a9c8be07d5feccde}\index{pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}!paths@{paths}}
+\index{paths@{paths}!pip.\_internal.req.req\_uninstall.UninstallPathSet@{pip.\_internal.req.req\_uninstall.UninstallPathSet}}
+\doxysubsubsection{\texorpdfstring{paths}{paths}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_uninstall_path_set_a665150a8442dbd69a9c8be07d5feccde} 
+tuple pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Uninstall\+Path\+Set.\+paths}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.dist.project\_name\ +\ \textcolor{stringliteral}{"{}-\/"{}}\ +\ self.dist.version}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/req/req\+\_\+uninstall.\+py\end{DoxyCompactItemize}

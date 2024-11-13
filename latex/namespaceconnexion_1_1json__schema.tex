@@ -1,0 +1,116 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage connexion.\+json\+\_\+schema}
+\hypertarget{namespaceconnexion_1_1json__schema}{}\label{namespaceconnexion_1_1json__schema}\index{connexion.json\_schema@{connexion.json\_schema}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classconnexion_1_1json__schema_1_1_extended_safe_loader}{Extended\+Safe\+Loader}}
+\item 
+class \mbox{\hyperlink{classconnexion_1_1json__schema_1_1_file_handler}{File\+Handler}}
+\item 
+class \mbox{\hyperlink{classconnexion_1_1json__schema_1_1_u_r_l_handler}{URLHandler}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1json__schema_a2a631c31df126f58f86340694f31bb76}{resolve\+\_\+refs}} (spec, store=None, handlers=None)
+\item 
+t.\+Callable \mbox{\hyperlink{namespaceconnexion_1_1json__schema_a905d8ab9a91fc0d6f882c372bfa93d5e}{allow\+\_\+nullable}} (t.\+Callable validation\+\_\+fn)
+\item 
+\Hypertarget{namespaceconnexion_1_1json__schema_a43dd9ef39dad5e1e0d46e4c719f0c68b}\label{namespaceconnexion_1_1json__schema_a43dd9ef39dad5e1e0d46e4c719f0c68b} 
+{\bfseries validate\+\_\+required} (validator, required, instance, schema)
+\item 
+\Hypertarget{namespaceconnexion_1_1json__schema_aa6e6ed6ca2159fbdb40d9b65f5353c2d}\label{namespaceconnexion_1_1json__schema_aa6e6ed6ca2159fbdb40d9b65f5353c2d} 
+{\bfseries validate\+\_\+read\+Only} (validator, ro, instance, schema)
+\item 
+\Hypertarget{namespaceconnexion_1_1json__schema_ade74ec2153e79d8a1faf91bf8f1dd54f}\label{namespaceconnexion_1_1json__schema_ade74ec2153e79d8a1faf91bf8f1dd54f} 
+{\bfseries validate\+\_\+write\+Only} (validator, wo, instance, schema)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespaceconnexion_1_1json__schema_a3b321e647f49e549c0b8069f1bc2945a}{default\+\_\+handlers}}
+\item 
+\Hypertarget{namespaceconnexion_1_1json__schema_afccb104271e4778ee95618ce8b13274c}\label{namespaceconnexion_1_1json__schema_afccb104271e4778ee95618ce8b13274c} 
+t.\+Callable {\bfseries Nullable\+Type\+Validator} = \mbox{\hyperlink{namespaceconnexion_1_1json__schema_a905d8ab9a91fc0d6f882c372bfa93d5e}{allow\+\_\+nullable}}(Draft4\+Validator.\+VALIDATORS\mbox{[}\textquotesingle{}type\textquotesingle{}\mbox{]})
+\item 
+\Hypertarget{namespaceconnexion_1_1json__schema_a447435d7c45a3479b624db90ce087b1d}\label{namespaceconnexion_1_1json__schema_a447435d7c45a3479b624db90ce087b1d} 
+t.\+Callable {\bfseries Nullable\+Enum\+Validator} = \mbox{\hyperlink{namespaceconnexion_1_1json__schema_a905d8ab9a91fc0d6f882c372bfa93d5e}{allow\+\_\+nullable}}(Draft4\+Validator.\+VALIDATORS\mbox{[}\textquotesingle{}enum\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1json__schema_ab41072a663a09b8e4b738ebf11b0df21}{Draft4\+Request\+Validator}}
+\item 
+\mbox{\hyperlink{namespaceconnexion_1_1json__schema_a7586dff6a41a17b77fd59ce7b615247f}{Draft4\+Response\+Validator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}Module containing all code related to json schema validation.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespaceconnexion_1_1json__schema_a905d8ab9a91fc0d6f882c372bfa93d5e}\index{connexion.json\_schema@{connexion.json\_schema}!allow\_nullable@{allow\_nullable}}
+\index{allow\_nullable@{allow\_nullable}!connexion.json\_schema@{connexion.json\_schema}}
+\doxysubsubsection{\texorpdfstring{allow\_nullable()}{allow\_nullable()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1json__schema_a905d8ab9a91fc0d6f882c372bfa93d5e} 
+ t.\+Callable connexion.\+json\+\_\+schema.\+allow\+\_\+nullable (\begin{DoxyParamCaption}\item[{t.\+Callable}]{validation\+\_\+fn}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extend an existing validation function, so it allows nullable values to be null.\end{DoxyVerb}
+ \Hypertarget{namespaceconnexion_1_1json__schema_a2a631c31df126f58f86340694f31bb76}\index{connexion.json\_schema@{connexion.json\_schema}!resolve\_refs@{resolve\_refs}}
+\index{resolve\_refs@{resolve\_refs}!connexion.json\_schema@{connexion.json\_schema}}
+\doxysubsubsection{\texorpdfstring{resolve\_refs()}{resolve\_refs()}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1json__schema_a2a631c31df126f58f86340694f31bb76} 
+connexion.\+json\+\_\+schema.\+resolve\+\_\+refs (\begin{DoxyParamCaption}\item[{}]{spec}{, }\item[{}]{store}{ = {\ttfamily None}, }\item[{}]{handlers}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve JSON references like {"$ref": <some URI>} in a spec.
+Optionally takes a store, which is a mapping from reference URLs to a
+dereferenced objects. Prepopulating the store can avoid network calls.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespaceconnexion_1_1json__schema_a3b321e647f49e549c0b8069f1bc2945a}\index{connexion.json\_schema@{connexion.json\_schema}!default\_handlers@{default\_handlers}}
+\index{default\_handlers@{default\_handlers}!connexion.json\_schema@{connexion.json\_schema}}
+\doxysubsubsection{\texorpdfstring{default\_handlers}{default\_handlers}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1json__schema_a3b321e647f49e549c0b8069f1bc2945a} 
+dict connexion.\+json\+\_\+schema.\+default\+\_\+handlers}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'http'}:\ URLHandler(),}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'https'}:\ URLHandler(),}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'file'}:\ FileHandler(),}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceconnexion_1_1json__schema_ab41072a663a09b8e4b738ebf11b0df21}\index{connexion.json\_schema@{connexion.json\_schema}!Draft4RequestValidator@{Draft4RequestValidator}}
+\index{Draft4RequestValidator@{Draft4RequestValidator}!connexion.json\_schema@{connexion.json\_schema}}
+\doxysubsubsection{\texorpdfstring{Draft4RequestValidator}{Draft4RequestValidator}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1json__schema_ab41072a663a09b8e4b738ebf11b0df21} 
+connexion.\+json\+\_\+schema.\+Draft4\+Request\+Validator}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ extend(Draft4Validator,\ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'type'}:\ NullableTypeValidator,}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'enum'}:\ NullableEnumValidator,}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'required'}:\ validate\_required,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'readOnly'}:\ validate\_readOnly\})}
+
+\end{DoxyCode}
+\Hypertarget{namespaceconnexion_1_1json__schema_a7586dff6a41a17b77fd59ce7b615247f}\index{connexion.json\_schema@{connexion.json\_schema}!Draft4ResponseValidator@{Draft4ResponseValidator}}
+\index{Draft4ResponseValidator@{Draft4ResponseValidator}!connexion.json\_schema@{connexion.json\_schema}}
+\doxysubsubsection{\texorpdfstring{Draft4ResponseValidator}{Draft4ResponseValidator}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1json__schema_a7586dff6a41a17b77fd59ce7b615247f} 
+connexion.\+json\+\_\+schema.\+Draft4\+Response\+Validator}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ extend(Draft4Validator,\ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'type'}:\ NullableTypeValidator,}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'enum'}:\ NullableEnumValidator,}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'required'}:\ validate\_required,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'writeOnly'}:\ validate\_writeOnly,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'x-\/writeOnly'}:\ validate\_writeOnly\})}
+
+\end{DoxyCode}

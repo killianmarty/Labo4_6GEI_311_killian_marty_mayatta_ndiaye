@@ -1,0 +1,462 @@
+\doxysection{werkzeug.\+urls Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1urls}{}\label{namespacewerkzeug_1_1urls}\index{werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classwerkzeug_1_1urls_1_1___u_r_l_tuple}{\+\_\+\+URLTuple}}
+\item 
+class \mbox{\hyperlink{classwerkzeug_1_1urls_1_1_base_u_r_l}{Base\+URL}}
+\item 
+class \mbox{\hyperlink{classwerkzeug_1_1urls_1_1_bytes_u_r_l}{Bytes\+URL}}
+\item 
+class \mbox{\hyperlink{classwerkzeug_1_1urls_1_1_u_r_l}{URL}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_a73fd99f65de3189672a02313e88cba91}\label{namespacewerkzeug_1_1urls_a73fd99f65de3189672a02313e88cba91} 
+bytes {\bfseries \+\_\+unquote\+\_\+to\+\_\+bytes} (t.\+Union\mbox{[}str, bytes\mbox{]} string, t.\+Union\mbox{[}str, bytes\mbox{]} unsafe="{}"{})
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_a83d567274c27614b84aba83edf1900e3}\label{namespacewerkzeug_1_1urls_a83d567274c27614b84aba83edf1900e3} 
+t.\+Iterator\mbox{[}str\mbox{]} {\bfseries \+\_\+url\+\_\+encode\+\_\+impl} (t.\+Union\mbox{[}t.\+Mapping\mbox{[}str, str\mbox{]}, t.\+Iterable\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} obj, str charset, bool sort, t.\+Optional\mbox{[}t.\+Callable\mbox{[}\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}, t.\+Any\mbox{]}\mbox{]} key)
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_aad24aa278d38aba53a392b0db6d6d9bb}\label{namespacewerkzeug_1_1urls_aad24aa278d38aba53a392b0db6d6d9bb} 
+str {\bfseries \+\_\+url\+\_\+unquote\+\_\+legacy} (str value, str unsafe="{}"{})
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1urls_1_1_base_u_r_l}{Base\+URL}} \mbox{\hyperlink{namespacewerkzeug_1_1urls_aaf24a051aff29812612629f2bb533f74}{url\+\_\+parse}} (str url, t.\+Optional\mbox{[}str\mbox{]} scheme=None, bool allow\+\_\+fragments=True)
+\item 
+t.\+Callable\mbox{[}\mbox{[}bytes\mbox{]}, str\mbox{]} \mbox{\hyperlink{namespacewerkzeug_1_1urls_a8255e3596450422d939f296040aec15b}{\+\_\+make\+\_\+fast\+\_\+url\+\_\+quote}} (str charset="{}utf-\/8"{}, str errors="{}strict"{}, t.\+Union\mbox{[}str, bytes\mbox{]} safe="{}/\+:"{}, t.\+Union\mbox{[}str, bytes\mbox{]} unsafe="{}"{})
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_a0dfd7a7a7c8fa087b0827f3ab2a362e1}\label{namespacewerkzeug_1_1urls_a0dfd7a7a7c8fa087b0827f3ab2a362e1} 
+str {\bfseries \+\_\+fast\+\_\+url\+\_\+quote\+\_\+plus} (bytes string)
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1urls_a883d63c5dd8447aabe373e20b318ec86}{url\+\_\+quote}} (t.\+Union\mbox{[}str, bytes\mbox{]} string, str charset="{}utf-\/8"{}, str errors="{}strict"{}, t.\+Union\mbox{[}str, bytes\mbox{]} safe="{}/\+:"{}, t.\+Union\mbox{[}str, bytes\mbox{]} unsafe="{}"{})
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1urls_a6e10b28114fda425ed938434cb01aca0}{url\+\_\+quote\+\_\+plus}} (str string, str charset="{}utf-\/8"{}, str errors="{}strict"{}, str safe="{}"{})
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1urls_a1faefa1a87386d77382ce764c57ed0ac}{url\+\_\+unparse}} (t.\+Tuple\mbox{[}str, str, str, str, str\mbox{]} components)
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1urls_af85edc3e19950c5468f338a7b4b6df15}{url\+\_\+unquote}} (t.\+Union\mbox{[}str, bytes\mbox{]} s, str charset="{}utf-\/8"{}, str errors="{}replace"{}, str unsafe="{}"{})
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1urls_a858a3e4e69d3ff4d4f1b6565663d0204}{url\+\_\+unquote\+\_\+plus}} (t.\+Union\mbox{[}str, bytes\mbox{]} s, str charset="{}utf-\/8"{}, str errors="{}replace"{})
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1urls_a75c6d43d7a5bb50f69c867521b23b67c}{url\+\_\+fix}} (str s, str charset="{}utf-\/8"{})
+\item 
+t.\+Tuple\mbox{[}str, int\mbox{]} \mbox{\hyperlink{namespacewerkzeug_1_1urls_a1fa14d1af941a90ab9ddf5611c5e43af}{\+\_\+codec\+\_\+error\+\_\+url\+\_\+quote}} (Unicode\+Error e)
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1urls_a16ecd3ac0af829db37dd7999d3260453}{uri\+\_\+to\+\_\+iri}} (t.\+Union\mbox{[}str, t.\+Tuple\mbox{[}str, str, str, str, str\mbox{]}\mbox{]} uri, str charset="{}utf-\/8"{}, str errors="{}werkzeug.\+url\+\_\+quote"{})
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1urls_a734dd14941c52352885bcc9e6bc3a165}{iri\+\_\+to\+\_\+uri}} (t.\+Union\mbox{[}str, t.\+Tuple\mbox{[}str, str, str, str, str\mbox{]}\mbox{]} iri, str charset="{}utf-\/8"{}, str errors="{}strict"{}, bool safe\+\_\+conversion=False)
+\item 
+"{}ds.\+Multi\+Dict\mbox{[}str, str\mbox{]}"{} \mbox{\hyperlink{namespacewerkzeug_1_1urls_a820cd223f1838a5eb0e7ce1f235c1094}{url\+\_\+decode}} (t.\+Any\+Str s, str charset="{}utf-\/8"{}, bool include\+\_\+empty=True, str errors="{}replace"{}, str separator="{}\&"{}, t.\+Optional\mbox{[}t.\+Type\mbox{[}"{}ds.\+Multi\+Dict"{}\mbox{]}\mbox{]} cls=None)
+\item 
+"{}ds.\+Multi\+Dict\mbox{[}str, str\mbox{]}"{} \mbox{\hyperlink{namespacewerkzeug_1_1urls_a4b0a0e4198f433cf2c896ce065da19ef}{url\+\_\+decode\+\_\+stream}} (t.\+IO\mbox{[}bytes\mbox{]} stream, str charset="{}utf-\/8"{}, bool include\+\_\+empty=True, str errors="{}replace"{}, bytes separator=b"{}\&"{}, t.\+Optional\mbox{[}t.\+Type\mbox{[}"{}ds.\+Multi\+Dict"{}\mbox{]}\mbox{]} cls=None, t.\+Optional\mbox{[}int\mbox{]} limit=None)
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_af7c9139f0efab9f32b7aeeba3cb62ba0}\label{namespacewerkzeug_1_1urls_af7c9139f0efab9f32b7aeeba3cb62ba0} 
+t.\+Iterator\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} {\bfseries \+\_\+url\+\_\+decode\+\_\+impl} (t.\+Iterable\mbox{[}t.\+Any\+Str\mbox{]} pair\+\_\+iter, str charset, bool include\+\_\+empty, str errors)
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1urls_ab4bfd2cbd4a336687a35a70e266b79d1}{url\+\_\+encode}} (t.\+Union\mbox{[}t.\+Mapping\mbox{[}str, str\mbox{]}, t.\+Iterable\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} obj, str charset="{}utf-\/8"{}, bool sort=False, t.\+Optional\mbox{[}t.\+Callable\mbox{[}\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}, t.\+Any\mbox{]}\mbox{]} key=None, str separator="{}\&"{})
+\item 
+None \mbox{\hyperlink{namespacewerkzeug_1_1urls_ad0eb50fe3f88c71d052457540ea56fe4}{url\+\_\+encode\+\_\+stream}} (t.\+Union\mbox{[}t.\+Mapping\mbox{[}str, str\mbox{]}, t.\+Iterable\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} obj, t.\+Optional\mbox{[}t.\+IO\mbox{[}str\mbox{]}\mbox{]} stream=None, str charset="{}utf-\/8"{}, bool sort=False, t.\+Optional\mbox{[}t.\+Callable\mbox{[}\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}, t.\+Any\mbox{]}\mbox{]} key=None, str separator="{}\&"{})
+\item 
+str \mbox{\hyperlink{namespacewerkzeug_1_1urls_ae44b21cdd36ed6ec58a73874bc08d0d9}{url\+\_\+join}} (t.\+Union\mbox{[}str, t.\+Tuple\mbox{[}str, str, str, str, str\mbox{]}\mbox{]} base, t.\+Union\mbox{[}str, t.\+Tuple\mbox{[}str, str, str, str, str\mbox{]}\mbox{]} url, bool allow\+\_\+fragments=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_a066d470d9d269c7dd0132dec010c0f72}\label{namespacewerkzeug_1_1urls_a066d470d9d269c7dd0132dec010c0f72} 
+{\bfseries \+\_\+scheme\+\_\+re} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}a-\/zA-\/Z0-\/9+-\/.\mbox{]}+\$"{})
+\item 
+\mbox{\hyperlink{namespacewerkzeug_1_1urls_a4c2976be61f3eee00b1a82f9613df823}{\+\_\+always\+\_\+safe}}
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_ab71d23fd9fe3f922c222074e809b4813}\label{namespacewerkzeug_1_1urls_ab71d23fd9fe3f922c222074e809b4813} 
+str {\bfseries \+\_\+hexdigits} = "{}0123456789ABCDEFabcdef"{}
+\item 
+dict \mbox{\hyperlink{namespacewerkzeug_1_1urls_a7dca803e4c352113437d985a64a5cf7c}{\+\_\+hextobyte}}
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_a676e8e733be8b326d94090d10223e5b9}\label{namespacewerkzeug_1_1urls_a676e8e733be8b326d94090d10223e5b9} 
+list {\bfseries \+\_\+bytetohex} = \mbox{[}f"{}\%\{char\+:02X\}"{}.encode("{}ascii"{}) for char in range(256)\mbox{]}
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_a312dde1a07564df5a14c449836783338}\label{namespacewerkzeug_1_1urls_a312dde1a07564df5a14c449836783338} 
+t.\+Callable\mbox{[}\mbox{[}bytes\mbox{]}, str\mbox{]} {\bfseries \+\_\+fast\+\_\+url\+\_\+quote} = \mbox{\hyperlink{namespacewerkzeug_1_1urls_a8255e3596450422d939f296040aec15b}{\+\_\+make\+\_\+fast\+\_\+url\+\_\+quote}}()
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_ab303e2885753b8fe2db70d0853b71c2d}\label{namespacewerkzeug_1_1urls_ab303e2885753b8fe2db70d0853b71c2d} 
+t.\+Callable\mbox{[}\mbox{[}bytes\mbox{]}, str\mbox{]} {\bfseries \+\_\+fast\+\_\+quote\+\_\+plus} = \mbox{\hyperlink{namespacewerkzeug_1_1urls_a8255e3596450422d939f296040aec15b}{\+\_\+make\+\_\+fast\+\_\+url\+\_\+quote}}(safe="{} "{}, unsafe="{}+"{})
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_a366c0ffff727346c0f7236d922f2d65a}\label{namespacewerkzeug_1_1urls_a366c0ffff727346c0f7236d922f2d65a} 
+str {\bfseries \+\_\+to\+\_\+iri\+\_\+unsafe} = "{}"{}.join(\mbox{[}chr(c) for c in range(128) if c not in \+\_\+always\+\_\+safe\mbox{]})
+\item 
+\Hypertarget{namespacewerkzeug_1_1urls_ac406224177a12e9e327c575392e101ae}\label{namespacewerkzeug_1_1urls_ac406224177a12e9e327c575392e101ae} 
+str {\bfseries \+\_\+to\+\_\+uri\+\_\+safe} = "{}\+:/?\#\mbox{[}$\,$\mbox{]}@!\$\&\textquotesingle{}()\texorpdfstring{$\ast$}{*}+,;=\%"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Functions for working with URLs.
+
+Contains implementations of functions from :mod:`urllib.parse` that
+handle bytes and strings.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1urls_a1fa14d1af941a90ab9ddf5611c5e43af}\index{werkzeug.urls@{werkzeug.urls}!\_codec\_error\_url\_quote@{\_codec\_error\_url\_quote}}
+\index{\_codec\_error\_url\_quote@{\_codec\_error\_url\_quote}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_codec\_error\_url\_quote()}{\_codec\_error\_url\_quote()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a1fa14d1af941a90ab9ddf5611c5e43af} 
+ t.\+Tuple\mbox{[}str, int\mbox{]} werkzeug.\+urls.\+\_\+codec\+\_\+error\+\_\+url\+\_\+quote (\begin{DoxyParamCaption}\item[{Unicode\+Error}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Used in :func:`uri_to_iri` after unquoting to re-quote any
+invalid bytes.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a8255e3596450422d939f296040aec15b}\index{werkzeug.urls@{werkzeug.urls}!\_make\_fast\_url\_quote@{\_make\_fast\_url\_quote}}
+\index{\_make\_fast\_url\_quote@{\_make\_fast\_url\_quote}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_make\_fast\_url\_quote()}{\_make\_fast\_url\_quote()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a8255e3596450422d939f296040aec15b} 
+ t.\+Callable\mbox{[}\mbox{[}bytes\mbox{]}, str\mbox{]} werkzeug.\+urls.\+\_\+make\+\_\+fast\+\_\+url\+\_\+quote (\begin{DoxyParamCaption}\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{str }]{errors}{ = {\ttfamily "{}strict"{}}, }\item[{t.\+Union\mbox{[}str, bytes\mbox{]} }]{safe}{ = {\ttfamily "{}/\+:"{}}, }\item[{t.\+Union\mbox{[}str, bytes\mbox{]} }]{unsafe}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Precompile the translation table for a URL encoding function.
+
+Unlike :func:`url_quote`, the generated function only takes the
+string to quote.
+
+:param charset: The charset to encode the result with.
+:param errors: How to handle encoding errors.
+:param safe: An optional sequence of safe characters to never encode.
+:param unsafe: An optional sequence of unsafe characters to always encode.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a734dd14941c52352885bcc9e6bc3a165}\index{werkzeug.urls@{werkzeug.urls}!iri\_to\_uri@{iri\_to\_uri}}
+\index{iri\_to\_uri@{iri\_to\_uri}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{iri\_to\_uri()}{iri\_to\_uri()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a734dd14941c52352885bcc9e6bc3a165} 
+ str werkzeug.\+urls.\+iri\+\_\+to\+\_\+uri (\begin{DoxyParamCaption}\item[{t.\+Union\mbox{[}str, t.\+Tuple\mbox{[}str, str, str, str, str\mbox{]}\mbox{]}}]{iri}{, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{str }]{errors}{ = {\ttfamily "{}strict"{}}, }\item[{bool }]{safe\+\_\+conversion}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert an IRI to a URI. All non-ASCII and unsafe characters are
+quoted. If the URL has a domain, it is encoded to Punycode.
+
+>>> iri_to_uri('http://\\u2603.net/p\\xe5th?q=\\xe8ry%DF')
+'http://xn--n3h.net/p%C3%A5th?q=%C3%A8ry%DF'
+
+:param iri: The IRI to convert.
+:param charset: The encoding of the IRI.
+:param errors: Error handler to use during ``bytes.encode``.
+:param safe_conversion: Return the URL unchanged if it only contains
+    ASCII characters and no whitespace. See the explanation below.
+
+There is a general problem with IRI conversion with some protocols
+that are in violation of the URI specification. Consider the
+following two IRIs::
+
+    magnet:?xt=uri:whatever
+    itms-services://?action=download-manifest
+
+After parsing, we don't know if the scheme requires the ``//``,
+which is dropped if empty, but conveys different meanings in the
+final URL if it's present or not. In this case, you can use
+``safe_conversion``, which will return the URL unchanged if it only
+contains ASCII characters and no whitespace. This can result in a
+URI with unquoted characters if it was not already quoted correctly,
+but preserves the URL's semantics. Werkzeug uses this for the
+``Location`` header for redirects.
+
+.. versionchanged:: 0.15
+    All reserved characters remain unquoted. Previously, only some
+    reserved characters were left unquoted.
+
+.. versionchanged:: 0.9.6
+   The ``safe_conversion`` parameter was added.
+
+.. versionadded:: 0.6
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a16ecd3ac0af829db37dd7999d3260453}\index{werkzeug.urls@{werkzeug.urls}!uri\_to\_iri@{uri\_to\_iri}}
+\index{uri\_to\_iri@{uri\_to\_iri}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{uri\_to\_iri()}{uri\_to\_iri()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a16ecd3ac0af829db37dd7999d3260453} 
+ str werkzeug.\+urls.\+uri\+\_\+to\+\_\+iri (\begin{DoxyParamCaption}\item[{t.\+Union\mbox{[}str, t.\+Tuple\mbox{[}str, str, str, str, str\mbox{]}\mbox{]}}]{uri}{, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{str }]{errors}{ = {\ttfamily "{}werkzeug.url\+\_\+quote"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a URI to an IRI. All valid UTF-8 characters are unquoted,
+leaving all reserved and invalid characters quoted. If the URL has
+a domain, it is decoded from Punycode.
+
+>>> uri_to_iri("http://xn--n3h.net/p%C3%A5th?q=%C3%A8ry%DF")
+'http://\\u2603.net/p\\xe5th?q=\\xe8ry%DF'
+
+:param uri: The URI to convert.
+:param charset: The encoding to encode unquoted bytes with.
+:param errors: Error handler to use during ``bytes.encode``. By
+    default, invalid bytes are left quoted.
+
+.. versionchanged:: 0.15
+    All reserved and invalid characters remain quoted. Previously,
+    only some reserved characters were preserved, and invalid bytes
+    were replaced instead of left quoted.
+
+.. versionadded:: 0.6
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a820cd223f1838a5eb0e7ce1f235c1094}\index{werkzeug.urls@{werkzeug.urls}!url\_decode@{url\_decode}}
+\index{url\_decode@{url\_decode}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_decode()}{url\_decode()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a820cd223f1838a5eb0e7ce1f235c1094} 
+ "{}ds.\+Multi\+Dict\mbox{[}str, str\mbox{]}"{} werkzeug.\+urls.\+url\+\_\+decode (\begin{DoxyParamCaption}\item[{t.\+Any\+Str}]{s}{, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{bool }]{include\+\_\+empty}{ = {\ttfamily True}, }\item[{str }]{errors}{ = {\ttfamily "{}replace"{}}, }\item[{str }]{separator}{ = {\ttfamily "{}\&"{}}, }\item[{t.\+Optional\mbox{[}t.\+Type\mbox{[}"{}ds.\+Multi\+Dict"{}\mbox{]}\mbox{]} }]{cls}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a query string and return it as a :class:`MultiDict`.
+
+:param s: The query string to parse.
+:param charset: Decode bytes to string with this charset. If not
+    given, bytes are returned as-is.
+:param include_empty: Include keys with empty values in the dict.
+:param errors: Error handling behavior when decoding bytes.
+:param separator: Separator character between pairs.
+:param cls: Container to hold result instead of :class:`MultiDict`.
+
+.. versionchanged:: 2.0
+    The ``decode_keys`` parameter is deprecated and will be removed
+    in Werkzeug 2.1.
+
+.. versionchanged:: 0.5
+    In previous versions ";" and "&" could be used for url decoding.
+    Now only "&" is supported. If you want to use ";", a different
+    ``separator`` can be provided.
+
+.. versionchanged:: 0.5
+    The ``cls`` parameter was added.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a4b0a0e4198f433cf2c896ce065da19ef}\index{werkzeug.urls@{werkzeug.urls}!url\_decode\_stream@{url\_decode\_stream}}
+\index{url\_decode\_stream@{url\_decode\_stream}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_decode\_stream()}{url\_decode\_stream()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a4b0a0e4198f433cf2c896ce065da19ef} 
+ "{}ds.\+Multi\+Dict\mbox{[}str, str\mbox{]}"{} werkzeug.\+urls.\+url\+\_\+decode\+\_\+stream (\begin{DoxyParamCaption}\item[{t.\+IO\mbox{[}bytes\mbox{]}}]{stream}{, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{bool }]{include\+\_\+empty}{ = {\ttfamily True}, }\item[{str }]{errors}{ = {\ttfamily "{}replace"{}}, }\item[{bytes }]{separator}{ = {\ttfamily b"{}\&"{}}, }\item[{t.\+Optional\mbox{[}t.\+Type\mbox{[}"{}ds.\+Multi\+Dict"{}\mbox{]}\mbox{]} }]{cls}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}int\mbox{]} }]{limit}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Works like :func:`url_decode` but decodes a stream.  The behavior
+of stream and limit follows functions like
+:func:`~werkzeug.wsgi.make_line_iter`.  The generator of pairs is
+directly fed to the `cls` so you can consume the data while it's
+parsed.
+
+:param stream: a stream with the encoded querystring
+:param charset: the charset of the query string.  If set to `None`
+    no decoding will take place.
+:param include_empty: Set to `False` if you don't want empty values to
+                      appear in the dict.
+:param errors: the decoding error behavior.
+:param separator: the pair separator to be used, defaults to ``&``
+:param cls: an optional dict class to use.  If this is not specified
+                   or `None` the default :class:`MultiDict` is used.
+:param limit: the content length of the URL data.  Not necessary if
+              a limited stream is provided.
+
+.. versionchanged:: 2.0
+    The ``decode_keys`` and ``return_iterator`` parameters are
+    deprecated and will be removed in Werkzeug 2.1.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_ab4bfd2cbd4a336687a35a70e266b79d1}\index{werkzeug.urls@{werkzeug.urls}!url\_encode@{url\_encode}}
+\index{url\_encode@{url\_encode}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_encode()}{url\_encode()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_ab4bfd2cbd4a336687a35a70e266b79d1} 
+ str werkzeug.\+urls.\+url\+\_\+encode (\begin{DoxyParamCaption}\item[{t.\+Union\mbox{[}t.\+Mapping\mbox{[}str, str\mbox{]}, t.\+Iterable\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]}}]{obj}{, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{bool }]{sort}{ = {\ttfamily False}, }\item[{t.\+Optional\mbox{[}t.\+Callable\mbox{[}\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}, t.\+Any\mbox{]}\mbox{]} }]{key}{ = {\ttfamily None}, }\item[{str }]{separator}{ = {\ttfamily "{}\&"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}URL encode a dict/`MultiDict`.  If a value is `None` it will not appear
+in the result string.  Per default only values are encoded into the target
+charset strings.
+
+:param obj: the object to encode into a query string.
+:param charset: the charset of the query string.
+:param sort: set to `True` if you want parameters to be sorted by `key`.
+:param separator: the separator to be used for the pairs.
+:param key: an optional function to be used for sorting.  For more details
+            check out the :func:`sorted` documentation.
+
+.. versionchanged:: 2.0
+    The ``encode_keys`` parameter is deprecated and will be removed
+    in Werkzeug 2.1.
+
+.. versionchanged:: 0.5
+    Added the ``sort``, ``key``, and ``separator`` parameters.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_ad0eb50fe3f88c71d052457540ea56fe4}\index{werkzeug.urls@{werkzeug.urls}!url\_encode\_stream@{url\_encode\_stream}}
+\index{url\_encode\_stream@{url\_encode\_stream}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_encode\_stream()}{url\_encode\_stream()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_ad0eb50fe3f88c71d052457540ea56fe4} 
+ None werkzeug.\+urls.\+url\+\_\+encode\+\_\+stream (\begin{DoxyParamCaption}\item[{t.\+Union\mbox{[}t.\+Mapping\mbox{[}str, str\mbox{]}, t.\+Iterable\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]}}]{obj}{, }\item[{t.\+Optional\mbox{[}t.\+IO\mbox{[}str\mbox{]}\mbox{]} }]{stream}{ = {\ttfamily None}, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{bool }]{sort}{ = {\ttfamily False}, }\item[{t.\+Optional\mbox{[}t.\+Callable\mbox{[}\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}, t.\+Any\mbox{]}\mbox{]} }]{key}{ = {\ttfamily None}, }\item[{str }]{separator}{ = {\ttfamily "{}\&"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`url_encode` but writes the results to a stream
+object.  If the stream is `None` a generator over all encoded
+pairs is returned.
+
+:param obj: the object to encode into a query string.
+:param stream: a stream to write the encoded object into or `None` if
+               an iterator over the encoded pairs should be returned.  In
+               that case the separator argument is ignored.
+:param charset: the charset of the query string.
+:param sort: set to `True` if you want parameters to be sorted by `key`.
+:param separator: the separator to be used for the pairs.
+:param key: an optional function to be used for sorting.  For more details
+            check out the :func:`sorted` documentation.
+
+.. versionchanged:: 2.0
+    The ``encode_keys`` parameter is deprecated and will be removed
+    in Werkzeug 2.1.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a75c6d43d7a5bb50f69c867521b23b67c}\index{werkzeug.urls@{werkzeug.urls}!url\_fix@{url\_fix}}
+\index{url\_fix@{url\_fix}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_fix()}{url\_fix()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a75c6d43d7a5bb50f69c867521b23b67c} 
+ str werkzeug.\+urls.\+url\+\_\+fix (\begin{DoxyParamCaption}\item[{str}]{s}{, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sometimes you get an URL by a user that just isn't a real URL because
+it contains unsafe characters like ' ' and so on. This function can fix
+some of the problems in a similar way browsers handle data entered by the
+user:
+
+>>> url_fix('http://de.wikipedia.org/wiki/Elf (Begriffskl\xe4rung)')
+'http://de.wikipedia.org/wiki/Elf%20(Begriffskl%C3%A4rung)'
+
+:param s: the string with the URL to fix.
+:param charset: The target charset for the URL if the url was given
+    as a string.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_ae44b21cdd36ed6ec58a73874bc08d0d9}\index{werkzeug.urls@{werkzeug.urls}!url\_join@{url\_join}}
+\index{url\_join@{url\_join}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_join()}{url\_join()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_ae44b21cdd36ed6ec58a73874bc08d0d9} 
+ str werkzeug.\+urls.\+url\+\_\+join (\begin{DoxyParamCaption}\item[{t.\+Union\mbox{[}str, t.\+Tuple\mbox{[}str, str, str, str, str\mbox{]}\mbox{]}}]{base}{, }\item[{t.\+Union\mbox{[}str, t.\+Tuple\mbox{[}str, str, str, str, str\mbox{]}\mbox{]}}]{url}{, }\item[{bool }]{allow\+\_\+fragments}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Join a base URL and a possibly relative URL to form an absolute
+interpretation of the latter.
+
+:param base: the base URL for the join operation.
+:param url: the URL to join.
+:param allow_fragments: indicates whether fragments should be allowed.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_aaf24a051aff29812612629f2bb533f74}\index{werkzeug.urls@{werkzeug.urls}!url\_parse@{url\_parse}}
+\index{url\_parse@{url\_parse}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_parse()}{url\_parse()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_aaf24a051aff29812612629f2bb533f74} 
+ \mbox{\hyperlink{classwerkzeug_1_1urls_1_1_base_u_r_l}{Base\+URL}} werkzeug.\+urls.\+url\+\_\+parse (\begin{DoxyParamCaption}\item[{str}]{url}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{scheme}{ = {\ttfamily None}, }\item[{bool }]{allow\+\_\+fragments}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses a URL from a string into a :class:`URL` tuple.  If the URL
+is lacking a scheme it can be provided as second argument. Otherwise,
+it is ignored.  Optionally fragments can be stripped from the URL
+by setting `allow_fragments` to `False`.
+
+The inverse of this function is :func:`url_unparse`.
+
+:param url: the URL to parse.
+:param scheme: the default schema to use if the URL is schemaless.
+:param allow_fragments: if set to `False` a fragment will be removed
+                        from the URL.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a883d63c5dd8447aabe373e20b318ec86}\index{werkzeug.urls@{werkzeug.urls}!url\_quote@{url\_quote}}
+\index{url\_quote@{url\_quote}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_quote()}{url\_quote()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a883d63c5dd8447aabe373e20b318ec86} 
+ str werkzeug.\+urls.\+url\+\_\+quote (\begin{DoxyParamCaption}\item[{t.\+Union\mbox{[}str, bytes\mbox{]}}]{string}{, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{str }]{errors}{ = {\ttfamily "{}strict"{}}, }\item[{t.\+Union\mbox{[}str, bytes\mbox{]} }]{safe}{ = {\ttfamily "{}/\+:"{}}, }\item[{t.\+Union\mbox{[}str, bytes\mbox{]} }]{unsafe}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}URL encode a single string with a given encoding.
+
+:param s: the string to quote.
+:param charset: the charset to be used.
+:param safe: an optional sequence of safe characters.
+:param unsafe: an optional sequence of unsafe characters.
+
+.. versionadded:: 0.9.2
+   The `unsafe` parameter was added.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a6e10b28114fda425ed938434cb01aca0}\index{werkzeug.urls@{werkzeug.urls}!url\_quote\_plus@{url\_quote\_plus}}
+\index{url\_quote\_plus@{url\_quote\_plus}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_quote\_plus()}{url\_quote\_plus()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a6e10b28114fda425ed938434cb01aca0} 
+ str werkzeug.\+urls.\+url\+\_\+quote\+\_\+plus (\begin{DoxyParamCaption}\item[{str}]{string}{, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{str }]{errors}{ = {\ttfamily "{}strict"{}}, }\item[{str }]{safe}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}URL encode a single string with the given encoding and convert
+whitespace to "+".
+
+:param s: The string to quote.
+:param charset: The charset to be used.
+:param safe: An optional sequence of safe characters.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a1faefa1a87386d77382ce764c57ed0ac}\index{werkzeug.urls@{werkzeug.urls}!url\_unparse@{url\_unparse}}
+\index{url\_unparse@{url\_unparse}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_unparse()}{url\_unparse()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a1faefa1a87386d77382ce764c57ed0ac} 
+ str werkzeug.\+urls.\+url\+\_\+unparse (\begin{DoxyParamCaption}\item[{t.\+Tuple\mbox{[}str, str, str, str, str\mbox{]}}]{components}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The reverse operation to :meth:`url_parse`.  This accepts arbitrary
+as well as :class:`URL` tuples and returns a URL as a string.
+
+:param components: the parsed URL as tuple which should be converted
+                   into a URL string.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_af85edc3e19950c5468f338a7b4b6df15}\index{werkzeug.urls@{werkzeug.urls}!url\_unquote@{url\_unquote}}
+\index{url\_unquote@{url\_unquote}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_unquote()}{url\_unquote()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_af85edc3e19950c5468f338a7b4b6df15} 
+ str werkzeug.\+urls.\+url\+\_\+unquote (\begin{DoxyParamCaption}\item[{t.\+Union\mbox{[}str, bytes\mbox{]}}]{s}{, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{str }]{errors}{ = {\ttfamily "{}replace"{}}, }\item[{str }]{unsafe}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}URL decode a single string with a given encoding.  If the charset
+is set to `None` no decoding is performed and raw bytes are
+returned.
+
+:param s: the string to unquote.
+:param charset: the charset of the query string.  If set to `None`
+    no decoding will take place.
+:param errors: the error handling for the charset decoding.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a858a3e4e69d3ff4d4f1b6565663d0204}\index{werkzeug.urls@{werkzeug.urls}!url\_unquote\_plus@{url\_unquote\_plus}}
+\index{url\_unquote\_plus@{url\_unquote\_plus}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{url\_unquote\_plus()}{url\_unquote\_plus()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a858a3e4e69d3ff4d4f1b6565663d0204} 
+ str werkzeug.\+urls.\+url\+\_\+unquote\+\_\+plus (\begin{DoxyParamCaption}\item[{t.\+Union\mbox{[}str, bytes\mbox{]}}]{s}{, }\item[{str }]{charset}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{str }]{errors}{ = {\ttfamily "{}replace"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}URL decode a single string with the given `charset` and decode "+" to
+whitespace.
+
+Per default encoding errors are ignored.  If you want a different behavior
+you can set `errors` to ``'replace'`` or ``'strict'``.
+
+:param s: The string to unquote.
+:param charset: the charset of the query string.  If set to `None`
+    no decoding will take place.
+:param errors: The error handling for the `charset` decoding.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1urls_a4c2976be61f3eee00b1a82f9613df823}\index{werkzeug.urls@{werkzeug.urls}!\_always\_safe@{\_always\_safe}}
+\index{\_always\_safe@{\_always\_safe}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_always\_safe}{\_always\_safe}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a4c2976be61f3eee00b1a82f9613df823} 
+werkzeug.\+urls.\+\_\+always\+\_\+safe\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ frozenset(}
+\DoxyCodeLine{00002\ \ \ \ \ bytearray(}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}abcdefghijklmnopqrstuvwxyz"{}}}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}ABCDEFGHIJKLMNOPQRSTUVWXYZ"{}}}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}0123456789"{}}}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}-\/.\_\string~"{}}}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}\$!'()*+,;"{}}\ \ \textcolor{comment}{\#\ RFC3986\ sub-\/delims\ set,\ not\ including\ query\ string\ delimiters\ \&=}}
+\DoxyCodeLine{00008\ \ \ \ \ )}
+\DoxyCodeLine{00009\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1urls_a7dca803e4c352113437d985a64a5cf7c}\index{werkzeug.urls@{werkzeug.urls}!\_hextobyte@{\_hextobyte}}
+\index{\_hextobyte@{\_hextobyte}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_hextobyte}{\_hextobyte}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a7dca803e4c352113437d985a64a5cf7c} 
+dict werkzeug.\+urls.\+\_\+hextobyte\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ f\textcolor{stringliteral}{"{}\{a\}\{b\}"{}}.encode(\textcolor{stringliteral}{"{}ascii"{}}):\ int(f\textcolor{stringliteral}{"{}\{a\}\{b\}"{}},\ 16)}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{keywordflow}{for}\ a\ \textcolor{keywordflow}{in}\ \_hexdigits}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{keywordflow}{for}\ b\ \textcolor{keywordflow}{in}\ \_hexdigits}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}

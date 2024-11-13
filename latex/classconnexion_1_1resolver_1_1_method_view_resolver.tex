@@ -1,0 +1,115 @@
+\doxysection{connexion.\+resolver.\+Method\+View\+Resolver Class Reference}
+\hypertarget{classconnexion_1_1resolver_1_1_method_view_resolver}{}\label{classconnexion_1_1resolver_1_1_method_view_resolver}\index{connexion.resolver.MethodViewResolver@{connexion.resolver.MethodViewResolver}}
+Inheritance diagram for connexion.\+resolver.\+Method\+View\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classconnexion_1_1resolver_1_1_method_view_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_method_view_resolver_a7c4636b859a53b4f148067f7911e81c4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_method_view_resolver_a4fb2c053a3ac6fdad850604e72035368}{resolve\+\_\+operation\+\_\+id}} (self, operation)
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_method_view_resolver_af247562dcd295d88a13079436b12535c}{resolve\+\_\+function\+\_\+from\+\_\+operation\+\_\+id}} (self, operation\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resty_resolver}{connexion.\+resolver.\+Resty\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resty_resolver_aeeab847300a4278bd071d10ed6dadd44}{resolve\+\_\+operation\+\_\+id\+\_\+using\+\_\+rest\+\_\+semantics}} (self, operation)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver}{connexion.\+resolver.\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a052aec285258ea1337ae7537a7a44b8e}{resolve}} (self, operation)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classconnexion_1_1resolver_1_1_method_view_resolver_a089b93c51c51cb61348840814cde81de}\label{classconnexion_1_1resolver_1_1_method_view_resolver_a089b93c51c51cb61348840814cde81de} 
+list {\bfseries initialized\+\_\+views} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resty_resolver}{connexion.\+resolver.\+Resty\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries default\+\_\+module\+\_\+name} = default\+\_\+module\+\_\+name
+\item 
+{\bfseries collection\+\_\+endpoint\+\_\+name} = collection\+\_\+endpoint\+\_\+name
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver}{connexion.\+resolver.\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries function\+\_\+resolver} = function\+\_\+resolver
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Resolves endpoint functions based on Flask's MethodView semantics, e.g. ::
+
+        paths:
+            /foo_bar:
+                get:
+                    # Implied function call: api.FooBarView().get
+
+        class FooBarView(MethodView):
+            def get(self):
+                return ...
+            def post(self):
+                return ...
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classconnexion_1_1resolver_1_1_method_view_resolver_a7c4636b859a53b4f148067f7911e81c4}\index{connexion.resolver.MethodViewResolver@{connexion.resolver.MethodViewResolver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!connexion.resolver.MethodViewResolver@{connexion.resolver.MethodViewResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_method_view_resolver_a7c4636b859a53b4f148067f7911e81c4} 
+connexion.\+resolver.\+Method\+View\+Resolver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{default\+\_\+module\+\_\+name}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{collection\+\_\+endpoint\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param default_module_name: Default module name for operations
+:type default_module_name: str
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resty_resolver_ae1b414754877d96c6921cd2b1b9b6ffb}{connexion.\+resolver.\+Resty\+Resolver}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classconnexion_1_1resolver_1_1_method_view_resolver_af247562dcd295d88a13079436b12535c}\index{connexion.resolver.MethodViewResolver@{connexion.resolver.MethodViewResolver}!resolve\_function\_from\_operation\_id@{resolve\_function\_from\_operation\_id}}
+\index{resolve\_function\_from\_operation\_id@{resolve\_function\_from\_operation\_id}!connexion.resolver.MethodViewResolver@{connexion.resolver.MethodViewResolver}}
+\doxysubsubsection{\texorpdfstring{resolve\_function\_from\_operation\_id()}{resolve\_function\_from\_operation\_id()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_method_view_resolver_af247562dcd295d88a13079436b12535c} 
+connexion.\+resolver.\+Method\+View\+Resolver.\+resolve\+\_\+function\+\_\+from\+\_\+operation\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Invokes the function_resolver
+
+:type operation_id: str
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resolver_a6a4a064312a7a9f7fa554358f01b3105}{connexion.\+resolver.\+Resolver}}.
+
+\Hypertarget{classconnexion_1_1resolver_1_1_method_view_resolver_a4fb2c053a3ac6fdad850604e72035368}\index{connexion.resolver.MethodViewResolver@{connexion.resolver.MethodViewResolver}!resolve\_operation\_id@{resolve\_operation\_id}}
+\index{resolve\_operation\_id@{resolve\_operation\_id}!connexion.resolver.MethodViewResolver@{connexion.resolver.MethodViewResolver}}
+\doxysubsubsection{\texorpdfstring{resolve\_operation\_id()}{resolve\_operation\_id()}}
+{\footnotesize\ttfamily \label{classconnexion_1_1resolver_1_1_method_view_resolver_a4fb2c053a3ac6fdad850604e72035368} 
+connexion.\+resolver.\+Method\+View\+Resolver.\+resolve\+\_\+operation\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{operation}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolves the operationId using REST semantics unless explicitly configured in the spec
+Once resolved with REST semantics the view_name is capitalised and has 'View' added
+to it so it now matches the Class names of the MethodView
+
+:type operation: connexion.operations.AbstractOperation
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classconnexion_1_1resolver_1_1_resty_resolver_a2cf13df80e0c729da771a2280697f357}{connexion.\+resolver.\+Resty\+Resolver}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/connexion/resolver.\+py\end{DoxyCompactItemize}

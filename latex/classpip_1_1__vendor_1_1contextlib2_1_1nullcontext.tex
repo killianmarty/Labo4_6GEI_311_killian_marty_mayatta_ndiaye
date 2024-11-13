@@ -1,0 +1,69 @@
+\doxysection{pip.\+\_\+vendor.\+contextlib2.\+nullcontext Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext}{}\label{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext}\index{pip.\_vendor.contextlib2.nullcontext@{pip.\_vendor.contextlib2.nullcontext}}
+Inheritance diagram for pip.\+\_\+vendor.\+contextlib2.\+nullcontext\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext_afe00cfa048d573143fad70408899d0e1}\label{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext_afe00cfa048d573143fad70408899d0e1} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, enter\+\_\+result=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext_a37290fc966a66a3ba0e7e633bec8061c}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext_afdc3d1695c8da7be630d2d22189eb59b}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}excinfo)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_abstract_context_manager}{pip.\+\_\+vendor.\+contextlib2.\+Abstract\+Context\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_abstract_context_manager_a8b920ea600c0e9f34cd4ae89830bc8ab}{\+\_\+\+\_\+subclasshook\+\_\+\+\_\+}} (cls, C)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext_abd06ecdf25bb1fb4696d24fde8e794a0}\label{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext_abd06ecdf25bb1fb4696d24fde8e794a0} 
+{\bfseries enter\+\_\+result} = enter\+\_\+result
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Context manager that does no additional processing.
+Used as a stand-in for a normal context manager, when a particular
+block of code is only sometimes used with a normal context manager:
+cm = optional_cm if condition else nullcontext()
+with cm:
+    # Perform operation, using optional_cm if condition is True
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext_a37290fc966a66a3ba0e7e633bec8061c}\index{pip.\_vendor.contextlib2.nullcontext@{pip.\_vendor.contextlib2.nullcontext}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!pip.\_vendor.contextlib2.nullcontext@{pip.\_vendor.contextlib2.nullcontext}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext_a37290fc966a66a3ba0e7e633bec8061c} 
+pip.\+\_\+vendor.\+contextlib2.\+nullcontext.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return `self` upon entering the runtime context.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_abstract_context_manager_a6920c4a42182dacc13ba4c1cfee307e8}{pip.\+\_\+vendor.\+contextlib2.\+Abstract\+Context\+Manager}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext_afdc3d1695c8da7be630d2d22189eb59b}\index{pip.\_vendor.contextlib2.nullcontext@{pip.\_vendor.contextlib2.nullcontext}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!pip.\_vendor.contextlib2.nullcontext@{pip.\_vendor.contextlib2.nullcontext}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1contextlib2_1_1nullcontext_afdc3d1695c8da7be630d2d22189eb59b} 
+pip.\+\_\+vendor.\+contextlib2.\+nullcontext.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{exc\+\_\+type}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Raise any exception triggered within the runtime context.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_abstract_context_manager_a13248c4ec8fa402ea0104a04d8291f26}{pip.\+\_\+vendor.\+contextlib2.\+Abstract\+Context\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/contextlib2.\+py\end{DoxyCompactItemize}

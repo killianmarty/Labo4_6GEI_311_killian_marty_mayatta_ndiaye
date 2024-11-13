@@ -1,0 +1,48 @@
+\doxysection{plot\+\_\+football Namespace Reference}
+\hypertarget{namespaceplot__football}{}\label{namespaceplot__football}\index{plot\_football@{plot\_football}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__football_ab128b476efdea038a216b0b973aad120}\label{namespaceplot__football_ab128b476efdea038a216b0b973aad120} 
+str {\bfseries url} = "{}http\+://www-\/personal.\+umich.\+edu/\texorpdfstring{$\sim$}{\string~}mejn/netdata/football.\+zip"{}
+\item 
+\Hypertarget{namespaceplot__football_a6c6817848a022135c0c0ead1686f2a17}\label{namespaceplot__football_a6c6817848a022135c0c0ead1686f2a17} 
+{\bfseries sock} = urllib.\+request.\+urlopen(url)
+\item 
+\Hypertarget{namespaceplot__football_a38ddab3d578dcd43a1ea4cc7b13e4d36}\label{namespaceplot__football_a38ddab3d578dcd43a1ea4cc7b13e4d36} 
+{\bfseries s} = io.\+Bytes\+IO(sock.\+read())
+\item 
+\Hypertarget{namespaceplot__football_aa04c904522beed61fa5f487da70262fc}\label{namespaceplot__football_aa04c904522beed61fa5f487da70262fc} 
+{\bfseries zf} = zipfile.\+Zip\+File(s)
+\item 
+\Hypertarget{namespaceplot__football_a4f8ea9a0c313430226956d8bc628d7e7}\label{namespaceplot__football_a4f8ea9a0c313430226956d8bc628d7e7} 
+{\bfseries txt} = zf.\+read("{}football.\+txt"{}).decode()
+\item 
+\Hypertarget{namespaceplot__football_a23ebb95dfd181200bf12051139ce2319}\label{namespaceplot__football_a23ebb95dfd181200bf12051139ce2319} 
+{\bfseries gml} = zf.\+read("{}football.\+gml"{}).decode()
+\item 
+\Hypertarget{namespaceplot__football_a1c2ab59274d81a26e0c37c7b87818732}\label{namespaceplot__football_a1c2ab59274d81a26e0c37c7b87818732} 
+{\bfseries G} = nx.\+parse\+\_\+gml(gml)
+\item 
+\Hypertarget{namespaceplot__football_a83743b8c3ef1cc3f81617f76c7000d3f}\label{namespaceplot__football_a83743b8c3ef1cc3f81617f76c7000d3f} 
+dict {\bfseries options} = \{"{}node\+\_\+color"{}\+: "{}black"{}, "{}node\+\_\+size"{}\+: 50, "{}linewidths"{}\+: 0, "{}width"{}\+: 0.\+1\}
+\item 
+\Hypertarget{namespaceplot__football_ac26b2765f8d60727d49475c1e21d51d1}\label{namespaceplot__football_ac26b2765f8d60727d49475c1e21d51d1} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(G, seed=1969)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}========
+Football
+========
+
+Load football network in GML format and compute some network statistcs.
+
+Shows how to download GML graph in a zipped file, unpack it, and load
+into a NetworkX graph.
+
+Requires Internet connection to download the URL
+http://www-personal.umich.edu/~mejn/netdata/football.zip
+\end{DoxyVerb}
+ 

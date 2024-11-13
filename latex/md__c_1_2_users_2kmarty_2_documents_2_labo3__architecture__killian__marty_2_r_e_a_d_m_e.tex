@@ -1,0 +1,164 @@
+\chapter{API système de cours}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}{}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e}\index{API système de cours@{API système de cours}}
+\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md242}%
+\Hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md242}%
+
+
+Mayatta Ndiaye, Killian Marty\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md243}{}\doxysection{\texorpdfstring{Fonctionnement}{Fonctionnement}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md243}
+Cette API a été générée par "{}swagger-\/codegen-\/cli"{} à partir du fichier "{}api.\+yaml"{}.
+
+Pour le serveur, nous avons implémenté en Python le corps des fonctions liées à chaque endpoint. Les données sont stockées dans le fichier json "{}swagger\+\_\+server/cours.\+json"{}.
+
+Pour les clients Python/\+Java, nous avons implémenté une interface afin de permettre à l\textquotesingle{}utilisateur d\textquotesingle{}intéragir avec l\textquotesingle{}API (effectuer des requêtes).\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md244}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md244}
+
+\begin{DoxyEnumerate}
+\item Cloner ce repository git\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ clone\ https://github.com/killianmarty/Labo3\_architecture\_killian\_marty}
+\DoxyCodeLine{cd\ Labo3\_architecture\_killian\_marty}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item Créer un environnement virtuel Python et installer les dépendances\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{python\ -\/m\ venv\ .}
+\DoxyCodeLine{Scripts\(\backslash\)activate}
+\DoxyCodeLine{pip\ install\ -\/r\ requirements.txt}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md245}{}\doxysection{\texorpdfstring{Lancer le serveur}{Lancer le serveur}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md245}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{python\ -\/m\ swagger\_server}
+
+\end{DoxyCode}
+
+
+{\bfseries{Précision\+: le serveur se lance automatiquement sur le port 3000, il faut donc veiller à ce que ce port soit ouvert.}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md246}{}\doxysection{\texorpdfstring{Utilisation du load balancer NGINX}{Utilisation du load balancer NGINX}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md246}
+Un load balancer NGINX est également à disposition, voici les étapes pour l\textquotesingle{}utiliser \+:
+
+
+\begin{DoxyEnumerate}
+\item Modifier la configuration du serveur pour précisier les adresses IP des instances du serveur.
+\end{DoxyEnumerate}
+
+Pour cela, modifier le fichier "{}nginx-\/windows/conf/ipadresses.\+conf"{}. Voici un exemple de syntaxe dans ce fichier (le port utilisé part le serveur de l\textquotesingle{}API est 3000).
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{server\ 172.16.13.36:3000;}
+\DoxyCodeLine{server\ 172.16.13.32:3000;}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item Lancer NGINX
+\end{DoxyEnumerate}
+
+{\bfseries{Pour lancer NGINX, il est important de se situer dans le dossier "{}nginx-\/windows"{}.}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{start\ nginx}
+
+\end{DoxyCode}
+
+
+{\bfseries{Attention\+: lors de l\textquotesingle{}utilisation de NGINX avec plusieurs serveur, les données ne seront pas synchronisées entre les serveurs.}}
+
+{\bfseries{Par exemple si on fait une requête pour créer un cours et que c\textquotesingle{}est le serveur 1 qui la reçoit, puis que l\textquotesingle{}on fait une requête pour lire le nouveau cours et que c\textquotesingle{}est le serveur 2 qui la reçoit, le serveur va renvoyer "{}cours not found"{}. On peut observer ce phénomène à plusieurs reprises dans la vidéo de démonstration.}}\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md247}{}\doxysection{\texorpdfstring{Lancer le client}{Lancer le client}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md247}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md248}{}\doxysubsection{\texorpdfstring{Python}{Python}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md248}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{python\ -\/m\ swagger\_client}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md249}{}\doxysubsection{\texorpdfstring{Java}{Java}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md249}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ swagger\_client\_java}
+\DoxyCodeLine{javac\ Main.java}
+\DoxyCodeLine{java\ Main}
+
+\end{DoxyCode}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md250}{}\doxysection{\texorpdfstring{Utilisation du client}{Utilisation du client}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md250}
+Lors du lancement du client, il sera demander d\textquotesingle{}indiquer le domaine ainsi que le port. Le format attendu est le suivant\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{http://adresse\_ip:port}
+
+\end{DoxyCode}
+
+
+En cas d\textquotesingle{}utilisation avec NGINX, l\textquotesingle{}adresse IP sera celle de la machine qui exécute NGINX, et le port sera 8181.
+
+Le programme proposera ensuite les appels à l\textquotesingle{}API réalisables.\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md251}{}\doxysection{\texorpdfstring{Endpoints disponibles}{Endpoints disponibles}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md251}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md252}{}\doxysubsubsection{\texorpdfstring{Requêtes GET}{Requêtes GET}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md252}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Endpoint   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Endpoint   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-2}
+\endhead
+{\ttfamily /cours}   &Retourne tous les cours    \\\cline{1-2}
+{\ttfamily /cours/\+:id\+Cours?mode=semaine}   &Retourne le contenu d\textquotesingle{}un cours avec un affichage des séances par semaines    \\\cline{1-2}
+{\ttfamily /cours/\+:id\+Cours?mode=module}   &Retourne le contenu d\textquotesingle{}un cours avec un affichage des séances par modules    \\\cline{1-2}
+{\ttfamily /cours/\+:id\+Cours/fichier/\+:id\+Fichier}   &Retourne un fichier d\textquotesingle{}un cours    \\\cline{1-2}
+{\ttfamily /cours/\+:id\+Cours/dossier/\+:id\+Dossier}   &Retourne un dossier d\textquotesingle{}un cours    \\\cline{1-2}
+{\ttfamily /cours/\+:id\+Cours/seances/\+:id\+Seance}   &Retourne une séance d\textquotesingle{}un cours    \\\cline{1-2}
+{\ttfamily /search?tag=\texorpdfstring{$\ast$}{*}}   &Retourne la liste des cours contenant un tag spécifique   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md253}{}\doxysubsection{\texorpdfstring{Requêtes POST et DELETE}{Requêtes POST et DELETE}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md253}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Endpoint   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Endpoint   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-2}
+\endhead
+{\ttfamily /cours/\+:id\+Cours}   &Ajoute/supprime un cours    \\\cline{1-2}
+{\ttfamily /cours/\+:id\+Cours/fichier/\+:id\+Fichier}   &Ajoute/supprime un fichier dans un cours    \\\cline{1-2}
+{\ttfamily /cours/\+:id\+Cours/dossier/\+:id\+Dossier}   &Ajoute/supprime un dossier dans un cours    \\\cline{1-2}
+{\ttfamily /cours/\+:id\+Cours/seances/\+:id\+Seance}   &Ajoute/supprime une séance d\textquotesingle{}un cours   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md254}{}\doxysection{\texorpdfstring{Démonstration}{Démonstration}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md254}
+\href{https://github.com/user-attachments/assets/25ee5a7f-9fb0-4f12-b881-2002bb955858}{\texttt{ https\+://github.\+com/user-\/attachments/assets/25ee5a7f-\/9fb0-\/4f12-\/b881-\/2002bb955858}}
+
+La vidéo de démonstration est disponible sous le nom de "{}demo.\+mp4"{} dans le repository.\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md255}{}\doxysection{\texorpdfstring{Structure du serveur}{Structure du serveur}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md255}
+
+
+Lorsque le serveur (instance de connexion.\+App) reçoit une requête, il lit le fichier de spécification de l\textquotesingle{}API (swagger/swagger.\+yaml) afin de faire une correspondance avec un endpoint défini, et de recupérer le nom de la fonction à appeller. Ces fonctions sont les controllers suivants \+:
+
+
+\begin{DoxyItemize}
+\item cours\+\_\+controller
+\item contenu\+\_\+de\+\_\+cours\+\_\+controler
+\item seances\+\_\+controller
+\item recherche\+\_\+de\+\_\+cours\+\_\+controller
+\end{DoxyItemize}
+
+Elles ont pour rôle d\textquotesingle{}effectuer les actions souhaités par l\textquotesingle{}appel à l\textquotesingle{}API et renvoyer les données demandées. Ce sont ces fonctions que nous avons implémenté nous même.
+
+Puis le serveur renvoie un objet "{}\+Api\+Response"{} qui contient la réponse à renvoyer à l\textquotesingle{}utilisateur.\hypertarget{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md256}{}\doxysection{\texorpdfstring{Ce que nous avons appris}{Ce que nous avons appris}}\label{md__c_1_2_users_2kmarty_2_documents_2_labo3__architecture__killian__marty_2_r_e_a_d_m_e_autotoc_md256}
+Ce laboratoire nous a permis d\textquotesingle{}apprendre à conçevoir et créer une API avec swagger et à générer un client et un serveur avec swagger-\/codegen-\/cli.
+
+Mais nous avons aussi appris à utiliser les environnements virtuels Python, et à lancer le serveur derrière un load balancer. 

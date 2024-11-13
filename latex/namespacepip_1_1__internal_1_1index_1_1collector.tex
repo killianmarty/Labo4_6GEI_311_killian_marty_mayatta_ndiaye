@@ -1,0 +1,257 @@
+\doxysection{pip.\+\_\+internal.\+index.\+collector Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1index_1_1collector}{}\label{namespacepip_1_1__internal_1_1index_1_1collector}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1___not_h_t_m_l}{\+\_\+\+Not\+HTML}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1___not_h_t_t_p}{\+\_\+\+Not\+HTTP}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_cacheable_page_content}{Cacheable\+Page\+Content}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links}{Collected\+Links}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_h_t_m_l_page}{HTMLPage}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector}{Link\+Collector}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_lru_cache}{Lru\+Cache}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a48ce87d8d8b3182955c616fd347b795b}\label{namespacepip_1_1__internal_1_1index_1_1collector_a48ce87d8d8b3182955c616fd347b795b} 
+{\bfseries noop\+\_\+lru\+\_\+cache} (maxsize=None)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_ac7bdff8947f1c0c85b13d1d73d9068fa}{\+\_\+match\+\_\+vcs\+\_\+scheme}} (url)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_a44d8b5da5e6ef0f6e83ad2cae32d96fb}{\+\_\+is\+\_\+url\+\_\+like\+\_\+archive}} (url)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_a9d34892d9d1fc1abdbed21caabe5fec7}{\+\_\+ensure\+\_\+html\+\_\+header}} (response)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_aeea087b2a40612e69b436924509733bc}{\+\_\+ensure\+\_\+html\+\_\+response}} (url, session)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_a75db0288d054754a0cc1a0861010ea56}{\+\_\+get\+\_\+html\+\_\+response}} (url, session)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_ab90a9118b4d651695778fa65e525b3e3}{\+\_\+get\+\_\+encoding\+\_\+from\+\_\+headers}} (headers)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_ac4147cf3c5c6c40684f766347247dbba}{\+\_\+determine\+\_\+base\+\_\+url}} (document, page\+\_\+url)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_a014898749e14eb0ea46ef3fcd7aef63f}{\+\_\+clean\+\_\+url\+\_\+path\+\_\+part}} (part)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_a044611d6b00ddac3f29d3a828f3e7a0b}{\+\_\+clean\+\_\+file\+\_\+url\+\_\+path}} (part)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_a10e879f7db6270b7a388c98e78fa5ad2}{\+\_\+clean\+\_\+url\+\_\+path}} (path, is\+\_\+local\+\_\+path)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_ae5ff9b15ac0b7fcc8d8f5fd70850518b}{\+\_\+clean\+\_\+link}} (url)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_ae1878108503f79c92d20dc9af0437e74}{\+\_\+create\+\_\+link\+\_\+from\+\_\+element}} (anchor, page\+\_\+url, base\+\_\+url)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_a825fd6ed85be84d94fe933a39938fa6d}{with\+\_\+cached\+\_\+html\+\_\+pages}} (fn)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_acf5b290a7cf6a40d80c45fc0bf69a666}{parse\+\_\+links}} (page)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_ac348aa8787e0f8f706b59b1a6853baa6}\label{namespacepip_1_1__internal_1_1index_1_1collector_ac348aa8787e0f8f706b59b1a6853baa6} 
+{\bfseries \+\_\+handle\+\_\+get\+\_\+page\+\_\+fail} (link, reason, meth=None \# type\+:\+Optional\mbox{[}Callable\mbox{[}..., None\mbox{]}\mbox{]})
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_aa7862de317fc6bb93529ef97fd833259}\label{namespacepip_1_1__internal_1_1index_1_1collector_aa7862de317fc6bb93529ef97fd833259} 
+{\bfseries \+\_\+make\+\_\+html\+\_\+page} (response, cache\+\_\+link\+\_\+parsing=True)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_ab2ccf15e0ab7ea1bcd1422ba3141e9bd}\label{namespacepip_1_1__internal_1_1index_1_1collector_ab2ccf15e0ab7ea1bcd1422ba3141e9bd} 
+{\bfseries \+\_\+get\+\_\+html\+\_\+page} (link, session=None)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_a4276a391aaaebd004f9b58da578d2cf9}{\+\_\+remove\+\_\+duplicate\+\_\+links}} (links)
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_a37e9346f80d734021376fcb447ed69eb}{group\+\_\+locations}} (locations, expand\+\_\+dir=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_aebd799a8209e5584270b728dfcbd8d48}\label{namespacepip_1_1__internal_1_1index_1_1collector_aebd799a8209e5584270b728dfcbd8d48} 
+{\bfseries HTMLElement} = xml.\+etree.\+Element\+Tree.\+Element
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a248367a642c596833022d146d90c48b3}\label{namespacepip_1_1__internal_1_1index_1_1collector_a248367a642c596833022d146d90c48b3} 
+{\bfseries Response\+Headers} = Mutable\+Mapping\mbox{[}str, str\mbox{]}
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a6a3a0c9ba917f4206f29d6cad5e9e34f}\label{namespacepip_1_1__internal_1_1index_1_1collector_a6a3a0c9ba917f4206f29d6cad5e9e34f} 
+{\bfseries F} = Type\+Var(\textquotesingle{}F\textquotesingle{})
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_aa06c5ddfbbe781a2898e18ced297b032}\label{namespacepip_1_1__internal_1_1index_1_1collector_aa06c5ddfbbe781a2898e18ced297b032} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_ab6e71e4e649f8c5988063c611eaa0ca1}\label{namespacepip_1_1__internal_1_1index_1_1collector_ab6e71e4e649f8c5988063c611eaa0ca1} 
+{\bfseries \+\_\+lru\+\_\+cache} = getattr(functools, "{}lru\+\_\+cache"{}, noop\+\_\+lru\+\_\+cache)
+\item 
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_ab8933215754ad2f88baa1c5f29cb290c}\label{namespacepip_1_1__internal_1_1index_1_1collector_ab8933215754ad2f88baa1c5f29cb290c} 
+{\bfseries \+\_\+reserved\+\_\+chars\+\_\+re} = re.\+compile(\textquotesingle{}(@\texorpdfstring{$\vert$}{|}\%2F)\textquotesingle{}, re.\+IGNORECASE)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The main purpose of this module is to expose LinkCollector.collect_links().
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a044611d6b00ddac3f29d3a828f3e7a0b}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_clean\_file\_url\_path@{\_clean\_file\_url\_path}}
+\index{\_clean\_file\_url\_path@{\_clean\_file\_url\_path}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_clean\_file\_url\_path()}{\_clean\_file\_url\_path()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_a044611d6b00ddac3f29d3a828f3e7a0b} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+clean\+\_\+file\+\_\+url\+\_\+path (\begin{DoxyParamCaption}\item[{}]{part}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Clean the first part of a URL path that corresponds to a local
+filesystem path (i.e. the first part after splitting on "@" characters).
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_ae5ff9b15ac0b7fcc8d8f5fd70850518b}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_clean\_link@{\_clean\_link}}
+\index{\_clean\_link@{\_clean\_link}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_clean\_link()}{\_clean\_link()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_ae5ff9b15ac0b7fcc8d8f5fd70850518b} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+clean\+\_\+link (\begin{DoxyParamCaption}\item[{}]{url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Make sure a link is fully quoted.
+For example, if ' ' occurs in the URL, it will be replaced with "%20",
+and without double-quoting other characters.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a10e879f7db6270b7a388c98e78fa5ad2}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_clean\_url\_path@{\_clean\_url\_path}}
+\index{\_clean\_url\_path@{\_clean\_url\_path}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_clean\_url\_path()}{\_clean\_url\_path()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_a10e879f7db6270b7a388c98e78fa5ad2} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+clean\+\_\+url\+\_\+path (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{is\+\_\+local\+\_\+path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Clean the path portion of a URL.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a014898749e14eb0ea46ef3fcd7aef63f}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_clean\_url\_path\_part@{\_clean\_url\_path\_part}}
+\index{\_clean\_url\_path\_part@{\_clean\_url\_path\_part}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_clean\_url\_path\_part()}{\_clean\_url\_path\_part()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_a014898749e14eb0ea46ef3fcd7aef63f} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+clean\+\_\+url\+\_\+path\+\_\+part (\begin{DoxyParamCaption}\item[{}]{part}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Clean a "part" of a URL path (i.e. after splitting on "@" characters).
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_ae1878108503f79c92d20dc9af0437e74}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_create\_link\_from\_element@{\_create\_link\_from\_element}}
+\index{\_create\_link\_from\_element@{\_create\_link\_from\_element}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_create\_link\_from\_element()}{\_create\_link\_from\_element()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_ae1878108503f79c92d20dc9af0437e74} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+create\+\_\+link\+\_\+from\+\_\+element (\begin{DoxyParamCaption}\item[{}]{anchor}{, }\item[{}]{page\+\_\+url}{, }\item[{}]{base\+\_\+url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Convert an anchor element in a simple repository page to a Link.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_ac4147cf3c5c6c40684f766347247dbba}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_determine\_base\_url@{\_determine\_base\_url}}
+\index{\_determine\_base\_url@{\_determine\_base\_url}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_determine\_base\_url()}{\_determine\_base\_url()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_ac4147cf3c5c6c40684f766347247dbba} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+determine\+\_\+base\+\_\+url (\begin{DoxyParamCaption}\item[{}]{document}{, }\item[{}]{page\+\_\+url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Determine the HTML document's base URL.
+
+This looks for a ``<base>`` tag in the HTML document. If present, its href
+attribute denotes the base URL of anchor tags in the document. If there is
+no such tag (or if it does not have a valid href attribute), the HTML
+file's URL is used as the base URL.
+
+:param document: An HTML document representation. The current
+    implementation expects the result of ``html5lib.parse()``.
+:param page_url: The URL of the HTML document.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a9d34892d9d1fc1abdbed21caabe5fec7}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_ensure\_html\_header@{\_ensure\_html\_header}}
+\index{\_ensure\_html\_header@{\_ensure\_html\_header}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_html\_header()}{\_ensure\_html\_header()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_a9d34892d9d1fc1abdbed21caabe5fec7} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+ensure\+\_\+html\+\_\+header (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check the Content-Type header to ensure the response contains HTML.
+
+Raises `_NotHTML` if the content type is not text/html.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_aeea087b2a40612e69b436924509733bc}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_ensure\_html\_response@{\_ensure\_html\_response}}
+\index{\_ensure\_html\_response@{\_ensure\_html\_response}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_html\_response()}{\_ensure\_html\_response()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_aeea087b2a40612e69b436924509733bc} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+ensure\+\_\+html\+\_\+response (\begin{DoxyParamCaption}\item[{}]{url}{, }\item[{}]{session}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Send a HEAD request to the URL, and ensure the response contains HTML.
+
+Raises `_NotHTTP` if the URL is not available for a HEAD request, or
+`_NotHTML` if the content type is not text/html.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_ab90a9118b4d651695778fa65e525b3e3}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_get\_encoding\_from\_headers@{\_get\_encoding\_from\_headers}}
+\index{\_get\_encoding\_from\_headers@{\_get\_encoding\_from\_headers}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_get\_encoding\_from\_headers()}{\_get\_encoding\_from\_headers()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_ab90a9118b4d651695778fa65e525b3e3} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+get\+\_\+encoding\+\_\+from\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Determine if we have any encoding information in our headers.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a75db0288d054754a0cc1a0861010ea56}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_get\_html\_response@{\_get\_html\_response}}
+\index{\_get\_html\_response@{\_get\_html\_response}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_get\_html\_response()}{\_get\_html\_response()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_a75db0288d054754a0cc1a0861010ea56} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+get\+\_\+html\+\_\+response (\begin{DoxyParamCaption}\item[{}]{url}{, }\item[{}]{session}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Access an HTML page with GET, and return the response.
+
+This consists of three parts:
+
+1. If the URL looks suspiciously like an archive, send a HEAD first to
+   check the Content-Type is HTML, to avoid downloading a large file.
+   Raise `_NotHTTP` if the content type cannot be determined, or
+   `_NotHTML` if it is not HTML.
+2. Actually perform the request. Raise HTTP exceptions on network failures.
+3. Check the Content-Type header to make sure we got HTML, and raise
+   `_NotHTML` otherwise.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a44d8b5da5e6ef0f6e83ad2cae32d96fb}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_is\_url\_like\_archive@{\_is\_url\_like\_archive}}
+\index{\_is\_url\_like\_archive@{\_is\_url\_like\_archive}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_is\_url\_like\_archive()}{\_is\_url\_like\_archive()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_a44d8b5da5e6ef0f6e83ad2cae32d96fb} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+is\+\_\+url\+\_\+like\+\_\+archive (\begin{DoxyParamCaption}\item[{}]{url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return whether the URL looks like an archive.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_ac7bdff8947f1c0c85b13d1d73d9068fa}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_match\_vcs\_scheme@{\_match\_vcs\_scheme}}
+\index{\_match\_vcs\_scheme@{\_match\_vcs\_scheme}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_match\_vcs\_scheme()}{\_match\_vcs\_scheme()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_ac7bdff8947f1c0c85b13d1d73d9068fa} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+match\+\_\+vcs\+\_\+scheme (\begin{DoxyParamCaption}\item[{}]{url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Look for VCS schemes in the URL.
+
+Returns the matched VCS scheme, or None if there's no match.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a4276a391aaaebd004f9b58da578d2cf9}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!\_remove\_duplicate\_links@{\_remove\_duplicate\_links}}
+\index{\_remove\_duplicate\_links@{\_remove\_duplicate\_links}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{\_remove\_duplicate\_links()}{\_remove\_duplicate\_links()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_a4276a391aaaebd004f9b58da578d2cf9} 
+pip.\+\_\+internal.\+index.\+collector.\+\_\+remove\+\_\+duplicate\+\_\+links (\begin{DoxyParamCaption}\item[{}]{links}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a list of links, with duplicates removed and ordering preserved.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a37e9346f80d734021376fcb447ed69eb}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!group\_locations@{group\_locations}}
+\index{group\_locations@{group\_locations}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{group\_locations()}{group\_locations()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_a37e9346f80d734021376fcb447ed69eb} 
+pip.\+\_\+internal.\+index.\+collector.\+group\+\_\+locations (\begin{DoxyParamCaption}\item[{}]{locations}{, }\item[{}]{expand\+\_\+dir}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Divide a list of locations into two groups: "files" (archives) and "urls."
+
+:return: A pair of lists (files, urls).
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_acf5b290a7cf6a40d80c45fc0bf69a666}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!parse\_links@{parse\_links}}
+\index{parse\_links@{parse\_links}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{parse\_links()}{parse\_links()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_acf5b290a7cf6a40d80c45fc0bf69a666} 
+pip.\+\_\+internal.\+index.\+collector.\+parse\+\_\+links (\begin{DoxyParamCaption}\item[{}]{page}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse an HTML document, and yield its anchor elements as Link objects.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a825fd6ed85be84d94fe933a39938fa6d}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!with\_cached\_html\_pages@{with\_cached\_html\_pages}}
+\index{with\_cached\_html\_pages@{with\_cached\_html\_pages}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{with\_cached\_html\_pages()}{with\_cached\_html\_pages()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1index_1_1collector_a825fd6ed85be84d94fe933a39938fa6d} 
+pip.\+\_\+internal.\+index.\+collector.\+with\+\_\+cached\+\_\+html\+\_\+pages (\begin{DoxyParamCaption}\item[{}]{fn}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a function that parses an Iterable[Link] from an HTMLPage, cache the
+function's result (keyed by CacheablePageContent), unless the HTMLPage
+`page` has `page.cache_link_parsing == False`.
+\end{DoxyVerb}
+ 

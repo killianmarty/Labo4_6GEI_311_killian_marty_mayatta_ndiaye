@@ -1,0 +1,82 @@
+\doxysection{werkzeug.\+exceptions.\+Too\+Many\+Requests Class Reference}
+\hypertarget{classwerkzeug_1_1exceptions_1_1_too_many_requests}{}\label{classwerkzeug_1_1exceptions_1_1_too_many_requests}\index{werkzeug.exceptions.TooManyRequests@{werkzeug.exceptions.TooManyRequests}}
+Inheritance diagram for werkzeug.\+exceptions.\+Too\+Many\+Requests\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classwerkzeug_1_1exceptions_1_1_too_many_requests}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_too_many_requests_af2ebabd00a30a60a0e1be5369e1c32a3}\label{classwerkzeug_1_1exceptions_1_1_too_many_requests_af2ebabd00a30a60a0e1be5369e1c32a3} 
+int {\bfseries code} = 429
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_too_many_requests_adbd3f54a6c5d30cb6dde8ae45855c902}\label{classwerkzeug_1_1exceptions_1_1_too_many_requests_adbd3f54a6c5d30cb6dde8ae45855c902} 
+str {\bfseries description} = "{}This user has exceeded an allotted request count. Try again later."{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries code} = None
+\item 
+t {\bfseries description} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1___retry_after}{werkzeug.\+exceptions.\+\_\+\+Retry\+After}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1___retry_after_a4d1191c563a5c0a9534489513fc271bf}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\mbox{[}str\mbox{]} description=None, t.\+Optional\mbox{[}"{}Response"{}\mbox{]} response=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}datetime, int\mbox{]}\mbox{]} retry\+\_\+after=None)
+\item 
+t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1___retry_after_a5f6ede86c30d8213ab73124afa8a94f4}{get\+\_\+headers}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798}{name}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aaeabc66be206d8416ce68dd45127459e}{get\+\_\+description}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2d4bdf6b9951d455d40c9f55ba28b41f}{get\+\_\+body}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+"{}Response"{} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0552eb47de6a896d4d242893198e23d2}{get\+\_\+response}} (self, t.\+Optional\mbox{[}t.\+Union\mbox{[}"{}WSGIEnvironment"{}, "{}WSGIRequest"{}\mbox{]}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+t.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aebdfbbad37e22021a48f9235e637d4ab}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1___retry_after}{werkzeug.\+exceptions.\+\_\+\+Retry\+After}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries retry\+\_\+after} = retry\+\_\+after
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries response} = response
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}*429* `Too Many Requests`
+
+The server is limiting the rate at which this user receives
+responses, and this request exceeds that rate. (The server may use
+any convenient method to identify users and their request rates).
+The server may include a "Retry-After" header to indicate how long
+the user should wait before retrying.
+
+:param retry_after: If given, set the ``Retry-After`` header to this
+    value. May be an :class:`int` number of seconds or a
+    :class:`~datetime.datetime`.
+
+.. versionchanged:: 1.0
+    Added ``retry_after`` parameter.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/exceptions.\+py\end{DoxyCompactItemize}

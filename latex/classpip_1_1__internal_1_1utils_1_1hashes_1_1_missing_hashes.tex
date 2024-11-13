@@ -1,0 +1,81 @@
+\doxysection{pip.\+\_\+internal.\+utils.\+hashes.\+Missing\+Hashes Class Reference}
+\hypertarget{classpip_1_1__internal_1_1utils_1_1hashes_1_1_missing_hashes}{}\label{classpip_1_1__internal_1_1utils_1_1hashes_1_1_missing_hashes}\index{pip.\_internal.utils.hashes.MissingHashes@{pip.\_internal.utils.hashes.MissingHashes}}
+Inheritance diagram for pip.\+\_\+internal.\+utils.\+hashes.\+Missing\+Hashes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__internal_1_1utils_1_1hashes_1_1_missing_hashes}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_missing_hashes_ad16ff9064fea1d3462979a44aedd31f2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{pip.\+\_\+internal.\+utils.\+hashes.\+Hashes}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries digest\+\_\+count} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes_acf4d6f14a6b6eb82c02a9e9c4085c526}{is\+\_\+hash\+\_\+allowed}} (self, hash\+\_\+name, hex\+\_\+digest)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes_aad36349aa6d1f4144bb676fccbd63fab}{check\+\_\+against\+\_\+chunks}} (self, chunks)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes_ac724f679c62f613e410520d154327b47}{check\+\_\+against\+\_\+file}} (self, file)
+\item 
+{\bfseries check\+\_\+against\+\_\+path} (self, path)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes_a426ad88a6b473ac7f4f79ed5dd127860}{\+\_\+\+\_\+nonzero\+\_\+\+\_\+}} (self)
+\item 
+{\bfseries \+\_\+\+\_\+bool\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_missing_hashes_a7c13fd77846185830b119e5cf2a47aa8}{\+\_\+raise}} (self, gots)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{pip.\+\_\+internal.\+utils.\+hashes.\+Hashes}}}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{pip.\+\_\+internal.\+utils.\+hashes.\+Hashes}}}
+\begin{DoxyCompactItemize}
+\item 
+dict {\bfseries \+\_\+allowed} = \{\} if hashes is None else hashes
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A workalike for Hashes used when we're missing a hash for a requirement
+
+It computes the actual hash of the requirement and raises a HashMissing
+exception showing it to the user.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1utils_1_1hashes_1_1_missing_hashes_ad16ff9064fea1d3462979a44aedd31f2}\index{pip.\_internal.utils.hashes.MissingHashes@{pip.\_internal.utils.hashes.MissingHashes}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.utils.hashes.MissingHashes@{pip.\_internal.utils.hashes.MissingHashes}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1utils_1_1hashes_1_1_missing_hashes_ad16ff9064fea1d3462979a44aedd31f2} 
+pip.\+\_\+internal.\+utils.\+hashes.\+Missing\+Hashes.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Don't offer the ``hashes`` kwarg.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes_a68a1ed8b4e768fbf95b700cba0253d47}{pip.\+\_\+internal.\+utils.\+hashes.\+Hashes}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1utils_1_1hashes_1_1_missing_hashes_a7c13fd77846185830b119e5cf2a47aa8}\index{pip.\_internal.utils.hashes.MissingHashes@{pip.\_internal.utils.hashes.MissingHashes}!\_raise@{\_raise}}
+\index{\_raise@{\_raise}!pip.\_internal.utils.hashes.MissingHashes@{pip.\_internal.utils.hashes.MissingHashes}}
+\doxysubsubsection{\texorpdfstring{\_raise()}{\_raise()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1utils_1_1hashes_1_1_missing_hashes_a7c13fd77846185830b119e5cf2a47aa8} 
+pip.\+\_\+internal.\+utils.\+hashes.\+Missing\+Hashes.\+\_\+raise (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{gots}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{pip.\+\_\+internal.\+utils.\+hashes.\+Hashes}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/utils/hashes.\+py\end{DoxyCompactItemize}

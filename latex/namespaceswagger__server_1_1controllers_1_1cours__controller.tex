@@ -1,0 +1,93 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage swagger\+\_\+server.\+controllers.\+cours\+\_\+controller}
+\hypertarget{namespaceswagger__server_1_1controllers_1_1cours__controller}{}\label{namespaceswagger__server_1_1controllers_1_1cours__controller}\index{swagger\_server.controllers.cours\_controller@{swagger\_server.controllers.cours\_controller}}
+
+
+Controllers des cours du serveur Flask pour l\textquotesingle{}API de cours.  
+
+
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceswagger__server_1_1controllers_1_1cours__controller_a1241dcc03e451f484fd568ba9ab70777}{cours\+\_\+get}} ()
+\begin{DoxyCompactList}\small\item\em Retourne la liste des cours. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceswagger__server_1_1controllers_1_1cours__controller_a875b2b8be51107d014dd71c37995d7db}{cours\+\_\+id\+\_\+delete}} (id)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de supprimer un cours. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceswagger__server_1_1controllers_1_1cours__controller_afbd673c354f8e6e824300d9093a2034c}{cours\+\_\+id\+\_\+get}} (id, mode=None)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de lire un cours. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceswagger__server_1_1controllers_1_1cours__controller_aec18e33ae79f1137af49c44fc59415bd}{cours\+\_\+id\+\_\+post}} (id)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}ajouter un cours. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Controllers des cours du serveur Flask pour l\textquotesingle{}API de cours. 
+
+\doxysubsection{Documentation des fonctions}
+\Hypertarget{namespaceswagger__server_1_1controllers_1_1cours__controller_a1241dcc03e451f484fd568ba9ab70777}\index{swagger\_server.controllers.cours\_controller@{swagger\_server.controllers.cours\_controller}!cours\_get@{cours\_get}}
+\index{cours\_get@{cours\_get}!swagger\_server.controllers.cours\_controller@{swagger\_server.controllers.cours\_controller}}
+\doxysubsubsection{\texorpdfstring{cours\_get()}{cours\_get()}}
+{\footnotesize\ttfamily \label{namespaceswagger__server_1_1controllers_1_1cours__controller_a1241dcc03e451f484fd568ba9ab70777} 
+swagger\+\_\+server.\+controllers.\+cours\+\_\+controller.\+cours\+\_\+get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Retourne la liste des cours. 
+
+\begin{DoxyReturn}{Renvoie}
+Un objet JSON qui contient la liste de tous les cours. 
+\end{DoxyReturn}
+\Hypertarget{namespaceswagger__server_1_1controllers_1_1cours__controller_a875b2b8be51107d014dd71c37995d7db}\index{swagger\_server.controllers.cours\_controller@{swagger\_server.controllers.cours\_controller}!cours\_id\_delete@{cours\_id\_delete}}
+\index{cours\_id\_delete@{cours\_id\_delete}!swagger\_server.controllers.cours\_controller@{swagger\_server.controllers.cours\_controller}}
+\doxysubsubsection{\texorpdfstring{cours\_id\_delete()}{cours\_id\_delete()}}
+{\footnotesize\ttfamily \label{namespaceswagger__server_1_1controllers_1_1cours__controller_a875b2b8be51107d014dd71c37995d7db} 
+swagger\+\_\+server.\+controllers.\+cours\+\_\+controller.\+cours\+\_\+id\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Cette fonction permet de supprimer un cours. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & L\textquotesingle{}id du cours à supprimer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un message qui indique le résultat de la requête. 
+\end{DoxyReturn}
+\Hypertarget{namespaceswagger__server_1_1controllers_1_1cours__controller_afbd673c354f8e6e824300d9093a2034c}\index{swagger\_server.controllers.cours\_controller@{swagger\_server.controllers.cours\_controller}!cours\_id\_get@{cours\_id\_get}}
+\index{cours\_id\_get@{cours\_id\_get}!swagger\_server.controllers.cours\_controller@{swagger\_server.controllers.cours\_controller}}
+\doxysubsubsection{\texorpdfstring{cours\_id\_get()}{cours\_id\_get()}}
+{\footnotesize\ttfamily \label{namespaceswagger__server_1_1controllers_1_1cours__controller_afbd673c354f8e6e824300d9093a2034c} 
+swagger\+\_\+server.\+controllers.\+cours\+\_\+controller.\+cours\+\_\+id\+\_\+get (\begin{DoxyParamCaption}\item[{}]{id}{, }\item[{}]{mode}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Cette fonction permet de lire un cours. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & L\textquotesingle{}id du cours à lire. \\
+\hline
+{\em mode} & Mode ("{}module"{}/"{}semaine"{}) de regroupement des séances dans le cours. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un objet JSON qui contient le cours. 
+\end{DoxyReturn}
+\Hypertarget{namespaceswagger__server_1_1controllers_1_1cours__controller_aec18e33ae79f1137af49c44fc59415bd}\index{swagger\_server.controllers.cours\_controller@{swagger\_server.controllers.cours\_controller}!cours\_id\_post@{cours\_id\_post}}
+\index{cours\_id\_post@{cours\_id\_post}!swagger\_server.controllers.cours\_controller@{swagger\_server.controllers.cours\_controller}}
+\doxysubsubsection{\texorpdfstring{cours\_id\_post()}{cours\_id\_post()}}
+{\footnotesize\ttfamily \label{namespaceswagger__server_1_1controllers_1_1cours__controller_aec18e33ae79f1137af49c44fc59415bd} 
+swagger\+\_\+server.\+controllers.\+cours\+\_\+controller.\+cours\+\_\+id\+\_\+post (\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Cette fonction permet d\textquotesingle{}ajouter un cours. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & L\textquotesingle{}id du cours à ajouter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un message qui indique le résultat de la requête. 
+\end{DoxyReturn}

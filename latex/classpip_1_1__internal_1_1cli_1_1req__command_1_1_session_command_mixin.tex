@@ -1,0 +1,83 @@
+\doxysection{pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Session\+Command\+Mixin Class Reference}
+\hypertarget{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin}{}\label{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin}\index{pip.\_internal.cli.req\_command.SessionCommandMixin@{pip.\_internal.cli.req\_command.SessionCommandMixin}}
+Inheritance diagram for pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Session\+Command\+Mixin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.964912cm]{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_a1301811e0908cde5f82e00499640a9b9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_a23e0b3740205e2232ec84007089482d0}{get\+\_\+default\+\_\+session}} (self, options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries main\+\_\+context} (self)
+\item 
+{\bfseries enter\+\_\+context} (self, context\+\_\+provider)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_ad5bef4a1c8f8eeb06a45741a0098f981}{\+\_\+get\+\_\+index\+\_\+urls}} (cls, options)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_a0e0c26ae9d2425764a91524cb075e233}\label{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_a0e0c26ae9d2425764a91524cb075e233} 
+{\bfseries \+\_\+build\+\_\+session} (self, options, retries=None, timeout=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_aad78629751b02ff0294b0097aedfc1ec}\label{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_aad78629751b02ff0294b0097aedfc1ec} 
+{\bfseries \+\_\+session} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries \+\_\+in\+\_\+main\+\_\+context} = False
+\item 
+{\bfseries \+\_\+main\+\_\+context} = \mbox{\hyperlink{classpip_1_1__vendor_1_1contextlib2_1_1_exit_stack}{Exit\+Stack}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A class mixin for command classes needing _build_session().
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_a1301811e0908cde5f82e00499640a9b9}\index{pip.\_internal.cli.req\_command.SessionCommandMixin@{pip.\_internal.cli.req\_command.SessionCommandMixin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.cli.req\_command.SessionCommandMixin@{pip.\_internal.cli.req\_command.SessionCommandMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_a1301811e0908cde5f82e00499640a9b9} 
+pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Session\+Command\+Mixin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1command__context_1_1_command_context_mix_in}{pip.\+\_\+internal.\+cli.\+command\+\_\+context.\+Command\+Context\+Mix\+In}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_ad5bef4a1c8f8eeb06a45741a0098f981}\index{pip.\_internal.cli.req\_command.SessionCommandMixin@{pip.\_internal.cli.req\_command.SessionCommandMixin}!\_get\_index\_urls@{\_get\_index\_urls}}
+\index{\_get\_index\_urls@{\_get\_index\_urls}!pip.\_internal.cli.req\_command.SessionCommandMixin@{pip.\_internal.cli.req\_command.SessionCommandMixin}}
+\doxysubsubsection{\texorpdfstring{\_get\_index\_urls()}{\_get\_index\_urls()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_ad5bef4a1c8f8eeb06a45741a0098f981} 
+pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Session\+Command\+Mixin.\+\_\+get\+\_\+index\+\_\+urls (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a list of index urls from user-provided options.\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_a23e0b3740205e2232ec84007089482d0}\index{pip.\_internal.cli.req\_command.SessionCommandMixin@{pip.\_internal.cli.req\_command.SessionCommandMixin}!get\_default\_session@{get\_default\_session}}
+\index{get\_default\_session@{get\_default\_session}!pip.\_internal.cli.req\_command.SessionCommandMixin@{pip.\_internal.cli.req\_command.SessionCommandMixin}}
+\doxysubsubsection{\texorpdfstring{get\_default\_session()}{get\_default\_session()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1req__command_1_1_session_command_mixin_a23e0b3740205e2232ec84007089482d0} 
+pip.\+\_\+internal.\+cli.\+req\+\_\+command.\+Session\+Command\+Mixin.\+get\+\_\+default\+\_\+session (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a default-managed session.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/cli/req\+\_\+command.\+py\end{DoxyCompactItemize}

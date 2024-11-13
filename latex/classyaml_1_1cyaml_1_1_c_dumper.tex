@@ -1,0 +1,204 @@
+\doxysection{yaml.\+cyaml.\+CDumper Class Reference}
+\hypertarget{classyaml_1_1cyaml_1_1_c_dumper}{}\label{classyaml_1_1cyaml_1_1_c_dumper}\index{yaml.cyaml.CDumper@{yaml.cyaml.CDumper}}
+Inheritance diagram for yaml.\+cyaml.\+CDumper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.580645cm]{classyaml_1_1cyaml_1_1_c_dumper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyaml_1_1cyaml_1_1_c_dumper_a1fed22f41e6029b4b67015880c14801b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, stream, default\+\_\+style=None, default\+\_\+flow\+\_\+style=False, canonical=None, indent=None, width=None, allow\+\_\+unicode=None, line\+\_\+break=None, encoding=None, explicit\+\_\+start=None, explicit\+\_\+end=None, version=None, tags=None, sort\+\_\+keys=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1serializer_1_1_serializer}{yaml.\+serializer.\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries open} (self)
+\item 
+{\bfseries close} (self)
+\item 
+{\bfseries serialize} (self, node)
+\item 
+{\bfseries anchor\+\_\+node} (self, node)
+\item 
+{\bfseries generate\+\_\+anchor} (self, node)
+\item 
+{\bfseries serialize\+\_\+node} (self, node, parent, index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_representer}{yaml.\+representer.\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries represent\+\_\+complex} (self, data)
+\item 
+{\bfseries represent\+\_\+tuple} (self, data)
+\item 
+{\bfseries represent\+\_\+name} (self, data)
+\item 
+{\bfseries represent\+\_\+module} (self, data)
+\item 
+{\bfseries represent\+\_\+object} (self, data)
+\item 
+{\bfseries represent\+\_\+ordered\+\_\+dict} (self, data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_safe_representer}{yaml.\+representer.\+Safe\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyaml_1_1representer_1_1_safe_representer_a0c89a03789d54c96bb133637cfe1e18d}{ignore\+\_\+aliases}} (self, data)
+\item 
+{\bfseries represent\+\_\+none} (self, data)
+\item 
+{\bfseries represent\+\_\+str} (self, data)
+\item 
+{\bfseries represent\+\_\+binary} (self, data)
+\item 
+{\bfseries represent\+\_\+bool} (self, data)
+\item 
+{\bfseries represent\+\_\+int} (self, data)
+\item 
+{\bfseries represent\+\_\+float} (self, data)
+\item 
+{\bfseries represent\+\_\+list} (self, data)
+\item 
+{\bfseries represent\+\_\+dict} (self, data)
+\item 
+{\bfseries represent\+\_\+set} (self, data)
+\item 
+{\bfseries represent\+\_\+date} (self, data)
+\item 
+{\bfseries represent\+\_\+datetime} (self, data)
+\item 
+{\bfseries represent\+\_\+yaml\+\_\+object} (self, tag, data, cls, flow\+\_\+style=None)
+\item 
+{\bfseries represent\+\_\+undefined} (self, data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_base_representer}{yaml.\+representer.\+Base\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries represent} (self, data)
+\item 
+{\bfseries represent\+\_\+data} (self, data)
+\item 
+{\bfseries add\+\_\+representer} (cls, data\+\_\+type, representer)
+\item 
+{\bfseries add\+\_\+multi\+\_\+representer} (cls, data\+\_\+type, representer)
+\item 
+{\bfseries represent\+\_\+scalar} (self, tag, value, style=None)
+\item 
+{\bfseries represent\+\_\+sequence} (self, tag, sequence, flow\+\_\+style=None)
+\item 
+{\bfseries represent\+\_\+mapping} (self, tag, mapping, flow\+\_\+style=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classyaml_1_1resolver_1_1_base_resolver}{yaml.\+resolver.\+Base\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries add\+\_\+implicit\+\_\+resolver} (cls, tag, regexp, first)
+\item 
+{\bfseries add\+\_\+path\+\_\+resolver} (cls, tag, path, kind=None)
+\item 
+{\bfseries descend\+\_\+resolver} (self, current\+\_\+node, current\+\_\+index)
+\item 
+{\bfseries ascend\+\_\+resolver} (self)
+\item 
+{\bfseries check\+\_\+resolver\+\_\+prefix} (self, depth, path, kind, current\+\_\+node, current\+\_\+index)
+\item 
+{\bfseries resolve} (self, kind, value, implicit)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1serializer_1_1_serializer}{yaml.\+serializer.\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries use\+\_\+encoding} = encoding
+\item 
+{\bfseries use\+\_\+explicit\+\_\+start} = explicit\+\_\+start
+\item 
+{\bfseries use\+\_\+explicit\+\_\+end} = explicit\+\_\+end
+\item 
+{\bfseries use\+\_\+version} = version
+\item 
+{\bfseries use\+\_\+tags} = tags
+\item 
+dict {\bfseries serialized\+\_\+nodes} = \{\}
+\item 
+dict {\bfseries anchors} = \{\}
+\item 
+int {\bfseries last\+\_\+anchor\+\_\+id} = 0
+\item 
+bool {\bfseries closed} = None
+\item 
+bool {\bfseries serialized\+\_\+nodes} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_base_representer}{yaml.\+representer.\+Base\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries default\+\_\+style} = default\+\_\+style
+\item 
+{\bfseries sort\+\_\+keys} = sort\+\_\+keys
+\item 
+{\bfseries default\+\_\+flow\+\_\+style} = default\+\_\+flow\+\_\+style
+\item 
+dict {\bfseries represented\+\_\+objects} = \{\}
+\item 
+list {\bfseries object\+\_\+keeper} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries alias\+\_\+key} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1resolver_1_1_base_resolver}{yaml.\+resolver.\+Base\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+list {\bfseries resolver\+\_\+exact\+\_\+paths} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries resolver\+\_\+prefix\+\_\+paths} = \mbox{[}$\,$\mbox{]}
+\item 
+list {\bfseries yaml\+\_\+implicit\+\_\+resolvers} = \mbox{[}None\mbox{]}
+\item 
+list {\bfseries yaml\+\_\+path\+\_\+resolvers} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1serializer_1_1_serializer}{yaml.\+serializer.\+Serializer}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries ANCHOR\+\_\+\+TEMPLATE} = \textquotesingle{}id\%03d\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_safe_representer}{yaml.\+representer.\+Safe\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries inf\+\_\+value} = 1e300
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1representer_1_1_base_representer}{yaml.\+representer.\+Base\+Representer}}}
+\begin{DoxyCompactItemize}
+\item 
+dict {\bfseries yaml\+\_\+representers} = \{\}
+\item 
+dict {\bfseries yaml\+\_\+multi\+\_\+representers} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classyaml_1_1resolver_1_1_base_resolver}{yaml.\+resolver.\+Base\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries DEFAULT\+\_\+\+SCALAR\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:str\textquotesingle{}
+\item 
+str {\bfseries DEFAULT\+\_\+\+SEQUENCE\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:seq\textquotesingle{}
+\item 
+str {\bfseries DEFAULT\+\_\+\+MAPPING\+\_\+\+TAG} = \textquotesingle{}tag\+:yaml.\+org,2002\+:map\textquotesingle{}
+\item 
+dict {\bfseries yaml\+\_\+implicit\+\_\+resolvers} = \{\}
+\item 
+dict {\bfseries yaml\+\_\+path\+\_\+resolvers} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classyaml_1_1cyaml_1_1_c_dumper_a1fed22f41e6029b4b67015880c14801b}\index{yaml.cyaml.CDumper@{yaml.cyaml.CDumper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!yaml.cyaml.CDumper@{yaml.cyaml.CDumper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classyaml_1_1cyaml_1_1_c_dumper_a1fed22f41e6029b4b67015880c14801b} 
+yaml.\+cyaml.\+CDumper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{stream}{, }\item[{}]{default\+\_\+style}{ = {\ttfamily None}, }\item[{}]{default\+\_\+flow\+\_\+style}{ = {\ttfamily False}, }\item[{}]{canonical}{ = {\ttfamily None}, }\item[{}]{indent}{ = {\ttfamily None}, }\item[{}]{width}{ = {\ttfamily None}, }\item[{}]{allow\+\_\+unicode}{ = {\ttfamily None}, }\item[{}]{line\+\_\+break}{ = {\ttfamily None}, }\item[{}]{encoding}{ = {\ttfamily None}, }\item[{}]{explicit\+\_\+start}{ = {\ttfamily None}, }\item[{}]{explicit\+\_\+end}{ = {\ttfamily None}, }\item[{}]{version}{ = {\ttfamily None}, }\item[{}]{tags}{ = {\ttfamily None}, }\item[{}]{sort\+\_\+keys}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classyaml_1_1serializer_1_1_serializer}{yaml.\+serializer.\+Serializer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/yaml/cyaml.\+py\end{DoxyCompactItemize}

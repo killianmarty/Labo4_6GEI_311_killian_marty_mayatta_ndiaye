@@ -1,0 +1,110 @@
+\doxysection{werkzeug.\+routing.\+converters.\+Float\+Converter Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_float_converter}{}\label{classwerkzeug_1_1routing_1_1converters_1_1_float_converter}\index{werkzeug.routing.converters.FloatConverter@{werkzeug.routing.converters.FloatConverter}}
+Inheritance diagram for werkzeug.\+routing.\+converters.\+Float\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1routing_1_1converters_1_1_float_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_float_converter_aa77e4cf45411e2ac54a9593f97addb37}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}Map"{} map, t.\+Optional\mbox{[}float\mbox{]} min=None, t.\+Optional\mbox{[}float\mbox{]} max=None, bool signed=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter}{werkzeug.\+routing.\+converters.\+Number\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter_af6ba712c18b9cca9382e69301ffdda1c}{to\+\_\+python}} (self, str value)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter_a3b52ae74cc050d55eed8db418dbff89c}{to\+\_\+url}} (self, t.\+Any value)
+\item 
+str {\bfseries signed\+\_\+regex} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_float_converter_a6ae00be813577ea5653d3abf5a49be99}\label{classwerkzeug_1_1routing_1_1converters_1_1_float_converter_a6ae00be813577ea5653d3abf5a49be99} 
+str {\bfseries regex} = r"{}\textbackslash{}d+\textbackslash{}.\textbackslash{}d+"{}
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_float_converter_a9ec69fd6398361d0ddcd4471ade87645}\label{classwerkzeug_1_1routing_1_1converters_1_1_float_converter_a9ec69fd6398361d0ddcd4471ade87645} 
+{\bfseries num\+\_\+convert} = float
+\item 
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_float_converter_a12cbcca85337fccd3627b066ca370078}\label{classwerkzeug_1_1routing_1_1converters_1_1_float_converter_a12cbcca85337fccd3627b066ca370078} 
+bool {\bfseries part\+\_\+isolating} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter}{werkzeug.\+routing.\+converters.\+Number\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries weight} = 50
+\item 
+t {\bfseries num\+\_\+convert} = int
+\item 
+bool {\bfseries part\+\_\+isolating} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries regex} = "{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}/\mbox{]}+"{}
+\item 
+int {\bfseries weight} = 100
+\item 
+bool {\bfseries part\+\_\+isolating} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter}{werkzeug.\+routing.\+converters.\+Number\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries regex} = self.\+signed\+\_\+regex
+\item 
+{\bfseries fixed\+\_\+digits} = fixed\+\_\+digits
+\item 
+{\bfseries min} = min
+\item 
+{\bfseries max} = max
+\item 
+{\bfseries signed} = signed
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries map} = map
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This converter only accepts floating point values::
+
+    Rule("/probability/<float:probability>")
+
+By default it only accepts unsigned, positive values. The ``signed``
+parameter will enable signed, negative values. ::
+
+    Rule("/offset/<float(signed=True):offset>")
+
+:param map: The :class:`Map`.
+:param min: The minimal value.
+:param max: The maximal value.
+:param signed: Allow signed (negative) values.
+
+.. versionadded:: 0.15
+    The ``signed`` parameter.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_float_converter_aa77e4cf45411e2ac54a9593f97addb37}\index{werkzeug.routing.converters.FloatConverter@{werkzeug.routing.converters.FloatConverter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.routing.converters.FloatConverter@{werkzeug.routing.converters.FloatConverter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1converters_1_1_float_converter_aa77e4cf45411e2ac54a9593f97addb37} 
+ None werkzeug.\+routing.\+converters.\+Float\+Converter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Map"{}}]{map}{, }\item[{t.\+Optional\mbox{[}float\mbox{]} }]{min}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}float\mbox{]} }]{max}{ = {\ttfamily None}, }\item[{bool }]{signed}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_number_converter}{werkzeug.\+routing.\+converters.\+Number\+Converter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/routing/converters.\+py\end{DoxyCompactItemize}

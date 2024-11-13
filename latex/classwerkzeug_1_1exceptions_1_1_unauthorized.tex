@@ -1,0 +1,148 @@
+\doxysection{werkzeug.\+exceptions.\+Unauthorized Class Reference}
+\hypertarget{classwerkzeug_1_1exceptions_1_1_unauthorized}{}\label{classwerkzeug_1_1exceptions_1_1_unauthorized}\index{werkzeug.exceptions.Unauthorized@{werkzeug.exceptions.Unauthorized}}
+Inheritance diagram for werkzeug.\+exceptions.\+Unauthorized\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classwerkzeug_1_1exceptions_1_1_unauthorized}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_unauthorized_a2979e8ba3dceb1013f7d049d662fab97}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\mbox{[}str\mbox{]} description=None, t.\+Optional\mbox{[}"{}Response"{}\mbox{]} response=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}"{}WWWAuthenticate"{}, t.\+Iterable\mbox{[}"{}WWWAuthenticate"{}\mbox{]}\mbox{]}\mbox{]} www\+\_\+authenticate=None)
+\item 
+t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_unauthorized_a478f96506eee3557a72e69b2977ac83e}{get\+\_\+headers}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798}{name}} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aaeabc66be206d8416ce68dd45127459e}{get\+\_\+description}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2d4bdf6b9951d455d40c9f55ba28b41f}{get\+\_\+body}} (self, t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+"{}Response"{} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0552eb47de6a896d4d242893198e23d2}{get\+\_\+response}} (self, t.\+Optional\mbox{[}t.\+Union\mbox{[}"{}WSGIEnvironment"{}, "{}WSGIRequest"{}\mbox{]}\mbox{]} environ=None, t.\+Optional\mbox{[}dict\mbox{]} scope=None)
+\item 
+t.\+Iterable\mbox{[}bytes\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_aebdfbbad37e22021a48f9235e637d4ab}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}WSGIEnvironment"{} environ, "{}Start\+Response"{} start\+\_\+response)
+\item 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_unauthorized_a79ffa6396eb74043e1b6fa5c752898b0}\label{classwerkzeug_1_1exceptions_1_1_unauthorized_a79ffa6396eb74043e1b6fa5c752898b0} 
+{\bfseries www\+\_\+authenticate} = www\+\_\+authenticate
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries response} = response
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_unauthorized_ab05fbff1e185dd553ffe708469e84abd}\label{classwerkzeug_1_1exceptions_1_1_unauthorized_ab05fbff1e185dd553ffe708469e84abd} 
+int {\bfseries code} = 401
+\item 
+tuple \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_unauthorized_a0e03d723464a2709e01fb1cecf0131a4}{description}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+t {\bfseries code} = None
+\item 
+t {\bfseries description} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}*401* ``Unauthorized``
+
+Raise if the user is not authorized to access a resource.
+
+The ``www_authenticate`` argument should be used to set the
+``WWW-Authenticate`` header. This is used for HTTP basic auth and
+other schemes. Use :class:`~werkzeug.datastructures.WWWAuthenticate`
+to create correctly formatted values. Strictly speaking a 401
+response is invalid if it doesn't provide at least one value for
+this header, although real clients typically don't care.
+
+:param description: Override the default message used for the body
+    of the response.
+:param www-authenticate: A single value, or list of values, for the
+    WWW-Authenticate header(s).
+
+.. versionchanged:: 2.0
+    Serialize multiple ``www_authenticate`` items into multiple
+    ``WWW-Authenticate`` headers, rather than joining them
+    into a single value, for better interoperability.
+
+.. versionchanged:: 0.15.3
+    If the ``www_authenticate`` argument is not set, the
+    ``WWW-Authenticate`` header is not set.
+
+.. versionchanged:: 0.15.3
+    The ``response`` argument was restored.
+
+.. versionchanged:: 0.15.1
+    ``description`` was moved back as the first argument, restoring
+     its previous position.
+
+.. versionchanged:: 0.15.0
+    ``www_authenticate`` was added as the first argument, ahead of
+    ``description``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_unauthorized_a2979e8ba3dceb1013f7d049d662fab97}\index{werkzeug.exceptions.Unauthorized@{werkzeug.exceptions.Unauthorized}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.exceptions.Unauthorized@{werkzeug.exceptions.Unauthorized}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_unauthorized_a2979e8ba3dceb1013f7d049d662fab97} 
+ None werkzeug.\+exceptions.\+Unauthorized.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}str\mbox{]} }]{description}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}"{}Response"{}\mbox{]} }]{response}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}             t.\+Union\mbox{[}"{}WWWAuthenticate"{}, t.\+Iterable\mbox{[}"{}WWWAuthenticate"{}\mbox{]}\mbox{]}         \mbox{]} }]{www\+\_\+authenticate}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_unauthorized_a478f96506eee3557a72e69b2977ac83e}\index{werkzeug.exceptions.Unauthorized@{werkzeug.exceptions.Unauthorized}!get\_headers@{get\_headers}}
+\index{get\_headers@{get\_headers}!werkzeug.exceptions.Unauthorized@{werkzeug.exceptions.Unauthorized}}
+\doxysubsubsection{\texorpdfstring{get\_headers()}{get\_headers()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_unauthorized_a478f96506eee3557a72e69b2977ac83e} 
+ t.\+List\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]} werkzeug.\+exceptions.\+Unauthorized.\+get\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}"{}WSGIEnvironment"{}\mbox{]} }]{environ}{ = {\ttfamily None}, }\item[{t.\+Optional\mbox{[}dict\mbox{]} }]{scope}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a list of headers.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_afbcf1071c68f1c81ba64b4e08b968893}{werkzeug.\+exceptions.\+HTTPException}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_unauthorized_a0e03d723464a2709e01fb1cecf0131a4}\index{werkzeug.exceptions.Unauthorized@{werkzeug.exceptions.Unauthorized}!description@{description}}
+\index{description@{description}!werkzeug.exceptions.Unauthorized@{werkzeug.exceptions.Unauthorized}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_unauthorized_a0e03d723464a2709e01fb1cecf0131a4} 
+tuple werkzeug.\+exceptions.\+Unauthorized.\+description\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}The\ server\ could\ not\ verify\ that\ you\ are\ authorized\ to\ access"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ the\ URL\ requested.\ You\ either\ supplied\ the\ wrong\ credentials"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ (e.g.\ a\ bad\ password),\ or\ your\ browser\ doesn't\ understand"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ how\ to\ supply\ the\ credentials\ required."{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/exceptions.\+py\end{DoxyCompactItemize}

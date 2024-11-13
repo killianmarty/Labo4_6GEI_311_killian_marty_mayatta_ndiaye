@@ -1,0 +1,92 @@
+\doxysection{pip.\+\_\+internal.\+cache.\+Ephem\+Wheel\+Cache Class Reference}
+\hypertarget{classpip_1_1__internal_1_1cache_1_1_ephem_wheel_cache}{}\label{classpip_1_1__internal_1_1cache_1_1_ephem_wheel_cache}\index{pip.\_internal.cache.EphemWheelCache@{pip.\_internal.cache.EphemWheelCache}}
+Inheritance diagram for pip.\+\_\+internal.\+cache.\+Ephem\+Wheel\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpip_1_1__internal_1_1cache_1_1_ephem_wheel_cache}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_ephem_wheel_cache_a29ccb426cd55aa85d889a5222e434651}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, format\+\_\+control)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache}{pip.\+\_\+internal.\+cache.\+Simple\+Wheel\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_a0a520bbbaf740599ea7989ef82275e4f}{get\+\_\+path\+\_\+for\+\_\+link\+\_\+legacy}} (self, link)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_a515560c2af9a0b02991f428f20e8138e}{get\+\_\+path\+\_\+for\+\_\+link}} (self, link)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_abdffbd1ed757d3c60f72e3cd0182531a}{get}} (self, link, package\+\_\+name, supported\+\_\+tags)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache}{pip.\+\_\+internal.\+cache.\+Cache}}}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_ephem_wheel_cache_a51ab60cae03cbb7feaf985d0feaab7d5}{\+\_\+temp\+\_\+dir}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache}{pip.\+\_\+internal.\+cache.\+Simple\+Wheel\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries cache\+\_\+dir} = self.\+\_\+get\+\_\+cache\+\_\+path\+\_\+parts(link)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache}{pip.\+\_\+internal.\+cache.\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries cache\+\_\+dir} = cache\+\_\+dir or None
+\item 
+{\bfseries format\+\_\+control} = format\+\_\+control
+\item 
+{\bfseries allowed\+\_\+formats} = allowed\+\_\+formats
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache}{pip.\+\_\+internal.\+cache.\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache_ad56a823a1c70223fc96e2bc670866963}{\+\_\+get\+\_\+cache\+\_\+path\+\_\+parts\+\_\+legacy}} (self, link)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache_aba44a58522ef7227b1c6d7b241d4847a}{\+\_\+get\+\_\+cache\+\_\+path\+\_\+parts}} (self, link)
+\item 
+{\bfseries \+\_\+get\+\_\+candidates} (self, link, canonical\+\_\+package\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A SimpleWheelCache that creates it's own temporary cache directory
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cache_1_1_ephem_wheel_cache_a29ccb426cd55aa85d889a5222e434651}\index{pip.\_internal.cache.EphemWheelCache@{pip.\_internal.cache.EphemWheelCache}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.cache.EphemWheelCache@{pip.\_internal.cache.EphemWheelCache}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cache_1_1_ephem_wheel_cache_a29ccb426cd55aa85d889a5222e434651} 
+pip.\+\_\+internal.\+cache.\+Ephem\+Wheel\+Cache.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{format\+\_\+control}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache}{pip.\+\_\+internal.\+cache.\+Simple\+Wheel\+Cache}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cache_1_1_ephem_wheel_cache_a51ab60cae03cbb7feaf985d0feaab7d5}\index{pip.\_internal.cache.EphemWheelCache@{pip.\_internal.cache.EphemWheelCache}!\_temp\_dir@{\_temp\_dir}}
+\index{\_temp\_dir@{\_temp\_dir}!pip.\_internal.cache.EphemWheelCache@{pip.\_internal.cache.EphemWheelCache}}
+\doxysubsubsection{\texorpdfstring{\_temp\_dir}{\_temp\_dir}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cache_1_1_ephem_wheel_cache_a51ab60cae03cbb7feaf985d0feaab7d5} 
+pip.\+\_\+internal.\+cache.\+Ephem\+Wheel\+Cache.\+\_\+temp\+\_\+dir\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ TempDirectory(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ kind=tempdir\_kinds.EPHEM\_WHEEL\_CACHE,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ globally\_managed=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/cache.\+py\end{DoxyCompactItemize}

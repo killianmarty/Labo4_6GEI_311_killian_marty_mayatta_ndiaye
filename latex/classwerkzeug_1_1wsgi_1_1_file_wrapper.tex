@@ -1,0 +1,59 @@
+\doxysection{werkzeug.\+wsgi.\+File\+Wrapper Class Reference}
+\hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper}{}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_affed402a9e43e108396f6f4ddd96e113}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_affed402a9e43e108396f6f4ddd96e113} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+IO\mbox{[}bytes\mbox{]} file, int buffer\+\_\+size=8192)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_a1c50a8fe925b5e42585751372127b949}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_a1c50a8fe925b5e42585751372127b949} 
+None {\bfseries close} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_ab3797b34450355d727346bf300beefe9}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_ab3797b34450355d727346bf300beefe9} 
+bool {\bfseries seekable} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_aad81ad5b38743625166a7b68fdb57267}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_aad81ad5b38743625166a7b68fdb57267} 
+None {\bfseries seek} (self, \texorpdfstring{$\ast$}{*}t.\+Any args)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_ab9507b88f3ff9a5001d53fb81914b06b}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_ab9507b88f3ff9a5001d53fb81914b06b} 
+t.\+Optional\mbox{[}int\mbox{]} {\bfseries tell} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_a0e2c8a484412e91ad5eff6a3d6b1b478}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_a0e2c8a484412e91ad5eff6a3d6b1b478} 
+"{}File\+Wrapper"{} {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_ac1fbb9bd51ef2ae4a874f56d64717cfe}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_ac1fbb9bd51ef2ae4a874f56d64717cfe} 
+bytes {\bfseries \+\_\+\+\_\+next\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_a472cefc89141a6a4fb5dc398f9171904}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_a472cefc89141a6a4fb5dc398f9171904} 
+{\bfseries file} = file
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_a3d4a89d4ff5ba3be76fa218f5bb845fb}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_a3d4a89d4ff5ba3be76fa218f5bb845fb} 
+{\bfseries buffer\+\_\+size} = buffer\+\_\+size
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class can be used to convert a :class:`file`-like object into
+an iterable.  It yields `buffer_size` blocks until the file is fully
+read.
+
+You should not use this class directly but rather use the
+:func:`wrap_file` function that uses the WSGI server's file wrapper
+support if it's available.
+
+.. versionadded:: 0.5
+
+If you're using this object together with a :class:`Response` you have
+to use the `direct_passthrough` mode.
+
+:param file: a :class:`file`-like object with a :meth:`~file.read` method.
+:param buffer_size: number of bytes for one iteration.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/wsgi.\+py\end{DoxyCompactItemize}

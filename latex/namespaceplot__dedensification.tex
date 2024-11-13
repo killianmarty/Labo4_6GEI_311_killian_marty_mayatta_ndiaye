@@ -1,0 +1,113 @@
+\doxysection{plot\+\_\+dedensification Namespace Reference}
+\hypertarget{namespaceplot__dedensification}{}\label{namespaceplot__dedensification}\index{plot\_dedensification@{plot\_dedensification}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__dedensification_a3df981aa4bd3d49d35f4da2cef3f77fd}\label{namespaceplot__dedensification_a3df981aa4bd3d49d35f4da2cef3f77fd} 
+{\bfseries original\+\_\+graph} = nx.\+Di\+Graph()
+\item 
+\Hypertarget{namespaceplot__dedensification_adbdba43581d1d212999398cf288fa68d}\label{namespaceplot__dedensification_adbdba43581d1d212999398cf288fa68d} 
+list {\bfseries white\+\_\+nodes} = \mbox{[}"{}1"{}, "{}2"{}, "{}3"{}, "{}4"{}, "{}5"{}, "{}6"{}\mbox{]}
+\item 
+\Hypertarget{namespaceplot__dedensification_a8a5c259bdcf1604100371bf0727b5037}\label{namespaceplot__dedensification_a8a5c259bdcf1604100371bf0727b5037} 
+list {\bfseries red\+\_\+nodes} = \mbox{[}"{}A"{}, "{}B"{}, "{}C"{}\mbox{]}
+\item 
+\Hypertarget{namespaceplot__dedensification_a5171be596a4ed5e015d5321b1f2c4827}\label{namespaceplot__dedensification_a5171be596a4ed5e015d5321b1f2c4827} 
+list {\bfseries node\+\_\+sizes} = \mbox{[}250 for node in white\+\_\+nodes + red\+\_\+nodes\mbox{]}
+\item 
+\Hypertarget{namespaceplot__dedensification_a329b77cdec5501690085c1fc80546583}\label{namespaceplot__dedensification_a329b77cdec5501690085c1fc80546583} 
+list {\bfseries node\+\_\+colors} = \mbox{[}"{}white"{} for n in white\+\_\+nodes\mbox{]} + \mbox{[}"{}red"{} for n in red\+\_\+nodes\mbox{]}
+\item 
+\Hypertarget{namespaceplot__dedensification_a4a9b82916793aa12636c09d3460a6c02}\label{namespaceplot__dedensification_a4a9b82916793aa12636c09d3460a6c02} 
+dict {\bfseries base\+\_\+options} = \{"{}with\+\_\+labels"{}\+: True, "{}edgecolors"{}\+: "{}black"{}\}
+\item 
+dict \mbox{\hyperlink{namespaceplot__dedensification_a1c0b3456a75adce64f746c13e8279c1b}{pos}}
+\item 
+\Hypertarget{namespaceplot__dedensification_af97cf6bbfe0e1b03f4b19afbad29853a}\label{namespaceplot__dedensification_af97cf6bbfe0e1b03f4b19afbad29853a} 
+{\bfseries ax1} = plt.\+subplot(1, 2, 1)
+\item 
+\Hypertarget{namespaceplot__dedensification_aa6c742801ba790cacf459e2c1ecf6aee}\label{namespaceplot__dedensification_aa6c742801ba790cacf459e2c1ecf6aee} 
+{\bfseries node\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__dedensification_a8c99d9ae42527315c10640205165deda}\label{namespaceplot__dedensification_a8c99d9ae42527315c10640205165deda} 
+{\bfseries nonexp\+\_\+graph}
+\item 
+\Hypertarget{namespaceplot__dedensification_a1aa52d25223e99e93164fac43cf3cc22}\label{namespaceplot__dedensification_a1aa52d25223e99e93164fac43cf3cc22} 
+{\bfseries compression\+\_\+nodes}
+\item 
+\Hypertarget{namespaceplot__dedensification_af6de8b8af2acb404805f1a8bc56c487c}\label{namespaceplot__dedensification_af6de8b8af2acb404805f1a8bc56c487c} 
+{\bfseries threshold}
+\item 
+\Hypertarget{namespaceplot__dedensification_a7ceb23d776226953226bfe3b12a1f862}\label{namespaceplot__dedensification_a7ceb23d776226953226bfe3b12a1f862} 
+{\bfseries copy}
+\item 
+\Hypertarget{namespaceplot__dedensification_a4c8ccda2a357e16ac96b130b46d5238b}\label{namespaceplot__dedensification_a4c8ccda2a357e16ac96b130b46d5238b} 
+{\bfseries nonexp\+\_\+node\+\_\+colors} = list(node\+\_\+colors)
+\item 
+\Hypertarget{namespaceplot__dedensification_a179c4594be91baa490e6b671b6a1441f}\label{namespaceplot__dedensification_a179c4594be91baa490e6b671b6a1441f} 
+{\bfseries nonexp\+\_\+node\+\_\+sizes} = list(node\+\_\+sizes)
+\item 
+dict \mbox{\hyperlink{namespaceplot__dedensification_adf67a3b0ae29ee8b82e4092d141c8340}{nonexp\+\_\+pos}}
+\item 
+\Hypertarget{namespaceplot__dedensification_aa6eb9c095b9848d6cd46f8f825fd5f28}\label{namespaceplot__dedensification_aa6eb9c095b9848d6cd46f8f825fd5f28} 
+{\bfseries c\+\_\+nodes} = list(compression\+\_\+nodes)
+\item 
+\Hypertarget{namespaceplot__dedensification_a1aade74002ae10d2742f68193a854f30}\label{namespaceplot__dedensification_a1aade74002ae10d2742f68193a854f30} 
+{\bfseries node\+\_\+size}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}===============
+Dedensification
+===============
+
+Examples of dedensification of a graph.  Dedensification retains the structural
+pattern of the original graph and will only add compressor nodes when doing so
+would result in fewer edges in the compressed graph.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceplot__dedensification_adf67a3b0ae29ee8b82e4092d141c8340}\index{plot\_dedensification@{plot\_dedensification}!nonexp\_pos@{nonexp\_pos}}
+\index{nonexp\_pos@{nonexp\_pos}!plot\_dedensification@{plot\_dedensification}}
+\doxysubsubsection{\texorpdfstring{nonexp\_pos}{nonexp\_pos}}
+{\footnotesize\ttfamily \label{namespaceplot__dedensification_adf67a3b0ae29ee8b82e4092d141c8340} 
+dict plot\+\_\+dedensification.\+nonexp\+\_\+pos}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}5"{}}:\ (0,\ 0),}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}B"{}}:\ (0,\ 2),}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}1"{}}:\ (0,\ 3),}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}6"{}}:\ (1,\ 0.75),}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}3"{}}:\ (1.5,\ 1.5),}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}A"{}}:\ (2,\ 0),}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}C"{}}:\ (2,\ 3),}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}4"{}}:\ (3,\ 1.5),}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}2"{}}:\ (3,\ 2.5),}
+\DoxyCodeLine{00011\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceplot__dedensification_a1c0b3456a75adce64f746c13e8279c1b}\index{plot\_dedensification@{plot\_dedensification}!pos@{pos}}
+\index{pos@{pos}!plot\_dedensification@{plot\_dedensification}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily \label{namespaceplot__dedensification_a1c0b3456a75adce64f746c13e8279c1b} 
+plot\+\_\+dedensification.\+pos}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}3"{}}:\ (0,\ 1),}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}2"{}}:\ (0,\ 2),}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}1"{}}:\ (0,\ 3),}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}6"{}}:\ (1,\ 0),}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}A"{}}:\ (1,\ 1),}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}B"{}}:\ (1,\ 2),}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}C"{}}:\ (1,\ 3),}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}4"{}}:\ (2,\ 3),}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}5"{}}:\ (2,\ 1),}
+\DoxyCodeLine{00011\ \}}
+
+\end{DoxyCode}

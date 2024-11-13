@@ -1,0 +1,511 @@
+\doxysection{werkzeug.\+test.\+Environ\+Builder Class Reference}
+\hypertarget{classwerkzeug_1_1test_1_1_environ_builder}{}\label{classwerkzeug_1_1test_1_1_environ_builder}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+Inheritance diagram for werkzeug.\+test.\+Environ\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1test_1_1_environ_builder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a95cea10994a0031bd40021d6f462235d}\label{classwerkzeug_1_1test_1_1_environ_builder_a95cea10994a0031bd40021d6f462235d} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str path="{}/"{}, t.\+Optional\mbox{[}str\mbox{]} base\+\_\+url=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}t.\+Mapping\mbox{[}str, str\mbox{]}, str\mbox{]}\mbox{]} query\+\_\+string=None, str method="{}GET"{}, t.\+Optional\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}\mbox{]} input\+\_\+stream=None, t.\+Optional\mbox{[}str\mbox{]} content\+\_\+type=None, t.\+Optional\mbox{[}int\mbox{]} content\+\_\+length=None, t.\+Optional\mbox{[}t.\+IO\mbox{[}str\mbox{]}\mbox{]} errors\+\_\+stream=None, bool multithread=False, bool multiprocess=False, bool run\+\_\+once=False, t.\+Optional\mbox{[}t.\+Union\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_headers}{Headers}}, t.\+Iterable\mbox{[}t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]}\mbox{]} headers=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}, str, bytes, t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}\mbox{]}\mbox{]} data=None, t.\+Optional\mbox{[}t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}\mbox{]} environ\+\_\+base=None, t.\+Optional\mbox{[}t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}\mbox{]} environ\+\_\+overrides=None, str charset="{}utf-\/8"{}, t.\+Optional\mbox{[}str\mbox{]} mimetype=None, t.\+Optional\mbox{[}t.\+Mapping\mbox{[}str, t.\+Any\mbox{]}\mbox{]} json=None, t.\+Optional\mbox{[}t.\+Union\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization}{Authorization}}, t.\+Tuple\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} auth=None)
+\item 
+"{}Environ\+Builder"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a2c0fe641ebd531ae43e44162c399ccb2}{from\+\_\+environ}} (cls, "{}WSGIEnvironment"{} environ, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a639761854389f1a30d3e1227284b32fd}{base\+\_\+url}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_adb391e479dcde902fb2ab4df86383b42}\label{classwerkzeug_1_1test_1_1_environ_builder_adb391e479dcde902fb2ab4df86383b42} 
+None {\bfseries base\+\_\+url} (self, t.\+Optional\mbox{[}str\mbox{]} value)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_ae8f6872525c6d189af927ca08a75bba4}{content\+\_\+type}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a3461f1f924e4aa017a5205e0e061e515}\label{classwerkzeug_1_1test_1_1_environ_builder_a3461f1f924e4aa017a5205e0e061e515} 
+None {\bfseries content\+\_\+type} (self, t.\+Optional\mbox{[}str\mbox{]} value)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a8cf320ad289804785b90bee432a7b348}{mimetype}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a6547444c0007bc6b9994ce977956f6f6}\label{classwerkzeug_1_1test_1_1_environ_builder_a6547444c0007bc6b9994ce977956f6f6} 
+None {\bfseries mimetype} (self, str value)
+\item 
+t.\+Mapping\mbox{[}str, str\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a170e4d689d88843b6872790cb25930c0}{mimetype\+\_\+params}} (self)
+\item 
+t.\+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_acea0f4c8625836e392e9e6fbc5c9f049}{content\+\_\+length}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ad801a41fad1ea017202a23aaa2d386bf}\label{classwerkzeug_1_1test_1_1_environ_builder_ad801a41fad1ea017202a23aaa2d386bf} 
+None {\bfseries content\+\_\+length} (self, t.\+Optional\mbox{[}int\mbox{]} value)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_aa2a204e6e45924262f045110adc89527}{form}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a1c57c813afa27a48d4d46a1ec3cbdb33}\label{classwerkzeug_1_1test_1_1_environ_builder_a1c57c813afa27a48d4d46a1ec3cbdb33} 
+None {\bfseries form} (self, \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}} value)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_file_multi_dict}{File\+Multi\+Dict}} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_acd55ff1babb4695112894f18876ac057}{files}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a8b3f3d74d497e8a2dda9218175f8ce9e}\label{classwerkzeug_1_1test_1_1_environ_builder_a8b3f3d74d497e8a2dda9218175f8ce9e} 
+None {\bfseries files} (self, \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_file_multi_dict}{File\+Multi\+Dict}} value)
+\item 
+t.\+Optional\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}\mbox{]} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_ac50ddc4268688cd43e18cdd6732c66e1}{input\+\_\+stream}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_aed3a4f9f023eec8938b15cbf8374e34b}\label{classwerkzeug_1_1test_1_1_environ_builder_aed3a4f9f023eec8938b15cbf8374e34b} 
+None {\bfseries input\+\_\+stream} (self, t.\+Optional\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}\mbox{]} value)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_aba928b02da41c275b5e061b7b4c4ab42}{query\+\_\+string}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ae958edfc76f29ed19f57726fe587c047}\label{classwerkzeug_1_1test_1_1_environ_builder_ae958edfc76f29ed19f57726fe587c047} 
+None {\bfseries query\+\_\+string} (self, t.\+Optional\mbox{[}str\mbox{]} value)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a53d01b04600bef3d143d00cbdffb4a88}{args}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a23e6fb0a046268d51ccd473b36c64b10}\label{classwerkzeug_1_1test_1_1_environ_builder_a23e6fb0a046268d51ccd473b36c64b10} 
+None {\bfseries args} (self, t.\+Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}}\mbox{]} value)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a635a2f34db063cda352749a0433ca634}{server\+\_\+name}} (self)
+\item 
+int \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a703043a48a7d35c7ba56e822f1d8e528}{server\+\_\+port}} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_acfce7558c16c1fa9d4ec731fbf4d8c96}\label{classwerkzeug_1_1test_1_1_environ_builder_acfce7558c16c1fa9d4ec731fbf4d8c96} 
+None {\bfseries \+\_\+\+\_\+del\+\_\+\+\_\+} (self)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a051b516d74a5ddf3b13bfeee991cf58d}{close}} (self)
+\item 
+"{}WSGIEnvironment"{} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_aa6ea13c1de03f4478d2b52891f0e946c}{get\+\_\+environ}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}} \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a986fb799e016893becd8ce9b9dc6635f}{get\+\_\+request}} (self, t.\+Optional\mbox{[}t.\+Type\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}\mbox{]}\mbox{]} cls=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_acf0c079480c4fe6385b72328faf613e6}\label{classwerkzeug_1_1test_1_1_environ_builder_acf0c079480c4fe6385b72328faf613e6} 
+{\bfseries charset} = charset
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ac2a16c4210176747db55ec0599e54999}\label{classwerkzeug_1_1test_1_1_environ_builder_ac2a16c4210176747db55ec0599e54999} 
+{\bfseries path} = iri\+\_\+to\+\_\+uri(request\+\_\+uri.\+path)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_aa779ee28ac1102ad34c870cc891aaac1}\label{classwerkzeug_1_1test_1_1_environ_builder_aa779ee28ac1102ad34c870cc891aaac1} 
+{\bfseries request\+\_\+uri} = path
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a4ed796b28b240c8906b19dceabd68cf7}\label{classwerkzeug_1_1test_1_1_environ_builder_a4ed796b28b240c8906b19dceabd68cf7} 
+str {\bfseries base\+\_\+url} = base\+\_\+url
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a28f6402c69c05572283f0bb81f29fb16}\label{classwerkzeug_1_1test_1_1_environ_builder_a28f6402c69c05572283f0bb81f29fb16} 
+str {\bfseries query\+\_\+string} = query\+\_\+string
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ac2a82e2af00a82ff008c42bd105ce7cc}\label{classwerkzeug_1_1test_1_1_environ_builder_ac2a82e2af00a82ff008c42bd105ce7cc} 
+str {\bfseries args} = query\+\_\+string
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a212079ca3badf219b6229a9b802af2f5}\label{classwerkzeug_1_1test_1_1_environ_builder_a212079ca3badf219b6229a9b802af2f5} 
+{\bfseries method} = method
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_acb2d724814ad482170b6288c0e198cf6}\label{classwerkzeug_1_1test_1_1_environ_builder_acb2d724814ad482170b6288c0e198cf6} 
+{\bfseries headers} = headers
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a1cfd0b1b531ed30dcc9ecb462559e15e}\label{classwerkzeug_1_1test_1_1_environ_builder_a1cfd0b1b531ed30dcc9ecb462559e15e} 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries content\+\_\+type} = content\+\_\+type
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a1d3661b30ef057795a3d09f6dc46a2d5}\label{classwerkzeug_1_1test_1_1_environ_builder_a1d3661b30ef057795a3d09f6dc46a2d5} 
+{\bfseries errors\+\_\+stream} = errors\+\_\+stream
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a155c776430826bbe3f82766a8797d32e}\label{classwerkzeug_1_1test_1_1_environ_builder_a155c776430826bbe3f82766a8797d32e} 
+{\bfseries multithread} = multithread
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_af5bf547724238144cfc6cd5dcacf9ab3}\label{classwerkzeug_1_1test_1_1_environ_builder_af5bf547724238144cfc6cd5dcacf9ab3} 
+{\bfseries multiprocess} = multiprocess
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a79f640fc7aa870792ea2e1cf98a16aec}\label{classwerkzeug_1_1test_1_1_environ_builder_a79f640fc7aa870792ea2e1cf98a16aec} 
+{\bfseries run\+\_\+once} = run\+\_\+once
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a1291d08655b3cf4a395c7cd3194c5083}\label{classwerkzeug_1_1test_1_1_environ_builder_a1291d08655b3cf4a395c7cd3194c5083} 
+{\bfseries environ\+\_\+base} = environ\+\_\+base
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_aee3669ff3176354ef52cd885c37a27d9}\label{classwerkzeug_1_1test_1_1_environ_builder_aee3669ff3176354ef52cd885c37a27d9} 
+{\bfseries environ\+\_\+overrides} = environ\+\_\+overrides
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a3c8127d29d26a65eae206a813fb578b5}\label{classwerkzeug_1_1test_1_1_environ_builder_a3c8127d29d26a65eae206a813fb578b5} 
+t.\+Optional\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}\mbox{]} {\bfseries input\+\_\+stream} = input\+\_\+stream
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ae374e101a4911bfcfaf41076ad7fa6d6}\label{classwerkzeug_1_1test_1_1_environ_builder_ae374e101a4911bfcfaf41076ad7fa6d6} 
+t.\+Optional\mbox{[}int\mbox{]} {\bfseries content\+\_\+length} = content\+\_\+length
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_acd49364a99cfbec2f5a7ad56028bb994}\label{classwerkzeug_1_1test_1_1_environ_builder_acd49364a99cfbec2f5a7ad56028bb994} 
+bool {\bfseries closed} = False
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a753c8daa95655383d94ed3a8fe996c58}\label{classwerkzeug_1_1test_1_1_environ_builder_a753c8daa95655383d94ed3a8fe996c58} 
+str {\bfseries content\+\_\+type} = data.\+read()
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a8dc92e3b250acee3260639729e6b7710}\label{classwerkzeug_1_1test_1_1_environ_builder_a8dc92e3b250acee3260639729e6b7710} 
+t.\+Optional\mbox{[}str\mbox{]} {\bfseries mimetype} = mimetype
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a34a08f7c049b5c7e197935d2bab4e412}\label{classwerkzeug_1_1test_1_1_environ_builder_a34a08f7c049b5c7e197935d2bab4e412} 
+str {\bfseries url\+\_\+scheme}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a356bdc6c6d9038e1a9103c2298515208}\label{classwerkzeug_1_1test_1_1_environ_builder_a356bdc6c6d9038e1a9103c2298515208} 
+{\bfseries host}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ad96482600a58e6e1fb156241e686ae48}\label{classwerkzeug_1_1test_1_1_environ_builder_ad96482600a58e6e1fb156241e686ae48} 
+{\bfseries script\+\_\+root}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_aa7668c2f369a51918d5adb00979d350c}\label{classwerkzeug_1_1test_1_1_environ_builder_aa7668c2f369a51918d5adb00979d350c} 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_file_multi_dict}{File\+Multi\+Dict}} {\bfseries closed} = self.\+files.\+values()
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ac0a8f01882708c775faa971d9a27499a}\label{classwerkzeug_1_1test_1_1_environ_builder_ac0a8f01882708c775faa971d9a27499a} 
+{\bfseries server\+\_\+name}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a219eb2d7f77e7d89db0fc0dcb340126b}\label{classwerkzeug_1_1test_1_1_environ_builder_a219eb2d7f77e7d89db0fc0dcb340126b} 
+{\bfseries server\+\_\+port}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ac71c4151264a21522d2ab26b58a0be68}\label{classwerkzeug_1_1test_1_1_environ_builder_ac71c4151264a21522d2ab26b58a0be68} 
+str {\bfseries server\+\_\+protocol} = "{}HTTP/1.\+1"{}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a0bf3ea075db3cfdc125085b608fac157}\label{classwerkzeug_1_1test_1_1_environ_builder_a0bf3ea075db3cfdc125085b608fac157} 
+tuple {\bfseries wsgi\+\_\+version} = (1, 0)
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_adb595dc35d7d11bc08ba8f27745a01fa}\label{classwerkzeug_1_1test_1_1_environ_builder_adb595dc35d7d11bc08ba8f27745a01fa} 
+{\bfseries request\+\_\+class} = \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_aa95c7bd96e7319ed690e7fcd63060bcb}{json\+\_\+dumps}} = staticmethod(json.\+dumps)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_a735418bec43090c967e47c8ea8151156}{\+\_\+add\+\_\+file\+\_\+from\+\_\+data}} (self, str key, t.\+Union\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}, t.\+Tuple\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}, str\mbox{]}, t.\+Tuple\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}, str, str\mbox{]}\mbox{]} value)
+\item 
+\+\_\+\+TAny\+Multi\+Dict \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_ac8d6f16d67309718ec03ca626c0e1c56}{\+\_\+get\+\_\+form}} (self, str name, t.\+Type\mbox{[}\+\_\+\+TAny\+Multi\+Dict\mbox{]} storage)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder_aebdb078147bb88d2d9a0d144dc5ee518}{\+\_\+set\+\_\+form}} (self, str name, \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}} value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a7e78787d62cea4c2c3e51c65672a50a6}\label{classwerkzeug_1_1test_1_1_environ_builder_a7e78787d62cea4c2c3e51c65672a50a6} 
+str {\bfseries \+\_\+make\+\_\+base\+\_\+url} (str scheme, str host, str script\+\_\+root)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ab448112230b9251410512158d299655a}\label{classwerkzeug_1_1test_1_1_environ_builder_ab448112230b9251410512158d299655a} 
+t {\bfseries \+\_\+args} .Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}}\mbox{]}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a96d97c62e14c56bbb3e3113616cd09cc}\label{classwerkzeug_1_1test_1_1_environ_builder_a96d97c62e14c56bbb3e3113616cd09cc} 
+t {\bfseries \+\_\+query\+\_\+string} .Optional\mbox{[}str\mbox{]}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a288e4055882909b04f3c59599a9cdee7}\label{classwerkzeug_1_1test_1_1_environ_builder_a288e4055882909b04f3c59599a9cdee7} 
+t {\bfseries \+\_\+input\+\_\+stream} .Optional\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}\mbox{]}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a93fdb362b11ecfce9fd02ef09b240dcc}\label{classwerkzeug_1_1test_1_1_environ_builder_a93fdb362b11ecfce9fd02ef09b240dcc} 
+t {\bfseries \+\_\+form} .Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}}\mbox{]}
+\item 
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a91cdb69b08d45ec55da7ec4acee9b92a}\label{classwerkzeug_1_1test_1_1_environ_builder_a91cdb69b08d45ec55da7ec4acee9b92a} 
+t {\bfseries \+\_\+files} .Optional\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_file_multi_dict}{File\+Multi\+Dict}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class can be used to conveniently create a WSGI environment
+for testing purposes.  It can be used to quickly create WSGI environments
+or request objects from arbitrary data.
+
+The signature of this class is also used in some other places as of
+Werkzeug 0.5 (:func:`create_environ`, :meth:`Response.from_values`,
+:meth:`Client.open`).  Because of this most of the functionality is
+available through the constructor alone.
+
+Files and regular form data can be manipulated independently of each
+other with the :attr:`form` and :attr:`files` attributes, but are
+passed with the same argument to the constructor: `data`.
+
+`data` can be any of these values:
+
+-   a `str` or `bytes` object: The object is converted into an
+    :attr:`input_stream`, the :attr:`content_length` is set and you have to
+    provide a :attr:`content_type`.
+-   a `dict` or :class:`MultiDict`: The keys have to be strings. The values
+    have to be either any of the following objects, or a list of any of the
+    following objects:
+
+    -   a :class:`file`-like object:  These are converted into
+        :class:`FileStorage` objects automatically.
+    -   a `tuple`:  The :meth:`~FileMultiDict.add_file` method is called
+        with the key and the unpacked `tuple` items as positional
+        arguments.
+    -   a `str`:  The string is set as form data for the associated key.
+-   a file-like object: The object content is loaded in memory and then
+    handled like a regular `str` or a `bytes`.
+
+:param path: the path of the request.  In the WSGI environment this will
+             end up as `PATH_INFO`.  If the `query_string` is not defined
+             and there is a question mark in the `path` everything after
+             it is used as query string.
+:param base_url: the base URL is a URL that is used to extract the WSGI
+                 URL scheme, host (server name + server port) and the
+                 script root (`SCRIPT_NAME`).
+:param query_string: an optional string or dict with URL parameters.
+:param method: the HTTP method to use, defaults to `GET`.
+:param input_stream: an optional input stream.  Do not specify this and
+                     `data`.  As soon as an input stream is set you can't
+                     modify :attr:`args` and :attr:`files` unless you
+                     set the :attr:`input_stream` to `None` again.
+:param content_type: The content type for the request.  As of 0.5 you
+                     don't have to provide this when specifying files
+                     and form data via `data`.
+:param content_length: The content length for the request.  You don't
+                       have to specify this when providing data via
+                       `data`.
+:param errors_stream: an optional error stream that is used for
+                      `wsgi.errors`.  Defaults to :data:`stderr`.
+:param multithread: controls `wsgi.multithread`.  Defaults to `False`.
+:param multiprocess: controls `wsgi.multiprocess`.  Defaults to `False`.
+:param run_once: controls `wsgi.run_once`.  Defaults to `False`.
+:param headers: an optional list or :class:`Headers` object of headers.
+:param data: a string or dict of form data or a file-object.
+             See explanation above.
+:param json: An object to be serialized and assigned to ``data``.
+    Defaults the content type to ``"application/json"``.
+    Serialized with the function assigned to :attr:`json_dumps`.
+:param environ_base: an optional dict of environment defaults.
+:param environ_overrides: an optional dict of environment overrides.
+:param charset: the charset used to encode string data.
+:param auth: An authorization object to use for the
+    ``Authorization`` header value. A ``(username, password)`` tuple
+    is a shortcut for ``Basic`` authorization.
+
+.. versionchanged:: 2.1
+    ``CONTENT_TYPE`` and ``CONTENT_LENGTH`` are not duplicated as
+    header keys in the environ.
+
+.. versionchanged:: 2.0
+    ``REQUEST_URI`` and ``RAW_URI`` is the full raw URI including
+    the query string, not only the path.
+
+.. versionchanged:: 2.0
+    The default :attr:`request_class` is ``Request`` instead of
+    ``BaseRequest``.
+
+.. versionadded:: 2.0
+   Added the ``auth`` parameter.
+
+.. versionadded:: 0.15
+    The ``json`` param and :meth:`json_dumps` method.
+
+.. versionadded:: 0.15
+    The environ has keys ``REQUEST_URI`` and ``RAW_URI`` containing
+    the path before percent-decoding. This is not part of the WSGI
+    PEP, but many WSGI servers include it.
+
+.. versionchanged:: 0.6
+   ``path`` and ``base_url`` can now be unicode strings that are
+   encoded with :func:`iri_to_uri`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a735418bec43090c967e47c8ea8151156}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!\_add\_file\_from\_data@{\_add\_file\_from\_data}}
+\index{\_add\_file\_from\_data@{\_add\_file\_from\_data}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{\_add\_file\_from\_data()}{\_add\_file\_from\_data()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_a735418bec43090c967e47c8ea8151156} 
+ None werkzeug.\+test.\+Environ\+Builder.\+\_\+add\+\_\+file\+\_\+from\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{t.\+Union\mbox{[}             t.\+IO\mbox{[}bytes\mbox{]}, t.\+Tuple\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}, str\mbox{]}, t.\+Tuple\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}, str, str\mbox{]}         \mbox{]}}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Called in the EnvironBuilder to add files from the data dict.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ac8d6f16d67309718ec03ca626c0e1c56}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!\_get\_form@{\_get\_form}}
+\index{\_get\_form@{\_get\_form}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{\_get\_form()}{\_get\_form()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_ac8d6f16d67309718ec03ca626c0e1c56} 
+ \+\_\+\+TAny\+Multi\+Dict werkzeug.\+test.\+Environ\+Builder.\+\_\+get\+\_\+form (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{t.\+Type\mbox{[}\+\_\+\+TAny\+Multi\+Dict\mbox{]}}]{storage}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Common behavior for getting the :attr:`form` and
+:attr:`files` properties.
+
+:param name: Name of the internal cached attribute.
+:param storage: Storage class used for the data.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_aebdb078147bb88d2d9a0d144dc5ee518}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!\_set\_form@{\_set\_form}}
+\index{\_set\_form@{\_set\_form}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{\_set\_form()}{\_set\_form()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_aebdb078147bb88d2d9a0d144dc5ee518} 
+ None werkzeug.\+test.\+Environ\+Builder.\+\_\+set\+\_\+form (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}}}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Common behavior for setting the :attr:`form` and
+:attr:`files` properties.
+
+:param name: Name of the internal cached attribute.
+:param value: Value to assign to the attribute.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a53d01b04600bef3d143d00cbdffb4a88}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!args@{args}}
+\index{args@{args}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{args()}{args()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_a53d01b04600bef3d143d00cbdffb4a88} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}} werkzeug.\+test.\+Environ\+Builder.\+args (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The URL arguments as :class:`MultiDict`.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a639761854389f1a30d3e1227284b32fd}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!base\_url@{base\_url}}
+\index{base\_url@{base\_url}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{base\_url()}{base\_url()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_a639761854389f1a30d3e1227284b32fd} 
+ str werkzeug.\+test.\+Environ\+Builder.\+base\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The base URL is used to extract the URL scheme, host name,
+port, and root path.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a051b516d74a5ddf3b13bfeee991cf58d}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!close@{close}}
+\index{close@{close}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_a051b516d74a5ddf3b13bfeee991cf58d} 
+ None werkzeug.\+test.\+Environ\+Builder.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Closes all files.  If you put real :class:`file` objects into the
+:attr:`files` dict you can call this method to automatically close
+them all in one go.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_acea0f4c8625836e392e9e6fbc5c9f049}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!content\_length@{content\_length}}
+\index{content\_length@{content\_length}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{content\_length()}{content\_length()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_acea0f4c8625836e392e9e6fbc5c9f049} 
+ t.\+Optional\mbox{[}int\mbox{]} werkzeug.\+test.\+Environ\+Builder.\+content\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The content length as integer.  Reflected from and to the
+:attr:`headers`.  Do not set if you set :attr:`files` or
+:attr:`form` for auto detection.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ae8f6872525c6d189af927ca08a75bba4}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!content\_type@{content\_type}}
+\index{content\_type@{content\_type}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{content\_type()}{content\_type()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_ae8f6872525c6d189af927ca08a75bba4} 
+ t.\+Optional\mbox{[}str\mbox{]} werkzeug.\+test.\+Environ\+Builder.\+content\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The content type for the request.  Reflected from and to
+the :attr:`headers`.  Do not set if you set :attr:`files` or
+:attr:`form` for auto detection.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_acd55ff1babb4695112894f18876ac057}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!files@{files}}
+\index{files@{files}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{files()}{files()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_acd55ff1babb4695112894f18876ac057} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_file_multi_dict}{File\+Multi\+Dict}} werkzeug.\+test.\+Environ\+Builder.\+files (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A :class:`FileMultiDict` of uploaded files. Use
+:meth:`~FileMultiDict.add_file` to add new files.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_aa2a204e6e45924262f045110adc89527}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!form@{form}}
+\index{form@{form}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{form()}{form()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_aa2a204e6e45924262f045110adc89527} 
+ \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_multi_dict}{Multi\+Dict}} werkzeug.\+test.\+Environ\+Builder.\+form (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A :class:`MultiDict` of form values.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a2c0fe641ebd531ae43e44162c399ccb2}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!from\_environ@{from\_environ}}
+\index{from\_environ@{from\_environ}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{from\_environ()}{from\_environ()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_a2c0fe641ebd531ae43e44162c399ccb2} 
+ "{}Environ\+Builder"{} werkzeug.\+test.\+Environ\+Builder.\+from\+\_\+environ (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{"{}WSGIEnvironment"{}}]{environ}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Turn an environ dict back into a builder. Any extra kwargs
+override the args extracted from the environ.
+
+.. versionchanged:: 2.0
+    Path and query values are passed through the WSGI decoding
+    dance to avoid double encoding.
+
+.. versionadded:: 0.15
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_aa6ea13c1de03f4478d2b52891f0e946c}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!get\_environ@{get\_environ}}
+\index{get\_environ@{get\_environ}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{get\_environ()}{get\_environ()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_aa6ea13c1de03f4478d2b52891f0e946c} 
+ "{}WSGIEnvironment"{} werkzeug.\+test.\+Environ\+Builder.\+get\+\_\+environ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the built environ.
+
+.. versionchanged:: 0.15
+    The content type and length headers are set based on
+    input stream detection. Previously this only set the WSGI
+    keys.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a986fb799e016893becd8ce9b9dc6635f}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!get\_request@{get\_request}}
+\index{get\_request@{get\_request}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{get\_request()}{get\_request()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_a986fb799e016893becd8ce9b9dc6635f} 
+ \mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}} werkzeug.\+test.\+Environ\+Builder.\+get\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\mbox{[}t.\+Type\mbox{[}\mbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}\mbox{]}\mbox{]} }]{cls}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a request with the data.  If the request class is not
+specified :attr:`request_class` is used.
+
+:param cls: The request wrapper to use.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_ac50ddc4268688cd43e18cdd6732c66e1}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!input\_stream@{input\_stream}}
+\index{input\_stream@{input\_stream}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{input\_stream()}{input\_stream()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_ac50ddc4268688cd43e18cdd6732c66e1} 
+ t.\+Optional\mbox{[}t.\+IO\mbox{[}bytes\mbox{]}\mbox{]} werkzeug.\+test.\+Environ\+Builder.\+input\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}An optional input stream. This is mutually exclusive with
+setting :attr:`form` and :attr:`files`, setting it will clear
+those. Do not provide this if the method is not ``POST`` or
+another method that has a body.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a8cf320ad289804785b90bee432a7b348}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!mimetype@{mimetype}}
+\index{mimetype@{mimetype}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{mimetype()}{mimetype()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_a8cf320ad289804785b90bee432a7b348} 
+ t.\+Optional\mbox{[}str\mbox{]} werkzeug.\+test.\+Environ\+Builder.\+mimetype (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The mimetype (content type without charset etc.)
+
+.. versionadded:: 0.14
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a170e4d689d88843b6872790cb25930c0}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!mimetype\_params@{mimetype\_params}}
+\index{mimetype\_params@{mimetype\_params}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{mimetype\_params()}{mimetype\_params()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_a170e4d689d88843b6872790cb25930c0} 
+ t.\+Mapping\mbox{[}str, str\mbox{]} werkzeug.\+test.\+Environ\+Builder.\+mimetype\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The mimetype parameters as dict.  For example if the
+content type is ``text/html; charset=utf-8`` the params would be
+``{'charset': 'utf-8'}``.
+
+.. versionadded:: 0.14
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_aba928b02da41c275b5e061b7b4c4ab42}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!query\_string@{query\_string}}
+\index{query\_string@{query\_string}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{query\_string()}{query\_string()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_aba928b02da41c275b5e061b7b4c4ab42} 
+ str werkzeug.\+test.\+Environ\+Builder.\+query\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The query string.  If you set this to a string
+:attr:`args` will no longer be available.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a635a2f34db063cda352749a0433ca634}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!server\_name@{server\_name}}
+\index{server\_name@{server\_name}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{server\_name()}{server\_name()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_a635a2f34db063cda352749a0433ca634} 
+ str werkzeug.\+test.\+Environ\+Builder.\+server\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The server name (read-only, use :attr:`host` to set)\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_a703043a48a7d35c7ba56e822f1d8e528}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!server\_port@{server\_port}}
+\index{server\_port@{server\_port}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{server\_port()}{server\_port()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_a703043a48a7d35c7ba56e822f1d8e528} 
+ int werkzeug.\+test.\+Environ\+Builder.\+server\+\_\+port (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The server port as integer (read-only, use :attr:`host` to set)\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1test_1_1_environ_builder_aa95c7bd96e7319ed690e7fcd63060bcb}\index{werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}!json\_dumps@{json\_dumps}}
+\index{json\_dumps@{json\_dumps}!werkzeug.test.EnvironBuilder@{werkzeug.test.EnvironBuilder}}
+\doxysubsubsection{\texorpdfstring{json\_dumps}{json\_dumps}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_environ_builder_aa95c7bd96e7319ed690e7fcd63060bcb} 
+werkzeug.\+test.\+Environ\+Builder.\+json\+\_\+dumps = staticmethod(json.\+dumps)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classflask_1_1testing_1_1_environ_builder_a13fc088dec79fbaeec24b9332e8c30de}{flask.\+testing.\+Environ\+Builder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/test.\+py\end{DoxyCompactItemize}

@@ -1,0 +1,107 @@
+\doxysection{pip.\+\_\+vendor.\+pyparsing.\+Parse\+Exception Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_parse_exception}{}\label{classpip_1_1__vendor_1_1pyparsing_1_1_parse_exception}\index{pip.\_vendor.pyparsing.ParseException@{pip.\_vendor.pyparsing.ParseException}}
+Inheritance diagram for pip.\+\_\+vendor.\+pyparsing.\+Parse\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1pyparsing_1_1_parse_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parse_exception_a0a21f5bc890289d65750d0ebb752d83b}{explain}} (exc, depth=16)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parse_base_exception}{pip.\+\_\+vendor.\+pyparsing.\+Parse\+Base\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, pstr, loc=0, msg=None, elem=None)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parse_base_exception_a73b59d9d91e1a27324b27239d134f47d}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, aname)
+\item 
+{\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+{\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parse_base_exception_a53fd0b10807bef53b175b3687a19decf}{mark\+Inputline}} (self, marker\+String="{}$>$!$<$"{})
+\item 
+{\bfseries \+\_\+\+\_\+dir\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parse_base_exception}{pip.\+\_\+vendor.\+pyparsing.\+Parse\+Base\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries loc} = loc
+\item 
+{\bfseries msg} = pstr
+\item 
+str {\bfseries pstr} = "{}"{}
+\item 
+{\bfseries parser\+Element} = elem
+\item 
+tuple {\bfseries args} = (pstr, loc, msg)
+\item 
+{\bfseries lineno}
+\item 
+{\bfseries column}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parse_base_exception}{pip.\+\_\+vendor.\+pyparsing.\+Parse\+Base\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1_parse_base_exception_a21c958f88eaae9ad534208fad809150f}{\+\_\+from\+\_\+exception}} (cls, pe)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Exception thrown when parse expressions don't match class;
+supported attributes by name are:
+- lineno - returns the line number of the exception text
+- col - returns the column number of the exception text
+- line - returns the line containing the exception text
+
+Example::
+
+    try:
+        Word(nums).setName("integer").parseString("ABC")
+    except ParseException as pe:
+        print(pe)
+        print("column: {}".format(pe.col))
+
+prints::
+
+   Expected integer (at char 0), (line:1, col:1)
+    column: 1\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1_parse_exception_a0a21f5bc890289d65750d0ebb752d83b}\index{pip.\_vendor.pyparsing.ParseException@{pip.\_vendor.pyparsing.ParseException}!explain@{explain}}
+\index{explain@{explain}!pip.\_vendor.pyparsing.ParseException@{pip.\_vendor.pyparsing.ParseException}}
+\doxysubsubsection{\texorpdfstring{explain()}{explain()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1_parse_exception_a0a21f5bc890289d65750d0ebb752d83b} 
+pip.\+\_\+vendor.\+pyparsing.\+Parse\+Exception.\+explain (\begin{DoxyParamCaption}\item[{}]{exc}{, }\item[{}]{depth}{ = {\ttfamily 16}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Method to take an exception and translate the Python internal traceback into a list
+of the pyparsing expressions that caused the exception to be raised.
+
+Parameters:
+
+ - exc - exception raised during parsing (need not be a ParseException, in support
+   of Python exceptions that might be raised in a parse action)
+ - depth (default=16) - number of levels back in the stack trace to list expression
+   and function names; if None, the full stack trace names will be listed; if 0, only
+   the failing input line, marker, and exception string will be shown
+
+Returns a multi-line string listing the ParserElements and/or function names in the
+exception's stack trace.
+
+Note: the diagnostic output will include string representations of the expressions
+that failed to parse. These representations will be more helpful if you use `setName` to
+give identifiable names to your expressions. Otherwise they will use the default string
+forms, which may be cryptic to read.
+
+explain() is only supported under Python 3.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/pyparsing.\+py\end{DoxyCompactItemize}

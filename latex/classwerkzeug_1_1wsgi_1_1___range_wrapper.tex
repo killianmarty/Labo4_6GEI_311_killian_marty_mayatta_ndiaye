@@ -1,0 +1,74 @@
+\doxysection{werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper Class Reference}
+\hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper}{}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a1f57cce06846db0a090e18cfc84b5086}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a1f57cce06846db0a090e18cfc84b5086} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Union\mbox{[}t.\+Iterable\mbox{[}bytes\mbox{]}, t.\+IO\mbox{[}bytes\mbox{]}\mbox{]} iterable, int start\+\_\+byte=0, t.\+Optional\mbox{[}int\mbox{]} byte\+\_\+range=None)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a2457c2a08cc5a6a484c9d9e8cc25501f}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a2457c2a08cc5a6a484c9d9e8cc25501f} 
+"{}\+\_\+\+Range\+Wrapper"{} {\bfseries \+\_\+\+\_\+iter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_ac33294606c23b16bfa663d9d3820902c}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_ac33294606c23b16bfa663d9d3820902c} 
+bytes {\bfseries \+\_\+\+\_\+next\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_aa1d0a3f6ef9cfd7f68fd651d1e0b830f}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_aa1d0a3f6ef9cfd7f68fd651d1e0b830f} 
+None {\bfseries close} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_aacf611df6b6aee05aa581a3b8bb67862}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_aacf611df6b6aee05aa581a3b8bb67862} 
+{\bfseries iterable} = iter(iterable)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a9c13525cf96cfda80bd740b9ebdeec72}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a9c13525cf96cfda80bd740b9ebdeec72} 
+{\bfseries byte\+\_\+range} = byte\+\_\+range
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a28a57d0222ef589fb731bbf07fa33555}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a28a57d0222ef589fb731bbf07fa33555} 
+{\bfseries start\+\_\+byte} = start\+\_\+byte
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a11a51d2b759ed4d4430a536a88192528}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a11a51d2b759ed4d4430a536a88192528} 
+{\bfseries end\+\_\+byte} = None
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a073d036871572f695504f1fad170d791}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a073d036871572f695504f1fad170d791} 
+int {\bfseries read\+\_\+length} = 0
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a2b182e55866e21744fa06711ef70e6d2}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a2b182e55866e21744fa06711ef70e6d2} 
+{\bfseries seekable} = hasattr(iterable, "{}seekable"{}) and iterable.\+seekable()
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_ab9a8022e633d5e282988ae1facfea676}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_ab9a8022e633d5e282988ae1facfea676} 
+bool {\bfseries end\+\_\+reached} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a0acb58ebf36c431b4dc7cdd3c3118037}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a0acb58ebf36c431b4dc7cdd3c3118037} 
+bytes {\bfseries \+\_\+next\+\_\+chunk} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a873a12f86899186d7145815e5c40086c}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a873a12f86899186d7145815e5c40086c} 
+t.\+Tuple\mbox{[}t.\+Optional\mbox{[}bytes\mbox{]}, int\mbox{]} {\bfseries \+\_\+first\+\_\+iteration} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a4fac50c07eceef542cbd5d1d318144df}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a4fac50c07eceef542cbd5d1d318144df} 
+bytes {\bfseries \+\_\+next} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class can be used to convert an iterable object into
+an iterable that will only yield a piece of the underlying content.
+It yields blocks until the underlying stream range is fully read.
+The yielded blocks will have a size that can't exceed the original
+iterator defined block size, but that can be smaller.
+
+If you're using this object together with a :class:`Response` you have
+to use the `direct_passthrough` mode.
+
+:param iterable: an iterable object with a :meth:`__next__` method.
+:param start_byte: byte from which read will start.
+:param byte_range: how many bytes to read.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/wsgi.\+py\end{DoxyCompactItemize}

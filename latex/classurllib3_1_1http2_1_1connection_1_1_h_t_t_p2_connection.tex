@@ -1,0 +1,315 @@
+\doxysection{urllib3.\+http2.\+connection.\+HTTP2\+Connection Class Reference}
+\hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection}{}\label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection}\index{urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}}
+Inheritance diagram for urllib3.\+http2.\+connection.\+HTTP2\+Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ae7406ca05ac69ea590121fadb0c6353a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str host, int\texorpdfstring{$\vert$}{|}None port=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}typing.\+Any kwargs)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a59bb7ba87a6343b9e1c0b89e54b3a6fc}{connect}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ae9463d71728a7e038f3f402b68dc529e}{putrequest}} (self, str method, str url, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}typing.\+Any kwargs)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_aa623469024cfe4e26ec9778bdbac2d3f}{putheader}} (self, str\texorpdfstring{$\vert$}{|}bytes header, \texorpdfstring{$\ast$}{*}str\texorpdfstring{$\vert$}{|}bytes values)
+\item 
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ac1bb268bb1e13997bc89341eaa728d1a}\label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ac1bb268bb1e13997bc89341eaa728d1a} 
+None {\bfseries endheaders} (self, typing.\+Any message\+\_\+body=None)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a9332b8054eb13b12b0ab7b88e05ebfb9}{send}} (self, typing.\+Any data)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a6ac818868bbea19f00db8988edebc6cd}{set\+\_\+tunnel}} (self, str host, int\texorpdfstring{$\vert$}{|}None port=None, typing.\+Mapping\mbox{[}str, str\mbox{]}\texorpdfstring{$\vert$}{|}None headers=None, str scheme="{}http"{})
+\item 
+\mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_response}{HTTP2\+Response}} \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ad8b12b98247c59a2c5f2ad5b0ef8c172}{getresponse}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a29411d772d38b243e59bc3936e21dce4}{request}} (self, str method, str url, \+\_\+\+TYPE\+\_\+\+BODY\texorpdfstring{$\vert$}{|}None body=None, typing.\+Mapping\mbox{[}str, str\mbox{]}\texorpdfstring{$\vert$}{|}None headers=None, \texorpdfstring{$\ast$}{*}, bool preload\+\_\+content=True, bool decode\+\_\+content=True, bool enforce\+\_\+content\+\_\+length=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}typing.\+Any kwargs)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a27f1572b574cf6ea3ad339b378ef062c}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{urllib3.\+connection.\+HTTPSConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection_aacc3f9aa60e688cce4ad39c9bb34c8b2}{set\+\_\+cert}} (self, str\texorpdfstring{$\vert$}{|}None key\+\_\+file=None, str\texorpdfstring{$\vert$}{|}None cert\+\_\+file=None, int\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None cert\+\_\+reqs=None, str\texorpdfstring{$\vert$}{|}None key\+\_\+password=None, str\texorpdfstring{$\vert$}{|}None ca\+\_\+certs=None, None\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}typing.\+Literal\mbox{[}False\mbox{]} assert\+\_\+hostname=None, str\texorpdfstring{$\vert$}{|}None assert\+\_\+fingerprint=None, str\texorpdfstring{$\vert$}{|}None ca\+\_\+cert\+\_\+dir=None, None\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}bytes ca\+\_\+cert\+\_\+data=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection_a126905c04798cc422a4a4163aa3271b0}{host}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection_a4460a072c3fb1e5404c27e797823367f}{host}} (self, str value)
+\item 
+bool {\bfseries is\+\_\+closed} (self)
+\item 
+bool {\bfseries is\+\_\+connected} (self)
+\item 
+bool {\bfseries has\+\_\+connected\+\_\+to\+\_\+proxy} (self)
+\item 
+bool \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection_a70b6501eb42eaf279d09e82cdfb73f70}{proxy\+\_\+is\+\_\+forwarding}} (self)
+\item 
+None \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection_a38b88879b22e03a1a7c4eda5c786e660}{request\+\_\+chunked}} (self, str method, str url, \+\_\+\+TYPE\+\_\+\+BODY\texorpdfstring{$\vert$}{|}None body=None, typing.\+Mapping\mbox{[}str, str\mbox{]}\texorpdfstring{$\vert$}{|}None headers=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_af1ec1863145a63618cf28f22ac7eac9a}\label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_af1ec1863145a63618cf28f22ac7eac9a} 
+{\bfseries host}
+\item 
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a53f16e206c16800b254afba763b4ab55}\label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a53f16e206c16800b254afba763b4ab55} 
+{\bfseries timeout}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{urllib3.\+connection.\+HTTPSConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries key\+\_\+file} = key\+\_\+file
+\item 
+{\bfseries cert\+\_\+file} = cert\+\_\+file
+\item 
+{\bfseries key\+\_\+password} = key\+\_\+password
+\item 
+{\bfseries ssl\+\_\+context} = ssl\+\_\+context
+\item 
+{\bfseries server\+\_\+hostname} = server\+\_\+hostname
+\item 
+{\bfseries assert\+\_\+hostname} = assert\+\_\+hostname
+\item 
+ssl.\+SSLSocket {\bfseries sock} = self.\+\_\+new\+\_\+conn()
+\item 
+bool {\bfseries proxy\+\_\+is\+\_\+verified} = False
+\item 
+{\bfseries proxy\+\_\+is\+\_\+forwarding}
+\item 
+bool {\bfseries is\+\_\+verified} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries proxy} = proxy
+\item 
+{\bfseries proxy\+\_\+config} = proxy\+\_\+config
+\item 
+{\bfseries host}
+\item 
+{\bfseries port}
+\item 
+socket.\+socket {\bfseries sock} = self.\+\_\+new\+\_\+conn()
+\item 
+{\bfseries timeout} = None
+\item 
+dict {\bfseries \+\_\+response\+\_\+options} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ad147043197d3d1578b9383af96445790}\label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ad147043197d3d1578b9383af96445790} 
+\mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1___locked_object}{\+\_\+\+Locked\+Object}}\mbox{[}h2.\+connection.\+H2\+Connection\mbox{]} {\bfseries \+\_\+new\+\_\+h2\+\_\+conn} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{urllib3.\+connection.\+HTTPSConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+ssl.\+SSLSocket \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection_a9ad5d26186dcf8c5317edc1b383a6201}{\+\_\+connect\+\_\+tls\+\_\+proxy}} (self, str hostname, socket.\+socket sock)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+socket.\+socket \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection_adef2aa29d40b8252a2abc8cdf3b8c33f}{\+\_\+new\+\_\+conn}} (self)
+\item 
+None {\bfseries \+\_\+tunnel} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a3c5cdb8a332ab71388c4cf501a2746d5}\label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a3c5cdb8a332ab71388c4cf501a2746d5} 
+\mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1___locked_object}{\+\_\+\+Locked\+Object}}\mbox{[}h2.\+connection.\+H2\+Connection\mbox{]} {\bfseries \+\_\+h2\+\_\+conn} = self.\+\_\+new\+\_\+h2\+\_\+conn()
+\item 
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ada1cc0d7959c51606f068b4343af55ee}\label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ada1cc0d7959c51606f068b4343af55ee} 
+int\texorpdfstring{$\vert$}{|}None {\bfseries \+\_\+h2\+\_\+stream} = None
+\item 
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_af4f0505ee7bec55f46715507c46a28a2}\label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_af4f0505ee7bec55f46715507c46a28a2} 
+list {\bfseries \+\_\+headers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a02d8e75aa8ed26af085bfd2b2774d4fe}\label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a02d8e75aa8ed26af085bfd2b2774d4fe} 
+str {\bfseries \+\_\+request\+\_\+url} = url or "{}/"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{urllib3.\+connection.\+HTTPSConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries \+\_\+tunnel\+\_\+scheme} = "{}https"{}\+:
+\item 
+bool {\bfseries \+\_\+has\+\_\+connected\+\_\+to\+\_\+proxy} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries \+\_\+has\+\_\+connected\+\_\+to\+\_\+proxy} = False
+\item 
+{\bfseries \+\_\+dns\+\_\+host} = value
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{urllib3.\+connection.\+HTTPSConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries default\+\_\+port} = port\+\_\+by\+\_\+scheme\mbox{[}"{}https"{}\mbox{]}
+\item 
+int {\bfseries cert\+\_\+reqs} = None
+\item 
+str {\bfseries ca\+\_\+certs} = None
+\item 
+str {\bfseries ca\+\_\+cert\+\_\+dir} = None
+\item 
+None {\bfseries ca\+\_\+cert\+\_\+data} = None
+\item 
+int {\bfseries ssl\+\_\+version} = None
+\item 
+int {\bfseries ssl\+\_\+minimum\+\_\+version} = None
+\item 
+int {\bfseries ssl\+\_\+maximum\+\_\+version} = None
+\item 
+str {\bfseries assert\+\_\+fingerprint} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+typing {\bfseries default\+\_\+port} = port\+\_\+by\+\_\+scheme\mbox{[}"{}http"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection_aa896bac6778f24b7a73226638ab8f97c}{default\+\_\+socket\+\_\+options}}
+\item 
+bool {\bfseries is\+\_\+verified} = False
+\item 
+bool {\bfseries proxy\+\_\+is\+\_\+verified} = None
+\item 
+tuple {\bfseries source\+\_\+address} \mbox{[}str, int\mbox{]} \texorpdfstring{$\vert$}{|} None
+\item 
+connection {\bfseries socket\+\_\+options} .\+\_\+\+TYPE\+\_\+\+SOCKET\+\_\+\+OPTIONS \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{urllib3.\+connection.\+HTTPSConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+typing {\bfseries \+\_\+connect\+\_\+callback} = None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classurllib3_1_1__base__connection_1_1___response_options}{\+\_\+\+Response\+Options}} {\bfseries \+\_\+response\+\_\+options} \texorpdfstring{$\vert$}{|} None
+\item 
+str {\bfseries \+\_\+tunnel\+\_\+host} \texorpdfstring{$\vert$}{|} None
+\item 
+int {\bfseries \+\_\+tunnel\+\_\+port} \texorpdfstring{$\vert$}{|} None
+\item 
+str {\bfseries \+\_\+tunnel\+\_\+scheme} \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ae7406ca05ac69ea590121fadb0c6353a}\index{urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ae7406ca05ac69ea590121fadb0c6353a} 
+ None urllib3.\+http2.\+connection.\+HTTP2\+Connection.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{port}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}typing.\+Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{urllib3.\+connection.\+HTTPSConnection}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a27f1572b574cf6ea3ad339b378ef062c}\index{urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}!close@{close}}
+\index{close@{close}!urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a27f1572b574cf6ea3ad339b378ef062c} 
+ None urllib3.\+http2.\+connection.\+HTTP2\+Connection.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}.
+
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a59bb7ba87a6343b9e1c0b89e54b3a6fc}\index{urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}!connect@{connect}}
+\index{connect@{connect}!urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a59bb7ba87a6343b9e1c0b89e54b3a6fc} 
+ None urllib3.\+http2.\+connection.\+HTTP2\+Connection.\+connect (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_s_connection}{urllib3.\+connection.\+HTTPSConnection}}.
+
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ad8b12b98247c59a2c5f2ad5b0ef8c172}\index{urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}!getresponse@{getresponse}}
+\index{getresponse@{getresponse}!urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}}
+\doxysubsubsection{\texorpdfstring{getresponse()}{getresponse()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ad8b12b98247c59a2c5f2ad5b0ef8c172} 
+ \mbox{\hyperlink{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_response}{HTTP2\+Response}} urllib3.\+http2.\+connection.\+HTTP2\+Connection.\+getresponse (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the response from the server.
+
+If the HTTPConnection is in the correct state, returns an instance of HTTPResponse or of whatever object is returned by the response_class variable.
+
+If a request has not been sent or if a previous response has not be handled, ResponseNotReady is raised. If the HTTP response indicates that the connection should be closed, then it will be closed before the response is returned. When the connection is closed, the underlying socket is closed.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection_a0178a01a73acfe8bf8cf472ace861b06}{urllib3.\+connection.\+HTTPConnection}}.
+
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_aa623469024cfe4e26ec9778bdbac2d3f}\index{urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}!putheader@{putheader}}
+\index{putheader@{putheader}!urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}}
+\doxysubsubsection{\texorpdfstring{putheader()}{putheader()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_aa623469024cfe4e26ec9778bdbac2d3f} 
+ None urllib3.\+http2.\+connection.\+HTTP2\+Connection.\+putheader (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes}]{header}{, }\item[{\texorpdfstring{$\ast$}{*}str \texorpdfstring{$\vert$}{|} bytes}]{values}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}.
+
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ae9463d71728a7e038f3f402b68dc529e}\index{urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}!putrequest@{putrequest}}
+\index{putrequest@{putrequest}!urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}}
+\doxysubsubsection{\texorpdfstring{putrequest()}{putrequest()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_ae9463d71728a7e038f3f402b68dc529e} 
+ None urllib3.\+http2.\+connection.\+HTTP2\+Connection.\+putrequest (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{method}{, }\item[{str}]{url}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}typing.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}putrequest
+This deviates from the HTTPConnection method signature since we never need to override
+sending accept-encoding headers or the host header.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}.
+
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a29411d772d38b243e59bc3936e21dce4}\index{urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}!request@{request}}
+\index{request@{request}!urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a29411d772d38b243e59bc3936e21dce4} 
+ None urllib3.\+http2.\+connection.\+HTTP2\+Connection.\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{method}{, }\item[{str}]{url}{, }\item[{\+\_\+\+TYPE\+\_\+\+BODY \texorpdfstring{$\vert$}{|} None }]{body}{ = {\ttfamily None}, }\item[{typing.\+Mapping\mbox{[}str, str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{headers}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{preload\+\_\+content}{ = {\ttfamily True}, }\item[{bool }]{decode\+\_\+content}{ = {\ttfamily True}, }\item[{bool }]{enforce\+\_\+content\+\_\+length}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}typing.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send an HTTP/2 request\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}.
+
+\Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a9332b8054eb13b12b0ab7b88e05ebfb9}\index{urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}!send@{send}}
+\index{send@{send}!urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a9332b8054eb13b12b0ab7b88e05ebfb9} 
+ None urllib3.\+http2.\+connection.\+HTTP2\+Connection.\+send (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{typing.\+Any}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send data to the server.
+`data` can be: `str`, `bytes`, an iterable, or file-like objects
+that support a .read() method.
+\end{DoxyVerb}
+ \Hypertarget{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a6ac818868bbea19f00db8988edebc6cd}\index{urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}!set\_tunnel@{set\_tunnel}}
+\index{set\_tunnel@{set\_tunnel}!urllib3.http2.connection.HTTP2Connection@{urllib3.http2.connection.HTTP2Connection}}
+\doxysubsubsection{\texorpdfstring{set\_tunnel()}{set\_tunnel()}}
+{\footnotesize\ttfamily \label{classurllib3_1_1http2_1_1connection_1_1_h_t_t_p2_connection_a6ac818868bbea19f00db8988edebc6cd} 
+ None urllib3.\+http2.\+connection.\+HTTP2\+Connection.\+set\+\_\+tunnel (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{port}{ = {\ttfamily None}, }\item[{typing.\+Mapping\mbox{[}str, str\mbox{]} \texorpdfstring{$\vert$}{|} None }]{headers}{ = {\ttfamily None}, }\item[{str }]{scheme}{ = {\ttfamily "{}http"{}}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classurllib3_1_1connection_1_1_h_t_t_p_connection}{urllib3.\+connection.\+HTTPConnection}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/urllib3/http2/connection.\+py\end{DoxyCompactItemize}

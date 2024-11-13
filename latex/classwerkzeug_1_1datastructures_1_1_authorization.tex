@@ -1,0 +1,200 @@
+\doxysection{werkzeug.\+datastructures.\+Authorization Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1_authorization}{}\label{classwerkzeug_1_1datastructures_1_1_authorization}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+Inheritance diagram for werkzeug.\+datastructures.\+Authorization\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1datastructures_1_1_authorization}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_a9456376aa5650dbf07652b7ed002253d}\label{classwerkzeug_1_1datastructures_1_1_authorization_a9456376aa5650dbf07652b7ed002253d} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, auth\+\_\+type, data=None)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_a27a9baa67eb59c99e8d54613d94d1bfc}{username}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_ab80014cb4351af5e208a9601f3c99f86}{password}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_a7caf88bb3e1c9eca7d08ccff22834064}{realm}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_a9368a55b6087082629ee76c4827c7985}{nonce}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_aff33f6e173d8c53e0998c62d1af46ddc}{uri}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_af7ccc2be29c130dbe5861d2f68f3f9fc}{nc}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_a43016abfb0d3ec0830c1052c227d3602}{cnonce}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_aaccd1570b72011c4361848d3ff5019f1}{response}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_a7008a60ab41b07e8c69ae56259ab9376}{opaque}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_aa21d27ed2de1d987cb6151568b8fc7db}{qop}} (self)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_authorization_ad69ff7fbec195dc5658972ae2c804919}{to\+\_\+header}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries fromkeys} (cls, keys, value=None)
+\item 
+{\bfseries \+\_\+\+\_\+reduce\+\_\+ex\+\_\+\+\_\+} (self, protocol)
+\item 
+{\bfseries \+\_\+\+\_\+hash\+\_\+\+\_\+} (self)
+\item 
+{\bfseries setdefault} (self, key, default=None)
+\item 
+{\bfseries update} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+{\bfseries pop} (self, key, default=None)
+\item 
+{\bfseries popitem} (self)
+\item 
+{\bfseries \+\_\+\+\_\+setitem\+\_\+\+\_\+} (self, key, value)
+\item 
+{\bfseries \+\_\+\+\_\+delitem\+\_\+\+\_\+} (self, key)
+\item 
+{\bfseries clear} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_ac52e4836055070bd3581724f67252834}\label{classwerkzeug_1_1datastructures_1_1_authorization_ac52e4836055070bd3581724f67252834} 
+str {\bfseries type} = auth\+\_\+type
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+iter\+\_\+hashitems} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1datastructures_1_1_immutable_dict_mixin}{werkzeug.\+datastructures.\+Immutable\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+hash\+\_\+cache} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents an ``Authorization`` header sent by the client.
+
+This is returned by
+:func:`~werkzeug.http.parse_authorization_header`. It can be useful
+to create the object manually to pass to the test
+:class:`~werkzeug.test.Client`.
+
+.. versionchanged:: 0.5
+    This object became immutable.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_a43016abfb0d3ec0830c1052c227d3602}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!cnonce@{cnonce}}
+\index{cnonce@{cnonce}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{cnonce()}{cnonce()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_a43016abfb0d3ec0830c1052c227d3602} 
+werkzeug.\+datastructures.\+Authorization.\+cnonce (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If the server sent a qop-header in the ``WWW-Authenticate``
+header, the client has to provide this value for HTTP digest auth.
+See the RFC for more details.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_af7ccc2be29c130dbe5861d2f68f3f9fc}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!nc@{nc}}
+\index{nc@{nc}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{nc()}{nc()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_af7ccc2be29c130dbe5861d2f68f3f9fc} 
+werkzeug.\+datastructures.\+Authorization.\+nc (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The nonce count value transmitted by clients if a qop-header is
+also transmitted.  HTTP digest auth only.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_a9368a55b6087082629ee76c4827c7985}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!nonce@{nonce}}
+\index{nonce@{nonce}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{nonce()}{nonce()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_a9368a55b6087082629ee76c4827c7985} 
+werkzeug.\+datastructures.\+Authorization.\+nonce (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The nonce the server sent for digest auth, sent back by the client.
+A nonce should be unique for every 401 response for HTTP digest auth.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_a7008a60ab41b07e8c69ae56259ab9376}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!opaque@{opaque}}
+\index{opaque@{opaque}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{opaque()}{opaque()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_a7008a60ab41b07e8c69ae56259ab9376} 
+werkzeug.\+datastructures.\+Authorization.\+opaque (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The opaque header from the server returned unchanged by the client.
+It is recommended that this string be base64 or hexadecimal data.
+Digest auth only.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_ab80014cb4351af5e208a9601f3c99f86}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!password@{password}}
+\index{password@{password}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{password()}{password()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_ab80014cb4351af5e208a9601f3c99f86} 
+werkzeug.\+datastructures.\+Authorization.\+password (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}When the authentication type is basic this is the password
+transmitted by the client, else `None`.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_aa21d27ed2de1d987cb6151568b8fc7db}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!qop@{qop}}
+\index{qop@{qop}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{qop()}{qop()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_aa21d27ed2de1d987cb6151568b8fc7db} 
+werkzeug.\+datastructures.\+Authorization.\+qop (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Indicates what "quality of protection" the client has applied to
+the message for HTTP digest auth. Note that this is a single token,
+not a quoted list of alternatives as in WWW-Authenticate.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_a7caf88bb3e1c9eca7d08ccff22834064}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!realm@{realm}}
+\index{realm@{realm}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{realm()}{realm()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_a7caf88bb3e1c9eca7d08ccff22834064} 
+werkzeug.\+datastructures.\+Authorization.\+realm (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is the server realm sent back for HTTP digest auth.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_aaccd1570b72011c4361848d3ff5019f1}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!response@{response}}
+\index{response@{response}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_aaccd1570b72011c4361848d3ff5019f1} 
+werkzeug.\+datastructures.\+Authorization.\+response (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A string of 32 hex digits computed as defined in RFC 2617, which
+proves that the user knows a password.  Digest auth only.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_ad69ff7fbec195dc5658972ae2c804919}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!to\_header@{to\_header}}
+\index{to\_header@{to\_header}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{to\_header()}{to\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_ad69ff7fbec195dc5658972ae2c804919} 
+werkzeug.\+datastructures.\+Authorization.\+to\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert to a string value for an ``Authorization`` header.
+
+.. versionadded:: 2.0
+    Added to support passing authorization to the test client.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_aff33f6e173d8c53e0998c62d1af46ddc}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!uri@{uri}}
+\index{uri@{uri}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{uri()}{uri()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_aff33f6e173d8c53e0998c62d1af46ddc} 
+werkzeug.\+datastructures.\+Authorization.\+uri (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The URI from Request-URI of the Request-Line; duplicated because
+proxies are allowed to change the Request-Line in transit.  HTTP
+digest auth only.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1_authorization_a27a9baa67eb59c99e8d54613d94d1bfc}\index{werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}!username@{username}}
+\index{username@{username}!werkzeug.datastructures.Authorization@{werkzeug.datastructures.Authorization}}
+\doxysubsubsection{\texorpdfstring{username()}{username()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1_authorization_a27a9baa67eb59c99e8d54613d94d1bfc} 
+werkzeug.\+datastructures.\+Authorization.\+username (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The username transmitted.  This is set for both basic and digest
+auth all the time.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/datastructures.\+py\end{DoxyCompactItemize}

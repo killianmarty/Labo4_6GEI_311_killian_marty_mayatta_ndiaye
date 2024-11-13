@@ -1,0 +1,72 @@
+\doxysection{werkzeug.\+user\+\_\+agent.\+User\+Agent Class Reference}
+\hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent}{}\label{classwerkzeug_1_1user__agent_1_1_user_agent}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a89aa6460c3d7f6cca4e6f284c42ecce0}\label{classwerkzeug_1_1user__agent_1_1_user_agent_a89aa6460c3d7f6cca4e6f284c42ecce0} 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str string)
+\item 
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a920373cbb7a7508efb31251f57df14b2}\label{classwerkzeug_1_1user__agent_1_1_user_agent_a920373cbb7a7508efb31251f57df14b2} 
+str {\bfseries \+\_\+\+\_\+repr\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_aa37fbc329194acf4990616800194af02}\label{classwerkzeug_1_1user__agent_1_1_user_agent_aa37fbc329194acf4990616800194af02} 
+str {\bfseries \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a738f47a76832d17316ec05401ff51353}\label{classwerkzeug_1_1user__agent_1_1_user_agent_a738f47a76832d17316ec05401ff51353} 
+bool {\bfseries \+\_\+\+\_\+bool\+\_\+\+\_\+} (self)
+\item 
+str \mbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_a13839241011ef4b61af39ea5fe8707ad}{to\+\_\+header}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_ad1797f560f25b17151b5d330eddede50}\label{classwerkzeug_1_1user__agent_1_1_user_agent_ad1797f560f25b17151b5d330eddede50} 
+str {\bfseries string} = string
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_ae8ea44a3e1597dafc3be6e2040751278}\label{classwerkzeug_1_1user__agent_1_1_user_agent_ae8ea44a3e1597dafc3be6e2040751278} 
+t {\bfseries platform} = None
+\item 
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a3004aef9624c2c767313f0be05cc3adc}\label{classwerkzeug_1_1user__agent_1_1_user_agent_a3004aef9624c2c767313f0be05cc3adc} 
+t {\bfseries browser} = None
+\item 
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a5faf0f85439daffdf8a5048aa4461b40}\label{classwerkzeug_1_1user__agent_1_1_user_agent_a5faf0f85439daffdf8a5048aa4461b40} 
+t {\bfseries version} = None
+\item 
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a2e452241a2cbcd854c0b9a05b0b4d7ac}\label{classwerkzeug_1_1user__agent_1_1_user_agent_a2e452241a2cbcd854c0b9a05b0b4d7ac} 
+t {\bfseries language} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a parsed user agent header value.
+
+The default implementation does no parsing, only the :attr:`string`
+attribute is set. A subclass may parse the string to set the
+common attributes or expose other information. Set
+:attr:`werkzeug.wrappers.Request.user_agent_class` to use a
+subclass.
+
+:param string: The header value to parse.
+
+.. versionadded:: 2.0
+    This replaces the previous ``useragents`` module, but does not
+    provide a built-in parser.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a13839241011ef4b61af39ea5fe8707ad}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!to\_header@{to\_header}}
+\index{to\_header@{to\_header}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{to\_header()}{to\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_a13839241011ef4b61af39ea5fe8707ad} 
+ str werkzeug.\+user\+\_\+agent.\+User\+Agent.\+to\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert to a header value.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/user\+\_\+agent.\+py\end{DoxyCompactItemize}

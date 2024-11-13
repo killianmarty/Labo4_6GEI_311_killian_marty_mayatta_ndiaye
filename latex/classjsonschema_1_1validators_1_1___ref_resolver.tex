@@ -1,0 +1,313 @@
+\doxysection{jsonschema.\+validators.\+\_\+\+Ref\+Resolver Class Reference}
+\hypertarget{classjsonschema_1_1validators_1_1___ref_resolver}{}\label{classjsonschema_1_1validators_1_1___ref_resolver}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_aa4c16a385e47d49a5ba19bc6d88fd4ed}\label{classjsonschema_1_1validators_1_1___ref_resolver_aa4c16a385e47d49a5ba19bc6d88fd4ed} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_a18b343f6f1f6f9436a4eda74de8da19f}{base\+\_\+uri}}, referrer, store=Hash\+Trie\+Map(), cache\+\_\+remote=True, handlers=(), urljoin\+\_\+cache=None, remote\+\_\+cache=None)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_a68e8fcd2628baf8946180c0e702e9d16}{from\+\_\+schema}} (cls, schema, id\+\_\+of=referencing.\+jsonschema.\+DRAFT202012.\+id\+\_\+of, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_a300b69d3d3e4d0c8aa631fef8d7e8b77}{push\+\_\+scope}} (self, scope)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_ad074c01b56d31ba15888061027d34cfd}{pop\+\_\+scope}} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_adc56ed0fa3f5b0b7475162070df863a0}{resolution\+\_\+scope}} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_a18b343f6f1f6f9436a4eda74de8da19f}{base\+\_\+uri}} (self)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_a73d156086072c5bd452e285144dca28f}{in\+\_\+scope}} (self, scope)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_a58a70767e931718dce7e9e889e426624}{resolving}} (self, ref)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_a287034d724b8ce5abcc16dca70e588a6}{resolve}} (self, ref)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_abe5473b682650a3330cae24da98a7d66}{resolve\+\_\+from\+\_\+url}} (self, url)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_a043ea7d101cee8c4100f849fbbf4091c}{resolve\+\_\+fragment}} (self, document, fragment)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_aa63441d256a3607d44f2592408f5178e}{resolve\+\_\+remote}} (self, uri)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a4739b110bb19693bf9df9cd40c6431da}\label{classjsonschema_1_1validators_1_1___ref_resolver_a4739b110bb19693bf9df9cd40c6431da} 
+{\bfseries referrer} = referrer
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_ae327619767f79dcbf3cd9a9be5f86b24}\label{classjsonschema_1_1validators_1_1___ref_resolver_ae327619767f79dcbf3cd9a9be5f86b24} 
+{\bfseries cache\+\_\+remote} = cache\+\_\+remote
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_aef348b17dc7d9fedc3e3160a72743fa2}\label{classjsonschema_1_1validators_1_1___ref_resolver_aef348b17dc7d9fedc3e3160a72743fa2} 
+{\bfseries handlers} = dict(handlers)
+\item 
+\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_ace23016e28692a80c5120bc88d1f2da2}{store}}
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a5463c532c38c06867257ec19315dae2f}\label{classjsonschema_1_1validators_1_1___ref_resolver_a5463c532c38c06867257ec19315dae2f} 
+{\bfseries resolution\+\_\+scope}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_aba155240be77b36fa1189b3838d7ecc7}\label{classjsonschema_1_1validators_1_1___ref_resolver_aba155240be77b36fa1189b3838d7ecc7} 
+{\bfseries \+\_\+find\+\_\+in\+\_\+referrer} (self, key)
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a35327f599bdb16cf898829129cf14fd3}\label{classjsonschema_1_1validators_1_1___ref_resolver_a35327f599bdb16cf898829129cf14fd3} 
+{\bfseries \+\_\+get\+\_\+subschemas\+\_\+cache} (self)
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_ad1efbdc031e66c0bc2d46739f113a45e}\label{classjsonschema_1_1validators_1_1___ref_resolver_ad1efbdc031e66c0bc2d46739f113a45e} 
+{\bfseries \+\_\+find\+\_\+in\+\_\+subschemas} (self, url)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a0c89bda008384b875a473c57bcbe8cb6}\label{classjsonschema_1_1validators_1_1___ref_resolver_a0c89bda008384b875a473c57bcbe8cb6} 
+list {\bfseries \+\_\+scopes\+\_\+stack} = \mbox{[}\mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_a18b343f6f1f6f9436a4eda74de8da19f}{base\+\_\+uri}}\mbox{]}
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a285202046b94ae5079d6a07b6deb10a8}\label{classjsonschema_1_1validators_1_1___ref_resolver_a285202046b94ae5079d6a07b6deb10a8} 
+{\bfseries \+\_\+urljoin\+\_\+cache} = urljoin\+\_\+cache
+\item 
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a3be5782e9a11cfa74b71c86849a6272a}\label{classjsonschema_1_1validators_1_1___ref_resolver_a3be5782e9a11cfa74b71c86849a6272a} 
+{\bfseries \+\_\+remote\+\_\+cache} = remote\+\_\+cache
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classjsonschema_1_1validators_1_1___ref_resolver_a612cad0f733d58268ac4178ad79183f4}{\+\_\+\+DEPRECATION\+\_\+\+MESSAGE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Resolve JSON References.
+
+Arguments:
+
+    base_uri (str):
+
+        The URI of the referring document
+
+    referrer:
+
+        The actual referring document
+
+    store (dict):
+
+        A mapping from URIs to documents to cache
+
+    cache_remote (bool):
+
+        Whether remote refs should be cached after first resolution
+
+    handlers (dict):
+
+        A mapping from URI schemes to functions that should be used
+        to retrieve them
+
+    urljoin_cache (:func:`functools.lru_cache`):
+
+        A cache that will be used for caching the results of joining
+        the resolution scope to subscopes.
+
+    remote_cache (:func:`functools.lru_cache`):
+
+        A cache that will be used for caching the results of
+        resolved remote URLs.
+
+Attributes:
+
+    cache_remote (bool):
+
+        Whether remote refs should be cached after first resolution
+
+.. deprecated:: v4.18.0
+
+    ``RefResolver`` has been deprecated in favor of `referencing`.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a18b343f6f1f6f9436a4eda74de8da19f}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!base\_uri@{base\_uri}}
+\index{base\_uri@{base\_uri}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{base\_uri()}{base\_uri()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_a18b343f6f1f6f9436a4eda74de8da19f} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+base\+\_\+uri (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve the current base URI, not including any fragment.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a68e8fcd2628baf8946180c0e702e9d16}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!from\_schema@{from\_schema}}
+\index{from\_schema@{from\_schema}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{from\_schema()}{from\_schema()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_a68e8fcd2628baf8946180c0e702e9d16} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+from\+\_\+schema (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{schema}{, }\item[{}]{id\+\_\+of}{ = {\ttfamily referencing.jsonschema.DRAFT202012.id\+\_\+of}, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct a resolver from a JSON schema object.
+
+Arguments:
+
+    schema:
+
+        the referring schema
+
+Returns:
+
+    `_RefResolver`\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a73d156086072c5bd452e285144dca28f}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!in\_scope@{in\_scope}}
+\index{in\_scope@{in\_scope}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{in\_scope()}{in\_scope()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_a73d156086072c5bd452e285144dca28f} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+in\+\_\+scope (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{scope}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Temporarily enter the given scope for the duration of the context.
+
+.. deprecated:: v4.0.0
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_ad074c01b56d31ba15888061027d34cfd}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!pop\_scope@{pop\_scope}}
+\index{pop\_scope@{pop\_scope}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{pop\_scope()}{pop\_scope()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_ad074c01b56d31ba15888061027d34cfd} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+pop\+\_\+scope (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Exit the most recent entered scope.
+
+Treats further dereferences as being performed underneath the
+original scope.
+
+Don't call this method more times than `push_scope` has been
+called.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a300b69d3d3e4d0c8aa631fef8d7e8b77}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!push\_scope@{push\_scope}}
+\index{push\_scope@{push\_scope}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{push\_scope()}{push\_scope()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_a300b69d3d3e4d0c8aa631fef8d7e8b77} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+push\+\_\+scope (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{scope}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enter a given sub-scope.
+
+Treats further dereferences as being performed underneath the
+given scope.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_adc56ed0fa3f5b0b7475162070df863a0}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!resolution\_scope@{resolution\_scope}}
+\index{resolution\_scope@{resolution\_scope}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{resolution\_scope()}{resolution\_scope()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_adc56ed0fa3f5b0b7475162070df863a0} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+resolution\+\_\+scope (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Retrieve the current resolution scope.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a287034d724b8ce5abcc16dca70e588a6}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_a287034d724b8ce5abcc16dca70e588a6} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+resolve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ref}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve the given reference.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a043ea7d101cee8c4100f849fbbf4091c}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!resolve\_fragment@{resolve\_fragment}}
+\index{resolve\_fragment@{resolve\_fragment}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{resolve\_fragment()}{resolve\_fragment()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_a043ea7d101cee8c4100f849fbbf4091c} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+resolve\+\_\+fragment (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{document}{, }\item[{}]{fragment}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve a ``fragment`` within the referenced ``document``.
+
+Arguments:
+
+    document:
+
+        The referent document
+
+    fragment (str):
+
+        a URI fragment to resolve within it\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_abe5473b682650a3330cae24da98a7d66}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!resolve\_from\_url@{resolve\_from\_url}}
+\index{resolve\_from\_url@{resolve\_from\_url}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{resolve\_from\_url()}{resolve\_from\_url()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_abe5473b682650a3330cae24da98a7d66} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+resolve\+\_\+from\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve the given URL.
+\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_aa63441d256a3607d44f2592408f5178e}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!resolve\_remote@{resolve\_remote}}
+\index{resolve\_remote@{resolve\_remote}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{resolve\_remote()}{resolve\_remote()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_aa63441d256a3607d44f2592408f5178e} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+resolve\+\_\+remote (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{uri}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve a remote ``uri``.
+
+If called directly, does not check the store first, but after
+retrieving the document at the specified URI it will be saved in
+the store if :attr:`cache_remote` is True.
+
+.. note::
+
+    If the requests_ library is present, ``jsonschema`` will use it to
+    request the remote ``uri``, so that the correct encoding is
+    detected and used.
+
+    If it isn't, or if the scheme of the ``uri`` is not ``http`` or
+    ``https``, UTF-8 is assumed.
+
+Arguments:
+
+    uri (str):
+
+        The URI to resolve
+
+Returns:
+
+    The retrieved document
+
+.. _requests: https://pypi.org/project/requests/\end{DoxyVerb}
+ \Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a58a70767e931718dce7e9e889e426624}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!resolving@{resolving}}
+\index{resolving@{resolving}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{resolving()}{resolving()}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_a58a70767e931718dce7e9e889e426624} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+resolving (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ref}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resolve the given ``ref`` and enter its resolution scope.
+
+Exits the scope on exit of this context manager.
+
+Arguments:
+
+    ref (str):
+
+        The reference to resolve\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_a612cad0f733d58268ac4178ad79183f4}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!\_DEPRECATION\_MESSAGE@{\_DEPRECATION\_MESSAGE}}
+\index{\_DEPRECATION\_MESSAGE@{\_DEPRECATION\_MESSAGE}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{\_DEPRECATION\_MESSAGE}{\_DEPRECATION\_MESSAGE}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_a612cad0f733d58268ac4178ad79183f4} 
+tuple jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+\_\+\+DEPRECATION\+\_\+\+MESSAGE\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}jsonschema.RefResolver\ is\ deprecated\ as\ of\ v4.18.0,\ in\ favor\ of\ the\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}https://github.com/python-\/jsonschema/referencing\ library,\ which\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}provides\ more\ compliant\ referencing\ behavior\ as\ well\ as\ more\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}flexible\ APIs\ for\ customization.\ A\ future\ release\ will\ remove\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}RefResolver.\ Please\ file\ a\ feature\ request\ (on\ referencing)\ if\ you\ "{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}are\ missing\ an\ API\ for\ the\ kind\ of\ customization\ you\ need."{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classjsonschema_1_1validators_1_1___ref_resolver_ace23016e28692a80c5120bc88d1f2da2}\index{jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}!store@{store}}
+\index{store@{store}!jsonschema.validators.\_RefResolver@{jsonschema.validators.\_RefResolver}}
+\doxysubsubsection{\texorpdfstring{store}{store}}
+{\footnotesize\ttfamily \label{classjsonschema_1_1validators_1_1___ref_resolver_ace23016e28692a80c5120bc88d1f2da2} 
+jsonschema.\+validators.\+\_\+\+Ref\+Resolver.\+store}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_utils.URIDict(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (uri,\ each.contents)\ \textcolor{keywordflow}{for}\ uri,\ each\ \textcolor{keywordflow}{in}\ SPECIFICATIONS.items()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/jsonschema/validators.\+py\end{DoxyCompactItemize}

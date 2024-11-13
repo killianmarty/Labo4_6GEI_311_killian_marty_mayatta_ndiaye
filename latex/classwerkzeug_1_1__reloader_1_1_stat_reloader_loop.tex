@@ -1,0 +1,96 @@
+\doxysection{werkzeug.\+\_\+reloader.\+Stat\+Reloader\+Loop Class Reference}
+\hypertarget{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop}{}\label{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop}\index{werkzeug.\_reloader.StatReloaderLoop@{werkzeug.\_reloader.StatReloaderLoop}}
+Inheritance diagram for werkzeug.\+\_\+reloader.\+Stat\+Reloader\+Loop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop}{Reloader\+Loop}} \mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_aa60d5cf64f5c7e8e46088b7e7bc00e9b}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_ae67c3475af7b1e017a7084fb6d6d19b9}{run\+\_\+step}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop}{werkzeug.\+\_\+reloader.\+Reloader\+Loop}}}
+\begin{DoxyCompactItemize}
+\item 
+None {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, t.\+Optional\mbox{[}t.\+Iterable\mbox{[}str\mbox{]}\mbox{]} extra\+\_\+files=None, t.\+Optional\mbox{[}t.\+Iterable\mbox{[}str\mbox{]}\mbox{]} exclude\+\_\+patterns=None, t.\+Union\mbox{[}int, float\mbox{]} interval=1)
+\item 
+\mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop_a891909228cefbf821249407f0e21f42d}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+val, exc\+\_\+tb)
+\item 
+None \mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop_a6cfb034b7292d126aec37d122490bc8b}{run}} (self)
+\item 
+int \mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop_a28caeb99a847f9d128fb39b75e895295}{restart\+\_\+with\+\_\+reloader}} (self)
+\item 
+None {\bfseries trigger\+\_\+reload} (self, str filename)
+\item 
+None {\bfseries log\+\_\+reload} (self, str filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_a2229d09bfd6c6eed16fb62ea19aad02d}\label{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_a2229d09bfd6c6eed16fb62ea19aad02d} 
+dict {\bfseries mtimes} = \{\}
+\item 
+\Hypertarget{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_ac789a72757eb2103677e7e2171fe28e4}\label{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_ac789a72757eb2103677e7e2171fe28e4} 
+{\bfseries extra\+\_\+files}
+\item 
+\Hypertarget{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_a6a1b220311a357813056b3302d8d3c18}\label{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_a6a1b220311a357813056b3302d8d3c18} 
+{\bfseries exclude\+\_\+patterns}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop}{werkzeug.\+\_\+reloader.\+Reloader\+Loop}}}
+\begin{DoxyCompactItemize}
+\item 
+dict {\bfseries extra\+\_\+files} = \{os.\+path.\+abspath(x) for x in extra\+\_\+files or ()\}
+\item 
+t.\+Set\mbox{[}str\mbox{]} {\bfseries exclude\+\_\+patterns} = set(exclude\+\_\+patterns or ())
+\item 
+{\bfseries interval} = interval
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_a9e26901f0bfa500e3d05516e24309fa4}\label{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_a9e26901f0bfa500e3d05516e24309fa4} 
+str {\bfseries name} = "{}stat"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop}{werkzeug.\+\_\+reloader.\+Reloader\+Loop}}}
+\begin{DoxyCompactItemize}
+\item 
+str {\bfseries name} = "{}"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_aa60d5cf64f5c7e8e46088b7e7bc00e9b}\index{werkzeug.\_reloader.StatReloaderLoop@{werkzeug.\_reloader.StatReloaderLoop}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!werkzeug.\_reloader.StatReloaderLoop@{werkzeug.\_reloader.StatReloaderLoop}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_aa60d5cf64f5c7e8e46088b7e7bc00e9b} 
+ \mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop}{Reloader\+Loop}} werkzeug.\+\_\+reloader.\+Stat\+Reloader\+Loop.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do any setup, then run one step of the watch to populate the
+initial filesystem state.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop_a370d7e95b2d7bc50a5d3027f66023bdd}{werkzeug.\+\_\+reloader.\+Reloader\+Loop}}.
+
+\Hypertarget{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_ae67c3475af7b1e017a7084fb6d6d19b9}\index{werkzeug.\_reloader.StatReloaderLoop@{werkzeug.\_reloader.StatReloaderLoop}!run\_step@{run\_step}}
+\index{run\_step@{run\_step}!werkzeug.\_reloader.StatReloaderLoop@{werkzeug.\_reloader.StatReloaderLoop}}
+\doxysubsubsection{\texorpdfstring{run\_step()}{run\_step()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop_ae67c3475af7b1e017a7084fb6d6d19b9} 
+ None werkzeug.\+\_\+reloader.\+Stat\+Reloader\+Loop.\+run\+\_\+step (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run one step for watching the filesystem. Called once to set
+up initial state, then repeatedly to update it.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop_a65a85bf0265a98f868a3e55ba23d2c93}{werkzeug.\+\_\+reloader.\+Reloader\+Loop}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/werkzeug/\+\_\+reloader.\+py\end{DoxyCompactItemize}

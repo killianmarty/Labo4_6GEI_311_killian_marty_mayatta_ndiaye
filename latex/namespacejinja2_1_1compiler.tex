@@ -1,0 +1,98 @@
+\doxysection{jinja2.\+compiler Namespace Reference}
+\hypertarget{namespacejinja2_1_1compiler}{}\label{namespacejinja2_1_1compiler}\index{jinja2.compiler@{jinja2.compiler}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1compiler_1_1_code_generator}{Code\+Generator}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1compiler_1_1_compiler_exit}{Compiler\+Exit}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1compiler_1_1_dependency_finder_visitor}{Dependency\+Finder\+Visitor}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1compiler_1_1_frame}{Frame}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1compiler_1_1_macro_ref}{Macro\+Ref}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1compiler_1_1_undeclared_name_visitor}{Undeclared\+Name\+Visitor}}
+\item 
+class \mbox{\hyperlink{classjinja2_1_1compiler_1_1_visitor_exit}{Visitor\+Exit}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejinja2_1_1compiler_ad116cfcd48191e2b32dc5018f3637bb3}\label{namespacejinja2_1_1compiler_ad116cfcd48191e2b32dc5018f3637bb3} 
+F {\bfseries optimizeconst} (F f)
+\item 
+\Hypertarget{namespacejinja2_1_1compiler_a259932027231967eed005611c0f8c815}\label{namespacejinja2_1_1compiler_a259932027231967eed005611c0f8c815} 
+t.\+Callable\mbox{[}\mbox{[}"{}Code\+Generator"{}, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_bin_expr}{nodes.\+Bin\+Expr}}, "{}Frame"{}\mbox{]}, None\mbox{]} {\bfseries \+\_\+make\+\_\+binop} (str op)
+\item 
+\Hypertarget{namespacejinja2_1_1compiler_a97c666ac13afe53ee17ae58aa268b9c0}\label{namespacejinja2_1_1compiler_a97c666ac13afe53ee17ae58aa268b9c0} 
+t.\+Callable\mbox{[}\mbox{[}"{}Code\+Generator"{}, \mbox{\hyperlink{classjinja2_1_1nodes_1_1_unary_expr}{nodes.\+Unary\+Expr}}, "{}Frame"{}\mbox{]}, None\mbox{]} {\bfseries \+\_\+make\+\_\+unop} (str op)
+\item 
+t.\+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacejinja2_1_1compiler_adf03ad2ba93311e62c4b9604a33b226c}{generate}} (\mbox{\hyperlink{classjinja2_1_1nodes_1_1_template}{nodes.\+Template}} node, "{}Environment"{} environment, t.\+Optional\mbox{[}str\mbox{]} name, t.\+Optional\mbox{[}str\mbox{]} filename, t.\+Optional\mbox{[}t.\+Text\+IO\mbox{]} stream=None, bool defer\+\_\+init=False, bool optimized=True)
+\item 
+bool \mbox{\hyperlink{namespacejinja2_1_1compiler_ab8519e49d1c4972f020acb6f85af4d2d}{has\+\_\+safe\+\_\+repr}} (t.\+Any value)
+\item 
+t.\+Set\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacejinja2_1_1compiler_a9bef6fd54a70160d664d8d01f2f6a573}{find\+\_\+undeclared}} (t.\+Iterable\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}}\mbox{]} nodes, t.\+Iterable\mbox{[}str\mbox{]} names)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacejinja2_1_1compiler_a66458e9d8c2d61f43f39e0649df431c4}\label{namespacejinja2_1_1compiler_a66458e9d8c2d61f43f39e0649df431c4} 
+{\bfseries F} = t.\+Type\+Var("{}F"{}, bound=t.\+Callable\mbox{[}..., t.\+Any\mbox{]})
+\item 
+dict \mbox{\hyperlink{namespacejinja2_1_1compiler_a5dcabcfb2f88c878db8451e39c76d498}{operators}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Compiles nodes from the parser into Python code.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacejinja2_1_1compiler_a9bef6fd54a70160d664d8d01f2f6a573}\index{jinja2.compiler@{jinja2.compiler}!find\_undeclared@{find\_undeclared}}
+\index{find\_undeclared@{find\_undeclared}!jinja2.compiler@{jinja2.compiler}}
+\doxysubsubsection{\texorpdfstring{find\_undeclared()}{find\_undeclared()}}
+{\footnotesize\ttfamily \label{namespacejinja2_1_1compiler_a9bef6fd54a70160d664d8d01f2f6a573} 
+ t.\+Set\mbox{[}str\mbox{]} jinja2.\+compiler.\+find\+\_\+undeclared (\begin{DoxyParamCaption}\item[{t.\+Iterable\mbox{[}\mbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}}\mbox{]}}]{nodes}{, }\item[{t.\+Iterable\mbox{[}str\mbox{]} }]{names}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the names passed are accessed undeclared.  The return value
+is a set of all the undeclared names from the sequence of names found.
+\end{DoxyVerb}
+ \Hypertarget{namespacejinja2_1_1compiler_adf03ad2ba93311e62c4b9604a33b226c}\index{jinja2.compiler@{jinja2.compiler}!generate@{generate}}
+\index{generate@{generate}!jinja2.compiler@{jinja2.compiler}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{namespacejinja2_1_1compiler_adf03ad2ba93311e62c4b9604a33b226c} 
+ t.\+Optional\mbox{[}str\mbox{]} jinja2.\+compiler.\+generate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classjinja2_1_1nodes_1_1_template}{nodes.\+Template}}}]{node}{, }\item[{"{}Environment"{}}]{environment}{, }\item[{t.\+Optional\mbox{[}str\mbox{]}}]{name}{, }\item[{t.\+Optional\mbox{[}str\mbox{]}}]{filename}{, }\item[{t.\+Optional\mbox{[}t.\+Text\+IO\mbox{]} }]{stream}{ = {\ttfamily None}, }\item[{bool }]{defer\+\_\+init}{ = {\ttfamily False}, }\item[{bool }]{optimized}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate the python source for a node tree.\end{DoxyVerb}
+ \Hypertarget{namespacejinja2_1_1compiler_ab8519e49d1c4972f020acb6f85af4d2d}\index{jinja2.compiler@{jinja2.compiler}!has\_safe\_repr@{has\_safe\_repr}}
+\index{has\_safe\_repr@{has\_safe\_repr}!jinja2.compiler@{jinja2.compiler}}
+\doxysubsubsection{\texorpdfstring{has\_safe\_repr()}{has\_safe\_repr()}}
+{\footnotesize\ttfamily \label{namespacejinja2_1_1compiler_ab8519e49d1c4972f020acb6f85af4d2d} 
+ bool jinja2.\+compiler.\+has\+\_\+safe\+\_\+repr (\begin{DoxyParamCaption}\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Does the node have a safe representation?\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacejinja2_1_1compiler_a5dcabcfb2f88c878db8451e39c76d498}\index{jinja2.compiler@{jinja2.compiler}!operators@{operators}}
+\index{operators@{operators}!jinja2.compiler@{jinja2.compiler}}
+\doxysubsubsection{\texorpdfstring{operators}{operators}}
+{\footnotesize\ttfamily \label{namespacejinja2_1_1compiler_a5dcabcfb2f88c878db8451e39c76d498} 
+dict jinja2.\+compiler.\+operators}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}eq"{}}:\ \textcolor{stringliteral}{"{}=="{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}ne"{}}:\ \textcolor{stringliteral}{"{}!="{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}gt"{}}:\ \textcolor{stringliteral}{"{}>"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}gteq"{}}:\ \textcolor{stringliteral}{"{}>="{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}lt"{}}:\ \textcolor{stringliteral}{"{}<"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}lteq"{}}:\ \textcolor{stringliteral}{"{}<="{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}in"{}}:\ \textcolor{stringliteral}{"{}in"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}notin"{}}:\ \textcolor{stringliteral}{"{}not\ in"{}},}
+\DoxyCodeLine{00010\ \}}
+
+\end{DoxyCode}

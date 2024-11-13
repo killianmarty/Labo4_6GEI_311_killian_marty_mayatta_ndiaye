@@ -1,0 +1,43 @@
+\doxysection{pip.\+\_\+vendor.\+contextlib2.\+suppress Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1suppress}{}\label{classpip_1_1__vendor_1_1contextlib2_1_1suppress}\index{pip.\_vendor.contextlib2.suppress@{pip.\_vendor.contextlib2.suppress}}
+Inheritance diagram for pip.\+\_\+vendor.\+contextlib2.\+suppress\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1contextlib2_1_1suppress}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1suppress_a236b6ad805711f09aaa20bd33d40f972}\label{classpip_1_1__vendor_1_1contextlib2_1_1suppress_a236b6ad805711f09aaa20bd33d40f972} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}exceptions)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1suppress_ab50540f518df927194b097dad1bde766}\label{classpip_1_1__vendor_1_1contextlib2_1_1suppress_ab50540f518df927194b097dad1bde766} 
+{\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1suppress_a59bd8d03fe5a4c4f31204b394393a84d}\label{classpip_1_1__vendor_1_1contextlib2_1_1suppress_a59bd8d03fe5a4c4f31204b394393a84d} 
+{\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, exctype, excinst, exctb)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__vendor_1_1contextlib2_1_1suppress_ab857a8b66082dbd18b0a0fd2ff3b6295}\label{classpip_1_1__vendor_1_1contextlib2_1_1suppress_ab857a8b66082dbd18b0a0fd2ff3b6295} 
+{\bfseries \+\_\+exceptions} = exceptions
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Context manager to suppress specified exceptions
+
+After the exception is suppressed, execution proceeds with the next
+statement following the with statement.
+
+     with suppress(FileNotFoundError):
+         os.remove(somefile)
+     # Execution still resumes here if the file was already removed
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+vendor/contextlib2.\+py\end{DoxyCompactItemize}

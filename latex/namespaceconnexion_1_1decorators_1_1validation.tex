@@ -1,0 +1,57 @@
+\doxysection{Référence de l\textquotesingle{}espace de nommage connexion.\+decorators.\+validation}
+\hypertarget{namespaceconnexion_1_1decorators_1_1validation}{}\label{namespaceconnexion_1_1decorators_1_1validation}\index{connexion.decorators.validation@{connexion.decorators.validation}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classconnexion_1_1decorators_1_1validation_1_1_parameter_validator}{Parameter\+Validator}}
+\item 
+class \mbox{\hyperlink{classconnexion_1_1decorators_1_1validation_1_1_request_body_validator}{Request\+Body\+Validator}}
+\item 
+class \mbox{\hyperlink{classconnexion_1_1decorators_1_1validation_1_1_response_body_validator}{Response\+Body\+Validator}}
+\item 
+class \mbox{\hyperlink{classconnexion_1_1decorators_1_1validation_1_1_type_validation_error}{Type\+Validation\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceconnexion_1_1decorators_1_1validation_abde99b0b6b85c8d29301c381ca143bbd}\label{namespaceconnexion_1_1decorators_1_1validation_abde99b0b6b85c8d29301c381ca143bbd} 
+{\bfseries coerce\+\_\+type} (param, value, parameter\+\_\+type, parameter\+\_\+name=None)
+\item 
+\Hypertarget{namespaceconnexion_1_1decorators_1_1validation_a920c6a0b27081a32b389ffc848a6e77b}\label{namespaceconnexion_1_1decorators_1_1validation_a920c6a0b27081a32b389ffc848a6e77b} 
+{\bfseries validate\+\_\+parameter\+\_\+list} (request\+\_\+params, spec\+\_\+params)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceconnexion_1_1decorators_1_1validation_af753f88114f69f9c257f045f764bcf23}\label{namespaceconnexion_1_1decorators_1_1validation_af753f88114f69f9c257f045f764bcf23} 
+{\bfseries \+\_\+jsonschema\+\_\+3\+\_\+or\+\_\+newer} = \mbox{\hyperlink{classpackaging_1_1version_1_1_version}{Version}}("{}3.\+0.\+0"{})
+\item 
+\Hypertarget{namespaceconnexion_1_1decorators_1_1validation_a7c3fde29d47dbc64b91d09241de67b0e}\label{namespaceconnexion_1_1decorators_1_1validation_a7c3fde29d47dbc64b91d09241de67b0e} 
+{\bfseries logger} = logging.\+get\+Logger(\textquotesingle{}connexion.\+decorators.\+validation\textquotesingle{})
+\item 
+dict \mbox{\hyperlink{namespaceconnexion_1_1decorators_1_1validation_a332c56318c6f75ae3ccb7e5cdd422ce7}{TYPE\+\_\+\+MAP}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyVerb}This module defines view function decorators to validate request and response parameters and bodies.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Documentation des variables}
+\Hypertarget{namespaceconnexion_1_1decorators_1_1validation_a332c56318c6f75ae3ccb7e5cdd422ce7}\index{connexion.decorators.validation@{connexion.decorators.validation}!TYPE\_MAP@{TYPE\_MAP}}
+\index{TYPE\_MAP@{TYPE\_MAP}!connexion.decorators.validation@{connexion.decorators.validation}}
+\doxysubsubsection{\texorpdfstring{TYPE\_MAP}{TYPE\_MAP}}
+{\footnotesize\ttfamily \label{namespaceconnexion_1_1decorators_1_1validation_a332c56318c6f75ae3ccb7e5cdd422ce7} 
+dict connexion.\+decorators.\+validation.\+TYPE\+\_\+\+MAP}
+
+{\bfseries Valeur initiale \+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'integer'}:\ int,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'number'}:\ float,}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'boolean'}:\ boolean,}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'object'}:\ dict}
+\DoxyCodeLine{00006\ \}}
+
+\end{DoxyCode}

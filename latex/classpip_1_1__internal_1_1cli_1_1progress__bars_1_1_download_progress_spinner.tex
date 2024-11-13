@@ -1,0 +1,110 @@
+\doxysection{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Download\+Progress\+Spinner Class Reference}
+\hypertarget{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner}{}\label{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner}\index{pip.\_internal.cli.progress\_bars.DownloadProgressSpinner@{pip.\_internal.cli.progress\_bars.DownloadProgressSpinner}}
+Inheritance diagram for pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Download\+Progress\+Spinner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.206897cm]{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_a400221351f2a7536c10f7a887ae5ac94}\label{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_a400221351f2a7536c10f7a887ae5ac94} 
+{\bfseries next\+\_\+phase} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_ae009c5b6fc4b4cd7fa764f7c09b04723}{update}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_windows_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Windows\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_interruptible_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Interruptible\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_interruptible_mixin_a564a4da8a2f5d5c9f473c90ddabe89a0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_interruptible_mixin_a11208002ef982ee72aa80f0d5dd216db}{finish}} (self)
+\item 
+\mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_interruptible_mixin_ad282135a0353dba28dba9c7ff6621875}{handle\+\_\+sigint}} (self, signum, frame)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Download\+Progress\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+{\bfseries downloaded} (self)
+\item 
+{\bfseries download\+\_\+speed} (self)
+\item 
+{\bfseries pretty\+\_\+eta} (self)
+\item 
+{\bfseries iter} (self, it)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1progress_1_1spinner_1_1_spinner}{pip.\+\_\+vendor.\+progress.\+spinner.\+Spinner}}}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_a433576612719fba7d1e06a323408b124}\label{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_a433576612719fba7d1e06a323408b124} 
+{\bfseries file} = sys.\+stdout
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_a36d0f21041034774550be3e3dbda8df8}\label{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_a36d0f21041034774550be3e3dbda8df8} 
+str {\bfseries suffix} = "{}\%(downloaded)s \%(download\+\_\+speed)s"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__vendor_1_1progress_1_1spinner_1_1_spinner}{pip.\+\_\+vendor.\+progress.\+spinner.\+Spinner}}}
+\begin{DoxyCompactItemize}
+\item 
+tuple {\bfseries phases} = (\textquotesingle{}-\/\textquotesingle{}, \textquotesingle{}\textbackslash{}\textbackslash{}\textquotesingle{}, \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}, \textquotesingle{}/\textquotesingle{})
+\item 
+bool {\bfseries hide\+\_\+cursor} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_a4b450e5c7689b31dad95e2bb3df28c2e}\label{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_a4b450e5c7689b31dad95e2bb3df28c2e} 
+{\bfseries \+\_\+phaser} = itertools.\+cycle(self.\+phases)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_windows_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Windows\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\# type ignore {\bfseries hide\+\_\+cursor}
+\item 
+{\bfseries file} = \mbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_ansi_to_win32}{colorama.\+Ansi\+To\+Win32}}(self.\+file)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_interruptible_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Interruptible\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries original\+\_\+handler} = signal(SIGINT, self.\+handle\+\_\+sigint)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_mixin}{pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Download\+Progress\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_mixin_a8e7450e12acacbd086a71a774ce2fdbe}{message}}
+\item 
+{\bfseries index}
+\item 
+float {\bfseries avg} = 0.\+0\+:
+\item 
+\# type ignore {\bfseries eta}
+\item 
+{\bfseries eta\+\_\+td}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_ae009c5b6fc4b4cd7fa764f7c09b04723}\index{pip.\_internal.cli.progress\_bars.DownloadProgressSpinner@{pip.\_internal.cli.progress\_bars.DownloadProgressSpinner}!update@{update}}
+\index{update@{update}!pip.\_internal.cli.progress\_bars.DownloadProgressSpinner@{pip.\_internal.cli.progress\_bars.DownloadProgressSpinner}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cli_1_1progress__bars_1_1_download_progress_spinner_ae009c5b6fc4b4cd7fa764f7c09b04723} 
+pip.\+\_\+internal.\+cli.\+progress\+\_\+bars.\+Download\+Progress\+Spinner.\+update (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__vendor_1_1progress_1_1spinner_1_1_spinner}{pip.\+\_\+vendor.\+progress.\+spinner.\+Spinner}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/cli/progress\+\_\+bars.\+py\end{DoxyCompactItemize}

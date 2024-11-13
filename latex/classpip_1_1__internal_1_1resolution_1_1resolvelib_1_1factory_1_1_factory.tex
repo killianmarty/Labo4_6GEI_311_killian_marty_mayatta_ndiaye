@@ -1,0 +1,101 @@
+\doxysection{pip.\+\_\+internal.\+resolution.\+resolvelib.\+factory.\+Factory Class Reference}
+\hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory}{}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory}\index{pip.\_internal.resolution.resolvelib.factory.Factory@{pip.\_internal.resolution.resolvelib.factory.Factory}}
+Inheritance diagram for pip.\+\_\+internal.\+resolution.\+resolvelib.\+factory.\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a3d88177fbfffde34e1a0b5ebe11768b2}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a3d88177fbfffde34e1a0b5ebe11768b2} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, finder, preparer, make\+\_\+install\+\_\+req, force\+\_\+reinstall, ignore\+\_\+installed, ignore\+\_\+requires\+\_\+python, py\+\_\+version\+\_\+info=None)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a8e639da4f9475fe7b0a4a95c6074ac5d}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a8e639da4f9475fe7b0a4a95c6074ac5d} 
+{\bfseries iter\+\_\+found\+\_\+candidates} (self, ireq, extras)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_ad8a18b644398815029791acc837a655f}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_ad8a18b644398815029791acc837a655f} 
+{\bfseries make\+\_\+requirement\+\_\+from\+\_\+install\+\_\+req} (self, ireq)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_af128227f1fdecf6180a11cfdeaa15d31}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_af128227f1fdecf6180a11cfdeaa15d31} 
+{\bfseries make\+\_\+requirement\+\_\+from\+\_\+spec} (self, specifier, comes\+\_\+from)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a255181407e126a68f0349c09439560f5}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a255181407e126a68f0349c09439560f5} 
+{\bfseries make\+\_\+requires\+\_\+python\+\_\+requirement} (self, specifier)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_ae996f4ed19327bd683b1f49cee40d328}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_ae996f4ed19327bd683b1f49cee40d328} 
+{\bfseries should\+\_\+reinstall} (self, candidate)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a812638a2f34e4b80b1856032d15581f7}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a812638a2f34e4b80b1856032d15581f7} 
+{\bfseries get\+\_\+installation\+\_\+error} (self, e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a6b4f576b191ff63fbfa3387b497f8a15}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a6b4f576b191ff63fbfa3387b497f8a15} 
+{\bfseries finder} = finder
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a19004f4087d32ba4dd2ad969281ae7d5}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a19004f4087d32ba4dd2ad969281ae7d5} 
+{\bfseries preparer} = preparer
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_aeaa71c4d8057d160a8f56db1a13fd0e3}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_aeaa71c4d8057d160a8f56db1a13fd0e3} 
+dict {\bfseries \+\_\+force\+\_\+reinstall} = self.\+\_\+installed\+\_\+dists.\+get(name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a7fda5eaa23246edd93beade79a95529f}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a7fda5eaa23246edd93beade79a95529f} 
+{\bfseries \+\_\+make\+\_\+candidate\+\_\+from\+\_\+dist} (self, dist, extras, parent)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_af194897cad369898813569400dc9bb97}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_af194897cad369898813569400dc9bb97} 
+{\bfseries \+\_\+make\+\_\+candidate\+\_\+from\+\_\+link} (self, link, extras, parent, name=None, version=None)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a5cbb0ecbae96dda96be7e57c3eafc0fb}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a5cbb0ecbae96dda96be7e57c3eafc0fb} 
+{\bfseries \+\_\+report\+\_\+requires\+\_\+python\+\_\+error} (self, requirement, parent)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a8b71befa12ced3fad554f9126184f198}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a8b71befa12ced3fad554f9126184f198} 
+{\bfseries \+\_\+python\+\_\+candidate} = \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1candidates_1_1_requires_python_candidate}{Requires\+Python\+Candidate}}(py\+\_\+version\+\_\+info)
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a0a5e156288789f0bc45bd4b29bf2a8c5}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a0a5e156288789f0bc45bd4b29bf2a8c5} 
+{\bfseries \+\_\+make\+\_\+install\+\_\+req\+\_\+from\+\_\+spec} = make\+\_\+install\+\_\+req
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_ab8e404983cd20cfd688b50680310e466}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_ab8e404983cd20cfd688b50680310e466} 
+{\bfseries \+\_\+force\+\_\+reinstall} = force\+\_\+reinstall
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_ac5cb4c3a5d2a7ff50f2d2f83eb6d3b05}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_ac5cb4c3a5d2a7ff50f2d2f83eb6d3b05} 
+{\bfseries \+\_\+ignore\+\_\+requires\+\_\+python} = ignore\+\_\+requires\+\_\+python
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a04aaa2040a9caa9f378cb68ec6253ca9}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a04aaa2040a9caa9f378cb68ec6253ca9} 
+dict {\bfseries \+\_\+link\+\_\+candidate\+\_\+cache} = \{\}
+\item 
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_acd2834d233c84e570822d9f06745c659}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_acd2834d233c84e570822d9f06745c659} 
+dict {\bfseries \+\_\+editable\+\_\+candidate\+\_\+cache} = \{\}
+\item 
+dict \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a07f07ff3ee84d9bc66a7583b6d0895c1}{\+\_\+installed\+\_\+dists}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a07f07ff3ee84d9bc66a7583b6d0895c1}\index{pip.\_internal.resolution.resolvelib.factory.Factory@{pip.\_internal.resolution.resolvelib.factory.Factory}!\_installed\_dists@{\_installed\_dists}}
+\index{\_installed\_dists@{\_installed\_dists}!pip.\_internal.resolution.resolvelib.factory.Factory@{pip.\_internal.resolution.resolvelib.factory.Factory}}
+\doxysubsubsection{\texorpdfstring{\_installed\_dists}{\_installed\_dists}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a07f07ff3ee84d9bc66a7583b6d0895c1} 
+dict pip.\+\_\+internal.\+resolution.\+resolvelib.\+factory.\+Factory.\+\_\+installed\+\_\+dists\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ canonicalize\_name(dist.project\_name):\ dist}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ dist\ \textcolor{keywordflow}{in}\ get\_installed\_distributions()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/pip/\+\_\+internal/resolution/resolvelib/factory.\+py\end{DoxyCompactItemize}

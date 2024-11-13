@@ -1,0 +1,98 @@
+\doxysection{flask.\+json.\+tag.\+JSONTag Class Reference}
+\hypertarget{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag}{}\label{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag}\index{flask.json.tag.JSONTag@{flask.json.tag.JSONTag}}
+Inheritance diagram for flask.\+json.\+tag.\+JSONTag\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a6c5e0ea98c9d1f31a963666f7f5ebabe}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}Tagged\+JSONSerializer"{} serializer)
+\item 
+bool \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a973f8661af0cceec2360acf3b7041651}{check}} (self, t.\+Any value)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a0eb2775553dff48c4a6d54056c63d8f5}{to\+\_\+json}} (self, t.\+Any value)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_ad853d5061ce76509b94e4a31ec636fda}{to\+\_\+python}} (self, t.\+Any value)
+\item 
+t.\+Any \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a8172f5527a0c2ac92226d11b3d4bb175}{tag}} (self, t.\+Any value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a8ee80c87f85f11f60a83deebd78e78ba}\label{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a8ee80c87f85f11f60a83deebd78e78ba} 
+{\bfseries serializer} = serializer
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a1a28393f874a394cb16c66e11898ea0b}\label{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a1a28393f874a394cb16c66e11898ea0b} 
+t {\bfseries key} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base class for defining type tags for :class:`TaggedJSONSerializer`.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a6c5e0ea98c9d1f31a963666f7f5ebabe}\index{flask.json.tag.JSONTag@{flask.json.tag.JSONTag}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.json.tag.JSONTag@{flask.json.tag.JSONTag}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a6c5e0ea98c9d1f31a963666f7f5ebabe} 
+ None flask.\+json.\+tag.\+JSONTag.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Tagged\+JSONSerializer"{}}]{serializer}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a tagger for the given serializer.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a973f8661af0cceec2360acf3b7041651}\index{flask.json.tag.JSONTag@{flask.json.tag.JSONTag}!check@{check}}
+\index{check@{check}!flask.json.tag.JSONTag@{flask.json.tag.JSONTag}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a973f8661af0cceec2360acf3b7041651} 
+ bool flask.\+json.\+tag.\+JSONTag.\+check (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the given value should be tagged by this tag.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_pass_dict_acd1054d5b4ed009d98f5f32f16ed1dfd}{flask.\+json.\+tag.\+Pass\+Dict}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_pass_list_a8beb8dc4eae949153fddbfa86b984786}{flask.\+json.\+tag.\+Pass\+List}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_bytes_a2b83470e91a34c764b0ff7f7937ddf60}{flask.\+json.\+tag.\+Tag\+Bytes}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_date_time_a869212e090b8bcc983d03ce90c4ac15c}{flask.\+json.\+tag.\+Tag\+Date\+Time}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_dict_abf6828d7443f0d71f3b48ef19c948f41}{flask.\+json.\+tag.\+Tag\+Dict}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_markup_ac3b176fabe7731e2ecfb4e7231a3eeac}{flask.\+json.\+tag.\+Tag\+Markup}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_tuple_add7e8e4bb6816e54d2c685ce48153615}{flask.\+json.\+tag.\+Tag\+Tuple}}, and \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_u_u_i_d_abadeee9950985ef1fa0a014b86668037}{flask.\+json.\+tag.\+Tag\+UUID}}.
+
+\Hypertarget{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a8172f5527a0c2ac92226d11b3d4bb175}\index{flask.json.tag.JSONTag@{flask.json.tag.JSONTag}!tag@{tag}}
+\index{tag@{tag}!flask.json.tag.JSONTag@{flask.json.tag.JSONTag}}
+\doxysubsubsection{\texorpdfstring{tag()}{tag()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a8172f5527a0c2ac92226d11b3d4bb175} 
+ t.\+Any flask.\+json.\+tag.\+JSONTag.\+tag (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the value to a valid JSON type and add the tag structure
+around it.\end{DoxyVerb}
+ \Hypertarget{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a0eb2775553dff48c4a6d54056c63d8f5}\index{flask.json.tag.JSONTag@{flask.json.tag.JSONTag}!to\_json@{to\_json}}
+\index{to\_json@{to\_json}!flask.json.tag.JSONTag@{flask.json.tag.JSONTag}}
+\doxysubsubsection{\texorpdfstring{to\_json()}{to\_json()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a0eb2775553dff48c4a6d54056c63d8f5} 
+ t.\+Any flask.\+json.\+tag.\+JSONTag.\+to\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the Python object to an object that is a valid JSON type.
+The tag will be added later.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_pass_dict_a686ee9536f201e054fead9f07d781442}{flask.\+json.\+tag.\+Pass\+Dict}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_pass_list_acacb880e3f8c2424886e15598e69964b}{flask.\+json.\+tag.\+Pass\+List}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_bytes_abba605700be657f6176c7287ac15b579}{flask.\+json.\+tag.\+Tag\+Bytes}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_date_time_aa7337152f3ed76b17d28ee14ea8fbd18}{flask.\+json.\+tag.\+Tag\+Date\+Time}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_dict_a8348f9c52175e1190f5fa8917fc5b060}{flask.\+json.\+tag.\+Tag\+Dict}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_markup_aa4f46016dbb44b434f1cc3abbae0ce0d}{flask.\+json.\+tag.\+Tag\+Markup}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_tuple_ab49ffca1fa7f4f8fb0cc985cc941adde}{flask.\+json.\+tag.\+Tag\+Tuple}}, and \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_u_u_i_d_a31597b9c8feb9886e7c3de003cf9498e}{flask.\+json.\+tag.\+Tag\+UUID}}.
+
+\Hypertarget{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_ad853d5061ce76509b94e4a31ec636fda}\index{flask.json.tag.JSONTag@{flask.json.tag.JSONTag}!to\_python@{to\_python}}
+\index{to\_python@{to\_python}!flask.json.tag.JSONTag@{flask.json.tag.JSONTag}}
+\doxysubsubsection{\texorpdfstring{to\_python()}{to\_python()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_ad853d5061ce76509b94e4a31ec636fda} 
+ t.\+Any flask.\+json.\+tag.\+JSONTag.\+to\+\_\+python (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the JSON representation back to the correct type. The tag
+will already be removed.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_bytes_a7c4ccbe8ab3171fa3f2332613510c501}{flask.\+json.\+tag.\+Tag\+Bytes}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_date_time_a50c5abab4415dec02df83970df34cd7c}{flask.\+json.\+tag.\+Tag\+Date\+Time}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_dict_a8573418a24bcc43345e433ffce76699a}{flask.\+json.\+tag.\+Tag\+Dict}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_markup_aff3f33f94cef46c120815f9c07cb3c29}{flask.\+json.\+tag.\+Tag\+Markup}}, \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_tuple_a9e9cbd6fef6eb043d3b53e1a727d9846}{flask.\+json.\+tag.\+Tag\+Tuple}}, and \mbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_u_u_i_d_a73cede76120c4315db004d9697b661c4}{flask.\+json.\+tag.\+Tag\+UUID}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kmarty/\+Documents/\+Labo3\+\_\+architecture\+\_\+killian\+\_\+marty/\+Lib/site-\/packages/flask/json/tag.\+py\end{DoxyCompactItemize}

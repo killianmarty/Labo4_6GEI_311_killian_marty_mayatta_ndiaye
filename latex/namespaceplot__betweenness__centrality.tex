@@ -1,0 +1,87 @@
+\doxysection{plot\+\_\+betweenness\+\_\+centrality Namespace Reference}
+\hypertarget{namespaceplot__betweenness__centrality}{}\label{namespaceplot__betweenness__centrality}\index{plot\_betweenness\_centrality@{plot\_betweenness\_centrality}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a984d75cf66c91306c55609883a813289}\label{namespaceplot__betweenness__centrality_a984d75cf66c91306c55609883a813289} 
+{\bfseries G} = nx.\+read\+\_\+edgelist("{}Worm\+Net.\+v3.\+benchmark.\+txt"{})
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_ab1925730646bb9c7ee70b09b1bd64551}\label{namespaceplot__betweenness__centrality_ab1925730646bb9c7ee70b09b1bd64551} 
+{\bfseries num\+\_\+to\+\_\+remove} = int(len(G) / 1.\+5)
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_aaa5dc4b8ed7508048a2011f2b0edaed2}\label{namespaceplot__betweenness__centrality_aaa5dc4b8ed7508048a2011f2b0edaed2} 
+{\bfseries nodes} = sample(list(G.\+nodes), num\+\_\+to\+\_\+remove)
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a9105f33269139f217b07c38a54b92658}\label{namespaceplot__betweenness__centrality_a9105f33269139f217b07c38a54b92658} 
+list {\bfseries low\+\_\+degree} = \mbox{[}n for n, d in G.\+degree() if d $<$ 10\mbox{]}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a27a30e3a834cbe948314f44f95593fb0}\label{namespaceplot__betweenness__centrality_a27a30e3a834cbe948314f44f95593fb0} 
+{\bfseries components} = nx.\+connected\+\_\+components(G)
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a78195a7f2351bf76021a12dadd304a37}\label{namespaceplot__betweenness__centrality_a78195a7f2351bf76021a12dadd304a37} 
+{\bfseries largest\+\_\+component} = max(components, key=len)
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a7e246c33ee4e1da7210aa7c2071d4412}\label{namespaceplot__betweenness__centrality_a7e246c33ee4e1da7210aa7c2071d4412} 
+{\bfseries H} = G.\+subgraph(largest\+\_\+component)
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a1e0ff673192f6f66aea3c1e8129594a3}\label{namespaceplot__betweenness__centrality_a1e0ff673192f6f66aea3c1e8129594a3} 
+{\bfseries centrality} = nx.\+betweenness\+\_\+centrality(H, k=10, endpoints=True)
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_ac012387565f09c9d90b3d9563c19b346}\label{namespaceplot__betweenness__centrality_ac012387565f09c9d90b3d9563c19b346} 
+{\bfseries lpc} = nx.\+community.\+label\+\_\+propagation\+\_\+communities(H)
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_aaaba8679591da9d37bf1bb6897260782}\label{namespaceplot__betweenness__centrality_aaaba8679591da9d37bf1bb6897260782} 
+dict {\bfseries community\+\_\+index} = \{n\+: i for i, com in enumerate(lpc) for n in com\}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a2f94b2942737d8149bab7c64c4c13b5c}\label{namespaceplot__betweenness__centrality_a2f94b2942737d8149bab7c64c4c13b5c} 
+{\bfseries fig}
+\begin{DoxyCompactList}\small\item\em draw graph \#\#\#\# \end{DoxyCompactList}\item 
+\Hypertarget{namespaceplot__betweenness__centrality_ad873d5fea30a9fc180f0509bd7671bce}\label{namespaceplot__betweenness__centrality_ad873d5fea30a9fc180f0509bd7671bce} 
+{\bfseries ax}
+\begin{DoxyCompactList}\small\item\em draw graph \#\#\#\# \end{DoxyCompactList}\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a7c50f03432bec65cad40ad411aceab04}\label{namespaceplot__betweenness__centrality_a7c50f03432bec65cad40ad411aceab04} 
+{\bfseries figsize}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_aca35f01d99a8634cc0ad8ca4d62bd824}\label{namespaceplot__betweenness__centrality_aca35f01d99a8634cc0ad8ca4d62bd824} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(H, k=0.\+15, seed=4572321)
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_adc298781811b590283dd0ef2e8be936a}\label{namespaceplot__betweenness__centrality_adc298781811b590283dd0ef2e8be936a} 
+list {\bfseries node\+\_\+color} = \mbox{[}community\+\_\+index\mbox{[}n\mbox{]} for n in H\mbox{]}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a030264658ae0e0871f321a6c67f4dc68}\label{namespaceplot__betweenness__centrality_a030264658ae0e0871f321a6c67f4dc68} 
+list {\bfseries node\+\_\+size} = \mbox{[}v \texorpdfstring{$\ast$}{*} 20000 for v in centrality.\+values()\mbox{]}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a8ce145ebe1ed117332bea157693e949a}\label{namespaceplot__betweenness__centrality_a8ce145ebe1ed117332bea157693e949a} 
+{\bfseries with\+\_\+labels}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a1f875104df53c017f8c4217adb6dd8a3}\label{namespaceplot__betweenness__centrality_a1f875104df53c017f8c4217adb6dd8a3} 
+{\bfseries edge\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_ad4b40e540eed7a8a4c0673ad2483fec8}\label{namespaceplot__betweenness__centrality_ad4b40e540eed7a8a4c0673ad2483fec8} 
+{\bfseries alpha}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a28f8162af604ffaf3395a37ea16a7bdd}\label{namespaceplot__betweenness__centrality_a28f8162af604ffaf3395a37ea16a7bdd} 
+dict {\bfseries font} = \{"{}color"{}\+: "{}k"{}, "{}fontweight"{}\+: "{}bold"{}, "{}fontsize"{}\+: 20\}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a1b5d3d1b44533d96a0e24b447a47b546}\label{namespaceplot__betweenness__centrality_a1b5d3d1b44533d96a0e24b447a47b546} 
+{\bfseries horizontalalignment}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_af7c7637b8ad7a9d0817d4a29d5cb5505}\label{namespaceplot__betweenness__centrality_af7c7637b8ad7a9d0817d4a29d5cb5505} 
+{\bfseries transform}
+\item 
+\Hypertarget{namespaceplot__betweenness__centrality_a95b59373274fe542b9910fc482d5990b}\label{namespaceplot__betweenness__centrality_a95b59373274fe542b9910fc482d5990b} 
+{\bfseries fontdict}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}======================
+Betweenness Centrality
+======================
+
+Betweenness centrality measures of positive gene functional associations
+using WormNet v.3-GS.
+
+Data from: https://www.inetbio.org/wormnet/downloadnetwork.php
+\end{DoxyVerb}
+ 

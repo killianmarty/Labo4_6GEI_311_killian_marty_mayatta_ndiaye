@@ -1,0 +1,59 @@
+\doxysection{plot\+\_\+unix\+\_\+email Namespace Reference}
+\hypertarget{namespaceplot__unix__email}{}\label{namespaceplot__unix__email}\index{plot\_unix\_email@{plot\_unix\_email}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__unix__email_a31959651359bc875dd02fcf05e1ee4b1}\label{namespaceplot__unix__email_a31959651359bc875dd02fcf05e1ee4b1} 
+{\bfseries mbox\+\_\+graph} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceplot__unix__email_acfb70aa012b761cfa038f25ac0ccc68a}\label{namespaceplot__unix__email_acfb70aa012b761cfa038f25ac0ccc68a} 
+{\bfseries G} = mbox\+\_\+graph()
+\item 
+\Hypertarget{namespaceplot__unix__email_a307bf15c588928da2258f158bbee99f0}\label{namespaceplot__unix__email_a307bf15c588928da2258f158bbee99f0} 
+{\bfseries data}
+\item 
+\Hypertarget{namespaceplot__unix__email_a2e2b40d4a9df4eee8f83ac7b71d5bc2c}\label{namespaceplot__unix__email_a2e2b40d4a9df4eee8f83ac7b71d5bc2c} 
+{\bfseries pos} = nx.\+spring\+\_\+layout(G, iterations=10, seed=227)
+\item 
+\Hypertarget{namespaceplot__unix__email_a76d2eb965387ef5951d9bbe169ae2af7}\label{namespaceplot__unix__email_a76d2eb965387ef5951d9bbe169ae2af7} 
+{\bfseries node\+\_\+size}
+\item 
+\Hypertarget{namespaceplot__unix__email_ad6e13a9ac11888732ef7af3e6fe0a16d}\label{namespaceplot__unix__email_ad6e13a9ac11888732ef7af3e6fe0a16d} 
+{\bfseries alpha}
+\item 
+\Hypertarget{namespaceplot__unix__email_a5790727a73f41e8b3877810938ce9a3a}\label{namespaceplot__unix__email_a5790727a73f41e8b3877810938ce9a3a} 
+{\bfseries edge\+\_\+color}
+\item 
+\Hypertarget{namespaceplot__unix__email_aea54c87278ef0af639f2e8a0e83eb196}\label{namespaceplot__unix__email_aea54c87278ef0af639f2e8a0e83eb196} 
+{\bfseries font\+\_\+size}
+\item 
+\Hypertarget{namespaceplot__unix__email_a4c25440f31b1176b7f486bcacadcd59c}\label{namespaceplot__unix__email_a4c25440f31b1176b7f486bcacadcd59c} 
+{\bfseries with\+\_\+labels}
+\item 
+\Hypertarget{namespaceplot__unix__email_a64939c70a370255e84c1032a1f9c9005}\label{namespaceplot__unix__email_a64939c70a370255e84c1032a1f9c9005} 
+{\bfseries ax} = plt.\+gca()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}==========
+Unix Email
+==========
+
+Create a directed graph, allowing multiple edges and self loops, from a unix
+mailbox.  The nodes are email addresses with links that point from the sender
+to the receivers.  The edge data is a Python email.Message object which
+contains all of the email message data.
+
+This example shows the power of `DiGraph` to hold edge data of arbitrary Python
+objects (in this case a list of email messages).
+
+
+The sample unix email mailbox called "unix_email.mbox" may be found here:
+
+- https://github.com/networkx/networkx/blob/main/examples/drawing/unix_email.mbox
+\end{DoxyVerb}
+ 
